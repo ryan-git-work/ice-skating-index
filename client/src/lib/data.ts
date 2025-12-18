@@ -169,3 +169,18 @@ export function getAllCities(state: string) {
   );
   return Array.from(cities).sort();
 }
+
+// Helper to check if a flexible boolean value is truthy
+export function isTruthy(value: boolean | string | undefined): boolean {
+  return value === true || value === "true";
+}
+
+// Helper to check if a value is unknown
+export function isUnknown(value: boolean | string | undefined): boolean {
+  return value === "unknown";
+}
+
+// Get rinks with freestyle available
+export function getFreestyleRinks() {
+  return rinks.filter((r) => isTruthy(r.freestyle.available));
+}

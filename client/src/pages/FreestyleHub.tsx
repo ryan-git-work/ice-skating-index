@@ -1,5 +1,5 @@
 import { Layout } from "@/components/Layout";
-import { rinks } from "@/lib/data";
+import { getFreestyleRinks } from "@/lib/data";
 import { RinkCard } from "@/components/RinkCard";
 import { Link } from "wouter";
 import { useHead } from "@/hooks/use-head";
@@ -16,7 +16,7 @@ export default function FreestyleHub() {
     description: "Find freestyle sessions for figure skaters. Verified times, pricing, and coaching policies."
   });
 
-  const freestyleRinks = rinks.filter(r => r.freestyle.available === true);
+  const freestyleRinks = getFreestyleRinks();
 
   return (
     <Layout>

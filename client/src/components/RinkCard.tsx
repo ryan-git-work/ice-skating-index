@@ -3,7 +3,7 @@ import { MapPin, Calendar, ExternalLink } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import type { Rink } from "@/lib/data";
+import { isTruthy, type Rink } from "@/lib/data";
 
 interface RinkCardProps {
   rink: Rink;
@@ -18,12 +18,12 @@ export function RinkCard({ rink }: RinkCardProps) {
            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary/10" />
            <div className="absolute bottom-4 left-4 right-4">
              <div className="flex flex-wrap gap-2">
-               {rink.offerings.public_skating && (
+               {isTruthy(rink.offerings.public_skating) && (
                  <Badge variant="secondary" className="bg-white/80 backdrop-blur-sm text-xs font-normal">
                    Public Skate
                  </Badge>
                )}
-               {rink.freestyle.available === true && (
+               {isTruthy(rink.freestyle.available) && (
                  <Badge variant="secondary" className="bg-white/80 backdrop-blur-sm text-xs font-normal">
                    Freestyle
                  </Badge>
