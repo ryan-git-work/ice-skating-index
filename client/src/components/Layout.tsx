@@ -1,0 +1,153 @@
+import { Link, useLocation } from "wouter";
+import { cn } from "@/lib/utils";
+import { Snowflake, Search, MapPin, Menu, X } from "lucide-react";
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+
+export function Layout({ children }: { children: React.ReactNode }) {
+  const [location] = useLocation();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const navLinks = [
+    { href: "/browse", label: "Browse Rinks" },
+    { href: "/freestyle", label: "Freestyle" },
+    { href: "/services/skate-sharpening", label: "Skate Sharpening" },
+  ];
+
+  return (
+    <div className="min-h-screen flex flex-col bg-background font-sans text-foreground selection:bg-primary/20">
+      {/* Header */}
+      <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-md supports-[backdrop-filter]:bg-background/60">
+        <div className="container mx-auto px-4 h-16 flex items-center justify-between">
+          <Link href="/">
+            <a className="flex items-center gap-2 group">
+              <div className="bg-primary/10 p-2 rounded-lg group-hover:bg-primary/20 transition-colors">
+                <Snowflake className="h-5 w-5 text-primary" />
+              </div>
+              <span className="font-serif text-xl font-bold tracking-tight text-foreground">
+                Ice Skating Index
+              </span>
+            </a>
+          </Link>
+
+          {/* Desktop Nav */}
+          <nav className="hidden md:flex items-center gap-6">
+            {navLinks.map((link) => (
+              <Link key={link.href} href={link.href}>
+                <a
+                  className={cn(
+                    "text-sm font-medium transition-colors hover:text-primary",
+                    location === link.href
+                      ? "text-primary"
+                      : "text-muted-foreground"
+                  )}
+                >
+                  {link.label}
+                </a>
+              </Link>
+            ))}
+            <Link href="/browse">
+              <Button size="sm" className="ml-2 font-semibold shadow-sm hover:shadow-md transition-all">
+                Find a Rink
+              </Button>
+            </Link>
+          </nav>
+
+          {/* Mobile Nav */}
+          <div className="md:hidden">
+            <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon" className="-mr-2">
+                  <Menu className="h-5 w-5" />
+                  <span className="sr-only">Toggle menu</span>
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right" className="w-[80%] sm:w-[300px]">
+                <div className="flex flex-col gap-6 mt-8">
+                  <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>
+                    <a className="flex items-center gap-2">
+                      <Snowflake className="h-5 w-5 text-primary" />
+                      <span className="font-serif text-lg font-bold">Ice Skating Index</span>
+                    </a>
+                  </Link>
+                  <nav className="flex flex-col gap-4">
+                    {navLinks.map((link) => (
+                      <Link key={link.href} href={link.href}>
+                        <a
+                          onClick={() => setIsMobileMenuOpen(false)}
+                          className={cn(
+                            "text-lg font-medium transition-colors hover:text-primary",
+                            location === link.href
+                              ? "text-primary"
+                              : "text-muted-foreground"
+                          )}
+                        >
+                          {link.label}
+                        </a>
+                      </Link>
+                    ))}
+                    <Link href="/browse" onClick={() => setIsMobileMenuOpen(false)}>
+                      <Button className="w-full mt-2">Find a Rink</Button>
+                    </Link>
+                  </nav>
+                </div>
+              </SheetContent>
+            </Sheet>
+          </div>
+        </div>
+      </header>
+
+      {/* Main Content */}
+      <main className="flex-1 w-full">
+        {children}
+      </main>
+
+      {/* Footer */}
+      <footer className="border-t bg-muted/30">
+        <div className="container mx-auto px-4 py-12">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div className="space-y-4">
+              <div className="flex items-center gap-2">
+                <Snowflake className="h-5 w-5 text-primary" />
+                <span className="font-serif text-lg font-bold">Ice Skating Index</span>
+              </div>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                The definitive directory for ice skating rinks, schedules, and freestyle sessions. Helping skaters find their ice.
+              </p>
+            </div>
+            
+            <div>
+              <h3 className="font-semibold mb-4 text-foreground">Directory</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li><Link href="/browse"><a className="hover:text-primary transition-colors">Browse Rinks</a></Link></li>
+                <li><Link href="/freestyle"><a className="hover:text-primary transition-colors">Freestyle Sessions</a></Link></li>
+                <li><Link href="/services/skate-sharpening"><a className="hover:text-primary transition-colors">Skate Sharpening</a></Link></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="font-semibold mb-4 text-foreground">Top States</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li><Link href="/state/TN"><a className="hover:text-primary transition-colors">Tennessee</a></Link></li>
+                {/* Add more states as data grows */}
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="font-semibold mb-4 text-foreground">About</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li><a href="#" className="hover:text-primary transition-colors">Contact Us</a></li>
+                <li><a href="#" className="hover:text-primary transition-colors">Submit a Rink</a></li>
+                <li><a href="#" className="hover:text-primary transition-colors">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+          <div className="mt-12 pt-8 border-t text-center text-sm text-muted-foreground">
+            <p>&copy; {new Date().getFullYear()} Ice Skating Index. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}

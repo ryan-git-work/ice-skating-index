@@ -1,0 +1,142 @@
+[
+  {
+    "id": "tn-nashville-centennial",
+    "slug": "centennial-sportsplex-nashville-tn",
+    "name": "Centennial Sportsplex Ice Arenas",
+    "alternate_names": ["Centennial", "Preds Practice Facility"],
+    "address": {
+      "street": "222 25th Ave N",
+      "city": "Nashville",
+      "state": "TN",
+      "postal_code": "37203",
+      "country": "USA"
+    },
+    "phone": "(615) 862-8480",
+    "website": "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating",
+    "google_maps_url": "https://goo.gl/maps/example1",
+    "facility": {
+      "indoor": true,
+      "seasonality": "Year-round",
+      "number_of_sheets": 2
+    },
+    "schedule_links": {
+      "public_calendar_url": "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating/public-skate"
+    },
+    "offerings": {
+      "public_skating": true,
+      "learn_to_skate": true,
+      "figure_skating": true,
+      "hockey": true,
+      "open_hockey": true,
+      "stick_and_puck": true
+    },
+    "pricing": {
+      "public_skate": "$7.00 admission",
+      "notes": "Skate rental is $3.00 extra."
+    },
+    "rentals": {
+      "available": true,
+      "size_range_min": "Youth 8",
+      "size_range_max": "Adult 14",
+      "fit_tips": ["Wear thin socks", "lace tight"],
+      "recommendations": ["Figure skates for beginners"],
+      "notes": "Blue recreational skates available."
+    },
+    "sharpening": {
+      "available": true,
+      "pricing_base": "$10",
+      "turnaround": "Overnight usually",
+      "add_ons": [],
+      "notes": "Pro shop in lobby."
+    },
+    "freestyle": {
+      "available": true,
+      "labels_to_search_for": ["Freestyle", "Figure Skating Session"],
+      "who_its_for": ["Figure skaters", "Private lessons"],
+      "how_to_find_times": "Check the daily schedule PDF on their site.",
+      "etiquette_tips": ["Right of way to skater in lesson", "Watch for lutz corners"]
+    },
+    "amenities": {
+      "lockers": true,
+      "spectator_seating": true,
+      "concessions": true,
+      "pro_shop": true
+    },
+    "audiences": ["Families", "Figure Skaters", "Hockey Players"],
+    "tags": ["NHL Practice Facility", "Indoor", "Public Skate"],
+    "seo": {
+      "primary_keywords": ["Ice skating Nashville", "Centennial Sportsplex ice rink"],
+      "secondary_keywords": ["Figure skating Nashville", "Hockey Nashville"],
+      "short_description": "Premier dual-rink facility in downtown Nashville, home to the Predators practice ice.",
+      "long_description": "Centennial Sportsplex offers two full-sized NHL rinks, offering year-round public skating, learn to skate programs, and extensive hockey and figure skating sessions.",
+      "helpful_blurbs": ["Great for birthday parties", "Central location near Vanderbilt"],
+      "what_to_know": ["Dress warm, it is kept cold for the ice quality.", "Check schedule before going."]
+    },
+    "sources": ["Official Website"],
+    "last_verified": "2023-10-27T00:00:00.000Z"
+  },
+  {
+    "id": "tn-antioch-ford",
+    "slug": "ford-ice-center-antioch-tn",
+    "name": "Ford Ice Center Antioch",
+    "alternate_names": ["Ford Ice", "Antioch Ice"],
+    "address": {
+      "street": "5264 Hickory Hollow Pkwy",
+      "city": "Antioch",
+      "state": "TN",
+      "postal_code": "37013",
+      "country": "USA"
+    },
+    "phone": "(615) 742-4399",
+    "website": "https://www.nhl.com/predators/fordicecenter/antioch",
+    "google_maps_url": "https://goo.gl/maps/example2",
+    "facility": {
+      "indoor": true,
+      "seasonality": "Year-round",
+      "number_of_sheets": 2
+    },
+    "schedule_links": {
+      "public_calendar_url": "https://apps.daysmartrecreation.com/dash/x/#/online/fordice/calendar"
+    },
+    "offerings": {
+      "public_skating": true,
+      "learn_to_skate": true,
+      "figure_skating": true,
+      "hockey": true,
+      "open_hockey": true,
+      "stick_and_puck": false
+    },
+    "rentals": {
+      "available": true,
+      "fit_tips": [],
+      "recommendations": []
+    },
+    "sharpening": {
+      "available": true
+    },
+    "freestyle": {
+      "available": true,
+      "labels_to_search_for": ["Freestyle"],
+      "who_its_for": ["Competitive skaters"],
+      "how_to_find_times": "DaySmart Recreation calendar"
+    },
+    "amenities": {
+      "lockers": true,
+      "spectator_seating": true,
+      "concessions": true,
+      "pro_shop": true
+    },
+    "audiences": ["Families", "Youth Hockey"],
+    "tags": ["Predators", "Scott Hamilton Academy"],
+    "seo": {
+      "primary_keywords": ["Ford Ice Center Antioch", "Ice skating Antioch TN"],
+      "secondary_keywords": [],
+      "short_description": "Modern twin-pad facility managed by the Nashville Predators.",
+      "long_description": "Home to the Scott Hamilton Skating Academy and Predators youth hockey programs.",
+      "helpful_blurbs": [],
+      "what_to_know": []
+    },
+    "sources": ["Official Website"],
+    "last_verified": "2023-10-27T00:00:00.000Z"
+  }
+]
