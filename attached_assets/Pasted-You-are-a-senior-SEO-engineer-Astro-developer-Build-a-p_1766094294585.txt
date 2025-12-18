@@ -1,0 +1,105 @@
+You are a senior SEO engineer + Astro developer. Build a production-ready directory website called “Ice Skating Index” on Astro (latest) with TypeScript. The live domain will be https://iceskatingindex.com.
+
+Core goal:
+- Programmatic SEO directory for ice skating rinks, starting with Tennessee but scalable to all states.
+- Pages must be fast, crawlable, and have excellent internal linking, schema, sitemap, and clean metadata.
+
+Tech requirements:
+- Astro + TypeScript.
+- Use Astro Content Collections (or a typed /src/data/*.json loader) with Zod validation.
+- No database for MVP. Content comes from local JSON data files in the repo.
+- Include a clean component-based layout. Minimal CSS is fine. Prioritize performance and readability.
+
+Data model:
+Create /src/data/rinks.json and validate it with Zod. Each rink entry must support these fields (MVP+):
+- id (string), slug (string), name (string), alternate_names (string[])
+- address: street, city, state, postal_code, country
+- phone, email (optional), website, google_maps_url (optional)
+- facility: indoor (boolean), seasonality (string), number_of_sheets (optional number)
+- schedule_links: public_calendar_url, freestyle_calendar_url (optional), lessons_url (optional)
+- offerings: public_skating, learn_to_skate, figure_skating, hockey, open_hockey, stick_and_puck (booleans)
+- pricing: optional, allow partial fields for public skate and notes
+- rentals: available, included_with_admission (optional), size_range_min, size_range_max, fit_tips (string[]), recommendations (string[]), notes (optional)
+- sharpening: available, turnaround (optional), pricing_base (optional), pricing_rush (optional), add_ons (array of {name, price}), notes (optional), info_url (optional)
+- freestyle: available (boolean or "unknown"), labels_to_search_for (string[]), who_its_for (string[]), how_to_find_times (string), cost_notes (optional), etiquette_tips (string[]), notes (optional)
+- amenities: lockers, spectator_seating, concessions, pro_shop (booleans or "unknown")
+- audiences (string[]) and tags (string[])
+- seo: primary_keywords (string[]), secondary_keywords (string[]), short_description, long_description, helpful_blurbs (string[]), what_to_know (string[])
+- sources (string[]) and last_verified (ISO date string)
+
+Pages and routing:
+Generate all pages statically at build time:
+1) Home: / 
+- Value prop, links to Tennessee hub, browse hub, and top categories.
+2) Browse: /browse/
+- Filter UI (client-side) that can filter rinks by state, city, offerings, and freestyle availability.
+- Use URL query params for filters (so pages are shareable).
+3) State hub: /state/[state]/
+- List all cities in that state, internal links to city pages and freestyle hub.
+4) City hub: /state/[state]/[city]/
+- List all rinks in the city, internal links to rink detail pages.
+5) Rink detail: /rink/[slug]/
+- Render the full directory entry with sections:
+  - Quick snapshot
+  - Address + contact
+  - Offerings
+  - Public skating
+  - Rentals + Skate sizing
+  - Skate sharpening
+  - Freestyle figure skating (SEO-focused)
+  - Amenities
+  - What to know before you go
+  - Sources + last verified
+6) Freestyle hub pages (important for SEO wedge):
+- /freestyle/
+- /freestyle/[state]/
+- Each should list rinks with freestyle available and include a short helpful intro paragraph and FAQ.
+7) Services hub pages (optional but scaffold now):
+- /services/skate-sharpening/
+- /services/skate-sharpening/[state]/
+- List rinks with sharpening available.
+
+SEO requirements (must implement):
+- Title tags, meta descriptions, canonical URLs for every page.
+- Open Graph and Twitter cards.
+- Robots meta should be index,follow for public pages.
+- Generate robots.txt and sitemap.xml automatically.
+- Use clean, descriptive URLs and internal linking between hubs and detail pages.
+- Add breadcrumbs on all non-home pages.
+
+Schema requirements:
+Add JSON-LD schema per page:
+- Sitewide: WebSite with SearchAction for internal search (point to /browse?query=).
+- List pages: ItemList schema for rink lists.
+- Rink detail pages: SportsActivityLocation (or LocalBusiness) with address, telephone, url, sameAs (if present), and sport values like "Ice skating", "Figure skating", "Ice hockey".
+- BreadcrumbList schema for hubs and rink pages.
+Important: Do NOT include any “aiGenerated” or “AI generated” flags in schema.
+
+Content generation rules:
+- The site can include SEO blurbs, but they must be grounded in the rink’s data fields.
+- Add a small “Freestyle” FAQ section on rink pages, using generic but accurate language (no unverifiable claims).
+- Add a “Last verified” line and a “Sources” list to reinforce trust.
+
+Performance:
+- Keep JS minimal. Only the browse filters should be interactive.
+- Use responsive layouts. Avoid heavy images. If you include images, use Astro image optimization.
+
+Developer experience:
+- Include a /README.md with:
+  - how to run dev server
+  - how to add a new rink entry to JSON
+  - how slugs are generated
+  - how to deploy
+- Create utility functions:
+  - slugify(name, city, state)
+  - normalizeState(stateName -> postal abbreviation or consistent slug)
+  - build internal links helpers
+
+Seed content:
+Populate rinks.json with 2 sample rinks:
+- Centennial Sportsplex Ice Arenas (Nashville, TN)
+- Ford Ice Center Antioch (Antioch, TN)
+Use placeholder values where we do not have confirmed info, but keep the structure valid.
+
+Deliverable:
+Generate the full Astro project with the file structure, components, pages, JSON data, validation, sitemap, robots, and schema already wired up. It should run immediately after install.
