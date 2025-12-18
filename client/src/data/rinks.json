@@ -1,26 +1,52 @@
 [
   {
-    "id": "tn-nashville-centennial",
+    "id": "tn-nashville-centennial-sportsplex-nashville-tn",
     "slug": "centennial-sportsplex-nashville-tn",
     "name": "Centennial Sportsplex Ice Arenas",
-    "alternate_names": ["Centennial", "Preds Practice Facility"],
+    "alternate_names": [
+      "Centennial Sportsplex Ice Arena",
+      "Centennial Sportsplex"
+    ],
+    "category": "Ice Skating Rink",
+    "operator": null,
     "address": {
-      "street": "222 25th Ave N",
+      "street": "222 25th Avenue North",
       "city": "Nashville",
       "state": "TN",
       "postal_code": "37203",
-      "country": "USA"
+      "country": "US"
     },
-    "phone": "(615) 862-8480",
+    "geo": {
+      "latitude": 36.150264,
+      "longitude": -86.810317
+    },
+    "phone": "615-862-8480",
+    "email": null,
     "website": "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating",
-    "google_maps_url": "https://goo.gl/maps/example1",
+    "google_maps_url": "https://www.google.com/maps?aq=0&f=q&geocode&hl=en&hnear=222+25th+Ave+N,+Nashville,+Davidson,+Tennessee+37203&hq&ie=UTF8&ll=36.150264,-86.810317&oq=222+25&q=222+25th+Avenue+North,+Nashville,+TN&sll=36.18664,-86.785245&source=embed&sspn=0.761449,1.132965&t=h&z=14",
+    "social_links": [
+      {
+        "platform": "facebook",
+        "url": "https://www.facebook.com/centsportsplex/"
+      }
+    ],
+    "place_ids": {
+      "google_place_id": null,
+      "osm_id": null
+    },
     "facility": {
       "indoor": true,
-      "seasonality": "Year-round",
-      "number_of_sheets": 2
+      "seasonality": "year-round",
+      "number_of_sheets": 2,
+      "sheet_sizes": [
+        "200 ft x 85 ft"
+      ]
     },
     "schedule_links": {
-      "public_calendar_url": "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating/public-skate"
+      "public_calendar_url": "https://calendar.google.com/calendar/embed?ctz=America%2FChicago&src=sicdsqf3dmthsgglhcq3ka1l74%40group.calendar.google.com",
+      "freestyle_calendar_url": null,
+      "hockey_calendar_url": "https://calendar.google.com/calendar/embed?ctz=America%2FChicago&src=sicdsqf3dmthsgglhcq3ka1l74%40group.calendar.google.com",
+      "lessons_url": "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating/learn-skate"
     },
     "offerings": {
       "public_skating": true,
@@ -31,49 +57,352 @@
       "stick_and_puck": true
     },
     "pricing": {
-      "public_skate": "$7.00 admission",
-      "notes": "Skate rental is $3.00 extra."
+      "public_skate": {
+        "adult": 12.0,
+        "youth": 10.0
+      },
+      "spectators": 0.0,
+      "notes": "Public skating admission rates are published by the rink. Adults (ages 13+) are $12 and ages 5 to 12 are $10, with a separate $5 rate for ages 4 and under. Seniors (ages 62+) are listed at $10. Spectators are listed as free. Public skating times change monthly, so use the Ice Arena Google Calendar and the public skating page to confirm the exact session times before you go."
     },
     "rentals": {
       "available": true,
-      "size_range_min": "Youth 8",
-      "size_range_max": "Adult 14",
-      "fit_tips": ["Wear thin socks", "lace tight"],
-      "recommendations": ["Figure skates for beginners"],
-      "notes": "Blue recreational skates available."
+      "included_with_admission": true,
+      "size_range_min": null,
+      "size_range_max": null,
+      "fit_tips": [
+        "Wear tall socks so the rental skate cuffs do not rub your ankles.",
+        "Ask the counter staff to check the fit before you step onto the ice if your toes feel cramped or your heel lifts."
+      ],
+      "recommendations": [
+        "If you bring your own skates, lace them snug through the ankle so you feel stable when you start gliding.",
+        "For first-time skaters, consider gloves for warmth and to protect your hands if you fall."
+      ],
+      "notes": "The public skating rates list skate rental as included with admission. The rink does not publish a specific rental size range online, so call ahead if you need a particular size."
     },
     "sharpening": {
       "available": true,
-      "pricing_base": "$10",
-      "turnaround": "Overnight usually",
-      "add_ons": [],
-      "notes": "Pro shop in lobby."
+      "turnaround": "Please allow 24 hours; the rink notes they can often finish in less than 24 hours when needed.",
+      "pricing_base": 6.0,
+      "pricing_rush": 2.0,
+      "add_ons": [
+        "Masking tape on lower: $1",
+        "Extra masking tape: $1",
+        "Skating straps: $6"
+      ],
+      "notes": "Skate sharpening is offered for both figure skates and hockey skates. A rush fee is listed for less than 24-hour turnaround, and you can ask for a pickup time when you drop off your skates.",
+      "info_url": "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating/skate-sharpening"
     },
     "freestyle": {
-      "available": true,
-      "labels_to_search_for": ["Freestyle", "Figure Skating Session"],
-      "who_its_for": ["Figure skaters", "Private lessons"],
-      "how_to_find_times": "Check the daily schedule PDF on their site.",
-      "etiquette_tips": ["Right of way to skater in lesson", "Watch for lutz corners"]
+      "available": "unknown",
+      "labels_to_search_for": [
+        "Freestyle",
+        "Figure Freestyle",
+        "Freestyle Ice",
+        "Figure Session"
+      ],
+      "who_its_for": [
+        "Figure skaters who need quiet practice ice time, if a freestyle-style session appears on the calendar.",
+        "Coaches and students, when the session listing or rink rules indicate lessons are permitted."
+      ],
+      "how_to_find_times": "Open the Centennial Sportsplex Ice Arena Google Calendar and scan the month view. Use the event titles to look for labels such as \"Freestyle\" or \"Figure Freestyle\". If you do not see those labels, check the calendar again closer to your target week because sessions are posted and adjusted monthly.",
+      "cost_notes": null,
+      "etiquette_tips": [
+        "If a freestyle session is listed, assume right of way matters and yield to skaters running a program to music.",
+        "Stay alert near the jump corners and do not camp in the middle of the rink.",
+        "Ask a coach or rink staff what the session expectations are if you are new to freestyle-style ice."
+      ],
+      "notes": "The official Centennial Sportsplex ice skating pages describe public skating, lessons, and hockey sessions, but they do not explicitly confirm dedicated freestyle figure sessions. The most reliable way to verify is to search the official Ice Arena Google Calendar for a freestyle-related label or contact the rink."
     },
     "amenities": {
       "lockers": true,
       "spectator_seating": true,
       "concessions": true,
-      "pro_shop": true
+      "pro_shop": "unknown",
+      "skate_aids": "unknown"
     },
-    "audiences": ["Families", "Figure Skaters", "Hockey Players"],
-    "tags": ["NHL Practice Facility", "Indoor", "Public Skate"],
+    "audiences": [
+      "Families",
+      "Beginners",
+      "Figure skaters",
+      "Hockey players",
+      "Adult skaters"
+    ],
+    "tags": [
+      "indoor",
+      "year-round",
+      "two-sheet",
+      "public-skating",
+      "learn-to-skate",
+      "open-hockey",
+      "stick-and-puck",
+      "skate-sharpening"
+    ],
+    "faq": [
+      {
+        "q": "Where do I find the public skating schedule for Centennial Sportsplex in Nashville, TN?",
+        "a": "Public skating session times change by month. The rink directs skaters to the Centennial Sportsplex Ice Arena Google Calendar and the official public skating page, which links to the current schedule."
+      },
+      {
+        "q": "Do I need my own skates, or can I rent skates at Centennial Sportsplex Ice Arenas?",
+        "a": "Skate rental is available at the facility. The public skating rates page states that skate rental is included with public skating admission."
+      },
+      {
+        "q": "Does Centennial Sportsplex offer learn-to-skate or figure skating lessons?",
+        "a": "Lessons are offered through Nashville Skating Academy. The official Learn To Ice Skate page describes learn-to-skate and figure skating training and lists the recurring class days and times, with a link to the academy for current registration details."
+      },
+      {
+        "q": "Is there open hockey or stick and puck at Centennial Sportsplex?",
+        "a": "Yes. The Centennial Sportsplex adult open hockey page explains that open hockey and stick and puck sessions are scheduled via the Ice Arena Google Calendar, and it lists key rules and a posted session price for those programs."
+      },
+      {
+        "q": "Can I get my skates sharpened at Centennial Sportsplex, and what does it cost?",
+        "a": "Yes. The rink offers skate sharpening for figure and hockey skates, with a posted base price and an additional rush fee. The skate sharpening page also notes that you should allow about 24 hours for turnaround."
+      },
+      {
+        "q": "Does Centennial Sportsplex have freestyle ice time for figure skaters?",
+        "a": "Freestyle sessions are not explicitly confirmed on the main ice skating pages. To check, open the official Ice Arena Google Calendar and look for event titles that include words like \"Freestyle\" or \"Figure Freestyle\". If you are unsure, call the rink and ask what labels they use for figure practice sessions."
+      }
+    ],
     "seo": {
-      "primary_keywords": ["Ice skating Nashville", "Centennial Sportsplex ice rink"],
-      "secondary_keywords": ["Figure skating Nashville", "Hockey Nashville"],
-      "short_description": "Premier dual-rink facility in downtown Nashville, home to the Predators practice ice.",
-      "long_description": "Centennial Sportsplex offers two full-sized NHL rinks, offering year-round public skating, learn to skate programs, and extensive hockey and figure skating sessions.",
-      "helpful_blurbs": ["Great for birthday parties", "Central location near Vanderbilt"],
-      "what_to_know": ["Dress warm, it is kept cold for the ice quality.", "Check schedule before going."]
+      "primary_keywords": [
+        "Centennial Sportsplex ice rink",
+        "ice skating rink in Nashville TN",
+        "Centennial Sportsplex Ice Arenas Nashville TN"
+      ],
+      "secondary_keywords": [
+        "Centennial Sportsplex public skating",
+        "Centennial Sportsplex ice arena schedule",
+        "Centennial Sportsplex Ice Arena Google Calendar",
+        "learn to skate Centennial Sportsplex",
+        "Nashville Skating Academy Centennial Sportsplex",
+        "open hockey Nashville Centennial Sportsplex",
+        "stick and puck Centennial Sportsplex",
+        "skate sharpening Centennial Sportsplex",
+        "indoor ice rink near Centennial Park Nashville"
+      ],
+      "intent_groups": {
+        "public_skate": [
+          "Centennial Sportsplex public skating schedule",
+          "public ice skating hours Centennial Sportsplex Nashville",
+          "Centennial Sportsplex Ice Arena Google Calendar public skate",
+          "what to expect at public skating Centennial Sportsplex"
+        ],
+        "lessons": [
+          "learn to skate classes Centennial Sportsplex Nashville",
+          "Nashville Skating Academy learn to skate Centennial Sportsplex",
+          "figure skating lessons Centennial Sportsplex Nashville",
+          "how to sign up for skating lessons at Centennial Sportsplex"
+        ],
+        "freestyle": [
+          "how to find freestyle ice time at Centennial Sportsplex",
+          "what label to look for on the Centennial Sportsplex Ice Arena calendar for freestyle",
+          "Centennial Sportsplex figure practice session schedule information"
+        ],
+        "sharpening": [
+          "Centennial Sportsplex skate sharpening",
+          "skate sharpening turnaround Centennial Sportsplex",
+          "skate sharpening price Centennial Sportsplex"
+        ],
+        "rentals": [
+          "Centennial Sportsplex skate rental",
+          "is skate rental included with Centennial Sportsplex public skating",
+          "what to bring for public skating Centennial Sportsplex"
+        ],
+        "hockey": [
+          "Centennial Sportsplex open hockey schedule",
+          "Centennial Sportsplex stick and puck schedule",
+          "adult hockey leagues Centennial Sportsplex Nashville",
+          "open hockey rules Centennial Sportsplex"
+        ]
+      },
+      "meta_title": "Centennial Sportsplex Ice Arenas | Ice Skating Rink in Nashville, TN",
+      "meta_description": "Find public skating schedules, learn-to-skate information, and hockey session details for Centennial Sportsplex Ice Arenas in Nashville, Tennessee. Includes the official Ice Arena Google Calendar, rental notes, and skate sharpening info.",
+      "snippet": "Centennial Sportsplex Ice Arenas in Nashville, TN has two full-size indoor rinks with public skating, lessons through Nashville Skating Academy, and hockey sessions listed on the official Ice Arena Google Calendar.",
+      "short_description": "Centennial Sportsplex Ice Arenas is an indoor ice facility in Nashville, Tennessee with two full-size sheets. Use the official Ice Arena Google Calendar to confirm public skating sessions, and see the site for lessons and hockey programs.",
+      "long_description": "Across from Centennial Park, Centennial Sportsplex Ice Arenas in Nashville, TN is a year-round ice center with two full-size sheets. The rink lists each sheet at 200 feet by 85 feet, which is helpful if you are comparing rink dimensions for hockey or figure skating.\n\nSession times are not fixed week to week. The rink points skaters to the Centennial Sportsplex Ice Arena Google Calendar, and the public skating page links you back to that calendar. If you are planning a visit, check the event titles on the calendar to confirm whether a slot is public skating, hockey, or a special program.\n\nOn-site amenities listed by the rink include skate rental, spectator seating, lockers, a concession stand, and and skate sharpening. Learn-to-skate and figure skating training is offered through Nashville Skating Academy, and adult open hockey and stick and puck details are outlined on the official hockey program page.",
+      "helpful_blurbs": [
+        "Trying to plan around a busy week in Nashville? Start with the Ice Arena Google Calendar, since public skating and hockey sessions are posted and adjusted by month.",
+        "If you are working on fundamentals, the Learn To Ice Skate page points you to Nashville Skating Academy for learn-to-skate and figure skating training. That is a good path if you want structured progression instead of only public sessions.",
+        "Hockey players can use the adult open hockey page to understand age limits, required gear, and how sessions are capped. Then jump to the calendar to find the next date that fits your schedule.",
+        "Need a tune-up before your next session? Explore skate sharpening options and turnaround notes, and browse other Tennessee rinks to compare services and amenities.",
+        "Looking for focused practice ice? Check the freestyle hub for how to search calendars, then verify whether Centennial’s calendar lists freestyle-style sessions for your target week."
+      ],
+      "what_to_know": [
+        "The facility lists two full-size ice rinks with sheets measuring 200 feet by 85 feet.",
+        "Public skating sessions vary by day and month, so the rink recommends using the Ice Arena Google Calendar to confirm times.",
+        "The public skating rates page states that skate rental is included with admission for public sessions.",
+        "Lessons are offered through Nashville Skating Academy, and the Learn To Ice Skate page lists recurring class times for their seven-week series.",
+        "The adult open hockey page lists a posted session price and notes that schedules are published on the Ice Arena Google Calendar.",
+        "Adult open hockey and stick and puck sessions have published rules, including required protective gear and no checking.",
+        "Skate sharpening is available for figure and hockey skates, with the rink asking you to allow about 24 hours for completion.",
+        "Amenities listed on the ice skating page include spectator seating, lockers, and a concession stand.",
+        "The rink address is 222 25th Ave. N., Nashville, TN 37203, and the Sportsplex is described as directly across the street from Centennial Park."
+      ]
     },
-    "sources": ["Official Website"],
-    "last_verified": "2023-10-27T00:00:00.000Z"
+    "sources": [
+      "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating",
+      "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating/public-skating",
+      "https://calendar.google.com/calendar/embed?ctz=America%2FChicago&src=sicdsqf3dmthsgglhcq3ka1l74%40group.calendar.google.com",
+      "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating/learn-skate",
+      "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating/adult-open-hockey",
+      "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating/skate-sharpening",
+      "https://www.nashville.gov/departments/parks/centennial-sportsplex/contact-us/directions",
+      "https://www.nashville.gov/departments/parks/centennial-sportsplex/contact-us/frequently-asked-questions",
+      "https://www.google.com/maps?aq=0&f=q&geocode&hl=en&hnear=222+25th+Ave+N,+Nashville,+Davidson,+Tennessee+37203&hq&ie=UTF8&ll=36.150264,-86.810317&oq=222+25&q=222+25th+Avenue+North,+Nashville,+TN&sll=36.18664,-86.785245&source=embed&sspn=0.761449,1.132965&t=h&z=14",
+      "https://www.facebook.com/centsportsplex/"
+    ],
+    "evidence": [
+      {
+        "field": "address.street",
+        "url": "https://www.nashville.gov/departments/parks/centennial-sportsplex/contact-us/directions"
+      },
+      {
+        "field": "address.postal_code",
+        "url": "https://www.nashville.gov/departments/parks/centennial-sportsplex/contact-us/directions"
+      },
+      {
+        "field": "geo.latitude",
+        "url": "https://www.google.com/maps?aq=0&f=q&geocode&hl=en&hnear=222+25th+Ave+N,+Nashville,+Davidson,+Tennessee+37203&hq&ie=UTF8&ll=36.150264,-86.810317&oq=222+25&q=222+25th+Avenue+North,+Nashville,+TN&sll=36.18664,-86.785245&source=embed&sspn=0.761449,1.132965&t=h&z=14"
+      },
+      {
+        "field": "geo.longitude",
+        "url": "https://www.google.com/maps?aq=0&f=q&geocode&hl=en&hnear=222+25th+Ave+N,+Nashville,+Davidson,+Tennessee+37203&hq&ie=UTF8&ll=36.150264,-86.810317&oq=222+25&q=222+25th+Avenue+North,+Nashville,+TN&sll=36.18664,-86.785245&source=embed&sspn=0.761449,1.132965&t=h&z=14"
+      },
+      {
+        "field": "phone",
+        "url": "https://www.nashville.gov/departments/parks/centennial-sportsplex/contact-us/frequently-asked-questions"
+      },
+      {
+        "field": "facility.indoor",
+        "url": "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating"
+      },
+      {
+        "field": "facility.seasonality",
+        "url": "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating"
+      },
+      {
+        "field": "facility.number_of_sheets",
+        "url": "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating"
+      },
+      {
+        "field": "facility.sheet_sizes",
+        "url": "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating"
+      },
+      {
+        "field": "schedule_links.public_calendar_url",
+        "url": "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating/public-skating"
+      },
+      {
+        "field": "schedule_links.public_calendar_url",
+        "url": "https://calendar.google.com/calendar/embed?ctz=America%2FChicago&src=sicdsqf3dmthsgglhcq3ka1l74%40group.calendar.google.com"
+      },
+      {
+        "field": "schedule_links.hockey_calendar_url",
+        "url": "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating/adult-open-hockey"
+      },
+      {
+        "field": "schedule_links.lessons_url",
+        "url": "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating/learn-skate"
+      },
+      {
+        "field": "offerings.public_skating",
+        "url": "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating/public-skating"
+      },
+      {
+        "field": "offerings.learn_to_skate",
+        "url": "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating/learn-skate"
+      },
+      {
+        "field": "offerings.figure_skating",
+        "url": "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating/learn-skate"
+      },
+      {
+        "field": "offerings.hockey",
+        "url": "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating"
+      },
+      {
+        "field": "offerings.open_hockey",
+        "url": "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating/adult-open-hockey"
+      },
+      {
+        "field": "offerings.stick_and_puck",
+        "url": "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating/adult-open-hockey"
+      },
+      {
+        "field": "pricing.public_skate.adult",
+        "url": "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating/public-skating"
+      },
+      {
+        "field": "pricing.public_skate.youth",
+        "url": "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating/public-skating"
+      },
+      {
+        "field": "pricing.spectators",
+        "url": "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating/public-skating"
+      },
+      {
+        "field": "rentals.available",
+        "url": "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating"
+      },
+      {
+        "field": "rentals.included_with_admission",
+        "url": "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating/public-skating"
+      },
+      {
+        "field": "rentals.size_range_min",
+        "url": "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating/public-skating",
+        "notes": "The published rates page does not specify rental size ranges."
+      },
+      {
+        "field": "sharpening.available",
+        "url": "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating"
+      },
+      {
+        "field": "sharpening.pricing_base",
+        "url": "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating/skate-sharpening"
+      },
+      {
+        "field": "sharpening.pricing_rush",
+        "url": "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating/skate-sharpening"
+      },
+      {
+        "field": "sharpening.turnaround",
+        "url": "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating/skate-sharpening"
+      },
+      {
+        "field": "amenities.lockers",
+        "url": "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating"
+      },
+      {
+        "field": "amenities.spectator_seating",
+        "url": "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating"
+      },
+      {
+        "field": "amenities.concessions",
+        "url": "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating"
+      },
+      {
+        "field": "amenities.pro_shop",
+        "url": "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating",
+        "notes": "The ice skating pages do not confirm a pro shop."
+      },
+      {
+        "field": "amenities.skate_aids",
+        "url": "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating",
+        "notes": "The ice skating pages do not confirm skate aids."
+      },
+      {
+        "field": "freestyle.available",
+        "url": "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating",
+        "notes": "Freestyle figure sessions are not explicitly listed in the ice skating program descriptions."
+      },
+      {
+        "field": "freestyle.available",
+        "url": "https://calendar.google.com/calendar/embed?ctz=America%2FChicago&src=sicdsqf3dmthsgglhcq3ka1l74%40group.calendar.google.com",
+        "notes": "Use the official calendar to look for events labeled Freestyle or Figure Freestyle."
+      }
+    ],
+    "last_verified": "2025-12-18"
   },
   {
     "id": "tn-antioch-ford",
