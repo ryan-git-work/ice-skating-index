@@ -467,5 +467,327 @@
     },
     "sources": ["Official Website"],
     "last_verified": "2023-10-27T00:00:00.000Z"
+  },
+  {
+    "id": "tn-nashville-ford-ice-center-bellevue-nashville-tn",
+    "slug": "ford-ice-center-bellevue-nashville-tn",
+    "name": "Ford Ice Center Bellevue",
+    "alternate_names": ["Ford Ice Center - Bellevue", "Ford Ice Bellevue", "Ford Ice Center at Bellevue"],
+    "category": "Ice Skating Rink",
+    "operator": "Nashville Predators (Ford Ice Center)",
+    "address": {
+      "street": "7638 B Hwy 70 S",
+      "city": "Nashville",
+      "state": "TN",
+      "postal_code": "37221",
+      "country": "US"
+    },
+    "geo": {
+      "latitude": null,
+      "longitude": null
+    },
+    "phone": "615-744-6640",
+    "email": null,
+    "website": "https://www.nhl.com/predators/fordicecenter/bellevue",
+    "google_maps_url": null,
+    "social_links": [
+      {
+        "platform": "Instagram",
+        "url": "https://www.instagram.com/fordicecenter/?hl=en"
+      }
+    ],
+    "place_ids": {
+      "google_place_id": null,
+      "osm_id": null
+    },
+    "facility": {
+      "indoor": "unknown",
+      "seasonality": "unknown",
+      "number_of_sheets": 2,
+      "sheet_sizes": []
+    },
+    "schedule_links": {
+      "public_calendar_url": "https://member.daysmartrecreation.com/#/online/predators/calendar",
+      "freestyle_calendar_url": null,
+      "hockey_calendar_url": null,
+      "lessons_url": "https://www.nhl.com/predators/fordicecenter/learn-to-skate"
+    },
+    "offerings": {
+      "public_skating": "true",
+      "learn_to_skate": "true",
+      "figure_skating": "true",
+      "hockey": "true",
+      "open_hockey": "unknown",
+      "stick_and_puck": "unknown"
+    },
+    "pricing": {
+      "public_skate": {
+        "adult": null,
+        "youth": null
+      },
+      "spectators": null,
+      "notes": "Public skate pricing on the official Ford Ice Center Public Skating page is listed by session type rather than by age. The page lists Matinee Public Skates at $10.98 plus taxes and Evening Public Skates at $13.73 plus taxes, and it states that these prices include rental skates if needed. The same page also states the facility is cashless and that public skate sessions require online registration through DaySmart, including creating an account and checking in at the front desk."
+    },
+    "rentals": {
+      "available": "true",
+      "included_with_admission": "true",
+      "size_range_min": null,
+      "size_range_max": null,
+      "fit_tips": [
+        "Wear long socks so rental skates feel more comfortable and reduce rubbing.",
+        "Plan for a snug fit with your heel seated back in the boot, and re-tie once after you stand up."
+      ],
+      "recommendations": [
+        "If you plan to skate regularly, consider bringing your own skates for a more consistent fit, especially for lessons or figure sessions.",
+        "If you are unsure of sizing, arrive early so you have time to swap skates before your session starts."
+      ],
+      "notes": "The official Public Skating page states that public skate prices include rental skates if needed. Sources reviewed did not confirm the full rental size range or whether rentals are available for every type of ice time beyond public skate."
+    },
+    "sharpening": {
+      "available": "true",
+      "turnaround": null,
+      "pricing_base": null,
+      "pricing_rush": null,
+      "add_ons": [],
+      "notes": "Perani's Hockey World at Ford Ice Center Bellevue lists that this location has a Bauer Prosharp skate sharpener. Sources reviewed did not confirm pricing or turnaround time, so it is best to call the pro shop before you go.",
+      "info_url": "https://www.peranishockeyworld.com/Location/Store?id=TN0010"
+    },
+    "freestyle": {
+      "available": "true",
+      "labels_to_search_for": ["Freestyle", "Figure Freestyle", "Freestyle Ice", "Figure Session"],
+      "who_its_for": [
+        "Figure skaters looking for a structured freestyle-style session that includes instruction and supervised practice.",
+        "Skaters working with coaches through the listed skating academy program on the official Ford Ice Center site."
+      ],
+      "how_to_find_times": "Open the official DaySmart calendar and filter by the Bellevue location. Then scan the event titles for labels like Freestyle, Figure Freestyle, Freestyle Sessions, or Coaches Lesson Ice. If the calendar view is busy, switch views or use any available filters and look for the session name rather than assuming a consistent weekly pattern.",
+      "cost_notes": "The official Ford Ice Center figure skating freestyle page lists a 7-week option at $175 for one class per week at all locations, and an accelerated 7-week option for Bellevue at $250 for two classes per week. Because programs change, confirm current dates and availability on the official registration link before purchasing.",
+      "etiquette_tips": [
+        "Skate with your head up and yield the right of way to skaters in active lessons or run-throughs.",
+        "Avoid standing on the ice near the center circle or jump lanes, and move to the boards if you need to stop and adjust equipment.",
+        "If you are unsure where to practice, ask the coach or staff which areas are intended for spins, jumps, and general stroking."
+      ],
+      "notes": "The official Ford Ice Center site describes freestyle figure skating sessions hosted by TPH Nashville Skating Academy at the Bellevue location, and it describes these as 60-minute sessions with instruction plus supervised practice. Sources reviewed did not confirm separate drop-in freestyle ice times outside of this program, so use the DaySmart calendar to verify what is currently scheduled for Bellevue."
+    },
+    "amenities": {
+      "lockers": "unknown",
+      "spectator_seating": "unknown",
+      "concessions": "true",
+      "pro_shop": "true",
+      "skate_aids": "unknown"
+    },
+    "audiences": ["Families", "Beginners", "Learn-to-Skate Students", "Figure Skaters", "Hockey Players"],
+    "tags": ["bellevue", "nashville", "one-bellevue-place", "twin-rink", "public-skating", "learn-to-skate", "figure-skating", "hockey", "peranis-hockey-world", "draft-picks"],
+    "faq": [
+      {
+        "q": "How do I find the public skate schedule for Ford Ice Center Bellevue in Nashville, TN?",
+        "a": "Use the official DaySmart calendar linked on Ice Skating Index and filter for the Bellevue location. Look for events labeled Public Skate, and open the event details to confirm start time, registration requirements, and any session notes."
+      },
+      {
+        "q": "Do I have to register online before I go to public skating at Ford Ice Center Bellevue?",
+        "a": "Yes. The official Public Skating page states that public skate sessions are online registration only and that you must create a DaySmart account before registering. Plan to check in at the front desk before you step on the ice."
+      },
+      {
+        "q": "Are skate rentals available at Ford Ice Center Bellevue?",
+        "a": "Yes for public skate. The official Public Skating page states that public skate pricing includes rental skates if needed. If you are attending a different type of session, confirm the listing in DaySmart or ask staff, because sources reviewed did not verify rentals for every category of ice time."
+      },
+      {
+        "q": "Does Ford Ice Center Bellevue offer figure skating freestyle sessions?",
+        "a": "The official Ford Ice Center site lists a figure skating freestyle program hosted by TPH Nashville Skating Academy at the Bellevue location, described as a session with instruction and supervised practice. To confirm what is currently running, check the official program page and then verify dates and any additional listings in the DaySmart calendar."
+      },
+      {
+        "q": "Where can I get my skates sharpened at Ford Ice Center Bellevue?",
+        "a": "Perani's Hockey World is listed as an on-site pro shop at Ford Ice Center Bellevue, and the store listing notes a Bauer Prosharp skate sharpener at this location. Because pricing and turnaround were not confirmed in sources reviewed, call the pro shop before you arrive if timing matters."
+      }
+    ],
+    "seo": {
+      "primary_keywords": [
+        "Ford Ice Center Bellevue ice rink",
+        "ice skating rink in Nashville TN",
+        "ice skating rink in Bellevue Nashville TN",
+        "Ford Ice Center Bellevue public skating",
+        "Ford Ice Center Bellevue schedule"
+      ],
+      "secondary_keywords": [
+        "public skate Bellevue Nashville",
+        "Learn to Skate Ford Ice Center Bellevue",
+        "figure skating freestyle Bellevue Nashville",
+        "TPH Nashville Skating Academy freestyle sessions",
+        "hockey programs Ford Ice Center Bellevue",
+        "skate rentals Ford Ice Center Bellevue",
+        "skate sharpening Ford Ice Center Bellevue",
+        "Perani's Hockey World Bellevue"
+      ],
+      "intent_groups": {
+        "public_skate": [
+          "Ford Ice Center Bellevue public skate schedule",
+          "public skating in Bellevue Nashville TN",
+          "how to register for public skate at Ford Ice Center Bellevue",
+          "DaySmart public skate Ford Ice Center Bellevue",
+          "public skate prices Ford Ice Center Bellevue"
+        ],
+        "lessons": [
+          "skating lessons at Ford Ice Center Bellevue",
+          "Learn to Skate Ford Ice Center Bellevue registration",
+          "how to start Learn to Skate in Bellevue Nashville",
+          "what to bring to Learn to Skate at Ford Ice Center Bellevue"
+        ],
+        "freestyle": [
+          "figure skating freestyle sessions at Ford Ice Center Bellevue",
+          "TPH Nashville Skating Academy freestyle Bellevue",
+          "how to find freestyle times on DaySmart for Bellevue"
+        ],
+        "sharpening": [
+          "skate sharpening at Ford Ice Center Bellevue",
+          "Perani's Hockey World Bellevue skate sharpener",
+          "where to sharpen skates in Bellevue Nashville"
+        ],
+        "rentals": [
+          "skate rentals at Ford Ice Center Bellevue",
+          "are rental skates included with public skate Bellevue",
+          "what size rental skates does Ford Ice Center Bellevue have"
+        ],
+        "hockey": [
+          "hockey programs at Ford Ice Center Bellevue",
+          "how to find hockey ice times at Ford Ice Center Bellevue",
+          "Ford Ice Center Bellevue hockey schedule DaySmart"
+        ]
+      },
+      "meta_title": "Ford Ice Center Bellevue (Nashville, TN) | Schedule, Public Skate, Lessons",
+      "meta_description": "Ford Ice Center Bellevue in Nashville, Tennessee is a twin-rink facility at One Bellevue Place. Find the official DaySmart schedule link, public skate details, Learn to Skate info, and verified freestyle program resources.",
+      "snippet": "Ford Ice Center Bellevue in Nashville, TN is a twin-rink facility at One Bellevue Place with official DaySmart scheduling, public skating info, and on-site amenities like a pro shop and restaurant.",
+      "short_description": "Ford Ice Center Bellevue in Nashville, Tennessee is a twin-rink ice facility at One Bellevue Place with scheduling handled through DaySmart. Use the official links here to find public skate sessions, learn-to-skate options, and figure skating freestyle program details.",
+      "long_description": "If you are looking for an ice rink on the west side of Nashville, Ford Ice Center Bellevue in Nashville, TN is located at One Bellevue Place and is listed as opening in October 2019. The official rink page describes it as a twin-rink facility and highlights on-site amenities like Draft Picks and Perani's Hockey World.\n\nScheduling and registration are tied to DaySmart, so the fastest way to plan a visit is to open the official calendar and filter for the Bellevue location. The public skating page also notes the facility is cashless and that public skate requires online registration, which is helpful to know before you drive over.\n\nFor figure skaters, the official site lists a freestyle figure skating program hosted by TPH Nashville Skating Academy at the Bellevue location. If you are trying to locate freestyle times, use the DaySmart calendar and search the event titles for freestyle-related labels, then confirm the details inside each listing.",
+      "helpful_blurbs": [
+        "Need a quick plan for tonight? Start with the DaySmart calendar and filter for Bellevue so you are not guessing which location a session belongs to.",
+        "If you are coming for public skate, read the official public skating page first since it explains cashless payment and online-only registration.",
+        "Figure skaters can use the freestyle hub approach by searching the calendar for freestyle labels and cross-checking the official program page for registration details.",
+        "Looking for gear help while you are there? The rink page lists Perani's Hockey World on-site, and you can explore skate sharpening options through the pro shop listing."
+      ],
+      "what_to_know": [
+        "Ford Ice Center Bellevue is listed at One Bellevue Place in Nashville, Tennessee, with an address on Hwy 70 S.",
+        "The official rink page describes the Bellevue location as a twin-rink facility, so you may see multiple sheets of ice operating at once.",
+        "The official public skating page states the facility is cashless, so plan to pay digitally rather than bringing cash.",
+        "The official public skating page states public skate is online registration only, and you must create a DaySmart account to register.",
+        "Public skate prices are listed by session type, and the official page states rental skates are included if needed.",
+        "If you are trying to find freestyle times, use the DaySmart calendar and search event titles for freestyle-related labels rather than assuming set weekly times.",
+        "The official site lists a figure skating freestyle program hosted by TPH Nashville Skating Academy at the Bellevue location, and the registration link is on the official program page.",
+        "Perani's Hockey World is listed as an on-site pro shop, and the store listing notes a Bauer Prosharp skate sharpener at this location.",
+        "If a detail you need is not listed on the rink page, check the DaySmart event listing itself because it often includes the most current notes and requirements."
+      ]
+    },
+    "sources": [
+      "https://www.nhl.com/predators/fordicecenter/bellevue",
+      "https://member.daysmartrecreation.com/#/online/predators/calendar",
+      "https://www.nhl.com/predators/fordicecenter/public-skating",
+      "https://www.nhl.com/predators/fordicecenter/learn-to-skate",
+      "https://www.nhl.com/predators/fordicecenter/freestyle-figure-skating",
+      "https://www.nashville.gov/departments/sports-authority/ford-ice-center-bellevue",
+      "https://www.peranishockeyworld.com/Location/Store?id=TN0010",
+      "https://www.jrpredators.com/facilites/",
+      "https://www.instagram.com/fordicecenter/?hl=en"
+    ],
+    "evidence": [
+      {
+        "field": "address.street",
+        "url": "https://www.nashville.gov/departments/sports-authority/ford-ice-center-bellevue",
+        "note": "Lists the Bellevue rink location as 7638 B Hwy 70 S, Nashville, TN 37221."
+      },
+      {
+        "field": "phone",
+        "url": "https://www.nashville.gov/departments/sports-authority/ford-ice-center-bellevue",
+        "note": "Lists the phone number as 615-744-6640."
+      },
+      {
+        "field": "facility.number_of_sheets",
+        "url": "https://www.nhl.com/predators/fordicecenter/bellevue",
+        "note": "Describes the Bellevue location as a twin-rink facility."
+      },
+      {
+        "field": "facility.indoor",
+        "url": "https://www.nhl.com/predators/fordicecenter/bellevue",
+        "note": "The official page describes a full-service bar and restaurant and other amenities, but it does not explicitly label the facility as indoor or outdoor."
+      },
+      {
+        "field": "schedule_links.public_calendar_url",
+        "url": "https://member.daysmartrecreation.com/#/online/predators/calendar",
+        "note": "Official DaySmart calendar used to view schedules and register for sessions."
+      },
+      {
+        "field": "offerings.public_skating",
+        "url": "https://www.nhl.com/predators/fordicecenter/public-skating",
+        "note": "Official Public Skating page describes public skate registration and pricing."
+      },
+      {
+        "field": "offerings.learn_to_skate",
+        "url": "https://www.nhl.com/predators/fordicecenter/learn-to-skate",
+        "note": "Official Learn to Skate page includes Bellevue details and registration links."
+      },
+      {
+        "field": "offerings.figure_skating",
+        "url": "https://www.nhl.com/predators/fordicecenter/freestyle-figure-skating",
+        "note": "Official freestyle figure skating page states sessions are hosted at the Bellevue location."
+      },
+      {
+        "field": "offerings.hockey",
+        "url": "https://www.jrpredators.com/facilites/",
+        "note": "Describes the Bellevue facility as offering numerous hockey programs and identifies it as a twin-rink recreational facility."
+      },
+      {
+        "field": "offerings.open_hockey",
+        "url": "https://www.nhl.com/predators/fordicecenter/bellevue",
+        "note": "Sources reviewed did not confirm location-specific open hockey offerings for Bellevue. Use the DaySmart calendar and look for open hockey labels tied to the Bellevue location."
+      },
+      {
+        "field": "offerings.stick_and_puck",
+        "url": "https://www.nhl.com/predators/fordicecenter/bellevue",
+        "note": "Sources reviewed did not confirm location-specific stick and puck offerings for Bellevue. Use the DaySmart calendar and look for stick time or stick and puck style labels tied to the Bellevue location."
+      },
+      {
+        "field": "pricing.notes",
+        "url": "https://www.nhl.com/predators/fordicecenter/public-skating",
+        "note": "Lists matinee and evening public skate pricing, cashless policy, and online-only registration requirement."
+      },
+      {
+        "field": "rentals.available",
+        "url": "https://www.nhl.com/predators/fordicecenter/public-skating",
+        "note": "States that public skate pricing includes rental skates if needed."
+      },
+      {
+        "field": "sharpening.available",
+        "url": "https://www.peranishockeyworld.com/Location/Store?id=TN0010",
+        "note": "Perani's store listing notes a Bauer Prosharp skate sharpener at this Bellevue location."
+      },
+      {
+        "field": "amenities.concessions",
+        "url": "https://www.nhl.com/predators/fordicecenter/bellevue",
+        "note": "Describes on-site food and beverage options, including a full-service bar and restaurant."
+      },
+      {
+        "field": "amenities.pro_shop",
+        "url": "https://www.nhl.com/predators/fordicecenter/bellevue",
+        "note": "Lists Perani's Hockey World as an on-site amenity at the Bellevue location."
+      },
+      {
+        "field": "freestyle.available",
+        "url": "https://www.nhl.com/predators/fordicecenter/freestyle-figure-skating",
+        "note": "States that TPH Nashville Skating Academy hosts freestyle sessions at Ford Ice Center Bellevue."
+      },
+      {
+        "field": "freestyle.cost_notes",
+        "url": "https://www.nhl.com/predators/fordicecenter/freestyle-figure-skating",
+        "note": "Lists program pricing for 7-week and accelerated options, including the Bellevue accelerated option."
+      },
+      {
+        "field": "amenities.lockers",
+        "url": "https://www.jrpredators.com/facilites/",
+        "note": "Mentions locker rooms for team use, but sources reviewed did not confirm public lockers for general skaters."
+      },
+      {
+        "field": "geo.latitude",
+        "url": "https://www.nashville.gov/departments/sports-authority/ford-ice-center-bellevue",
+        "note": "Sources reviewed confirmed the street address but did not provide official latitude and longitude values."
+      }
+    ],
+    "last_verified": "2025-12-18"
   }
 ]
