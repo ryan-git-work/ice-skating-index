@@ -1,0 +1,444 @@
+{
+"id": "tn-antioch-ford-ice-center-antioch-antioch-tn",
+"slug": "ford-ice-center-antioch-antioch-tn",
+"name": "Ford Ice Center Antioch",
+"alternate_names": [],
+"category": "Ice Skating Rink",
+"operator": "Nashville Predators",
+"address": {
+"street": "5264 Hickory Hollow Parkway",
+"city": "Antioch",
+"state": "TN",
+"postal_code": "37013",
+"country": "US"
+},
+"geo": {
+"latitude": 36.0533462,
+"longitude": -86.6567104
+},
+"phone": "(615) 742-4399",
+"email": null,
+"website": "https://www.nhl.com/predators/fordicecenter/antioch
+",
+"google_maps_url": "https://www.google.com/maps?cid=5082070158755180070
+",
+"social_links": [],
+"place_ids": {
+"google_place_id": null,
+"osm_id": null
+},
+"facility": {
+"indoor": "unknown",
+"seasonality": "unknown",
+"number_of_sheets": 2,
+"sheet_sizes": [
+"NHL",
+"NHL"
+]
+},
+"schedule_links": {
+"public_calendar_url": "https://apps.daysmartrecreation.com/dash/x/
+",
+"freestyle_calendar_url": null,
+"hockey_calendar_url": null,
+"lessons_url": "https://www.nhl.com/predators/fordicecenter/learn-to-skate
+"
+},
+"offerings": {
+"public_skating": true,
+"learn_to_skate": true,
+"figure_skating": true,
+"hockey": true,
+"open_hockey": true,
+"stick_and_puck": true
+},
+"pricing": {
+"public_skate": {
+"adult": null,
+"youth": null
+},
+"spectators": null,
+"notes": "The operator states that Ford Ice Center is a cashless facility and that public skate sessions are limited to online registration only through DaySmart. The operator lists two public-skate price tiers rather than adult and youth pricing: matinee public skates are $10.98 plus tax and evening public skates are $13.73 plus tax. The listed public-skate prices include rental skates if needed. Skaters are asked to check in at the front desk before skating, and cancellations must be made with at least 24 hours notice to receive a refund."
+},
+"rentals": {
+"available": true,
+"included_with_admission": true,
+"size_range_min": null,
+"size_range_max": null,
+"fit_tips": [
+"Wear tall socks so the boot does not rub your ankle.",
+"If the skate feels loose at the heel, re-lace and snug the ankle before stepping onto the ice.",
+"If you have your own skates and they fit well, bringing them can make the session more comfortable."
+],
+"recommendations": [
+"Arrive a little early so you have time to get fitted and laced up before your session starts.",
+"If you are attending stick time or open hockey, plan to bring your own equipment since rentals are not currently provided for those sessions."
+],
+"notes": "Public skating pricing is listed as including rental skates if needed. For stick time and open hockey style sessions, the operator notes that equipment rentals are not currently available, including skates."
+},
+"sharpening": {
+"available": true,
+"turnaround": null,
+"pricing_base": 12.0,
+"pricing_rush": null,
+"add_ons": [],
+"notes": "Skate sharpening is available through the on-site Perani\u2019s Hockey World arena pro shop. Perani\u2019s lists pro shop sharpening at $12.00, but availability and pricing can change, so confirm at the counter before you commit.",
+"info_url": "https://www.hockeyworld.com/index/page/store_details/store_id/22
+"
+},
+"freestyle": {
+"available": true,
+"labels_to_search_for": [
+"Freestyle",
+"Figure Freestyle",
+"Freestyle Ice",
+"Figure Session"
+],
+"who_its_for": [
+"Figure skaters who want focused ice time for skills work and coached development.",
+"Skaters who are progressing through Learn to Skate levels and are ready for more structured practice."
+],
+"how_to_find_times": "Start on the Ford Ice Center DaySmart schedule and select the Antioch location. Scan the calendar for session names that include the words listed in the labels to search for, then open the session details to confirm eligibility and any registration requirement. If you do not see a clear freestyle label, check the Ford Ice Center freestyle sessions page for registration details and look for figure-skating program listings inside DaySmart.",
+"cost_notes": "The operator lists a 60-minute freestyle program format that includes instruction and supervised practice, with pricing posted as 7-week for $175 (one class per week) for all locations. For Antioch, a 7-week accelerated option is listed at $340 (three classes per week).",
+"etiquette_tips": [
+"Skate with awareness and give right of way to skaters running programs or lessons.",
+"Do not set up impromptu games or shoot pucks during figure-focused sessions.",
+"If a coach is teaching, keep a safe buffer so jumps and spins have room."
+],
+"notes": "Freestyle sessions are promoted for Ford Ice Center Antioch, but specific session dates and times are posted in DaySmart and can change."
+},
+"amenities": {
+"lockers": "unknown",
+"spectator_seating": true,
+"concessions": true,
+"pro_shop": true,
+"skate_aids": "unknown"
+},
+"audiences": [
+"families",
+"beginners",
+"adult skaters",
+"figure skaters",
+"hockey players"
+],
+"tags": [
+"twin-rink",
+"daysmart-registration",
+"peranis-hockey-world",
+"public-skating",
+"open-hockey",
+"stick-time"
+],
+"faq": [
+{
+"q": "Where do I find the public skating schedule for Ford Ice Center Antioch in Antioch, TN?",
+"a": "Use the Ford Ice Center DaySmart schedule and make sure the Antioch location is selected. Public skate sessions are listed there, and registration is handled online through DaySmart."
+},
+{
+"q": "Do I need to register online before I go to public skate at Ford Ice Center Antioch?",
+"a": "Yes. The operator states that public skate sessions are limited to online registration only and that you need a DaySmart account. Plan to check in at the front desk before going on the ice."
+},
+{
+"q": "Are skate rentals available at Ford Ice Center Antioch?",
+"a": "For public skating, the operator lists rental skates as included in the public-skate price if you need them. For stick time and open hockey style sessions, the operator notes that equipment rentals are not currently available, including skates."
+},
+{
+"q": "Does Ford Ice Center Antioch offer figure skating freestyle ice?",
+"a": "The operator promotes figure skating freestyle sessions at the Antioch location, with registration information posted online. For specific dates and times, check the DaySmart schedule and look for freestyle or figure-session labels."
+},
+{
+"q": "Is skate sharpening available on site?",
+"a": "Perani\u2019s Hockey World operates an arena pro shop at Ford Ice Center Antioch and indicates it has skate sharpening equipment. For current pricing and turnaround, contact the pro shop directly or ask at the counter when you arrive."
+}
+],
+"seo": {
+"primary_keywords": [
+"Ford Ice Center Antioch ice rink",
+"ice skating rink in Antioch TN"
+],
+"secondary_keywords": [
+"Ford Ice Center Antioch public skating",
+"public skate Antioch TN",
+"Learn to Skate Antioch TN",
+"figure skating Antioch TN",
+"freestyle figure skating Antioch TN",
+"open hockey Antioch TN",
+"stick and puck Antioch TN",
+"skate rentals Antioch TN",
+"skate sharpening Antioch TN",
+"Perani's Hockey World Antioch"
+],
+"intent_groups": {
+"public_skate": [
+"Ford Ice Center Antioch public skate schedule",
+"how to register for public skating at Ford Ice Center Antioch",
+"public skating prices at Ford Ice Center Antioch"
+],
+"lessons": [
+"Learn to Skate at Ford Ice Center Antioch",
+"ice skating lessons near Antioch TN",
+"how to sign up for Ford Ice Center Learn to Skate"
+],
+"freestyle": [
+"how to find freestyle ice at Ford Ice Center Antioch",
+"figure skating freestyle sessions Antioch TN",
+"TPH Nashville Skating Academy freestyle registration"
+],
+"sharpening": [
+"skate sharpening at Ford Ice Center Antioch",
+"Perani's Hockey World Antioch sharpening",
+"how to get skates sharpened near Antioch TN"
+],
+"rentals": [
+"does Ford Ice Center Antioch include skate rentals",
+"skate rental information Ford Ice Center Antioch",
+"what to bring to public skate at Ford Ice Center Antioch"
+],
+"hockey": [
+"open hockey schedule Ford Ice Center Antioch",
+"stick time schedule Ford Ice Center Antioch",
+"adult open hockey breakfast club Antioch"
+]
+},
+"meta_title": "Ford Ice Center Antioch Ice Rink in Antioch, TN | Public Skating, Lessons, Hockey",
+"meta_description": "Ford Ice Center Antioch is a twin-rink ice facility in Antioch, Tennessee with public skating, Learn to Skate programs, hockey ice, and figure skating freestyle options. Find the official DaySmart schedule, registration details, and on-site amenities.",
+"snippet": "Ford Ice Center Antioch in Antioch, TN is a twin-rink facility with public skating and DaySmart scheduling for skating and hockey sessions.",
+"short_description": "Ford Ice Center Antioch in Antioch, Tennessee offers public skating along with hockey and figure skating programming. Schedules and registration are managed through the operator\u2019s DaySmart calendar.",
+"long_description": "If you want ice time in Antioch, Tennessee, Ford Ice Center Antioch is the original Ford Ice Center location and it opened in 2014. The operator describes it as a twin-rink facility, which means two sheets of ice can host different programs at the same time.\n\nFor schedules, this rink runs on the Ford Ice Center DaySmart system. The operator notes that public skate is cashless and online registration only, so the quickest path is to create a DaySmart account, reserve your session, and then check in at the front desk before you step onto the ice.\n\nProgramming here spans public skating, hockey, and figure skating. For hockey-focused ice, the open ice page includes stick time details and reminders about required gear and registration limits. For figure skaters, the operator also promotes freestyle sessions and links out to registration, while exact session times live on the DaySmart calendar. Inside the building, the operator lists both concessions and an in-house Perani\u2019s Hockey World pro shop.",
+"helpful_blurbs": [
+"Planning a family skate? Start with the public skating page and then confirm your session in DaySmart so you arrive with a reservation ready.",
+"Working toward skills and tests? Check the freestyle hub and look for freestyle labels in the DaySmart schedule for Antioch.",
+"Need gear or a quick sharpening stop? The Antioch rink lists an on-site Perani\u2019s Hockey World pro shop inside the facility.",
+"Building a Tennessee skating road trip? Browse Tennessee rinks to compare locations, amenities, and schedule systems.",
+"Hockey players should review the open ice section for stick time and open hockey guidelines, including required gear and registration limits."
+],
+"what_to_know": [
+"The operator describes Ford Ice Center Antioch as a twin-rink facility, so there can be multiple programs running at the same time.",
+"Public skate sessions are listed as online registration only through DaySmart, and you should plan to create an account before you go.",
+"The operator notes that the facility is cashless, so bring a card or plan to pay online.",
+"Matinee and evening public skating prices are posted by the operator, and the listed public-skate prices include rental skates if needed.",
+"Stick time has a posted drop-in price and specific rules, and the operator notes that pucks are not provided.",
+"For stick time and open hockey style sessions, the operator notes that equipment rentals are not currently available, including skates.",
+"If you are looking for freestyle figure skating ice, search the DaySmart schedule for freestyle or figure-session labels and confirm registration requirements.",
+"Concession hours can vary from the rink\u2019s operating hours, so plan ahead if you are counting on food or drinks between sessions.",
+"If you want sharpening, the on-site Perani\u2019s Hockey World pro shop indicates it has sharpening equipment, but you should confirm turnaround time when you arrive."
+]
+},
+"sources": [
+"https://www.nhl.com/predators/fordicecenter/antioch
+",
+"https://www.nhl.com/predators/fordicecenter/public-skating
+",
+"https://www.nhl.com/predators/fordicecenter/learn-to-skate
+",
+"https://www.nhl.com/predators/fordicecenter/open-ice
+",
+"https://www.nhl.com/predators/fordicecenter/freestyle-figure-skating
+",
+"https://www.sythl.org/page/show/8109158-ford-ice-center-antioch
+",
+"https://www.google.com/maps?cid=5082070158755180070
+",
+"https://www.hockeyworld.com/index/page/store_details/store_id/22
+",
+"https://www.hockeyworld.com/index/page/catalog/product_id/2794/category_id/60
+",
+"https://visitfranklin.com/sports-facilities/ford-ice-center-multi-sport/
+"
+],
+"evidence": [
+{
+"field": "operator",
+"url": "https://www.nhl.com/predators/fordicecenter/antioch
+",
+"notes": "The rink page is published on the Nashville Predators Ford Ice Center site."
+},
+{
+"field": "address.street",
+"url": "https://www.sythl.org/page/show/8109158-ford-ice-center-antioch
+",
+"notes": "Directory listing shows the street address and ZIP for the Antioch location."
+},
+{
+"field": "address.postal_code",
+"url": "https://www.sythl.org/page/show/8109158-ford-ice-center-antioch
+",
+"notes": "Directory listing includes ZIP code 37013."
+},
+{
+"field": "phone",
+"url": "https://www.sythl.org/page/show/8109158-ford-ice-center-antioch
+",
+"notes": "Directory listing shows (615) 742-4399."
+},
+{
+"field": "geo.latitude",
+"url": "https://www.google.com/maps?cid=5082070158755180070
+",
+"notes": "Google Maps listing provides coordinates for the location."
+},
+{
+"field": "geo.longitude",
+"url": "https://www.google.com/maps?cid=5082070158755180070
+",
+"notes": "Google Maps listing provides coordinates for the location."
+},
+{
+"field": "facility.number_of_sheets",
+"url": "https://www.nhl.com/predators/fordicecenter/antioch
+",
+"notes": "The operator describes the Antioch rink as a twin-rink facility."
+},
+{
+"field": "facility.sheet_sizes",
+"url": "https://visitfranklin.com/sports-facilities/ford-ice-center-multi-sport/
+",
+"notes": "Tourism listing states the facility has 2 NHL size rinks."
+},
+{
+"field": "facility.indoor",
+"url": "https://www.nhl.com/predators/fordicecenter/antioch
+",
+"notes": "The operator page does not explicitly state whether the rinks are indoors."
+},
+{
+"field": "facility.seasonality",
+"url": "https://www.nhl.com/predators/fordicecenter/antioch
+",
+"notes": "The operator page lists hours but does not explicitly label the facility as seasonal or year-round."
+},
+{
+"field": "schedule_links.public_calendar_url",
+"url": "https://www.nhl.com/predators/fordicecenter/public-skating
+",
+"notes": "The public skating page references DaySmart for schedules and registration and links to the schedule."
+},
+{
+"field": "offerings.public_skating",
+"url": "https://www.nhl.com/predators/fordicecenter/antioch
+",
+"notes": "The operator lists public ice skating among programs hosted at this location."
+},
+{
+"field": "offerings.hockey",
+"url": "https://www.nhl.com/predators/fordicecenter/antioch
+",
+"notes": "The operator lists hockey among programs hosted at this location."
+},
+{
+"field": "offerings.figure_skating",
+"url": "https://www.nhl.com/predators/fordicecenter/antioch
+",
+"notes": "The operator lists figure skating among programs hosted at this location."
+},
+{
+"field": "offerings.learn_to_skate",
+"url": "https://www.nhl.com/predators/fordicecenter/learn-to-skate
+",
+"notes": "Learn to Skate programming is presented on the operator\u2019s site."
+},
+{
+"field": "offerings.open_hockey",
+"url": "https://www.nhl.com/predators/fordicecenter/open-ice
+",
+"notes": "The operator describes adult open hockey and links to registration and the schedule."
+},
+{
+"field": "offerings.stick_and_puck",
+"url": "https://www.nhl.com/predators/fordicecenter/open-ice
+",
+"notes": "The operator describes stick time (stick and puck) and provides rules and drop-in price."
+},
+{
+"field": "pricing.notes",
+"url": "https://www.nhl.com/predators/fordicecenter/public-skating
+",
+"notes": "The operator posts public skate pricing and states the facility is cashless and requires online registration."
+},
+{
+"field": "rentals.available",
+"url": "https://www.nhl.com/predators/fordicecenter/public-skating
+",
+"notes": "The operator states public skate prices include rental skates if needed."
+},
+{
+"field": "rentals.included_with_admission",
+"url": "https://www.nhl.com/predators/fordicecenter/public-skating
+",
+"notes": "The operator states public skate prices include rental skates if needed."
+},
+{
+"field": "rentals.notes",
+"url": "https://www.nhl.com/predators/fordicecenter/open-ice
+",
+"notes": "For stick time, the operator notes that equipment rentals are not currently available, including skates."
+},
+{
+"field": "sharpening.available",
+"url": "https://www.hockeyworld.com/index/page/store_details/store_id/22
+",
+"notes": "Perani\u2019s store details indicate the Antioch arena pro shop has skate sharpening equipment."
+},
+{
+"field": "sharpening.pricing_base",
+"url": "https://www.hockeyworld.com/index/page/catalog/product_id/2794/category_id/60
+",
+"notes": "Perani\u2019s lists pro shop skate sharpening pricing."
+},
+{
+"field": "amenities.pro_shop",
+"url": "https://www.nhl.com/predators/fordicecenter/antioch
+",
+"notes": "The operator lists an in-house Perani\u2019s Hockey World pro shop as an Antioch amenity."
+},
+{
+"field": "amenities.concessions",
+"url": "https://www.nhl.com/predators/fordicecenter/antioch
+",
+"notes": "The operator lists a concessions area as an Antioch amenity."
+},
+{
+"field": "amenities.spectator_seating",
+"url": "https://visitfranklin.com/sports-facilities/ford-ice-center-multi-sport/
+",
+"notes": "Tourism listing references seating capacity for the rinks."
+},
+{
+"field": "amenities.lockers",
+"url": "https://www.nhl.com/predators/fordicecenter/antioch
+",
+"notes": "The operator page does not confirm public locker availability."
+},
+{
+"field": "amenities.skate_aids",
+"url": "https://www.nhl.com/predators/fordicecenter/antioch
+",
+"notes": "The operator page does not confirm whether skating aids are available for public sessions."
+},
+{
+"field": "freestyle.available",
+"url": "https://www.nhl.com/predators/fordicecenter/freestyle-figure-skating
+",
+"notes": "The operator promotes figure skating freestyle sessions at the Antioch location."
+},
+{
+"field": "freestyle.cost_notes",
+"url": "https://www.nhl.com/predators/fordicecenter/freestyle-figure-skating
+",
+"notes": "The operator posts program cost information for freestyle sessions."
+},
+{
+"field": "schedule_links.freestyle_calendar_url",
+"url": "https://www.nhl.com/predators/fordicecenter/freestyle-figure-skating
+",
+"notes": "The operator promotes freestyle sessions but does not provide a separate freestyle-only calendar link; use the main DaySmart schedule and filter by session labels."
+},
+{
+"field": "schedule_links.hockey_calendar_url",
+"url": "https://www.nhl.com/predators/fordicecenter/open-ice
+",
+"notes": "The open ice page links to the main DaySmart schedule rather than a separate hockey-only calendar link."
+}
+],
+"last_verified": "2025-12-18"
+}
