@@ -1,0 +1,89 @@
+You are working in my Ice Skating Index codebase. Create or update a complete “Learn to Skate” page using the copy provided below. This page should be educational and informational, not a directory.
+GOALS
+1. Create a Learn to Skate page that explains what Learn to Skate programs are, who they are for, and how to find them.
+2. Do not add rink listings or scraped data. This page should build trust and clarity.
+3. Match the visual style, spacing, and typography used on other service pages like Skate Sharpening.
+PAGE CONTENT REQUIREMENTS The page must include:
+* A clear introduction explaining what Learn to Skate programs are
+* Educational sections with headings:
+    * What “Learn to Skate” usually means
+    * Who Learn to Skate is for
+    * What a typical class looks like
+    * What you usually need
+    * How long it takes to progress
+    * Figure skating and hockey paths
+    * How to find Learn to Skate programs near you
+    * Questions to ask before signing up
+* A “Coming soon” section explaining that a directory of programs is being built
+* Guidance that encourages users to check official rink websites or call directly
+* No fake listings, no assumptions, no scraped content
+IMPLEMENTATION DETAILS
+* Use semantic HTML with one H1 and H2s for sections
+* Add a clear page title and meta description
+* Ensure the route matches existing navigation (for example /services/learn-to-skate if that matches the nav)
+* Ensure the page is mobile friendly and fast
+* Do not use em dashes in the copy
+* Keep the tone calm, practical, and beginner friendly
+COPY TO USE Learn to Skate
+Learning to skate can feel intimidating at first, especially if you are not sure where to start. Most rinks offer a Learn to Skate program designed to teach the basics in a safe, structured way. This page explains how those programs usually work, what to expect, and how to choose the right starting point.
+What “Learn to Skate” usually means
+Learn to Skate is a beginner program focused on building confidence on the ice. It typically covers balance, basic movement, stopping, and simple turns. Classes are usually taught in small groups and follow a progressive curriculum so skaters move forward at a steady pace.
+Programs may be offered for children, teens, and adults. Some rinks separate age groups. Others group by skill level instead.
+Who Learn to Skate is for
+Learn to Skate programs are designed for:
+* First time skaters
+* Skaters returning after a long break
+* Children learning fundamentals before hockey or figure skating
+* Adults who want structured instruction instead of open sessions
+You do not need prior experience to start. Most programs assume you are new.
+What a typical class looks like
+Most Learn to Skate programs include:
+* Weekly group lessons
+* A set class schedule over several weeks
+* Certified instructors or trained coaches
+* A progression system with levels or badges
+Some programs include practice time during public sessions. Others offer separate practice ice.
+What you usually need
+Before your first class, check what the rink requires. Most programs expect:
+* Skates that fit properly
+* Warm, flexible clothing
+* Gloves or mittens
+* A helmet for young children
+Rental skates are often allowed at the beginner level, but many skaters prefer their own skates once they commit.
+How long it takes to progress
+Progress looks different for everyone. Factors include:
+* How often you skate outside of class
+* Comfort level on the ice
+* Age and athletic background
+The goal at the beginner stage is confidence, not speed. Learning solid fundamentals makes everything else easier later.
+Figure skating and hockey paths
+Many Learn to Skate programs serve as a foundation for both figure skating and hockey. After completing basic levels, rinks may recommend:
+* A figure skating skills program
+* Hockey development or learn to play programs
+* Private lessons for focused goals
+Ask the rink or your instructor what the next step usually is.
+How to find Learn to Skate programs near you
+Most rinks list Learn to Skate programs on their official website under lessons, programs, or skating school. A few helpful steps:
+* Check the rink’s website for class schedules
+* Call the front desk or skating director
+* Ask what age groups and levels are offered
+* Confirm whether rental skates are included
+If the website is unclear, a quick call usually saves time.
+Questions to ask before signing up
+* Is this program suitable for complete beginners?
+* Are classes grouped by age or skill?
+* What happens if I miss a class?
+* Do you recommend rentals or personal skates?
+* How do skaters move to the next level?
+Clear answers usually indicate a well run program.
+Coming soon
+We are building a directory of rinks and programs to help skaters easily find Learn to Skate options by location. Verified program listings will be available soon.
+
+
+DELIVERABLES
+* Learn to Skate page renders correctly
+* Navigation link works
+* Page includes meta title and description
+* Confirm which route is used and which file was created or edited
+* Put a dropdown on the bottom with rinks in the database that are tagged in having learn to skate.
+
