@@ -1,0 +1,125 @@
+You are working in my Ice Skating Index codebase. Improve the existing Freestyle Sessions page for maximum SEO and user value, using the copy below.
+GOALS
+1. Make the Freestyle Sessions page a best-in-class educational page that ranks for queries like:
+    * freestyle sessions
+    * freestyle ice
+    * what is a freestyle session
+    * freestyle ice vs public skate
+2. Do not add scraped data or fake listings. If the page currently shows rinks, keep it only if it is based on our internal rink dataset and is clearly labeled. Do not imply every rink offers freestyle.
+3. The page must be useful for beginners and intermediate skaters. Clarify who it is for, what to expect, and what questions to ask.
+CONTENT REQUIREMENTS Add the following sections in a clean, scannable layout:
+* Who freestyle sessions are for
+* Freestyle sessions vs public skate
+* What a freestyle session typically looks like
+* Etiquette and expectations
+* What you usually need
+* Common requirements and level expectations
+* Questions to ask before you go
+* How to find freestyle sessions near you
+* Coming soon
+Also ensure the page has:
+* One H1 only
+* H2 headings for each section
+* A simple “On this page” table of contents that links to section anchors, if it fits the current design system
+* A strong meta title and meta description
+* No em dashes in the page copy
+DESIGN REQUIREMENTS
+* Match the existing typography, spacing, and content width rules used on other services pages like Learn to Skate and Skate Sharpening.
+* Keep the page clean and readable on mobile.
+* If there is a card or accordion UI used elsewhere for “rinks that offer this,” reuse that same pattern for consistency.
+DATA AND SAFETY REQUIREMENTS
+* If you include a collapsible list of rinks that offer freestyle, only show rinks where our dataset explicitly indicates freestyle is offered. If that data field does not exist yet, do not guess. Either omit the list or add a clear “Not yet available” note.
+* Do not scrape rink websites. Do not auto assume offerings.
+COPY TO USE Use the exact copy below, with minimal edits only for formatting.
+
+Freestyle Sessions
+Freestyle sessions are dedicated ice times designed for skill development, focused practice, and coaching. They are different from public skate because the purpose is training, not general recreation. This page explains what freestyle ice is, who it is for, how it usually works, and what to expect when you show up.
+On this page
+* What is a freestyle session
+* Who freestyle sessions are for
+* Freestyle sessions vs public skate
+* What a freestyle session typically looks like
+* Etiquette and expectations
+* What you usually need
+* Common requirements and level expectations
+* Questions to ask before you go
+* How to find freestyle sessions near you
+* Coming soon
+What is a freestyle session
+A freestyle session is a scheduled practice time where skaters work on skills like edges, turns, jumps, spins, footwork, and program run-throughs. Many rinks allow private lessons during freestyle sessions, and the ice is typically shared by multiple skaters training at the same time.
+Freestyle ice is usually quieter and more structured than public skate. Skaters are expected to be aware of their surroundings and follow basic right-of-way rules so everyone can practice safely.
+Who freestyle sessions are for
+Freestyle sessions are a good fit for:
+* Figure skaters practicing skills, programs, spins, or jumps.
+* Skaters taking private lessons with a coach.
+* Competitive skaters preparing for tests or competitions.
+* Skaters who want focused ice time without heavy public traffic.
+* Hockey players practicing edge work or power skating if the rink allows it.
+If you are brand new to skating, a Learn to Skate program is usually the better place to start. Freestyle can still be welcoming for beginners, but it works best when you already have basic control and can skate predictably.
+Freestyle sessions vs public skate
+Freestyle sessions and public skate can look similar from a distance, but they function very differently.
+Freestyle sessions:
+* Focus on training and skill development.
+* Often allow coaching and private lessons.
+* May include skaters jumping, spinning, or running programs.
+* Expect predictable skating patterns and awareness.
+* Usually have lower crowd density than public skate.
+Public skate:
+* Focuses on recreational skating and family fun.
+* Usually does not allow coaching or structured lessons.
+* Has more beginners and less predictable movement.
+* Is better for casual laps and confidence building.
+If you need space to work on skills, freestyle is often the right choice. If you want a relaxed skate with friends or family, public skate is usually the better fit.
+What a freestyle session typically looks like
+Most freestyle sessions have:
+* A scheduled start and end time.
+* A mix of skaters practicing different skills at once.
+* Coaches teaching lessons at the boards or in open areas.
+* Music playing for skaters running programs at some rinks.
+Some rinks separate sessions by level, such as beginner freestyle, intermediate freestyle, or advanced freestyle. Others run one general session and expect skaters to self-manage using basic etiquette.
+Etiquette and expectations
+Freestyle runs best when everyone shares the ice well. A few common expectations:
+* Look before you start any element, especially jumps and spins.
+* Do not cut directly through other skaters’ patterns.
+* Give space to skaters running full programs.
+* Keep moving if you are in the middle of the ice.
+* Step to the side near the boards if you need to stop and talk.
+If you are unsure, ask a coach or experienced skater what is normal at that rink. Every rink has a slightly different culture, but safety and awareness are always valued.
+What you usually need
+A good freestyle session starts with the basics:
+* Skates that fit well and are sharpened appropriately.
+* Gloves or mittens, especially for newer skaters.
+* Warm layers that allow movement.
+* Hair tied back, and no loose items that can fall on the ice.
+* Basic protective gear if you are learning jumps or feel more confident with protection.
+If you are working with a coach, they may recommend specific off-ice warmups, guards, or training accessories.
+Common requirements and level expectations
+Freestyle requirements vary by rink. Some rinks allow anyone who can skate confidently. Others require:
+* Completion of certain Learn to Skate levels.
+* Coach approval.
+* A membership or freestyle pass.
+* Proof of testing level for advanced sessions.
+When in doubt, call the rink and ask what level is recommended. Clear requirements usually mean the session will feel safer and more organized.
+Questions to ask before you go
+* Is this freestyle session for figure skating, hockey, or both?
+* Are private lessons allowed during this session?
+* Is there a minimum level required to participate?
+* Is music used for program run-throughs?
+* How busy is this session usually?
+* Are there separate sessions for different levels?
+These questions help you choose the right ice time and avoid showing up to a session that is not the right fit.
+How to find freestyle sessions near you
+Most rinks list freestyle sessions under figure skating, skating school, programs, or ice schedules. A helpful approach:
+* Check the rink’s official website for ice schedules or figure skating pages.
+* Call the front desk or skating director to confirm session details.
+* Ask a coach or experienced skater which sessions are best for your level.
+If the schedule is unclear online, a short call usually gives the fastest answer.
+Coming soon
+We are building a directory of freestyle sessions and freestyle friendly rinks by location. Verified listings will be added over time so you can find sessions that match your level, goals, and schedule.
+
+
+DELIVERABLES
+* The Freestyle Sessions page renders correctly at its existing route.
+* Navigation to the page still works.
+* Page includes meta title and meta description.
+* Confirm which file(s) were edited and the final route used.
