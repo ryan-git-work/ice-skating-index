@@ -11,6 +11,7 @@ import RinkDetail from "@/pages/RinkDetail";
 import StateHub from "@/pages/StateHub";
 import CityHub from "@/pages/CityHub";
 import FreestyleHub from "@/pages/FreestyleHub";
+import SkateSharpening from "@/pages/SkateSharpening";
 
 function Router() {
   return (
@@ -18,6 +19,7 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/browse" component={Browse} />
       <Route path="/freestyle" component={FreestyleHub} />
+      <Route path="/services/skate-sharpening" component={SkateSharpening} />
       
       {/* Dynamic Routes */}
       <Route path="/rink/:slug" component={RinkDetail} />

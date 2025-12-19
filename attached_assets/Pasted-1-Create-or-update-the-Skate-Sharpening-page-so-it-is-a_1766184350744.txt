@@ -1,0 +1,73 @@
+1. Create or update the Skate Sharpening page so it is an educational and discovery page, not a directory. Do not add rink listings on this page yet.
+2. The page must include:
+    * Clear positioning at the top explaining that sharpening quality varies by rink, pro shop, and technician, and that this page is a guide.
+    * Educational sections that are easy to scan, with headings and short paragraphs:
+        * The simple idea
+        * Figure skates vs hockey skates
+        * What “ROH” means
+        * How often should you sharpen
+        * Signs you might need a sharpening
+        * Signs of a poor sharpening
+        * What to ask before you sharpen
+        * How to find sharpening near you
+    * A “Coming soon” section that explains we are building a directory and invites service owners to claim a listing later.
+    * Link outward guidance without linking to unverified services. Use text guidance like checking a rink’s official site, calling ahead, and asking a coach. Do not scrape, auto assume, or create false listings.
+IMPLEMENTATION REQUIREMENTS
+* Use the site’s existing layout components, typography, spacing, and content width rules.
+* Ensure the page is fast, accessible, and SEO friendly:
+    * Add a clear page title and meta description.
+    * Use semantic headings (H1 once, then H2).
+    * Add internal navigation anchors or a simple “On this page” table of contents if it fits the current design.
+* Do not use em dashes in the page copy.
+* Ensure this route is linked from the main navigation (it already appears as “Skate Sharpening,” keep it working).
+* If the site uses a router, confirm the /skate-sharpening route loads correctly in dev and build.
+COPY TO USE ON THE PAGE Skate Sharpening
+Skate sharpening can make skating feel smooth and confident, or frustrating and unstable. The tricky part is that sharpening quality varies widely by rink, pro shop, and technician. This page is here to help you understand the basics, know what to ask for, and make smarter choices before you hand your skates over.
+The simple idea
+Sharpening creates two edges on the bottom of your blade with a shallow groove between them. That groove is what gives you bite and control. Too much bite can feel grabby and exhausting. Too little bite can feel slippery and unpredictable.
+Figure skates vs hockey skates
+Figure skates often benefit from a slightly less aggressive feel because many skaters want clean gliding, controlled turns, and stable landings without feeling stuck to the ice. Hockey skates often use a deeper groove because quick stops, tight turns, and acceleration demand more bite. There is no universal rule. Your weight, skill level, and skating style matter as much as the sport.
+What “ROH” means
+You may hear people talk about “ROH,” which stands for “radius of hollow.” This is the depth of the groove that is cut into your blade. A smaller number usually means more bite. A larger number usually means more glide.
+If you are new, the goal is not perfection. The goal is consistency. Pick a reasonable starting point and stay with it long enough to learn what you actually like.
+How often should you sharpen
+There is not one schedule that works for everyone. A helpful starting point is to sharpen more often when:
+* You skate frequently each week.
+* You practice jumps, stops, or strong edges.
+* You feel your edges slipping during turns.
+You may be able to go longer between sharpenings if you skate casually and mostly glide. The best signal is performance. If you are working harder to do normal skills, it might be time.
+Signs you might need a sharpening
+* You feel like your skates slide out during turns.
+* You cannot hold an edge without wobbling.
+* Stopping feels inconsistent or takes more effort.
+* You feel unstable on one foot even on basic skills.
+* Your blades look shiny and rounded along the bottom.
+Signs of a poor sharpening
+* One skate feels different than the other.
+* Your skates pull to one side.
+* The edges feel uneven.
+* You have sudden chatter or catching that was not there before.
+If something feels off, do not assume it is you. It is okay to ask the sharpener to check the work.
+What to ask before you sharpen
+If you want to avoid surprises, ask these questions:
+* Do you sharpen figure skates and hockey skates regularly?
+* What ROH do you recommend for my level and style?
+* Can you match my last sharpening, if I liked it?
+* How do you handle nicks and rocker profile?
+* How long does it take, and do I need an appointment?
+If you have a coach, ask what they prefer. A consistent ROH is often more important than the perfect ROH.
+How to find sharpening near you
+Many rinks offer sharpening through a pro shop, but not all do. Some shops only sharpen hockey skates. Some sharpen both. The best approach is to:
+* Check the rink’s official website for “pro shop” or “services.”
+* Call ahead and ask whether they sharpen your type of skates.
+* Ask a coach or experienced skater where they go locally.
+If you are traveling, do not wait until your skates are unusable. Get them done before your trip if you can.
+Coming soon
+We are building a directory of trusted skate sharpening options by location. If you own or operate a skate sharpening service, you will be able to claim a listing soon.
+
+DELIVERABLES
+* The Skate Sharpening page renders correctly at /skate-sharpening (or whatever route the nav currently uses).
+* The page matches the site’s visual style, has clean spacing, and is mobile friendly.
+* The page includes meta title and meta description.
+* Confirm with a short summary of which files you changed and what route is used.
+* At the bottom, make a clean place with a drop down to the rinks that are tagged as having skate sharpening.

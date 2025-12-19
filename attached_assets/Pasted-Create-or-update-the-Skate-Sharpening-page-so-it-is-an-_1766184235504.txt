@@ -1,0 +1,60 @@
+Create or update the Skate Sharpening page so it is an educational and discovery page, not a directory. Do not add rink listings on this page yet.
+
+The page must include:
+
+Clear positioning at the top explaining that sharpening quality varies by rink, pro shop, and technician, and that this page is a guide.
+
+Educational sections that are easy to scan, with headings and short paragraphs:
+
+The simple idea
+
+Figure skates vs hockey skates
+
+What “ROH” means
+
+How often should you sharpen
+
+Signs you might need a sharpening
+
+Signs of a poor sharpening
+
+What to ask before you sharpen
+
+How to find sharpening near you
+
+A “Coming soon” section that explains we are building a directory and invites service owners to claim a listing later.
+
+Link outward guidance without linking to unverified services. Use text guidance like checking a rink’s official site, calling ahead, and asking a coach. Do not scrape, auto assume, or create false listings.
+
+IMPLEMENTATION REQUIREMENTS
+
+Use the site’s existing layout components, typography, spacing, and content width rules.
+
+Ensure the page is fast, accessible, and SEO friendly:
+
+Add a clear page title and meta description.
+
+Use semantic headings (H1 once, then H2).
+
+Add internal navigation anchors or a simple “On this page” table of contents if it fits the current design.
+
+Do not use em dashes in the page copy.
+
+Ensure this route is linked from the main navigation (it already appears as “Skate Sharpening,” keep it working).
+
+If the site uses a router, confirm the /skate-sharpening route loads correctly in dev and build.
+
+COPY TO USE ON THE PAGE
+(Use the exact copy below, with minimal edits only for formatting. Do not shorten the content.)
+
+[PASTE THE COPY BLOCK FROM ABOVE HERE]
+
+DELIVERABLES
+
+The Skate Sharpening page renders correctly at /skate-sharpening (or whatever route the nav currently uses).
+
+The page matches the site’s visual style, has clean spacing, and is mobile friendly.
+
+The page includes meta title and meta description.
+
+Confirm with a short summary of which files you changed and what route is used.
