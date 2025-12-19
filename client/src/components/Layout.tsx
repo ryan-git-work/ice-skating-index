@@ -48,9 +48,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 </a>
               </Link>
             ))}
-            <Button size="sm" className="ml-2 font-semibold shadow-sm hover:shadow-md transition-all" asChild>
-              <Link href="/browse">Find a Rink</Link>
-            </Button>
           </nav>
 
           {/* Mobile Nav */}
@@ -86,9 +83,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
                         </a>
                       </Link>
                     ))}
-                    <Button className="w-full mt-2" asChild>
-                      <Link href="/browse" onClick={() => setIsMobileMenuOpen(false)}>Find a Rink</Link>
-                    </Button>
                   </nav>
                 </div>
               </SheetContent>
