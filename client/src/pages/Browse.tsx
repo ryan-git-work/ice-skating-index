@@ -1,5 +1,5 @@
 import { Layout } from "@/components/Layout";
-import { rinks, getAllStates, getAllCities } from "@/lib/data";
+import { rinks, getAllStates, getAllCities, isTruthy } from "@/lib/data";
 import { RinkCard } from "@/components/RinkCard";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -38,11 +38,11 @@ export default function Browse() {
       // State Filter
       const matchesState = selectedState === "all" || rink.address.state === selectedState;
 
-      // Checkbox Filters
-      if (filters.publicSkating && !rink.offerings.public_skating) return false;
-      if (filters.freestyle && !rink.freestyle.available) return false;
-      if (filters.rentals && !rink.rentals.available) return false;
-      if (filters.sharpening && !rink.sharpening.available) return false;
+      // Checkbox Filters (use isTruthy to handle mixed boolean/string values)
+      if (filters.publicSkating && !isTruthy(rink.offerings.public_skating)) return false;
+      if (filters.freestyle && !isTruthy(rink.freestyle.available)) return false;
+      if (filters.rentals && !isTruthy(rink.rentals.available)) return false;
+      if (filters.sharpening && !isTruthy(rink.sharpening.available)) return false;
 
       return matchesSearch && matchesState;
     });
