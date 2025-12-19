@@ -104,7 +104,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       {/* Footer */}
       <footer className="border-t bg-muted/30">
         <div className="container mx-auto px-4 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="space-y-4">
               <div className="flex items-center gap-2">
                 <Snowflake className="h-5 w-5 text-primary" />
@@ -129,16 +129,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
               <h3 className="font-semibold mb-4 text-foreground">Top States</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li><Link href="/state/TN"><a className="hover:text-primary transition-colors">Tennessee</a></Link></li>
-                {/* Add more states as data grows */}
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="font-semibold mb-4 text-foreground">About</h3>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="#" className="hover:text-primary transition-colors">Contact Us</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Submit a Rink</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Privacy Policy</a></li>
               </ul>
             </div>
           </div>
