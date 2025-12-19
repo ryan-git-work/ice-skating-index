@@ -43,8 +43,8 @@ export default function RinkDetail() {
       {/* Hero Header */}
       <div className="bg-background pt-8 pb-12">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col lg:flex-row justify-between gap-8 items-start">
-            <div>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+            <div className="lg:col-span-2">
               <h1 className="font-serif text-4xl md:text-5xl font-bold mb-4 text-foreground">{rink.name}</h1>
               <div className="flex flex-wrap items-center gap-4 text-muted-foreground mb-6">
                 <div className="flex items-center">
@@ -67,21 +67,32 @@ export default function RinkDetail() {
               </div>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-3 w-full lg:w-auto">
-              {rink.website && (
-                 <Button asChild size="lg" className="shadow-sm">
-                   <a href={rink.website} target="_blank" rel="noopener noreferrer">
-                     Visit Website <ExternalLink className="ml-2 h-4 w-4" />
-                   </a>
-                 </Button>
+            <div className="flex flex-col gap-4">
+              {rink.image && (
+                <div className="rounded-xl overflow-hidden shadow-lg">
+                  <img 
+                    src={rink.image} 
+                    alt={rink.name}
+                    className="w-full h-48 lg:h-56 object-cover"
+                  />
+                </div>
               )}
-              {rink.schedule_links.public_calendar_url && (
-                <Button asChild variant="outline" size="lg">
-                  <a href={rink.schedule_links.public_calendar_url} target="_blank" rel="noopener noreferrer">
-                    <Calendar className="mr-2 h-4 w-4" /> Public Schedule
-                  </a>
-                </Button>
-              )}
+              <div className="flex flex-col sm:flex-row gap-3">
+                {rink.website && (
+                   <Button asChild size="lg" className="shadow-sm">
+                     <a href={rink.website} target="_blank" rel="noopener noreferrer">
+                       Visit Website <ExternalLink className="ml-2 h-4 w-4" />
+                     </a>
+                   </Button>
+                )}
+                {rink.schedule_links.public_calendar_url && (
+                  <Button asChild variant="outline" size="lg">
+                    <a href={rink.schedule_links.public_calendar_url} target="_blank" rel="noopener noreferrer">
+                      <Calendar className="mr-2 h-4 w-4" /> Public Schedule
+                    </a>
+                  </Button>
+                )}
+              </div>
             </div>
           </div>
         </div>

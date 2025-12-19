@@ -5,6 +5,7 @@ export const RinkSchema = z.object({
   id: z.string(),
   slug: z.string(),
   name: z.string(),
+  image: z.string().nullable().optional(),
   alternate_names: z.array(z.string()).optional(),
   category: z.string().optional(),
   operator: z.string().nullable().optional(),

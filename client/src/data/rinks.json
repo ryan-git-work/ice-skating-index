@@ -58,10 +58,10 @@
     },
     "pricing": {
       "public_skate": {
-        "adult": 12.0,
-        "youth": 10.0
+        "adult": 12,
+        "youth": 10
       },
-      "spectators": 0.0,
+      "spectators": 0,
       "notes": "Public skating admission rates are published by the rink. Adults (ages 13+) are $12 and ages 5 to 12 are $10, with a separate $5 rate for ages 4 and under. Seniors (ages 62+) are listed at $10. Spectators are listed as free. Public skating times change monthly, so use the Ice Arena Google Calendar and the public skating page to confirm the exact session times before you go."
     },
     "rentals": {
@@ -82,8 +82,8 @@
     "sharpening": {
       "available": true,
       "turnaround": "Please allow 24 hours; the rink notes they can often finish in less than 24 hours when needed.",
-      "pricing_base": 6.0,
-      "pricing_rush": 2.0,
+      "pricing_base": 6,
+      "pricing_rush": 2,
       "add_ons": [
         "Masking tape on lower: $1",
         "Extra masking tape: $1",
@@ -402,7 +402,8 @@
         "notes": "Use the official calendar to look for events labeled Freestyle or Figure Freestyle."
       }
     ],
-    "last_verified": "2025-12-18"
+    "last_verified": "2025-12-18",
+    "image": "/attached_assets/iceskatingindex1_1766179636449.jpg"
   },
   {
     "id": "tn-antioch-ford-ice-center-antioch-antioch-tn",
@@ -435,7 +436,10 @@
       "indoor": "unknown",
       "seasonality": "unknown",
       "number_of_sheets": 2,
-      "sheet_sizes": ["NHL", "NHL"]
+      "sheet_sizes": [
+        "NHL",
+        "NHL"
+      ]
     },
     "schedule_links": {
       "public_calendar_url": "https://apps.daysmartrecreation.com/dash/x/",
@@ -478,7 +482,7 @@
     "sharpening": {
       "available": true,
       "turnaround": null,
-      "pricing_base": 12.0,
+      "pricing_base": 12,
       "pricing_rush": null,
       "add_ons": [],
       "notes": "Skate sharpening is available through the on-site Perani's Hockey World arena pro shop. Perani's lists pro shop sharpening at $12.00, but availability and pricing can change, so confirm at the counter before you commit.",
@@ -486,7 +490,12 @@
     },
     "freestyle": {
       "available": true,
-      "labels_to_search_for": ["Freestyle", "Figure Freestyle", "Freestyle Ice", "Figure Session"],
+      "labels_to_search_for": [
+        "Freestyle",
+        "Figure Freestyle",
+        "Freestyle Ice",
+        "Figure Session"
+      ],
       "who_its_for": [
         "Figure skaters who want focused ice time for skills work and coached development.",
         "Skaters who are progressing through Learn to Skate levels and are ready for more structured practice."
@@ -507,8 +516,21 @@
       "pro_shop": true,
       "skate_aids": "unknown"
     },
-    "audiences": ["families", "beginners", "adult skaters", "figure skaters", "hockey players"],
-    "tags": ["twin-rink", "daysmart-registration", "peranis-hockey-world", "public-skating", "open-hockey", "stick-time"],
+    "audiences": [
+      "families",
+      "beginners",
+      "adult skaters",
+      "figure skaters",
+      "hockey players"
+    ],
+    "tags": [
+      "twin-rink",
+      "daysmart-registration",
+      "peranis-hockey-world",
+      "public-skating",
+      "open-hockey",
+      "stick-time"
+    ],
     "faq": [
       {
         "q": "Where do I find the public skating schedule for Ford Ice Center Antioch in Antioch, TN?",
@@ -778,13 +800,18 @@
         "notes": "The open ice page links to the main DaySmart schedule rather than a separate hockey-only calendar link."
       }
     ],
-    "last_verified": "2025-12-18"
+    "last_verified": "2025-12-18",
+    "image": "/attached_assets/iceskatingindex2_1766179636450.jpg"
   },
   {
     "id": "tn-nashville-ford-ice-center-bellevue-nashville-tn",
     "slug": "ford-ice-center-bellevue-nashville-tn",
     "name": "Ford Ice Center Bellevue",
-    "alternate_names": ["Ford Ice Center - Bellevue", "Ford Ice Bellevue", "Ford Ice Center at Bellevue"],
+    "alternate_names": [
+      "Ford Ice Center - Bellevue",
+      "Ford Ice Bellevue",
+      "Ford Ice Center at Bellevue"
+    ],
     "category": "Ice Skating Rink",
     "operator": "Nashville Predators (Ford Ice Center)",
     "address": {
@@ -866,7 +893,12 @@
     },
     "freestyle": {
       "available": "true",
-      "labels_to_search_for": ["Freestyle", "Figure Freestyle", "Freestyle Ice", "Figure Session"],
+      "labels_to_search_for": [
+        "Freestyle",
+        "Figure Freestyle",
+        "Freestyle Ice",
+        "Figure Session"
+      ],
       "who_its_for": [
         "Figure skaters looking for a structured freestyle-style session that includes instruction and supervised practice.",
         "Skaters working with coaches through the listed skating academy program on the official Ford Ice Center site."
@@ -887,8 +919,25 @@
       "pro_shop": "true",
       "skate_aids": "unknown"
     },
-    "audiences": ["Families", "Beginners", "Learn-to-Skate Students", "Figure Skaters", "Hockey Players"],
-    "tags": ["bellevue", "nashville", "one-bellevue-place", "twin-rink", "public-skating", "learn-to-skate", "figure-skating", "hockey", "peranis-hockey-world", "draft-picks"],
+    "audiences": [
+      "Families",
+      "Beginners",
+      "Learn-to-Skate Students",
+      "Figure Skaters",
+      "Hockey Players"
+    ],
+    "tags": [
+      "bellevue",
+      "nashville",
+      "one-bellevue-place",
+      "twin-rink",
+      "public-skating",
+      "learn-to-skate",
+      "figure-skating",
+      "hockey",
+      "peranis-hockey-world",
+      "draft-picks"
+    ],
     "faq": [
       {
         "q": "How do I find the public skate schedule for Ford Ice Center Bellevue in Nashville, TN?",
@@ -1100,13 +1149,16 @@
         "note": "Sources reviewed confirmed the street address but did not provide official latitude and longitude values."
       }
     ],
-    "last_verified": "2025-12-18"
+    "last_verified": "2025-12-18",
+    "image": "/attached_assets/iceskatingindex3_1766179636450.jpg"
   },
   {
     "id": "tn-clarksville-ford-ice-center-clarksville-clarksville-tn",
     "slug": "ford-ice-center-clarksville-clarksville-tn",
     "name": "Ford Ice Center Clarksville",
-    "alternate_names": ["Ford Ice Center Clarksville at F&M Bank Arena"],
+    "alternate_names": [
+      "Ford Ice Center Clarksville at F&M Bank Arena"
+    ],
     "category": "Ice Skating Rink",
     "operator": "Nashville Predators",
     "address": {
@@ -1116,13 +1168,19 @@
       "postal_code": "37040",
       "country": "US"
     },
-    "geo": { "latitude": null, "longitude": null },
+    "geo": {
+      "latitude": null,
+      "longitude": null
+    },
     "phone": "931-919-2330",
     "email": null,
     "website": "https://www.nhl.com/predators/fordicecenter/clarksville",
     "google_maps_url": null,
     "social_links": [],
-    "place_ids": { "google_place_id": null, "osm_id": null },
+    "place_ids": {
+      "google_place_id": null,
+      "osm_id": null
+    },
     "facility": {
       "indoor": "unknown",
       "seasonality": "unknown",
@@ -1144,7 +1202,10 @@
       "stick_and_puck": "unknown"
     },
     "pricing": {
-      "public_skate": { "adult": null, "youth": null },
+      "public_skate": {
+        "adult": null,
+        "youth": null
+      },
       "spectators": null,
       "notes": "The official Clarksville page links to a live schedule tool for public skate and other ice times, but it does not list public session admission prices on the page itself. Use the 'View Schedule' link on the official page and look for labels such as 'Public Skate' or similar session names."
     },
@@ -1177,7 +1238,12 @@
     },
     "freestyle": {
       "available": "unknown",
-      "labels_to_search_for": ["Freestyle", "Figure Freestyle", "Freestyle Ice", "Figure Session"],
+      "labels_to_search_for": [
+        "Freestyle",
+        "Figure Freestyle",
+        "Freestyle Ice",
+        "Figure Session"
+      ],
       "who_its_for": [],
       "how_to_find_times": "Open the official Clarksville page and click 'View Schedule.' In the schedule tool, filter by the Clarksville location and scan the ice sessions list for labels such as 'Freestyle,' 'Figure Freestyle,' or 'Freestyle Ice.' If you only see public skate and hockey items, check another date range and look for a registration or calendar filter menu.",
       "cost_notes": null,
@@ -1195,8 +1261,16 @@
       "pro_shop": true,
       "skate_aids": "unknown"
     },
-    "audiences": ["families", "beginners", "figure skaters", "hockey players"],
-    "tags": ["clarksville-tn", "downtown"],
+    "audiences": [
+      "families",
+      "beginners",
+      "figure skaters",
+      "hockey players"
+    ],
+    "tags": [
+      "clarksville-tn",
+      "downtown"
+    ],
     "faq": [
       {
         "q": "How do I find public skating times for Ford Ice Center Clarksville?",
@@ -1216,15 +1290,45 @@
       }
     ],
     "seo": {
-      "primary_keywords": ["Ford Ice Center Clarksville ice rink", "ice skating rink in Clarksville TN"],
-      "secondary_keywords": ["public skating Clarksville TN", "figure skating programs Clarksville TN", "hockey programs Clarksville TN", "skate sharpening Clarksville TN", "F&M Bank Arena ice rink"],
+      "primary_keywords": [
+        "Ford Ice Center Clarksville ice rink",
+        "ice skating rink in Clarksville TN"
+      ],
+      "secondary_keywords": [
+        "public skating Clarksville TN",
+        "figure skating programs Clarksville TN",
+        "hockey programs Clarksville TN",
+        "skate sharpening Clarksville TN",
+        "F&M Bank Arena ice rink"
+      ],
       "intent_groups": {
-        "public_skate": ["Ford Ice Center Clarksville public skate schedule", "public skating times in Clarksville TN", "how to find public skate at Ford Ice Center Clarksville"],
-        "lessons": ["how to check skating classes at Ford Ice Center Clarksville", "figure skating programs Ford Ice Center Clarksville", "hockey programs Ford Ice Center Clarksville"],
-        "freestyle": ["how to find freestyle ice times at Ford Ice Center Clarksville", "what to look for on the Clarksville ice schedule"],
-        "sharpening": ["skate sharpening Ford Ice Center Clarksville", "Sparx sharpening Clarksville TN", "hand skate sharpening Clarksville TN"],
-        "rentals": ["does Ford Ice Center Clarksville have skate rentals", "how to confirm rental skates for Clarksville public skate"],
-        "hockey": ["Ford Ice Center Clarksville hockey programs", "Clarksville TN ice hockey rink schedule"]
+        "public_skate": [
+          "Ford Ice Center Clarksville public skate schedule",
+          "public skating times in Clarksville TN",
+          "how to find public skate at Ford Ice Center Clarksville"
+        ],
+        "lessons": [
+          "how to check skating classes at Ford Ice Center Clarksville",
+          "figure skating programs Ford Ice Center Clarksville",
+          "hockey programs Ford Ice Center Clarksville"
+        ],
+        "freestyle": [
+          "how to find freestyle ice times at Ford Ice Center Clarksville",
+          "what to look for on the Clarksville ice schedule"
+        ],
+        "sharpening": [
+          "skate sharpening Ford Ice Center Clarksville",
+          "Sparx sharpening Clarksville TN",
+          "hand skate sharpening Clarksville TN"
+        ],
+        "rentals": [
+          "does Ford Ice Center Clarksville have skate rentals",
+          "how to confirm rental skates for Clarksville public skate"
+        ],
+        "hockey": [
+          "Ford Ice Center Clarksville hockey programs",
+          "Clarksville TN ice hockey rink schedule"
+        ]
       },
       "meta_title": "Ford Ice Center Clarksville in Clarksville, TN | Ice Skating Schedule, Programs, and Info",
       "meta_description": "Plan a visit to Ford Ice Center Clarksville in Clarksville, TN. Find the official schedule link, what the rink offers, parking pointers, and practical tips for public skating, hockey, figure skating, and sharpening.",
@@ -1254,28 +1358,75 @@
       "https://www.myfmbankarena.com/plan-your-visit/directions-parking"
     ],
     "evidence": [
-      { "field": "operator", "url": "https://www.nhl.com/predators/fordicecenter/clarksville" },
-      { "field": "facility.number_of_sheets", "url": "https://www.nhl.com/predators/fordicecenter/clarksville" },
-      { "field": "offerings.public_skating", "url": "https://www.nhl.com/predators/fordicecenter/clarksville" },
-      { "field": "offerings.figure_skating", "url": "https://www.nhl.com/predators/fordicecenter/clarksville" },
-      { "field": "offerings.hockey", "url": "https://www.nhl.com/predators/fordicecenter/clarksville" },
-      { "field": "schedule_links.public_calendar_url", "url": "https://www.nhl.com/predators/fordicecenter/clarksville" },
-      { "field": "amenities.concessions", "url": "https://www.nhl.com/predators/fordicecenter/clarksville" },
-      { "field": "amenities.pro_shop", "url": "https://www.nhl.com/predators/fordicecenter/clarksville" },
-      { "field": "sharpening.available", "url": "https://www.nhl.com/predators/fordicecenter/clarksville" },
-      { "field": "sharpening.pricing_base", "url": "https://www.nhl.com/predators/fordicecenter/clarksville" },
-      { "field": "address.street", "url": "https://www.myfmbankarena.com/plan-your-visit/directions-parking" },
-      { "field": "phone", "url": "https://www.nhl.com/predators/fordicecenter/clarksville" },
-      { "field": "rentals.available", "url": "https://www.nhl.com/predators/fordicecenter/clarksville", "note": "The official page does not confirm rental skates." },
-      { "field": "freestyle.available", "url": "https://www.nhl.com/predators/fordicecenter/clarksville", "note": "Freestyle sessions are not confirmed in the location page text." }
+      {
+        "field": "operator",
+        "url": "https://www.nhl.com/predators/fordicecenter/clarksville"
+      },
+      {
+        "field": "facility.number_of_sheets",
+        "url": "https://www.nhl.com/predators/fordicecenter/clarksville"
+      },
+      {
+        "field": "offerings.public_skating",
+        "url": "https://www.nhl.com/predators/fordicecenter/clarksville"
+      },
+      {
+        "field": "offerings.figure_skating",
+        "url": "https://www.nhl.com/predators/fordicecenter/clarksville"
+      },
+      {
+        "field": "offerings.hockey",
+        "url": "https://www.nhl.com/predators/fordicecenter/clarksville"
+      },
+      {
+        "field": "schedule_links.public_calendar_url",
+        "url": "https://www.nhl.com/predators/fordicecenter/clarksville"
+      },
+      {
+        "field": "amenities.concessions",
+        "url": "https://www.nhl.com/predators/fordicecenter/clarksville"
+      },
+      {
+        "field": "amenities.pro_shop",
+        "url": "https://www.nhl.com/predators/fordicecenter/clarksville"
+      },
+      {
+        "field": "sharpening.available",
+        "url": "https://www.nhl.com/predators/fordicecenter/clarksville"
+      },
+      {
+        "field": "sharpening.pricing_base",
+        "url": "https://www.nhl.com/predators/fordicecenter/clarksville"
+      },
+      {
+        "field": "address.street",
+        "url": "https://www.myfmbankarena.com/plan-your-visit/directions-parking"
+      },
+      {
+        "field": "phone",
+        "url": "https://www.nhl.com/predators/fordicecenter/clarksville"
+      },
+      {
+        "field": "rentals.available",
+        "url": "https://www.nhl.com/predators/fordicecenter/clarksville",
+        "note": "The official page does not confirm rental skates."
+      },
+      {
+        "field": "freestyle.available",
+        "url": "https://www.nhl.com/predators/fordicecenter/clarksville",
+        "note": "Freestyle sessions are not confirmed in the location page text."
+      }
     ],
-    "last_verified": "2025-12-19"
+    "last_verified": "2025-12-19",
+    "image": "/attached_assets/iceskatingindex4_1766179636450.jpg"
   },
   {
     "id": "tn-nolensville-gary-force-acura-ice-arena-nolensville-tn",
     "slug": "gary-force-acura-ice-arena-nolensville-tn",
     "name": "Gary Force Acura Ice Arena",
-    "alternate_names": ["Gary Force Acura Ice"],
+    "alternate_names": [
+      "Gary Force Acura Ice"
+    ],
     "category": "Ice Skating Rink",
     "operator": null,
     "address": {
@@ -1285,18 +1436,26 @@
       "postal_code": "37135",
       "country": "US"
     },
-    "geo": { "latitude": null, "longitude": null },
+    "geo": {
+      "latitude": null,
+      "longitude": null
+    },
     "phone": "231-290-0816",
     "email": "info@garyforceacuraicearena.com",
     "website": "https://www.garyforceacuraicearena.com/",
     "google_maps_url": null,
     "social_links": [],
-    "place_ids": { "google_place_id": null, "osm_id": null },
+    "place_ids": {
+      "google_place_id": null,
+      "osm_id": null
+    },
     "facility": {
       "indoor": "unknown",
       "seasonality": "unknown",
       "number_of_sheets": null,
-      "sheet_sizes": ["NHL size rink"]
+      "sheet_sizes": [
+        "NHL size rink"
+      ]
     },
     "schedule_links": {
       "public_calendar_url": "https://www.garyforceacuraicearena.com/",
@@ -1313,7 +1472,10 @@
       "stick_and_puck": true
     },
     "pricing": {
-      "public_skate": { "adult": null, "youth": null },
+      "public_skate": {
+        "adult": null,
+        "youth": null
+      },
       "spectators": null,
       "notes": "The official site states you can register online for public skates, stick and puck, and freestyle sessions, but it does not list public admission pricing on the page. Use the 'Schedule' link on the official site to confirm session times and any required registration."
     },
@@ -1343,7 +1505,12 @@
     },
     "freestyle": {
       "available": true,
-      "labels_to_search_for": ["Freestyle", "Figure Freestyle", "Freestyle Ice", "Figure Session"],
+      "labels_to_search_for": [
+        "Freestyle",
+        "Figure Freestyle",
+        "Freestyle Ice",
+        "Figure Session"
+      ],
       "who_its_for": [
         "Figure skaters practicing jumps, spins, and footwork.",
         "Coaches and students using structured practice time instead of open public skate."
@@ -1364,8 +1531,15 @@
       "pro_shop": "unknown",
       "skate_aids": "unknown"
     },
-    "audiences": ["families", "figure skaters", "hockey players"],
-    "tags": ["nolensville-tn", "nhl-size"],
+    "audiences": [
+      "families",
+      "figure skaters",
+      "hockey players"
+    ],
+    "tags": [
+      "nolensville-tn",
+      "nhl-size"
+    ],
     "faq": [
       {
         "q": "Where do I find the Gary Force Acura Ice Arena schedule for public skating?",
@@ -1385,15 +1559,44 @@
       }
     ],
     "seo": {
-      "primary_keywords": ["Gary Force Acura Ice Arena ice rink", "ice skating rink in Nolensville TN"],
-      "secondary_keywords": ["public skating Nolensville TN", "freestyle ice Nolensville TN", "stick and puck Nolensville TN", "Nashville Warriors Youth Hockey Club rink", "NHL size ice rink near Nashville"],
+      "primary_keywords": [
+        "Gary Force Acura Ice Arena ice rink",
+        "ice skating rink in Nolensville TN"
+      ],
+      "secondary_keywords": [
+        "public skating Nolensville TN",
+        "freestyle ice Nolensville TN",
+        "stick and puck Nolensville TN",
+        "Nashville Warriors Youth Hockey Club rink",
+        "NHL size ice rink near Nashville"
+      ],
       "intent_groups": {
-        "public_skate": ["Gary Force Acura Ice Arena public skate schedule", "public skating near Nolensville TN", "how to register for public skate at Gary Force Acura Ice Arena"],
-        "lessons": ["how to find skating lessons information at Gary Force Acura Ice Arena", "how to contact Gary Force Acura Ice Arena about programs"],
-        "freestyle": ["Gary Force Acura Ice Arena freestyle schedule", "freestyle ice near Nolensville TN", "how to find freestyle sessions in the rink schedule"],
-        "sharpening": ["does Gary Force Acura Ice Arena offer skate sharpening", "how to confirm sharpening services at Gary Force Acura Ice Arena"],
-        "rentals": ["does Gary Force Acura Ice Arena have skate rentals", "how to confirm rental skates for public skating in Nolensville"],
-        "hockey": ["Gary Force Acura Ice Arena hockey schedule", "Nashville Warriors Youth Hockey Club rink information"]
+        "public_skate": [
+          "Gary Force Acura Ice Arena public skate schedule",
+          "public skating near Nolensville TN",
+          "how to register for public skate at Gary Force Acura Ice Arena"
+        ],
+        "lessons": [
+          "how to find skating lessons information at Gary Force Acura Ice Arena",
+          "how to contact Gary Force Acura Ice Arena about programs"
+        ],
+        "freestyle": [
+          "Gary Force Acura Ice Arena freestyle schedule",
+          "freestyle ice near Nolensville TN",
+          "how to find freestyle sessions in the rink schedule"
+        ],
+        "sharpening": [
+          "does Gary Force Acura Ice Arena offer skate sharpening",
+          "how to confirm sharpening services at Gary Force Acura Ice Arena"
+        ],
+        "rentals": [
+          "does Gary Force Acura Ice Arena have skate rentals",
+          "how to confirm rental skates for public skating in Nolensville"
+        ],
+        "hockey": [
+          "Gary Force Acura Ice Arena hockey schedule",
+          "Nashville Warriors Youth Hockey Club rink information"
+        ]
       },
       "meta_title": "Gary Force Acura Ice Arena in Nolensville, TN | Schedule Help, Freestyle, and Stick & Puck",
       "meta_description": "Plan skating at Gary Force Acura Ice Arena in Nolensville, TN. Find the official schedule starting point, what session labels to look for, and practical tips for public skate, freestyle, and stick & puck.",
@@ -1424,27 +1627,74 @@
       "https://sythl.org/directions"
     ],
     "evidence": [
-      { "field": "address.street", "url": "https://www.garyforceacuraicearena.com/" },
-      { "field": "email", "url": "https://www.garyforceacuraicearena.com/" },
-      { "field": "facility.sheet_sizes", "url": "https://www.garyforceacuraicearena.com/" },
-      { "field": "offerings.public_skating", "url": "https://www.garyforceacuraicearena.com/" },
-      { "field": "offerings.stick_and_puck", "url": "https://www.garyforceacuraicearena.com/" },
-      { "field": "freestyle.available", "url": "https://www.garyforceacuraicearena.com/" },
-      { "field": "offerings.hockey", "url": "https://www.garyforceacuraicearena.com/" },
-      { "field": "offerings.figure_skating", "url": "https://www.garyforceacuraicearena.com/" },
-      { "field": "schedule_links.public_calendar_url", "url": "https://www.garyforceacuraicearena.com/" },
-      { "field": "phone", "url": "https://sythl.org/directions", "note": "The official site text reviewed did not display a phone number." },
-      { "field": "sharpening.available", "url": "https://www.garyforceacuraicearena.com/", "note": "The official site text reviewed did not confirm sharpening." },
-      { "field": "rentals.available", "url": "https://www.garyforceacuraicearena.com/", "note": "The official site text reviewed did not confirm rentals." },
-      { "field": "facility.number_of_sheets", "url": "https://www.garyforceacuraicearena.com/", "note": "The official site text reviewed did not confirm sheet count." }
+      {
+        "field": "address.street",
+        "url": "https://www.garyforceacuraicearena.com/"
+      },
+      {
+        "field": "email",
+        "url": "https://www.garyforceacuraicearena.com/"
+      },
+      {
+        "field": "facility.sheet_sizes",
+        "url": "https://www.garyforceacuraicearena.com/"
+      },
+      {
+        "field": "offerings.public_skating",
+        "url": "https://www.garyforceacuraicearena.com/"
+      },
+      {
+        "field": "offerings.stick_and_puck",
+        "url": "https://www.garyforceacuraicearena.com/"
+      },
+      {
+        "field": "freestyle.available",
+        "url": "https://www.garyforceacuraicearena.com/"
+      },
+      {
+        "field": "offerings.hockey",
+        "url": "https://www.garyforceacuraicearena.com/"
+      },
+      {
+        "field": "offerings.figure_skating",
+        "url": "https://www.garyforceacuraicearena.com/"
+      },
+      {
+        "field": "schedule_links.public_calendar_url",
+        "url": "https://www.garyforceacuraicearena.com/"
+      },
+      {
+        "field": "phone",
+        "url": "https://sythl.org/directions",
+        "note": "The official site text reviewed did not display a phone number."
+      },
+      {
+        "field": "sharpening.available",
+        "url": "https://www.garyforceacuraicearena.com/",
+        "note": "The official site text reviewed did not confirm sharpening."
+      },
+      {
+        "field": "rentals.available",
+        "url": "https://www.garyforceacuraicearena.com/",
+        "note": "The official site text reviewed did not confirm rentals."
+      },
+      {
+        "field": "facility.number_of_sheets",
+        "url": "https://www.garyforceacuraicearena.com/",
+        "note": "The official site text reviewed did not confirm sheet count."
+      }
     ],
-    "last_verified": "2025-12-19"
+    "last_verified": "2025-12-19",
+    "image": "/attached_assets/iceskatingindex5_1766179636449.jpg"
   },
   {
     "id": "tn-knoxville-cool-sports-home-of-the-icearium-knoxville-tn",
     "slug": "cool-sports-home-of-the-icearium-knoxville-tn",
     "name": "Cool Sports, Home of the Icearium",
-    "alternate_names": ["Cool Sports", "The Icearium"],
+    "alternate_names": [
+      "Cool Sports",
+      "The Icearium"
+    ],
     "category": "Ice Skating Rink",
     "operator": "Cool Sports",
     "address": {
@@ -1454,18 +1704,26 @@
       "postal_code": "37934",
       "country": "US"
     },
-    "geo": { "latitude": null, "longitude": null },
+    "geo": {
+      "latitude": null,
+      "longitude": null
+    },
     "phone": "(865) 671-5555",
     "email": "info@coolsportstn.com",
     "website": "https://coolsportstn.com/",
     "google_maps_url": null,
     "social_links": [],
-    "place_ids": { "google_place_id": null, "osm_id": null },
+    "place_ids": {
+      "google_place_id": null,
+      "osm_id": null
+    },
     "facility": {
       "indoor": true,
       "seasonality": "unknown",
       "number_of_sheets": 1,
-      "sheet_sizes": ["NHL sized ice surface"]
+      "sheet_sizes": [
+        "NHL sized ice surface"
+      ]
     },
     "schedule_links": {
       "public_calendar_url": "https://coolsportstn.com/public-ice-skating-times/",
@@ -1482,7 +1740,10 @@
       "stick_and_puck": true
     },
     "pricing": {
-      "public_skate": { "adult": null, "youth": null },
+      "public_skate": {
+        "adult": null,
+        "youth": null
+      },
       "spectators": null,
       "notes": "Cool Sports publishes public skating times on its website, but the pages reviewed did not provide a single standard admission table for public skate. Check the public skating times page for the session you want, and confirm any registration steps if prompted."
     },
@@ -1515,7 +1776,12 @@
     },
     "freestyle": {
       "available": true,
-      "labels_to_search_for": ["Freestyle", "Figure Freestyle", "Freestyle Ice", "Figure Session"],
+      "labels_to_search_for": [
+        "Freestyle",
+        "Figure Freestyle",
+        "Freestyle Ice",
+        "Figure Session"
+      ],
       "who_its_for": [
         "Figure skaters working on jumps, spins, and programs in a practice-focused session.",
         "Skaters taking lessons who need structured ice time beyond public skate."
@@ -1536,8 +1802,18 @@
       "pro_shop": true,
       "skate_aids": "unknown"
     },
-    "audiences": ["families", "beginners", "figure skaters", "hockey players", "adult learners"],
-    "tags": ["knoxville-tn", "indoor", "nhl-size"],
+    "audiences": [
+      "families",
+      "beginners",
+      "figure skaters",
+      "hockey players",
+      "adult learners"
+    ],
+    "tags": [
+      "knoxville-tn",
+      "indoor",
+      "nhl-size"
+    ],
     "faq": [
       {
         "q": "Where do I find the Cool Sports public skating schedule in Knoxville, TN?",
@@ -1561,15 +1837,50 @@
       }
     ],
     "seo": {
-      "primary_keywords": ["Cool Sports, Home of the Icearium ice rink", "ice skating rink in Knoxville TN"],
-      "secondary_keywords": ["Cool Sports public skating times", "learn to skate Knoxville TN", "freestyle ice skating Knoxville TN", "stick and puck Knoxville TN", "skate rentals Knoxville TN", "skate sharpening Knoxville TN", "hockey programs Knoxville TN"],
+      "primary_keywords": [
+        "Cool Sports, Home of the Icearium ice rink",
+        "ice skating rink in Knoxville TN"
+      ],
+      "secondary_keywords": [
+        "Cool Sports public skating times",
+        "learn to skate Knoxville TN",
+        "freestyle ice skating Knoxville TN",
+        "stick and puck Knoxville TN",
+        "skate rentals Knoxville TN",
+        "skate sharpening Knoxville TN",
+        "hockey programs Knoxville TN"
+      ],
       "intent_groups": {
-        "public_skate": ["Cool Sports public skating times", "public skating in Knoxville TN", "what to bring for public skate at Cool Sports"],
-        "lessons": ["learn to skate at Cool Sports Knoxville", "adult skating programs Cool Sports", "figure skating classes Knoxville TN at Cool Sports"],
-        "freestyle": ["Cool Sports freestyle ice schedule", "how to reserve freestyle sessions at the Icearium", "freestyle ice skating in Knoxville TN"],
-        "sharpening": ["Cool Sports skate sharpening", "where to sharpen skates in Knoxville TN", "same-day skate sharpening Knoxville"],
-        "rentals": ["Cool Sports skate rental information", "rental skates for public skating Knoxville TN", "how to choose rental skate size at the rink"],
-        "hockey": ["Cool Sports Knoxville hockey programs", "stick and puck schedule Cool Sports", "ice hockey rink in Knoxville TN"]
+        "public_skate": [
+          "Cool Sports public skating times",
+          "public skating in Knoxville TN",
+          "what to bring for public skate at Cool Sports"
+        ],
+        "lessons": [
+          "learn to skate at Cool Sports Knoxville",
+          "adult skating programs Cool Sports",
+          "figure skating classes Knoxville TN at Cool Sports"
+        ],
+        "freestyle": [
+          "Cool Sports freestyle ice schedule",
+          "how to reserve freestyle sessions at the Icearium",
+          "freestyle ice skating in Knoxville TN"
+        ],
+        "sharpening": [
+          "Cool Sports skate sharpening",
+          "where to sharpen skates in Knoxville TN",
+          "same-day skate sharpening Knoxville"
+        ],
+        "rentals": [
+          "Cool Sports skate rental information",
+          "rental skates for public skating Knoxville TN",
+          "how to choose rental skate size at the rink"
+        ],
+        "hockey": [
+          "Cool Sports Knoxville hockey programs",
+          "stick and puck schedule Cool Sports",
+          "ice hockey rink in Knoxville TN"
+        ]
       },
       "meta_title": "Cool Sports, Home of the Icearium in Knoxville, TN | Public Skate, Lessons, Freestyle, and Info",
       "meta_description": "Skate at Cool Sports, Home of the Icearium in Knoxville, TN. Find public skating times, learn-to-skate and adult program links, freestyle guidance, rentals and sharpening notes, and practical visit tips.",
@@ -1605,31 +1916,86 @@
       "https://www.facebook.com/coolsportstn/posts/pfbid02ovvfSUa5wLDxyf8Nx1zTzef6aa5pYf4JxGzmKXZXsR3Q22tQt8dsVqtr1JNvjuYul"
     ],
     "evidence": [
-      { "field": "address.street", "url": "https://coolsportstn.com/adult-skating-programs/" },
-      { "field": "phone", "url": "https://coolsportstn.com/adult-skating-programs/" },
-      { "field": "email", "url": "https://coolsportstn.com/adult-skating-programs/" },
-      { "field": "facility.indoor", "url": "https://coolsportstn.com/" },
-      { "field": "facility.number_of_sheets", "url": "https://coolsportstn.com/" },
-      { "field": "facility.sheet_sizes", "url": "https://coolsportstn.com/" },
-      { "field": "schedule_links.public_calendar_url", "url": "https://coolsportstn.com/public-ice-skating-times/" },
-      { "field": "offerings.public_skating", "url": "https://coolsportstn.com/public-ice-skating-times/" },
-      { "field": "offerings.learn_to_skate", "url": "https://coolsportstn.com/" },
-      { "field": "offerings.figure_skating", "url": "https://coolsportstn.com/" },
-      { "field": "offerings.hockey", "url": "https://coolsportstn.com/" },
-      { "field": "offerings.stick_and_puck", "url": "https://coolsportstn.com/public-ice-skating-times/" },
-      { "field": "freestyle.available", "url": "https://coolsportstn.com/freestyle-ice-skating/" },
-      { "field": "schedule_links.freestyle_calendar_url", "url": "https://coolsportstn.com/freestyle-ice-skating/" },
-      { "field": "rentals.available", "url": "https://www.facebook.com/coolsportstn/posts/pfbid02k9GQqDNDrWjuB3Hf3x5i95pjnR1SjkdXjLLhAgVccTXMWgTZj7W9qkfe3qD4sP8Rl" },
-      { "field": "sharpening.available", "url": "https://www.facebook.com/coolsportstn/posts/pfbid02ovvfSUa5wLDxyf8Nx1zTzef6aa5pYf4JxGzmKXZXsR3Q22tQt8dsVqtr1JNvjuYul" },
-      { "field": "sharpening.pricing_base", "url": "https://www.facebook.com/coolsportstn/posts/pfbid02ovvfSUa5wLDxyf8Nx1zTzef6aa5pYf4JxGzmKXZXsR3Q22tQt8dsVqtr1JNvjuYul" }
+      {
+        "field": "address.street",
+        "url": "https://coolsportstn.com/adult-skating-programs/"
+      },
+      {
+        "field": "phone",
+        "url": "https://coolsportstn.com/adult-skating-programs/"
+      },
+      {
+        "field": "email",
+        "url": "https://coolsportstn.com/adult-skating-programs/"
+      },
+      {
+        "field": "facility.indoor",
+        "url": "https://coolsportstn.com/"
+      },
+      {
+        "field": "facility.number_of_sheets",
+        "url": "https://coolsportstn.com/"
+      },
+      {
+        "field": "facility.sheet_sizes",
+        "url": "https://coolsportstn.com/"
+      },
+      {
+        "field": "schedule_links.public_calendar_url",
+        "url": "https://coolsportstn.com/public-ice-skating-times/"
+      },
+      {
+        "field": "offerings.public_skating",
+        "url": "https://coolsportstn.com/public-ice-skating-times/"
+      },
+      {
+        "field": "offerings.learn_to_skate",
+        "url": "https://coolsportstn.com/"
+      },
+      {
+        "field": "offerings.figure_skating",
+        "url": "https://coolsportstn.com/"
+      },
+      {
+        "field": "offerings.hockey",
+        "url": "https://coolsportstn.com/"
+      },
+      {
+        "field": "offerings.stick_and_puck",
+        "url": "https://coolsportstn.com/public-ice-skating-times/"
+      },
+      {
+        "field": "freestyle.available",
+        "url": "https://coolsportstn.com/freestyle-ice-skating/"
+      },
+      {
+        "field": "schedule_links.freestyle_calendar_url",
+        "url": "https://coolsportstn.com/freestyle-ice-skating/"
+      },
+      {
+        "field": "rentals.available",
+        "url": "https://www.facebook.com/coolsportstn/posts/pfbid02k9GQqDNDrWjuB3Hf3x5i95pjnR1SjkdXjLLhAgVccTXMWgTZj7W9qkfe3qD4sP8Rl"
+      },
+      {
+        "field": "sharpening.available",
+        "url": "https://www.facebook.com/coolsportstn/posts/pfbid02ovvfSUa5wLDxyf8Nx1zTzef6aa5pYf4JxGzmKXZXsR3Q22tQt8dsVqtr1JNvjuYul"
+      },
+      {
+        "field": "sharpening.pricing_base",
+        "url": "https://www.facebook.com/coolsportstn/posts/pfbid02ovvfSUa5wLDxyf8Nx1zTzef6aa5pYf4JxGzmKXZXsR3Q22tQt8dsVqtr1JNvjuYul"
+      }
     ],
-    "last_verified": "2025-12-19"
+    "last_verified": "2025-12-19",
+    "image": "/attached_assets/iceskatingindex1_1766179636449.jpg"
   },
   {
     "id": "tn-knoxville-ice-chalet-knoxville-tn",
     "slug": "ice-chalet-knoxville-tn",
     "name": "Ice Chalet",
-    "alternate_names": ["Chalet Ice Rinks", "Ice Chalet Knoxville"],
+    "alternate_names": [
+      "Chalet Ice Rinks",
+      "Ice Chalet Knoxville"
+    ],
     "category": "Ice Skating Rink",
     "operator": "Chalet Ice Rinks, Inc.",
     "address": {
@@ -1639,13 +2005,19 @@
       "postal_code": "37919",
       "country": "US"
     },
-    "geo": { "latitude": null, "longitude": null },
+    "geo": {
+      "latitude": null,
+      "longitude": null
+    },
     "phone": "(865) 588-1858",
     "email": "info@chaleticerinks.com",
     "website": "https://www.chaleticerinks.com/",
     "google_maps_url": null,
     "social_links": [],
-    "place_ids": { "google_place_id": null, "osm_id": null },
+    "place_ids": {
+      "google_place_id": null,
+      "osm_id": null
+    },
     "facility": {
       "indoor": "unknown",
       "seasonality": "unknown",
@@ -1667,8 +2039,11 @@
       "stick_and_puck": "unknown"
     },
     "pricing": {
-      "public_skate": { "adult": 9.5, "youth": 9.5 },
-      "spectators": 3.0,
+      "public_skate": {
+        "adult": 9.5,
+        "youth": 9.5
+      },
+      "spectators": 3,
       "notes": "The Ice Chalet public sessions page lists a general admission price per session and also lists spectator admission and skate rental pricing. Public session times can vary, so use the online schedule page to confirm the specific session you plan to attend."
     },
     "rentals": {
@@ -1691,13 +2066,20 @@
       "turnaround": null,
       "pricing_base": null,
       "pricing_rush": null,
-      "add_ons": ["Boot fitting is advertised in the pro shop."],
+      "add_ons": [
+        "Boot fitting is advertised in the pro shop."
+      ],
       "notes": "The pro shop is described as providing sharpening and other services, but the pages reviewed did not list a published sharpening price.",
       "info_url": "https://www.chaleticerinks.com/proshop.htm"
     },
     "freestyle": {
       "available": true,
-      "labels_to_search_for": ["Freestyle", "Figure Freestyle", "Freestyle Ice", "Figure Session"],
+      "labels_to_search_for": [
+        "Freestyle",
+        "Figure Freestyle",
+        "Freestyle Ice",
+        "Figure Session"
+      ],
       "who_its_for": [
         "Figure skaters practicing jumps, spins, and moves in the field.",
         "Skaters who want a quieter practice environment than a public session."
@@ -1718,8 +2100,15 @@
       "pro_shop": true,
       "skate_aids": "unknown"
     },
-    "audiences": ["families", "beginners", "figure skaters", "hockey players"],
-    "tags": ["knoxville-tn"],
+    "audiences": [
+      "families",
+      "beginners",
+      "figure skaters",
+      "hockey players"
+    ],
+    "tags": [
+      "knoxville-tn"
+    ],
     "faq": [
       {
         "q": "Where do I find Ice Chalet public skating times in Knoxville, TN?",
@@ -1743,15 +2132,48 @@
       }
     ],
     "seo": {
-      "primary_keywords": ["Ice Chalet ice rink", "ice skating rink in Knoxville TN"],
-      "secondary_keywords": ["Ice Chalet public skating schedule", "Ice Chalet skate rentals", "Ice Chalet skating lessons", "Ice Chalet freestyle ice", "Ice Chalet pro shop sharpening", "ice skating in Knoxville TN"],
+      "primary_keywords": [
+        "Ice Chalet ice rink",
+        "ice skating rink in Knoxville TN"
+      ],
+      "secondary_keywords": [
+        "Ice Chalet public skating schedule",
+        "Ice Chalet skate rentals",
+        "Ice Chalet skating lessons",
+        "Ice Chalet freestyle ice",
+        "Ice Chalet pro shop sharpening",
+        "ice skating in Knoxville TN"
+      ],
       "intent_groups": {
-        "public_skate": ["Ice Chalet Knoxville public skating schedule", "public skate times at Ice Chalet", "Ice Chalet admission and session info"],
-        "lessons": ["Ice Chalet skating school schedule", "learn to skate classes at Ice Chalet Knoxville", "group skating lessons Knoxville TN at Ice Chalet"],
-        "freestyle": ["Ice Chalet freestyle ice schedule", "how to find practice ice sessions at Ice Chalet", "freestyle ice labeling at Ice Chalet Knoxville"],
-        "sharpening": ["Ice Chalet skate sharpening", "pro shop services at Ice Chalet Knoxville", "where to sharpen skates in Knoxville TN"],
-        "rentals": ["Ice Chalet skate rental price", "rental skates for public skating at Ice Chalet", "what to bring for public skating at Ice Chalet"],
-        "hockey": ["Ice Chalet Knoxville hockey rink schedule", "Ice Chalet hockey programming information"]
+        "public_skate": [
+          "Ice Chalet Knoxville public skating schedule",
+          "public skate times at Ice Chalet",
+          "Ice Chalet admission and session info"
+        ],
+        "lessons": [
+          "Ice Chalet skating school schedule",
+          "learn to skate classes at Ice Chalet Knoxville",
+          "group skating lessons Knoxville TN at Ice Chalet"
+        ],
+        "freestyle": [
+          "Ice Chalet freestyle ice schedule",
+          "how to find practice ice sessions at Ice Chalet",
+          "freestyle ice labeling at Ice Chalet Knoxville"
+        ],
+        "sharpening": [
+          "Ice Chalet skate sharpening",
+          "pro shop services at Ice Chalet Knoxville",
+          "where to sharpen skates in Knoxville TN"
+        ],
+        "rentals": [
+          "Ice Chalet skate rental price",
+          "rental skates for public skating at Ice Chalet",
+          "what to bring for public skating at Ice Chalet"
+        ],
+        "hockey": [
+          "Ice Chalet Knoxville hockey rink schedule",
+          "Ice Chalet hockey programming information"
+        ]
       },
       "meta_title": "Ice Chalet in Knoxville, TN | Public Skate Schedule, Lessons, Freestyle, Rentals, and Info",
       "meta_description": "Visit Ice Chalet in Knoxville, TN. Find the online schedule link, public session pricing details, skating school links, freestyle practice guidance, and pro shop notes including sharpening.",
@@ -1786,29 +2208,78 @@
       "https://services.chaleticerinks.com/Facility/GetSchedule?facilityId=c321fa22-6125-4d64-bda6-f07020f66172"
     ],
     "evidence": [
-      { "field": "address.street", "url": "https://www.chaleticerinks.com/" },
-      { "field": "phone", "url": "https://www.chaleticerinks.com/" },
-      { "field": "email", "url": "https://www.chaleticerinks.com/" },
-      { "field": "schedule_links.public_calendar_url", "url": "https://www.chaleticerinks.com/" },
-      { "field": "schedule_links.freestyle_calendar_url", "url": "https://www.chaleticerinks.com/practiceice.htm" },
-      { "field": "offerings.public_skating", "url": "https://www.chaleticerinks.com/publicsessions.htm" },
-      { "field": "offerings.learn_to_skate", "url": "https://www.chaleticerinks.com/fallandwinter.htm" },
-      { "field": "offerings.figure_skating", "url": "https://www.chaleticerinks.com/" },
-      { "field": "offerings.hockey", "url": "https://www.chaleticerinks.com/" },
-      { "field": "pricing.public_skate.adult", "url": "https://www.chaleticerinks.com/publicsessions.htm" },
-      { "field": "pricing.spectators", "url": "https://www.chaleticerinks.com/publicsessions.htm" },
-      { "field": "rentals.available", "url": "https://www.chaleticerinks.com/publicsessions.htm" },
-      { "field": "sharpening.available", "url": "https://www.chaleticerinks.com/proshop.htm" },
-      { "field": "freestyle.available", "url": "https://www.chaleticerinks.com/practiceice.htm" },
-      { "field": "amenities.pro_shop", "url": "https://www.chaleticerinks.com/proshop.htm" }
+      {
+        "field": "address.street",
+        "url": "https://www.chaleticerinks.com/"
+      },
+      {
+        "field": "phone",
+        "url": "https://www.chaleticerinks.com/"
+      },
+      {
+        "field": "email",
+        "url": "https://www.chaleticerinks.com/"
+      },
+      {
+        "field": "schedule_links.public_calendar_url",
+        "url": "https://www.chaleticerinks.com/"
+      },
+      {
+        "field": "schedule_links.freestyle_calendar_url",
+        "url": "https://www.chaleticerinks.com/practiceice.htm"
+      },
+      {
+        "field": "offerings.public_skating",
+        "url": "https://www.chaleticerinks.com/publicsessions.htm"
+      },
+      {
+        "field": "offerings.learn_to_skate",
+        "url": "https://www.chaleticerinks.com/fallandwinter.htm"
+      },
+      {
+        "field": "offerings.figure_skating",
+        "url": "https://www.chaleticerinks.com/"
+      },
+      {
+        "field": "offerings.hockey",
+        "url": "https://www.chaleticerinks.com/"
+      },
+      {
+        "field": "pricing.public_skate.adult",
+        "url": "https://www.chaleticerinks.com/publicsessions.htm"
+      },
+      {
+        "field": "pricing.spectators",
+        "url": "https://www.chaleticerinks.com/publicsessions.htm"
+      },
+      {
+        "field": "rentals.available",
+        "url": "https://www.chaleticerinks.com/publicsessions.htm"
+      },
+      {
+        "field": "sharpening.available",
+        "url": "https://www.chaleticerinks.com/proshop.htm"
+      },
+      {
+        "field": "freestyle.available",
+        "url": "https://www.chaleticerinks.com/practiceice.htm"
+      },
+      {
+        "field": "amenities.pro_shop",
+        "url": "https://www.chaleticerinks.com/proshop.htm"
+      }
     ],
-    "last_verified": "2025-12-19"
+    "last_verified": "2025-12-19",
+    "image": "/attached_assets/iceskatingindex2_1766179636450.jpg"
   },
   {
     "id": "tn-gatlinburg-ober-mountain-indoor-ice-skating-gatlinburg-tn",
     "slug": "ober-mountain-indoor-ice-skating-gatlinburg-tn",
     "name": "Ober Mountain Indoor Ice Skating",
-    "alternate_names": ["Ober Mountain Ice Skating", "Ober Mountain Ice Rink"],
+    "alternate_names": [
+      "Ober Mountain Ice Skating",
+      "Ober Mountain Ice Rink"
+    ],
     "category": "Ice Skating Rink",
     "operator": "Ober Mountain",
     "address": {
@@ -1818,18 +2289,26 @@
       "postal_code": "37738",
       "country": "US"
     },
-    "geo": { "latitude": null, "longitude": null },
+    "geo": {
+      "latitude": null,
+      "longitude": null
+    },
     "phone": "(865) 436-5423",
     "email": "fun@obermountain.com",
     "website": "https://obermountain.com/ice-skating/",
     "google_maps_url": null,
     "social_links": [],
-    "place_ids": { "google_place_id": null, "osm_id": null },
+    "place_ids": {
+      "google_place_id": null,
+      "osm_id": null
+    },
     "facility": {
       "indoor": true,
       "seasonality": "year-round",
       "number_of_sheets": 1,
-      "sheet_sizes": ["140 ft x 75 ft"]
+      "sheet_sizes": [
+        "140 ft x 75 ft"
+      ]
     },
     "schedule_links": {
       "public_calendar_url": "https://www.obermountain.com/operating-hours",
@@ -1846,7 +2325,10 @@
       "stick_and_puck": "unknown"
     },
     "pricing": {
-      "public_skate": { "adult": null, "youth": null },
+      "public_skate": {
+        "adult": null,
+        "youth": null
+      },
       "spectators": null,
       "notes": "Ober Mountain publishes ice skating information and operating hours on its official site, but the pricing section was not captured in the sources reviewed. Use the tickets and passes flow on the official site to confirm current pricing and what is included with admission."
     },
@@ -1876,7 +2358,12 @@
     },
     "freestyle": {
       "available": "unknown",
-      "labels_to_search_for": ["Freestyle", "Figure Freestyle", "Freestyle Ice", "Figure Session"],
+      "labels_to_search_for": [
+        "Freestyle",
+        "Figure Freestyle",
+        "Freestyle Ice",
+        "Figure Session"
+      ],
       "who_its_for": [],
       "how_to_find_times": "Start with the Ober Mountain operating hours page and the ice skating page. Look for any posted session blocks or policies that separate open skating from private or practice ice. If you do not see a freestyle label, use the tickets and passes flow and check for add-ons or session types that mention practice, figure skating, or freestyle ice.",
       "cost_notes": null,
@@ -1894,8 +2381,16 @@
       "pro_shop": "unknown",
       "skate_aids": "unknown"
     },
-    "audiences": ["families", "beginners", "visitors"],
-    "tags": ["gatlinburg-tn", "indoor", "year-round"],
+    "audiences": [
+      "families",
+      "beginners",
+      "visitors"
+    ],
+    "tags": [
+      "gatlinburg-tn",
+      "indoor",
+      "year-round"
+    ],
     "faq": [
       {
         "q": "Is Ober Mountain ice skating indoors and open year-round?",
@@ -1919,15 +2414,44 @@
       }
     ],
     "seo": {
-      "primary_keywords": ["Ober Mountain Indoor Ice Skating ice rink", "ice skating rink in Gatlinburg TN"],
-      "secondary_keywords": ["indoor ice skating Gatlinburg TN", "Ober Mountain ice rink hours", "Ober Mountain skate rentals", "year-round ice skating in Gatlinburg", "things to do in Gatlinburg ice skating"],
+      "primary_keywords": [
+        "Ober Mountain Indoor Ice Skating ice rink",
+        "ice skating rink in Gatlinburg TN"
+      ],
+      "secondary_keywords": [
+        "indoor ice skating Gatlinburg TN",
+        "Ober Mountain ice rink hours",
+        "Ober Mountain skate rentals",
+        "year-round ice skating in Gatlinburg",
+        "things to do in Gatlinburg ice skating"
+      ],
       "intent_groups": {
-        "public_skate": ["Ober Mountain ice skating hours", "indoor ice skating in Gatlinburg TN", "what to know before skating at Ober Mountain"],
-        "lessons": ["does Ober Mountain offer skating lessons", "how to check for lessons at Ober Mountain"],
-        "freestyle": ["how to find freestyle ice at Ober Mountain", "does Ober Mountain have practice ice sessions"],
-        "sharpening": ["does Ober Mountain offer skate sharpening", "how to confirm sharpening near Ober Mountain"],
-        "rentals": ["Ober Mountain skate rental sizes", "do you need socks for Ober Mountain ice skating", "skate rentals available at Ober Mountain"],
-        "hockey": ["does Ober Mountain host hockey sessions", "how to check for hockey ice time at Ober Mountain"]
+        "public_skate": [
+          "Ober Mountain ice skating hours",
+          "indoor ice skating in Gatlinburg TN",
+          "what to know before skating at Ober Mountain"
+        ],
+        "lessons": [
+          "does Ober Mountain offer skating lessons",
+          "how to check for lessons at Ober Mountain"
+        ],
+        "freestyle": [
+          "how to find freestyle ice at Ober Mountain",
+          "does Ober Mountain have practice ice sessions"
+        ],
+        "sharpening": [
+          "does Ober Mountain offer skate sharpening",
+          "how to confirm sharpening near Ober Mountain"
+        ],
+        "rentals": [
+          "Ober Mountain skate rental sizes",
+          "do you need socks for Ober Mountain ice skating",
+          "skate rentals available at Ober Mountain"
+        ],
+        "hockey": [
+          "does Ober Mountain host hockey sessions",
+          "how to check for hockey ice time at Ober Mountain"
+        ]
       },
       "meta_title": "Ober Mountain Indoor Ice Skating in Gatlinburg, TN | Hours, Rentals, and Visit Tips",
       "meta_description": "Skate at Ober Mountain Indoor Ice Skating in Gatlinburg, TN. See the official operating hours link, rink size, rental skate sizing, and practical guidelines for a smooth visit.",
@@ -1960,21 +2484,67 @@
       "https://www.gatlinburg.com/listing/ober-mountain-adventure-park-%26-ski-area/743/"
     ],
     "evidence": [
-      { "field": "facility.indoor", "url": "https://obermountain.com/ice-skating/" },
-      { "field": "facility.seasonality", "url": "https://obermountain.com/ice-skating/" },
-      { "field": "facility.sheet_sizes", "url": "https://obermountain.com/ice-skating/" },
-      { "field": "offerings.public_skating", "url": "https://obermountain.com/ice-skating/" },
-      { "field": "rentals.available", "url": "https://obermountain.com/ice-skating/" },
-      { "field": "rentals.size_range_min", "url": "https://obermountain.com/ice-skating/" },
-      { "field": "rentals.size_range_max", "url": "https://obermountain.com/ice-skating/" },
-      { "field": "schedule_links.public_calendar_url", "url": "https://www.obermountain.com/operating-hours" },
-      { "field": "address.street", "url": "https://www.obermountain.com/getting-here" },
-      { "field": "phone", "url": "https://www.gatlinburg.com/listing/ober-mountain-adventure-park-%26-ski-area/743/" },
-      { "field": "email", "url": "https://www.gatlinburg.com/listing/ober-mountain-adventure-park-%26-ski-area/743/" },
-      { "field": "freestyle.available", "url": "https://obermountain.com/ice-skating/", "note": "Freestyle sessions are not confirmed in the official sources reviewed." },
-      { "field": "sharpening.available", "url": "https://obermountain.com/ice-skating/", "note": "Sharpening is not confirmed in the official sources reviewed." },
-      { "field": "facility.number_of_sheets", "url": "https://obermountain.com/ice-skating/", "note": "The official page lists one rink size but does not explicitly state the number of sheets." }
+      {
+        "field": "facility.indoor",
+        "url": "https://obermountain.com/ice-skating/"
+      },
+      {
+        "field": "facility.seasonality",
+        "url": "https://obermountain.com/ice-skating/"
+      },
+      {
+        "field": "facility.sheet_sizes",
+        "url": "https://obermountain.com/ice-skating/"
+      },
+      {
+        "field": "offerings.public_skating",
+        "url": "https://obermountain.com/ice-skating/"
+      },
+      {
+        "field": "rentals.available",
+        "url": "https://obermountain.com/ice-skating/"
+      },
+      {
+        "field": "rentals.size_range_min",
+        "url": "https://obermountain.com/ice-skating/"
+      },
+      {
+        "field": "rentals.size_range_max",
+        "url": "https://obermountain.com/ice-skating/"
+      },
+      {
+        "field": "schedule_links.public_calendar_url",
+        "url": "https://www.obermountain.com/operating-hours"
+      },
+      {
+        "field": "address.street",
+        "url": "https://www.obermountain.com/getting-here"
+      },
+      {
+        "field": "phone",
+        "url": "https://www.gatlinburg.com/listing/ober-mountain-adventure-park-%26-ski-area/743/"
+      },
+      {
+        "field": "email",
+        "url": "https://www.gatlinburg.com/listing/ober-mountain-adventure-park-%26-ski-area/743/"
+      },
+      {
+        "field": "freestyle.available",
+        "url": "https://obermountain.com/ice-skating/",
+        "note": "Freestyle sessions are not confirmed in the official sources reviewed."
+      },
+      {
+        "field": "sharpening.available",
+        "url": "https://obermountain.com/ice-skating/",
+        "note": "Sharpening is not confirmed in the official sources reviewed."
+      },
+      {
+        "field": "facility.number_of_sheets",
+        "url": "https://obermountain.com/ice-skating/",
+        "note": "The official page lists one rink size but does not explicitly state the number of sheets."
+      }
     ],
-    "last_verified": "2025-12-19"
+    "last_verified": "2025-12-19",
+    "image": "/attached_assets/iceskatingindex3_1766179636450.jpg"
   }
 ]

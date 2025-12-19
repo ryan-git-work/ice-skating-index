@@ -13,18 +13,26 @@ export function RinkCard({ rink }: RinkCardProps) {
   return (
     <Card className="group h-full flex flex-col overflow-hidden border transition-all hover:shadow-md hover:border-primary/20">
       <CardHeader className="p-0">
-        <div className="h-32 bg-secondary/50 relative overflow-hidden">
-           {/* Pattern or placeholder image if no image available */}
-           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary/10" />
-           <div className="absolute bottom-4 left-4 right-4">
-             <div className="flex flex-wrap gap-2">
+        <div className="h-40 bg-secondary/50 relative overflow-hidden">
+           {rink.image ? (
+             <img 
+               src={rink.image} 
+               alt={rink.name}
+               className="absolute inset-0 w-full h-full object-cover"
+             />
+           ) : (
+             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary/10" />
+           )}
+           <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+           <div className="absolute bottom-3 left-3 right-3">
+             <div className="flex flex-wrap gap-1.5">
                {isTruthy(rink.offerings.public_skating) && (
-                 <Badge variant="secondary" className="bg-white/80 backdrop-blur-sm text-xs font-normal">
+                 <Badge variant="secondary" className="bg-white/90 backdrop-blur-sm text-xs font-normal">
                    Public Skate
                  </Badge>
                )}
                {isTruthy(rink.freestyle.available) && (
-                 <Badge variant="secondary" className="bg-white/80 backdrop-blur-sm text-xs font-normal">
+                 <Badge variant="secondary" className="bg-white/90 backdrop-blur-sm text-xs font-normal">
                    Freestyle
                  </Badge>
                )}
