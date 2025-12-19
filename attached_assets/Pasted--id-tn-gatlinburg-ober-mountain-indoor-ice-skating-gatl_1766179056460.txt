@@ -1,0 +1,295 @@
+{
+"id": "tn-gatlinburg-ober-mountain-indoor-ice-skating-gatlinburg-tn",
+"slug": "ober-mountain-indoor-ice-skating-gatlinburg-tn",
+"name": "Ober Mountain Indoor Ice Skating",
+"alternate_names": [
+"Ober Mountain Ice Skating",
+"Ober Mountain Ice Rink"
+],
+"category": "Ice Skating Rink",
+"operator": "Ober Mountain",
+"address": {
+"street": "1339 Ski Mountain Road",
+"city": "Gatlinburg",
+"state": "TN",
+"postal_code": "37738",
+"country": "US"
+},
+"geo": {
+"latitude": null,
+"longitude": null
+},
+"phone": "(865) 436-5423",
+"email": "fun@obermountain.com
+",
+"website": "https://obermountain.com/ice-skating/
+",
+"google_maps_url": null,
+"social_links": [],
+"place_ids": {
+"google_place_id": null,
+"osm_id": null
+},
+"facility": {
+"indoor": true,
+"seasonality": "year_round",
+"number_of_sheets": 1,
+"sheet_sizes": [
+"140 ft x 75 ft"
+]
+},
+"schedule_links": {
+"public_calendar_url": "https://www.obermountain.com/operating-hours
+",
+"freestyle_calendar_url": null,
+"hockey_calendar_url": null,
+"lessons_url": null
+},
+"offerings": {
+"public_skating": true,
+"learn_to_skate": "unknown",
+"figure_skating": "unknown",
+"hockey": "unknown",
+"open_hockey": "unknown",
+"stick_and_puck": "unknown"
+},
+"pricing": {
+"public_skate": {
+"adult": null,
+"youth": null
+},
+"spectators": null,
+"notes": "Ober Mountain publishes ice skating information and operating hours on its official site, but the pricing section was not captured in the sources reviewed. Use the tickets and passes flow on the official site to confirm current pricing and what is included with admission."
+},
+"rentals": {
+"available": true,
+"included_with_admission": "unknown",
+"size_range_min": 6,
+"size_range_max": 15,
+"fit_tips": [
+"Bring socks and use a snug lace-up fit so your heel does not lift.",
+"If you are between sizes, prioritize heel lock and ankle support over extra toe room."
+],
+"recommendations": [
+"If you have your own skates and they fit well, bringing them can make the experience more comfortable.",
+"For first-timers, stay near the boards until you find your balance and keep your knees softly bent."
+],
+"notes": "The official ice skating page lists rental skates as available, with sizing from toddler size 6 to adult size 15."
+},
+"sharpening": {
+"available": "unknown",
+"turnaround": null,
+"pricing_base": null,
+"pricing_rush": null,
+"add_ons": [],
+"notes": "Skate sharpening is not confirmed on the official ice skating page or the operating hours page reviewed.",
+"info_url": null
+},
+"freestyle": {
+"available": "unknown",
+"labels_to_search_for": [
+"Freestyle",
+"Figure Freestyle",
+"Freestyle Ice",
+"Figure Session"
+],
+"who_its_for": [],
+"how_to_find_times": "Start with the Ober Mountain operating hours page and the ice skating page. Look for any posted session blocks or policies that separate open skating from private or practice ice. If you do not see a freestyle label, use the tickets and passes flow and check for add-ons or session types that mention practice, figure skating, or freestyle ice.",
+"cost_notes": null,
+"etiquette_tips": [
+"During open skating, keep your speed appropriate for mixed ages and ability levels.",
+"If the rink is busy, avoid practicing jumps and spins unless staff explicitly allows it.",
+"Follow any posted rules about where to enter and exit the ice."
+],
+"notes": "Freestyle sessions are not confirmed in the official sources reviewed. This listing focuses on open indoor skating."
+},
+"amenities": {
+"lockers": "unknown",
+"spectator_seating": "unknown",
+"concessions": "unknown",
+"pro_shop": "unknown",
+"skate_aids": "unknown"
+},
+"audiences": [
+"families",
+"beginners",
+"visitors"
+],
+"tags": [
+"gatlinburg-tn",
+"indoor",
+"year-round"
+],
+"faq": [
+{
+"q": "Is Ober Mountain ice skating indoors and open year-round?",
+"a": "Yes. The official ice skating page describes an indoor ice rink and states it is open year-round."
+},
+{
+"q": "Where is the Ober Mountain ice rink located in Gatlinburg, TN?",
+"a": "The official 'Getting Here' page lists the park and ski area address as 1339 Ski Mountain Road in Gatlinburg. Use that address for navigation and review the parking guidance on the official site."
+},
+{
+"q": "Are skate rentals available at Ober Mountain ice skating?",
+"a": "Yes. The official ice skating page says rental skates are available and lists sizes from toddler size 6 through adult size 15."
+},
+{
+"q": "Where do I find operating hours for the ice rink?",
+"a": "Use the Ober Mountain operating hours page and look under indoor activities for the ice rink listing. Hours can vary by season and holidays."
+},
+{
+"q": "Does Ober Mountain offer freestyle sessions or figure skating practice time?",
+"a": "Freestyle ice is not confirmed in the official sources reviewed. If you are looking for practice-focused time, check the operating hours information and the ticket flow for any session types beyond open skating."
+}
+],
+"seo": {
+"primary_keywords": [
+"Ober Mountain Indoor Ice Skating ice rink",
+"ice skating rink in Gatlinburg TN"
+],
+"secondary_keywords": [
+"indoor ice skating Gatlinburg TN",
+"Ober Mountain ice rink hours",
+"Ober Mountain skate rentals",
+"year-round ice skating in Gatlinburg",
+"things to do in Gatlinburg ice skating"
+],
+"intent_groups": {
+"public_skate": [
+"Ober Mountain ice skating hours",
+"indoor ice skating in Gatlinburg TN",
+"what to know before skating at Ober Mountain"
+],
+"lessons": [
+"does Ober Mountain offer skating lessons",
+"how to check for lessons at Ober Mountain"
+],
+"freestyle": [
+"how to find freestyle ice at Ober Mountain",
+"does Ober Mountain have practice ice sessions"
+],
+"sharpening": [
+"does Ober Mountain offer skate sharpening",
+"how to confirm sharpening near Ober Mountain"
+],
+"rentals": [
+"Ober Mountain skate rental sizes",
+"do you need socks for Ober Mountain ice skating",
+"skate rentals available at Ober Mountain"
+],
+"hockey": [
+"does Ober Mountain host hockey sessions",
+"how to check for hockey ice time at Ober Mountain"
+]
+},
+"meta_title": "Ober Mountain Indoor Ice Skating in Gatlinburg, TN | Hours, Rentals, and Visit Tips",
+"meta_description": "Skate at Ober Mountain Indoor Ice Skating in Gatlinburg, TN. See the official operating hours link, rink size, rental skate sizing, and practical guidelines for a smooth visit.",
+"snippet": "Ober Mountain Indoor Ice Skating in Gatlinburg, Tennessee is a year-round indoor rink with a 140 ft by 75 ft ice surface and rental skates available for a wide size range.",
+"short_description": "Ober Mountain Indoor Ice Skating is an indoor ice rink in Gatlinburg, TN at the Ober Mountain adventure park. The official site lists a 140 ft by 75 ft rink, open year-round, with rental skates available from toddler size 6 through adult size 15.",
+"long_description": "## Ober Mountain indoor ice skating at a glance\n\nOber Mountain Indoor Ice Skating is an indoor ice rink in Gatlinburg, TN that the official site states is open year-round. The official ice skating page lists the rink size as 140 ft by 75 ft and positions this as a classic indoor activity option at Ober Mountain.\n\n## Rentals and key rules\n\nRental skates are confirmed as available on the official page, with sizing listed from toddler size 6 through adult size 15. The same page also lists participation rules such as socks being required and children ages 6 and under needing to skate with a paid adult.\n\n## Hours and day-of planning\n\nFor the most accurate day-of timing, use the official operating hours page and look for the ice rink listing under indoor activities. If you are driving up the mountain, review the official getting-here page for the park address and parking guidance.",
+"helpful_blurbs": [
+"Use the operating hours page before you go, especially during holidays, because indoor activity hours can shift.",
+"Visiting the Smokies in summer or winter? Browse Tennessee rinks to compare indoor, seasonal, and year-round options.",
+"If you want practice-focused ice, check the freestyle hub to learn how different rinks label freestyle or practice sessions.",
+"Need rentals? Explore skate rental options and compare sizing guidance across rinks, especially if you are traveling with kids.",
+"Planning parking and arrival time matters here, so compare visit notes across rink listings when you build your itinerary."
+],
+"what_to_know": [
+"Ober Mountain Indoor Ice Skating is described on the official site as an indoor ice rink in Gatlinburg, Tennessee.",
+"The official ice skating page lists the rink size as 140 ft by 75 ft.",
+"The official page states the rink is open year-round.",
+"Rental skates are confirmed as available, with sizes listed from toddler size 6 through adult size 15.",
+"Socks are required according to the official participation requirements, and socks are noted as available for sale.",
+"Children ages 6 and under must skate with a paid adult according to the official participation requirements.",
+"The official site lists safety restrictions such as no wheelchairs or pedestrian traffic on the ice.",
+"Use the operating hours page for the most accurate day-to-day open times for the ice rink.",
+"Use the 'Getting Here' page for parking guidance and the mountain address before you drive up."
+]
+},
+"sources": [
+"https://obermountain.com/ice-skating/
+",
+"https://www.obermountain.com/operating-hours
+",
+"https://www.obermountain.com/getting-here
+",
+"https://www.gatlinburg.com/listing/ober-mountain-adventure-park-%26-ski-area/743/
+"
+],
+"evidence": [
+{
+"field": "facility.indoor",
+"url": "https://obermountain.com/ice-skating/
+"
+},
+{
+"field": "facility.seasonality",
+"url": "https://obermountain.com/ice-skating/
+"
+},
+{
+"field": "facility.sheet_sizes",
+"url": "https://obermountain.com/ice-skating/
+"
+},
+{
+"field": "offerings.public_skating",
+"url": "https://obermountain.com/ice-skating/
+"
+},
+{
+"field": "rentals.available",
+"url": "https://obermountain.com/ice-skating/
+"
+},
+{
+"field": "rentals.size_range_min",
+"url": "https://obermountain.com/ice-skating/
+"
+},
+{
+"field": "rentals.size_range_max",
+"url": "https://obermountain.com/ice-skating/
+"
+},
+{
+"field": "schedule_links.public_calendar_url",
+"url": "https://www.obermountain.com/operating-hours
+"
+},
+{
+"field": "address.street",
+"url": "https://www.obermountain.com/getting-here
+"
+},
+{
+"field": "phone",
+"url": "https://www.gatlinburg.com/listing/ober-mountain-adventure-park-%26-ski-area/743/
+"
+},
+{
+"field": "email",
+"url": "https://www.gatlinburg.com/listing/ober-mountain-adventure-park-%26-ski-area/743/
+"
+},
+{
+"field": "freestyle.available",
+"url": "https://obermountain.com/ice-skating/
+",
+"note": "Freestyle sessions are not confirmed in the official sources reviewed."
+},
+{
+"field": "sharpening.available",
+"url": "https://obermountain.com/ice-skating/
+",
+"note": "Sharpening is not confirmed in the official sources reviewed."
+},
+{
+"field": "facility.number_of_sheets",
+"url": "https://obermountain.com/ice-skating/
+",
+"note": "The official page lists one rink size but does not explicitly state the number of sheets."
+}
+],
+"last_verified": "2025-12-19"
+}
