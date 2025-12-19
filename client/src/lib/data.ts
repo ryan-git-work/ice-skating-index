@@ -34,7 +34,7 @@ export const RinkSchema = z.object({
   facility: z.object({
     indoor: z.union([z.boolean(), z.literal("unknown")]),
     seasonality: z.string(),
-    number_of_sheets: z.number().optional(),
+    number_of_sheets: z.number().nullable().optional(),
     sheet_sizes: z.array(z.string()).optional(),
   }),
   schedule_links: z.object({
@@ -82,7 +82,7 @@ export const RinkSchema = z.object({
         z.object({ name: z.string(), price: z.string() })
     ])).optional(),
     notes: z.string().optional(),
-    info_url: z.string().optional(),
+    info_url: z.string().nullable().optional(),
   }),
   freestyle: z.object({
     available: z.union([z.boolean(), z.literal("true"), z.literal("false"), z.literal("unknown")]),
