@@ -47,6 +47,41 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-between mb-12">
+            <div>
+              <h2 className="font-serif text-3xl font-bold mb-2">City Hubs</h2>
+              <p className="text-muted-foreground">Comprehensive guides to skating in your city</p>
+            </div>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Link href="/tennessee/nashville-ice-skating">
+              <div className="group h-full flex flex-col overflow-hidden border rounded-xl transition-all hover:shadow-md hover:border-primary/20 bg-card">
+                <div className="h-48 relative overflow-hidden">
+                  <img 
+                    src="/attached_assets/iceskatingindex1_1766179636449.jpg" 
+                    alt="Ice skating in Nashville"
+                    className="absolute inset-0 w-full h-full object-cover transition-transform group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <h3 className="font-serif text-2xl font-bold text-white">Nashville, TN</h3>
+                    <p className="text-white/80 text-sm">3 rinks</p>
+                  </div>
+                </div>
+                <div className="p-5">
+                  <p className="text-sm text-muted-foreground">
+                    Find the best rinks for public skate, lessons, freestyle, and hockey in Nashville.
+                  </p>
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <section className="py-24">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
