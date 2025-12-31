@@ -13,6 +13,7 @@ import CityHub from "@/pages/CityHub";
 import FreestyleHub from "@/pages/FreestyleHub";
 import SkateSharpening from "@/pages/SkateSharpening";
 import LearnToSkate from "@/pages/LearnToSkate";
+import NashvilleHub from "@/pages/NashvilleHub";
 
 function Router() {
   return (
@@ -22,6 +23,7 @@ function Router() {
       <Route path="/freestyle" component={FreestyleHub} />
       <Route path="/services/skate-sharpening" component={SkateSharpening} />
       <Route path="/services/learn-to-skate" component={LearnToSkate} />
+      <Route path="/tennessee/nashville-ice-skating" component={NashvilleHub} />
       
       {/* Dynamic Routes */}
       <Route path="/rink/:slug" component={RinkDetail} />

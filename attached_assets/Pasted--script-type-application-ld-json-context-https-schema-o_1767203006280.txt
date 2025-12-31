@@ -1,0 +1,125 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://iceskatingindex.com/tennessee/nashville-ice-skating/#webpage",
+      "url": "https://iceskatingindex.com/tennessee/nashville-ice-skating/",
+      "name": "Ice Skating in Nashville, TN",
+      "description": "Find ice skating in Nashville, TN. Explore rinks, public skate options, lessons, freestyle sessions, and tips for first-time skaters.",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://iceskatingindex.com/#website",
+        "url": "https://iceskatingindex.com/",
+        "name": "Ice Skating Index"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://iceskatingindex.com/tennessee/nashville-ice-skating/#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://iceskatingindex.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tennessee",
+          "item": "https://iceskatingindex.com/tennessee/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Nashville Ice Skating",
+          "item": "https://iceskatingindex.com/tennessee/nashville-ice-skating/"
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://iceskatingindex.com/tennessee/nashville-ice-skating/#rinklist",
+      "name": "Nashville Ice Rinks",
+      "itemListOrder": "https://schema.org/ItemListUnordered",
+      "numberOfItems": 3,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Centennial Sportsplex Ice Arenas",
+          "url": "https://iceskatingindex.com/rink/centennial-sportsplex-nashville-tn"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Ford Ice Center Bellevue",
+          "url": "https://iceskatingindex.com/rink/ford-ice-center-bellevue-nashville-tn"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Ford Ice Center Antioch",
+          "url": "https://iceskatingindex.com/rink/ford-ice-center-antioch-antioch-tn"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://iceskatingindex.com/tennessee/nashville-ice-skating/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do I need my own skates?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Most public sessions offer skate rentals. Owning skates helps with comfort and consistency if you skate regularly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is public skate okay for beginners?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Public skate is the best starting point. Go slowly, stay aware, and use the boards when needed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I wear ice skating?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dress for cold air and movement. Wear layers, pants you can bend in, and consider gloves for beginners."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What time should I arrive?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Arrive 20 to 30 minutes early for parking, check-in, and rentals, especially on weekends."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is freestyle ice time?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Freestyle is practice-focused ice time, often used by figure skaters. It typically has different etiquette than public skate."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are there lessons for kids and adults?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Lessons are commonly available for both kids and adults. Start on your preferred rink page to find official program links."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
