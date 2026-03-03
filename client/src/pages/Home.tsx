@@ -3,9 +3,13 @@ import { Hero } from "@/components/Hero";
 import { rinks } from "@/lib/data";
 import { RinkCard } from "@/components/RinkCard";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Calendar } from "lucide-react";
 import { Link } from "wouter";
 import { useHead } from "@/hooks/use-head";
+import { blogPostRegistry } from "@/lib/blog";
+import "@/data/blogRegistry";
+import { BlogImage } from "@/components/BlogImage";
+import { Badge } from "@/components/ui/badge";
 
 export default function Home() {
   useHead({
@@ -14,6 +18,7 @@ export default function Home() {
   });
 
   const featuredRinks = rinks.slice(0, 3);
+  const latestPosts = blogPostRegistry.slice(0, 3);
 
   return (
     <Layout>
@@ -58,7 +63,7 @@ export default function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Link href="/tennessee/nashville-ice-skating">
-              <div className="group h-full flex flex-col overflow-hidden border rounded-xl transition-all hover:shadow-md hover:border-primary/20 bg-card">
+              <div className="group h-full flex flex-col overflow-hidden border rounded-xl transition-all hover:shadow-md hover:border-primary/20 bg-card cursor-pointer">
                 <div className="h-48 relative overflow-hidden">
                   <img 
                     src="/attached_assets/iceskatingindex1_1766179636449.jpg" 
@@ -77,6 +82,73 @@ export default function Home() {
                   </p>
                 </div>
               </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-muted/30 border-y border-border/50">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-between mb-12">
+            <div>
+              <h2 className="font-serif text-3xl font-bold mb-2">Latest from the Blog</h2>
+              <p className="text-muted-foreground">Expert tips and guides for every skater</p>
+            </div>
+            <Link href="/blog">
+              <Button variant="ghost" className="hidden sm:flex group">
+                Read All Posts <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </Button>
+            </Link>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {latestPosts.map((post) => (
+              <article
+                key={post.slug}
+                className="group border rounded-xl overflow-hidden bg-card hover:shadow-md hover:border-primary/20 transition-all flex flex-col"
+              >
+                <div className="h-48 relative overflow-hidden">
+                  <BlogImage 
+                    post={post} 
+                    type="thumbnail"
+                    className="absolute inset-0 w-full h-full object-cover transition-transform group-hover:scale-105"
+                  />
+                  <div className="absolute top-4 left-4">
+                    <Badge variant="secondary" className="bg-white/90 backdrop-blur-sm">
+                      {post.category}
+                    </Badge>
+                  </div>
+                </div>
+                <div className="p-6 flex-1 flex flex-col">
+                  <div className="flex items-center gap-2 text-xs text-muted-foreground mb-3">
+                    <Calendar className="h-3 w-3" />
+                    {new Date(post.publishDate).toLocaleDateString("en-US", {
+                      month: "long",
+                      day: "numeric",
+                      year: "numeric"
+                    })}
+                  </div>
+                  <h3 className="font-serif text-xl font-bold mb-3 group-hover:text-primary transition-colors">
+                    <Link href={`/blog/${post.slug}`}>{post.title}</Link>
+                  </h3>
+                  <p className="text-sm text-muted-foreground line-clamp-2 mb-4">
+                    {post.excerpt}
+                  </p>
+                  <div className="mt-auto">
+                    <Link href={`/blog/${post.slug}`}>
+                      <span className="text-sm text-primary font-medium flex items-center gap-1 group-hover:gap-2 transition-all cursor-pointer">
+                        Read more <ArrowRight className="h-3.5 w-3.5" />
+                      </span>
+                    </Link>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+
+          <div className="mt-8 text-center sm:hidden">
+            <Link href="/blog">
+              <Button variant="outline" className="w-full">View All Posts</Button>
             </Link>
           </div>
         </div>
