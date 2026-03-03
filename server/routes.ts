@@ -3,6 +3,8 @@ import type { Server } from "http";
 
 // Import rinks data for sitemap generation
 import rinksData from "../client/src/data/rinks.json";
+import fs from "fs/promises";
+import path from "path";
 
 interface Rink {
   id: string;
@@ -89,6 +91,49 @@ Sitemap: https://iceskatingindex.com/sitemap.xml
     
     res.header('Content-Type', 'text/plain');
     res.send(robotsTxt);
+  });
+
+  // Blog Image Assignment API
+  app.get("/api/blog/image/:slug", async (req, res) => {
+    const { slug } = req.params;
+    const dataPath = path.resolve(process.cwd(), "client/public/data/post-image-map.json");
+    const imagesDir = path.resolve(process.cwd(), "client/public/images/skating");
+
+    try {
+      let map: Record<string, string> = {};
+      try {
+        const data = await fs.readFile(dataPath, "utf-8");
+        map = JSON.parse(data);
+      } catch (e) {
+        // File might not exist yet
+      }
+
+      if (map[slug]) {
+        return res.json({ image: map[slug] });
+      }
+
+      // Assign new image
+      const files = await fs.readdir(imagesDir);
+      const imageFiles = files.filter(f => /\.(png|jpg|jpeg|webp)$/i.test(f));
+      
+      const assignedImages = new Set(Object.values(map));
+      const availableImages = imageFiles.filter(f => !assignedImages.has(f));
+      
+      let selectedImage: string;
+      if (availableImages.length > 0) {
+        selectedImage = availableImages[Math.floor(Math.random() * availableImages.length)];
+      } else {
+        selectedImage = imageFiles[Math.floor(Math.random() * imageFiles.length)];
+      }
+
+      map[slug] = selectedImage;
+      await fs.writeFile(dataPath, JSON.stringify(map, null, 2));
+
+      res.json({ image: selectedImage });
+    } catch (error) {
+      console.error("Error assigning blog image:", error);
+      res.status(500).json({ error: "Failed to assign image" });
+    }
   });
 
   return httpServer;

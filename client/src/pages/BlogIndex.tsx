@@ -4,6 +4,7 @@ import { useHead } from "@/hooks/use-head";
 import { Link } from "wouter";
 import { blogPostRegistry, getCategories } from "@/lib/blog";
 import "@/data/blogRegistry";
+import { BlogImage } from "@/components/BlogImage";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Calendar, ArrowRight } from "lucide-react";
@@ -66,35 +67,44 @@ export default function BlogIndex() {
           {filteredPosts.map(post => (
             <article
               key={post.slug}
-              className="group border rounded-xl p-6 bg-card hover:shadow-md hover:border-primary/20 transition-all"
+              className="group border rounded-xl p-6 bg-card hover:shadow-md hover:border-primary/20 transition-all flex flex-col md:flex-row gap-6"
               data-testid={`card-blog-post-${post.slug}`}
             >
-              <div className="flex items-center gap-3 mb-3">
-                <Badge variant="secondary" className="text-xs font-normal">
-                  {post.category}
-                </Badge>
-                <span className="text-xs text-muted-foreground flex items-center gap-1">
-                  <Calendar className="h-3 w-3" />
-                  {new Date(post.publishDate).toLocaleDateString("en-US", {
-                    year: "numeric",
-                    month: "long",
-                    day: "numeric",
-                  })}
-                </span>
+              <div className="md:w-[200px] h-[140px] flex-shrink-0 relative overflow-hidden rounded-lg">
+                <BlogImage 
+                  post={post} 
+                  type="thumbnail"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform group-hover:scale-105"
+                />
               </div>
-              <h2 className="font-serif text-xl font-bold mb-2 group-hover:text-primary transition-colors">
-                <Link href={`/blog/${post.slug}`} data-testid={`link-blog-post-${post.slug}`}>
-                  {post.title}
+              <div className="flex-1">
+                <div className="flex items-center gap-3 mb-3">
+                  <Badge variant="secondary" className="text-xs font-normal">
+                    {post.category}
+                  </Badge>
+                  <span className="text-xs text-muted-foreground flex items-center gap-1">
+                    <Calendar className="h-3 w-3" />
+                    {new Date(post.publishDate).toLocaleDateString("en-US", {
+                      year: "numeric",
+                      month: "long",
+                      day: "numeric",
+                    })}
+                  </span>
+                </div>
+                <h2 className="font-serif text-xl font-bold mb-2 group-hover:text-primary transition-colors">
+                  <Link href={`/blog/${post.slug}`} data-testid={`link-blog-post-${post.slug}`}>
+                    {post.title}
+                  </Link>
+                </h2>
+                <p className="text-muted-foreground text-sm mb-4 line-clamp-2">
+                  {post.excerpt}
+                </p>
+                <Link href={`/blog/${post.slug}`}>
+                  <span className="text-sm text-primary font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
+                    Read more <ArrowRight className="h-3.5 w-3.5" />
+                  </span>
                 </Link>
-              </h2>
-              <p className="text-muted-foreground text-sm mb-4 line-clamp-2">
-                {post.excerpt}
-              </p>
-              <Link href={`/blog/${post.slug}`}>
-                <span className="text-sm text-primary font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
-                  Read more <ArrowRight className="h-3.5 w-3.5" />
-                </span>
-              </Link>
+              </div>
             </article>
           ))}
 

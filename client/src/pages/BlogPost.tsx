@@ -4,6 +4,7 @@ import { useHead } from "@/hooks/use-head";
 import { Link, useParams } from "wouter";
 import { blogPostRegistry, getRelatedPosts, fetchPost, parseFrontMatter, extractTitle } from "@/lib/blog";
 import "@/data/blogRegistry";
+import { BlogImage, RandomSkatingImage } from "@/components/BlogImage";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { Badge } from "@/components/ui/badge";
@@ -91,6 +92,15 @@ export default function BlogPost() {
           <h1 className="font-serif text-3xl md:text-4xl font-bold mb-4" data-testid="text-post-title">
             {title}
           </h1>
+          
+          <div className="w-full h-[400px] mb-8 relative overflow-hidden rounded-xl animate-in fade-in duration-700">
+            <BlogImage 
+              post={postMeta} 
+              type="hero"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          </div>
+
           <div className="flex items-center gap-4 text-sm text-muted-foreground">
             <span className="flex items-center gap-1.5">
               <User className="h-3.5 w-3.5" />
@@ -109,45 +119,53 @@ export default function BlogPost() {
       </div>
 
       <div className="container mx-auto px-4 py-12">
-        <div className="max-w-3xl mx-auto">
-          {loading ? (
-            <div className="space-y-4 animate-pulse">
-              <div className="h-4 bg-muted rounded w-3/4" />
-              <div className="h-4 bg-muted rounded w-full" />
-              <div className="h-4 bg-muted rounded w-5/6" />
-              <div className="h-4 bg-muted rounded w-2/3" />
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-col lg:flex-row gap-12">
+            <div className="flex-1">
+              {loading ? (
+                <div className="space-y-4 animate-pulse">
+                  <div className="h-4 bg-muted rounded w-3/4" />
+                  <div className="h-4 bg-muted rounded w-full" />
+                  <div className="h-4 bg-muted rounded w-5/6" />
+                  <div className="h-4 bg-muted rounded w-2/3" />
+                </div>
+              ) : content ? (
+                <article className="prose prose-slate max-w-none prose-headings:font-serif prose-h1:hidden prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4 prose-p:text-muted-foreground prose-p:leading-relaxed prose-li:text-muted-foreground prose-strong:text-foreground prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-table:text-sm prose-th:text-left prose-th:font-semibold prose-th:border-b prose-th:pb-2 prose-th:pr-4 prose-td:py-2 prose-td:pr-4 prose-td:border-b prose-td:border-muted">
+                  <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                    {content}
+                  </ReactMarkdown>
+                </article>
+              ) : null}
             </div>
-          ) : content ? (
-            <article className="prose prose-slate max-w-none prose-headings:font-serif prose-h1:hidden prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4 prose-p:text-muted-foreground prose-p:leading-relaxed prose-li:text-muted-foreground prose-strong:text-foreground prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-table:text-sm prose-th:text-left prose-th:font-semibold prose-th:border-b prose-th:pb-2 prose-th:pr-4 prose-td:py-2 prose-td:pr-4 prose-td:border-b prose-td:border-muted">
-              <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                {content}
-              </ReactMarkdown>
-            </article>
-          ) : null}
 
-          {relatedPosts.length > 0 && (
-            <div className="mt-16 pt-10 border-t">
-              <h2 className="font-serif text-2xl font-bold mb-6">Related Posts</h2>
-              <div className="grid gap-4">
-                {relatedPosts.map(related => (
-                  <Link
-                    key={related.slug}
-                    href={`/blog/${related.slug}`}
-                    className="group flex items-center justify-between p-4 border rounded-lg hover:border-primary/20 hover:shadow-sm transition-all"
-                    data-testid={`link-related-post-${related.slug}`}
-                  >
-                    <div>
-                      <h3 className="font-semibold group-hover:text-primary transition-colors">
-                        {related.title}
-                      </h3>
-                      <p className="text-sm text-muted-foreground mt-1">{related.excerpt}</p>
+            <aside className="lg:w-80 flex-shrink-0">
+              <div className="sticky top-24 space-y-8">
+                <div>
+                  <h3 className="font-serif text-lg font-bold mb-4">Post Media</h3>
+                  <RandomSkatingImage post={postMeta} className="shadow-sm" />
+                </div>
+                
+                {relatedPosts.length > 0 && (
+                  <div>
+                    <h3 className="font-serif text-lg font-bold mb-4">Related Content</h3>
+                    <div className="space-y-4">
+                      {relatedPosts.map(related => (
+                        <Link
+                          key={related.slug}
+                          href={`/blog/${related.slug}`}
+                          className="group block"
+                        >
+                          <h4 className="text-sm font-medium group-hover:text-primary transition-colors line-clamp-2">
+                            {related.title}
+                          </h4>
+                        </Link>
+                      ))}
                     </div>
-                    <ArrowRight className="h-4 w-4 text-muted-foreground flex-shrink-0 ml-4 group-hover:text-primary transition-colors" />
-                  </Link>
-                ))}
+                  </div>
+                )}
               </div>
-            </div>
-          )}
+            </aside>
+          </div>
 
           <div className="mt-12 pt-8 border-t">
             <Link href="/blog" className="text-primary hover:underline flex items-center gap-2 text-sm font-medium" data-testid="link-back-to-blog">

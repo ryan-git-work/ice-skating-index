@@ -8,6 +8,7 @@ export interface BlogPostMeta {
   publishDate: string;
   excerpt: string;
   fileName: string;
+  image?: string;
 }
 
 export interface BlogPost extends BlogPostMeta {
@@ -75,4 +76,21 @@ export function extractExcerpt(content: string, maxLength = 160): string {
 export function extractTitle(content: string): string {
   const match = content.match(/^#\s+(.+)$/m);
   return match ? match[1] : "Untitled Post";
+}
+
+export async function getPostImage(slug: string): Promise<string> {
+  try {
+    const response = await fetch(`/api/blog/image/${slug}`);
+    if (!response.ok) return "/images/skating/1_1772560369651.png";
+    const data = await response.json();
+    return `/images/skating/${data.image}`;
+  } catch (e) {
+    return "/images/skating/1_1772560369651.png";
+  }
+}
+
+export function getImageAlt(filename: string): string {
+  if (!filename) return "Ice skating";
+  const name = filename.split('/').pop() || filename;
+  return name.split('.')[0].replace(/[_-]/g, ' ');
 }
