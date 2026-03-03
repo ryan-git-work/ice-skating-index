@@ -13,6 +13,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
     { href: "/freestyle", label: "Freestyle" },
     { href: "/services/learn-to-skate", label: "Learn to Skate" },
     { href: "/services/skate-sharpening", label: "Skate Sharpening" },
+    { href: "/blog", label: "Blog" },
   ];
 
   return (
@@ -122,6 +123,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 <li><Link href="/freestyle"><a className="hover:text-primary transition-colors">Freestyle Sessions</a></Link></li>
                 <li><Link href="/services/learn-to-skate"><a className="hover:text-primary transition-colors">Learn to Skate</a></Link></li>
                 <li><Link href="/services/skate-sharpening"><a className="hover:text-primary transition-colors">Skate Sharpening</a></Link></li>
+                <li><Link href="/blog"><a className="hover:text-primary transition-colors">Blog</a></Link></li>
               </ul>
             </div>
 

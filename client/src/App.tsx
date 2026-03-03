@@ -14,6 +14,8 @@ import FreestyleHub from "@/pages/FreestyleHub";
 import SkateSharpening from "@/pages/SkateSharpening";
 import LearnToSkate from "@/pages/LearnToSkate";
 import NashvilleHub from "@/pages/NashvilleHub";
+import BlogIndex from "@/pages/BlogIndex";
+import BlogPost from "@/pages/BlogPost";
 
 function Router() {
   return (
@@ -24,6 +26,8 @@ function Router() {
       <Route path="/services/skate-sharpening" component={SkateSharpening} />
       <Route path="/services/learn-to-skate" component={LearnToSkate} />
       <Route path="/tennessee/nashville-ice-skating" component={NashvilleHub} />
+      <Route path="/blog" component={BlogIndex} />
+      <Route path="/blog/:slug" component={BlogPost} />
       
       {/* Dynamic Routes */}
       <Route path="/rink/:slug" component={RinkDetail} />
