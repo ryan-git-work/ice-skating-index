@@ -1,12 +1,6 @@
 # The Best Ice Skating Rinks for Families with Kids
 
-**Slug:** /blog/ice-skating-rinks-for-families
-**Meta Description:** Looking for the best ice skating rinks for families? Here is what to look for, what to expect, and how to make your first family skate session a success.
-**Target Keyword:** ice skating rinks for families
-**Secondary Keywords:** family ice skating, ice skating with kids, best ice rinks for kids, public skate family
-**Category:** Rink Spotlights
 
----
 
 Ice skating with kids is one of those activities that sounds like a great idea until you are actually at the rink, lacing up four pairs of skates while a five-year-old announces they need the bathroom.
 

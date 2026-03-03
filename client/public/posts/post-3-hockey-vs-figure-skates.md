@@ -4,7 +4,6 @@ When you show up to a public skate session, you'll notice two distinct types of 
 
 If you're trying to decide which to use (or buy), here's everything you need to know.
 
----
 
 ## The Quick Answer
 

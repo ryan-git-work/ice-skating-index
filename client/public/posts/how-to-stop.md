@@ -1,12 +1,6 @@
 # How to Stop on Ice Skates: 4 Methods From Easiest to Advanced
 
-**Slug:** /blog/how-to-stop-on-ice-skates
-**Meta Description:** Learning how to stop on ice skates is the most important skill for beginners. Here are 4 stopping methods ranked from easiest to most advanced, with step-by-step instructions.
-**Target Keyword:** how to stop on ice skates
-**Secondary Keywords:** ice skating stopping techniques, snowplow stop, hockey stop, t-stop ice skating
-**Category:** Beginner Guides
 
----
 
 Here is something nobody tells you before your first skate session: going is easy. Stopping is the hard part.
 

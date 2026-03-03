@@ -6,7 +6,6 @@ Ice skating looks effortless when you watch someone who's been doing it for year
 
 The good news? Ice skating has one of the fastest learning curves of any skill sport. Most people go from "gripping the wall for dear life" to skating independently within a single session — sometimes within the first hour. You just need to know what you're doing before you go.
 
----
 
 ## What to Expect at a Public Skate Session
 

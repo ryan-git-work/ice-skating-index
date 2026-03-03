@@ -1,12 +1,6 @@
 # Ice Skating in Summer: Why It Might Be the Best Time to Go
 
-**Slug:** /blog/ice-skating-in-summer
-**Meta Description:** Think ice skating is only a winter activity? Think again. Here is why summer might actually be the best time to hit the rink, and how to find indoor rinks open year round.
-**Target Keyword:** ice skating in summer
-**Secondary Keywords:** indoor ice skating year round, ice rinks open in summer, summer ice skating near me
-**Category:** Skating Lifestyle
 
----
 
 Most people think of ice skating as a winter thing. Holiday rinks, frozen ponds, Christmas music at the boards. And while that version is genuinely great, it has a significant downside: everyone else thinks the same thing.
 

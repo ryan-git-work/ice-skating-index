@@ -1,12 +1,6 @@
 # How to Skate Backwards: A Step-by-Step Guide
 
-**Slug:** /blog/how-to-skate-backwards
-**Meta Description:** Ready to learn how to skate backwards? This step-by-step guide breaks down the technique for beginners so you can build the skill safely and confidently.
-**Target Keyword:** how to skate backwards
-**Secondary Keywords:** backwards skating technique, learn to skate backwards, ice skating backwards for beginners
-**Category:** Beginner Guides
 
----
 
 Skating backwards is the moment when recreational skaters start to feel like real skaters.
 

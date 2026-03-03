@@ -4,7 +4,6 @@ What you wear to an ice rink matters more than most people think. Show up in the
 
 This guide breaks it down for every common situation: first-timers, kids, outdoor rinks, and yes — even first dates on the ice.
 
----
 
 ## The Core Principle: Layers + Mobility
 

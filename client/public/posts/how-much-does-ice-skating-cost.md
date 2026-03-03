@@ -1,18 +1,11 @@
 # How Much Does Ice Skating Cost? A Complete Price Breakdown
 
-**Slug:** /blog/how-much-does-ice-skating-cost
-**Meta Description:** Wondering how much ice skating costs? This guide breaks down admission, skate rental, lessons, and gear prices so you know exactly what to expect before you go.
-**Target Keyword:** how much does ice skating cost
-**Secondary Keywords:** ice skating prices, ice rink admission cost, ice skating rink fees, cost of ice skating lessons
-**Category:** Beginner Guides
 
----
 
 Ice skating is one of those activities where costs vary wildly depending on where you go, what you need, and what kind of skating you are doing. A casual public skate session at a municipal rink can run less than $15 per person all-in. A competitive figure skater spending on coaching, ice time, and equipment is looking at a completely different number.
 
 This guide focuses on what most people actually want to know: what does it cost to go ice skating for a public session, what do lessons run, and when does buying your own gear make financial sense.
 
----
 
 ## Public Skate Session Costs
 

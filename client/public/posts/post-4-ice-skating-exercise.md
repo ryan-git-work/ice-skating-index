@@ -2,7 +2,6 @@
 
 Ice skating does not feel like a workout. That is the whole point and also what makes it so effective. Unlike running on a treadmill or grinding through reps at the gym, skating is genuinely fun. An hour on the ice flies by. And the whole time, your body is working harder than you think.
 
----
 
 ## Calories Burned Ice Skating
 
