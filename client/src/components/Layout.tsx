@@ -22,30 +22,30 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-md supports-[backdrop-filter]:bg-background/60">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <Link href="/">
-            <a className="flex items-center gap-2 group">
+            <div className="flex items-center gap-2 group cursor-pointer">
               <div className="bg-primary/10 p-2 rounded-lg group-hover:bg-primary/20 transition-colors">
                 <Snowflake className="h-5 w-5 text-primary" />
               </div>
               <span className="font-serif text-xl font-bold tracking-tight text-foreground">
                 Ice Skating Index
               </span>
-            </a>
+            </div>
           </Link>
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
               <Link key={link.href} href={link.href}>
-                <a
+                <span
                   className={cn(
-                    "text-sm font-medium transition-colors hover:text-primary",
+                    "text-sm font-medium transition-colors hover:text-primary cursor-pointer",
                     location === link.href
                       ? "text-primary"
                       : "text-muted-foreground"
                   )}
                 >
                   {link.label}
-                </a>
+                </span>
               </Link>
             ))}
             <Button size="sm" className="ml-2 font-semibold shadow-sm hover:shadow-md transition-all" asChild>
@@ -65,25 +65,25 @@ export function Layout({ children }: { children: React.ReactNode }) {
               <SheetContent side="right" className="w-[80%] sm:w-[300px]">
                 <div className="flex flex-col gap-6 mt-8">
                   <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>
-                    <a className="flex items-center gap-2">
+                    <div className="flex items-center gap-2 cursor-pointer">
                       <Snowflake className="h-5 w-5 text-primary" />
                       <span className="font-serif text-lg font-bold">Ice Skating Index</span>
-                    </a>
+                    </div>
                   </Link>
                   <nav className="flex flex-col gap-4">
                     {navLinks.map((link) => (
                       <Link key={link.href} href={link.href}>
-                        <a
+                        <span
                           onClick={() => setIsMobileMenuOpen(false)}
                           className={cn(
-                            "text-lg font-medium transition-colors hover:text-primary",
+                            "text-lg font-medium transition-colors hover:text-primary cursor-pointer",
                             location === link.href
                               ? "text-primary"
                               : "text-muted-foreground"
                           )}
                         >
                           {link.label}
-                        </a>
+                        </span>
                       </Link>
                     ))}
                     <Button className="w-full mt-2" asChild>
@@ -119,18 +119,18 @@ export function Layout({ children }: { children: React.ReactNode }) {
             <div>
               <h3 className="font-semibold mb-4 text-foreground">Directory</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><Link href="/browse"><a className="hover:text-primary transition-colors">Browse Rinks</a></Link></li>
-                <li><Link href="/freestyle"><a className="hover:text-primary transition-colors">Freestyle Sessions</a></Link></li>
-                <li><Link href="/services/learn-to-skate"><a className="hover:text-primary transition-colors">Learn to Skate</a></Link></li>
-                <li><Link href="/services/skate-sharpening"><a className="hover:text-primary transition-colors">Skate Sharpening</a></Link></li>
-                <li><Link href="/blog"><a className="hover:text-primary transition-colors">Blog</a></Link></li>
+                <li><Link href="/browse"><span className="hover:text-primary transition-colors cursor-pointer">Browse Rinks</span></Link></li>
+                <li><Link href="/freestyle"><span className="hover:text-primary transition-colors cursor-pointer">Freestyle Sessions</span></Link></li>
+                <li><Link href="/services/learn-to-skate"><span className="hover:text-primary transition-colors cursor-pointer">Learn to Skate</span></Link></li>
+                <li><Link href="/services/skate-sharpening"><span className="hover:text-primary transition-colors cursor-pointer">Skate Sharpening</span></Link></li>
+                <li><Link href="/blog"><span className="hover:text-primary transition-colors cursor-pointer">Blog</span></Link></li>
               </ul>
             </div>
 
             <div>
               <h3 className="font-semibold mb-4 text-foreground">Top States</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><Link href="/state/TN"><a className="hover:text-primary transition-colors">Tennessee</a></Link></li>
+                <li><Link href="/state/TN"><span className="hover:text-primary transition-colors cursor-pointer">Tennessee</span></Link></li>
               </ul>
             </div>
           </div>
