@@ -47,3 +47,63 @@ registerPost({
   excerpt: "Ice skating does not feel like a workout. That is the whole point and also what makes it so effective. Unlike running on a treadmill, skating is genuinely fun.",
   fileName: "post-4-ice-skating-exercise.md",
 });
+
+registerPost({
+  slug: "how-to-stop-on-ice-skates",
+  title: "How to Stop on Ice Skates: 4 Methods From Easiest to Advanced",
+  metaDescription: "Learning how to stop on ice skates is the most important skill for beginners. Here are 4 stopping methods ranked from easiest to most advanced, with step-by-step instructions.",
+  targetKeyword: "how to stop on ice skates",
+  secondaryKeywords: ["ice skating stopping techniques", "snowplow stop", "hockey stop", "t-stop ice skating"],
+  category: "Beginner Guides",
+  publishDate: "2026-03-05",
+  excerpt: "Here is something nobody tells you before your first skate session: going is easy. Stopping is the hard part.",
+  fileName: "how-to-stop.md",
+});
+
+registerPost({
+  slug: "ice-skating-rinks-for-families",
+  title: "The Best Ice Skating Rinks for Families with Kids",
+  metaDescription: "Looking for the best ice skating rinks for families? Here is what to look for, what to expect, and how to make your first family skate session a success.",
+  targetKeyword: "ice skating rinks for families",
+  secondaryKeywords: ["family ice skating", "ice skating with kids", "best ice rinks for kids", "public skate family"],
+  category: "Rink Spotlights",
+  publishDate: "2026-03-06",
+  excerpt: "Ice skating with kids is one of those activities that sounds like a great idea until you are actually at the rink, lacing up four pairs of skates.",
+  fileName: "ice-skating-rinks-for-families.md",
+});
+
+registerPost({
+  slug: "how-to-skate-backwards",
+  title: "How to Skate Backwards: A Step-by-Step Guide",
+  metaDescription: "Ready to learn how to skate backwards? This step-by-step guide breaks down the technique for beginners so you can build the skill safely and confidently.",
+  targetKeyword: "how to skate backwards",
+  secondaryKeywords: ["backwards skating technique", "learn to skate backwards", "ice skating backwards for beginners"],
+  category: "Beginner Guides",
+  publishDate: "2026-03-07",
+  excerpt: "Skating backwards is the moment when recreational skaters start to feel like real skaters. It looks impressive and feels even better.",
+  fileName: "how-to-skate-backwards.md",
+});
+
+registerPost({
+  slug: "ice-skating-in-summer",
+  title: "Ice Skating in Summer: Why It Might Be the Best Time to Go",
+  metaDescription: "Think ice skating is only a winter activity? Think again. Here is why summer might actually be the best time to hit the rink, and how to find indoor rinks open year round.",
+  targetKeyword: "ice skating in summer",
+  secondaryKeywords: ["indoor ice skating year round", "ice rinks open in summer", "summer ice skating near me"],
+  category: "Skating Lifestyle",
+  publishDate: "2026-03-08",
+  excerpt: "Most people think of ice skating as a winter thing. Holiday rinks, frozen ponds, Christmas music at the boards. Summer skating is the opposite.",
+  fileName: "ice-skating-in-summer.md",
+});
+
+registerPost({
+  slug: "how-much-does-ice-skating-cost",
+  title: "How Much Does Ice Skating Cost? A Complete Price Breakdown",
+  metaDescription: "Wondering how much ice skating costs? This guide breaks down admission, skate rental, lessons, and gear prices so you know exactly what to expect before you go.",
+  targetKeyword: "how much does ice skating cost",
+  secondaryKeywords: ["ice skating prices", "ice rink admission cost", "ice skating rink fees", "cost of ice skating lessons"],
+  category: "Beginner Guides",
+  publishDate: "2026-03-09",
+  excerpt: "Ice skating costs vary wildly depending on where you go, what you need, and what kind of skating you are doing. This guide breaks it down.",
+  fileName: "how-much-does-ice-skating-cost.md",
+});
