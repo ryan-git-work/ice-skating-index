@@ -144,3 +144,15 @@ registerPost({
   excerpt: "Ice skating in Nashville is more affordable than most people expect — especially if you know which rink to go to and when. Here is exactly what you will pay at every rink.",
   fileName: "ice-skating-cost-nashville.md",
 });
+
+registerPost({
+  slug: "alysa-liu-learn-to-skate",
+  title: "Alysa Liu Won Olympic Gold. Here Is How to Start Your Own Skating Journey.",
+  metaDescription: "Alysa Liu made history at the 2026 Milan Olympics, inspiring millions to try ice skating. Here is everything you need to know to start your own journey on the ice.",
+  targetKeyword: "Alysa Liu ice skating",
+  secondaryKeywords: ["Alysa Liu 2026 Olympics", "Alysa Liu figure skating", "learn to skate inspired by Olympics", "how to start ice skating", "figure skating for beginners", "Alysa Liu gold medal"],
+  category: "News & Inspiration",
+  publishDate: "2026-03-08",
+  excerpt: "On February 19, 2026, Alysa Liu won Olympic gold in figure skating, inspiring millions to try ice skating for the first time. Here is everything you need to know to start your own journey.",
+  fileName: "alysa-liu-learn-to-skate.md",
+});
