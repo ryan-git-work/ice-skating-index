@@ -156,3 +156,27 @@ registerPost({
   excerpt: "On February 19, 2026, Alysa Liu won Olympic gold in figure skating, inspiring millions to try ice skating for the first time. Here is everything you need to know to start your own journey.",
   fileName: "alysa-liu-learn-to-skate.md",
 });
+
+registerPost({
+  slug: "ford-ice-center-antioch",
+  title: "Ford Ice Center Antioch: Everything You Need to Know Before You Go",
+  metaDescription: "Complete guide to Ford Ice Center Antioch in Nashville — public skate schedule, prices, reservations, learn to skate programs, and insider tips for first-time visitors.",
+  targetKeyword: "ford ice center antioch",
+  secondaryKeywords: ["ford ice center antioch public skate", "ford ice center antioch schedule", "ice skating antioch nashville", "skating rink antioch tn", "ford ice center nashville"],
+  category: "Rink Spotlights",
+  publishDate: "2026-03-13",
+  excerpt: "If you are looking for ice skating on the south side of Nashville, Ford Ice Center Antioch is your rink. Here is everything you need to know before you visit.",
+  fileName: "ford-ice-center-antioch.md",
+});
+
+registerPost({
+  slug: "ford-ice-center-bellevue",
+  title: "Ford Ice Center Bellevue: Everything You Need to Know Before You Go",
+  metaDescription: "Complete guide to Ford Ice Center Bellevue in Nashville — public skate schedule, prices, reservations, the Draft Picks restaurant, learn to skate programs, and tips for first-time visitors.",
+  targetKeyword: "ford ice center bellevue",
+  secondaryKeywords: ["ford ice center bellevue public skate", "ford ice center bellevue schedule", "ice skating bellevue nashville", "west nashville ice skating", "ford ice center nashville"],
+  category: "Rink Spotlights",
+  publishDate: "2026-03-14",
+  excerpt: "Ford Ice Center Bellevue is Nashville's newest major ice facility. Here is everything you need to know before you visit.",
+  fileName: "ford-ice-center-bellevue.md",
+});

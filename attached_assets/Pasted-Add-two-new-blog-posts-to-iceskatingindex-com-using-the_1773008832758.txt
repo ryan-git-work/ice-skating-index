@@ -1,0 +1,90 @@
+Add two new blog posts to iceskatingindex.com using the markdown 
+files I'm providing: post-14-ford-ice-antioch.md and 
+post-15-ford-ice-bellevue.md
+
+---
+
+POST 1 DETAILS:
+Slug: /blog/ford-ice-center-antioch
+Meta Title: Ford Ice Center Antioch: Everything You Need to Know Before You Go | Ice Skating Index
+Meta Description: Complete guide to Ford Ice Center Antioch in Nashville — public skate schedule, prices, reservations, learn to skate programs, and insider tips for first-time visitors.
+Category: Rink Spotlights
+
+POST 2 DETAILS:
+Slug: /blog/ford-ice-center-bellevue
+Meta Title: Ford Ice Center Bellevue: Everything You Need to Know Before You Go | Ice Skating Index
+Meta Description: Complete guide to Ford Ice Center Bellevue in Nashville — public skate schedule, prices, reservations, the Draft Picks restaurant, learn to skate programs, and tips for first-time visitors.
+Category: Rink Spotlights
+
+---
+
+INTERNAL LINKS TO RESOLVE IN BOTH POSTS:
+Both posts contain these internal links that need to render correctly:
+
+/blog/ice-skating-nashville
+  → Nashville hub page (already published)
+
+/blog/ice-skating-for-beginners
+  → Beginner guide (already published)
+
+Verify each of these slugs actually exists in the database before 
+publishing. If either is missing, flag it in the console with:
+  WARNING: Internal link target not found — [slug]
+
+---
+
+AFTER PUBLISHING BOTH POSTS:
+
+Run a full internal link audit across ALL blog posts on the site.
+Check every internal link in every published post and verify:
+
+1. The target slug exists and returns a 200 status
+2. The link text is descriptive (not just "click here" or "here")
+3. The link is not pointing to a draft or unpublished page
+
+Output a report in the console in this format:
+
+LINK AUDIT REPORT
+=================
+Post: /blog/[slug]
+  ✓ /blog/ice-skating-nashville — OK
+  ✓ /find-a-rink — OK
+  ✗ /blog/some-missing-page — NOT FOUND (404)
+  ⚠ /blog/draft-post — UNPUBLISHED
+
+Total links checked: [n]
+Broken links: [n]
+Unpublished targets: [n]
+All clear: [yes/no]
+
+Fix any broken links automatically if the correct target slug 
+is obvious (e.g. a typo or slight slug mismatch). 
+Flag anything it cannot auto-fix for me to review manually.
+
+---
+
+ALSO UPDATE THE NASHVILLE HUB PAGE:
+The post at /blog/ice-skating-nashville currently has placeholder 
+[RINK: rink-slug] tags for the Ford Ice Center locations.
+
+Now that both Ford Ice posts are published, replace:
+  [RINK: ford-ice-center-antioch] 
+    → <a href="/blog/ford-ice-center-antioch">Ford Ice Center Antioch</a>
+  [RINK: ford-ice-center-bellevue]
+    → <a href="/blog/ford-ice-center-bellevue">Ford Ice Center Bellevue</a>
+
+Confirm in the console when the Nashville hub page has been updated.
+
+---
+
+FINAL CONSOLE OUTPUT:
+When all tasks are complete, print a summary:
+
+PUBLISH SUMMARY
+===============
+✓ Published: /blog/ford-ice-center-antioch
+✓ Published: /blog/ford-ice-center-bellevue
+✓ Nashville hub updated with Ford Ice links
+✓ Link audit complete
+Broken links to fix: [n]
+Next step: Submit new URLs to Google Search Console

@@ -19,7 +19,7 @@ This guide covers every option for public ice skating in the Nashville area, wha
 
 ## Centennial Sportsplex
 
-[RINK: centennial-sportsplex-nashville-tn]
+For the complete guide, see our [Centennial Sportsplex ice skating guide](/blog/centennial-sportsplex-ice-skating).
 
 Centennial Sportsplex is Nashville's original public skating destination and still the most affordable option in the area. Located in the West End neighborhood adjacent to Centennial Park, it is operated by Metro Nashville Parks and Recreation and has been open since 1990.
 
@@ -36,7 +36,7 @@ Centennial Sportsplex is Nashville's original public skating destination and sti
 
 ## Ford Ice Center — Antioch
 
-[RINK: ford-ice-center-antioch-antioch-tn]
+For the complete guide, see our [Ford Ice Center Antioch guide](/blog/ford-ice-center-antioch).
 
 Ford Ice Center Antioch is the southernmost of the three Nashville Predators-operated public rinks. Located in the Antioch area off Murfreesboro Road, it is the closest option for residents of south Nashville, Brentwood, and Murfreesboro.
 
@@ -50,7 +50,7 @@ Ford Ice Center Antioch is the southernmost of the three Nashville Predators-ope
 
 ## Ford Ice Center — Bellevue
 
-[RINK: ford-ice-center-bellevue-nashville-tn]
+For the complete guide, see our [Ford Ice Center Bellevue guide](/blog/ford-ice-center-bellevue).
 
 Ford Ice Center Bellevue serves the west Nashville and Bellevue corridor, making it the most convenient option for residents of west Nashville, Brentwood, and the western suburbs.
 
@@ -62,7 +62,7 @@ Same format as Antioch — cashless, online reservation required, $12 admission 
 
 ## Ford Ice Center — Clarksville
 
-[RINK: ford-ice-center-clarksville-clarksville-tn]
+For the complete guide, see our [Ford Ice Center Clarksville guide](/blog/ford-ice-center-clarksville).
 
 Ford Ice Center Clarksville extends the Predators skating network north of Nashville into Clarksville, Tennessee — about 45 minutes from downtown. For residents in the Clarksville, Springfield, or north Davidson County areas, this is the closest public ice option.
 
