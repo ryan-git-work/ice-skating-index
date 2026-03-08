@@ -180,3 +180,15 @@ registerPost({
   excerpt: "Ford Ice Center Bellevue is Nashville's newest major ice facility. Here is everything you need to know before you visit.",
   fileName: "ford-ice-center-bellevue.md",
 });
+
+registerPost({
+  slug: "amber-glenn-figure-skater",
+  title: "Amber Glenn: The Olympic Gold Medalist Who Proves It's Never Too Late to Skate",
+  metaDescription: "Amber Glenn won Olympic gold at the 2026 Milan Games, made history as the first openly LGBTQ+ woman on Team USA singles figure skating, and did it all with a mantra that anyone who's ever stepped on ice can carry with them: Believe and Breathe.",
+  targetKeyword: "Amber Glenn figure skater",
+  secondaryKeywords: ["Amber Glenn Olympics", "Amber Glenn gold medal", "figure skating inspiration", "Amber Glenn Milan 2026", "learn to skate inspired by Olympics"],
+  category: "News & Inspiration",
+  publishDate: "2026-03-15",
+  excerpt: "Amber Glenn won Olympic gold at the 2026 Milan Games, made history as the first openly LGBTQ+ woman on Team USA singles figure skating.",
+  fileName: "amber-glenn-figure-skater.md",
+});
