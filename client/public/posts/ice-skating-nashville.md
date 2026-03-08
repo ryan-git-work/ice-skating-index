@@ -36,7 +36,7 @@ Centennial Sportsplex is Nashville's original public skating destination and sti
 
 ## Ford Ice Center — Antioch
 
-[RINK: ford-ice-center-antioch]
+[RINK: ford-ice-center-antioch-antioch-tn]
 
 Ford Ice Center Antioch is the southernmost of the three Nashville Predators-operated public rinks. Located in the Antioch area off Murfreesboro Road, it is the closest option for residents of south Nashville, Brentwood, and Murfreesboro.
 
@@ -50,7 +50,7 @@ Ford Ice Center Antioch is the southernmost of the three Nashville Predators-ope
 
 ## Ford Ice Center — Bellevue
 
-[RINK: ford-ice-center-bellevue]
+[RINK: ford-ice-center-bellevue-nashville-tn]
 
 Ford Ice Center Bellevue serves the west Nashville and Bellevue corridor, making it the most convenient option for residents of west Nashville, Brentwood, and the western suburbs.
 
@@ -62,7 +62,7 @@ Same format as Antioch — cashless, online reservation required, $12 admission 
 
 ## Ford Ice Center — Clarksville
 
-[RINK: ford-ice-center-clarksville]
+[RINK: ford-ice-center-clarksville-clarksville-tn]
 
 Ford Ice Center Clarksville extends the Predators skating network north of Nashville into Clarksville, Tennessee — about 45 minutes from downtown. For residents in the Clarksville, Springfield, or north Davidson County areas, this is the closest public ice option.
 
