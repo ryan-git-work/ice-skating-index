@@ -192,3 +192,51 @@ registerPost({
   excerpt: "Amber Glenn won Olympic gold at the 2026 Milan Games, made history as the first openly LGBTQ+ woman on Team USA singles figure skating.",
   fileName: "amber-glenn-figure-skater.md",
 });
+
+registerPost({
+  slug: "is-ice-skating-expensive",
+  title: "Is Ice Skating Expensive? A Honest Cost Breakdown for Every Level",
+  metaDescription: "Is ice skating expensive? The honest answer depends entirely on how deep you want to go. Here's a complete cost breakdown from casual public skating all the way to competitive training — so you know exactly what you're getting into.",
+  targetKeyword: "is ice skating expensive",
+  secondaryKeywords: ["ice skating cost", "how much does ice skating cost", "beginner skating cost", "competitive figure skating cost"],
+  category: "Beginner Guides",
+  publishDate: "2026-03-16",
+  excerpt: "Ice skating can cost you $12 for an afternoon of fun, or it can cost your family $30,000 a year if you're chasing elite competition.",
+  fileName: "is-ice-skating-expensive.md",
+});
+
+registerPost({
+  slug: "how-much-do-ice-skates-cost",
+  title: "How Much Do Ice Skates Cost? A Buyer's Guide for Every Budget",
+  metaDescription: "Figure skates, hockey skates, recreational skates — prices vary wildly. Here's exactly what to expect at every budget level, what you actually need as a beginner, and when it makes sense to spend more.",
+  targetKeyword: "how much do ice skates cost",
+  secondaryKeywords: ["buy ice skates", "beginner ice skates", "figure skates price", "hockey skates price"],
+  category: "Beginner Guides",
+  publishDate: "2026-03-17",
+  excerpt: "The price range on ice skates is genuinely enormous. You can buy a pair for $40 at a big-box store or spend $1,500 on professional-grade figure skates.",
+  fileName: "how-much-do-ice-skates-cost.md",
+});
+
+registerPost({
+  slug: "what-is-a-triple-axel",
+  title: "What Is a Triple Axel? The Hardest Jump in Figure Skating, Explained",
+  metaDescription: "You've heard the triple axel talked about in hushed tones during every Olympics. Here's exactly what it is, why it's so difficult, who has landed it, and what makes it different from every other figure skating jump.",
+  targetKeyword: "what is a triple axel",
+  secondaryKeywords: ["triple axel figure skating", "hardest figure skating jump", "Amber Glenn triple axel", "Alysa Liu triple axel"],
+  category: "Figure Skating Technique",
+  publishDate: "2026-03-18",
+  excerpt: "Every four years, when the Winter Olympics airs, announcers lose their minds over the triple axel. Here's exactly what it is and why it's so difficult.",
+  fileName: "what-is-a-triple-axel.md",
+});
+
+registerPost({
+  slug: "ford-ice-center-clarksville",
+  title: "Ford Ice Center Clarksville: Everything You Need to Know",
+  metaDescription: "Ford Ice Center Clarksville is Middle Tennessee's newest public ice rink, serving Montgomery County and the greater Clarksville area. Here's everything you need to know before your visit — hours, pricing, programs, and what to expect.",
+  targetKeyword: "ford ice center clarksville",
+  secondaryKeywords: ["ice skating clarksville tn", "clarksville ice rink", "ford ice center", "learn to skate clarksville"],
+  category: "Rink Spotlights",
+  publishDate: "2026-03-19",
+  excerpt: "Ford Ice Center Clarksville is Middle Tennessee's newest public ice rink, serving Montgomery County and the greater Clarksville area.",
+  fileName: "ford-ice-center-clarksville.md",
+});
