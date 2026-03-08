@@ -132,3 +132,15 @@ registerPost({
   fileName: "ice-skating-nashville.md",
   hasDynamicRinkLinks: true,
 });
+
+registerPost({
+  slug: "ice-skating-cost-nashville",
+  title: "How Much Does Ice Skating Cost in Nashville?",
+  metaDescription: "How much does ice skating cost in Nashville? A complete price breakdown for Centennial Sportsplex and Ford Ice Centers — admission, skate rental, lessons, and tips for saving money.",
+  targetKeyword: "how much does ice skating cost in nashville",
+  secondaryKeywords: ["centennial sportsplex ice skating price", "ford ice center cost", "ice skating prices nashville", "nashville ice skating admission", "public skate nashville cost"],
+  category: "Rink Spotlights",
+  publishDate: "2026-03-12",
+  excerpt: "Ice skating in Nashville is more affordable than most people expect — especially if you know which rink to go to and when. Here is exactly what you will pay at every rink.",
+  fileName: "ice-skating-cost-nashville.md",
+});
