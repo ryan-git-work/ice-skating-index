@@ -107,3 +107,15 @@ registerPost({
   excerpt: "Ice skating costs vary wildly depending on where you go, what you need, and what kind of skating you are doing. This guide breaks it down.",
   fileName: "how-much-does-ice-skating-cost.md",
 });
+
+registerPost({
+  slug: "centennial-sportsplex-ice-skating",
+  title: "Centennial Sportsplex Ice Skating: Everything You Need to Know Before You Go",
+  metaDescription: "Everything you need to know about ice skating at Centennial Sportsplex in Nashville — public skate schedule, admission prices, skate rental, lessons, and insider tips.",
+  targetKeyword: "centennial sportsplex ice skating",
+  secondaryKeywords: ["centennial sportsplex public skate", "centennial ice rink schedule", "centennial sportsplex open skate", "ice skating nashville tn", "centennial park ice skating"],
+  category: "Rink Spotlights",
+  publishDate: "2026-03-10",
+  excerpt: "If you are looking for ice skating in Nashville, Centennial Sportsplex is where most locals end up. It is centrally located, run by Metro Nashville Parks, and priced better than most private rinks.",
+  fileName: "centennial-sportsplex-ice-skating.md",
+});
