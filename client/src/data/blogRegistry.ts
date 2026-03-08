@@ -119,3 +119,16 @@ registerPost({
   excerpt: "If you are looking for ice skating in Nashville, Centennial Sportsplex is where most locals end up. It is centrally located, run by Metro Nashville Parks, and priced better than most private rinks.",
   fileName: "centennial-sportsplex-ice-skating.md",
 });
+
+registerPost({
+  slug: "ice-skating-nashville",
+  title: "Ice Skating in Nashville: Your Complete Guide to Every Rink",
+  metaDescription: "Looking for ice skating in Nashville? This complete guide covers every rink in the Nashville area — public skate hours, prices, locations, and what to expect at each one.",
+  targetKeyword: "ice skating nashville",
+  secondaryKeywords: ["ice skating nashville tn", "nashville ice skating rinks", "centennial sportsplex ice skating", "ford ice center nashville", "public ice skating nashville"],
+  category: "Rink Spotlights",
+  publishDate: "2026-03-11",
+  excerpt: "Nashville has more ice than most people realize — a year-round indoor rink right in the heart of the city, three more run by the Nashville Predators organization.",
+  fileName: "ice-skating-nashville.md",
+  hasDynamicRinkLinks: true,
+});

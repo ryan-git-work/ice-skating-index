@@ -2,9 +2,10 @@ import { useState, useEffect } from "react";
 import { Layout } from "@/components/Layout";
 import { useHead } from "@/hooks/use-head";
 import { Link, useParams } from "wouter";
-import { blogPostRegistry, getRelatedPosts, fetchPost, parseFrontMatter } from "@/lib/blog";
+import { blogPostRegistry, getRelatedPosts, fetchPost, parseFrontMatter, replaceRinkPlaceholders } from "@/lib/blog";
 import "@/data/blogRegistry";
 import { BlogImage } from "@/components/BlogImage";
+import { rinks } from "@/lib/data";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { Badge } from "@/components/ui/badge";
@@ -33,7 +34,10 @@ export default function BlogPost() {
     setError(false);
     fetchPost(postMeta.fileName)
       .then(raw => {
-        const { content: body } = parseFrontMatter(raw);
+        let { content: body } = parseFrontMatter(raw);
+        if (postMeta.hasDynamicRinkLinks) {
+          body = replaceRinkPlaceholders(body, rinks);
+        }
         setContent(body);
       })
       .catch(() => setError(true))
@@ -129,7 +133,10 @@ export default function BlogPost() {
             </div>
           ) : content ? (
             <article className="prose prose-slate max-w-none prose-headings:font-serif prose-h1:hidden prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4 prose-p:text-muted-foreground prose-p:leading-relaxed prose-li:text-muted-foreground prose-strong:text-foreground prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-table:text-sm prose-th:text-left prose-th:font-semibold prose-th:border-b prose-th:pb-2 prose-th:pr-4 prose-td:py-2 prose-td:pr-4 prose-td:border-b prose-td:border-muted">
-              <ReactMarkdown remarkPlugins={[remarkGfm]}>
+              <ReactMarkdown 
+                remarkPlugins={[remarkGfm]}
+                allowedElements={['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'ul', 'ol', 'li', 'strong', 'em', 'code', 'pre', 'blockquote', 'table', 'thead', 'tbody', 'tr', 'th', 'td', 'br', 'a', 'hr', 'img']}
+              >
                 {content}
               </ReactMarkdown>
             </article>

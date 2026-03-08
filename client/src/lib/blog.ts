@@ -9,6 +9,7 @@ export interface BlogPostMeta {
   excerpt: string;
   fileName: string;
   image?: string;
+  hasDynamicRinkLinks?: boolean;
 }
 
 export interface BlogPost extends BlogPostMeta {
@@ -93,4 +94,20 @@ export function getImageAlt(filename: string): string {
   if (!filename) return "Ice skating";
   const name = filename.split('/').pop() || filename;
   return name.split('.')[0].replace(/[_-]/g, ' ');
+}
+
+export function replaceRinkPlaceholders(content: string, rinks: any[]): string {
+  const rinkMap = new Map(rinks.map(r => [r.slug, r.name]));
+  
+  return content.replace(/\[RINK: ([^\]]+)\]/g, (match, slug) => {
+    const rinkName = rinkMap.get(slug);
+    if (rinkName) {
+      return `<a href="/rink/${slug}">${rinkName}</a>`;
+    } else {
+      if (typeof window !== 'undefined' && window.console) {
+        console.warn(`[Ice Skating Index] Rink slug not found in database: "${slug}". Link will render as plain text.`);
+      }
+      return slug;
+    }
+  });
 }
