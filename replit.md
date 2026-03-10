@@ -17,13 +17,23 @@ A programmatic SEO directory for ice skating rinks featuring a clean, modern Nor
 
 ## Blog System
 - **Posts**: Stored as markdown files in `client/public/posts/`
-- **Registry**: Post metadata registered in `client/src/data/blogRegistry.ts`
+- **Single source of truth**: All blog post metadata lives in `client/src/data/blog-posts.json`
+- **Client registry**: `client/src/data/blogRegistry.ts` imports from `blog-posts.json` and calls `registerPost()` for each entry
+- **Server sitemap**: `server/routes.ts` imports the same `blog-posts.json` directly for sitemap generation
 - **Utilities**: Front matter parsing, excerpt extraction in `client/src/lib/blog.ts`
 - **Routes**: `/blog` (index), `/blog/:slug` (individual posts)
-- **File naming**: `post-N-short-name.md` → slug from front matter
-- **Features**: Category filtering, related posts by category, JSON-LD structured data, byline
+- **Features**: Category filtering, related posts by category, JSON-LD structured data, byline, rehypeRaw for HTML rendering
 - **Typography**: `@tailwindcss/typography` plugin for prose styling
-- **Adding a post**: 1) Create `.md` file in `client/public/posts/`, 2) Add `registerPost()` call in `blogRegistry.ts`
+- **Dynamic rink linking**: Set `hasDynamicRinkLinks: true` in blog-posts.json; use `[RINK: exact-db-slug]` in markdown
+- **Adding a new blog post**:
+  1. Create `.md` file in `client/public/posts/`
+  2. Add one entry to `client/src/data/blog-posts.json` — this is the only metadata file; both the client blog and server sitemap read from it automatically
+
+## Sitemap
+- **Auto-generated**: `/sitemap.xml` is dynamically generated in `server/routes.ts`
+- **Includes**: Homepage, browse page, freestyle hub, all state hubs, all individual rink pages, blog index, and all blog posts
+- **Single source**: Both blog index and sitemap read from `blog-posts.json` — no duplicate data files to maintain
+- **Rink data**: Pulled from `client/src/data/rinks.json` (slugs include location suffix, e.g., `ford-ice-center-antioch-antioch-tn`)
 
 ## Navigation
 - Text links: Freestyle, Learn to Skate, Skate Sharpening, Blog
@@ -32,10 +42,12 @@ A programmatic SEO directory for ice skating rinks featuring a clean, modern Nor
 
 ## Important Files
 - `client/src/data/rinks.json` — Rink data
+- `client/src/data/blog-posts.json` — Blog post metadata (single source of truth for client + server)
+- `client/src/data/blogRegistry.ts` — Imports blog-posts.json and registers posts for client use
 - `client/src/lib/data.ts` — Data helpers and types
-- `client/src/lib/blog.ts` — Blog utilities
-- `client/src/data/blogRegistry.ts` — Blog post metadata registry
+- `client/src/lib/blog.ts` — Blog utilities (registerPost, getCategories, getRelatedPosts, etc.)
 - `client/public/posts/` — Markdown blog post files
+- `server/routes.ts` — Sitemap, robots.txt, blog image API
 - `client/src/pages/Home.tsx` — Homepage
 - `client/src/pages/Browse.tsx` — Rink browser
 - `client/src/pages/BlogIndex.tsx` — Blog listing page
@@ -46,3 +58,4 @@ A programmatic SEO directory for ice skating rinks featuring a clean, modern Nor
 
 ## Images
 - 5 images in `attached_assets/` served via `/attached_assets` route
+- Blog post images assigned via `/api/blog/image/:slug` endpoint, stored in `client/public/data/post-image-map.json`

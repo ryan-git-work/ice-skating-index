@@ -1,9 +1,8 @@
 import type { Express } from "express";
 import type { Server } from "http";
 
-// Import rinks data for sitemap generation
 import rinksData from "../client/src/data/rinks.json";
-import { serverBlogRegistry } from "../client/src/data/blogRegistry.server";
+import blogPosts from "../client/src/data/blog-posts.json";
 import fs from "fs/promises";
 import path from "path";
 
@@ -29,7 +28,6 @@ export async function registerRoutes(
   httpServer: Server,
   app: Express
 ): Promise<Server> {
-  // Sitemap.xml - Dynamically generate sitemap for SEO
   app.get("/sitemap.xml", (_req, res) => {
     const baseUrl = "https://iceskatingindex.com";
     const now = new Date().toISOString().split('T')[0];
@@ -83,7 +81,7 @@ ${rinks.map(rink => `  <url>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-${serverBlogRegistry.map(post => `  <url>
+${blogPosts.map((post: any) => `  <url>
     <loc>${baseUrl}/blog/${post.slug}</loc>
     <lastmod>${post.publishDate}</lastmod>
     <changefreq>monthly</changefreq>
@@ -95,7 +93,6 @@ ${serverBlogRegistry.map(post => `  <url>
     res.send(sitemap);
   });
 
-  // Robots.txt - Allow all crawlers
   app.get("/robots.txt", (_req, res) => {
     const robotsTxt = `User-agent: *
 Allow: /
@@ -108,7 +105,6 @@ Sitemap: https://iceskatingindex.com/sitemap.xml
     res.send(robotsTxt);
   });
 
-  // Blog Image Assignment API
   app.get("/api/blog/image/:slug", async (req, res) => {
     const { slug } = req.params;
     const dataPath = path.resolve(process.cwd(), "client/public/data/post-image-map.json");
@@ -120,14 +116,12 @@ Sitemap: https://iceskatingindex.com/sitemap.xml
         const data = await fs.readFile(dataPath, "utf-8");
         map = JSON.parse(data);
       } catch (e) {
-        // File might not exist yet
       }
 
       if (map[slug]) {
         return res.json({ image: map[slug] });
       }
 
-      // Assign new image
       const files = await fs.readdir(imagesDir);
       const imageFiles = files.filter(f => /\.(png|jpg|jpeg|webp)$/i.test(f));
       
