@@ -3,6 +3,7 @@ import type { Server } from "http";
 
 // Import rinks data for sitemap generation
 import rinksData from "../client/src/data/rinks.json";
+import { serverBlogRegistry } from "../client/src/data/blogRegistry.server";
 import fs from "fs/promises";
 import path from "path";
 
@@ -73,6 +74,20 @@ ${rinks.map(rink => `  <url>
     <lastmod>${rink.last_verified}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>`).join('\n')}
+  
+  <!-- Blog Posts -->
+  <url>
+    <loc>${baseUrl}/blog</loc>
+    <lastmod>${now}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+${serverBlogRegistry.map(post => `  <url>
+    <loc>${baseUrl}/blog/${post.slug}</loc>
+    <lastmod>${post.publishDate}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>`).join('\n')}
 </urlset>`;
 
