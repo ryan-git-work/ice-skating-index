@@ -58,6 +58,7 @@ export const RinkSchema = z.object({
         z.object({
             adult: z.number().nullable().optional(),
             youth: z.number().nullable().optional(),
+            child: z.number().nullable().optional(),
             senior: z.number().nullable().optional(),
         })
     ]).optional(),
@@ -74,7 +75,7 @@ export const RinkSchema = z.object({
     notes: z.string().optional(),
   }),
   sharpening: z.object({
-    available: z.union([z.boolean(), z.literal("true"), z.literal("false"), z.literal("unknown")]),
+    available: z.union([z.boolean(), z.literal("true"), z.literal("false"), z.literal("unknown")]).optional(),
     turnaround: z.string().nullable().optional(),
     pricing_base: z.union([z.string(), z.number()]).nullable().optional(),
     pricing_rush: z.union([z.string(), z.number()]).nullable().optional(),
@@ -101,8 +102,8 @@ export const RinkSchema = z.object({
     pro_shop: z.union([z.boolean(), z.literal("true"), z.literal("false"), z.literal("unknown")]),
     skate_aids: z.union([z.boolean(), z.literal("true"), z.literal("false"), z.literal("unknown")]).optional(),
   }),
-  audiences: z.array(z.string()),
-  tags: z.array(z.string()),
+  audiences: z.array(z.string()).optional(),
+  tags: z.array(z.string()).optional(),
   faq: z.array(z.object({
     q: z.string(),
     a: z.string(),
@@ -118,15 +119,15 @@ export const RinkSchema = z.object({
     meta_title: z.string().optional(),
     meta_description: z.string().optional(),
     snippet: z.string().optional(),
-  }),
-  sources: z.array(z.string()),
+  }).optional(),
+  sources: z.array(z.string()).optional(),
   evidence: z.array(z.object({
       field: z.string(),
       url: z.string(),
       note: z.string().optional(),
       notes: z.string().optional()
   })).optional(),
-  last_verified: z.string(),
+  last_verified: z.string().optional(),
 });
 
 export type Rink = z.infer<typeof RinkSchema>;
