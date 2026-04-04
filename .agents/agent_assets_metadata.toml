@@ -1,0 +1,122 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "UEu8CwKcpXYGN3jJcyadV"
+uri = "file://client/public/images/skating/ice_img_01.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "iL56NlTr1P4kKhlAmEWbf"
+uri = "file://client/public/images/skating/ice_img_02.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "LSnmWfjPWYFxxN-58oBfp"
+uri = "file://client/public/images/skating/ice_img_03.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "s-UXEQpbk0nStsaTlEsiz"
+uri = "file://client/public/images/skating/ice_img_04.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "8RMre7k_23HQOiGxbCN_c"
+uri = "file://client/public/images/skating/ice_img_05.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "l4NpK5P0yTWFvGDFjXUyK"
+uri = "file://client/public/images/skating/ice_img_06.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "s7zNDQIo7tg-9DzF4FS7N"
+uri = "file://client/public/images/skating/ice_img_07.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "6p9gTMD7lIV_MgTI5_J3N"
+uri = "file://client/public/images/skating/ice_img_08.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "vBWAtxXTlL5vOYNr1NPCh"
+uri = "file://client/public/images/skating/ice_img_09.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "iEYoCN7ZKh_CSVpXTFob5"
+uri = "file://client/public/images/skating/ice_img_10.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "rJwL-Qb820oA0KScicXN_"
+uri = "file://client/public/images/skating/ice_img_11.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "Ez7mXZrBuZBUOXm9pVEmG"
+uri = "file://client/public/images/skating/ice_img_12.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "iUv-ycloPY7oAXBgE09y5"
+uri = "file://client/public/images/skating/ice_img_13.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "rJF47nTUsBugpbYGeFGRg"
+uri = "file://client/public/images/skating/ice_img_14.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "19Jjv4yFAjUyY3mMhbYwc"
+uri = "file://client/public/images/skating/ice_img_15.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "S0xTtB2lTOC_Jaw153_6u"
+uri = "file://client/public/images/skating/ice_img_16.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "Ir-lDMuGHLJ1ffKYyEIDe"
+uri = "file://client/public/images/skating/ice_img_17.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "f9ijz0DV-ynymyzo9YMVM"
+uri = "file://client/public/images/skating/ice_img_18.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "G-1q4nTKiNMez99F8fm5x"
+uri = "file://client/public/images/skating/ice_img_19.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "DUqZFUZEDyhjdP9F0kga4"
+uri = "file://client/public/images/skating/ice_img_20.png"
+type = "image"
+title = "generated_image"

@@ -403,7 +403,7 @@
       }
     ],
     "last_verified": "2025-12-18",
-    "image": "/attached_assets/iceskatingindex1_1766179636449.jpg"
+    "image": "/images/skating/ice_img_08.png"
   },
   {
     "id": "tn-antioch-ford-ice-center-antioch-antioch-tn",
@@ -801,7 +801,7 @@
       }
     ],
     "last_verified": "2025-12-18",
-    "image": "/attached_assets/iceskatingindex2_1766179636450.jpg"
+    "image": "/images/skating/ice_img_09.png"
   },
   {
     "id": "tn-nashville-ford-ice-center-bellevue-nashville-tn",
@@ -1150,7 +1150,7 @@
       }
     ],
     "last_verified": "2025-12-18",
-    "image": "/attached_assets/iceskatingindex3_1766179636450.jpg"
+    "image": "/images/skating/ice_img_10.png"
   },
   {
     "id": "tn-clarksville-ford-ice-center-clarksville-clarksville-tn",
@@ -1418,7 +1418,7 @@
       }
     ],
     "last_verified": "2025-12-19",
-    "image": "/attached_assets/iceskatingindex4_1766179636450.jpg"
+    "image": "/images/skating/ice_img_11.png"
   },
   {
     "id": "tn-nolensville-gary-force-acura-ice-arena-nolensville-tn",
@@ -1685,7 +1685,7 @@
       }
     ],
     "last_verified": "2025-12-19",
-    "image": "/attached_assets/iceskatingindex5_1766179636449.jpg"
+    "image": "/images/skating/ice_img_12.png"
   },
   {
     "id": "tn-knoxville-cool-sports-home-of-the-icearium-knoxville-tn",
@@ -1986,7 +1986,7 @@
       }
     ],
     "last_verified": "2025-12-19",
-    "image": "/attached_assets/iceskatingindex1_1766179636449.jpg"
+    "image": "/images/skating/ice_img_13.png"
   },
   {
     "id": "tn-knoxville-ice-chalet-knoxville-tn",
@@ -2270,7 +2270,7 @@
       }
     ],
     "last_verified": "2025-12-19",
-    "image": "/attached_assets/iceskatingindex2_1766179636450.jpg"
+    "image": "/images/skating/ice_img_14.png"
   },
   {
     "id": "tn-gatlinburg-ober-mountain-indoor-ice-skating-gatlinburg-tn",
@@ -2545,7 +2545,7 @@
       }
     ],
     "last_verified": "2025-12-19",
-    "image": "/attached_assets/iceskatingindex3_1766179636450.jpg"
+    "image": "/images/skating/ice_img_15.png"
   },
   {
     "id": "ny-new-york-sky-rink-chelsea-piers-new-york-ny",
@@ -2662,7 +2662,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_16.png"
   },
   {
     "id": "ny-new-york-wollman-rink-new-york-ny",
@@ -2775,7 +2776,8 @@
       "concessions": true,
       "pro_shop": false,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_17.png"
   },
   {
     "id": "ny-new-york-rockefeller-center-ice-rink-new-york-ny",
@@ -2889,7 +2891,8 @@
       "concessions": true,
       "pro_shop": false,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_18.png"
   },
   {
     "id": "ny-new-hyde-park-iceland-new-hyde-park-ny",
@@ -2999,7 +3002,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_19.png"
   },
   {
     "id": "ny-brewster-brewster-ice-arena-brewster-ny",
@@ -3107,7 +3111,8 @@
       "concessions": true,
       "pro_shop": "unknown",
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_20.png"
   },
   {
     "id": "ny-newburgh-icetime-sports-complex-newburgh-ny",
@@ -3218,7 +3223,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_01.png"
   },
   {
     "id": "ny-buffalo-harborcenter-buffalo-ny",
@@ -3333,7 +3339,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_02.png"
   },
   {
     "id": "ny-east-meadow-eisenhower-park-ice-rink-east-meadow-ny",
@@ -3439,7 +3446,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_03.png"
   },
   {
     "id": "ca-burbank-pickwick-ice-center-burbank-ca",
@@ -3557,7 +3565,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_04.png"
   },
   {
     "id": "ca-san-jose-solar4america-ice-san-jose-ca",
@@ -3677,7 +3686,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_05.png"
   },
   {
     "id": "ca-simi-valley-iceoplex-simi-valley-ca",
@@ -3787,7 +3797,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_06.png"
   },
   {
     "id": "ca-oakland-oakland-ice-center-oakland-ca",
@@ -3901,7 +3912,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_07.png"
   },
   {
     "id": "ca-poway-poway-ice-rink-poway-ca",
@@ -4005,7 +4017,8 @@
       "concessions": true,
       "pro_shop": false,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_08.png"
   },
   {
     "id": "ca-lakewood-lakewood-ice-lakewood-ca",
@@ -4115,7 +4128,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_09.png"
   },
   {
     "id": "ca-san-diego-san-diego-ice-arena-san-diego-ca",
@@ -4232,7 +4246,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_10.png"
   },
   {
     "id": "ca-riverside-icetown-riverside-ca",
@@ -4347,7 +4362,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_11.png"
   },
   {
     "id": "mi-plymouth-usa-hockey-arena-plymouth-mi",
@@ -4469,7 +4485,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_12.png"
   },
   {
     "id": "mi-macomb-township-suburban-ice-macomb-macomb-township-mi",
@@ -4580,7 +4597,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_13.png"
   },
   {
     "id": "mi-ann-arbor-yost-ice-arena-ann-arbor-mi",
@@ -4693,7 +4711,8 @@
       "concessions": true,
       "pro_shop": false,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_14.png"
   },
   {
     "id": "mi-traverse-city-centre-ice-arena-traverse-city-mi",
@@ -4803,7 +4822,8 @@
       "concessions": true,
       "pro_shop": "unknown",
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_15.png"
   },
   {
     "id": "mi-hazel-park-hazel-park-arena-hazel-park-mi",
@@ -4906,7 +4926,8 @@
       "concessions": true,
       "pro_shop": false,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_16.png"
   },
   {
     "id": "mi-garden-city-garden-city-ice-arena-garden-city-mi",
@@ -5010,7 +5031,8 @@
       "concessions": true,
       "pro_shop": "unknown",
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_17.png"
   },
   {
     "id": "mi-southfield-iceland-arena-southfield-mi",
@@ -5120,7 +5142,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_18.png"
   },
   {
     "id": "mi-grand-rapids-griffs-icehouse-grand-rapids-mi",
@@ -5233,7 +5256,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_19.png"
   },
   {
     "id": "mn-st-paul-tria-rink-st-paul-mn",
@@ -5347,7 +5371,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_20.png"
   },
   {
     "id": "mn-maplewood-aldrich-arena-maplewood-mn",
@@ -5451,7 +5476,8 @@
       "concessions": true,
       "pro_shop": false,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_01.png"
   },
   {
     "id": "mn-brooklyn-park-brooklyn-park-community-activity-center-brooklyn-park-mn",
@@ -5556,7 +5582,8 @@
       "concessions": true,
       "pro_shop": false,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_02.png"
   },
   {
     "id": "mn-minneapolis-parade-ice-garden-minneapolis-mn",
@@ -5660,7 +5687,8 @@
       "concessions": true,
       "pro_shop": false,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_03.png"
   },
   {
     "id": "mn-edina-braemar-arena-edina-mn",
@@ -5771,7 +5799,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_04.png"
   },
   {
     "id": "mn-bloomington-bloomington-ice-garden-bloomington-mn",
@@ -5876,7 +5905,8 @@
       "concessions": true,
       "pro_shop": false,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_05.png"
   },
   {
     "id": "mn-roseville-roseville-skating-center-roseville-mn",
@@ -5981,7 +6011,8 @@
       "concessions": true,
       "pro_shop": false,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_06.png"
   },
   {
     "id": "mn-st-louis-park-st-louis-park-rec-center-st-louis-park-mn",
@@ -6086,7 +6117,8 @@
       "concessions": true,
       "pro_shop": false,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_07.png"
   },
   {
     "id": "ma-norwood-skating-club-of-boston-norwood-ma",
@@ -6205,7 +6237,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_08.png"
   },
   {
     "id": "ma-marlborough-new-england-sports-center-marlborough-ma",
@@ -6325,7 +6358,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_09.png"
   },
   {
     "id": "ma-boston-steriti-memorial-rink-boston-ma",
@@ -6429,7 +6463,8 @@
       "concessions": true,
       "pro_shop": false,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_10.png"
   },
   {
     "id": "ma-boston-bajko-memorial-rink-boston-ma",
@@ -6533,7 +6568,8 @@
       "concessions": true,
       "pro_shop": false,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_11.png"
   },
   {
     "id": "ma-pembroke-hobomock-arena-pembroke-ma",
@@ -6643,7 +6679,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_12.png"
   },
   {
     "id": "ma-canton-canton-sportsplex-canton-ma",
@@ -6753,7 +6790,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_13.png"
   },
   {
     "id": "ma-concord-valley-sports-arena-concord-ma",
@@ -6863,7 +6901,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_14.png"
   },
   {
     "id": "ma-brighton-brighton-arena-brighton-ma",
@@ -6967,7 +7006,8 @@
       "concessions": true,
       "pro_shop": false,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_15.png"
   },
   {
     "id": "co-centennial-south-suburban-ice-arena-centennial-co",
@@ -7077,7 +7117,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_16.png"
   },
   {
     "id": "co-littleton-foothills-ice-arena-littleton-co",
@@ -7187,7 +7228,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_17.png"
   },
   {
     "id": "co-highlands-ranch-edge-ice-arena-highlands-ranch-co",
@@ -7297,7 +7339,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_18.png"
   },
   {
     "id": "co-centennial-family-sports-center-centennial-co",
@@ -7412,7 +7455,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_19.png"
   },
   {
     "id": "co-westminster-apex-ice-arena-westminster-co",
@@ -7522,7 +7566,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_20.png"
   },
   {
     "id": "co-littleton-ice-ranch-littleton-co",
@@ -7632,7 +7677,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_01.png"
   },
   {
     "id": "co-lone-tree-lone-tree-recreation-center-lone-tree-co",
@@ -7736,7 +7782,8 @@
       "concessions": true,
       "pro_shop": false,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_02.png"
   },
   {
     "id": "co-colorado-springs-broadmoor-ice-palace-colorado-springs-co",
@@ -7849,7 +7896,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_03.png"
   },
   {
     "id": "tx-mckinney-dr-pepper-starcenter-mckinney-tx",
@@ -7966,7 +8014,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_04.png"
   },
   {
     "id": "tx-dallas-ice-at-the-galleria-dallas-tx",
@@ -8079,7 +8128,8 @@
       "concessions": true,
       "pro_shop": false,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_05.png"
   },
   {
     "id": "tx-pearland-aerodrome-ice-skating-pearland-tx",
@@ -8194,7 +8244,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_06.png"
   },
   {
     "id": "tx-euless-starcenter-euless-euless-tx",
@@ -8306,7 +8357,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_07.png"
   },
   {
     "id": "tx-allen-allen-event-center-ice-allen-tx",
@@ -8420,7 +8472,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_08.png"
   },
   {
     "id": "tx-san-antonio-ice-at-the-rim-san-antonio-tx",
@@ -8535,7 +8588,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_09.png"
   },
   {
     "id": "tx-sugar-land-sugar-land-ice-and-sports-sugar-land-tx",
@@ -8645,7 +8699,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_10.png"
   },
   {
     "id": "tx-frisco-frisco-athletic-center-frisco-tx",
@@ -8754,7 +8809,8 @@
       "concessions": true,
       "pro_shop": false,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_11.png"
   },
   {
     "id": "il-chicago-millennium-park-ice-rink-chicago-il",
@@ -8863,7 +8919,8 @@
       "concessions": true,
       "pro_shop": false,
       "skate_aids": false
-    }
+    },
+    "image": "/images/skating/ice_img_12.png"
   },
   {
     "id": "il-chicago-mcfetridge-sports-center-chicago-il",
@@ -8968,7 +9025,8 @@
       "concessions": true,
       "pro_shop": false,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_13.png"
   },
   {
     "id": "il-woodridge-seven-bridges-ice-arena-woodridge-il",
@@ -9086,7 +9144,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_14.png"
   },
   {
     "id": "il-elk-grove-village-twin-ice-arena-elk-grove-village-il",
@@ -9191,7 +9250,8 @@
       "concessions": true,
       "pro_shop": false,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_15.png"
   },
   {
     "id": "il-northbrook-northbrook-sports-center-northbrook-il",
@@ -9301,7 +9361,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_16.png"
   },
   {
     "id": "il-oak-lawn-iceland-ice-arena-oak-lawn-il",
@@ -9411,7 +9472,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_17.png"
   },
   {
     "id": "il-flossmoor-homewood-flossmoor-ice-arena-flossmoor-il",
@@ -9521,7 +9583,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_18.png"
   },
   {
     "id": "il-aurora-fox-valley-ice-arena-aurora-il",
@@ -9631,7 +9694,8 @@
       "concessions": true,
       "pro_shop": false,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_19.png"
   },
   {
     "id": "pa-philadelphia-blue-cross-riverrink-philadelphia-pa",
@@ -9745,7 +9809,8 @@
       "concessions": true,
       "pro_shop": false,
       "skate_aids": false
-    }
+    },
+    "image": "/images/skating/ice_img_20.png"
   },
   {
     "id": "pa-philadelphia-class-skate-philadelphia-pa",
@@ -9854,7 +9919,8 @@
       "concessions": true,
       "pro_shop": false,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_01.png"
   },
   {
     "id": "pa-aston-iceworks-skating-complex-aston-pa",
@@ -9972,7 +10038,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_02.png"
   },
   {
     "id": "pa-cranberry-township-baierl-ice-complex-cranberry-township-pa",
@@ -10082,7 +10149,8 @@
       "concessions": true,
       "pro_shop": false,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_03.png"
   },
   {
     "id": "pa-pittsburgh-pittsburgh-ice-arena-pittsburgh-pa",
@@ -10192,7 +10260,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_04.png"
   },
   {
     "id": "pa-ambler-ice-a-rama-ambler-pa",
@@ -10301,7 +10370,8 @@
       "concessions": true,
       "pro_shop": false,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_05.png"
   },
   {
     "id": "pa-york-york-ice-arena-york-pa",
@@ -10410,7 +10480,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_06.png"
   },
   {
     "id": "pa-state-college-centre-county-arena-state-college-pa",
@@ -10524,7 +10595,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_07.png"
   },
   {
     "id": "oh-columbus-ohiohealth-ice-trails-easton-columbus-oh",
@@ -10638,7 +10710,8 @@
       "concessions": true,
       "pro_shop": false,
       "skate_aids": false
-    }
+    },
+    "image": "/images/skating/ice_img_08.png"
   },
   {
     "id": "oh-columbus-chiller-dublin-dublin-oh",
@@ -10755,7 +10828,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_09.png"
   },
   {
     "id": "oh-lewis-center-chiller-north-lewis-center-oh",
@@ -10870,7 +10944,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_10.png"
   },
   {
     "id": "oh-reynoldsburg-chiller-east-reynoldsburg-oh",
@@ -10985,7 +11060,8 @@
       "concessions": true,
       "pro_shop": true,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_11.png"
   },
   {
     "id": "oh-cleveland-csu-ice-arena-cleveland-oh",
@@ -11089,7 +11165,8 @@
       "concessions": true,
       "pro_shop": false,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_12.png"
   },
   {
     "id": "oh-strongsville-strongsville-recreation-center-strongsville-oh",
@@ -11194,7 +11271,8 @@
       "concessions": true,
       "pro_shop": false,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_13.png"
   },
   {
     "id": "oh-lakewood-winterhurst-ice-rink-lakewood-oh",
@@ -11304,7 +11382,8 @@
       "concessions": true,
       "pro_shop": false,
       "skate_aids": true
-    }
+    },
+    "image": "/images/skating/ice_img_14.png"
   },
   {
     "id": "oh-columbus-ohiohealth-ice-trails-polaris-columbus-oh",
@@ -11418,6 +11497,7 @@
       "concessions": true,
       "pro_shop": false,
       "skate_aids": false
-    }
+    },
+    "image": "/images/skating/ice_img_15.png"
   }
 ]
