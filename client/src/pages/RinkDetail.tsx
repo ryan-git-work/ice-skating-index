@@ -59,7 +59,7 @@ export default function RinkDetail() {
                 )}
               </div>
               <div className="flex flex-wrap gap-2">
-                {rink.tags.map((tag) => (
+                {(rink.tags ?? []).map((tag) => (
                   <Badge key={tag} variant="secondary" className="rounded-full px-3 py-1 font-normal text-sm">
                     {tag}
                   </Badge>
@@ -110,15 +110,15 @@ export default function RinkDetail() {
             <section>
               <h2 className="font-serif text-2xl font-bold mb-4">About</h2>
               <p className="text-lg leading-relaxed text-muted-foreground">
-                {rink.seo.long_description}
+                {rink.seo?.long_description ?? `Ice skating rink in ${rink.address.city}, ${rink.address.state}.`}
               </p>
-              {rink.seo.what_to_know.length > 0 && (
+              {(rink.seo?.what_to_know?.length ?? 0) > 0 && (
                 <div className="mt-6 bg-blue-50 dark:bg-blue-950/20 p-6 rounded-xl border border-blue-100 dark:border-blue-900/50">
                   <h3 className="font-semibold text-blue-900 dark:text-blue-200 mb-3 flex items-center">
                     <Info className="h-4 w-4 mr-2" /> What to know before you go
                   </h3>
                   <ul className="space-y-2">
-                    {rink.seo.what_to_know.map((item, i) => (
+                    {rink.seo?.what_to_know?.map((item, i) => (
                       <li key={i} className="text-blue-800 dark:text-blue-300 text-sm flex items-start">
                         <span className="mr-2">•</span> {item}
                       </li>
@@ -267,8 +267,8 @@ export default function RinkDetail() {
 
              {/* Verification */}
              <div className="text-xs text-muted-foreground">
-               <p>Last verified: {new Date(rink.last_verified).toLocaleDateString()}</p>
-               <p>Source: {rink.sources.join(", ")}</p>
+               {rink.last_verified && <p>Last verified: {new Date(rink.last_verified).toLocaleDateString()}</p>}
+               {rink.sources && rink.sources.length > 0 && <p>Source: {rink.sources.join(", ")}</p>}
              </div>
           </div>
 

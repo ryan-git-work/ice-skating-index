@@ -52,7 +52,7 @@ export function RinkCard({ rink }: RinkCardProps) {
         </div>
         
         <p className="text-sm text-muted-foreground line-clamp-2">
-          {rink.seo.short_description}
+          {rink.seo?.short_description ?? `Ice skating rink in ${rink.address.city}, ${rink.address.state}.`}
         </p>
       </CardContent>
       <CardFooter className="p-5 pt-0 mt-auto border-t bg-muted/10">
