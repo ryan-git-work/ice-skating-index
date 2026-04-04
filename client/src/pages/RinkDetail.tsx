@@ -18,7 +18,7 @@ export default function RinkDetail() {
 
   useHead({
     title: rink ? rink.name : "Rink Not Found",
-    description: rink?.seo.short_description
+    description: rink?.seo?.short_description
   });
 
   if (!rink) {
