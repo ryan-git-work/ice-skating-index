@@ -131,6 +131,16 @@ export function Layout({ children }: { children: React.ReactNode }) {
               <h3 className="font-semibold mb-4 text-foreground">Top States</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li><Link href="/state/TN"><span className="hover:text-primary transition-colors cursor-pointer">Tennessee</span></Link></li>
+                <li><Link href="/state/NY"><span className="hover:text-primary transition-colors cursor-pointer">New York</span></Link></li>
+                <li><Link href="/state/CA"><span className="hover:text-primary transition-colors cursor-pointer">California</span></Link></li>
+                <li><Link href="/state/MI"><span className="hover:text-primary transition-colors cursor-pointer">Michigan</span></Link></li>
+                <li><Link href="/state/MN"><span className="hover:text-primary transition-colors cursor-pointer">Minnesota</span></Link></li>
+                <li><Link href="/state/MA"><span className="hover:text-primary transition-colors cursor-pointer">Massachusetts</span></Link></li>
+                <li><Link href="/state/CO"><span className="hover:text-primary transition-colors cursor-pointer">Colorado</span></Link></li>
+                <li><Link href="/state/TX"><span className="hover:text-primary transition-colors cursor-pointer">Texas</span></Link></li>
+                <li><Link href="/state/IL"><span className="hover:text-primary transition-colors cursor-pointer">Illinois</span></Link></li>
+                <li><Link href="/state/PA"><span className="hover:text-primary transition-colors cursor-pointer">Pennsylvania</span></Link></li>
+                <li><Link href="/state/OH"><span className="hover:text-primary transition-colors cursor-pointer">Ohio</span></Link></li>
               </ul>
             </div>
           </div>

@@ -11,13 +11,50 @@ import "@/data/blogRegistry";
 import { BlogImage } from "@/components/BlogImage";
 import { Badge } from "@/components/ui/badge";
 
+function CityHubCard({ href, image, city, rinkCount, description }: {
+  href: string;
+  image: string;
+  city: string;
+  rinkCount: string;
+  description: string;
+}) {
+  return (
+    <Link href={href}>
+      <div className="group h-full flex flex-col overflow-hidden border rounded-xl transition-all hover:shadow-md hover:border-primary/20 bg-card cursor-pointer">
+        <div className="h-48 relative overflow-hidden">
+          <img
+            src={image}
+            alt={`Ice skating in ${city}`}
+            className="absolute inset-0 w-full h-full object-cover transition-transform group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+          <div className="absolute bottom-4 left-4 right-4">
+            <h3 className="font-serif text-2xl font-bold text-white">{city}</h3>
+            <p className="text-white/80 text-sm">{rinkCount}</p>
+          </div>
+        </div>
+        <div className="p-5">
+          <p className="text-sm text-muted-foreground">{description}</p>
+        </div>
+      </div>
+    </Link>
+  );
+}
+
 export default function Home() {
   useHead({
     title: "Home",
     description: "The definitive directory for ice skating rinks, schedules, and freestyle sessions."
   });
 
-  const featuredRinks = rinks.slice(0, 3);
+  const featuredSlugs = [
+    "sky-rink-chelsea-piers-new-york-ny",
+    "millennium-park-ice-rink-chicago-il",
+    "broadmoor-ice-palace-colorado-springs-co",
+  ];
+  const featuredRinks = featuredSlugs
+    .map(slug => rinks.find(r => r.slug === slug))
+    .filter((r): r is NonNullable<typeof r> => r !== undefined);
   const latestPosts = blogPostRegistry.slice(0, 3);
 
   return (
@@ -62,27 +99,48 @@ export default function Home() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Link href="/tennessee/nashville-ice-skating">
-              <div className="group h-full flex flex-col overflow-hidden border rounded-xl transition-all hover:shadow-md hover:border-primary/20 bg-card cursor-pointer">
-                <div className="h-48 relative overflow-hidden">
-                  <img 
-                    src="/attached_assets/iceskatingindex1_1766179636449.jpg" 
-                    alt="Ice skating in Nashville"
-                    className="absolute inset-0 w-full h-full object-cover transition-transform group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                  <div className="absolute bottom-4 left-4 right-4">
-                    <h3 className="font-serif text-2xl font-bold text-white">Nashville, TN</h3>
-                    <p className="text-white/80 text-sm">3 rinks</p>
-                  </div>
-                </div>
-                <div className="p-5">
-                  <p className="text-sm text-muted-foreground">
-                    Find the best rinks for public skate, lessons, freestyle, and hockey in Nashville.
-                  </p>
-                </div>
-              </div>
-            </Link>
+            <CityHubCard
+              href="/tennessee/nashville-ice-skating"
+              image="/attached_assets/iceskatingindex1_1766179636449.jpg"
+              city="Nashville, TN"
+              rinkCount="3 rinks"
+              description="Find the best rinks for public skate, lessons, freestyle, and hockey in Nashville."
+            />
+            <CityHubCard
+              href="/state/NY"
+              image="/images/skating/ice_img_01.png"
+              city="New York City, NY"
+              rinkCount="8 rinks"
+              description="From Central Park to Chelsea Piers, explore the best ice skating venues in New York City."
+            />
+            <CityHubCard
+              href="/state/IL"
+              image="/images/skating/ice_img_02.png"
+              city="Chicago, IL"
+              rinkCount="8 rinks"
+              description="Discover Chicago's top ice rinks, including Millennium Park's iconic outdoor rink and indoor venues."
+            />
+            <CityHubCard
+              href="/state/CO"
+              image="/images/skating/ice_img_03.png"
+              city="Denver, CO"
+              rinkCount="8 rinks"
+              description="Skate at world-class facilities across Colorado, from Broadmoor Ice Palace to Denver's top rinks."
+            />
+            <CityHubCard
+              href="/state/MA"
+              image="/images/skating/ice_img_04.png"
+              city="Boston, MA"
+              rinkCount="8 rinks"
+              description="Explore Boston's rich skating culture with rinks serving all levels from beginners to competitive skaters."
+            />
+            <CityHubCard
+              href="/state/MN"
+              image="/images/skating/ice_img_05.png"
+              city="Minneapolis, MN"
+              rinkCount="8 rinks"
+              description="Minnesota's skating scene is second to none — find public skate, hockey, and figure skating in Minneapolis."
+            />
           </div>
         </div>
       </section>

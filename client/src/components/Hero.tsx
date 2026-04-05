@@ -21,9 +21,9 @@ export function Hero() {
                 Find a Rink
               </Button>
             </Link>
-            <Link href="/state/TN">
+            <Link href="/browse">
               <Button variant="outline" size="lg" className="h-12 px-8 text-base bg-background/50 backdrop-blur-sm">
-                Explore Tennessee <ArrowRight className="ml-2 h-4 w-4" />
+                Browse All States <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
           </div>
