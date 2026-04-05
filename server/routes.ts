@@ -69,7 +69,7 @@ ${getAllStates().map(state => `  <url>
   <!-- Individual Rink Pages -->
 ${rinks.map(rink => `  <url>
     <loc>${baseUrl}/rink/${rink.slug}</loc>
-    <lastmod>${rink.last_verified}</lastmod>
+    <lastmod>${rink.last_verified || "2026-04-05"}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>`).join('\n')}
