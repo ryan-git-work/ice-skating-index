@@ -44,7 +44,7 @@ function CityHubCard({ href, image, city, rinkCount, description }: {
 export default function Home() {
   useHead({
     title: "Home",
-    description: "The definitive directory for ice skating rinks, schedules, and freestyle sessions."
+    description: "Ice Skating Index is the comprehensive directory for ice skating rinks across the US. Find public skating schedules, freestyle sessions, learn-to-skate programs, and hockey rinks in New York, California, Texas, Illinois, and 7 more states."
   });
 
   const featuredSlugs = [
@@ -217,7 +217,6 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div className="order-2 md:order-1 relative">
                <div className="aspect-square rounded-2xl bg-secondary/30 relative overflow-hidden">
-                 {/* Abstract representation of Freestyle */}
                  <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent" />
                  <div className="absolute bottom-8 left-8 right-8">
                    <div className="bg-background/90 backdrop-blur p-6 rounded-xl shadow-lg border">

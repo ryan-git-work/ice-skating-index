@@ -24,6 +24,11 @@ function upsertJsonLd(id: string, value: unknown) {
   document.head.appendChild(script);
 }
 
+function trimExcerpt(text: string, max = 155) {
+  if (text.length <= max) return text;
+  return text.slice(0, max).replace(/\s+\S*$/, "") + "…";
+}
+
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
   const [content, setContent] = useState<string | null>(null);
@@ -34,7 +39,7 @@ export default function BlogPost() {
 
   useHead({
     title: postMeta?.title || "Blog Post",
-    description: postMeta?.metaDescription || "",
+    description: postMeta ? trimExcerpt(postMeta.excerpt) : "",
   });
 
   useEffect(() => {

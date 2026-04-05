@@ -5,9 +5,9 @@ import NotFound from "@/pages/not-found";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import { 
-  MapPin, Globe, Phone, Clock, Calendar, 
-  Info, Check, X, ExternalLink, Ticket,
+import {
+  MapPin, Phone, Calendar,
+  Info, X, ExternalLink, Ticket,
   Snowflake, Dumbbell, Scissors, ChevronDown, ChevronUp
 } from "lucide-react";
 import { useHead } from "@/hooks/use-head";
@@ -34,6 +34,22 @@ function upsertJsonLd(id: string, value: unknown) {
   document.head.appendChild(script);
 }
 
+function formatOfferingName(key: string) {
+  return key.replace(/_/g, " ");
+}
+
+function buildOfferingList(rink: NonNullable<ReturnType<typeof getRinkBySlug>>) {
+  const map: Array<[string, boolean | string | undefined]> = [
+    ["public skating", rink.offerings.public_skating],
+    ["learn-to-skate programs", rink.offerings.learn_to_skate],
+    ["figure skating", rink.offerings.figure_skating],
+    ["hockey", rink.offerings.hockey],
+    ["open hockey", rink.offerings.open_hockey],
+    ["stick and puck", rink.offerings.stick_and_puck],
+  ];
+  return map.filter(([, value]) => value === true || value === "true").slice(0, 3).map(([name]) => name);
+}
+
 export default function RinkDetail() {
   const params = useParams();
   const rink = getRinkBySlug(params.slug || "");
@@ -57,7 +73,9 @@ export default function RinkDetail() {
 
   useHead({
     title: rink ? rink.name : "Rink Not Found",
-    description: rink?.seo?.short_description ?? rink?.seo?.meta_description,
+    description: rink
+      ? `${rink.name} in ${rink.address.city}, ${rink.address.state} offers ${buildOfferingList(rink).join(", ")}. Find schedules, pricing, and directions at Ice Skating Index.`
+      : undefined,
   });
 
   useEffect(() => {
@@ -153,7 +171,6 @@ export default function RinkDetail() {
 
   return (
     <Layout>
-      {/* Breadcrumbs */}
       <div className="bg-muted/30 border-b">
         <div className="container mx-auto px-4 py-4 text-sm text-muted-foreground">
           <Link href="/">Home</Link>
@@ -166,7 +183,6 @@ export default function RinkDetail() {
         </div>
       </div>
 
-      {/* Hero Header */}
       <div className="bg-background pt-8 pb-12">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
@@ -228,11 +244,7 @@ export default function RinkDetail() {
 
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-          
-          {/* Main Content Column */}
           <div className="lg:col-span-2 space-y-12">
-            
-            {/* About / Description */}
             <section>
               <h2 className="font-serif text-2xl font-bold mb-4">About</h2>
               {description ? (
@@ -263,7 +275,6 @@ export default function RinkDetail() {
               )}
             </section>
 
-            {/* Offerings Grid */}
             <section>
               <h2 className="font-serif text-2xl font-bold mb-6">Offerings</h2>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
@@ -276,7 +287,6 @@ export default function RinkDetail() {
               </div>
             </section>
 
-            {/* Freestyle Section */}
             <section id="freestyle" className="scroll-mt-24">
                <div className="flex items-center gap-3 mb-6">
                  <h2 className="font-serif text-2xl font-bold">Freestyle Sessions</h2>
@@ -314,7 +324,6 @@ export default function RinkDetail() {
                </div>
             </section>
 
-            {/* Rentals & Sharpening */}
             <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <h2 className="font-serif text-2xl font-bold mb-4 flex items-center">
@@ -361,7 +370,6 @@ export default function RinkDetail() {
               </div>
             </section>
 
-            {/* FAQ Section */}
             {faqItems.length > 0 && (
               <section>
                 <h2 className="font-serif text-2xl font-bold mb-6">Frequently Asked Questions</h2>
@@ -373,12 +381,9 @@ export default function RinkDetail() {
                 </div>
               </section>
             )}
-
           </div>
 
-          {/* Sidebar Info */}
           <div className="space-y-8">
-             {/* Map Card */}
              <div className="bg-muted/20 rounded-xl p-6 border">
                <h3 className="font-bold mb-4">Location</h3>
                <address className="not-italic text-sm text-muted-foreground space-y-1 mb-4">
@@ -394,7 +399,6 @@ export default function RinkDetail() {
                )}
              </div>
 
-             {/* Facility Details */}
              <div className="bg-muted/20 rounded-xl p-6 border">
                <h3 className="font-bold mb-4">Facility Details</h3>
                <ul className="space-y-3 text-sm">
@@ -413,13 +417,11 @@ export default function RinkDetail() {
                </ul>
              </div>
 
-             {/* Verification */}
              <div className="text-xs text-muted-foreground">
                {rink.last_verified && <p>Last verified: {new Date(rink.last_verified).toLocaleDateString()}</p>}
                {rink.sources && rink.sources.length > 0 && <p>Source: {rink.sources.join(", ")}</p>}
              </div>
           </div>
-
         </div>
       </div>
     </Layout>

@@ -6,39 +6,38 @@ interface HeadProps {
   image?: string;
 }
 
+const DEFAULT_DESCRIPTION = "Ice Skating Index is the comprehensive directory for ice skating rinks across the US. Find public skating schedules, freestyle sessions, learn-to-skate programs, and hockey rinks in New York, California, Texas, Illinois, and 7 more states.";
+
 export function useHead({ title, description, image }: HeadProps) {
   useEffect(() => {
-    // Update Title
     if (title) {
       document.title = `${title} | Ice Skating Index`;
     } else {
       document.title = 'Ice Skating Index';
     }
 
-    // Update Meta Description
-    if (description) {
-      const metaDescription = document.querySelector('meta[name="description"]');
-      if (metaDescription) {
-        metaDescription.setAttribute('content', description);
-      } else {
-        const meta = document.createElement('meta');
-        meta.name = 'description';
-        meta.content = description;
-        document.head.appendChild(meta);
-      }
+    const descriptionContent = description || DEFAULT_DESCRIPTION;
 
-      const ogDescription = document.querySelector('meta[property="og:description"]');
-      if (ogDescription) {
-        ogDescription.setAttribute('content', description);
-      }
-      
-      const twitterDescription = document.querySelector('meta[name="twitter:description"]');
-      if (twitterDescription) {
-        twitterDescription.setAttribute('content', description);
-      }
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', descriptionContent);
+    } else {
+      const meta = document.createElement('meta');
+      meta.name = 'description';
+      meta.content = descriptionContent;
+      document.head.appendChild(meta);
     }
 
-    // Update OG Image
+    const ogDescription = document.querySelector('meta[property="og:description"]');
+    if (ogDescription) {
+      ogDescription.setAttribute('content', descriptionContent);
+    }
+
+    const twitterDescription = document.querySelector('meta[name="twitter:description"]');
+    if (twitterDescription) {
+      twitterDescription.setAttribute('content', descriptionContent);
+    }
+
     if (image) {
       const ogImage = document.querySelector('meta[property="og:image"]');
       if (ogImage) {
