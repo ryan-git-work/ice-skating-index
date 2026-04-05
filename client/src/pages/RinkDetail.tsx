@@ -13,9 +13,25 @@ import {
 import { useHead } from "@/hooks/use-head";
 import { useState, useEffect } from "react";
 
+const SITE_URL = "https://iceskatingindex.com";
+
 function getFaqQA(item: { q?: string; a?: string; question?: string; answer?: string }): { q: string; a: string } {
   if ("question" in item && item.question) return { q: item.question, a: item.answer ?? "" };
   return { q: item.q ?? "", a: item.a ?? "" };
+}
+
+function stripFirstParagraph(content?: string) {
+  return content?.split("\n\n")[0] ?? "";
+}
+
+function upsertJsonLd(id: string, value: unknown) {
+  const existing = document.getElementById(id);
+  if (existing) existing.remove();
+  const script = document.createElement("script");
+  script.id = id;
+  script.type = "application/ld+json";
+  script.textContent = JSON.stringify(value);
+  document.head.appendChild(script);
 }
 
 export default function RinkDetail() {
@@ -55,6 +71,81 @@ export default function RinkDetail() {
     document.head.appendChild(script);
     return () => { document.getElementById("faq-schema")?.remove(); };
   }, [faqSchema]);
+
+  useEffect(() => {
+    if (!rink) return;
+    const schema: Record<string, unknown> = {
+      "@context": "https://schema.org",
+      "@type": ["LocalBusiness", "SportsActivityLocation"],
+      name: rink.name,
+      description: stripFirstParagraph(description),
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: rink.address.street,
+        addressLocality: rink.address.city,
+        addressRegion: rink.address.state,
+        postalCode: rink.address.postal_code,
+        addressCountry: "US",
+      },
+      url: `${SITE_URL}/rink/${rink.slug}`,
+      sport: "Ice Skating",
+    };
+
+    if (rink.phone) {
+      schema.telephone = rink.phone;
+    }
+    if (rink.geo?.latitude != null && rink.geo?.longitude != null) {
+      schema.geo = {
+        "@type": "GeoCoordinates",
+        latitude: rink.geo.latitude,
+        longitude: rink.geo.longitude,
+      };
+    }
+
+    upsertJsonLd("rink-schema", schema);
+    return () => {
+      document.getElementById("rink-schema")?.remove();
+    };
+  }, [rink, description]);
+
+  useEffect(() => {
+    if (!rink) return;
+    const breadcrumbSchema = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: SITE_URL,
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Browse",
+          item: `${SITE_URL}/browse`,
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: rink.address.state,
+          item: `${SITE_URL}/state/${rink.address.state}`,
+        },
+        {
+          "@type": "ListItem",
+          position: 4,
+          name: rink.name,
+          item: `${SITE_URL}/rink/${rink.slug}`,
+        },
+      ],
+    };
+
+    upsertJsonLd("breadcrumb-schema", breadcrumbSchema);
+    return () => {
+      document.getElementById("breadcrumb-schema")?.remove();
+    };
+  }, [rink]);
 
   if (!rink) {
     return <NotFound />;

@@ -1,0 +1,108 @@
+Add Schema.org structured data (JSON-LD) to three page types. In each case, inject a <script type="application/ld+json"> tag into the page <head> dynamically based on the page's data.
+1. Rink detail pages — LocalBusiness + SportsActivityLocation schema
+For every rink page (/rink/:slug), add a JSON-LD script using the rink's data:
+json{
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "SportsActivityLocation"],
+  "name": "rink.name",
+  "description": "rink.description (first paragraph only)",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "rink.address.street",
+    "addressLocality": "rink.address.city",
+    "addressRegion": "rink.address.state",
+    "postalCode": "rink.address.postal_code",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "rink.geo.latitude",
+    "longitude": "rink.geo.longitude"
+  },
+  "telephone": "rink.phone (if present)",
+  "url": "https://iceskatingindex.com/rink/[slug]",
+  "sport": "Ice Skating"
+}
+Only include telephone if rink.phone exists. Only include geo if rink.geo.latitude exists.
+2. Rink detail pages — FAQPage schema (when faq data exists)
+On the same rink page, if rink.faq exists and has items, add a second JSON-LD script:
+json{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "question text",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "answer text"
+      }
+    }
+  ]
+}
+3. Blog post pages — Article schema
+For every blog post page (/blog/:slug), add:
+json{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "post.title",
+  "description": "post.excerpt",
+  "datePublished": "post.date (ISO 8601 format, e.g. 2026-04-05)",
+  "dateModified": "post.date",
+  "author": {
+    "@type": "Organization",
+    "name": "Ice Skating Index",
+    "url": "https://iceskatingindex.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ice Skating Index",
+    "url": "https://iceskatingindex.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://iceskatingindex.com/logo.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://iceskatingindex.com/blog/[slug]"
+  }
+}
+4. All pages — BreadcrumbList schema
+The site already shows visual breadcrumbs. For any page that displays breadcrumbs, also add:
+json{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://iceskatingindex.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Browse",
+      "item": "https://iceskatingindex.com/browse"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "NY",
+      "item": "https://iceskatingindex.com/state/NY"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Sky Rink at Chelsea Piers",
+      "item": "https://iceskatingindex.com/rink/sky-rink-chelsea-piers-new-york-ny"
+    }
+  ]
+}
+Build the breadcrumb items dynamically from the actual page's breadcrumb trail. For blog posts it would be Home → Blog → Post title.
+Implementation notes:
+
+Since this is a Vite React SPA, use react-helmet or react-helmet-async (whichever is already in the project) to inject the <script> tags into <head>. If neither is installed, use document.createElement in a useEffect.
+All JSON-LD scripts should be generated dynamically from the actual page data — no hardcoded values.
+Add the scripts to the existing rink detail page component, blog post page component, and the breadcrumb component respectively.
