@@ -8,18 +8,53 @@ import { Separator } from "@/components/ui/separator";
 import { 
   MapPin, Globe, Phone, Clock, Calendar, 
   Info, Check, X, ExternalLink, Ticket,
-  Snowflake, Dumbbell, Scissors
+  Snowflake, Dumbbell, Scissors, ChevronDown, ChevronUp
 } from "lucide-react";
 import { useHead } from "@/hooks/use-head";
+import { useState, useEffect } from "react";
+
+function getFaqQA(item: { q?: string; a?: string; question?: string; answer?: string }): { q: string; a: string } {
+  if ("question" in item && item.question) return { q: item.question, a: item.answer ?? "" };
+  return { q: item.q ?? "", a: item.a ?? "" };
+}
 
 export default function RinkDetail() {
   const params = useParams();
   const rink = getRinkBySlug(params.slug || "");
 
+  const description = rink?.description ?? rink?.seo?.long_description;
+  const whatToKnow = rink?.what_to_know ?? rink?.seo?.what_to_know;
+  const faqItems = rink?.faq ?? [];
+
+  const faqSchema = faqItems.length > 0 ? JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqItems.map(item => {
+      const { q, a } = getFaqQA(item as any);
+      return {
+        "@type": "Question",
+        "name": q,
+        "acceptedAnswer": { "@type": "Answer", "text": a }
+      };
+    })
+  }) : null;
+
   useHead({
     title: rink ? rink.name : "Rink Not Found",
-    description: rink?.seo?.short_description
+    description: rink?.seo?.short_description ?? rink?.seo?.meta_description,
   });
+
+  useEffect(() => {
+    if (!faqSchema) return;
+    const existing = document.getElementById("faq-schema");
+    if (existing) existing.remove();
+    const script = document.createElement("script");
+    script.id = "faq-schema";
+    script.type = "application/ld+json";
+    script.textContent = faqSchema;
+    document.head.appendChild(script);
+    return () => { document.getElementById("faq-schema")?.remove(); };
+  }, [faqSchema]);
 
   if (!rink) {
     return <NotFound />;
@@ -106,21 +141,30 @@ export default function RinkDetail() {
           {/* Main Content Column */}
           <div className="lg:col-span-2 space-y-12">
             
-            {/* Quick Info / Description */}
+            {/* About / Description */}
             <section>
               <h2 className="font-serif text-2xl font-bold mb-4">About</h2>
-              <p className="text-lg leading-relaxed text-muted-foreground">
-                {rink.seo?.long_description ?? `Ice skating rink in ${rink.address.city}, ${rink.address.state}.`}
-              </p>
-              {(rink.seo?.what_to_know?.length ?? 0) > 0 && (
+              {description ? (
+                <div className="space-y-4">
+                  {description.split("\n\n").map((para, i) => (
+                    <p key={i} className="text-base leading-relaxed text-muted-foreground">{para}</p>
+                  ))}
+                </div>
+              ) : (
+                <p className="text-base leading-relaxed text-muted-foreground">
+                  Ice skating rink in {rink.address.city}, {rink.address.state}.
+                </p>
+              )}
+
+              {(whatToKnow?.length ?? 0) > 0 && (
                 <div className="mt-6 bg-blue-50 dark:bg-blue-950/20 p-6 rounded-xl border border-blue-100 dark:border-blue-900/50">
                   <h3 className="font-semibold text-blue-900 dark:text-blue-200 mb-3 flex items-center">
                     <Info className="h-4 w-4 mr-2" /> What to know before you go
                   </h3>
                   <ul className="space-y-2">
-                    {rink.seo?.what_to_know?.map((item, i) => (
+                    {whatToKnow?.map((item, i) => (
                       <li key={i} className="text-blue-800 dark:text-blue-300 text-sm flex items-start">
-                        <span className="mr-2">•</span> {item}
+                        <span className="mr-2 mt-0.5 flex-shrink-0">•</span> {item}
                       </li>
                     ))}
                   </ul>
@@ -141,7 +185,7 @@ export default function RinkDetail() {
               </div>
             </section>
 
-            {/* Freestyle Section - SEO focus */}
+            {/* Freestyle Section */}
             <section id="freestyle" className="scroll-mt-24">
                <div className="flex items-center gap-3 mb-6">
                  <h2 className="font-serif text-2xl font-bold">Freestyle Sessions</h2>
@@ -226,6 +270,19 @@ export default function RinkDetail() {
               </div>
             </section>
 
+            {/* FAQ Section */}
+            {faqItems.length > 0 && (
+              <section>
+                <h2 className="font-serif text-2xl font-bold mb-6">Frequently Asked Questions</h2>
+                <div className="space-y-3">
+                  {faqItems.map((item, i) => {
+                    const { q, a } = getFaqQA(item as any);
+                    return <FaqItem key={i} question={q} answer={a} />;
+                  })}
+                </div>
+              </section>
+            )}
+
           </div>
 
           {/* Sidebar Info */}
@@ -278,13 +335,36 @@ export default function RinkDetail() {
   );
 }
 
-function OfferingItem({ label, available, icon }: { label: string, available: boolean, icon: React.ReactNode }) {
+function OfferingItem({ label, available, icon }: { label: string, available: boolean | string | undefined, icon: React.ReactNode }) {
+  const isAvailable = available === true || available === "true";
   return (
-    <div className={`flex items-center gap-3 p-3 rounded-lg border ${available ? 'bg-background border-border' : 'bg-muted/50 border-transparent opacity-60'}`}>
-      <div className={`h-8 w-8 rounded-full flex items-center justify-center ${available ? 'bg-primary/10 text-primary' : 'bg-muted text-muted-foreground'}`}>
-        {available ? icon : <X className="h-4 w-4" />}
+    <div className={`flex items-center gap-3 p-3 rounded-lg border ${isAvailable ? 'bg-background border-border' : 'bg-muted/50 border-transparent opacity-60'}`}>
+      <div className={`h-8 w-8 rounded-full flex items-center justify-center ${isAvailable ? 'bg-primary/10 text-primary' : 'bg-muted text-muted-foreground'}`}>
+        {isAvailable ? icon : <X className="h-4 w-4" />}
       </div>
-      <span className={`text-sm font-medium ${available ? 'text-foreground' : 'text-muted-foreground'}`}>{label}</span>
+      <span className={`text-sm font-medium ${isAvailable ? 'text-foreground' : 'text-muted-foreground'}`}>{label}</span>
     </div>
-  )
+  );
+}
+
+function FaqItem({ question, answer }: { question: string; answer: string }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="border rounded-lg overflow-hidden">
+      <button
+        data-testid={`faq-toggle-${question.slice(0, 20).replace(/\s+/g, '-').toLowerCase()}`}
+        onClick={() => setOpen(o => !o)}
+        className="w-full flex items-center justify-between px-5 py-4 text-left font-medium hover:bg-muted/40 transition-colors"
+        aria-expanded={open}
+      >
+        <span>{question}</span>
+        {open ? <ChevronUp className="h-4 w-4 flex-shrink-0 text-muted-foreground" /> : <ChevronDown className="h-4 w-4 flex-shrink-0 text-muted-foreground" />}
+      </button>
+      {open && (
+        <div className="px-5 pb-4 text-sm text-muted-foreground leading-relaxed border-t bg-muted/10">
+          <p className="pt-3">{answer}</p>
+        </div>
+      )}
+    </div>
+  );
 }

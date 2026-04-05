@@ -104,10 +104,12 @@ export const RinkSchema = z.object({
   }),
   audiences: z.array(z.string()).optional(),
   tags: z.array(z.string()).optional(),
-  faq: z.array(z.object({
-    q: z.string(),
-    a: z.string(),
-  })).optional(),
+  description: z.string().optional(),
+  what_to_know: z.array(z.string()).optional(),
+  faq: z.array(z.union([
+    z.object({ q: z.string(), a: z.string() }),
+    z.object({ question: z.string(), answer: z.string() }),
+  ])).optional(),
   seo: z.object({
     primary_keywords: z.array(z.string()),
     secondary_keywords: z.array(z.string()),
