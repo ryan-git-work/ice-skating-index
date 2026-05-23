@@ -1,0 +1,42 @@
+Build the content for /state/tn. This is the parent page for all Tennessee city hubs.
+
+PAGE METADATA:
+- title: "Ice Skating in Tennessee: Every Rink, Every City (2026 Guide) | Ice Skating Index"
+- meta description: "Every public ice skating rink in Tennessee — Nashville's four year-round rinks, Knoxville's Ice Chalet, Chattanooga's seasonal rink, and Memphis-adjacent options. Verified weekly."
+
+BREADCRUMB: Home > Tennessee
+
+H1: "Ice Skating in Tennessee: Every Rink, Every City (2026 Guide)"
+
+CONTENT (in order):
+
+[INTRO]
+Tennessee isn't a winter sport powerhouse — but it has more ice than its reputation suggests. The state has six year-round indoor rinks (four of them in Middle Tennessee), one well-established figure skating facility in Knoxville, and a handful of seasonal outdoor rinks that open between November and February. This guide covers every operating rink in Tennessee, where it is, what it costs, and which city hub to visit for more detail.
+
+[H2: Tennessee at a glance]
+Build a table: City | Year-round rinks | Seasonal | Notes
+- Nashville (Middle TN) | 4 | 3 | By far the most rinks in the state — Centennial Sportsplex plus three Ford Ice Centers (Bellevue, Antioch, Clarksville).
+- Knoxville (East TN) | 1 | 1 (Holidays on Ice) | Ice Chalet is the longest-running rink in Tennessee. Strong figure skating community.
+- Chattanooga (East TN) | 0 | 1 | Ice on the Landing — outdoor seasonal rink at Finley Stadium. No year-round option.
+- Memphis (West TN) | 0 | 0 | No ice rink in Memphis itself. Mid-South Ice House (Olive Branch, MS) is the closest year-round option, ~25 min from downtown.
+- Tri-Cities (Bristol/Kingsport/Johnson City) | 0 | Varies | No confirmed year-round indoor rink.
+
+[H2: Nashville and Middle Tennessee]
+Nashville is the heart of skating in Tennessee. Four year-round indoor rinks (Centennial Sportsplex + three Ford Ice Centers), three seasonal options (Smashville, Fountains at Gateway, Opryland), and the strongest learn-to-skate and freestyle infrastructure in the state.
+[Link: Full Nashville guide → /city/tn/nashville]
+
+[H2: Knoxville and East Tennessee]
+Ice Chalet on Lebanon Street is the established rink in Knoxville — daily public sessions, $9.50 admission plus $7.50 rental, and a strong figure skating program. During the holiday season, downtown Knoxville also hosts Holidays on Ice (outdoor seasonal rink at Market Square / Krutch Park).
+[Link: Full Knoxville guide → /city/tn/knoxville (coming soon)]
+
+[H2: Chattanooga and Southeast Tennessee]
+Chattanooga has no year-round indoor rink. Ice on the Landing at Finley Stadium (1826 Reggie White Blvd) is the only ice skating option — and it's seasonal (Nov 22 – Feb 1 in 2025–26). Tickets are $14 adult / $12 youth, with skates and a 60-minute session included.
+[Link: Full Chattanooga guide → /city/tn/chattanooga (coming soon)]
+
+[H2: Memphis and West Tennessee]
+Memphis itself has no ice rink. The closest year-round option is Mid-South Ice House (10705 Ridgeway Industrial Dr, Olive Branch, MS) — about 25 minutes from downtown Memphis. There is no Tennessee-side rink within an hour of Memphis.
+[Link: Full Memphis-area guide → /city/tn/memphis (coming soon)]
+
+[BOTTOM] Add a "Last verified: May 23, 2026" footer note.
+
+Make all city-hub links real links even though only /city/tn/nashville exists yet — the others will 404 for now (they'll be filled in later).

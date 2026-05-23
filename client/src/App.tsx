@@ -15,6 +15,7 @@ import SkateSharpening from "@/pages/SkateSharpening";
 import LearnToSkate from "@/pages/LearnToSkate";
 import NashvilleHub from "@/pages/NashvilleHub";
 import NashvilleCityHub from "@/pages/NashvilleCityHub";
+import TennesseeStateHub from "@/pages/TennesseeStateHub";
 import BlogIndex from "@/pages/BlogIndex";
 import BlogPost from "@/pages/BlogPost";
 
@@ -30,7 +31,10 @@ function Router() {
       <Route path="/city/tn/nashville" component={NashvilleCityHub} />
       <Route path="/blog" component={BlogIndex} />
       <Route path="/blog/:slug" component={BlogPost} />
-      
+
+      {/* State-specific hubs (must come before generic /state/:state) */}
+      <Route path="/state/tn" component={TennesseeStateHub} />
+
       {/* Dynamic Routes */}
       <Route path="/rink/:slug" component={RinkDetail} />
       <Route path="/state/:state" component={StateHub} />
