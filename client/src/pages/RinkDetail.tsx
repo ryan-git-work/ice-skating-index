@@ -15,6 +15,24 @@ import { useState, useEffect } from "react";
 
 const SITE_URL = "https://iceskatingindex.com";
 
+const STATE_NAMES: Record<string, string> = {
+  tn: "Tennessee",
+  ny: "New York",
+  ca: "California",
+  il: "Illinois",
+  co: "Colorado",
+  ma: "Massachusetts",
+  mi: "Michigan",
+  mn: "Minnesota",
+  oh: "Ohio",
+  pa: "Pennsylvania",
+  tx: "Texas",
+};
+
+function slugify(text: string) {
+  return text.toLowerCase().replace(/\s+/g, "-");
+}
+
 function getFaqQA(item: { q?: string; a?: string; question?: string; answer?: string }): { q: string; a: string } {
   if ("question" in item && item.question) return { q: item.question, a: item.answer ?? "" };
   return { q: item.q ?? "", a: item.a ?? "" };
@@ -128,6 +146,10 @@ export default function RinkDetail() {
 
   useEffect(() => {
     if (!rink) return;
+    const stateSlug = slugify(rink.address.state);
+    const stateName = STATE_NAMES[stateSlug] || rink.address.state;
+    const citySlug = slugify(rink.address.city);
+
     const breadcrumbSchema = {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
@@ -141,14 +163,14 @@ export default function RinkDetail() {
         {
           "@type": "ListItem",
           position: 2,
-          name: "Browse",
-          item: `${SITE_URL}/browse`,
+          name: stateName,
+          item: `${SITE_URL}/state/${stateSlug}`,
         },
         {
           "@type": "ListItem",
           position: 3,
-          name: rink.address.state,
-          item: `${SITE_URL}/state/${rink.address.state}`,
+          name: rink.address.city,
+          item: `${SITE_URL}/city/${stateSlug}/${citySlug}`,
         },
         {
           "@type": "ListItem",
@@ -172,13 +194,17 @@ export default function RinkDetail() {
   return (
     <Layout>
       <div className="bg-muted/30 border-b">
-        <div className="container mx-auto px-4 py-4 text-sm text-muted-foreground">
-          <Link href="/">Home</Link>
-          <span className="mx-2">/</span>
-          <Link href="/browse">Browse</Link>
-          <span className="mx-2">/</span>
-          <Link href={`/state/${rink.address.state}`}>{rink.address.state}</Link>
-          <span className="mx-2">/</span>
+        <div className="container mx-auto px-4 py-4 text-sm text-muted-foreground flex items-center gap-2">
+          <Link href="/" className="hover:text-primary">Home</Link>
+          <span>/</span>
+          <Link href={`/state/${slugify(rink.address.state)}`} className="hover:text-primary">
+            {STATE_NAMES[slugify(rink.address.state)] || rink.address.state}
+          </Link>
+          <span>/</span>
+          <Link href={`/city/${slugify(rink.address.state)}/${slugify(rink.address.city)}`} className="hover:text-primary">
+            {rink.address.city}
+          </Link>
+          <span>/</span>
           <span className="text-foreground font-medium">{rink.name}</span>
         </div>
       </div>
