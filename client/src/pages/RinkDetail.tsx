@@ -14,6 +14,9 @@ import { useHead } from "@/hooks/use-head";
 import { useState, useEffect } from "react";
 import { NextPublicSkateSessions } from "@/components/NextPublicSkateSessions";
 import { NearbyRinks } from "@/components/NearbyRinks";
+import { EmailOptIn } from "@/components/EmailOptIn";
+import { LastVerified } from "@/components/LastVerified";
+import { getNearbyRinks } from "@/lib/data";
 
 const SITE_URL = "https://iceskatingindex.com";
 
@@ -432,6 +435,42 @@ export default function RinkDetail() {
                 </div>
               </section>
             )}
+
+            {/* NearbyRinks — computed dynamically from same-city rinks */}
+            {(() => {
+              const nearby = getNearbyRinks(rink, 4);
+              if (nearby.length === 0) return null;
+              return (
+                <section>
+                  <h2 className="font-serif text-2xl font-bold mb-6">Other {rink.address.city} rinks</h2>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    {nearby.map((nr) => (
+                      <Link key={nr.id} href={`/rink/${nr.slug}`} className="block group border rounded-xl p-4 hover:border-primary/40 transition-colors">
+                        <div className="font-medium group-hover:text-primary transition-colors">
+                          {nr.name}
+                        </div>
+                        <p className="text-sm text-muted-foreground mt-1">
+                          {nr.address.street} · {nr.facility.indoor ? "Indoor" : "Outdoor"} · {nr.facility.seasonality}
+                        </p>
+                      </Link>
+                    ))}
+                  </div>
+                  <div className="mt-4">
+                    <Link
+                      href={`/city/${slugify(rink.address.state)}/${slugify(rink.address.city)}`}
+                      className="text-sm text-primary hover:underline font-medium inline-flex items-center gap-1"
+                    >
+                      See all {rink.address.city} rinks
+                      <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+                    </Link>
+                  </div>
+                </section>
+              );
+            })()}
+
+            <EmailOptIn cityName={rink.address.city} />
+
+            <LastVerified date={rink.last_verified || "2026-05-23"} />
           </div>
 
           <div className="space-y-8">

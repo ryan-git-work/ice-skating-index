@@ -113,6 +113,30 @@ Sitemap: https://iceskatingindex.com/sitemap.xml
     res.redirect(301, "/city/tn/nashville");
   });
 
+  app.post("/api/email-signup", async (req, res) => {
+    const { email, city, date } = req.body;
+    if (!email || !email.includes("@")) {
+      return res.status(400).json({ error: "Valid email required" });
+    }
+
+    const dataPath = path.resolve(process.cwd(), "client/public/data/email-signups.json");
+    try {
+      let signups: Array<{ email: string; city?: string; date: string }> = [];
+      try {
+        const data = await fs.readFile(dataPath, "utf-8");
+        signups = JSON.parse(data);
+      } catch (e) {
+        // File doesn't exist yet
+      }
+      signups.push({ email, city, date: date || new Date().toISOString() });
+      await fs.writeFile(dataPath, JSON.stringify(signups, null, 2));
+      res.json({ success: true });
+    } catch (error) {
+      console.error("Error saving email signup:", error);
+      res.status(500).json({ error: "Failed to save signup" });
+    }
+  });
+
   app.get("/api/blog/image/:slug", async (req, res) => {
     const { slug } = req.params;
     const dataPath = path.resolve(process.cwd(), "client/public/data/post-image-map.json");

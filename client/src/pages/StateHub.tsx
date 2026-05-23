@@ -3,6 +3,8 @@ import { rinks, getRinksByState } from "@/lib/data";
 import { RinkCard } from "@/components/RinkCard";
 import { Link, useParams } from "wouter";
 import { useHead } from "@/hooks/use-head";
+import { EmailOptIn } from "@/components/EmailOptIn";
+import { LastVerified } from "@/components/LastVerified";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 
@@ -82,6 +84,11 @@ export default function StateHub() {
             {stateRinks.map(rink => (
                 <RinkCard key={rink.id} rink={rink} />
             ))}
+        </div>
+
+        <div className="pt-12 space-y-8">
+          <EmailOptIn cityName={stateName} />
+          <LastVerified date="2026-05-23" />
         </div>
       </div>
     </Layout>

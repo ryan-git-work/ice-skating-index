@@ -1,0 +1,12 @@
+[
+  {
+    "email": "test@example.com",
+    "city": "Nashville",
+    "date": "2026-05-23T16:01:30.981Z"
+  },
+  {
+    "email": "test2@example.com",
+    "city": "Nashville",
+    "date": "2026-05-23T16:01:52.105Z"
+  }
+]

@@ -196,3 +196,15 @@ export function isUnknown(value: boolean | string | undefined): boolean {
 export function getFreestyleRinks() {
   return rinks.filter((r) => isTruthy(r.freestyle.available));
 }
+
+// Get nearby rinks in the same city (excluding the given rink)
+export function getNearbyRinks(currentRink: Rink, limit = 4): Rink[] {
+  return rinks
+    .filter(
+      (r) =>
+        r.id !== currentRink.id &&
+        r.address.city.toLowerCase() === currentRink.address.city.toLowerCase() &&
+        r.address.state.toLowerCase() === currentRink.address.state.toLowerCase()
+    )
+    .slice(0, limit);
+}

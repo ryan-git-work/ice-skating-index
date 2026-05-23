@@ -3,6 +3,8 @@ import { getRinksByCity } from "@/lib/data";
 import { RinkCard } from "@/components/RinkCard";
 import { Link, useParams } from "wouter";
 import { useHead } from "@/hooks/use-head";
+import { EmailOptIn } from "@/components/EmailOptIn";
+import { LastVerified } from "@/components/LastVerified";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 
@@ -65,6 +67,11 @@ export default function CityHub() {
           </div>
         </div>
       )}
+
+      <div className="container mx-auto px-4 pb-12 space-y-8">
+        <EmailOptIn cityName={city} />
+        <LastVerified date="2026-05-23" />
+      </div>
     </Layout>
   );
 }
