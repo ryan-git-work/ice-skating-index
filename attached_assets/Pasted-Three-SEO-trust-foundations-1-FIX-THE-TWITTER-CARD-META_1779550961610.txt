@@ -1,0 +1,44 @@
+Three SEO/trust foundations:
+
+1. FIX THE TWITTER CARD META
+The current twitter:site meta tag points to @replit. Remove that. If we have an Ice Skating Index Twitter/X account, replace it with that handle; otherwise just delete the twitter:site meta entirely. Keep twitter:card="summary_large_image" and the other twitter meta tags.
+
+2. CREATE THE /about PAGE
+Build a new route at /about with this content:
+
+  Title: "About Ice Skating Index"
+  Meta description: "Why we built a verified ice skating directory — and how we keep every rink schedule, price, and detail current."
+  
+  H1: "About Ice Skating Index"
+  
+  Content (3-4 paragraphs, first-person from Ryan Loche):
+  
+  "I built Ice Skating Index because every parent of a skater I know has the same problem: rink websites are stuck in 2007, schedules change without warning, and you can drive 45 minutes to a rink only to find it's closed for a private event. This site exists to fix that.
+  
+  Every rink in the index is verified against the operator's own source — their website, their calendar, their published prices. We update each rink page weekly. When something changes, we change it within 24 hours of finding out.
+  
+  We don't make money from rinks (yet). When we do, it will be from rinks paying to maintain their own listing and post their own real-time schedule updates — not from being recommended over a competitor. Recommendations stay editorial.
+  
+  If you find something wrong, email hello@iceskatingindex.com. If you run a rink and want to claim your listing, email the same address."
+  
+  Add a "Last updated" date at the bottom.
+
+Add /about to the main nav (or footer if the nav is full).
+
+3. GENERATE A SITEMAP.XML
+Create a /sitemap.xml that includes all current pages:
+- Homepage
+- All /state/:slug pages
+- All /city/:state/:city pages
+- All /rink/:slug pages
+- All /blog/:slug pages
+- /about, /freestyle, /learn-to-skate, /skate-sharpening
+
+The sitemap should be generated dynamically from the route/data list so we don't have to maintain it manually. Each URL should have a <lastmod> tag (use the rink's lastVerified date for rink pages; use today's date for the others) and a reasonable <changefreq> ("weekly" for rink pages, "monthly" for blog and about).
+
+Also create a /robots.txt that allows everything and references the sitemap:
+  User-agent: *
+  Allow: /
+  Sitemap: https://iceskatingindex.com/sitemap.xml
+
+After deploy, submit the sitemap URL to Google Search Console.

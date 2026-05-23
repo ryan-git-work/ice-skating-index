@@ -1,0 +1,34 @@
+Add three new rink pages for the seasonal Nashville-area rinks:
+
+1. /rink/smashville-ice-rink-at-zoolumination-nashville-tn
+   - name: "Smashville Ice Rink at Zoolumination"
+   - address: "Ascension Saint Thomas Landing, downtown Nashville (under Broadway)"
+   - operator: "Nashville Predators / Zoolumination"
+   - season: "Nov–Feb (seasonal)"
+   - prices: "$25 adult/teen, $21 youth"
+   - status: CURRENTLY CLOSED (reopens November 2026)
+   - About: A seasonal outdoor pop-up rink at the Ascension Saint Thomas Landing under Broadway. Part of the Predators / Zoolumination holiday programming. The 2025–26 season ran through February 8, 2026. Best for: a downtown Nashville holiday experience, not a regular skate spot.
+
+2. /rink/fountains-at-gateway-murfreesboro-tn
+   - name: "Fountains at Gateway"
+   - address: "Murfreesboro, TN (Fountains at Gateway development)"
+   - operator: "Fountains at Gateway"
+   - season: "Nov–Feb (seasonal)"
+   - prices: "$17 ages 13+, $12 ages 4–12 (includes rental and 60-min session)"
+   - status: CURRENTLY CLOSED (reopens November 2026)
+   - About: A seasonal outdoor rink in Murfreesboro. The 2025–26 season ran November 21, 2025 through February 1, 2026. The closest seasonal ice option for Murfreesboro families — there's no year-round ice in Murfreesboro proper. Sessions are 60 minutes with rental included.
+
+3. /rink/gaylord-opryland-resort-nashville-tn
+   - name: "Gaylord Opryland Resort Ice Skating"
+   - address: "2800 Opryland Dr, Nashville, TN 37214"
+   - operator: "Marriott / Gaylord"
+   - season: "Nov–Jan (seasonal)"
+   - prices: "Resort-style pricing — varies by package"
+   - status: CURRENTLY CLOSED (reopens November 2026)
+   - About: Part of the resort's "A Country Christmas" / "So Much Christmas" programming. Holiday atmosphere, resort-style pricing, smaller ice surface than the year-round rinks. Worth doing once as an experience, not as a regular skate spot.
+
+All three should use the same template as the existing rink pages. The state is tn, the city is nashville (or murfreesboro for the Fountains rink).
+
+For each one, prominently show "SEASONAL — CURRENTLY CLOSED. Reopens November 2026." at the top so users don't drive there now.
+
+Add a "seasonal" tag to the rink data structure so we can filter these on the city hub.

@@ -8,10 +8,12 @@ import { Separator } from "@/components/ui/separator";
 import {
   MapPin, Phone, Calendar,
   Info, X, ExternalLink, Ticket,
-  Snowflake, Dumbbell, Scissors, ChevronDown, ChevronUp
+  Snowflake, Dumbbell, Scissors, ChevronDown, ChevronUp, AlertTriangle
 } from "lucide-react";
 import { useHead } from "@/hooks/use-head";
 import { useState, useEffect } from "react";
+import { NextPublicSkateSessions } from "@/components/NextPublicSkateSessions";
+import { NearbyRinks } from "@/components/NearbyRinks";
 
 const SITE_URL = "https://iceskatingindex.com";
 
@@ -89,11 +91,13 @@ export default function RinkDetail() {
     })
   }) : null;
 
+  const metaTitle = rink?.seo?.meta_title ?? rink?.name ?? "Rink Not Found";
+  const metaDescription = rink?.seo?.meta_description ??
+    (rink ? `${rink.name} in ${rink.address.city}, ${rink.address.state} offers ${buildOfferingList(rink).join(", ")}. Find schedules, pricing, and directions at Ice Skating Index.` : undefined);
+
   useHead({
-    title: rink ? rink.name : "Rink Not Found",
-    description: rink
-      ? `${rink.name} in ${rink.address.city}, ${rink.address.state} offers ${buildOfferingList(rink).join(", ")}. Find schedules, pricing, and directions at Ice Skating Index.`
-      : undefined,
+    title: metaTitle,
+    description: metaDescription,
   });
 
   useEffect(() => {
@@ -214,6 +218,15 @@ export default function RinkDetail() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
             <div className="lg:col-span-2">
               <h1 className="font-serif text-4xl md:text-5xl font-bold mb-4 text-foreground">{rink.name}</h1>
+              {rink.subheader && (
+                <p className="text-lg text-muted-foreground leading-relaxed mb-4">{rink.subheader}</p>
+              )}
+              {rink.seasonal && rink.seasonal_notes && (
+                <div className="flex items-center gap-2 bg-amber-50 text-amber-800 text-sm font-medium px-3 py-2 rounded-lg border border-amber-200 mb-4">
+                  <AlertTriangle className="h-4 w-4 flex-shrink-0" />
+                  {rink.seasonal_notes}
+                </div>
+              )}
               <div className="flex flex-wrap items-center gap-4 text-muted-foreground mb-6">
                 <div className="flex items-center">
                   <MapPin className="h-4 w-4 mr-1" />
@@ -245,22 +258,34 @@ export default function RinkDetail() {
                   />
                 </div>
               )}
-              <div className="flex flex-col sm:flex-row gap-3">
-                {rink.website && (
-                   <Button asChild size="lg" className="shadow-sm">
-                     <a href={rink.website} target="_blank" rel="noopener noreferrer">
-                       Visit Website <ExternalLink className="ml-2 h-4 w-4" />
-                     </a>
-                   </Button>
-                )}
-                {rink.schedule_links.public_calendar_url && (
-                  <Button asChild variant="outline" size="lg">
-                    <a href={rink.schedule_links.public_calendar_url} target="_blank" rel="noopener noreferrer">
-                      <Calendar className="mr-2 h-4 w-4" /> Public Schedule
-                    </a>
-                  </Button>
-                )}
-              </div>
+              {rink.slug === "centennial-sportsplex-nashville-tn" ? (
+                <NextPublicSkateSessions
+                  jsonPath="/data/sessions/centennial-sportsplex.json"
+                  calendarUrl={rink.schedule_links.public_calendar_url || undefined}
+                  directionsUrl={rink.google_maps_url || undefined}
+                  fallbackButton={{
+                    label: "View Public Schedule",
+                    href: "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating",
+                  }}
+                />
+              ) : (
+                <div className="flex flex-col sm:flex-row gap-3">
+                  {rink.website && (
+                     <Button asChild size="lg" className="shadow-sm">
+                       <a href={rink.website} target="_blank" rel="noopener noreferrer">
+                         Visit Website <ExternalLink className="ml-2 h-4 w-4" />
+                       </a>
+                     </Button>
+                  )}
+                  {rink.schedule_links.public_calendar_url && (
+                    <Button asChild variant="outline" size="lg">
+                      <a href={rink.schedule_links.public_calendar_url} target="_blank" rel="noopener noreferrer">
+                        <Calendar className="mr-2 h-4 w-4" /> Public Schedule
+                      </a>
+                    </Button>
+                  )}
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -442,6 +467,14 @@ export default function RinkDetail() {
                  </li>
                </ul>
              </div>
+
+             {rink.nearby_rinks && rink.nearby_rinks.length > 0 && (
+               <NearbyRinks
+                 title={`Other ${rink.address.city} rinks`}
+                 rinks={rink.nearby_rinks}
+                 seeAllLink={{ href: `/city/${slugify(rink.address.state)}/${slugify(rink.address.city)}`, label: `See all ${rink.address.city} rinks` }}
+               />
+             )}
 
              <div className="text-xs text-muted-foreground">
                {rink.last_verified && <p>Last verified: {new Date(rink.last_verified).toLocaleDateString()}</p>}

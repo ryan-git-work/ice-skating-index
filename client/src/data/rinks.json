@@ -215,8 +215,8 @@
           "open hockey rules Centennial Sportsplex"
         ]
       },
-      "meta_title": "Centennial Sportsplex Ice Arenas | Ice Skating Rink in Nashville, TN",
-      "meta_description": "Find public skating schedules, learn-to-skate information, and hockey session details for Centennial Sportsplex Ice Arenas in Nashville, Tennessee. Includes the official Ice Arena Google Calendar, rental notes, and skate sharpening info.",
+      "meta_title": "Centennial Sportsplex Ice Arenas: Nashville Public Skating, Hockey & Lessons | Ice Skating Index",
+      "meta_description": "Public skate, lessons, hockey, and figure skating at Centennial Sportsplex in Nashville \u2014 $6\u20137 admission with skates included, two full-size sheets, walk-in welcome. Verified weekly.",
       "snippet": "Centennial Sportsplex Ice Arenas in Nashville, TN has two full-size indoor rinks with public skating, lessons through Nashville Skating Academy, and hockey sessions listed on the official Ice Arena Google Calendar.",
       "short_description": "Centennial Sportsplex Ice Arenas is an indoor ice facility in Nashville, Tennessee with two full-size sheets. Use the official Ice Arena Google Calendar to confirm public skating sessions, and see the site for lessons and hockey programs.",
       "long_description": "Across from Centennial Park, Centennial Sportsplex Ice Arenas in Nashville, TN is a year-round ice center with two full-size sheets. The rink lists each sheet at 200 feet by 85 feet, which is helpful if you are comparing rink dimensions for hockey or figure skating.\n\nSession times are not fixed week to week. The rink points skaters to the Centennial Sportsplex Ice Arena Google Calendar, and the public skating page links you back to that calendar. If you are planning a visit, check the event titles on the calendar to confirm whether a slot is public skating, hockey, or a special program.\n\nOn-site amenities listed by the rink include skate rental, spectator seating, lockers, a concession stand, and and skate sharpening. Learn-to-skate and figure skating training is offered through Nashville Skating Academy, and adult open hockey and stick and puck details are outlined on the official hockey program page.",
@@ -225,7 +225,7 @@
         "If you are working on fundamentals, the Learn To Ice Skate page points you to Nashville Skating Academy for learn-to-skate and figure skating training. That is a good path if you want structured progression instead of only public sessions.",
         "Hockey players can use the adult open hockey page to understand age limits, required gear, and how sessions are capped. Then jump to the calendar to find the next date that fits your schedule.",
         "Need a tune-up before your next session? Explore skate sharpening options and turnaround notes, and browse other Tennessee rinks to compare services and amenities.",
-        "Looking for focused practice ice? Check the freestyle hub for how to search calendars, then verify whether Centennial’s calendar lists freestyle-style sessions for your target week."
+        "Looking for focused practice ice? Check the freestyle hub for how to search calendars, then verify whether Centennial\u2019s calendar lists freestyle-style sessions for your target week."
       ],
       "what_to_know": [
         "The facility lists two full-size ice rinks with sheets measuring 200 feet by 85 feet.",
@@ -403,7 +403,25 @@
       }
     ],
     "last_verified": "2025-12-18",
-    "image": "/images/skating/ice_img_08.png"
+    "image": "/images/skating/ice_img_08.png",
+    "subheader": "Nashville's most affordable year-round indoor public skating. Two full-size sheets, walk-in welcome, $6\u20137 with skates included.",
+    "nearby_rinks": [
+      {
+        "slug": "ford-ice-center-bellevue-nashville-tn",
+        "name": "Ford Ice Center Bellevue",
+        "tagline": "14 min west. Reservation required, $12, modern facility."
+      },
+      {
+        "slug": "ford-ice-center-antioch-antioch-tn",
+        "name": "Ford Ice Center Antioch",
+        "tagline": "22 min south. Reservation required, $12, largest of the three Ford locations."
+      },
+      {
+        "slug": "ford-ice-center-clarksville-clarksville-tn",
+        "name": "Ford Ice Center Clarksville",
+        "tagline": "45 min north. Reservation required, $12, F&M Bank Arena."
+      }
+    ]
   },
   {
     "id": "tn-antioch-ford-ice-center-antioch-antioch-tn",
@@ -2654,7 +2672,7 @@
         "Coaches must check in at the front desk",
         "No hockey stops on freestyle ice"
       ],
-      "notes": "One of NYC's busiest freestyle programs — sessions run all day on both sheets. Book ahead."
+      "notes": "One of NYC's busiest freestyle programs \u2014 sessions run all day on both sheets. Book ahead."
     },
     "amenities": {
       "lockers": true,
@@ -2818,7 +2836,7 @@
       "Dress in warm winter layers, including a hat, gloves, and scarf; the wind chill off the ice can be significant in Central Park",
       "Central Park has limited parking; use public transportation (subway) or arrive on foot if visiting from nearby Manhattan locations",
       "The rink is outdoors with no wind protection, so weather conditions (rain, wind, cold) directly affect the skating experience",
-      "Food and beverage options are available at the rink, and nearby Central Park restaurants and cafés provide additional options"
+      "Food and beverage options are available at the rink, and nearby Central Park restaurants and caf\u00e9s provide additional options"
     ],
     "faq": [
       {
@@ -2957,7 +2975,7 @@
       "skate_aids": true
     },
     "image": "/images/skating/ice_img_18.png",
-    "description": "The Rink at Rockefeller Center is the most famous ice skating venue in the world, located at 600 Fifth Avenue in the heart of Manhattan's iconic Rockefeller Center. Operating seasonally from October through April, this legendary rink becomes an integral part of New York's holiday experience, with the world-famous Rockefeller Center Christmas tree towering above the skating surface. Despite its compact size and intimate setting—the single sheet measures 122 feet by 59 feet—The Rink at Rockefeller Center commands premium pricing and worldwide recognition as the quintessential New York ice skating experience, featured in countless movies and television productions.\n\nThe Rink at Rockefeller Center offers public skating sessions for visitors and local New Yorkers seeking the ultimate NYC winter experience. While the skating surface is smaller than typical rinks, the unmatched atmosphere and iconic surroundings make it a once-in-a-lifetime destination for ice skating. The facility accommodates recreational skaters of all ages and abilities, though the crowded conditions and premium pricing require careful planning and often necessitate advance reservations to secure skating time.\n\nLocated in Rockefeller Plaza in Midtown Manhattan, this world-renowned ice skating venue offers an experience that extends beyond sport—it's a cultural icon representing New York winter traditions. The rink is surrounded by luxury shopping, world-class dining, holiday decorations, and the bright lights of Midtown Manhattan. The combination of ice skating beneath the famous Christmas tree, surrounded by Rockefeller Plaza's architectural grandeur and holiday atmosphere, makes The Rink at Rockefeller Center an unparalleled destination for creating unforgettable New York memories during the winter season.",
+    "description": "The Rink at Rockefeller Center is the most famous ice skating venue in the world, located at 600 Fifth Avenue in the heart of Manhattan's iconic Rockefeller Center. Operating seasonally from October through April, this legendary rink becomes an integral part of New York's holiday experience, with the world-famous Rockefeller Center Christmas tree towering above the skating surface. Despite its compact size and intimate setting\u2014the single sheet measures 122 feet by 59 feet\u2014The Rink at Rockefeller Center commands premium pricing and worldwide recognition as the quintessential New York ice skating experience, featured in countless movies and television productions.\n\nThe Rink at Rockefeller Center offers public skating sessions for visitors and local New Yorkers seeking the ultimate NYC winter experience. While the skating surface is smaller than typical rinks, the unmatched atmosphere and iconic surroundings make it a once-in-a-lifetime destination for ice skating. The facility accommodates recreational skaters of all ages and abilities, though the crowded conditions and premium pricing require careful planning and often necessitate advance reservations to secure skating time.\n\nLocated in Rockefeller Plaza in Midtown Manhattan, this world-renowned ice skating venue offers an experience that extends beyond sport\u2014it's a cultural icon representing New York winter traditions. The rink is surrounded by luxury shopping, world-class dining, holiday decorations, and the bright lights of Midtown Manhattan. The combination of ice skating beneath the famous Christmas tree, surrounded by Rockefeller Plaza's architectural grandeur and holiday atmosphere, makes The Rink at Rockefeller Center an unparalleled destination for creating unforgettable New York memories during the winter season.",
     "what_to_know": [
       "Reservations are strongly recommended and often required; book online at therinkatrockcenter.com well in advance, especially during holiday season",
       "Premium pricing reflects the iconic location and high demand; expect to pay significantly more than typical public rinks",
@@ -3523,7 +3541,7 @@
         "Coaches must check in at the front desk",
         "No hockey stops on freestyle ice"
       ],
-      "notes": "HARBORCENTER is a premier hockey and skating facility connected to KeyBank Center — home of the Buffalo Sabres — making it a top-tier training destination in Western New York."
+      "notes": "HARBORCENTER is a premier hockey and skating facility connected to KeyBank Center \u2014 home of the Buffalo Sabres \u2014 making it a top-tier training destination in Western New York."
     },
     "amenities": {
       "lockers": true,
@@ -7220,7 +7238,7 @@
       "pricing": {
         "skate_rental": 8
       },
-      "notes": "Skate rentals available at the main desk. Figure skates only — this is primarily a figure skating club."
+      "notes": "Skate rentals available at the main desk. Figure skates only \u2014 this is primarily a figure skating club."
     },
     "sharpening": {
       "pricing_base": 10,
@@ -7269,7 +7287,7 @@
       "The facility operates two sheets of ice; confirm which sheet hosts public skating before your visit",
       "Lessons and figure skating programs range from beginner to competitive levels; advance registration is typically required",
       "Skate rentals are available; bring your own skates if you prefer or prefer a specific fit",
-      "The facility's prestigious reputation means peak times fill quickly—arrive early for public sessions, especially weekends",
+      "The facility's prestigious reputation means peak times fill quickly\u2014arrive early for public sessions, especially weekends",
       "Parking is available on-site; the location is accessible via local roads from Boston and surrounding areas",
       "The rink hosts skating camps and special programming throughout the year; check the website for seasonal offerings"
     ],
@@ -9706,7 +9724,7 @@
       "Convenient Dallas North Tollway location with ample mall parking facilities",
       "Excellent for birthday parties and special events, with party packages that include ice time and party rooms",
       "Skate rental equipment available on-site in all sizes for adults and children",
-      "Great for casual recreational skating—no hockey leagues, just pure skating fun for families and friends"
+      "Great for casual recreational skating\u2014no hockey leagues, just pure skating fun for families and friends"
     ],
     "faq": [
       {
@@ -10673,7 +10691,7 @@
       "pricing": {
         "skate_rental": 14
       },
-      "notes": "Admission is FREE — only skate rental has a fee. Rentals available at the rink-side counter."
+      "notes": "Admission is FREE \u2014 only skate rental has a fee. Rentals available at the rink-side counter."
     },
     "sharpening": {
       "pricing_base": 8,
@@ -10703,7 +10721,7 @@
         "Coaches must check in at the front desk",
         "No hockey stops on freestyle ice"
       ],
-      "notes": "Millennium Park Ice Rink is a free public skating venue open November through March. No freestyle sessions — this is a public recreational skating destination beneath the iconic Cloud Gate (The Bean)."
+      "notes": "Millennium Park Ice Rink is a free public skating venue open November through March. No freestyle sessions \u2014 this is a public recreational skating destination beneath the iconic Cloud Gate (The Bean)."
     },
     "amenities": {
       "lockers": false,
@@ -10713,12 +10731,12 @@
       "skate_aids": false
     },
     "image": "/images/skating/ice_img_12.png",
-    "description": "Millennium Park Ice Rink, officially the McCormick Tribune Ice Rink, stands as one of America's most iconic outdoor skating experiences and a beloved Chicago tradition. Located at 55 North Michigan Avenue in the heart of downtown Chicago's Millennium Park, this rink sits directly in front of Cloud Gate—the famous public art sculpture known as \"The Bean.\" Skating with views of this architectural marvel and the Chicago skyline creates an unforgettable experience. The seasonal outdoor rink operates from November through March, transforming the Millennium Park plaza into a winter wonderland that draws locals and tourists from around the world.\n\nThe Millennium Park Ice Rink serves recreational skaters of all ages and skill levels, from children taking first steps on ice to experienced skaters enjoying smooth ice. The rink does not host hockey leagues or figure skating competitions, focusing instead on recreational and leisure skating that celebrates skating as pure joy and community gathering. Free admission to skate (skate rental fees apply) makes this Chicago landmark accessible to everyone. The rink's seasonal operation creates a special winter atmosphere, marking the passage of seasons and connecting skaters to Chicago's distinctive seasonal rhythms.\n\nSkating at Millennium Park Ice Rink represents one of Chicago's quintessential winter experiences and a rite of passage for residents and visitors alike. The location within Millennium Park provides access to world-class public art, nearby museums, restaurants, and the lakefront. Many visitors combine skating with exploring the park's architecture and attractions. The outdoor ice, Cloud Gate backdrop, and downtown Chicago setting create magical memories unavailable at indoor facilities. Whether you're a Chicago native reconnecting with childhood skating memories or a visitor experiencing Chicago winter culture, Millennium Park Ice Rink delivers an experience far exceeding standard recreational skating. Visit millenniumpark.org for current season dates, rental information, and special skating events.",
+    "description": "Millennium Park Ice Rink, officially the McCormick Tribune Ice Rink, stands as one of America's most iconic outdoor skating experiences and a beloved Chicago tradition. Located at 55 North Michigan Avenue in the heart of downtown Chicago's Millennium Park, this rink sits directly in front of Cloud Gate\u2014the famous public art sculpture known as \"The Bean.\" Skating with views of this architectural marvel and the Chicago skyline creates an unforgettable experience. The seasonal outdoor rink operates from November through March, transforming the Millennium Park plaza into a winter wonderland that draws locals and tourists from around the world.\n\nThe Millennium Park Ice Rink serves recreational skaters of all ages and skill levels, from children taking first steps on ice to experienced skaters enjoying smooth ice. The rink does not host hockey leagues or figure skating competitions, focusing instead on recreational and leisure skating that celebrates skating as pure joy and community gathering. Free admission to skate (skate rental fees apply) makes this Chicago landmark accessible to everyone. The rink's seasonal operation creates a special winter atmosphere, marking the passage of seasons and connecting skaters to Chicago's distinctive seasonal rhythms.\n\nSkating at Millennium Park Ice Rink represents one of Chicago's quintessential winter experiences and a rite of passage for residents and visitors alike. The location within Millennium Park provides access to world-class public art, nearby museums, restaurants, and the lakefront. Many visitors combine skating with exploring the park's architecture and attractions. The outdoor ice, Cloud Gate backdrop, and downtown Chicago setting create magical memories unavailable at indoor facilities. Whether you're a Chicago native reconnecting with childhood skating memories or a visitor experiencing Chicago winter culture, Millennium Park Ice Rink delivers an experience far exceeding standard recreational skating. Visit millenniumpark.org for current season dates, rental information, and special skating events.",
     "what_to_know": [
-      "Skating is FREE admission—you only pay for skate rental, making it accessible and budget-friendly",
+      "Skating is FREE admission\u2014you only pay for skate rental, making it accessible and budget-friendly",
       "Outdoor ice under the Chicago sky with views of Cloud Gate and the downtown skyline creates a magical atmosphere",
       "Seasonal operation November through March means this is a true winter tradition and special-occasion destination",
-      "No hockey leagues or figure skating clubs—this is purely recreational skating for families and friends",
+      "No hockey leagues or figure skating clubs\u2014this is purely recreational skating for families and friends",
       "Skate rentals available on-site; bring your own or rent professional equipment in various sizes",
       "Located in downtown Chicago's Millennium Park, easily accessible by public transit and surrounded by attractions",
       "One of America's most famous public ice skating experiences featured in countless holiday and travel guides"
@@ -11859,13 +11877,13 @@
       "skate_aids": false
     },
     "image": "/images/skating/ice_img_20.png",
-    "description": "Blue Cross RiverRink Winterfest is Philadelphia's iconic seasonal outdoor ice skating destination, located at 101 S Columbus Boulevard on the scenic Delaware River waterfront adjacent to Penn's Landing. This premier Philadelphia ice skating rink transforms the waterfront into a magical winter experience from November through March, offering one of the most stunning scenic skating environments on the East Coast. The rink features both figure skating and recreational skating sessions, with professional skate rentals available for visitors of all skill levels. The surrounding Winterfest village creates an unforgettable atmosphere with fire pits, gourmet food vendors, entertainment, and holiday celebrations that draw thousands of skaters annually.\n\nBlue Cross RiverRink serves Philadelphia families, casual skaters, date-night couples, and winter enthusiasts looking for a unique urban skating experience. The rink accommodates figure skaters seeking open ice time, recreational skaters enjoying public sessions, and beginner skaters taking advantage of rental services. Its waterfront location makes it accessible to downtown Philadelphia residents, tourists, and visitors from surrounding Pennsylvania counties. Whether you're a lifelong skater or stepping onto ice for the first time, the rink offers diverse session times to suit different schedules and abilities.\n\nWhat sets Blue Cross RiverRink apart is its unparalleled setting—skating under the Philadelphia skyline with historic landmarks in view creates memories that indoor rinks simply cannot match. The full Winterfest village amenities, including warming huts, concessions, and live entertainment, make it a complete winter destination rather than just an ice skating facility. Visit riverrink.com for current hours, session schedules, rental rates, and Winterfest event information. This is essential Philadelphia ice skating for winter visitors and local skaters alike.",
+    "description": "Blue Cross RiverRink Winterfest is Philadelphia's iconic seasonal outdoor ice skating destination, located at 101 S Columbus Boulevard on the scenic Delaware River waterfront adjacent to Penn's Landing. This premier Philadelphia ice skating rink transforms the waterfront into a magical winter experience from November through March, offering one of the most stunning scenic skating environments on the East Coast. The rink features both figure skating and recreational skating sessions, with professional skate rentals available for visitors of all skill levels. The surrounding Winterfest village creates an unforgettable atmosphere with fire pits, gourmet food vendors, entertainment, and holiday celebrations that draw thousands of skaters annually.\n\nBlue Cross RiverRink serves Philadelphia families, casual skaters, date-night couples, and winter enthusiasts looking for a unique urban skating experience. The rink accommodates figure skaters seeking open ice time, recreational skaters enjoying public sessions, and beginner skaters taking advantage of rental services. Its waterfront location makes it accessible to downtown Philadelphia residents, tourists, and visitors from surrounding Pennsylvania counties. Whether you're a lifelong skater or stepping onto ice for the first time, the rink offers diverse session times to suit different schedules and abilities.\n\nWhat sets Blue Cross RiverRink apart is its unparalleled setting\u2014skating under the Philadelphia skyline with historic landmarks in view creates memories that indoor rinks simply cannot match. The full Winterfest village amenities, including warming huts, concessions, and live entertainment, make it a complete winter destination rather than just an ice skating facility. Visit riverrink.com for current hours, session schedules, rental rates, and Winterfest event information. This is essential Philadelphia ice skating for winter visitors and local skaters alike.",
     "what_to_know": [
       "Seasonal outdoor operation: November through March (weather dependent; check website for daily status)",
       "Skate rentals available on-site; bring your own skates or rent quality equipment at competitive rates",
       "Public skating sessions available; check riverrink.com for specific time slots and any private event bookings",
       "Winterfest village includes food vendors, fire pits, and entertainment; plan extra time to enjoy the full experience",
-      "Arrive early on weekends and holidays—this is Philadelphia's most popular seasonal rink and parking fills quickly",
+      "Arrive early on weekends and holidays\u2014this is Philadelphia's most popular seasonal rink and parking fills quickly",
       "Accessible location near SEPTA public transit and ample paid parking at Penn's Landing",
       "Dress warmly in winter layers; while fire pits provide warmth, outdoor skating is cold, especially after dark"
     ],
@@ -11888,7 +11906,7 @@
       },
       {
         "question": "How do I get to Blue Cross RiverRink and where do I park?",
-        "answer": "RiverRink is located at 101 S Columbus Boulevard at Penn's Landing in Center City Philadelphia. Parking is available in the Penn's Landing lot and nearby Center City garages (paid). The location is accessible via SEPTA public transit—the Market-Frankford Line and bus routes serve the area. Check Google Maps for real-time directions and parking availability."
+        "answer": "RiverRink is located at 101 S Columbus Boulevard at Penn's Landing in Center City Philadelphia. Parking is available in the Penn's Landing lot and nearby Center City garages (paid). The location is accessible via SEPTA public transit\u2014the Market-Frankford Line and bus routes serve the area. Check Google Maps for real-time directions and parking availability."
       }
     ]
   },
@@ -12152,7 +12170,7 @@
       "skate_aids": true
     },
     "image": "/images/skating/ice_img_02.png",
-    "description": "IceWorks Skating Complex is Delaware County's premier multi-sheet ice skating facility, strategically located at 4345 Edgmont Avenue in the Brookhaven and Aston area. This state-of-the-art complex operates two premium ice sheets, providing ample capacity for figure skating, recreational skating, and competitive ice hockey. IceWorks serves a vast region including Philadelphia suburbs like Aston, Brookhaven, Media, Chester, and surrounding Delaware County communities. The facility has established itself as one of the region's dominant hockey training centers, hosting elite youth hockey teams, adult competitive leagues, and player development programs that draw athletes from across southeastern Pennsylvania and beyond.\n\nIceWorks Skating Complex serves competitive hockey players, figure skaters pursuing serious training, recreational skaters enjoying public sessions, and families learning to skate through its comprehensive programs. The facility's dual ice sheets allow simultaneous hosting of multiple hockey tournaments, figure skating competitions, recreational skating sessions, and training programs—a capacity advantage that single-sheet rinks cannot match. The figure skating academy at IceWorks attracts dedicated skaters training at all competitive levels, while the hockey community benefits from consistent ice allocation across multiple age groups and leagues. Whether you're a parent seeking quality coaching, a competitive skater targeting regional or national competition, or a recreational skater enjoying public sessions, IceWorks provides professional-grade facilities.\n\nWhat distinguishes IceWorks is its dual-sheet capacity, competitive programming excellence, and investment in player development across both hockey and figure skating. The facility's hockey reputation draws families from hours away, supporting elite youth travel teams and adult competitive leagues. The figure skating academy provides specialized coaching and choreography for dancers pursuing competitive success. The Brookhaven location offers convenient access to I-476, I-95, and Route 1, making IceWorks accessible to the greater Philadelphia region. Visit iceworks.org for current public skating schedules, competitive program information, learn-to-skate registration, and facility rental options.",
+    "description": "IceWorks Skating Complex is Delaware County's premier multi-sheet ice skating facility, strategically located at 4345 Edgmont Avenue in the Brookhaven and Aston area. This state-of-the-art complex operates two premium ice sheets, providing ample capacity for figure skating, recreational skating, and competitive ice hockey. IceWorks serves a vast region including Philadelphia suburbs like Aston, Brookhaven, Media, Chester, and surrounding Delaware County communities. The facility has established itself as one of the region's dominant hockey training centers, hosting elite youth hockey teams, adult competitive leagues, and player development programs that draw athletes from across southeastern Pennsylvania and beyond.\n\nIceWorks Skating Complex serves competitive hockey players, figure skaters pursuing serious training, recreational skaters enjoying public sessions, and families learning to skate through its comprehensive programs. The facility's dual ice sheets allow simultaneous hosting of multiple hockey tournaments, figure skating competitions, recreational skating sessions, and training programs\u2014a capacity advantage that single-sheet rinks cannot match. The figure skating academy at IceWorks attracts dedicated skaters training at all competitive levels, while the hockey community benefits from consistent ice allocation across multiple age groups and leagues. Whether you're a parent seeking quality coaching, a competitive skater targeting regional or national competition, or a recreational skater enjoying public sessions, IceWorks provides professional-grade facilities.\n\nWhat distinguishes IceWorks is its dual-sheet capacity, competitive programming excellence, and investment in player development across both hockey and figure skating. The facility's hockey reputation draws families from hours away, supporting elite youth travel teams and adult competitive leagues. The figure skating academy provides specialized coaching and choreography for dancers pursuing competitive success. The Brookhaven location offers convenient access to I-476, I-95, and Route 1, making IceWorks accessible to the greater Philadelphia region. Visit iceworks.org for current public skating schedules, competitive program information, learn-to-skate registration, and facility rental options.",
     "what_to_know": [
       "Two ice sheets provide capacity for multiple simultaneous programs: hockey tournaments, figure skating competitions, lessons, and recreational skating",
       "Public skating sessions available; check iceworks.org for current schedules, as times vary by day and may be affected by tournaments",
@@ -12580,7 +12598,7 @@
       "skate_aids": true
     },
     "image": "/images/skating/ice_img_05.png",
-    "description": "Ice-A-Rama is a family-friendly community ice skating rink located at 760 North Bethlehem Pike in Ambler, Pennsylvania. This single-sheet facility serves the Montgomery County region including Ambler, Horsham, Fort Washington, and the northern Philadelphia suburbs along Route 309 corridor. Ice-A-Rama has established itself as a welcoming neighborhood rink where families learn to skate, children enjoy birthday parties, and recreational skaters find affordable, accessible ice time. The rink accommodates figure skaters pursuing coaching and training, recreational hockey players enjoying league play, and beginners enrolling in learn-to-skate programs. Ice-A-Rama's emphasis on family-friendly programming and birthday party packages makes it a popular destination for celebrations and milestone events across the North Philadelphia suburbs.\n\nIce-A-Rama serves families with children, birthday party hosts, recreational skaters seeking convenient public sessions, and young athletes developing hockey and figure skating skills. The facility's strong learn-to-skate and youth hockey programs have served generations of northern Philadelphia suburban families. Public skating sessions welcome families with children of all ages and abilities. The rink's affordable pricing and convenient Route 309 location make it accessible to Ambler, Horsham, Fort Washington, and surrounding communities. Birthday party packages provide customizable celebrations combining skating time, party room rentals, and catering options—a popular choice for children's milestone events.\n\nWhat makes Ice-A-Rama special is its family-focused community approach, birthday party programming, and emphasis on making ice skating accessible and affordable for northern Philadelphia suburban residents. The Route 309 location at Ambler provides convenient access to Horsham, Fort Washington, Blue Bell, and surrounding Montgomery County communities. The facility's long history serving local families has created deep community connections and loyalty. Learn-to-skate programs emphasize skill development and confidence building, while youth hockey leagues support young athletes. Public skating remains affordable and family-oriented. Contact Ice-A-Rama directly for public skating schedules, learn-to-skate program registration, birthday party package information, and hockey league details.",
+    "description": "Ice-A-Rama is a family-friendly community ice skating rink located at 760 North Bethlehem Pike in Ambler, Pennsylvania. This single-sheet facility serves the Montgomery County region including Ambler, Horsham, Fort Washington, and the northern Philadelphia suburbs along Route 309 corridor. Ice-A-Rama has established itself as a welcoming neighborhood rink where families learn to skate, children enjoy birthday parties, and recreational skaters find affordable, accessible ice time. The rink accommodates figure skaters pursuing coaching and training, recreational hockey players enjoying league play, and beginners enrolling in learn-to-skate programs. Ice-A-Rama's emphasis on family-friendly programming and birthday party packages makes it a popular destination for celebrations and milestone events across the North Philadelphia suburbs.\n\nIce-A-Rama serves families with children, birthday party hosts, recreational skaters seeking convenient public sessions, and young athletes developing hockey and figure skating skills. The facility's strong learn-to-skate and youth hockey programs have served generations of northern Philadelphia suburban families. Public skating sessions welcome families with children of all ages and abilities. The rink's affordable pricing and convenient Route 309 location make it accessible to Ambler, Horsham, Fort Washington, and surrounding communities. Birthday party packages provide customizable celebrations combining skating time, party room rentals, and catering options\u2014a popular choice for children's milestone events.\n\nWhat makes Ice-A-Rama special is its family-focused community approach, birthday party programming, and emphasis on making ice skating accessible and affordable for northern Philadelphia suburban residents. The Route 309 location at Ambler provides convenient access to Horsham, Fort Washington, Blue Bell, and surrounding Montgomery County communities. The facility's long history serving local families has created deep community connections and loyalty. Learn-to-skate programs emphasize skill development and confidence building, while youth hockey leagues support young athletes. Public skating remains affordable and family-oriented. Contact Ice-A-Rama directly for public skating schedules, learn-to-skate program registration, birthday party package information, and hockey league details.",
     "what_to_know": [
       "Public skating sessions available throughout the week; contact the rink for current schedules and times",
       "Learn-to-skate programs available for children and beginners; certified instructors provide progressive skill development",
@@ -13006,7 +13024,7 @@
         "Coaches must check in at the front desk",
         "No hockey stops on freestyle ice"
       ],
-      "notes": "OhioHealth Ice Trails at Easton is a popular outdoor skating destination near Easton Town Center, open seasonally November through February. No dedicated freestyle sessions — public recreational skating focus."
+      "notes": "OhioHealth Ice Trails at Easton is a popular outdoor skating destination near Easton Town Center, open seasonally November through February. No dedicated freestyle sessions \u2014 public recreational skating focus."
     },
     "amenities": {
       "lockers": false,
@@ -13022,7 +13040,7 @@
       "Located at Easton Town Center: convenient access to shopping, dining, and entertainment alongside skating",
       "Professional skate rentals available; bring your own skates or rent quality equipment at competitive rates",
       "Public skating sessions available during operating hours; check schedule for times and any special event bookings",
-      "Family-friendly atmosphere with outdoor seasonal charm—perfect for holiday celebrations and winter activities",
+      "Family-friendly atmosphere with outdoor seasonal charm\u2014perfect for holiday celebrations and winter activities",
       "Easily accessible from northeast Columbus via I-270 and surrounding surface streets with ample Easton parking",
       "Weather-dependent operation: heavy snow, ice conditions, or extreme temperatures may cause closures; check status before visiting"
     ],
@@ -14033,7 +14051,7 @@
       "Located in Polaris area: convenient access to shopping, dining, and entertainment near the rink",
       "Professional skate rentals available on-site; bring your own skates or rent equipment at competitive rates",
       "Public skating sessions available during operating hours; check schedule for specific times and event bookings",
-      "Family-friendly atmosphere with outdoor seasonal charm—perfect for holiday celebrations and winter activities",
+      "Family-friendly atmosphere with outdoor seasonal charm\u2014perfect for holiday celebrations and winter activities",
       "Serves fast-growing Lewis Center and north Columbus communities with convenient Polaris location",
       "Weather-dependent operation: heavy snow, ice conditions, or extreme temperatures may cause closures; check status before visiting"
     ],
@@ -14059,5 +14077,322 @@
         "answer": "OhioHealth Ice Trails at Polaris is located in the Polaris area of north Columbus. The location is easily accessible via I-270 north and connecting routes to the Polaris commercial district. Parking is available at the rink or nearby Polaris locations. GPS and Google Maps provide turn-by-turn directions from any Columbus location."
       }
     ]
+  },
+  {
+    "id": "tn-nashville-smashville-ice-rink-at-zoolumination-nashville-tn",
+    "slug": "smashville-ice-rink-at-zoolumination-nashville-tn",
+    "name": "Smashville Ice Rink at Zoolumination",
+    "alternate_names": [],
+    "category": "Ice Skating Rink",
+    "operator": "Nashville Predators / Zoolumination",
+    "address": {
+      "street": "Ascension Saint Thomas Landing",
+      "city": "Nashville",
+      "state": "TN",
+      "postal_code": "37203",
+      "country": "US"
+    },
+    "geo": {
+      "latitude": 36.1601,
+      "longitude": -86.7784
+    },
+    "phone": null,
+    "email": null,
+    "website": "https://www.nhl.com/predators/zoolumination",
+    "google_maps_url": null,
+    "social_links": [],
+    "place_ids": {
+      "google_place_id": null,
+      "osm_id": null
+    },
+    "facility": {
+      "indoor": false,
+      "seasonality": "seasonal",
+      "number_of_sheets": 1,
+      "sheet_sizes": []
+    },
+    "schedule_links": {
+      "public_calendar_url": null,
+      "freestyle_calendar_url": null,
+      "hockey_calendar_url": null,
+      "lessons_url": null
+    },
+    "offerings": {
+      "public_skating": true,
+      "learn_to_skate": false,
+      "figure_skating": false,
+      "hockey": false,
+      "open_hockey": false,
+      "stick_and_puck": false
+    },
+    "pricing": {
+      "public_skate": {
+        "adult": 25,
+        "youth": 21
+      },
+      "spectators": null,
+      "notes": "$25 adult/teen, $21 youth. Seasonal outdoor pop-up under Broadway. 2025-26 season ran through February 8, 2026. Reopens November 2026."
+    },
+    "rentals": {
+      "available": true,
+      "included_with_admission": true,
+      "size_range_min": null,
+      "size_range_max": null,
+      "notes": "Rental included with session admission."
+    },
+    "sharpening": {
+      "available": false,
+      "turnaround": null,
+      "pricing_base": null,
+      "pricing_rush": null,
+      "add_ons": [],
+      "notes": null,
+      "info_url": null
+    },
+    "freestyle": {
+      "available": false,
+      "labels_to_search_for": [],
+      "who_its_for": [],
+      "how_to_find_times": null,
+      "cost_notes": null,
+      "etiquette_tips": [],
+      "notes": null
+    },
+    "amenities": {
+      "lockers": "unknown",
+      "spectator_seating": "unknown",
+      "concessions": "unknown",
+      "pro_shop": "unknown",
+      "skate_aids": "unknown"
+    },
+    "audiences": [
+      "Families",
+      "Tourists",
+      "Holiday visitors"
+    ],
+    "tags": [
+      "seasonal",
+      "outdoor",
+      "holiday",
+      "downtown"
+    ],
+    "seasonal": true,
+    "seasonal_notes": "CURRENTLY CLOSED. Reopens November 2026.",
+    "description": "A seasonal outdoor pop-up rink at the Ascension Saint Thomas Landing under Broadway. Part of the Predators / Zoolumination holiday programming. The 2025-26 season ran through February 8, 2026. Best for: a downtown Nashville holiday experience, not a regular skate spot.",
+    "sources": [
+      "NHL.com Predators / Zoolumination"
+    ],
+    "last_verified": "2026-05-23"
+  },
+  {
+    "id": "tn-murfreesboro-fountains-at-gateway-murfreesboro-tn",
+    "slug": "fountains-at-gateway-murfreesboro-tn",
+    "name": "Fountains at Gateway",
+    "alternate_names": [],
+    "category": "Ice Skating Rink",
+    "operator": "Fountains at Gateway",
+    "address": {
+      "street": "Fountains at Gateway development",
+      "city": "Murfreesboro",
+      "state": "TN",
+      "postal_code": "37129",
+      "country": "US"
+    },
+    "geo": {
+      "latitude": 35.8456,
+      "longitude": -86.3903
+    },
+    "phone": null,
+    "email": null,
+    "website": null,
+    "google_maps_url": null,
+    "social_links": [],
+    "place_ids": {
+      "google_place_id": null,
+      "osm_id": null
+    },
+    "facility": {
+      "indoor": false,
+      "seasonality": "seasonal",
+      "number_of_sheets": 1,
+      "sheet_sizes": []
+    },
+    "schedule_links": {
+      "public_calendar_url": null,
+      "freestyle_calendar_url": null,
+      "hockey_calendar_url": null,
+      "lessons_url": null
+    },
+    "offerings": {
+      "public_skating": true,
+      "learn_to_skate": false,
+      "figure_skating": false,
+      "hockey": false,
+      "open_hockey": false,
+      "stick_and_puck": false
+    },
+    "pricing": {
+      "public_skate": {
+        "adult": 17,
+        "child": 12
+      },
+      "spectators": null,
+      "notes": "$17 ages 13+, $12 ages 4-12 (includes rental and 60-min session). Seasonal outdoor rink. 2025-26 season ran November 21, 2025 through February 1, 2026. Reopens November 2026."
+    },
+    "rentals": {
+      "available": true,
+      "included_with_admission": true,
+      "size_range_min": null,
+      "size_range_max": null,
+      "notes": "Rental included with 60-minute session admission."
+    },
+    "sharpening": {
+      "available": false,
+      "turnaround": null,
+      "pricing_base": null,
+      "pricing_rush": null,
+      "add_ons": [],
+      "notes": null,
+      "info_url": null
+    },
+    "freestyle": {
+      "available": false,
+      "labels_to_search_for": [],
+      "who_its_for": [],
+      "how_to_find_times": null,
+      "cost_notes": null,
+      "etiquette_tips": [],
+      "notes": null
+    },
+    "amenities": {
+      "lockers": "unknown",
+      "spectator_seating": "unknown",
+      "concessions": "unknown",
+      "pro_shop": "unknown",
+      "skate_aids": "unknown"
+    },
+    "audiences": [
+      "Families",
+      "Children",
+      "Beginners"
+    ],
+    "tags": [
+      "seasonal",
+      "outdoor",
+      "family-friendly"
+    ],
+    "seasonal": true,
+    "seasonal_notes": "CURRENTLY CLOSED. Reopens November 2026.",
+    "description": "A seasonal outdoor rink in Murfreesboro. The 2025-26 season ran November 21, 2025 through February 1, 2026. The closest seasonal ice option for Murfreesboro families \u2014 there is no year-round ice in Murfreesboro proper. Sessions are 60 minutes with rental included.",
+    "sources": [
+      "Fountains at Gateway"
+    ],
+    "last_verified": "2026-05-23"
+  },
+  {
+    "id": "tn-nashville-gaylord-opryland-resort-nashville-tn",
+    "slug": "gaylord-opryland-resort-nashville-tn",
+    "name": "Gaylord Opryland Resort Ice Skating",
+    "alternate_names": [],
+    "category": "Ice Skating Rink",
+    "operator": "Marriott / Gaylord",
+    "address": {
+      "street": "2800 Opryland Dr",
+      "city": "Nashville",
+      "state": "TN",
+      "postal_code": "37214",
+      "country": "US"
+    },
+    "geo": {
+      "latitude": 36.2087,
+      "longitude": -86.6945
+    },
+    "phone": "615-883-2211",
+    "email": null,
+    "website": "https://www.marriott.com/hotels/travel/bnago-gaylord-opryland-resort-and-convention-center/",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=2800+Opryland+Dr+Nashville+TN+37214",
+    "social_links": [],
+    "place_ids": {
+      "google_place_id": null,
+      "osm_id": null
+    },
+    "facility": {
+      "indoor": true,
+      "seasonality": "seasonal",
+      "number_of_sheets": 1,
+      "sheet_sizes": []
+    },
+    "schedule_links": {
+      "public_calendar_url": null,
+      "freestyle_calendar_url": null,
+      "hockey_calendar_url": null,
+      "lessons_url": null
+    },
+    "offerings": {
+      "public_skating": true,
+      "learn_to_skate": false,
+      "figure_skating": false,
+      "hockey": false,
+      "open_hockey": false,
+      "stick_and_puck": false
+    },
+    "pricing": {
+      "public_skate": {
+        "adult": null,
+        "youth": null
+      },
+      "spectators": null,
+      "notes": "Resort-style pricing \u2014 varies by package and package bundling. Typically higher than standalone rinks. Reopens November 2026."
+    },
+    "rentals": {
+      "available": true,
+      "included_with_admission": true,
+      "size_range_min": null,
+      "size_range_max": null,
+      "notes": "Rental typically included with resort package."
+    },
+    "sharpening": {
+      "available": false,
+      "turnaround": null,
+      "pricing_base": null,
+      "pricing_rush": null,
+      "add_ons": [],
+      "notes": null,
+      "info_url": null
+    },
+    "freestyle": {
+      "available": false,
+      "labels_to_search_for": [],
+      "who_its_for": [],
+      "how_to_find_times": null,
+      "cost_notes": null,
+      "etiquette_tips": [],
+      "notes": null
+    },
+    "amenities": {
+      "lockers": "unknown",
+      "spectator_seating": true,
+      "concessions": true,
+      "pro_shop": "unknown",
+      "skate_aids": "unknown"
+    },
+    "audiences": [
+      "Families",
+      "Tourists",
+      "Resort guests"
+    ],
+    "tags": [
+      "seasonal",
+      "indoor",
+      "resort",
+      "holiday"
+    ],
+    "seasonal": true,
+    "seasonal_notes": "CURRENTLY CLOSED. Reopens November 2026.",
+    "description": "Part of the resort's \"A Country Christmas\" / \"So Much Christmas\" programming. Holiday atmosphere, resort-style pricing, smaller ice surface than the year-round rinks. Worth doing once as an experience, not as a regular skate spot.",
+    "sources": [
+      "Gaylord Opryland Resort"
+    ],
+    "last_verified": "2026-05-23"
   }
 ]

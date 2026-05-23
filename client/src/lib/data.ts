@@ -20,9 +20,9 @@ export const RinkSchema = z.object({
     latitude: z.number().nullable(),
     longitude: z.number().nullable(),
   }).optional(),
-  phone: z.string().optional(),
+  phone: z.string().nullable().optional(),
   email: z.string().nullable().optional(),
-  website: z.string().optional(),
+  website: z.string().nullable().optional(),
   google_maps_url: z.string().nullable().optional(),
   social_links: z.array(z.object({
     platform: z.string(),
@@ -83,17 +83,17 @@ export const RinkSchema = z.object({
         z.string(),
         z.object({ name: z.string(), price: z.string() })
     ])).optional(),
-    notes: z.string().optional(),
+    notes: z.string().nullable().optional(),
     info_url: z.string().nullable().optional(),
   }),
   freestyle: z.object({
     available: z.union([z.boolean(), z.literal("true"), z.literal("false"), z.literal("unknown")]),
     labels_to_search_for: z.array(z.string()).optional(),
     who_its_for: z.array(z.string()).optional(),
-    how_to_find_times: z.string().optional(),
+    how_to_find_times: z.string().nullable().optional(),
     cost_notes: z.string().nullable().optional(),
     etiquette_tips: z.array(z.string()).optional(),
-    notes: z.string().optional(),
+    notes: z.string().nullable().optional(),
   }),
   amenities: z.object({
     lockers: z.union([z.boolean(), z.literal("true"), z.literal("false"), z.literal("unknown")]),
@@ -104,6 +104,14 @@ export const RinkSchema = z.object({
   }),
   audiences: z.array(z.string()).optional(),
   tags: z.array(z.string()).optional(),
+  seasonal: z.boolean().optional(),
+  seasonal_notes: z.string().optional(),
+  subheader: z.string().optional(),
+  nearby_rinks: z.array(z.object({
+    slug: z.string(),
+    name: z.string(),
+    tagline: z.string(),
+  })).optional(),
   description: z.string().optional(),
   what_to_know: z.array(z.string()).optional(),
   faq: z.array(z.union([

@@ -1,0 +1,36 @@
+Rewrite /rink/centennial-sportsplex-nashville-tn with optimized SEO metadata and a new "Next Public Skate Sessions" widget at the top of the page. Keep the existing About, "What to know before you go," FAQ, and sources sections — they're good. Just change what I specify below.
+
+UPDATED METADATA:
+- title: "Centennial Sportsplex Ice Arenas: Nashville Public Skating, Hockey & Lessons | Ice Skating Index"
+- meta description: "Public skate, lessons, hockey, and figure skating at Centennial Sportsplex in Nashville — $6–7 admission with skates included, two full-size sheets, walk-in welcome. Verified weekly."
+
+NEW SUBHEADER UNDER THE H1:
+"Nashville's most affordable year-round indoor public skating. Two full-size sheets, walk-in welcome, $6–7 with skates included."
+
+NEW WIDGET — add this above the existing "About" section, replacing the current Visit Website / Public Schedule button row:
+
+A "Next Public Skate Sessions" card that shows the next 3 upcoming public skate sessions with date, time, and price. The data should come from a JSON file at /data/sessions/centennial-sportsplex.json that I'll maintain manually for now. Structure:
+{
+  "lastVerified": "2026-05-23",
+  "sessions": [
+    {"date": "2026-05-24", "time": "1:00 PM – 3:00 PM", "price": "$7 (rental included)"},
+    {"date": "2026-05-25", "time": "2:00 PM – 4:00 PM", "price": "$7 (rental included)"},
+    {"date": "2026-05-28", "time": "6:00 PM – 8:00 PM", "price": "$7 (rental included)"}
+  ]
+}
+
+The widget should:
+- Have a header "Next Public Skate Sessions" with a clock icon
+- Show the 3 sessions in a clean readable format
+- Below the sessions, show "View full calendar" linking to the Centennial Google Calendar on nashville.gov, and "Get Directions" linking to the address
+- Show "Schedules update weekly. Last verified [date from JSON]." in small text at the bottom
+
+If no JSON data exists, the widget should gracefully fall back to a single button "View Public Schedule" linking to nashville.gov's Centennial Sportsplex page.
+
+NEW SIDEBAR — Add a sidebar (or bottom section) titled "Other Nashville rinks":
+- Ford Ice Center Bellevue — 14 min west. Reservation required, $12, modern facility. (Link to /rink/ford-ice-center-bellevue)
+- Ford Ice Center Antioch — 22 min south. Reservation required, $12, largest of the three Ford locations. (Link to /rink/ford-ice-center-antioch)
+- Ford Ice Center Clarksville — 45 min north. Reservation required, $12, F&M Bank Arena. (Link to /rink/ford-ice-center-clarksville)
+- See all Nashville rinks (Link to /city/tn/nashville)
+
+Build this as a reusable component (NearbyRinks or similar) — we'll add it to other rink pages later.
