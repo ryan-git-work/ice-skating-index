@@ -105,6 +105,14 @@ Sitemap: https://iceskatingindex.com/sitemap.xml
     res.send(robotsTxt);
   });
 
+  app.get("/blog/ice-skating-nashville", (_req, res) => {
+    res.redirect(301, "/city/tn/nashville");
+  });
+
+  app.get("/blog/ice-skating-nashville/", (_req, res) => {
+    res.redirect(301, "/city/tn/nashville");
+  });
+
   app.get("/api/blog/image/:slug", async (req, res) => {
     const { slug } = req.params;
     const dataPath = path.resolve(process.cwd(), "client/public/data/post-image-map.json");
