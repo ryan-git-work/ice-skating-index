@@ -18,6 +18,7 @@ import NashvilleCityHub from "@/pages/NashvilleCityHub";
 import TennesseeStateHub from "@/pages/TennesseeStateHub";
 import BlogIndex from "@/pages/BlogIndex";
 import BlogPost from "@/pages/BlogPost";
+import About from "@/pages/About";
 
 function Router() {
   return (
@@ -31,6 +32,7 @@ function Router() {
       <Route path="/city/tn/nashville" component={NashvilleCityHub} />
       <Route path="/blog" component={BlogIndex} />
       <Route path="/blog/:slug" component={BlogPost} />
+      <Route path="/about" component={About} />
 
       {/* State-specific hubs (must come before generic /state/:state) */}
       <Route path="/state/tn" component={TennesseeStateHub} />

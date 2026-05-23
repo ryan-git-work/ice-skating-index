@@ -124,6 +124,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 <li><Link href="/services/learn-to-skate"><span className="hover:text-primary transition-colors cursor-pointer">Learn to Skate</span></Link></li>
                 <li><Link href="/services/skate-sharpening"><span className="hover:text-primary transition-colors cursor-pointer">Skate Sharpening</span></Link></li>
                 <li><Link href="/blog"><span className="hover:text-primary transition-colors cursor-pointer">Blog</span></Link></li>
+                <li><Link href="/about"><span className="hover:text-primary transition-colors cursor-pointer">About</span></Link></li>
               </ul>
             </div>
 

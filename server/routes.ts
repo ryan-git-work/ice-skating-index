@@ -32,6 +32,18 @@ export async function registerRoutes(
     const baseUrl = "https://iceskatingindex.com";
     const now = new Date().toISOString().split('T')[0];
 
+    // Build unique city pages from rinks data
+    const citySet = new Set<string>();
+    rinks.forEach(r => {
+      const stateSlug = r.address.state.toLowerCase().replace(/\s+/g, '-');
+      const citySlug = r.address.city.toLowerCase().replace(/\s+/g, '-');
+      citySet.add(`${stateSlug}|${citySlug}`);
+    });
+    const cities = Array.from(citySet).map(entry => {
+      const [state, city] = entry.split('|');
+      return { state, city };
+    });
+
     let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Homepage -->
@@ -41,7 +53,7 @@ export async function registerRoutes(
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  
+
   <!-- Browse Page -->
   <url>
     <loc>${baseUrl}/browse</loc>
@@ -49,15 +61,33 @@ export async function registerRoutes(
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-  
-  <!-- Freestyle Hub -->
+
+  <!-- Static Content Pages -->
+  <url>
+    <loc>${baseUrl}/about</loc>
+    <lastmod>${now}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>${baseUrl}/freestyle</loc>
     <lastmod>${now}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  
+  <url>
+    <loc>${baseUrl}/services/learn-to-skate</loc>
+    <lastmod>${now}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>${baseUrl}/services/skate-sharpening</loc>
+    <lastmod>${now}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
   <!-- State Hubs -->
 ${getAllStates().map(state => `  <url>
     <loc>${baseUrl}/state/${state}</loc>
@@ -65,25 +95,35 @@ ${getAllStates().map(state => `  <url>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>`).join('\n')}
-  
+
+  <!-- City Hubs -->
+${cities.map(({ state, city }) => `  <url>
+    <loc>${baseUrl}/city/${state}/${city}</loc>
+    <lastmod>${now}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>`).join('\n')}
+
   <!-- Individual Rink Pages -->
 ${rinks.map(rink => `  <url>
     <loc>${baseUrl}/rink/${rink.slug}</loc>
-    <lastmod>${rink.last_verified || "2026-04-05"}</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>${rink.last_verified || now}</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>`).join('\n')}
-  
-  <!-- Blog Posts -->
+
+  <!-- Blog Index -->
   <url>
     <loc>${baseUrl}/blog</loc>
     <lastmod>${now}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Blog Posts -->
 ${blogPosts.map((post: any) => `  <url>
     <loc>${baseUrl}/blog/${post.slug}</loc>
-    <lastmod>${post.publishDate}</lastmod>
+    <lastmod>${post.publishDate || now}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>`).join('\n')}
