@@ -100,42 +100,42 @@ export default function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <CityHubCard
-              href="/tennessee/nashville-ice-skating"
+              href="/city/tn/nashville"
               image="/attached_assets/iceskatingindex1_1766179636449.jpg"
               city="Nashville, TN"
-              rinkCount="3 rinks"
+              rinkCount="7 rinks"
               description="Find the best rinks for public skate, lessons, freestyle, and hockey in Nashville."
             />
             <CityHubCard
-              href="/state/NY"
+              href="/city/ny/new-york-city"
               image="/images/skating/ice_img_01.png"
               city="New York City, NY"
               rinkCount="8 rinks"
               description="From Central Park to Chelsea Piers, explore the best ice skating venues in New York City."
             />
             <CityHubCard
-              href="/state/IL"
+              href="/city/il/chicago"
               image="/images/skating/ice_img_02.png"
               city="Chicago, IL"
               rinkCount="8 rinks"
               description="Discover Chicago's top ice rinks, including Millennium Park's iconic outdoor rink and indoor venues."
             />
             <CityHubCard
-              href="/state/CO"
+              href="/city/co/denver"
               image="/images/skating/ice_img_03.png"
               city="Denver, CO"
               rinkCount="8 rinks"
               description="Skate at world-class facilities across Colorado, from Broadmoor Ice Palace to Denver's top rinks."
             />
             <CityHubCard
-              href="/state/MA"
+              href="/city/ma/boston"
               image="/images/skating/ice_img_04.png"
               city="Boston, MA"
               rinkCount="8 rinks"
               description="Explore Boston's rich skating culture with rinks serving all levels from beginners to competitive skaters."
             />
             <CityHubCard
-              href="/state/MN"
+              href="/city/mn/minneapolis"
               image="/images/skating/ice_img_05.png"
               city="Minneapolis, MN"
               rinkCount="8 rinks"

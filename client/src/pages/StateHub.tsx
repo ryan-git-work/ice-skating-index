@@ -7,23 +7,27 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 
 const STATE_NAMES: Record<string, string> = {
-  TN: "Tennessee",
-  NY: "New York",
-  CA: "California",
-  MI: "Michigan",
-  MN: "Minnesota",
-  MA: "Massachusetts",
-  CO: "Colorado",
-  TX: "Texas",
-  IL: "Illinois",
-  PA: "Pennsylvania",
-  OH: "Ohio",
+  tn: "Tennessee",
+  ny: "New York",
+  ca: "California",
+  mi: "Michigan",
+  mn: "Minnesota",
+  ma: "Massachusetts",
+  co: "Colorado",
+  tx: "Texas",
+  il: "Illinois",
+  pa: "Pennsylvania",
+  oh: "Ohio",
 };
+
+function slugifyCity(city: string) {
+  return city.toLowerCase().replace(/\s+/g, "-");
+}
 
 export default function StateHub() {
   const params = useParams();
-  const state = params.state || "";
-  const stateName = STATE_NAMES[state] || state;
+  const state = (params.state || "").toLowerCase();
+  const stateName = STATE_NAMES[state] || state.toUpperCase();
   const stateRinks = getRinksByState(state);
 
   useHead({
@@ -64,7 +68,7 @@ export default function StateHub() {
             <h2 className="text-lg font-semibold mb-4">Browse by City</h2>
             <div className="flex flex-wrap gap-2">
                 {cities.map(city => (
-                    <Link key={city} href={`/state/${state}/${city}`}>
+                    <Link key={city} href={`/city/${state}/${slugifyCity(city)}`}>
                         <Button variant="outline" size="sm" className="rounded-full">
                             {city}
                         </Button>

@@ -33,6 +33,7 @@ function Router() {
       <Route path="/rink/:slug" component={RinkDetail} />
       <Route path="/state/:state" component={StateHub} />
       <Route path="/state/:state/:city" component={CityHub} />
+      <Route path="/city/:state/:city" component={CityHub} />
       
       {/* Fallback */}
       <Route component={NotFound} />
