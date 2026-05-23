@@ -14,14 +14,13 @@ import { Calendar, ArrowLeft, ArrowRight, User } from "lucide-react";
 
 const SITE_URL = "https://iceskatingindex.com";
 
-function upsertJsonLd(id: string, value: unknown) {
-  const existing = document.getElementById(id);
-  if (existing) existing.remove();
-  const script = document.createElement("script");
-  script.id = id;
-  script.type = "application/ld+json";
-  script.textContent = JSON.stringify(value);
-  document.head.appendChild(script);
+function JsonLdScript({ data }: { data: object }) {
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+    />
+  );
 }
 
 function trimExcerpt(text: string, max = 155) {
@@ -42,67 +41,46 @@ export default function BlogPost() {
     description: postMeta ? trimExcerpt(postMeta.excerpt) : "",
   });
 
-  useEffect(() => {
-    if (!postMeta) return;
-    const articleSchema = {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      headline: postMeta.title,
-      description: postMeta.excerpt,
-      datePublished: postMeta.publishDate,
-      dateModified: postMeta.publishDate,
-      author: {
-        "@type": "Organization",
-        name: "Ice Skating Index",
-        url: SITE_URL,
-      },
-      publisher: {
-        "@type": "Organization",
-        name: "Ice Skating Index",
-        url: SITE_URL,
-        logo: {
-          "@type": "ImageObject",
-          url: `${SITE_URL}/logo.png`,
+  const articleSchema = postMeta
+    ? {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        headline: postMeta.title,
+        description: postMeta.excerpt,
+        datePublished: postMeta.publishDate,
+        dateModified: postMeta.publishDate,
+        author: {
+          "@type": "Organization",
+          name: "Ice Skating Index",
+          url: SITE_URL,
         },
-      },
-      mainEntityOfPage: {
-        "@type": "WebPage",
-        "@id": `${SITE_URL}/blog/${postMeta.slug}`,
-      },
-    };
+        publisher: {
+          "@type": "Organization",
+          name: "Ice Skating Index",
+          url: SITE_URL,
+          logo: {
+            "@type": "ImageObject",
+            url: `${SITE_URL}/logo.png`,
+          },
+        },
+        mainEntityOfPage: {
+          "@type": "WebPage",
+          "@id": `${SITE_URL}/blog/${postMeta.slug}`,
+        },
+      }
+    : null;
 
-    const breadcrumbSchema = {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          name: "Home",
-          item: SITE_URL,
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          name: "Blog",
-          item: `${SITE_URL}/blog`,
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          name: postMeta.title,
-          item: `${SITE_URL}/blog/${postMeta.slug}`,
-        },
-      ],
-    };
-
-    upsertJsonLd("article-schema", articleSchema);
-    upsertJsonLd("blog-breadcrumb-schema", breadcrumbSchema);
-    return () => {
-      document.getElementById("article-schema")?.remove();
-      document.getElementById("blog-breadcrumb-schema")?.remove();
-    };
-  }, [postMeta]);
+  const breadcrumbSchema = postMeta
+    ? {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+          { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_URL}/blog` },
+          { "@type": "ListItem", position: 3, name: postMeta.title, item: `${SITE_URL}/blog/${postMeta.slug}` },
+        ],
+      }
+    : null;
 
   useEffect(() => {
     if (!postMeta) {
@@ -141,6 +119,8 @@ export default function BlogPost() {
 
   return (
     <Layout>
+      {articleSchema && <JsonLdScript data={articleSchema} />}
+      {breadcrumbSchema && <JsonLdScript data={breadcrumbSchema} />}
       <div className="bg-muted/30 border-b">
         <div className="container mx-auto px-4 py-12">
           <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">

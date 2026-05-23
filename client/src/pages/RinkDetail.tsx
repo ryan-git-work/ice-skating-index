@@ -47,14 +47,13 @@ function stripFirstParagraph(content?: string) {
   return content?.split("\n\n")[0] ?? "";
 }
 
-function upsertJsonLd(id: string, value: unknown) {
-  const existing = document.getElementById(id);
-  if (existing) existing.remove();
-  const script = document.createElement("script");
-  script.id = id;
-  script.type = "application/ld+json";
-  script.textContent = JSON.stringify(value);
-  document.head.appendChild(script);
+function JsonLdScript({ data }: { data: object }) {
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+    />
+  );
 }
 
 function formatOfferingName(key: string) {
@@ -103,96 +102,64 @@ export default function RinkDetail() {
     description: metaDescription,
   });
 
-  useEffect(() => {
-    if (!faqSchema) return;
-    const existing = document.getElementById("faq-schema");
-    if (existing) existing.remove();
-    const script = document.createElement("script");
-    script.id = "faq-schema";
-    script.type = "application/ld+json";
-    script.textContent = faqSchema;
-    document.head.appendChild(script);
-    return () => { document.getElementById("faq-schema")?.remove(); };
-  }, [faqSchema]);
-
-  useEffect(() => {
-    if (!rink) return;
-    const schema: Record<string, unknown> = {
-      "@context": "https://schema.org",
-      "@type": ["LocalBusiness", "SportsActivityLocation"],
-      name: rink.name,
-      description: stripFirstParagraph(description),
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: rink.address.street,
-        addressLocality: rink.address.city,
-        addressRegion: rink.address.state,
-        postalCode: rink.address.postal_code,
-        addressCountry: "US",
-      },
-      url: `${SITE_URL}/rink/${rink.slug}`,
-      sport: "Ice Skating",
-    };
-
-    if (rink.phone) {
-      schema.telephone = rink.phone;
-    }
-    if (rink.geo?.latitude != null && rink.geo?.longitude != null) {
-      schema.geo = {
-        "@type": "GeoCoordinates",
-        latitude: rink.geo.latitude,
-        longitude: rink.geo.longitude,
-      };
-    }
-
-    upsertJsonLd("rink-schema", schema);
-    return () => {
-      document.getElementById("rink-schema")?.remove();
-    };
-  }, [rink, description]);
-
-  useEffect(() => {
-    if (!rink) return;
-    const stateSlug = slugify(rink.address.state);
-    const stateName = STATE_NAMES[stateSlug] || rink.address.state;
-    const citySlug = slugify(rink.address.city);
-
-    const breadcrumbSchema = {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          name: "Home",
-          item: SITE_URL,
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          name: stateName,
-          item: `${SITE_URL}/state/${stateSlug}`,
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          name: rink.address.city,
-          item: `${SITE_URL}/city/${stateSlug}/${citySlug}`,
-        },
-        {
-          "@type": "ListItem",
-          position: 4,
+  const rinkSchema = rink
+    ? (() => {
+        const schema: Record<string, unknown> = {
+          "@context": "https://schema.org",
+          "@type": ["LocalBusiness", "SportsActivityLocation"],
           name: rink.name,
-          item: `${SITE_URL}/rink/${rink.slug}`,
-        },
-      ],
-    };
+          description: stripFirstParagraph(description),
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: rink.address.street,
+            addressLocality: rink.address.city,
+            addressRegion: rink.address.state,
+            postalCode: rink.address.postal_code,
+            addressCountry: "US",
+          },
+          url: `${SITE_URL}/rink/${rink.slug}`,
+          sport: "Ice Skating",
+        };
+        if (rink.phone) schema.telephone = rink.phone;
+        if (rink.geo?.latitude != null && rink.geo?.longitude != null) {
+          schema.geo = {
+            "@type": "GeoCoordinates",
+            latitude: rink.geo.latitude,
+            longitude: rink.geo.longitude,
+          };
+        }
+        return schema;
+      })()
+    : null;
 
-    upsertJsonLd("breadcrumb-schema", breadcrumbSchema);
-    return () => {
-      document.getElementById("breadcrumb-schema")?.remove();
-    };
-  }, [rink]);
+  const breadcrumbSchema = rink
+    ? (() => {
+        const stateSlug = slugify(rink.address.state);
+        const stateName = STATE_NAMES[stateSlug] || rink.address.state;
+        const citySlug = slugify(rink.address.city);
+        return {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+            { "@type": "ListItem", position: 2, name: stateName, item: `${SITE_URL}/state/${stateSlug}` },
+            { "@type": "ListItem", position: 3, name: rink.address.city, item: `${SITE_URL}/city/${stateSlug}/${citySlug}` },
+            { "@type": "ListItem", position: 4, name: rink.name, item: `${SITE_URL}/rink/${rink.slug}` },
+          ],
+        };
+      })()
+    : null;
+
+  const faqSchemaObj = rink && faqItems.length > 0
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: faqItems.map((item: any) => {
+          const { q, a } = getFaqQA(item);
+          return { "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } };
+        }),
+      }
+    : null;
 
   if (!rink) {
     return <NotFound />;
@@ -200,6 +167,9 @@ export default function RinkDetail() {
 
   return (
     <Layout>
+      {rinkSchema && <JsonLdScript data={rinkSchema} />}
+      {breadcrumbSchema && <JsonLdScript data={breadcrumbSchema} />}
+      {faqSchemaObj && <JsonLdScript data={faqSchemaObj} />}
       <div className="bg-muted/30 border-b">
         <div className="container mx-auto px-4 py-4 text-sm text-muted-foreground flex items-center gap-2">
           <Link href="/" className="hover:text-primary">Home</Link>

@@ -10,7 +10,38 @@ interface HeadProps {
 
 const DEFAULT_DESCRIPTION = "Ice Skating Index is the comprehensive directory for ice skating rinks across the US. Find public skating schedules, freestyle sessions, learn-to-skate programs, and hockey rinks in New York, California, Texas, Illinois, and 7 more states.";
 
+// SSR capture
+let ssrHeadCapture: HeadProps | null = null;
+let isSsrMode = false;
+
+export function setSsrMode(value: boolean) {
+  isSsrMode = value;
+}
+
+export function getSsrHeadCapture(): HeadProps | null {
+  return ssrHeadCapture;
+}
+
+export function clearSsrHeadCapture() {
+  ssrHeadCapture = null;
+}
+
 export function useHead({ title, description, image, ogTitle, ogDescription }: HeadProps) {
+  // Capture for SSR during render phase
+  if (isSsrMode) {
+    const fullTitle = title
+      ? (title.endsWith(' | Ice Skating Index') ? title : `${title} | Ice Skating Index`)
+      : 'Ice Skating Index';
+    ssrHeadCapture = {
+      ...(ssrHeadCapture || {}),
+      ...(title !== undefined && { title: fullTitle }),
+      ...(description !== undefined && { description }),
+      ...(image !== undefined && { image }),
+      ...(ogTitle !== undefined && { ogTitle }),
+      ...(ogDescription !== undefined && { ogDescription }),
+    };
+  }
+
   useEffect(() => {
     if (title) {
       document.title = `${title} | Ice Skating Index`;
