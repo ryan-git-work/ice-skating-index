@@ -1,0 +1,94 @@
+Build out the full content for /city/tn/nashville. This page is the comprehensive Nashville ice skating guide. It needs to rank for "ice skating nashville" and ~20 related queries.
+
+PAGE METADATA:
+- title: "Ice Skating in Nashville, TN: Every Rink, Price, and Schedule (2026 Guide) | Ice Skating Index"
+- meta description: "Every public ice skating rink in Nashville and Middle Tennessee — Centennial Sportsplex, all three Ford Ice Centers, plus seasonal options. Real prices, real schedules, verified weekly."
+- og:title and twitter:title same as title (without the " | Ice Skating Index" suffix)
+- og:description and twitter:description same as meta description
+
+BREADCRUMB:
+Home > Tennessee > Nashville
+
+H1: "Ice Skating in Nashville, TN: Every Rink, Price, and Schedule (2026 Guide)"
+
+PAGE STRUCTURE AND CONTENT (in order):
+
+[INTRO — 2 paragraphs]
+Nashville isn't the first city most people picture when they think about ice skating. But Music City has more ice than you'd expect — a year-round indoor rink right in the West End, three more run by the Nashville Predators across Middle Tennessee, plus a handful of seasonal outdoor rinks that pop up between November and February.
+
+This guide covers every public ice skating option in the Nashville area, what each rink is best for, what it costs, and how to decide which one to visit. We update this page weekly — every rink schedule, every price, every detail is verified against the operator's own source.
+
+[H2: At a glance — Nashville-area rinks]
+Build a table with columns: Rink | Neighborhood | Price | Reservation | Season
+Rows:
+- Centennial Sportsplex | West End | $6–7 | Walk-in | Year-round
+- Ford Ice Center Bellevue | Bellevue (west) | $12 | Online | Year-round
+- Ford Ice Center Antioch | Antioch (south) | $12 | Online | Year-round
+- Ford Ice Center Clarksville | Clarksville (north, 45 min) | $12 | Online | Year-round
+- Smashville at Zoolumination | Downtown | $21–25 | Drop-in | Nov–Feb seasonal
+- Fountains at Gateway | Murfreesboro (south, 30 min) | $12–17 | Drop-in | Nov–Feb seasonal
+- Gaylord Opryland Resort | Opryland | Resort pricing | With ticket | Nov–Jan seasonal
+
+[H2: Centennial Sportsplex — the affordable West End option]
+[3 paragraphs]
+Centennial Sportsplex Ice Arenas is Nashville's original public skating destination and still the cheapest in the city. Located across from Centennial Park in the West End, it's operated by Metro Nashville Parks and Recreation and has two full-size sheets (200 by 85 feet). Admission is $7 for adults and $6 for kids 5–12, with skate rental included.
+
+**What makes it unique:** Two full-size sheets — the only multi-rink public facility in Nashville proper. The west arena is also the Predators' practice facility. Walk-in only, which means no online booking system to navigate but also no guaranteed spot on busy weekends.
+
+**Best for:** Families on a budget, first-timers, learn-to-skate students, anyone who wants to walk in without planning ahead. Roughly half the price of the Ford Ice rinks.
+
+**The catch:** Public skate sessions run on a variable schedule rather than fixed weekly hours. Always check the Centennial Sportsplex Ice Arena Google Calendar (linked from nashville.gov) before driving. Sessions are typically Wednesday, Friday, and Saturday — but this changes month to month based on hockey league bookings.
+
+Address: 222 25th Ave N, Nashville, TN 37203. Phone: 615-862-8480. Full guide at /rink/centennial-sportsplex-nashville-tn
+
+[H2: Ford Ice Center Bellevue — west Nashville's newest]
+Ford Ice Center Bellevue serves the west Nashville and Bellevue corridor — the most convenient year-round option if you're coming from Belle Meade, west Nashville, Brentwood's northwest side, or the western suburbs. Operated by the Nashville Predators, it follows the standard Ford Ice format: cashless, online reservation required, $12 admission with rental included.
+
+**Best for:** West Nashville residents, skaters who want a guaranteed spot, families comfortable booking online, and anyone who prefers a newer, more polished facility.
+
+**The catch:** No walk-ins. Same-day reservations are usually available except on peak weekends, so book at least a few hours ahead.
+
+Address: 7638 Hwy 70 S, Nashville, TN 37221. Full guide at /rink/ford-ice-center-bellevue
+
+[H2: Ford Ice Center Antioch — south Nashville's closest option]
+Ford Ice Center Antioch is the southernmost Predators rink, located off Hickory Hollow Parkway in Antioch. It's the closest year-round indoor rink for residents of south Nashville, Brentwood, La Vergne, and Murfreesboro. Hours are 6 AM to 11 PM daily — the most extended hours of any Nashville-area rink. Same pricing and reservation format as the other Ford locations.
+
+**Best for:** South Nashville and Murfreesboro residents (no year-round rink in Murfreesboro itself), Junior Predators families, and skaters who want extended hours.
+
+Address: 5264 Hickory Hollow Pl, Antioch, TN 37013. Full guide at /rink/ford-ice-center-antioch
+
+[H2: Ford Ice Center Clarksville — for north Nashville and Clarksville]
+The newest of the three Ford rinks, Ford Ice Center Clarksville extends the Predators skating network ~45 minutes north of Nashville into Clarksville. It's housed inside F&M Bank Arena. For residents in Clarksville, Springfield, or north Davidson County, this is by far the closest public ice. Same pricing model: $12 with rental included, online reservation required.
+
+**Best for:** Clarksville and north Nashville residents, youth hockey families in Montgomery County, skaters willing to drive for a less crowded facility.
+
+Address: 101 Main St, Clarksville, TN 37040. Full guide at /rink/ford-ice-center-clarksville
+
+[H2: Seasonal options — only open November through February]
+From late November through early February, Nashville opens up several outdoor and pop-up rinks that aren't available the rest of the year:
+
+- **Smashville Ice Rink at Zoolumination** — Downtown at Ascension Saint Thomas Landing (under Broadway). The 2025–26 season ran through February 8, 2026. Adult and teen tickets were $25, youth $21. Part of the Predators / Zoolumination holiday programming. Best for: a downtown holiday experience, not a serious skate session.
+- **Fountains at Gateway (Murfreesboro)** — A seasonal outdoor rink that ran November 21, 2025 through February 1, 2026. $17 for ages 13+, $12 for ages 4–12. 60-minute sessions, skate rental included. The closest seasonal rink for Murfreesboro families.
+- **Gaylord Opryland Resort** — Part of the resort's "A Country Christmas" / "So Much Christmas" programming. Resort-style pricing and atmosphere. Worth doing once as an experience, not as a regular skate spot.
+
+[H2: Which Nashville rink should you choose?]
+A few simple rules:
+- **Choose Centennial Sportsplex if:** you're a first-timer, you have young kids and want to walk in without a reservation, you're enrolling in a learn-to-skate program, or budget matters.
+- **Choose a Ford Ice Center if:** you want a guaranteed spot, you prefer a modern facility, you're closer to Bellevue/Antioch/Clarksville than to West End, or your kids are in Junior Predators hockey or Learn-to-Skate.
+- **Save the seasonal rinks for the holidays:** Smashville and Fountains at Gateway are experiences, not training grounds.
+
+[H2: Learn to skate in Nashville]
+Both Centennial Sportsplex (via Nashville Skating Academy) and the Ford Ice Centers offer structured Learn-to-Skate USA programming. Centennial's sessions are typically 6–7 weeks and grouped by skill level. Ford Ice runs its own Predators-branded Learn-to-Skate at all three locations. If you're committing more than a one-time try, enroll in a structured session — the difference between learning in a class versus during public skate is dramatic.
+
+[H2: Freestyle and figure skating in Nashville]
+Centennial Sportsplex is the dominant freestyle venue in Nashville, supported by Nashville Skating Academy. Ford Ice Center Antioch also hosts freestyle sessions, particularly for the Scott Hamilton Skating Academy programs. Freestyle sessions are posted on each rink's calendar and are not on a fixed weekly schedule — check ahead.
+
+[H2: Planning your visit — what every Nashville rink has in common]
+- Dress in layers. All indoor rinks run 55–60°F at ice level. Bring a light jacket regardless of the season outside.
+- Wear the right socks. One pair of thin, calf-height socks gives you the best skate fit.
+- Bring gloves. When you fall, your hands hit the ice first.
+- Arrive early. 15–20 minutes before your session for skate-rental and lacing time.
+
+[BOTTOM] Add a "Last verified: May 23, 2026" footer note.
+
+Use the same overall design language as the existing /rink/:slug pages. Make all rink names link to their /rink/:slug pages.

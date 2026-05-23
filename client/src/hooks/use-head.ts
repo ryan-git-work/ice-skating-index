@@ -4,11 +4,13 @@ interface HeadProps {
   title?: string;
   description?: string;
   image?: string;
+  ogTitle?: string;
+  ogDescription?: string;
 }
 
 const DEFAULT_DESCRIPTION = "Ice Skating Index is the comprehensive directory for ice skating rinks across the US. Find public skating schedules, freestyle sessions, learn-to-skate programs, and hockey rinks in New York, California, Texas, Illinois, and 7 more states.";
 
-export function useHead({ title, description, image }: HeadProps) {
+export function useHead({ title, description, image, ogTitle, ogDescription }: HeadProps) {
   useEffect(() => {
     if (title) {
       document.title = `${title} | Ice Skating Index`;
@@ -17,6 +19,8 @@ export function useHead({ title, description, image }: HeadProps) {
     }
 
     const descriptionContent = description || DEFAULT_DESCRIPTION;
+    const ogTitleContent = ogTitle || (title ? `${title} | Ice Skating Index` : 'Ice Skating Index');
+    const ogDescContent = ogDescription || descriptionContent;
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
@@ -28,14 +32,24 @@ export function useHead({ title, description, image }: HeadProps) {
       document.head.appendChild(meta);
     }
 
-    const ogDescription = document.querySelector('meta[property="og:description"]');
-    if (ogDescription) {
-      ogDescription.setAttribute('content', descriptionContent);
+    const ogTitleTag = document.querySelector('meta[property="og:title"]');
+    if (ogTitleTag) {
+      ogTitleTag.setAttribute('content', ogTitleContent);
+    }
+
+    const ogDescriptionTag = document.querySelector('meta[property="og:description"]');
+    if (ogDescriptionTag) {
+      ogDescriptionTag.setAttribute('content', ogDescContent);
+    }
+
+    const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+    if (twitterTitle) {
+      twitterTitle.setAttribute('content', ogTitleContent);
     }
 
     const twitterDescription = document.querySelector('meta[name="twitter:description"]');
     if (twitterDescription) {
-      twitterDescription.setAttribute('content', descriptionContent);
+      twitterDescription.setAttribute('content', ogDescContent);
     }
 
     if (image) {
@@ -48,5 +62,5 @@ export function useHead({ title, description, image }: HeadProps) {
         twitterImage.setAttribute('content', image);
       }
     }
-  }, [title, description, image]);
+  }, [title, description, image, ogTitle, ogDescription]);
 }

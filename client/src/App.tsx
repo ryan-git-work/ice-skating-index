@@ -14,6 +14,7 @@ import FreestyleHub from "@/pages/FreestyleHub";
 import SkateSharpening from "@/pages/SkateSharpening";
 import LearnToSkate from "@/pages/LearnToSkate";
 import NashvilleHub from "@/pages/NashvilleHub";
+import NashvilleCityHub from "@/pages/NashvilleCityHub";
 import BlogIndex from "@/pages/BlogIndex";
 import BlogPost from "@/pages/BlogPost";
 
@@ -26,6 +27,7 @@ function Router() {
       <Route path="/services/skate-sharpening" component={SkateSharpening} />
       <Route path="/services/learn-to-skate" component={LearnToSkate} />
       <Route path="/tennessee/nashville-ice-skating" component={NashvilleHub} />
+      <Route path="/city/tn/nashville" component={NashvilleCityHub} />
       <Route path="/blog" component={BlogIndex} />
       <Route path="/blog/:slug" component={BlogPost} />
       
