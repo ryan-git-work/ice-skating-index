@@ -4,7 +4,6 @@ import { Link } from "wouter";
 import { Separator } from "@/components/ui/separator";
 import { RinkCard } from "@/components/RinkCard";
 import { rinks, getRinksByState } from "@/lib/data";
-import { EmailOptIn } from "@/components/EmailOptIn";
 import { LastVerified } from "@/components/LastVerified";
 import { MapPin, CheckCircle, XCircle, Calendar, ArrowRight } from "lucide-react";
 import { buildRinkItemList } from "@/lib/seo";
@@ -219,8 +218,6 @@ export default function TennesseeStateHub() {
                 ))}
               </div>
             </section>
-
-            <EmailOptIn cityName="Tennessee" />
 
             <LastVerified date="2026-05-23" />
 

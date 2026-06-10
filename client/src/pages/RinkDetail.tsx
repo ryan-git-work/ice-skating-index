@@ -14,7 +14,6 @@ import { useHead } from "@/hooks/use-head";
 import { useState, useEffect } from "react";
 import { NextPublicSkateSessions } from "@/components/NextPublicSkateSessions";
 import { NearbyRinks } from "@/components/NearbyRinks";
-import { EmailOptIn } from "@/components/EmailOptIn";
 import { LastVerified } from "@/components/LastVerified";
 import { getNearbyRinks } from "@/lib/data";
 import ReactMarkdown from "react-markdown";
@@ -407,8 +406,6 @@ export default function RinkDetail() {
                 </section>
               );
             })()}
-
-            <EmailOptIn cityName={rink.address.city} />
 
             <LastVerified date={rink.last_verified || "2026-05-23"} />
           </div>
