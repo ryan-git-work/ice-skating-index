@@ -9,11 +9,14 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { useState, useMemo } from "react";
 import { Search, Filter, X } from "lucide-react";
 import { useHead } from "@/hooks/use-head";
+import { buildRinkItemList } from "@/lib/seo";
 
 export default function Browse() {
   useHead({
     title: "Browse Rinks",
-    description: "Browse ice skating rinks across 11 states. Search by city or state to find public skating times, freestyle sessions, skate sharpening, and hockey programs near you."
+    description: "Browse ice skating rinks across 11 states. Search by city or state to find public skating times, freestyle sessions, skate sharpening, and hockey programs near you.",
+    canonicalPath: "/browse",
+    structuredData: [buildRinkItemList(rinks, "/browse", "Ice Skating Rinks Directory")],
   });
 
   const [searchQuery, setSearchQuery] = useState("");

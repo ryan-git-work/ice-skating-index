@@ -7,6 +7,7 @@ import { rinks, getRinksByState } from "@/lib/data";
 import { EmailOptIn } from "@/components/EmailOptIn";
 import { LastVerified } from "@/components/LastVerified";
 import { MapPin, CheckCircle, XCircle, Calendar, ArrowRight } from "lucide-react";
+import { buildRinkItemList } from "@/lib/seo";
 
 const RINK_SLUGS = {
   centennial: "centennial-sportsplex-nashville-tn",
@@ -43,6 +44,8 @@ export default function TennesseeStateHub() {
     description: "Every public ice skating rink in Tennessee \u2014 Nashville's four year-round rinks, Knoxville's Ice Chalet, Chattanooga's seasonal rink, and Memphis-adjacent options. Verified weekly.",
     ogTitle: "Ice Skating in Tennessee: Every Rink, Every City (2026 Guide)",
     ogDescription: "Every public ice skating rink in Tennessee \u2014 Nashville's four year-round rinks, Knoxville's Ice Chalet, Chattanooga's seasonal rink, and Memphis-adjacent options. Verified weekly.",
+    canonicalPath: "/state/tn",
+    structuredData: [buildRinkItemList(tnRinks, "/state/tn", "Ice Skating Rinks in Tennessee")],
   });
 
   return (

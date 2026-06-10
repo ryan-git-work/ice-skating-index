@@ -7,6 +7,7 @@ import { EmailOptIn } from "@/components/EmailOptIn";
 import { LastVerified } from "@/components/LastVerified";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
+import { buildRinkItemList } from "@/lib/seo";
 
 const STATE_NAMES: Record<string, string> = {
   tn: "Tennessee",
@@ -34,7 +35,9 @@ export default function StateHub() {
 
   useHead({
     title: `Ice Skating Rinks in ${stateName}`,
-    description: `Find the best ice skating rinks in ${stateName}. Browse public skating schedules, freestyle sessions, learn-to-skate programs, and hockey rinks across ${stateName}'s top cities.`
+    description: `Find the best ice skating rinks in ${stateName}. Browse public skating schedules, freestyle sessions, learn-to-skate programs, and hockey rinks across ${stateName}'s top cities.`,
+    canonicalPath: `/state/${state}`,
+    structuredData: [buildRinkItemList(stateRinks, `/state/${state}`, `Ice Skating Rinks in ${stateName}`)],
   });
 
   if (stateRinks.length === 0) {

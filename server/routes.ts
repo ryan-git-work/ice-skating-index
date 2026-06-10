@@ -20,7 +20,7 @@ interface Rink {
 const rinks = rinksData as Rink[];
 
 function getAllStates(): string[] {
-  const states = new Set(rinks.map((r) => r.address.state));
+  const states = new Set(rinks.map((r) => r.address.state.toLowerCase()));
   return Array.from(states).sort();
 }
 
@@ -31,6 +31,9 @@ export async function registerRoutes(
   app.get("/sitemap.xml", (_req, res) => {
     const baseUrl = "https://iceskatingindex.com";
     const now = new Date().toISOString().split('T')[0];
+    const indexableBlogPosts = (blogPosts as any[]).filter(
+      (post) => post.slug !== "ice-skating-nashville"
+    );
 
     // Build unique city pages from rinks data
     const citySet = new Set<string>();
@@ -121,7 +124,7 @@ ${rinks.map(rink => `  <url>
   </url>
 
   <!-- Blog Posts -->
-${blogPosts.map((post: any) => `  <url>
+${indexableBlogPosts.map((post: any) => `  <url>
     <loc>${baseUrl}/blog/${post.slug}</loc>
     <lastmod>${post.publishDate || now}</lastmod>
     <changefreq>monthly</changefreq>
@@ -151,6 +154,18 @@ Sitemap: https://iceskatingindex.com/sitemap.xml
 
   app.get("/blog/ice-skating-nashville/", (_req, res) => {
     res.redirect(301, "/city/tn/nashville");
+  });
+
+  app.get("/tennessee/nashville-ice-skating", (_req, res) => {
+    res.redirect(301, "/city/tn/nashville");
+  });
+
+  app.get("/tennessee/nashville-ice-skating/", (_req, res) => {
+    res.redirect(301, "/city/tn/nashville");
+  });
+
+  app.get(/^\/state\/([A-Z]{2})\/?$/, (req, res) => {
+    res.redirect(301, `/state/${req.params[0].toLowerCase()}`);
   });
 
   app.post("/api/email-signup", async (req, res) => {

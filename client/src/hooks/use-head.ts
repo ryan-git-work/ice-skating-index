@@ -6,6 +6,8 @@ interface HeadProps {
   image?: string;
   ogTitle?: string;
   ogDescription?: string;
+  canonicalPath?: string;
+  structuredData?: object[];
 }
 
 const DEFAULT_DESCRIPTION = "Ice Skating Index is the comprehensive directory for ice skating rinks across the US. Find public skating schedules, freestyle sessions, learn-to-skate programs, and hockey rinks in New York, California, Texas, Illinois, and 7 more states.";
@@ -26,7 +28,7 @@ export function clearSsrHeadCapture() {
   ssrHeadCapture = null;
 }
 
-export function useHead({ title, description, image, ogTitle, ogDescription }: HeadProps) {
+export function useHead({ title, description, image, ogTitle, ogDescription, canonicalPath, structuredData }: HeadProps) {
   // Capture for SSR during render phase
   if (isSsrMode) {
     const fullTitle = title
@@ -39,6 +41,8 @@ export function useHead({ title, description, image, ogTitle, ogDescription }: H
       ...(image !== undefined && { image }),
       ...(ogTitle !== undefined && { ogTitle }),
       ...(ogDescription !== undefined && { ogDescription }),
+      ...(canonicalPath !== undefined && { canonicalPath }),
+      ...(structuredData !== undefined && { structuredData }),
     };
   }
 
@@ -93,5 +97,18 @@ export function useHead({ title, description, image, ogTitle, ogDescription }: H
         twitterImage.setAttribute('content', image);
       }
     }
-  }, [title, description, image, ogTitle, ogDescription]);
+
+    const canonicalHref = canonicalPath
+      ? `https://iceskatingindex.com${canonicalPath === "/" ? "/" : canonicalPath}`
+      : null;
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (canonicalHref) {
+      if (!canonical) {
+        canonical = document.createElement("link");
+        canonical.setAttribute("rel", "canonical");
+        document.head.appendChild(canonical);
+      }
+      canonical.setAttribute("href", canonicalHref);
+    }
+  }, [title, description, image, ogTitle, ogDescription, canonicalPath, structuredData]);
 }

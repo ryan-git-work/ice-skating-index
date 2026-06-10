@@ -17,26 +17,9 @@ import { NearbyRinks } from "@/components/NearbyRinks";
 import { EmailOptIn } from "@/components/EmailOptIn";
 import { LastVerified } from "@/components/LastVerified";
 import { getNearbyRinks } from "@/lib/data";
-
-const SITE_URL = "https://iceskatingindex.com";
-
-const STATE_NAMES: Record<string, string> = {
-  tn: "Tennessee",
-  ny: "New York",
-  ca: "California",
-  il: "Illinois",
-  co: "Colorado",
-  ma: "Massachusetts",
-  mi: "Michigan",
-  mn: "Minnesota",
-  oh: "Ohio",
-  pa: "Pennsylvania",
-  tx: "Texas",
-};
-
-function slugify(text: string) {
-  return text.toLowerCase().replace(/\s+/g, "-");
-}
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import { SITE_URL, STATE_NAMES, slugify } from "@/lib/seo";
 
 function getFaqQA(item: { q?: string; a?: string; question?: string; answer?: string }): { q: string; a: string } {
   if ("question" in item && item.question) return { q: item.question, a: item.answer ?? "" };
@@ -45,15 +28,6 @@ function getFaqQA(item: { q?: string; a?: string; question?: string; answer?: st
 
 function stripFirstParagraph(content?: string) {
   return content?.split("\n\n")[0] ?? "";
-}
-
-function JsonLdScript({ data }: { data: object }) {
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
-    />
-  );
 }
 
 function formatOfferingName(key: string) {
@@ -80,27 +54,9 @@ export default function RinkDetail() {
   const whatToKnow = rink?.what_to_know ?? rink?.seo?.what_to_know;
   const faqItems = rink?.faq ?? [];
 
-  const faqSchema = faqItems.length > 0 ? JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": faqItems.map(item => {
-      const { q, a } = getFaqQA(item as any);
-      return {
-        "@type": "Question",
-        "name": q,
-        "acceptedAnswer": { "@type": "Answer", "text": a }
-      };
-    })
-  }) : null;
-
   const metaTitle = rink?.seo?.meta_title ?? rink?.name ?? "Rink Not Found";
   const metaDescription = rink?.seo?.meta_description ??
     (rink ? `${rink.name} in ${rink.address.city}, ${rink.address.state} offers ${buildOfferingList(rink).join(", ")}. Find schedules, pricing, and directions at Ice Skating Index.` : undefined);
-
-  useHead({
-    title: metaTitle,
-    description: metaDescription,
-  });
 
   const rinkSchema = rink
     ? (() => {
@@ -161,15 +117,19 @@ export default function RinkDetail() {
       }
     : null;
 
+  useHead({
+    title: metaTitle,
+    description: metaDescription,
+    canonicalPath: rink ? `/rink/${rink.slug}` : undefined,
+    structuredData: [rinkSchema, breadcrumbSchema, faqSchemaObj].filter(Boolean) as object[],
+  });
+
   if (!rink) {
     return <NotFound />;
   }
 
   return (
     <Layout>
-      {rinkSchema && <JsonLdScript data={rinkSchema} />}
-      {breadcrumbSchema && <JsonLdScript data={breadcrumbSchema} />}
-      {faqSchemaObj && <JsonLdScript data={faqSchemaObj} />}
       <div className="bg-muted/30 border-b">
         <div className="container mx-auto px-4 py-4 text-sm text-muted-foreground flex items-center gap-2">
           <Link href="/" className="hover:text-primary">Home</Link>
@@ -402,6 +362,16 @@ export default function RinkDetail() {
                     const { q, a } = getFaqQA(item as any);
                     return <FaqItem key={i} question={q} answer={a} />;
                   })}
+                </div>
+              </section>
+            )}
+
+            {rink.editorial_markdown && (
+              <section>
+                <div className="prose prose-slate max-w-none prose-headings:font-serif prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4 prose-p:text-muted-foreground prose-p:leading-relaxed prose-li:text-muted-foreground prose-strong:text-foreground prose-a:text-primary prose-a:no-underline hover:prose-a:underline">
+                  <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                    {rink.editorial_markdown}
+                  </ReactMarkdown>
                 </div>
               </section>
             )}

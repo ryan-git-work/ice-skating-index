@@ -10,11 +10,11 @@ export function serveStatic(app: Express) {
     );
   }
 
-  app.use(express.static(distPath));
+  app.use(express.static(distPath, { redirect: false }));
 
   // Serve pre-rendered index.html for SPA routes that have one
   app.use("*", (req, res) => {
-    const reqPath = req.path;
+    const reqPath = req.originalUrl.split("?")[0];
     // Try the pre-rendered page for this exact path
     const prerenderedPath = path.join(distPath, reqPath, "index.html");
     if (fs.existsSync(prerenderedPath)) {

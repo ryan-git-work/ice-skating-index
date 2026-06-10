@@ -27,13 +27,13 @@ rinks.forEach((r: any) => {
 citySet.forEach((entry) => {
   const [state, city] = entry.split("|");
   routes.push(`/city/${state}/${city}`);
-  routes.push(`/state/${state}/${city}`);
 });
 
 rinks.forEach((r: any) => routes.push(`/rink/${r.slug}`));
 routes.push("/blog");
-blogPosts.forEach((p: any) => routes.push(`/blog/${p.slug}`));
-routes.push("/tennessee/nashville-ice-skating");
+blogPosts
+  .filter((p: any) => p.slug !== "ice-skating-nashville")
+  .forEach((p: any) => routes.push(`/blog/${p.slug}`));
 
 console.log(`Will pre-render ${routes.length} pages`);
 
@@ -78,6 +78,17 @@ for (const route of routes) {
     if (head?.ogDescription) {
       headContent += `<meta property="og:description" content="${escapeHtml(head.ogDescription)}">\n`;
     }
+    if (head?.canonicalPath) {
+      const href = head.canonicalPath === "/"
+        ? "https://iceskatingindex.com/"
+        : `https://iceskatingindex.com${head.canonicalPath}`;
+      headContent += `<link rel="canonical" href="${escapeHtml(href)}">\n`;
+    }
+    if (head?.structuredData?.length) {
+      headContent += head.structuredData
+        .map((data: object) => `<script type="application/ld+json">${escapeJsonLd(data)}</script>`)
+        .join("\n") + "\n";
+    }
 
     const finalHtml = indexHtml
       .replace("</head>", headContent + "</head>")
@@ -103,4 +114,8 @@ function escapeHtml(text: string): string {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#039;");
+}
+
+function escapeJsonLd(data: object): string {
+  return JSON.stringify(data).replace(/</g, "\\u003c");
 }

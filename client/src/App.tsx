@@ -13,7 +13,6 @@ import CityHub from "@/pages/CityHub";
 import FreestyleHub from "@/pages/FreestyleHub";
 import SkateSharpening from "@/pages/SkateSharpening";
 import LearnToSkate from "@/pages/LearnToSkate";
-import NashvilleHub from "@/pages/NashvilleHub";
 import NashvilleCityHub from "@/pages/NashvilleCityHub";
 import TennesseeStateHub from "@/pages/TennesseeStateHub";
 import BlogIndex from "@/pages/BlogIndex";
@@ -28,7 +27,6 @@ function Router() {
       <Route path="/freestyle" component={FreestyleHub} />
       <Route path="/services/skate-sharpening" component={SkateSharpening} />
       <Route path="/services/learn-to-skate" component={LearnToSkate} />
-      <Route path="/tennessee/nashville-ice-skating" component={NashvilleHub} />
       <Route path="/city/tn/nashville" component={NashvilleCityHub} />
       <Route path="/blog" component={BlogIndex} />
       <Route path="/blog/:slug" component={BlogPost} />
@@ -40,7 +38,6 @@ function Router() {
       {/* Dynamic Routes */}
       <Route path="/rink/:slug" component={RinkDetail} />
       <Route path="/state/:state" component={StateHub} />
-      <Route path="/state/:state/:city" component={CityHub} />
       <Route path="/city/:state/:city" component={CityHub} />
       
       {/* Fallback */}

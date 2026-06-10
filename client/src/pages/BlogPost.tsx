@@ -11,17 +11,7 @@ import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, ArrowLeft, ArrowRight, User } from "lucide-react";
-
-const SITE_URL = "https://iceskatingindex.com";
-
-function JsonLdScript({ data }: { data: object }) {
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
-    />
-  );
-}
+import { SITE_URL } from "@/lib/seo";
 
 function trimExcerpt(text: string, max = 155) {
   if (text.length <= max) return text;
@@ -35,11 +25,6 @@ export default function BlogPost() {
   const [error, setError] = useState(false);
 
   const postMeta = blogPostRegistry.find(p => p.slug === slug);
-
-  useHead({
-    title: postMeta?.title || "Blog Post",
-    description: postMeta ? trimExcerpt(postMeta.excerpt) : "",
-  });
 
   const articleSchema = postMeta
     ? {
@@ -60,7 +45,7 @@ export default function BlogPost() {
           url: SITE_URL,
           logo: {
             "@type": "ImageObject",
-            url: `${SITE_URL}/logo.png`,
+            url: `${SITE_URL}/favicon.png`,
           },
         },
         mainEntityOfPage: {
@@ -81,6 +66,13 @@ export default function BlogPost() {
         ],
       }
     : null;
+
+  useHead({
+    title: postMeta?.title || "Blog Post",
+    description: postMeta ? trimExcerpt(postMeta.excerpt) : "",
+    canonicalPath: postMeta ? `/blog/${postMeta.slug}` : undefined,
+    structuredData: [articleSchema, breadcrumbSchema].filter(Boolean) as object[],
+  });
 
   useEffect(() => {
     if (!postMeta) {
@@ -119,8 +111,6 @@ export default function BlogPost() {
 
   return (
     <Layout>
-      {articleSchema && <JsonLdScript data={articleSchema} />}
-      {breadcrumbSchema && <JsonLdScript data={breadcrumbSchema} />}
       <div className="bg-muted/30 border-b">
         <div className="container mx-auto px-4 py-12">
           <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">

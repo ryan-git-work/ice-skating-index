@@ -7,8 +7,7 @@ import { rinks } from "@/lib/data";
 import { EmailOptIn } from "@/components/EmailOptIn";
 import { LastVerified } from "@/components/LastVerified";
 import { MapPin, CheckCircle, XCircle, Calendar, DollarSign, Ticket } from "lucide-react";
-
-const SITE_URL = "https://iceskatingindex.com";
+import { buildRinkItemList } from "@/lib/seo";
 
 const RINK_SLUGS = {
   centennial: "centennial-sportsplex-nashville-tn",
@@ -43,6 +42,8 @@ export default function NashvilleCityHub() {
     description: "Every public ice skating rink in Nashville and Middle Tennessee \u2014 Centennial Sportsplex, all three Ford Ice Centers, plus seasonal options. Real prices, real schedules, verified weekly.",
     ogTitle: "Ice Skating in Nashville, TN: Every Rink, Price, and Schedule (2026 Guide)",
     ogDescription: "Every public ice skating rink in Nashville and Middle Tennessee \u2014 Centennial Sportsplex, all three Ford Ice Centers, plus seasonal options. Real prices, real schedules, verified weekly.",
+    canonicalPath: "/city/tn/nashville",
+    structuredData: [buildRinkItemList(nashvilleRinks, "/city/tn/nashville", "Ice Skating Rinks in Nashville, Tennessee")],
   });
 
   return (

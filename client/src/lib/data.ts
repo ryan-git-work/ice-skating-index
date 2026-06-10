@@ -113,6 +113,7 @@ export const RinkSchema = z.object({
     tagline: z.string(),
   })).optional(),
   description: z.string().optional(),
+  editorial_markdown: z.string().optional(),
   what_to_know: z.array(z.string()).optional(),
   faq: z.array(z.union([
     z.object({ q: z.string(), a: z.string() }),
