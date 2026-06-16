@@ -164,6 +164,14 @@ Sitemap: https://iceskatingindex.com/sitemap.xml
     res.redirect(301, "/city/tn/nashville");
   });
 
+  app.get("/rink/brighton-arena-brighton-ma", (_req, res) => {
+    res.redirect(301, "/rink/reilly-memorial-rink-brighton-ma");
+  });
+
+  app.get("/rink/brighton-arena-brighton-ma/", (_req, res) => {
+    res.redirect(301, "/rink/reilly-memorial-rink-brighton-ma");
+  });
+
   app.get(/^\/state\/([A-Z]{2})\/?$/, (req, res) => {
     res.redirect(301, `/state/${req.params[0].toLowerCase()}`);
   });
