@@ -679,5 +679,175 @@
     "publishDate": "2026-04-16",
     "excerpt": "The 2026 US Figure Skating Championships set the Olympic stage: Malinin's fourth straight men's title, Glenn's third consecutive women's crown, and Chock & Bates breaking the all-time record for US ice dance titles.",
     "fileName": "news-2026-us-figure-skating-championships.md"
+  },
+  {
+    "slug": "ice-skating-near-me",
+    "title": "Ice Skating Near Me: How to Find Public Skating Wherever You Are",
+    "metaDescription": "Looking for ice skating near you? How to find public skating sessions, compare indoor and seasonal rinks, read a schedule, and pick the right rink.",
+    "targetKeyword": "ice skating near me",
+    "secondaryKeywords": [
+      "public skating near me",
+      "ice rinks near me",
+      "where to ice skate",
+      "find an ice rink"
+    ],
+    "category": "Skating Lifestyle",
+    "publishDate": "2026-06-22",
+    "excerpt": "You decided you want to skate this weekend, and now you are staring at a map with no idea which of those buildings actually has ice on a public schedule. The…",
+    "fileName": "ice-skating-near-me.md",
+    "hasDynamicRinkLinks": true
+  },
+  {
+    "slug": "how-to-ice-skate",
+    "title": "How to Ice Skate: A Step-by-Step Guide for Beginners",
+    "metaDescription": "Learn how to ice skate step by step: getting on the ice, balance, gliding, stopping, turning, falling safely, and a simple plan for your first visits.",
+    "targetKeyword": "how to ice skate",
+    "secondaryKeywords": [
+      "how to skate on ice",
+      "learn to ice skate",
+      "ice skating basics",
+      "ice skating for beginners step by step"
+    ],
+    "category": "Beginner Guides",
+    "publishDate": "2026-06-22",
+    "excerpt": "The first time you step onto ice, your body will try to walk, and ice does not care about walking. That single mismatch is the whole challenge, and it is als…",
+    "fileName": "how-to-ice-skate.md",
+    "hasDynamicRinkLinks": true
+  },
+  {
+    "slug": "what-to-expect-public-skating",
+    "title": "Public Skating 101: What to Expect at Your First Public Skate",
+    "metaDescription": "New to public skating? What a public skate session is, how to find one, what to bring, how rentals work, the etiquette, and what it costs at most rinks.",
+    "targetKeyword": "public skating",
+    "secondaryKeywords": [
+      "what is public skating",
+      "public skate session",
+      "open skate",
+      "public ice skating"
+    ],
+    "category": "Beginner Guides",
+    "publishDate": "2026-06-22",
+    "excerpt": "The doors swing open, the cold air hits you, and there it is: a sheet of ice with a dozen strangers gliding in slow loops. You have skates somewhere in your …",
+    "fileName": "what-to-expect-public-skating.md",
+    "hasDynamicRinkLinks": true
+  },
+  {
+    "slug": "learn-to-skate-as-an-adult",
+    "title": "Learn to Skate as an Adult: A Beginner's Guide to Starting on the Ice",
+    "metaDescription": "It is never too late to learn to skate. A guide for adults: handling fear, group vs private lessons, gear, realistic progress, and where to start.",
+    "targetKeyword": "learn to skate as an adult",
+    "secondaryKeywords": [
+      "adult ice skating lessons",
+      "adult learn to skate",
+      "ice skating for adults",
+      "is it too late to learn to skate"
+    ],
+    "category": "Beginner Guides",
+    "publishDate": "2026-06-22",
+    "excerpt": "You watched a kid half your height glide backward across the rink while you white-knuckled the boards, and a quiet voice asked whether you missed your window…",
+    "fileName": "learn-to-skate-as-an-adult.md",
+    "hasDynamicRinkLinks": true
+  },
+  {
+    "slug": "ice-skating-lessons-guide",
+    "title": "Ice Skating Lessons: Costs, Levels, and How to Choose a Program",
+    "metaDescription": "A complete guide to ice skating lessons: group vs private, Learn to Skate levels, what lessons cost, how to choose a coach, and what a first class is like.",
+    "targetKeyword": "ice skating lessons",
+    "secondaryKeywords": [
+      "learn to skate program",
+      "ice skating classes",
+      "ice skating lessons near me",
+      "group vs private skating lessons"
+    ],
+    "category": "Beginner Guides",
+    "publishDate": "2026-06-22",
+    "excerpt": "You laced up once, wobbled to the boards, and held on for dear life. Then you watched a kid half your size glide past with no hands on the rail and thought, …",
+    "fileName": "ice-skating-lessons-guide.md",
+    "hasDynamicRinkLinks": true
+  },
+  {
+    "slug": "rink-session-types-guide",
+    "title": "Open Skate, Stick Time, and Freestyle: A Guide to Ice Rink Sessions",
+    "metaDescription": "Decode any rink schedule: public skate, learn-to-skate, freestyle, stick time, open hockey, and leagues, with what each is, who it is for, and the etiquette.",
+    "targetKeyword": "ice rink session types",
+    "secondaryKeywords": [
+      "stick time vs open skate",
+      "what is freestyle ice",
+      "open hockey vs stick time",
+      "public skate vs open skate"
+    ],
+    "category": "Skating Lifestyle",
+    "publishDate": "2026-06-22",
+    "excerpt": "You pull up a rink's online schedule and it reads like a foreign language. Public skate, stick time, freestyle, open hockey, drop-in, learn to skate, all sta…",
+    "fileName": "rink-session-types-guide.md",
+    "hasDynamicRinkLinks": true
+  },
+  {
+    "slug": "figure-skating-jumps-explained",
+    "title": "Figure Skating Jumps Explained: Axel, Lutz, Loop, Salchow, and More",
+    "metaDescription": "The six figure skating jumps explained simply: toe loop, salchow, loop, flip, lutz, and axel. How edge and toe jumps differ and how to tell them apart.",
+    "targetKeyword": "figure skating jumps",
+    "secondaryKeywords": [
+      "types of figure skating jumps",
+      "axel lutz loop difference",
+      "edge jumps vs toe jumps",
+      "how to tell figure skating jumps apart"
+    ],
+    "category": "Figure Skating Technique",
+    "publishDate": "2026-06-22",
+    "excerpt": "A skater glides backward across the ice, picks a spot, and a half-second later they are spinning in the air. By the time you register what happened, they hav…",
+    "fileName": "figure-skating-jumps-explained.md",
+    "hasDynamicRinkLinks": true
+  },
+  {
+    "slug": "getting-kids-started-ice-skating",
+    "title": "A Skating Parent's Guide: Getting Your Child Started on the Ice",
+    "metaDescription": "Putting your child on the ice? A parent's guide to the right age, the first visit, gear for kids, learn-to-skate, the figure vs hockey path, and building a habit.",
+    "targetKeyword": "ice skating for kids",
+    "secondaryKeywords": [
+      "getting kids into ice skating",
+      "best age to start ice skating",
+      "kids learn to skate",
+      "ice skating for children"
+    ],
+    "category": "Beginner Guides",
+    "publishDate": "2026-06-22",
+    "excerpt": "Your kid points at the rink, eyes wide, and asks to try. Maybe a birthday party put them on skates for an hour, or a cartoon did it, or a friend down the str…",
+    "fileName": "getting-kids-started-ice-skating.md",
+    "hasDynamicRinkLinks": true
+  },
+  {
+    "slug": "ice-skating-birthday-party",
+    "title": "Ice Skating Birthday Parties: How to Plan One at a Local Rink",
+    "metaDescription": "Planning an ice skating birthday party? How rink party packages work, booking, group size and mixed skill levels, what to bring, timing, food, and safety.",
+    "targetKeyword": "ice skating birthday party",
+    "secondaryKeywords": [
+      "ice skating party",
+      "birthday party at ice rink",
+      "skating party ideas",
+      "ice rink party packages"
+    ],
+    "category": "Skating Lifestyle",
+    "publishDate": "2026-06-22",
+    "excerpt": "The cake is melting in the car, twelve kids are lacing up rentals, and somebody's little brother just took his first wobbly glide across the blue line and be…",
+    "fileName": "ice-skating-birthday-party.md",
+    "hasDynamicRinkLinks": true
+  },
+  {
+    "slug": "when-does-ice-skating-season-start",
+    "title": "When Does Ice Skating Season Start? Indoor, Outdoor, and Year-Round Rinks",
+    "metaDescription": "When can you ice skate? It depends on the rink. A guide to year-round indoor rinks, seasonal fall-to-spring rinks, and winter-only outdoor rinks.",
+    "targetKeyword": "ice skating season",
+    "secondaryKeywords": [
+      "when does ice skating season start",
+      "year-round ice skating",
+      "indoor vs outdoor ice skating",
+      "when do ice rinks open"
+    ],
+    "category": "Skating Lifestyle",
+    "publishDate": "2026-06-22",
+    "excerpt": "You look outside in July, see ninety degrees, and assume skating is off the table for months. Then a friend mentions they took their kid skating last weekend…",
+    "fileName": "when-does-ice-skating-season-start.md",
+    "hasDynamicRinkLinks": true
   }
 ]

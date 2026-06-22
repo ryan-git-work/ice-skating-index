@@ -2,7 +2,13 @@ import { useState, useEffect } from "react";
 import { Layout } from "@/components/Layout";
 import { useHead } from "@/hooks/use-head";
 import { Link, useParams } from "wouter";
-import { blogPostRegistry, getRelatedPosts, fetchPost, parseFrontMatter, replaceRinkPlaceholders } from "@/lib/blog";
+import {
+  blogPostRegistry,
+  getRelatedPosts,
+  fetchPost,
+  getStaticPostContent,
+  preparePostContent,
+} from "@/lib/blog";
 import "@/data/blogRegistry";
 import { BlogImage } from "@/components/BlogImage";
 import { rinks } from "@/lib/data";
@@ -18,13 +24,31 @@ function trimExcerpt(text: string, max = 155) {
   return text.slice(0, max).replace(/\s+\S*$/, "") + "…";
 }
 
+function formatPublishDate(date: string) {
+  const [year, month, day] = date.split("-").map(Number);
+  const parsed = year && month && day
+    ? new Date(year, month - 1, day)
+    : new Date(date);
+
+  return parsed.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+}
+
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
-  const [content, setContent] = useState<string | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(false);
-
   const postMeta = blogPostRegistry.find(p => p.slug === slug);
+  const initialContent = postMeta
+    ? getStaticPostContent(postMeta.fileName)
+    : null;
+  const renderedInitialContent = initialContent
+    ? preparePostContent(initialContent, postMeta?.hasDynamicRinkLinks, rinks)
+    : null;
+  const [content, setContent] = useState<string | null>(renderedInitialContent);
+  const [loading, setLoading] = useState(!renderedInitialContent);
+  const [error, setError] = useState(false);
 
   const articleSchema = postMeta
     ? {
@@ -82,17 +106,18 @@ export default function BlogPost() {
     }
     setLoading(true);
     setError(false);
+    if (renderedInitialContent) {
+      setContent(renderedInitialContent);
+      setLoading(false);
+      return;
+    }
     fetchPost(postMeta.fileName)
       .then(raw => {
-        let { content: body } = parseFrontMatter(raw);
-        if (postMeta.hasDynamicRinkLinks) {
-          body = replaceRinkPlaceholders(body, rinks);
-        }
-        setContent(body);
+        setContent(preparePostContent(raw, postMeta.hasDynamicRinkLinks, rinks));
       })
       .catch(() => setError(true))
       .finally(() => setLoading(false));
-  }, [slug, postMeta]);
+  }, [slug, postMeta, renderedInitialContent]);
 
   if (!postMeta || error) {
     return (
@@ -142,11 +167,7 @@ export default function BlogPost() {
             </span>
             <span className="flex items-center gap-1.5">
               <Calendar className="h-3.5 w-3.5" />
-              {new Date(postMeta.publishDate).toLocaleDateString("en-US", {
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-              })}
+              {formatPublishDate(postMeta.publishDate)}
             </span>
           </div>
         </div>

@@ -16,6 +16,21 @@ export interface BlogPost extends BlogPostMeta {
   content: string;
 }
 
+const staticPostModules = import.meta.env.SSR
+  ? import.meta.glob("../../public/posts/*.md", {
+      query: "?raw",
+      import: "default",
+      eager: true,
+    }) as Record<string, string>
+  : {};
+
+const staticPostContent = new Map(
+  Object.entries(staticPostModules).map(([filePath, content]) => {
+    const fileName = filePath.split("/").pop() || filePath;
+    return [fileName, content];
+  }),
+);
+
 export const blogPostRegistry: BlogPostMeta[] = [];
 
 export function registerPost(meta: BlogPostMeta) {
@@ -64,6 +79,18 @@ export async function fetchPost(fileName: string): Promise<string> {
     throw new Error(`Failed to load post: ${fileName}`);
   }
   return response.text();
+}
+
+export function getStaticPostContent(fileName: string): string | null {
+  return staticPostContent.get(fileName) ?? null;
+}
+
+export function preparePostContent(raw: string, hasDynamicRinkLinks: boolean | undefined, rinks: any[]): string {
+  let { content } = parseFrontMatter(raw);
+  if (hasDynamicRinkLinks) {
+    content = replaceRinkPlaceholders(content, rinks);
+  }
+  return content;
 }
 
 export function extractExcerpt(content: string, maxLength = 160): string {
