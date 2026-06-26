@@ -54,4 +54,4 @@ A beloved institution on Cleveland's west side, [Winterhurst Ice Rink in Lakewoo
 
 **Ohio State fuels hockey passion.** Ohio State's Big Ten hockey program has grown significantly in recent years, and interest in the sport across central Ohio continues to increase.
 
-See all Ohio ice skating rinks in the [Ohio state rink guide](/state/OH).
+See all Ohio ice skating rinks in the [Ohio state rink guide](/state/oh).

@@ -145,7 +145,7 @@ For Clarksville residents, Ford Ice Center fills a genuine gap. Before the facil
 
 ## The Broader Ford Ice Center Network
 
-Ford Ice Center Clarksville is part of the Nashville Predators' three-facility network across Middle Tennessee. For a comprehensive look at all Nashville area ice skating options, visit our [Nashville ice skating guide](/blog/ice-skating-nashville).
+Ford Ice Center Clarksville is part of the Nashville Predators' three-facility network across Middle Tennessee. For a comprehensive look at all Nashville area ice skating options, visit our [Nashville ice skating guide](/city/tn/nashville).
 
 ---
 
@@ -165,6 +165,6 @@ Ford Ice Center Clarksville is part of the Nashville Predators' three-facility n
 
 ## Find More Tennessee Rinks
 
-Ford Ice Center Clarksville is one of four rinks in the greater Nashville / Middle Tennessee area. For schedules, pricing, and additional details on all four locations — including Centennial Sportsplex — use the [Ice Skating Index rink finder](/find-a-rink).
+Ford Ice Center Clarksville is one of four rinks in the greater Nashville / Middle Tennessee area. For schedules, pricing, and additional details on all four locations — including Centennial Sportsplex — use the [Ice Skating Index rink finder](/browse).
 
 The ice is ready. The session is waiting. Register ahead, dress warm, and we'll see you on the ice.

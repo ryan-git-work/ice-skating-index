@@ -11,11 +11,16 @@ import {
 } from "@/components/ui/collapsible";
 import { ChevronDown, Sparkles, Users, BookOpen, Clock, MapPin } from "lucide-react";
 import { useState } from "react";
+import { buildWebPageSchema } from "@/lib/seo";
 
 export default function LearnToSkate() {
+  const description = "Understand how Learn to Skate programs work, what to expect, and how to find beginner skating lessons near you. A practical guide for new skaters of all ages.";
+
   useHead({
     title: "Learn to Skate Programs",
-    description: "Understand how Learn to Skate programs work, what to expect, and how to find beginner skating lessons near you. A practical guide for new skaters of all ages."
+    description,
+    canonicalPath: "/services/learn-to-skate",
+    structuredData: [buildWebPageSchema("/services/learn-to-skate", "Learn to Skate Programs", description)],
   });
 
   const [showRinks, setShowRinks] = useState(false);

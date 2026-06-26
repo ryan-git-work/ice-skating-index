@@ -98,4 +98,4 @@ Shaidorov winning from fifth. Glenn landing the triple axel after everything she
 
 These are the moments that make people google "ice skating rinks near me" at 11pm on a Tuesday. If that's you — welcome. Find a rink in your state and see what the first step feels like.
 
-Browse rinks by state: [NY](/state/NY) · [CA](/state/CA) · [TX](/state/TX) · [IL](/state/IL) · [CO](/state/CO) · [MI](/state/MI) · [MN](/state/MN) · [MA](/state/MA) · [PA](/state/PA) · [OH](/state/OH) · [TN](/state/TN)
+Browse rinks by state: [NY](/state/ny) · [CA](/state/ca) · [TX](/state/tx) · [IL](/state/il) · [CO](/state/co) · [MI](/state/mi) · [MN](/state/mn) · [MA](/state/ma) · [PA](/state/pa) · [OH](/state/oh) · [TN](/state/tn)

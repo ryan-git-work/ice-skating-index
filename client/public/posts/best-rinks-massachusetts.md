@@ -64,4 +64,4 @@ A South Shore favorite, [Hobomock Arena in Pembroke](/rink/hobomock-arena-pembro
 
 **Winter is busy, so plan ahead.** Massachusetts rinks fill up fast from October through March, and the DCR rinks only have ice for part of the year. Confirm schedules and book weekend public sessions in advance where you can.
 
-See the full list of Massachusetts ice skating rinks at the [Massachusetts state rink guide](/state/MA).
+See the full list of Massachusetts ice skating rinks at the [Massachusetts state rink guide](/state/ma).

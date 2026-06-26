@@ -87,6 +87,7 @@ export function getStaticPostContent(fileName: string): string | null {
 
 export function preparePostContent(raw: string, hasDynamicRinkLinks: boolean | undefined, rinks: any[]): string {
   let { content } = parseFrontMatter(raw);
+  content = content.replace(/^\s*#\s+[^\r\n]+(?:\r?\n)+/, "");
   if (hasDynamicRinkLinks) {
     content = replaceRinkPlaceholders(content, rinks);
   }

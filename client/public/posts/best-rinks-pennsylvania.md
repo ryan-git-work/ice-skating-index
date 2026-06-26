@@ -62,4 +62,4 @@ North of Pittsburgh in Butler County, [Baierl Ice Complex in Cranberry Township]
 
 **Penn State and Pitt hockey fuel the state's passion.** Pennsylvania's strong college hockey tradition — especially Penn State's recent rise — has helped grow interest in the sport statewide.
 
-Explore all Pennsylvania rinks in the [Pennsylvania state rink guide](/state/PA).
+Explore all Pennsylvania rinks in the [Pennsylvania state rink guide](/state/pa).

@@ -185,9 +185,6 @@ export default function TennesseeStateHub() {
                 <p>
                   For Chattanoogans who want regular ice time, the closest year-round options are in Knoxville (~1.5 hours north) or the Nashville-area rinks (~2 hours northwest).
                 </p>
-                <div className="mt-4">
-                  <CityLink slug="chattanooga">Full Chattanooga guide</CityLink>
-                </div>
               </div>
             </section>
 
@@ -202,9 +199,6 @@ export default function TennesseeStateHub() {
                 <p>
                   For Memphis residents wanting to skate in-state, the nearest Tennessee rinks are in Nashville (~3 hours east) or Clarksville (~2.5 hours northeast via I-24).
                 </p>
-                <div className="mt-4">
-                  <CityLink slug="memphis">Full Memphis-area guide</CityLink>
-                </div>
               </div>
             </section>
 

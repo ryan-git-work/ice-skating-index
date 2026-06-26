@@ -60,4 +60,4 @@ Affiliated with the AHL's Grand Rapids Griffins, [Griff's Icehouse](/rink/griffs
 
 **Public skating is affordable.** Even at premier facilities like USA Hockey Arena, public skating rates are very reasonable — typically $8-$10 for adults.
 
-Explore all Michigan rinks on the [Michigan state rink guide](/state/MI).
+Explore all Michigan rinks on the [Michigan state rink guide](/state/mi).

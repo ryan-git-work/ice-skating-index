@@ -58,7 +58,7 @@ export default function NashvilleHub() {
         "@id": "https://iceskatingindex.com/tennessee/nashville-ice-skating/#breadcrumbs",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://iceskatingindex.com/" },
-          { "@type": "ListItem", "position": 2, "name": "Tennessee", "item": "https://iceskatingindex.com/state/TN" },
+          { "@type": "ListItem", "position": 2, "name": "Tennessee", "item": "https://iceskatingindex.com/state/tn" },
           { "@type": "ListItem", "position": 3, "name": "Nashville Ice Skating", "item": "https://iceskatingindex.com/tennessee/nashville-ice-skating/" }
         ]
       },
@@ -102,7 +102,7 @@ export default function NashvilleHub() {
           <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
             <Link href="/" className="hover:text-primary">Home</Link>
             <span>/</span>
-            <Link href="/state/TN" className="hover:text-primary">Tennessee</Link>
+            <Link href="/state/tn" className="hover:text-primary">Tennessee</Link>
             <span>/</span>
             <span>Nashville</span>
           </div>

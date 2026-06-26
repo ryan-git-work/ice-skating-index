@@ -62,4 +62,4 @@ For skaters in the Inland Empire, [Icetown Riverside](/rink/icetown-riverside-ca
 
 **Check for open hockey sessions.** Hockey culture is growing rapidly in California. Many rinks offer adult open hockey sessions that welcome skaters of all skill levels.
 
-For a complete directory of California ice skating rinks, see the [California state rink guide](/state/CA).
+For a complete directory of California ice skating rinks, see the [California state rink guide](/state/ca).

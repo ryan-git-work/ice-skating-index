@@ -186,7 +186,7 @@ Both are Ford Ice locations with identical pricing and programming. Antioch is b
 
 ## Find More Nashville Rinks
 
-For a complete guide to ice skating options across the Nashville area — including Centennial Sportsplex, Ford Ice Antioch, and seasonal options — visit the [Ice Skating Index Nashville guide](/blog/ice-skating-nashville).
+For a complete guide to ice skating options across the Nashville area — including Centennial Sportsplex, Ford Ice Antioch, and seasonal options — visit the [Ice Skating Index Nashville guide](/city/tn/nashville).
 
 New to skating and not sure where to start? Our [complete beginner guide to ice skating](/blog/ice-skating-for-beginners) covers everything from lacing up your skates to your first time on the ice.
 

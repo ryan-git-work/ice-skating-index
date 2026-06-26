@@ -58,4 +58,4 @@ Serving the Southwest Houston suburbs, [Sugar Land Ice and Sports Center](/rink/
 
 **Houston and SA options are solid.** While DFW has more facilities overall, Houston's Aerodrome and San Antonio's Ice at the Rim are quality venues that serve their communities well.
 
-See all Texas ice skating rinks in the [Texas state rink guide](/state/TX).
+See all Texas ice skating rinks in the [Texas state rink guide](/state/tx).

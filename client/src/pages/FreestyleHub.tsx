@@ -11,11 +11,16 @@ import {
 } from "@/components/ui/collapsible";
 import { ChevronDown, Sparkles, Users, Eye, CheckCircle, HelpCircle, MapPin } from "lucide-react";
 import { useState } from "react";
+import { buildWebPageSchema } from "@/lib/seo";
 
 export default function FreestyleHub() {
+  const description = "Learn what freestyle sessions are, who they are for, and how they differ from public skate. A complete guide to freestyle ice for figure skaters.";
+
   useHead({
     title: "Freestyle Sessions | What is Freestyle Ice Skating",
-    description: "Learn what freestyle sessions are, who they are for, and how they differ from public skate. A complete guide to freestyle ice for figure skaters."
+    description,
+    canonicalPath: "/freestyle",
+    structuredData: [buildWebPageSchema("/freestyle", "Freestyle Sessions", description)],
   });
 
   const [showRinks, setShowRinks] = useState(false);

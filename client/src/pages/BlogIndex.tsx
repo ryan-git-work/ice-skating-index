@@ -8,11 +8,16 @@ import { BlogImage } from "@/components/BlogImage";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Calendar, ArrowRight } from "lucide-react";
+import { buildWebPageSchema } from "@/lib/seo";
 
 export default function BlogIndex() {
+  const description = "Ice skating tips, guides, and resources. Learn about rinks, gear, skating techniques, and more.";
+
   useHead({
     title: "Blog",
-    description: "Ice skating tips, guides, and resources. Learn about rinks, gear, skating techniques, and more.",
+    description,
+    canonicalPath: "/blog",
+    structuredData: [buildWebPageSchema("/blog", "Ice Skating Index Blog", description, "Blog")],
   });
 
   const [activeCategory, setActiveCategory] = useState<string | null>(null);

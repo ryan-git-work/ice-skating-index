@@ -133,7 +133,7 @@ For a casual Nashville skater hitting Centennial or Ford Ice a dozen times a yea
 
 ## Ready to Go?
 
-For current public skate schedules and session availability at Nashville rinks, visit the [Ice Skating Index Nashville guide](/blog/ice-skating-nashville) or check our full breakdown of [every rink in the Nashville area](/blog/ice-skating-nashville).
+For current public skate schedules and session availability at Nashville rinks, visit the [Ice Skating Index Nashville guide](/city/tn/nashville) or check our full breakdown of [every rink in the Nashville area](/city/tn/nashville).
 
 For a broader look at what ice skating costs nationally, see our complete [ice skating cost guide](/blog/how-much-does-ice-skating-cost).
 

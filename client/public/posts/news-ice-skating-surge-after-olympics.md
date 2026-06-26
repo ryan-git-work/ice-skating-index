@@ -54,18 +54,18 @@ Within a few sessions, most adults can move around the ice with reasonable confi
 
 If you're in a major metro area, you likely have multiple options. Use our rink finder to search by state:
 
-- **New York:** [View NY rinks](/state/NY) — from iconic Manhattan venues to quality year-round suburban arenas
-- **California:** [View CA rinks](/state/CA) — year-round indoor ice up and down the state
-- **Texas:** [View TX rinks](/state/TX) — more options than most people expect in a warm-weather state
-- **Colorado:** [View CO rinks](/state/CO) — exceptional facilities across the Front Range
-- **Illinois:** [View IL rinks](/state/IL) — free outdoor skating at Millennium Park plus dozens of indoor rinks
-- **Michigan:** [View MI rinks](/state/MI) — some of the finest ice facilities in the country
-- **Minnesota:** [View MN rinks](/state/MN) — the State of Hockey has rinks everywhere
-- **Massachusetts:** [View MA rinks](/state/MA) — from the historic Skating Club of Boston to affordable city rinks
-- **Pennsylvania:** [View PA rinks](/state/PA) — options from Philadelphia to Pittsburgh
-- **Ohio:** [View OH rinks](/state/OH) — Columbus's Chiller network is a model for any city
+- **New York:** [View NY rinks](/state/ny) — from iconic Manhattan venues to quality year-round suburban arenas
+- **California:** [View CA rinks](/state/ca) — year-round indoor ice up and down the state
+- **Texas:** [View TX rinks](/state/tx) — more options than most people expect in a warm-weather state
+- **Colorado:** [View CO rinks](/state/co) — exceptional facilities across the Front Range
+- **Illinois:** [View IL rinks](/state/il) — free outdoor skating at Millennium Park plus dozens of indoor rinks
+- **Michigan:** [View MI rinks](/state/mi) — some of the finest ice facilities in the country
+- **Minnesota:** [View MN rinks](/state/mn) — the State of Hockey has rinks everywhere
+- **Massachusetts:** [View MA rinks](/state/ma) — from the historic Skating Club of Boston to affordable city rinks
+- **Pennsylvania:** [View PA rinks](/state/pa) — options from Philadelphia to Pittsburgh
+- **Ohio:** [View OH rinks](/state/oh) — Columbus's Chiller network is a model for any city
 
-For Tennessee rinks, browse our [Tennessee directory](/state/TN).
+For Tennessee rinks, browse our [Tennessee directory](/state/tn).
 
 ---
 

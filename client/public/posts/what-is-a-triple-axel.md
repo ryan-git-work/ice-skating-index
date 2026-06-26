@@ -135,6 +135,6 @@ If the 2026 Olympics inspired you to try skating for the first time or get back 
 - **Ford Ice Center Bellevue** (7638 Highway 70 S) — learn-to-skate programs and public sessions
 - **Ford Ice Center Clarksville** (150 College Street, Clarksville) — serving Montgomery County and north of Nashville
 
-Find schedules and session info at [Ice Skating Index](/find-a-rink). If you're just getting started, our [beginner's guide to ice skating](/blog/ice-skating-for-beginners) covers your first session from what to wear to your first strides.
+Find schedules and session info at [Ice Skating Index](/browse). If you're just getting started, our [beginner's guide to ice skating](/blog/ice-skating-for-beginners) covers your first session from what to wear to your first strides.
 
 The triple axel is the ceiling of the sport. The first step onto the ice is where every skater — including Amber Glenn — began.

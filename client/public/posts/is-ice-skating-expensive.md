@@ -165,6 +165,6 @@ For most families and beginners, a regular skating habit costs less per month th
 
 If you're in Nashville and want to get started, Centennial Sportsplex offers walk-in public skating with skate rentals included in the admission price — one of the best entry points in the area. The Ford Ice Centers in Antioch, Bellevue, and Clarksville offer structured programming for those who want to go further.
 
-Find session times, pricing, and Learn to Skate programs for Nashville rinks at [Ice Skating Index](/find-a-rink). And if you're weighing whether to buy your own skates yet, our [buyer's guide to ice skates](/blog/how-much-do-ice-skates-cost) walks through exactly what to look for at every price point.
+Find session times, pricing, and Learn to Skate programs for Nashville rinks at [Ice Skating Index](/browse). And if you're weighing whether to buy your own skates yet, our [buyer's guide to ice skates](/blog/how-much-do-ice-skates-cost) walks through exactly what to look for at every price point.
 
 The ice is open. The cost to start is lower than you probably think.

@@ -2,12 +2,16 @@ import { Layout } from "@/components/Layout";
 import { useHead } from "@/hooks/use-head";
 import { LastVerified } from "@/components/LastVerified";
 import { Mail } from "lucide-react";
+import { buildWebPageSchema } from "@/lib/seo";
 
 export default function About() {
+  const description = "Why we built a verified ice skating directory — and how we keep every rink schedule, price, and detail current.";
+
   useHead({
     title: "About Ice Skating Index",
-    description:
-      "Why we built a verified ice skating directory — and how we keep every rink schedule, price, and detail current.",
+    description,
+    canonicalPath: "/about",
+    structuredData: [buildWebPageSchema("/about", "About Ice Skating Index", description, "AboutPage")],
   });
 
   return (

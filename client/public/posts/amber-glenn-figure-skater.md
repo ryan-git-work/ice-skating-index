@@ -118,7 +118,7 @@ If you're in Nashville, you have excellent options within the city — and you d
 
 The **Ford Ice Centers** in Antioch and Bellevue offer additional ice time across the metro area, with structured learn-to-skate programming at both locations.
 
-You can find rink schedules, public session info, and learn-to-skate programs for all three Nashville rinks at [Ice Skating Index](/find-a-rink). And if you're just getting started, our [beginner's guide to ice skating](/blog/ice-skating-for-beginners) covers everything you need for your first session — what to wear, how to fall safely, and how to take your first strides on the ice.
+You can find rink schedules, public session info, and learn-to-skate programs for all three Nashville rinks at [Ice Skating Index](/browse). And if you're just getting started, our [beginner's guide to ice skating](/blog/ice-skating-for-beginners) covers everything you need for your first session — what to wear, how to fall safely, and how to take your first strides on the ice.
 
 Amber Glenn started on a mall rink in Texas at age five. Everybody starts somewhere.
 
@@ -137,4 +137,4 @@ Amber Glenn started on a mall rink in Texas at age five. Everybody starts somewh
 
 ---
 
-*Ready to find a rink near you? Use our [rink finder](/find-a-rink) to locate ice skating in Nashville and across the country.*
+*Ready to find a rink near you? Use our [rink finder](/browse) to locate ice skating in Nashville and across the country.*

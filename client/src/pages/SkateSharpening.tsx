@@ -11,11 +11,16 @@ import {
 } from "@/components/ui/collapsible";
 import { ChevronDown, Sparkles, AlertCircle, HelpCircle, MapPin } from "lucide-react";
 import { useState } from "react";
+import { buildWebPageSchema } from "@/lib/seo";
 
 export default function SkateSharpening() {
+  const description = "Learn how skate sharpening works, what to ask for, and how to find quality sharpening near you. A practical guide for figure skaters and hockey players.";
+
   useHead({
     title: "Skate Sharpening Guide",
-    description: "Learn how skate sharpening works, what to ask for, and how to find quality sharpening near you. A practical guide for figure skaters and hockey players."
+    description,
+    canonicalPath: "/services/skate-sharpening",
+    structuredData: [buildWebPageSchema("/services/skate-sharpening", "Skate Sharpening Guide", description)],
   });
 
   const [showRinks, setShowRinks] = useState(false);

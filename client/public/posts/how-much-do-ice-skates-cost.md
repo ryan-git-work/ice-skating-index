@@ -169,4 +169,4 @@ The right ice skates cost whatever is appropriate for where you are right now as
 
 Don't buy cheap department-store skates. Don't buy elite skates before you need them. Buy a proper beginner pair, get them fitted well, and enjoy the ice.
 
-If you're in Nashville, the rink pro shops at the Ford Ice Centers and Centennial Sportsplex can help you get sized and pointed in the right direction. Use our [rink finder](/find-a-rink) to locate the Ford Ice Center or Centennial Sportsplex nearest to you, and if you're still figuring out what kind of skating you want to do, our [beginner's guide to ice skating](/blog/ice-skating-for-beginners) covers the basics before your first session.
+If you're in Nashville, the rink pro shops at the Ford Ice Centers and Centennial Sportsplex can help you get sized and pointed in the right direction. Use our [rink finder](/browse) to locate the Ford Ice Center or Centennial Sportsplex nearest to you, and if you're still figuring out what kind of skating you want to do, our [beginner's guide to ice skating](/blog/ice-skating-for-beginners) covers the basics before your first session.

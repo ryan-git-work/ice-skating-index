@@ -25,6 +25,28 @@ export function canonicalUrl(path: string) {
   return `${SITE_URL}${path}`;
 }
 
+export function buildWebPageSchema(
+  pagePath: string,
+  name: string,
+  description: string,
+  type = "WebPage",
+) {
+  const url = canonicalUrl(pagePath);
+
+  return {
+    "@context": "https://schema.org",
+    "@type": type,
+    name,
+    description,
+    url,
+    isPartOf: {
+      "@type": "WebSite",
+      name: "Ice Skating Index",
+      url: `${SITE_URL}/`,
+    },
+  };
+}
+
 export function buildRinkItemList(rinks: Rink[], pagePath: string, name: string) {
   return {
     "@context": "https://schema.org",
