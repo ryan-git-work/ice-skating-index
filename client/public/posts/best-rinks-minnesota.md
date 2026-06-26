@@ -1,61 +1,51 @@
-# Best Ice Skating Rinks in Minnesota: Where Hockey is a Way of Life
+# Best Ice Skating Rinks in Minnesota: A Twin Cities Guide
 
-They call it the State of Hockey — and Minnesota earns that title every winter. With more youth hockey players per capita than almost any other state, a deep figure skating tradition, and community ice arenas seemingly on every other block in the Twin Cities metro, Minnesota is one of the best places in America to skate. Here are the best ice skating rinks in the Land of 10,000 Lakes.
+Few places take ice as seriously as Minnesota, and the Twin Cities prove it. From a single sheet that doubles as an NHL practice facility to multi-sheet arenas and one of the largest outdoor refrigerated ovals in North America, the metro gives skaters of every kind a place to land. The rinks below are all indoor and run year-round, with a few adding seasonal outdoor surfaces when the weather turns. Public session schedules vary by rink, season, and week, so use this guide to plan, then check each rink's page for current hours, sessions, and admission before you go.
 
----
+## Saint Paul
 
-## Twin Cities — Saint Paul
+### [TRIA Rink](/rink/tria-rink-st-paul-mn)
 
-### TRIA Rink — Saint Paul
+TRIA Rink sits in downtown Saint Paul and serves as the Minnesota Wild's official practice facility. The single indoor sheet runs year-round, and skating where an NHL team trains gives any visit a little extra weight. Public access depends on the schedule around the team's use, so this is one to plan carefully. Check the rink's page for current sessions before you go.
 
-[TRIA Rink in Saint Paul](/rink/tria-rink-st-paul-mn) is the Minnesota Wild's official practice facility, located adjacent to Xcel Energy Center in downtown Saint Paul. Open to the public for skating and figure skating programs when the Wild aren't using it, TRIA Rink is a beautiful, modern facility with top-quality ice. Adult admission is around $12 and skate rentals are $6. If you want to skate on NHL-quality ice in a stunning facility, this is the spot.
+## Minneapolis
 
----
+### [Parade Ice Garden](/rink/parade-ice-garden-minneapolis-mn)
 
-## Twin Cities — Minneapolis
+Parade Ice Garden is a major Minneapolis Park and Recreation Board rink set near downtown, with three indoor sheets running year-round. Three surfaces give it the capacity to host public skating, lessons, and hockey without the crowding smaller rinks face. That makes it a reliable stop whether you are a first-timer or a regular. See the rink's page for the latest public schedule.
 
-### Parade Ice Garden — Minneapolis
+## Twin Cities Suburbs
 
-[Parade Ice Garden](/rink/parade-ice-garden-minneapolis-mn) is operated by the Minneapolis Park and Recreation Board and located in the Kenwood neighborhood near Lake of the Isles. This two-sheet facility offers public skating, figure skating programming, and youth hockey at very affordable city rates — around $7 for adults with $3 skate rental. It's a genuine community hub and a great option for families and beginners in Minneapolis.
+### [Braemar Arena](/rink/braemar-arena-edina-mn)
 
----
+Braemar Arena in Edina is one of the Twin Cities' premier multi-sheet arenas, operated by the City of Edina. It runs three indoor sheets year-round, plus a seasonal outdoor Backyard Rink when the season allows. The scale here means plenty of ice and a wide range of programs across the calendar. Confirm public sessions and the outdoor rink's status on the rink's page.
 
-## Twin Cities — Suburbs
+### [Bloomington Ice Garden](/rink/bloomington-ice-garden-bloomington-mn)
 
-### Braemar Arena — Edina
+Bloomington Ice Garden, run by the City of Bloomington, carries three indoor sheets year-round, one of them Olympic-size. The Olympic surface gives figure skaters extra room, while the other sheets keep hockey and public sessions moving. It is a strong choice on the south side of the metro. Check the rink's page for current hours and sessions.
 
-The crown jewel of Edina's park system, [Braemar Arena](/rink/braemar-arena-edina-mn) is a three-sheet facility that serves as home ice for the Edina Hornets hockey program and the Edina Figure Skating Club. The arena hosts daily freestyle sessions, a full Learn to Skate program, and public skating at around $8 for adults. Edina has one of the strongest youth skating programs in the country, and Braemar is the centerpiece.
+### [Roseville Skating Center](/rink/roseville-skating-center-roseville-mn)
 
-### Bloomington Ice Garden — Bloomington
+Roseville Skating Center pairs a single year-round indoor sheet with the seasonal outdoor Guidant John Rose MN OVAL, one of the largest outdoor refrigerated ice surfaces in North America. Operated by the City of Roseville, it gives you the comfort of indoor ice plus a remarkable outdoor experience when the oval is open. The OVAL is seasonal, so timing matters if that is your draw. See the rink's page for current details on both surfaces.
 
-Just minutes from Mall of America, [Bloomington Ice Garden](/rink/bloomington-ice-garden-bloomington-mn) is a two-sheet city facility serving Bloomington and Richfield with affordable community skating. Adult admission is around $7 with $3 skate rental. A great option for families staying near the MOA.
+### [St. Louis Park Recreation Center](/rink/st-louis-park-rec-center-st-louis-park-mn)
 
-### Aldrich Arena — Maplewood
+St. Louis Park Recreation Center, run by the City of St. Louis Park, offers two indoor sheets year-round, plus a seasonal covered outdoor rink known as the ROC. The mix of indoor and covered outdoor ice gives skaters options as the weather shifts. With two year-round sheets, there is usually a public or learn-to-skate window to find on the west side. Confirm the schedule on the rink's page.
 
-[Aldrich Arena in Maplewood](/rink/aldrich-arena-maplewood-mn) is a Ramsey County-operated two-sheet facility serving the eastern Twin Cities suburbs. Public skating is very affordable at around $7 for adults, with resident discounts available. A well-maintained community rink with active youth hockey and skating programs.
+### [Aldrich Arena](/rink/aldrich-arena-maplewood-mn)
 
-### Brooklyn Park Community Activity Center — Brooklyn Park
+Aldrich Arena in Maplewood is a classic Ramsey County arena with a single indoor sheet that runs year-round. The history and feel of an established county rink make it a comfortable place to skate on the east side of the metro. With one sheet, sessions fill in around hockey and programs, so the schedule is worth a look. Check the rink's page before you go.
 
-[Brooklyn Park Community Activity Center](/rink/brooklyn-park-community-activity-center-brooklyn-park-mn) is a city-operated two-sheet facility in the northwestern Twin Cities suburbs. It offers affordable public skating and learn-to-skate programs. Adult admission is around $7.
+### [Brooklyn Park Community Activity Center](/rink/brooklyn-park-community-activity-center-brooklyn-park-mn)
 
-### Roseville Skating Center — Roseville
+Brooklyn Park Community Activity Center, run by the City of Brooklyn Park, places two indoor sheets inside a community activity center on the northwest side. The two year-round sheets, paired with the surrounding center, make it an easy family destination. There is often a public or learn-to-skate window to find here. See the rink's page for current sessions.
 
-[Roseville Skating Center](/rink/roseville-skating-center-roseville-mn) is a two-sheet city facility in the northern metro serving Roseville, Arden Hills, and surrounding communities. Public skating is around $7 for adults and the facility runs strong youth and family programs.
+## Tips
 
-### St. Louis Park Recreation Center — St. Louis Park
+- Public session times shift by season and week, so confirm the current schedule on each rink's page before you head out.
+- Some rinks here add seasonal outdoor ice (the Backyard Rink, the ROC, the MN OVAL), which only runs part of the year. Check status before planning around it.
+- Multi-sheet arenas tend to offer more public and learn-to-skate windows, which helps when your schedule is tight.
+- An Olympic-size sheet, like the one at Bloomington Ice Garden, gives figure skaters extra room to work.
+- Bring or rent well-fitting skates and dress in layers you can shed once you warm up on the ice.
 
-[St. Louis Park Recreation Center Ice Arena](/rink/st-louis-park-rec-center-st-louis-park-mn) is a two-sheet city facility in the western suburbs convenient to Minneapolis. Affordable admission (around $7) and good programming make it a solid choice for west-metro families.
-
----
-
-## Tips for Skating in Minnesota
-
-**Rinks are everywhere.** Minnesota has more ice arenas per capita than virtually any other state. Wherever you are in the Twin Cities metro, you're likely within a short drive of multiple quality facilities.
-
-**Community rinks offer outstanding value.** City and park district rinks charge just $5-$8 for adults — some of the best skating deals in the country — and maintain excellent ice quality thanks to passionate local investment.
-
-**Outdoor skating is a Minnesota tradition.** Many communities maintain outdoor rinks throughout winter, including the famous warming-house rink culture at Minneapolis parks. Check with local parks departments for nearby outdoor options.
-
-**Figure skating programs are competitive.** Minnesota produces elite figure skaters at a high rate. If you're looking for lessons, most facilities have US Figure Skating-certified coaches available.
-
-View all Minnesota rinks in the [Minnesota state rink guide](/state/MN).
+Ready to plan a longer trip or find a rink closer to home? Browse the full directory of Minnesota rinks on the [Minnesota state hub](/state/mn) for locations, sheets, and links to every rink's page.

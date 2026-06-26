@@ -1,61 +1,49 @@
-# Best Ice Skating Rinks in Colorado: Rocky Mountain Ice Time
+# Best Ice Skating Rinks in Colorado: A Front Range Guide
 
-Colorado is a skater's paradise. The crisp mountain air, the passionate hockey culture, and an impressive network of year-round indoor rinks make the Centennial State one of the best places in America to pursue ice skating at any level. Whether you're chasing competitive freestyle ice along the Front Range or looking for a memorable skate in the mountains, Colorado delivers. Here are the best ice skating rinks in the state.
+Colorado runs on year-round ice. Between Colorado Springs and the south and west suburbs of Denver, you can find premier training sheets, busy community rinks, and rec-center surfaces that open their doors for public skating, lessons, and hockey. The rinks below are all indoor and operate all year, so they hold up whether you are lacing up for the first time or chasing a personal best. Public session schedules shift by season and by week, so use this guide to plan your trip, then check each rink's page for current hours, sessions, and admission before you go.
 
----
+## Colorado Springs
 
-## The Legendary Rink
+### [World Arena Ice Hall](/rink/world-arena-ice-hall-colorado-springs-co)
 
-### Broadmoor Ice Palace — Colorado Springs
+The Broadmoor World Arena's ice hall sits in a city that has been a hub for US figure skating for generations. This is a premier training facility with two sheets, one sized to NHL specs and one to Olympic dimensions, both indoor and open year-round. The mix of surfaces makes it a strong stop for figure skaters and hockey players who want room to work. Check the rink's page for public session times and program details before you drive over.
 
-If any rink in Colorado deserves the word "legendary," it's the [Broadmoor Ice Palace](/rink/broadmoor-ice-palace-colorado-springs-co). Nestled within the iconic Broadmoor Resort in Colorado Springs, this historic arena has hosted the World Figure Skating Championships and numerous other elite events. Skaters of all levels are welcome during public sessions — adult admission is around $20 — but the setting is unlike anything else in the state: a grand, storied facility where the sport's history is palpable. This is a must-visit for any ice skating enthusiast traveling through Colorado.
+## South Denver Metro
 
----
+### [Family Sports Center](/rink/family-sports-center-centennial-co)
 
-## Denver Metro — South and Southeast Suburbs
+Family Sports Center in Centennial puts two indoor ice sheets inside a larger multi-sport complex run by South Suburban Parks and Recreation. The facility carries a Colorado Avalanche practice affiliation, so the ice gets serious use, and the surrounding complex gives families plenty to do beyond the rink. With two sheets running year-round, there is usually a public or learn-to-skate window to find. See the rink's page for the current schedule.
 
-### Family Sports Center — Centennial
+### [The Ice Ranch](/rink/ice-ranch-littleton-co)
 
-For pure scale, [Family Sports Center in Centennial](/rink/family-sports-center-centennial-co) is the biggest ice facility in Colorado with four full NHL-sized sheets. Operated by South Suburban Parks and Recreation, the complex hosts major figure skating competitions, runs extensive freestyle programming, and offers daily public skating at around $10 for adults. District resident discounts apply. This is one of the most comprehensive skating facilities in the Rocky Mountain region.
+The Ice Ranch is a private nonprofit community rink in Littleton with two indoor sheets and a hockey-forward culture. It runs year-round and leans into the local hockey community, which gives it a warm, club-like feel. Skaters of all levels still find time on the ice here, so it is worth a look if you want a community rink rather than a big complex. Confirm public sessions and programs on the rink's page.
 
-### South Suburban Ice Arena — Centennial
+### [Lone Tree Recreation Center](/rink/lone-tree-recreation-center-lone-tree-co)
 
-Also operated by South Suburban Parks and Recreation, [South Suburban Ice Arena](/rink/south-suburban-ice-arena-centennial-co) is a two-sheet facility with a strong figure skating community. Adult admission is around $10, with daily freestyle sessions that draw competitive skaters from across the south Denver suburbs. SSPR district resident discounts are available.
+Lone Tree Recreation Center offers a single indoor sheet operated by South Suburban Parks and Recreation. As a rec-center rink, it pairs ice time with the other amenities a community center provides, which makes it an easy family outing. The single sheet runs year-round, so plan around its public schedule. Check the rink's page for current hours and sessions.
 
-### Edge Ice Arena — Highlands Ranch
+## Southwest Denver Metro
 
-[Edge Ice Arena in Highlands Ranch](/rink/edge-ice-arena-highlands-ranch-co) is operated by the Highlands Ranch Community Association and serves one of Colorado's fastest-growing communities. Two full sheets, public skating at around $11 for adults, and active figure skating and hockey programs. HRCA member discounts apply.
+### [Edge Ice Arena](/rink/edge-ice-arena-littleton-co)
 
-### Ice Ranch — Littleton
+Edge Ice Arena in Littleton runs two indoor sheets year-round under the Foothills Park and Recreation District. Two sheets mean more flexibility across public skating, lessons, and hockey, so there is often a session that fits your day. It pairs naturally with its sister rink, Foothills Ice Arena, if you are building a longer skating itinerary. Look at the rink's page for the latest schedule.
 
-A privately operated two-sheet facility in south Denver's Arapahoe County corridor, [Ice Ranch in Littleton](/rink/ice-ranch-littleton-co) serves the Parker/Lone Tree/Centennial area. Adult admission runs around $11 with a full pro shop offering sharpening throughout the day.
+### [Foothills Ice Arena](/rink/foothills-ice-arena-littleton-co)
 
-### Lone Tree Recreation Center — Lone Tree
+Foothills Ice Arena, in Lakewood, is the sister rink to Edge and also runs under the Foothills Park and Recreation District. It carries two indoor sheets open year-round, giving figure skaters and hockey players steady access to ice. Between this rink and Edge, the district covers a lot of the southwest metro's skating needs. Visit the rink's page to confirm public sessions before you go.
 
-A modern city-operated single-sheet facility in Lone Tree, the [Lone Tree Recreation Center Ice Rink](/rink/lone-tree-recreation-center-lone-tree-co) is convenient for skaters in the southern Douglas County communities including Parker and Castle Rock. Adult admission is around $10.
+## Northwest Denver Metro
 
----
+### [Apex Center Ice Arena](/rink/apex-ice-arena-westminster-co)
 
-## Denver Metro — West and Northwest
+Apex Center Ice Arena sits in Arvada inside the larger Apex Center, run by the Apex Park and Recreation District. Two indoor sheets operate year-round, and the surrounding recreation center gives the whole family options around your skate. It is a solid choice for the northwest side of the metro. Check the rink's page for current hours and program details.
 
-### Foothills Ice Arena — Lakewood
+## Tips
 
-Operated by the Foothills Park and Recreation District, [Foothills Ice Arena](/rink/foothills-ice-arena-littleton-co) is a two-sheet facility in Lakewood serving Jefferson County and the western Denver suburbs. Adult admission is around $10 with district resident discounts. Active figure skating programs and strong freestyle scheduling.
+- Public session times change with the season and even week to week, so confirm the current schedule on each rink's page before you head out.
+- Multi-sheet rinks (two or three surfaces) tend to offer more public and learn-to-skate windows, which helps if your schedule is tight.
+- Bring or rent skates that fit well, and dress in layers you can shed once you warm up on the ice.
+- New skaters do best at quieter public sessions, while stronger skaters may prefer rinks with figure or freestyle blocks. The rink's page will list what is on offer.
+- These are all indoor, year-round rinks, so you can plan a visit in any season.
 
-### APEX Ice Arena — Arvada
-
-[APEX Ice Arena](/rink/apex-ice-arena-westminster-co) is operated by the APEX Park and Recreation District and serves the Arvada and Westminster areas with two full sheets and year-round programming. Adult admission is around $10 with APEX district resident rates available.
-
----
-
-## Tips for Skating in Colorado
-
-**Altitude matters.** Colorado's high elevation means you may tire more quickly than expected, especially if you're visiting from a lower-altitude state. Stay hydrated and take breaks.
-
-**The Front Range has exceptional facilities.** The Denver metro area's concentration of quality, affordable ice rinks is remarkable — most city/district-operated facilities charge $8-$11 for adults and maintain excellent ice quality.
-
-**Mountain rinks exist too.** If you're visiting ski areas, many Colorado mountain towns have ice rinks open in winter. Vail, Breckenridge, and Steamboat Springs all have seasonal options.
-
-**Figure skating programs are competitive.** Colorado produces elite figure skaters, and several Front Range clubs have strong competitive programs affiliated with US Figure Skating.
-
-See all Colorado ice skating rinks in the [Colorado state rink guide](/state/CO).
+Ready to map out a longer trip or find a rink closer to home? Browse the full directory of Colorado rinks on the [Colorado state hub](/state/co) for locations, sheets, and links to every rink's page.

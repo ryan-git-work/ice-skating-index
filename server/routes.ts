@@ -172,6 +172,38 @@ Sitemap: https://iceskatingindex.com/sitemap.xml
     res.redirect(301, "/rink/reilly-memorial-rink-brighton-ma");
   });
 
+  app.get("/rink/eisenhower-park-ice-rink-east-meadow-ny", (_req, res) => {
+    res.redirect(301, "/rink/northwell-health-ice-center-east-meadow-ny");
+  });
+
+  app.get("/rink/eisenhower-park-ice-rink-east-meadow-ny/", (_req, res) => {
+    res.redirect(301, "/rink/northwell-health-ice-center-east-meadow-ny");
+  });
+
+  app.get("/rink/iceland-ice-arena-oak-lawn-il", (_req, res) => {
+    res.redirect(301, "/rink/oak-lawn-ice-arena-oak-lawn-il");
+  });
+
+  app.get("/rink/iceland-ice-arena-oak-lawn-il/", (_req, res) => {
+    res.redirect(301, "/rink/oak-lawn-ice-arena-oak-lawn-il");
+  });
+
+  app.get("/rink/edge-ice-arena-highlands-ranch-co", (_req, res) => {
+    res.redirect(301, "/rink/edge-ice-arena-littleton-co");
+  });
+
+  app.get("/rink/edge-ice-arena-highlands-ranch-co/", (_req, res) => {
+    res.redirect(301, "/rink/edge-ice-arena-littleton-co");
+  });
+
+  app.get("/rink/broadmoor-ice-palace-colorado-springs-co", (_req, res) => {
+    res.redirect(301, "/rink/world-arena-ice-hall-colorado-springs-co");
+  });
+
+  app.get("/rink/broadmoor-ice-palace-colorado-springs-co/", (_req, res) => {
+    res.redirect(301, "/rink/world-arena-ice-hall-colorado-springs-co");
+  });
+
   app.get(/^\/state\/([A-Z]{2})\/?$/, (req, res) => {
     res.redirect(301, `/state/${req.params[0].toLowerCase()}`);
   });
