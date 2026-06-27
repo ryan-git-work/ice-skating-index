@@ -10,6 +10,12 @@ interface RinkCardProps {
 }
 
 export function RinkCard({ rink }: RinkCardProps) {
+  const statusLabel = rink.operating_status === "closed"
+    ? "Permanently Closed"
+    : rink.operating_status === "coming_soon"
+      ? "Coming Soon"
+      : null;
+
   return (
     <Card className="group h-full flex flex-col overflow-hidden border transition-all hover:shadow-md hover:border-primary/20">
       <CardHeader className="p-0">
@@ -26,12 +32,17 @@ export function RinkCard({ rink }: RinkCardProps) {
            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
            <div className="absolute bottom-3 left-3 right-3">
              <div className="flex flex-wrap gap-1.5">
-               {isTruthy(rink.offerings.public_skating) && (
+               {statusLabel && (
+                 <Badge variant="secondary" className="bg-amber-50 text-amber-900 border border-amber-200 text-xs font-medium">
+                   {statusLabel}
+                 </Badge>
+               )}
+               {!statusLabel && isTruthy(rink.offerings.public_skating) && (
                  <Badge variant="secondary" className="bg-white/90 backdrop-blur-sm text-xs font-normal">
                    Public Skate
                  </Badge>
                )}
-               {isTruthy(rink.freestyle.available) && (
+               {!statusLabel && isTruthy(rink.freestyle.available) && (
                  <Badge variant="secondary" className="bg-white/90 backdrop-blur-sm text-xs font-normal">
                    Freestyle
                  </Badge>

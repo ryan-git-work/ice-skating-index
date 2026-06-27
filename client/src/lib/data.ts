@@ -106,6 +106,7 @@ export const RinkSchema = z.object({
   tags: z.array(z.string()).optional(),
   seasonal: z.boolean().optional(),
   seasonal_notes: z.string().optional(),
+  operating_status: z.enum(["open", "closed", "coming_soon"]).optional(),
   subheader: z.string().optional(),
   nearby_rinks: z.array(z.object({
     slug: z.string(),

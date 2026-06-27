@@ -52,12 +52,18 @@ export default function RinkDetail() {
   const description = rink?.description ?? rink?.seo?.long_description;
   const whatToKnow = rink?.what_to_know ?? rink?.seo?.what_to_know;
   const faqItems = rink?.faq ?? [];
+  const isUnavailable = rink?.operating_status === "closed" || rink?.operating_status === "coming_soon";
+  const statusNotice = rink?.operating_status === "closed"
+    ? "PERMANENTLY CLOSED. This page is retained as an archival reference; do not travel here expecting public ice."
+    : rink?.operating_status === "coming_soon"
+      ? "NOT YET OPEN. This facility is under construction with an anticipated fall 2026 opening. Confirm with the operator before visiting."
+      : null;
 
   const metaTitle = rink?.seo?.meta_title ?? rink?.name ?? "Rink Not Found";
   const metaDescription = rink?.seo?.meta_description ??
     (rink ? `${rink.name} in ${rink.address.city}, ${rink.address.state} offers ${buildOfferingList(rink).join(", ")}. Find schedules, pricing, and directions at Ice Skating Index.` : undefined);
 
-  const rinkSchema = rink
+  const rinkSchema = rink && !isUnavailable
     ? (() => {
         const schema: Record<string, unknown> = {
           "@context": "https://schema.org",
@@ -105,7 +111,7 @@ export default function RinkDetail() {
       })()
     : null;
 
-  const faqSchemaObj = rink && faqItems.length > 0
+  const faqSchemaObj = rink && !isUnavailable && faqItems.length > 0
     ? {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -153,12 +159,17 @@ export default function RinkDetail() {
               {rink.subheader && (
                 <p className="text-lg text-muted-foreground leading-relaxed mb-4">{rink.subheader}</p>
               )}
-              {rink.seasonal && rink.seasonal_notes && (
+              {statusNotice ? (
+                <div className="flex items-center gap-2 bg-amber-50 text-amber-800 text-sm font-medium px-3 py-2 rounded-lg border border-amber-200 mb-4">
+                  <AlertTriangle className="h-4 w-4 flex-shrink-0" />
+                  {statusNotice}
+                </div>
+              ) : rink.seasonal && rink.seasonal_notes ? (
                 <div className="flex items-center gap-2 bg-amber-50 text-amber-800 text-sm font-medium px-3 py-2 rounded-lg border border-amber-200 mb-4">
                   <AlertTriangle className="h-4 w-4 flex-shrink-0" />
                   {rink.seasonal_notes}
                 </div>
-              )}
+              ) : null}
               <div className="flex flex-wrap items-center gap-4 text-muted-foreground mb-6">
                 <div className="flex items-center">
                   <MapPin className="h-4 w-4 mr-1" />
@@ -258,7 +269,7 @@ export default function RinkDetail() {
               )}
             </section>
 
-            <section>
+            {!isUnavailable && <section>
               <h2 className="font-serif text-2xl font-bold mb-6">Offerings</h2>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 <OfferingItem label="Public Skating" available={rink.offerings.public_skating} icon={<Ticket className="h-4 w-4" />} />
@@ -268,9 +279,9 @@ export default function RinkDetail() {
                 <OfferingItem label="Open Hockey" available={rink.offerings.open_hockey} icon={<Dumbbell className="h-4 w-4" />} />
                 <OfferingItem label="Stick & Puck" available={rink.offerings.stick_and_puck} icon={<Dumbbell className="h-4 w-4" />} />
               </div>
-            </section>
+            </section>}
 
-            <section id="freestyle" className="scroll-mt-24">
+            {!isUnavailable && <section id="freestyle" className="scroll-mt-24">
                <div className="flex items-center gap-3 mb-6">
                  <h2 className="font-serif text-2xl font-bold">Freestyle Sessions</h2>
                  {typeof rink.freestyle.available === 'boolean' && rink.freestyle.available && (
@@ -305,9 +316,9 @@ export default function RinkDetail() {
                    <p className="text-muted-foreground">No specific freestyle sessions listed for this facility.</p>
                  )}
                </div>
-            </section>
+            </section>}
 
-            <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {!isUnavailable && <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <h2 className="font-serif text-2xl font-bold mb-4 flex items-center">
                   <Ticket className="h-5 w-5 mr-2" /> Rentals
@@ -351,9 +362,9 @@ export default function RinkDetail() {
                   )}
                 </div>
               </div>
-            </section>
+            </section>}
 
-            {faqItems.length > 0 && (
+            {!isUnavailable && faqItems.length > 0 && (
               <section>
                 <h2 className="font-serif text-2xl font-bold mb-6">Frequently Asked Questions</h2>
                 <div className="space-y-3">
@@ -365,7 +376,7 @@ export default function RinkDetail() {
               </section>
             )}
 
-            {rink.editorial_markdown && (
+            {!isUnavailable && rink.editorial_markdown && (
               <section>
                 <div className="prose prose-slate max-w-none prose-headings:font-serif prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4 prose-p:text-muted-foreground prose-p:leading-relaxed prose-li:text-muted-foreground prose-strong:text-foreground prose-a:text-primary prose-a:no-underline hover:prose-a:underline">
                   <ReactMarkdown remarkPlugins={[remarkGfm]}>

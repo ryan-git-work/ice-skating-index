@@ -48,13 +48,17 @@ export function buildWebPageSchema(
 }
 
 export function buildRinkItemList(rinks: Rink[], pagePath: string, name: string) {
+  const operatingRinks = rinks.filter(rink =>
+    rink.operating_status !== "closed" && rink.operating_status !== "coming_soon"
+  );
+
   return {
     "@context": "https://schema.org",
     "@type": "ItemList",
     name,
     url: canonicalUrl(pagePath),
-    numberOfItems: rinks.length,
-    itemListElement: rinks.map((rink, index) => ({
+    numberOfItems: operatingRinks.length,
+    itemListElement: operatingRinks.map((rink, index) => ({
       "@type": "ListItem",
       position: index + 1,
       url: `${SITE_URL}/rink/${rink.slug}`,
