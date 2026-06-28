@@ -5,7 +5,7 @@ import { Separator } from "@/components/ui/separator";
 import { RinkCard } from "@/components/RinkCard";
 import { rinks } from "@/lib/data";
 import { LastVerified } from "@/components/LastVerified";
-import { MapPin, CheckCircle, XCircle, Calendar, DollarSign, Ticket } from "lucide-react";
+import { MapPin, CheckCircle, Calendar } from "lucide-react";
 import { buildRinkItemList } from "@/lib/seo";
 
 const RINK_SLUGS = {
@@ -13,19 +13,38 @@ const RINK_SLUGS = {
   bellevue: "ford-ice-center-bellevue-nashville-tn",
   antioch: "ford-ice-center-antioch-antioch-tn",
   clarksville: "ford-ice-center-clarksville-clarksville-tn",
+  garyForce: "gary-force-acura-ice-arena-nolensville-tn",
+  smashville: "smashville-ice-rink-at-zoolumination-nashville-tn",
+  gaylord: "gaylord-opryland-resort-nashville-tn",
+  fountains: "fountains-at-gateway-murfreesboro-tn",
 };
 
-const nashvilleRinks = rinks.filter(r =>
-  r.slug === RINK_SLUGS.centennial ||
-  r.slug === RINK_SLUGS.bellevue ||
-  r.slug === RINK_SLUGS.antioch ||
-  r.slug === RINK_SLUGS.clarksville
-);
+const nashvilleRinkSlugs = new Set(Object.values(RINK_SLUGS));
+const nashvilleRinks = rinks.filter(r => nashvilleRinkSlugs.has(r.slug));
 
 const centennial = rinks.find(r => r.slug === RINK_SLUGS.centennial);
 const bellevue = rinks.find(r => r.slug === RINK_SLUGS.bellevue);
 const antioch = rinks.find(r => r.slug === RINK_SLUGS.antioch);
 const clarksville = rinks.find(r => r.slug === RINK_SLUGS.clarksville);
+
+const NASHVILLE_FAQS = [
+  {
+    question: "Where can I ice skate in Nashville?",
+    answer: "Nashville has five year-round indoor options across the metro: Centennial Sportsplex, Ford Ice Center Bellevue, Ford Ice Center Antioch, Ford Ice Center Clarksville, and Gary Force Acura Ice Arena in Nolensville. Seasonal holiday rinks also open at Gaylord Opryland, Smashville, and Fountains at Gateway.",
+  },
+  {
+    question: "How much does ice skating cost in Nashville?",
+    answer: "Centennial public skating is $12 for ages 13 and up and $10 for ages 5 to 12, with rental included and ages 4 and under free. Ford Ice Center lists $10.98 plus tax for matinee sessions and $13.73 plus tax for evening sessions, with rentals included. Gary Force posts its price inside the booking flow.",
+  },
+  {
+    question: "Is there indoor ice skating in Nashville?",
+    answer: "Yes. Centennial Sportsplex and the Ford Ice Centers in Bellevue, Antioch, and Clarksville operate year-round indoor ice. Gary Force Acura Ice Arena in Nolensville is also a year-round indoor rink serving Williamson County.",
+  },
+  {
+    question: "Where can I skate in Nashville this weekend?",
+    answer: "Check Centennial's live Google Calendar, Ford Ice Center's DaySmart calendar, and Gary Force's online events calendar. Public-skate schedules change by week and month, so confirm the specific session before leaving home.",
+  },
+];
 
 function RinkLink({ slug, children }: { slug: string; children: React.ReactNode }) {
   return (
@@ -36,13 +55,29 @@ function RinkLink({ slug, children }: { slug: string; children: React.ReactNode 
 }
 
 export default function NashvilleCityHub() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: NASHVILLE_FAQS.map(item => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+
   useHead({
     title: "Ice Skating in Nashville, TN: Every Rink, Price, and Schedule (2026 Guide)",
-    description: "Every public ice skating rink in Nashville and Middle Tennessee \u2014 Centennial Sportsplex, all three Ford Ice Centers, plus seasonal options. Real prices, real schedules, verified weekly.",
+    description: "Compare every Nashville ice rink, current public-skate prices, live schedules, booking links, lessons, and seasonal options. Verified June 27, 2026.",
     ogTitle: "Ice Skating in Nashville, TN: Every Rink, Price, and Schedule (2026 Guide)",
-    ogDescription: "Every public ice skating rink in Nashville and Middle Tennessee \u2014 Centennial Sportsplex, all three Ford Ice Centers, plus seasonal options. Real prices, real schedules, verified weekly.",
+    ogDescription: "Compare every Nashville ice rink, current public-skate prices, live schedules, booking links, lessons, and seasonal options.",
     canonicalPath: "/city/tn/nashville",
-    structuredData: [buildRinkItemList(nashvilleRinks, "/city/tn/nashville", "Ice Skating Rinks in Nashville, Tennessee")],
+    structuredData: [
+      buildRinkItemList(nashvilleRinks, "/city/tn/nashville", "Ice Skating Rinks in Nashville, Tennessee"),
+      faqSchema,
+    ],
   });
 
   return (
@@ -60,10 +95,14 @@ export default function NashvilleCityHub() {
             Ice Skating in Nashville, TN: Every Rink, Price, and Schedule (2026 Guide)
           </h1>
           <p className="text-lg text-muted-foreground max-w-3xl leading-relaxed">
-            Nashville isn&apos;t the first city most people picture when they think about ice skating. But Music City has more ice than you&apos;d expect &mdash; a year-round indoor rink right in the West End, three more run by the Nashville Predators across Middle Tennessee, plus a handful of seasonal outdoor rinks that pop up between November and February.
+            You can ice skate year-round in Nashville at Centennial Sportsplex, the three Ford Ice Centers, and Gary Force Acura Ice Arena in Nolensville. Centennial welcomes walk-ins, while Ford Ice and Gary Force use online schedules and booking.
           </p>
           <p className="text-lg text-muted-foreground max-w-3xl leading-relaxed mt-4">
-            This guide covers every public ice skating option in the Nashville area, what each rink is best for, what it costs, and how to decide which one to visit. We update this page weekly &mdash; every rink schedule, every price, every detail is verified against the operator&apos;s own source.
+            This guide compares every public ice skating option in the metro, including current prices, how to book, which rink fits each part of town, and the seasonal holiday rinks. For a schedule-first view, use the{" "}
+            <Link href="/blog/public-skating-nashville" className="text-primary hover:underline font-medium">
+              Nashville public skating guide
+            </Link>
+            .
           </p>
         </div>
       </div>
@@ -81,11 +120,14 @@ export default function NashvilleCityHub() {
                   { id: "bellevue", label: "Ford Ice Center Bellevue" },
                   { id: "antioch", label: "Ford Ice Center Antioch" },
                   { id: "clarksville", label: "Ford Ice Center Clarksville" },
+                  { id: "gary-force", label: "Gary Force Acura Ice Arena" },
                   { id: "seasonal", label: "Seasonal options" },
                   { id: "choose", label: "Which rink to choose" },
                   { id: "learn-to-skate", label: "Learn to skate" },
                   { id: "freestyle", label: "Freestyle & figure skating" },
                   { id: "tips", label: "Planning your visit" },
+                  { id: "guides", label: "Nashville skating guides" },
+                  { id: "faq", label: "Frequently asked questions" },
                 ].map(section => (
                   <a key={section.id} href={`#${section.id}`} className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1">
                     {section.label}
@@ -114,47 +156,54 @@ export default function NashvilleCityHub() {
                     <tr className="border-b border-border/50">
                       <td className="py-3 pr-4"><RinkLink slug={RINK_SLUGS.centennial}>Centennial Sportsplex</RinkLink></td>
                       <td className="py-3 pr-4 text-muted-foreground">West End</td>
-                      <td className="py-3 pr-4 text-muted-foreground">$6&ndash;7</td>
+                      <td className="py-3 pr-4 text-muted-foreground">$10&ndash;12</td>
                       <td className="py-3 pr-4 text-muted-foreground">Walk-in</td>
                       <td className="py-3"><span className="inline-flex items-center gap-1 text-green-600"><CheckCircle className="h-3.5 w-3.5" /> Year-round</span></td>
                     </tr>
                     <tr className="border-b border-border/50">
                       <td className="py-3 pr-4"><RinkLink slug={RINK_SLUGS.bellevue}>Ford Ice Center Bellevue</RinkLink></td>
                       <td className="py-3 pr-4 text-muted-foreground">Bellevue (west)</td>
-                      <td className="py-3 pr-4 text-muted-foreground">$12</td>
+                      <td className="py-3 pr-4 text-muted-foreground">$10.98 / $13.73</td>
                       <td className="py-3 pr-4 text-muted-foreground">Online</td>
                       <td className="py-3"><span className="inline-flex items-center gap-1 text-green-600"><CheckCircle className="h-3.5 w-3.5" /> Year-round</span></td>
                     </tr>
                     <tr className="border-b border-border/50">
                       <td className="py-3 pr-4"><RinkLink slug={RINK_SLUGS.antioch}>Ford Ice Center Antioch</RinkLink></td>
                       <td className="py-3 pr-4 text-muted-foreground">Antioch (south)</td>
-                      <td className="py-3 pr-4 text-muted-foreground">$12</td>
+                      <td className="py-3 pr-4 text-muted-foreground">$10.98 / $13.73</td>
                       <td className="py-3 pr-4 text-muted-foreground">Online</td>
                       <td className="py-3"><span className="inline-flex items-center gap-1 text-green-600"><CheckCircle className="h-3.5 w-3.5" /> Year-round</span></td>
                     </tr>
                     <tr className="border-b border-border/50">
                       <td className="py-3 pr-4"><RinkLink slug={RINK_SLUGS.clarksville}>Ford Ice Center Clarksville</RinkLink></td>
                       <td className="py-3 pr-4 text-muted-foreground">Clarksville (north, 45 min)</td>
-                      <td className="py-3 pr-4 text-muted-foreground">$12</td>
+                      <td className="py-3 pr-4 text-muted-foreground">$10.98 / $13.73</td>
                       <td className="py-3 pr-4 text-muted-foreground">Online</td>
                       <td className="py-3"><span className="inline-flex items-center gap-1 text-green-600"><CheckCircle className="h-3.5 w-3.5" /> Year-round</span></td>
                     </tr>
                     <tr className="border-b border-border/50">
-                      <td className="py-3 pr-4 font-medium">Smashville at Zoolumination</td>
+                      <td className="py-3 pr-4"><RinkLink slug={RINK_SLUGS.garyForce}>Gary Force Acura Ice Arena</RinkLink></td>
+                      <td className="py-3 pr-4 text-muted-foreground">Nolensville (south)</td>
+                      <td className="py-3 pr-4 text-muted-foreground">Confirm at booking</td>
+                      <td className="py-3 pr-4 text-muted-foreground">Online</td>
+                      <td className="py-3"><span className="inline-flex items-center gap-1 text-green-600"><CheckCircle className="h-3.5 w-3.5" /> Year-round</span></td>
+                    </tr>
+                    <tr className="border-b border-border/50">
+                      <td className="py-3 pr-4"><RinkLink slug={RINK_SLUGS.smashville}>Smashville at Zoolumination</RinkLink></td>
                       <td className="py-3 pr-4 text-muted-foreground">Downtown</td>
                       <td className="py-3 pr-4 text-muted-foreground">$21&ndash;25</td>
                       <td className="py-3 pr-4 text-muted-foreground">Drop-in</td>
                       <td className="py-3"><span className="inline-flex items-center gap-1 text-amber-600"><Calendar className="h-3.5 w-3.5" /> Nov&ndash;Feb</span></td>
                     </tr>
                     <tr className="border-b border-border/50">
-                      <td className="py-3 pr-4 font-medium">Fountains at Gateway</td>
+                      <td className="py-3 pr-4"><RinkLink slug={RINK_SLUGS.fountains}>Fountains at Gateway</RinkLink></td>
                       <td className="py-3 pr-4 text-muted-foreground">Murfreesboro (south, 30 min)</td>
                       <td className="py-3 pr-4 text-muted-foreground">$12&ndash;17</td>
                       <td className="py-3 pr-4 text-muted-foreground">Drop-in</td>
                       <td className="py-3"><span className="inline-flex items-center gap-1 text-amber-600"><Calendar className="h-3.5 w-3.5" /> Nov&ndash;Feb</span></td>
                     </tr>
                     <tr className="border-b border-border/50">
-                      <td className="py-3 pr-4 font-medium">Gaylord Opryland Resort</td>
+                      <td className="py-3 pr-4"><RinkLink slug={RINK_SLUGS.gaylord}>Gaylord Opryland Resort</RinkLink></td>
                       <td className="py-3 pr-4 text-muted-foreground">Opryland</td>
                       <td className="py-3 pr-4 text-muted-foreground">Resort pricing</td>
                       <td className="py-3 pr-4 text-muted-foreground">With ticket</td>
@@ -171,16 +220,19 @@ export default function NashvilleCityHub() {
               <h2 className="font-serif text-2xl font-bold mb-4">Centennial Sportsplex &mdash; the affordable West End option</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  <RinkLink slug={RINK_SLUGS.centennial}>Centennial Sportsplex Ice Arenas</RinkLink> is Nashville&apos;s original public skating destination and still the cheapest in the city. Located across from Centennial Park in the West End, it&apos;s operated by Metro Nashville Parks and Recreation and has two full-size sheets (200 by 85 feet). Admission is $7 for adults and $6 for kids 5&ndash;12, with skate rental included.
+                  <RinkLink slug={RINK_SLUGS.centennial}>Centennial Sportsplex Ice Arenas</RinkLink> is Nashville&apos;s original public skating destination. Located across from Centennial Park in the West End, it is operated by Metro Nashville Parks and Recreation and has two full-size sheets measuring 200 by 85 feet.
                 </p>
                 <p>
-                  <strong className="text-foreground">What makes it unique:</strong> Two full-size sheets &mdash; the only multi-rink public facility in Nashville proper. The west arena is also the Predators&apos; practice facility. Walk-in only, which means no online booking system to navigate but also no guaranteed spot on busy weekends.
+                  Public skating is $12 for ages 13 and up and $10 for ages 5 to 12. Ages 4 and under and spectators are free, and skate rental is included with paid admission. Centennial is the simplest choice for a first visit because public sessions welcome walk-ins instead of requiring a booking account.
                 </p>
                 <p>
-                  <strong className="text-foreground">Best for:</strong> Families on a budget, first-timers, learn-to-skate students, anyone who wants to walk in without planning ahead. Roughly half the price of the Ford Ice rinks.
+                  <strong className="text-foreground">What makes it unique:</strong> Two full-size sheets let public skating, hockey, and lessons share the building. The west arena is also used by the Nashville Predators. Weekend afternoons and some weekday midday public sessions are common, but the calendar changes monthly.
                 </p>
                 <p>
-                  <strong className="text-foreground">The catch:</strong> Public skate sessions run on a variable schedule rather than fixed weekly hours. Always check the Centennial Sportsplex Ice Arena Google Calendar (linked from nashville.gov) before driving. Sessions are typically Wednesday, Friday, and Saturday &mdash; but this changes month to month based on hockey league bookings.
+                  <strong className="text-foreground">Best for:</strong> First-timers, families who want to walk in, learn-to-skate students, central Nashville residents, and groups bringing non-skating spectators.
+                </p>
+                <p>
+                  <strong className="text-foreground">The catch:</strong> Public skate does not follow fixed weekly hours. Check the live Google Calendar on the rink page and open the specific event before driving.
                 </p>
                 <p className="text-sm">
                   <MapPin className="h-4 w-4 inline mr-1 text-primary" />
@@ -196,13 +248,16 @@ export default function NashvilleCityHub() {
               <h2 className="font-serif text-2xl font-bold mb-4">Ford Ice Center Bellevue &mdash; west Nashville&apos;s newest</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  <RinkLink slug={RINK_SLUGS.bellevue}>Ford Ice Center Bellevue</RinkLink> serves the west Nashville and Bellevue corridor &mdash; the most convenient year-round option if you&apos;re coming from Belle Meade, west Nashville, Brentwood&apos;s northwest side, or the western suburbs. Operated by the Nashville Predators, it follows the standard Ford Ice format: cashless, online reservation required, $12 admission with rental included.
+                  <RinkLink slug={RINK_SLUGS.bellevue}>Ford Ice Center Bellevue</RinkLink> serves the west Nashville and Bellevue corridor. Operated by the Nashville Predators, it follows the Ford Ice public-skate format: cashless, online registration through DaySmart, and front-desk check-in before skating.
+                </p>
+                <p>
+                  Matinee public skates are $10.98 plus tax and evening sessions are $13.73 plus tax. Rental skates are included if needed. The twin-rink layout gives Bellevue more room to run public skating alongside lessons, figure skating, and hockey.
                 </p>
                 <p>
                   <strong className="text-foreground">Best for:</strong> West Nashville residents, skaters who want a guaranteed spot, families comfortable booking online, and anyone who prefers a newer, more polished facility.
                 </p>
                 <p>
-                  <strong className="text-foreground">The catch:</strong> No walk-ins. Same-day reservations are usually available except on peak weekends, so book at least a few hours ahead.
+                  <strong className="text-foreground">The catch:</strong> Public skate is online registration only. Create the DaySmart account before your first trip and confirm the session there.
                 </p>
                 <p className="text-sm">
                   <MapPin className="h-4 w-4 inline mr-1 text-primary" />
@@ -218,7 +273,10 @@ export default function NashvilleCityHub() {
               <h2 className="font-serif text-2xl font-bold mb-4">Ford Ice Center Antioch &mdash; south Nashville&apos;s closest option</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  <RinkLink slug={RINK_SLUGS.antioch}>Ford Ice Center Antioch</RinkLink> is the southernmost Predators rink, located off Hickory Hollow Parkway in Antioch. It&apos;s the closest year-round indoor rink for residents of south Nashville, Brentwood, La Vergne, and Murfreesboro. Hours are 6 AM to 11 PM daily &mdash; the most extended hours of any Nashville-area rink. Same pricing and reservation format as the other Ford locations.
+                  <RinkLink slug={RINK_SLUGS.antioch}>Ford Ice Center Antioch</RinkLink> is the southernmost Predators rink, located off Hickory Hollow Parkway in Antioch. It is the closest year-round indoor rink for many residents of south Nashville, Brentwood, La Vergne, and Murfreesboro.
+                </p>
+                <p>
+                  Like Bellevue and Clarksville, public skating is booked online through DaySmart. Matinee sessions are $10.98 plus tax and evening sessions are $13.73 plus tax, with rental skates included if needed. Antioch has two sheets and supports public skating, learn-to-skate, freestyle, and hockey.
                 </p>
                 <p>
                   <strong className="text-foreground">Best for:</strong> South Nashville and Murfreesboro residents (no year-round rink in Murfreesboro itself), Junior Predators families, and skaters who want extended hours.
@@ -237,7 +295,10 @@ export default function NashvilleCityHub() {
               <h2 className="font-serif text-2xl font-bold mb-4">Ford Ice Center Clarksville &mdash; for north Nashville and Clarksville</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  The newest of the three Ford rinks, <RinkLink slug={RINK_SLUGS.clarksville}>Ford Ice Center Clarksville</RinkLink> extends the Predators skating network ~45 minutes north of Nashville into Clarksville. It&apos;s housed inside F&amp;M Bank Arena. For residents in Clarksville, Springfield, or north Davidson County, this is by far the closest public ice. Same pricing model: $12 with rental included, online reservation required.
+                  The newest Ford rink, <RinkLink slug={RINK_SLUGS.clarksville}>Ford Ice Center Clarksville</RinkLink> extends the Predators skating network about 45 minutes north of Nashville inside F&amp;M Bank Arena. For Clarksville and Montgomery County, this is the main place to ice skate.
+                </p>
+                <p>
+                  Public skate uses the same DaySmart booking flow and price structure: $10.98 plus tax for matinee sessions and $13.73 plus tax for evening sessions, with rental skates included. Because one sheet carries public skating, hockey, figure skating, and lessons, checking the specific session matters here.
                 </p>
                 <p>
                   <strong className="text-foreground">Best for:</strong> Clarksville and north Nashville residents, youth hockey families in Montgomery County, skaters willing to drive for a less crowded facility.
@@ -252,6 +313,31 @@ export default function NashvilleCityHub() {
 
             <Separator />
 
+            <section id="gary-force">
+              <h2 className="font-serif text-2xl font-bold mb-4">Gary Force Acura Ice Arena &mdash; Williamson County&apos;s rink</h2>
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>
+                  <RinkLink slug={RINK_SLUGS.garyForce}>Gary Force Acura Ice Arena</RinkLink> is a full-size, NHL-size indoor rink in Nolensville that has served the communities south of Nashville since 2021. It is the closest year-round sheet for many families in Nolensville, Brentwood, and Franklin.
+                </p>
+                <p>
+                  The rink is home to the Nashville Warriors Youth Hockey Club and hosts hockey and figure-skating activity. Public skate, stick and puck, and freestyle sessions are all registered through its online events calendar.
+                </p>
+                <p>
+                  <strong className="text-foreground">Best for:</strong> Williamson County families, Nashville Warriors households, figure skaters looking for freestyle south of the city, and anyone who wants to avoid crossing Nashville for ice.
+                </p>
+                <p>
+                  <strong className="text-foreground">The catch:</strong> Public-skate pricing is not posted on the main website. Open the booking calendar and confirm the price and requirements before registering.
+                </p>
+                <p className="text-sm">
+                  <MapPin className="h-4 w-4 inline mr-1 text-primary" />
+                  7235 Haley Industrial Drive, Nolensville, TN 37135.
+                  <Link href={`/rink/${RINK_SLUGS.garyForce}`} className="text-primary hover:underline ml-1">Full guide &rarr;</Link>
+                </p>
+              </div>
+            </section>
+
+            <Separator />
+
             <section id="seasonal">
               <h2 className="font-serif text-2xl font-bold mb-4">Seasonal options &mdash; only open November through February</h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
@@ -259,19 +345,25 @@ export default function NashvilleCityHub() {
               </p>
               <div className="space-y-6">
                 <div className="bg-card border rounded-xl p-6">
-                  <h3 className="font-semibold text-lg mb-2">Smashville Ice Rink at Zoolumination</h3>
+                  <h3 className="font-semibold text-lg mb-2">
+                    <RinkLink slug={RINK_SLUGS.smashville}>Smashville Ice Rink at Zoolumination</RinkLink>
+                  </h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
                     Downtown at Ascension Saint Thomas Landing (under Broadway). The 2025&ndash;26 season ran through February 8, 2026. Adult and teen tickets were $25, youth $21. Part of the Predators / Zoolumination holiday programming. <strong className="text-foreground">Best for:</strong> a downtown holiday experience, not a serious skate session.
                   </p>
                 </div>
                 <div className="bg-card border rounded-xl p-6">
-                  <h3 className="font-semibold text-lg mb-2">Fountains at Gateway (Murfreesboro)</h3>
+                  <h3 className="font-semibold text-lg mb-2">
+                    <RinkLink slug={RINK_SLUGS.fountains}>Fountains at Gateway (Murfreesboro)</RinkLink>
+                  </h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
                     A seasonal outdoor rink that ran November 21, 2025 through February 1, 2026. $17 for ages 13+, $12 for ages 4&ndash;12. 60-minute sessions, skate rental included. The closest seasonal rink for Murfreesboro families.
                   </p>
                 </div>
                 <div className="bg-card border rounded-xl p-6">
-                  <h3 className="font-semibold text-lg mb-2">Gaylord Opryland Resort</h3>
+                  <h3 className="font-semibold text-lg mb-2">
+                    <RinkLink slug={RINK_SLUGS.gaylord}>Gaylord Opryland Resort</RinkLink>
+                  </h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
                     Part of the resort&apos;s &ldquo;A Country Christmas&rdquo; / &ldquo;So Much Christmas&rdquo; programming. Resort-style pricing and atmosphere. Worth doing once as an experience, not as a regular skate spot.
                   </p>
@@ -295,6 +387,10 @@ export default function NashvilleCityHub() {
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                  <span><strong className="text-foreground">Choose Gary Force if:</strong> you live in Williamson County, you want public skate or freestyle south of Nashville, or your family skates with the Nashville Warriors.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                   <span><strong className="text-foreground">Save the seasonal rinks for the holidays:</strong> Smashville and Fountains at Gateway are experiences, not training grounds.</span>
                 </li>
               </ul>
@@ -304,18 +400,28 @@ export default function NashvilleCityHub() {
 
             <section id="learn-to-skate">
               <h2 className="font-serif text-2xl font-bold mb-4">Learn to skate in Nashville</h2>
-              <p className="text-muted-foreground leading-relaxed">
-                Both <RinkLink slug={RINK_SLUGS.centennial}>Centennial Sportsplex</RinkLink> (via Nashville Skating Academy) and the <RinkLink slug={RINK_SLUGS.bellevue}>Ford Ice Centers</RinkLink> offer structured Learn-to-Skate USA programming. Centennial&apos;s sessions are typically 6&ndash;7 weeks and grouped by skill level. Ford Ice runs its own Predators-branded Learn-to-Skate at all three locations. If you&apos;re committing more than a one-time try, enroll in a structured session &mdash; the difference between learning in a class versus during public skate is dramatic.
-              </p>
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>
+                  <RinkLink slug={RINK_SLUGS.centennial}>Centennial Sportsplex</RinkLink> offers lessons through Nashville Skating Academy. The <RinkLink slug={RINK_SLUGS.bellevue}>Ford Ice Centers</RinkLink> also publish structured learn-to-skate programs, including a Scott Hamilton Skating Academy program in Clarksville and TPH Nashville Skating Academy classes in Bellevue and Antioch.
+                </p>
+                <p>
+                  Group lessons give beginners a progression that public skating cannot provide by itself. Pair the weekly class with a public session between lessons so balance, stops, and crossovers have time to become habits. Registration runs in multi-week blocks, so check the current session dates before choosing a location.
+                </p>
+              </div>
             </section>
 
             <Separator />
 
             <section id="freestyle">
               <h2 className="font-serif text-2xl font-bold mb-4">Freestyle and figure skating in Nashville</h2>
-              <p className="text-muted-foreground leading-relaxed">
-                <RinkLink slug={RINK_SLUGS.centennial}>Centennial Sportsplex</RinkLink> is the dominant freestyle venue in Nashville, supported by Nashville Skating Academy. <RinkLink slug={RINK_SLUGS.antioch}>Ford Ice Center Antioch</RinkLink> also hosts freestyle sessions, particularly for the Scott Hamilton Skating Academy programs. Freestyle sessions are posted on each rink&apos;s calendar and are not on a fixed weekly schedule &mdash; check ahead.
-              </p>
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>
+                  <RinkLink slug={RINK_SLUGS.centennial}>Centennial Sportsplex</RinkLink> supports Nashville Skating Academy and posts its ice through the live arena calendar. Ford Ice Center offers daily freestyle sessions across its system, with registration through DaySmart. <RinkLink slug={RINK_SLUGS.garyForce}>Gary Force Acura Ice Arena</RinkLink> also confirms freestyle sessions in its online events calendar.
+                </p>
+                <p>
+                  Freestyle is practice ice, not public skate. Session rules, level expectations, and availability vary, so open the current listing and confirm that the session fits the skater before booking.
+                </p>
+              </div>
             </section>
 
             <Separator />
@@ -344,6 +450,62 @@ export default function NashvilleCityHub() {
 
             <Separator />
 
+            <section id="guides">
+              <h2 className="font-serif text-2xl font-bold mb-4">Nashville skating guides</h2>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Use these guides for the part of the decision that matters most to your trip:
+              </p>
+              <div className="grid gap-4 sm:grid-cols-2">
+                {[
+                  {
+                    href: "/blog/public-skating-nashville",
+                    title: "Public skating schedules and prices",
+                    description: "Compare live-calendar systems, admission, rentals, and how to book each rink.",
+                  },
+                  {
+                    href: "/blog/ice-skating-cost-nashville",
+                    title: "How much ice skating costs",
+                    description: "Plan the full outing, including admission, lessons, and equipment.",
+                  },
+                  {
+                    href: "/blog/centennial-sportsplex-ice-skating",
+                    title: "Centennial Sportsplex guide",
+                    description: "Go deeper on Nashville's main walk-in public rink.",
+                  },
+                  {
+                    href: "/blog/what-to-expect-public-skating",
+                    title: "What to expect at public skate",
+                    description: "A first-timer walkthrough from rentals to the last lap.",
+                  },
+                ].map(guide => (
+                  <Link
+                    key={guide.href}
+                    href={guide.href}
+                    className="block border p-5 hover:border-primary/40 transition-colors"
+                  >
+                    <h3 className="font-semibold text-foreground">{guide.title}</h3>
+                    <p className="text-sm text-muted-foreground mt-2">{guide.description}</p>
+                  </Link>
+                ))}
+              </div>
+            </section>
+
+            <Separator />
+
+            <section id="faq">
+              <h2 className="font-serif text-2xl font-bold mb-6">Nashville ice skating FAQ</h2>
+              <div className="space-y-6">
+                {NASHVILLE_FAQS.map(item => (
+                  <div key={item.question}>
+                    <h3 className="font-semibold text-lg">{item.question}</h3>
+                    <p className="text-muted-foreground leading-relaxed mt-2">{item.answer}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            <Separator />
+
             <section>
               <h2 className="font-serif text-2xl font-bold mb-6">All Nashville-area Rinks</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -353,7 +515,7 @@ export default function NashvilleCityHub() {
               </div>
             </section>
 
-            <LastVerified date="2026-05-23" />
+            <LastVerified date="2026-06-27" />
 
           </div>
         </div>

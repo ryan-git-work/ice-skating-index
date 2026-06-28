@@ -6,15 +6,18 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import {
-  MapPin, Phone, Calendar,
+  MapPin, Phone,
   Info, X, ExternalLink, Ticket,
   Snowflake, Dumbbell, Scissors, ChevronDown, ChevronUp, AlertTriangle
 } from "lucide-react";
 import { useHead } from "@/hooks/use-head";
 import { useState, useEffect } from "react";
-import { NextPublicSkateSessions } from "@/components/NextPublicSkateSessions";
+import {
+  isGoogleCalendarEmbedUrl,
+  PublicSkateSchedule,
+} from "@/components/PublicSkateSchedule";
 import { NearbyRinks } from "@/components/NearbyRinks";
-import { LastVerified } from "@/components/LastVerified";
+import { formatVerifiedDate, LastVerified } from "@/components/LastVerified";
 import { getNearbyRinks } from "@/lib/data";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
@@ -45,6 +48,17 @@ function buildOfferingList(rink: NonNullable<ReturnType<typeof getRinkBySlug>>) 
   return map.filter(([, value]) => value === true || value === "true").slice(0, 3).map(([name]) => name);
 }
 
+const NASHVILLE_CLUSTER_SLUGS = new Set([
+  "centennial-sportsplex-nashville-tn",
+  "ford-ice-center-bellevue-nashville-tn",
+  "ford-ice-center-antioch-antioch-tn",
+  "ford-ice-center-clarksville-clarksville-tn",
+  "gary-force-acura-ice-arena-nolensville-tn",
+  "smashville-ice-rink-at-zoolumination-nashville-tn",
+  "gaylord-opryland-resort-nashville-tn",
+  "fountains-at-gateway-murfreesboro-tn",
+]);
+
 export default function RinkDetail() {
   const params = useParams();
   const rink = getRinkBySlug(params.slug || "");
@@ -53,6 +67,7 @@ export default function RinkDetail() {
   const whatToKnow = rink?.what_to_know ?? rink?.seo?.what_to_know;
   const faqItems = rink?.faq ?? [];
   const isUnavailable = rink?.operating_status === "closed" || rink?.operating_status === "coming_soon";
+  const isNashvilleClusterRink = Boolean(rink && NASHVILLE_CLUSTER_SLUGS.has(rink.slug));
   const statusNotice = rink?.operating_status === "closed"
     ? "PERMANENTLY CLOSED. This page is retained as an archival reference; do not travel here expecting public ice."
     : rink?.operating_status === "coming_soon"
@@ -201,34 +216,21 @@ export default function RinkDetail() {
                   />
                 </div>
               )}
-              {rink.slug === "centennial-sportsplex-nashville-tn" ? (
-                <NextPublicSkateSessions
-                  jsonPath="/data/sessions/centennial-sportsplex.json"
-                  calendarUrl={rink.schedule_links.public_calendar_url || undefined}
-                  directionsUrl={rink.google_maps_url || undefined}
-                  fallbackButton={{
-                    label: "View Public Schedule",
-                    href: "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating",
-                  }}
-                />
-              ) : (
-                <div className="flex flex-col sm:flex-row gap-3">
-                  {rink.website && (
-                     <Button asChild size="lg" className="shadow-sm">
-                       <a href={rink.website} target="_blank" rel="noopener noreferrer">
-                         Visit Website <ExternalLink className="ml-2 h-4 w-4" />
-                       </a>
-                     </Button>
-                  )}
-                  {rink.schedule_links.public_calendar_url && (
-                    <Button asChild variant="outline" size="lg">
-                      <a href={rink.schedule_links.public_calendar_url} target="_blank" rel="noopener noreferrer">
-                        <Calendar className="mr-2 h-4 w-4" /> Public Schedule
-                      </a>
-                    </Button>
-                  )}
-                </div>
-              )}
+              <div className="flex flex-col sm:flex-row gap-3">
+                {rink.website && (
+                   <Button asChild size="lg" className="shadow-sm">
+                     <a href={rink.website} target="_blank" rel="noopener noreferrer">
+                       Visit Website <ExternalLink className="ml-2 h-4 w-4" />
+                     </a>
+                   </Button>
+                )}
+                {rink.schedule_links.public_calendar_url && (
+                  <PublicSkateSchedule
+                    rinkName={rink.name}
+                    url={rink.schedule_links.public_calendar_url}
+                  />
+                )}
+              </div>
             </div>
           </div>
         </div>
@@ -268,6 +270,15 @@ export default function RinkDetail() {
                 </div>
               )}
             </section>
+
+            {rink.schedule_links.public_calendar_url &&
+              isGoogleCalendarEmbedUrl(rink.schedule_links.public_calendar_url) && (
+                <PublicSkateSchedule
+                  rinkName={rink.name}
+                  url={rink.schedule_links.public_calendar_url}
+                  embed
+                />
+              )}
 
             {!isUnavailable && <section>
               <h2 className="font-serif text-2xl font-bold mb-6">Offerings</h2>
@@ -386,6 +397,23 @@ export default function RinkDetail() {
               </section>
             )}
 
+            {isNashvilleClusterRink && (
+              <section className="border-t pt-8">
+                <h2 className="font-serif text-2xl font-bold mb-3">Plan a Nashville skating trip</h2>
+                <p className="text-muted-foreground leading-relaxed">
+                  Compare every year-round and seasonal option in the{" "}
+                  <Link href="/city/tn/nashville" className="text-primary hover:underline font-medium">
+                    Nashville ice skating guide
+                  </Link>
+                  , then check current prices and booking links in the{" "}
+                  <Link href="/blog/public-skating-nashville" className="text-primary hover:underline font-medium">
+                    Nashville public skating schedule guide
+                  </Link>
+                  .
+                </p>
+              </section>
+            )}
+
             {/* NearbyRinks — computed dynamically from same-city rinks */}
             {(() => {
               const nearby = getNearbyRinks(rink, 4);
@@ -464,7 +492,7 @@ export default function RinkDetail() {
              )}
 
              <div className="text-xs text-muted-foreground">
-               {rink.last_verified && <p>Last verified: {new Date(rink.last_verified).toLocaleDateString()}</p>}
+               {rink.last_verified && <p>Last verified: {formatVerifiedDate(rink.last_verified)}</p>}
                {rink.sources && rink.sources.length > 0 && <p>Source: {rink.sources.join(", ")}</p>}
              </div>
           </div>

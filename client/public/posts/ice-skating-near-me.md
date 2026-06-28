@@ -54,7 +54,7 @@ Where you live shapes what kind of ice you will find, so it helps to know the ca
 
 ### Indoor rinks
 
-Indoor arenas are the backbone of the directory and the most reliable place to find public skating near me any month of the year. They control their own temperature, so the ice holds up in July as well as January, and most metro skating happens indoors. In the Nashville area, indoor sheets like [RINK: ford-ice-center-bellevue-nashville-tn] and [RINK: centennial-sportsplex-nashville-tn] run public sessions through the warm Tennessee summers when no outdoor ice could survive. If you are wondering whether you can skate in the off-season, our article on [ice skating in summer](/blog/ice-skating-in-summer) covers exactly that.
+Indoor arenas are the backbone of the directory and the most reliable place to find public skating near me any month of the year. They control their own temperature, so the ice holds up in July as well as January, and most metro skating happens indoors. In the Nashville area, indoor sheets like [RINK: ford-ice-center-bellevue-nashville-tn] and [RINK: centennial-sportsplex-nashville-tn] run public sessions through the warm Tennessee summers when no outdoor ice could survive. The [Nashville ice skating guide](/city/tn/nashville) compares every metro option in one place. If you are wondering whether you can skate in the off-season, our article on [ice skating in summer](/blog/ice-skating-in-summer) covers exactly that.
 
 ### Outdoor rinks
 

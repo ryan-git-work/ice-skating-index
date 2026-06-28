@@ -123,7 +123,7 @@ Pricing patterns to expect:
 
 Because numbers change and differ from rink to rink, always confirm on the specific rink page before you go. The [how much does ice skating cost](/blog/how-much-does-ice-skating-cost) guide explains the typical pieces of a skating budget so nothing at the desk surprises you.
 
-If you want a sense of what a real session looks like before you pick one, open a rink page and read its details. Spots like [RINK: centennial-sportsplex-nashville-tn] and [RINK: ford-ice-center-antioch-antioch-tn] post their public skate schedules and rental info, and [RINK: skating-club-of-boston-norwood-ma] is a good example to read up in the Northeast.
+If you want a sense of what a real session looks like before you pick one, open a rink page and read its details. Spots like [RINK: centennial-sportsplex-nashville-tn] and [RINK: ford-ice-center-antioch-antioch-tn] post their public skate schedules and rental info. The [Nashville ice skating guide](/city/tn/nashville) compares the whole metro, and [RINK: skating-club-of-boston-norwood-ma] is a good example to read up in the Northeast.
 
 ## Frequently Asked Questions
 

@@ -6,10 +6,19 @@ interface LastVerifiedProps {
   showTooltip?: boolean;
 }
 
+export function formatVerifiedDate(date: string, options?: Intl.DateTimeFormatOptions) {
+  const [year, month, day] = date.split("-").map(Number);
+  const parsed = year && month && day
+    ? new Date(year, month - 1, day)
+    : new Date(date);
+
+  return parsed.toLocaleDateString("en-US", options);
+}
+
 export function LastVerified({ date, showTooltip = true }: LastVerifiedProps) {
   const [hovered, setHovered] = useState(false);
 
-  const formatted = new Date(date).toLocaleDateString("en-US", {
+  const formatted = formatVerifiedDate(date, {
     year: "numeric",
     month: "long",
     day: "numeric",
