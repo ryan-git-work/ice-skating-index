@@ -1,5 +1,5 @@
 import { Layout } from "@/components/Layout";
-import { rinks, getRinkBySlug } from "@/lib/data";
+import { getRinkBySlug, isTruthy } from "@/lib/data";
 import { Link, useParams } from "wouter";
 import NotFound from "@/pages/not-found";
 import { Button } from "@/components/ui/button";
@@ -12,16 +12,17 @@ import {
 } from "lucide-react";
 import { useHead } from "@/hooks/use-head";
 import { useState, useEffect } from "react";
-import {
-  isGoogleCalendarEmbedUrl,
-  PublicSkateSchedule,
-} from "@/components/PublicSkateSchedule";
+import { PublicSkateSchedule } from "@/components/PublicSkateSchedule";
+import { ScheduleLanes } from "@/components/ScheduleLanes";
+import { SkateStatus } from "@/components/SkateStatus";
+import { SharpeningConnector } from "@/components/SharpeningConnector";
 import { NearbyRinks } from "@/components/NearbyRinks";
 import { formatVerifiedDate, LastVerified } from "@/components/LastVerified";
 import { getNearbyRinks } from "@/lib/data";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { SITE_URL, STATE_NAMES, slugify } from "@/lib/seo";
+import { buildWebPageSchema, SITE_URL, STATE_NAMES, slugify } from "@/lib/seo";
+import { getSkateStatus } from "@/lib/skateStatus";
 
 function getFaqQA(item: { q?: string; a?: string; question?: string; answer?: string }): { q: string; a: string } {
   if ("question" in item && item.question) return { q: item.question, a: item.answer ?? "" };
@@ -65,7 +66,24 @@ export default function RinkDetail() {
 
   const description = rink?.description ?? rink?.seo?.long_description;
   const whatToKnow = rink?.what_to_know ?? rink?.seo?.what_to_know;
-  const faqItems = rink?.faq ?? [];
+  const skateStatus = rink ? getSkateStatus(rink.slug) : null;
+  const statusFaqItems = rink && skateStatus
+    ? [
+        {
+          q: `Is ${rink.name} open for public skating this weekend?`,
+          a: skateStatus.isStale
+            ? "Schedule changes have not been confirmed recently. Check the official schedule before you go."
+            : skateStatus.note,
+        },
+        {
+          q: `Has the ${rink.name} public skating schedule changed?`,
+          a: skateStatus.isStale
+            ? "No recent change report is available. Use the official schedule before making the trip."
+            : `${skateStatus.note} This status was updated ${skateStatus.updated}.`,
+        },
+      ]
+    : [];
+  const faqItems = [...(rink?.faq ?? []), ...statusFaqItems];
   const isUnavailable = rink?.operating_status === "closed" || rink?.operating_status === "coming_soon";
   const isNashvilleClusterRink = Boolean(rink && NASHVILLE_CLUSTER_SLUGS.has(rink.slug));
   const statusNotice = rink?.operating_status === "closed"
@@ -83,6 +101,7 @@ export default function RinkDetail() {
         const schema: Record<string, unknown> = {
           "@context": "https://schema.org",
           "@type": ["LocalBusiness", "SportsActivityLocation"],
+          "@id": `${SITE_URL}/rink/${rink.slug}#rink`,
           name: rink.name,
           description: stripFirstParagraph(description),
           address: {
@@ -108,6 +127,27 @@ export default function RinkDetail() {
       })()
     : null;
 
+  const pageModified = [rink?.last_verified, skateStatus?.updated]
+    .filter((value): value is string => Boolean(value))
+    .sort()
+    .at(-1);
+
+  const webPageSchema = rink
+    ? {
+        ...buildWebPageSchema(
+          `/rink/${rink.slug}`,
+          metaTitle,
+          metaDescription || "",
+        ),
+        "@id": `${SITE_URL}/rink/${rink.slug}#webpage`,
+        dateModified: pageModified,
+        lastReviewed: pageModified,
+        about: {
+          "@id": `${SITE_URL}/rink/${rink.slug}#rink`,
+        },
+      }
+    : null;
+
   const breadcrumbSchema = rink
     ? (() => {
         const stateSlug = slugify(rink.address.state);
@@ -130,6 +170,9 @@ export default function RinkDetail() {
     ? {
         "@context": "https://schema.org",
         "@type": "FAQPage",
+        "@id": `${SITE_URL}/rink/${rink.slug}#faq`,
+        url: `${SITE_URL}/rink/${rink.slug}`,
+        dateModified: pageModified,
         mainEntity: faqItems.map((item: any) => {
           const { q, a } = getFaqQA(item);
           return { "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } };
@@ -141,7 +184,7 @@ export default function RinkDetail() {
     title: metaTitle,
     description: metaDescription,
     canonicalPath: rink ? `/rink/${rink.slug}` : undefined,
-    structuredData: [rinkSchema, breadcrumbSchema, faqSchemaObj].filter(Boolean) as object[],
+    structuredData: [webPageSchema, rinkSchema, breadcrumbSchema, faqSchemaObj].filter(Boolean) as object[],
   });
 
   if (!rink) {
@@ -236,11 +279,19 @@ export default function RinkDetail() {
         </div>
       </div>
 
+      {skateStatus && (
+        <div className="container mx-auto px-4 pb-8">
+          <SkateStatus slug={rink.slug} />
+        </div>
+      )}
+
       <Separator />
 
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           <div className="lg:col-span-2 space-y-12">
+            {!isUnavailable && <ScheduleLanes rink={rink} />}
+
             <section>
               <h2 className="font-serif text-2xl font-bold mb-4">About</h2>
               {description ? (
@@ -270,15 +321,6 @@ export default function RinkDetail() {
                 </div>
               )}
             </section>
-
-            {rink.schedule_links.public_calendar_url &&
-              isGoogleCalendarEmbedUrl(rink.schedule_links.public_calendar_url) && (
-                <PublicSkateSchedule
-                  rinkName={rink.name}
-                  url={rink.schedule_links.public_calendar_url}
-                  embed
-                />
-              )}
 
             {!isUnavailable && <section>
               <h2 className="font-serif text-2xl font-bold mb-6">Offerings</h2>
@@ -359,13 +401,13 @@ export default function RinkDetail() {
                 <div className="border rounded-lg p-5">
                   <div className="flex justify-between items-center mb-4">
                      <span className="font-medium">Pro Shop Service</span>
-                     {rink.sharpening.available ? (
+                     {isTruthy(rink.sharpening.available) ? (
                       <Badge variant="outline" className="text-green-600 border-green-200 bg-green-50">Available</Badge>
                     ) : (
                       <Badge variant="outline" className="text-muted-foreground">Not Available</Badge>
                     )}
                   </div>
-                  {rink.sharpening.available && (
+                  {isTruthy(rink.sharpening.available) && (
                     <ul className="space-y-2 text-sm text-muted-foreground">
                        {rink.sharpening.pricing_base && <li>Base Price: {rink.sharpening.pricing_base}</li>}
                        {rink.sharpening.turnaround && <li>Turnaround: {rink.sharpening.turnaround}</li>}
@@ -374,6 +416,10 @@ export default function RinkDetail() {
                 </div>
               </div>
             </section>}
+
+            {!isUnavailable && (
+              <SharpeningConnector compact />
+            )}
 
             {!isUnavailable && faqItems.length > 0 && (
               <section>
@@ -408,6 +454,14 @@ export default function RinkDetail() {
                   , then check current prices and booking links in the{" "}
                   <Link href="/blog/public-skating-nashville" className="text-primary hover:underline font-medium">
                     Nashville public skating schedule guide
+                  </Link>
+                  , see{" "}
+                  <Link href="/blog/ice-skating-nashville-this-weekend" className="text-primary hover:underline font-medium">
+                    what&apos;s open in Nashville this weekend
+                  </Link>
+                  , or check the{" "}
+                  <Link href="/blog/skate-sharpening-nashville" className="text-primary hover:underline font-medium">
+                    current Nashville skate-sharpening options
                   </Link>
                   .
                 </p>

@@ -1,6 +1,6 @@
 # Centennial Sportsplex Ice Skating: Everything You Need to Know Before You Go
 
-If you are looking for ice skating in Nashville, Centennial Sportsplex is where most locals end up. It is centrally located, run by Metro Nashville Parks, priced better than most private rinks, and has been the home rink for Nashville skaters since 1990. It is also the only public rink in Nashville with two full-size sheets of ice.
+If you are looking for ice skating in Nashville, Centennial Sportsplex is where many locals end up. It is centrally located, has been home ice for Nashville skaters since 1990, and is the only public rink in the city with two full-size sheets. The Nashville Predators assumed management of ice operations on May 1, 2026.
 
 Here is everything you need to know before you go.
 
@@ -12,7 +12,7 @@ Here is everything you need to know before you go.
 **Phone:** 615-862-8480
 **Ice Rink Type:** Two full-size indoor sheets, 200 x 85 feet each
 **Open:** Year-round
-**Schedule:** Public skate sessions are posted on the Centennial Sportsplex Ice Arena Google Calendar — check it before you go as session days and times vary
+**Schedule:** Public skate sessions, registration, and waivers now run through Predators DaySmart. Check the current Centennial listing before you go.
 
 ---
 
@@ -20,7 +20,7 @@ Here is everything you need to know before you go.
 
 This is the most important thing to know about Centennial Sportsplex: public skate sessions do not run on a fixed weekly schedule. Session days, times, and lengths change depending on what else is happening on the ice — hockey leagues, figure skating club time, and special events all share the rinks.
 
-The best way to check current session times is through the official Google Calendar linked on the Nashville.gov Centennial Sportsplex page. Sessions are typically posted a week or two in advance and will include the specific start time, duration, and any special notes.
+The current public-skate path is the Predators' DaySmart system. Create an account, select Centennial, and open the specific session to confirm its time, price, waiver, and registration requirements. Public skate is typically on Rink A.
 
 A few patterns that tend to hold:
 - Sessions are commonly offered on Wednesdays, Fridays, and Saturdays
@@ -33,7 +33,7 @@ Always check the calendar before making the trip. Session availability can chang
 
 ## Admission and Pricing
 
-Centennial Sportsplex is one of the most affordable places to skate in Nashville, operated as a Metro Parks facility rather than a commercial rink.
+Centennial Sportsplex has historically been one of Nashville's more affordable places to skate. Because operations changed in May 2026, confirm the current price in DaySmart before booking.
 
 - **Ages 4 and under:** Free
 - **General admission (ages 5+):** $6 (skate rental now included with admission)
@@ -68,7 +68,7 @@ Centennial offers both figure skates and hockey skates for rental.
 - Wear one pair of thin, calf-height socks for the best fit — thick socks or two pairs reduce ankle support
 - Check the blade condition when you pick up your skates; if they look dull or damaged, ask for a different pair
 
-The rink also offers skate sharpening services if you bring your own skates.
+The former on-site pro shop and skate-sharpening service closed during the 2026 management transition, even though older Metro pages may still list it.
 
 ---
 
@@ -122,7 +122,7 @@ For a comprehensive list of Nashville area rinks with current hours and session 
 
 A few things that will make your visit smoother:
 
-**Check the Google Calendar the day before.** Sessions change frequently and what was on the schedule a week ago may have shifted. A two-minute check saves a wasted trip.
+**Check DaySmart and the Skate Status note the day before.** Sessions change frequently and what was listed a week ago may have shifted. A two-minute check saves a wasted trip.
 
 **Arrive 15-20 minutes early.** Tickets go on sale 15 minutes before the session. Skate rental lines move quickly if you get there before the rush.
 

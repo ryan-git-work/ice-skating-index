@@ -6,6 +6,7 @@ import {
   blogPostRegistry,
   getRelatedPosts,
   fetchPost,
+  extractFaqItems,
   getStaticPostContent,
   preparePostContent,
 } from "@/lib/blog";
@@ -18,6 +19,8 @@ import rehypeRaw from "rehype-raw";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, ArrowLeft, ArrowRight, User } from "lucide-react";
 import { SITE_URL } from "@/lib/seo";
+import { getLatestStatusUpdated } from "@/lib/skateStatus";
+import { SharpeningConnector } from "@/components/SharpeningConnector";
 
 function trimExcerpt(text: string, max = 155) {
   if (text.length <= max) return text;
@@ -49,6 +52,14 @@ export default function BlogPost() {
   const [content, setContent] = useState<string | null>(renderedInitialContent);
   const [loading, setLoading] = useState(!renderedInitialContent);
   const [error, setError] = useState(false);
+  const latestStatusDate = postMeta?.slug === "ice-skating-nashville-this-weekend"
+    ? getLatestStatusUpdated()
+    : undefined;
+  const modifiedDate = [postMeta?.publishDate, postMeta?.modifiedDate, latestStatusDate]
+    .filter((value): value is string => Boolean(value))
+    .sort()
+    .at(-1);
+  const faqItems = renderedInitialContent ? extractFaqItems(renderedInitialContent) : [];
 
   const articleSchema = postMeta
     ? {
@@ -57,7 +68,7 @@ export default function BlogPost() {
         headline: postMeta.title,
         description: postMeta.excerpt,
         datePublished: postMeta.publishDate,
-        dateModified: postMeta.publishDate,
+        dateModified: modifiedDate,
         author: {
           "@type": "Organization",
           name: "Ice Skating Index",
@@ -79,6 +90,24 @@ export default function BlogPost() {
       }
     : null;
 
+  const faqSchema = postMeta && faqItems.length > 0
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "@id": `${SITE_URL}/blog/${postMeta.slug}#faq`,
+        url: `${SITE_URL}/blog/${postMeta.slug}`,
+        dateModified: modifiedDate,
+        mainEntity: faqItems.map(item => ({
+          "@type": "Question",
+          name: item.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: item.answer,
+          },
+        })),
+      }
+    : null;
+
   const breadcrumbSchema = postMeta
     ? {
         "@context": "https://schema.org",
@@ -95,7 +124,7 @@ export default function BlogPost() {
     title: postMeta?.title || "Blog Post",
     description: postMeta ? trimExcerpt(postMeta.excerpt) : "",
     canonicalPath: postMeta ? `/blog/${postMeta.slug}` : undefined,
-    structuredData: [articleSchema, breadcrumbSchema].filter(Boolean) as object[],
+    structuredData: [articleSchema, breadcrumbSchema, faqSchema].filter(Boolean) as object[],
   });
 
   useEffect(() => {
@@ -192,6 +221,12 @@ export default function BlogPost() {
               </ReactMarkdown>
             </article>
           ) : null}
+
+          {postMeta.slug === "skate-sharpening-nashville" && (
+            <div className="mt-10">
+              <SharpeningConnector />
+            </div>
+          )}
 
           {relatedPosts.length > 0 && (
             <div className="mt-16 pt-10 border-t">

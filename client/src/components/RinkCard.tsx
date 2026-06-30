@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { isTruthy, type Rink } from "@/lib/data";
+import { SkateStatusChip } from "@/components/SkateStatus";
 
 interface RinkCardProps {
   rink: Rink;
@@ -32,6 +33,7 @@ export function RinkCard({ rink }: RinkCardProps) {
            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
            <div className="absolute bottom-3 left-3 right-3">
              <div className="flex flex-wrap gap-1.5">
+               <SkateStatusChip slug={rink.slug} />
                {statusLabel && (
                  <Badge variant="secondary" className="bg-amber-50 text-amber-900 border border-amber-200 text-xs font-medium">
                    {statusLabel}

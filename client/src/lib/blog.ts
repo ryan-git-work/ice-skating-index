@@ -6,6 +6,7 @@ export interface BlogPostMeta {
   secondaryKeywords: string[];
   category: string;
   publishDate: string;
+  modifiedDate?: string;
   excerpt: string;
   fileName: string;
   image?: string;
@@ -105,6 +106,28 @@ export function extractExcerpt(content: string, maxLength = 160): string {
 export function extractTitle(content: string): string {
   const match = content.match(/^#\s+(.+)$/m);
   return match ? match[1] : "Untitled Post";
+}
+
+export function extractFaqItems(content: string): Array<{ question: string; answer: string }> {
+  const faqStart = content.search(/^##\s+Frequently Asked Questions\s*$/im);
+  if (faqStart === -1) return [];
+
+  const faqSection = content.slice(faqStart);
+  const items: Array<{ question: string; answer: string }> = [];
+  const matches = Array.from(
+    faqSection.matchAll(/^###\s+(.+?)\s*\n+([\s\S]*?)(?=^###\s+|^##\s+|(?![\s\S]))/gm),
+  );
+
+  for (const match of matches) {
+    const answer = match[2]
+      .trim()
+      .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+      .replace(/<[^>]+>/g, "")
+      .replace(/\s+/g, " ");
+    if (answer) items.push({ question: match[1].trim(), answer });
+  }
+
+  return items;
 }
 
 export async function getPostImage(slug: string): Promise<string> {

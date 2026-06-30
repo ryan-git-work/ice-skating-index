@@ -8,7 +8,7 @@
       "Centennial Sportsplex"
     ],
     "category": "Ice Skating Rink",
-    "operator": null,
+    "operator": "Nashville Predators",
     "address": {
       "street": "222 25th Avenue North",
       "city": "Nashville",
@@ -22,7 +22,7 @@
     },
     "phone": "615-862-8480",
     "email": null,
-    "website": "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating",
+    "website": "https://www.nhl.com/predators/arena/local-rinks/centennial-ice-rink",
     "google_maps_url": "https://www.google.com/maps?aq=0&f=q&geocode&hl=en&hnear=222+25th+Ave+N,+Nashville,+Davidson,+Tennessee+37203&hq&ie=UTF8&ll=36.150264,-86.810317&oq=222+25&q=222+25th+Avenue+North,+Nashville,+TN&sll=36.18664,-86.785245&source=embed&sspn=0.761449,1.132965&t=h&z=14",
     "social_links": [
       {
@@ -43,10 +43,10 @@
       ]
     },
     "schedule_links": {
-      "public_calendar_url": "https://calendar.google.com/calendar/embed?ctz=America%2FChicago&src=sicdsqf3dmthsgglhcq3ka1l74%40group.calendar.google.com",
-      "freestyle_calendar_url": null,
-      "hockey_calendar_url": "https://calendar.google.com/calendar/embed?ctz=America%2FChicago&src=sicdsqf3dmthsgglhcq3ka1l74%40group.calendar.google.com",
-      "lessons_url": "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating/learn-skate"
+      "public_calendar_url": "https://apps.daysmartrecreation.com/dash/x/",
+      "freestyle_calendar_url": "https://nashvilleskatingacademycentennial.finnlyconnect.com/",
+      "hockey_calendar_url": "https://apps.daysmartrecreation.com/dash/x/",
+      "lessons_url": "https://www.nashvilleiceskate.com/"
     },
     "offerings": {
       "public_skating": true,
@@ -62,7 +62,7 @@
         "youth": 10
       },
       "spectators": 0,
-      "notes": "Public skating admission rates are published by the rink. Adults (ages 13+) are $12 and ages 5 to 12 are $10. Ages 4 and under and spectators are free. Seniors, disabled guests, military members, and students are listed at $10. Skate rental is included with paid public-skating admission. Public skating times change monthly, so use the Ice Arena Google Calendar and the public skating page to confirm the exact session before you go. Weekend afternoons and some weekday midday windows are common, but they are not fixed."
+      "notes": "Centennial's previously published public-skating rates were $12 for ages 13 and up and $10 for ages 5 to 12, with ages 4 and under and spectators free. Skate rental was included with paid admission. Since May 1, 2026, the Nashville Predators have managed ice operations and require a DaySmart account for schedules, registration, and waivers. Confirm the current session price in DaySmart before booking."
     },
     "rentals": {
       "available": true,
@@ -80,17 +80,13 @@
       "notes": "The public skating rates list skate rental as included with admission. The rink does not publish a specific rental size range online, so call ahead if you need a particular size."
     },
     "sharpening": {
-      "available": true,
-      "turnaround": "Please allow 24 hours; the rink notes they can often finish in less than 24 hours when needed.",
-      "pricing_base": 6,
-      "pricing_rush": 2,
-      "add_ons": [
-        "Masking tape on lower: $1",
-        "Extra masking tape: $1",
-        "Skating straps: $6"
-      ],
-      "notes": "Skate sharpening is offered for both figure skates and hockey skates. A rush fee is listed for less than 24-hour turnaround, and you can ask for a pickup time when you drop off your skates.",
-      "info_url": "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating/skate-sharpening"
+      "available": false,
+      "turnaround": null,
+      "pricing_base": null,
+      "pricing_rush": null,
+      "add_ons": [],
+      "notes": "The former on-site sharpening service and pro shop closed during the 2026 management transition. Do not rely on the older Metro page that still lists the service. Use a current Ford Ice pro shop, Rainbo Sports and Skating, or a verified independent option.",
+      "info_url": null
     },
     "freestyle": {
       "available": true,
@@ -104,20 +100,20 @@
         "Figure skaters who need quiet practice ice time, if a freestyle-style session appears on the calendar.",
         "Coaches and students, when the session listing or rink rules indicate lessons are permitted."
       ],
-      "how_to_find_times": "Open the Centennial Sportsplex Ice Arena Google Calendar and scan the month view. Use the event titles to look for labels such as \"Freestyle\" or \"Figure Freestyle\". If you do not see those labels, check the calendar again closer to your target week because sessions are posted and adjusted monthly.",
+      "how_to_find_times": "Use Nashville Skating Academy's Centennial Finnly portal for the current freestyle ice schedule, class schedule, eligibility, and registration. Public skate is typically on Rink A, while academy freestyle and classes use both Rink A and Rink B.",
       "cost_notes": null,
       "etiquette_tips": [
         "If a freestyle session is listed, assume right of way matters and yield to skaters running a program to music.",
         "Stay alert near the jump corners and do not camp in the middle of the rink.",
         "Ask a coach or rink staff what the session expectations are if you are new to freestyle-style ice."
       ],
-      "notes": "The official Centennial Sportsplex ice skating pages describe public skating, lessons, and hockey sessions, but they do not explicitly confirm dedicated freestyle figure sessions. The most reliable way to verify is to search the official Ice Arena Google Calendar for a freestyle-related label or contact the rink."
+      "notes": "Nashville Skating Academy publishes dedicated freestyle ice and class schedules through its Centennial Finnly portal. Public skate is typically on Rink A; academy sessions can use both sheets. Confirm the sheet and session level when registering."
     },
     "amenities": {
       "lockers": true,
       "spectator_seating": true,
       "concessions": true,
-      "pro_shop": "unknown",
+      "pro_shop": false,
       "skate_aids": "unknown"
     },
     "audiences": [
@@ -139,28 +135,28 @@
     ],
     "faq": [
       {
-        "q": "Where do I find the public skating schedule for Centennial Sportsplex in Nashville, TN?",
-        "a": "Public skating session times change by month. The rink directs skaters to the Centennial Sportsplex Ice Arena Google Calendar and the official public skating page, which links to the current schedule."
+        "q": "Where do I find the current Centennial Sportsplex public skating schedule?",
+        "a": "The Nashville Predators now manage Centennial ice operations and require DASH by DaySmart Recreation for rink schedules, registration, and waivers. Use the official schedule link on this page and confirm the selected Centennial session before you go."
       },
       {
-        "q": "Do I need my own skates, or can I rent skates at Centennial Sportsplex Ice Arenas?",
-        "a": "Skate rental is available at the facility. The public skating rates page states that skate rental is included with public skating admission."
+        "q": "What are Centennial Sportsplex public skating hours?",
+        "a": "Public-skate times change by date rather than following fixed building hours. Public skate is typically on Rink A. Check DaySmart for the current session and review the Skate Status note for known changes."
       },
       {
-        "q": "Does Centennial Sportsplex offer learn-to-skate or figure skating lessons?",
-        "a": "Lessons are offered through Nashville Skating Academy. The official Learn To Ice Skate page describes learn-to-skate and figure skating training and lists the recurring class days and times, with a link to the academy for current registration details."
+        "q": "Is Centennial Sportsplex open for public skating this weekend?",
+        "a": "Weekend availability changes around camps, hockey, figure skating, and holidays. Check the Skate Status block and then confirm the specific public-skate session in DaySmart before leaving home."
       },
       {
-        "q": "Is there open hockey or stick and puck at Centennial Sportsplex?",
-        "a": "Yes. The Centennial Sportsplex adult open hockey page explains that open hockey and stick and puck sessions are scheduled via the Ice Arena Google Calendar, and it lists key rules and a posted session price for those programs."
+        "q": "Where do I find Centennial freestyle and figure-skating practice ice?",
+        "a": "Nashville Skating Academy publishes Centennial freestyle ice, class schedules, and registration through its Finnly portal. Academy sessions can use both Rink A and Rink B, so confirm the sheet and session level when registering."
       },
       {
-        "q": "Can I get my skates sharpened at Centennial Sportsplex, and what does it cost?",
-        "a": "Yes. The rink offers skate sharpening for figure and hockey skates, with a posted base price and an additional rush fee. The skate sharpening page also notes that you should allow about 24 hours for turnaround."
+        "q": "Do I need my own skates for Centennial public skating?",
+        "a": "Centennial's previously published public-skate rates included rental skates with paid admission. Confirm the current rental policy and session price in DaySmart during the management transition."
       },
       {
-        "q": "Does Centennial Sportsplex have freestyle ice time for figure skaters?",
-        "a": "Freestyle sessions are not explicitly confirmed on the main ice skating pages. To check, open the official Ice Arena Google Calendar and look for event titles that include words like \"Freestyle\" or \"Figure Freestyle\". If you are unsure, call the rink and ask what labels they use for figure practice sessions."
+        "q": "Can I get my skates sharpened at Centennial Sportsplex?",
+        "a": "No. The former on-site sharpening service and pro shop closed during the 2026 management transition. Older Metro pages may still list the service. Use a current Ford Ice pro shop, Rainbo Sports and Skating, or another verified option."
       }
     ],
     "seo": {
@@ -216,40 +212,35 @@
         ]
       },
       "meta_title": "Centennial Sportsplex Ice Skating, Nashville TN",
-      "meta_description": "Public skating at Centennial Sportsplex in Nashville, $10 to $12 with skates included, two full-size sheets, walk-ins welcome. Plus lessons, hockey, and figure skating.",
-      "snippet": "Centennial Sportsplex Ice Arenas in Nashville, TN has two full-size indoor rinks with public skating, lessons through Nashville Skating Academy, and hockey sessions listed on the official Ice Arena Google Calendar.",
-      "short_description": "Centennial Sportsplex Ice Arenas is an indoor ice facility in Nashville, Tennessee with two full-size sheets. Use the official Ice Arena Google Calendar to confirm public skating sessions, and see the site for lessons and hockey programs.",
-      "long_description": "Across from Centennial Park, Centennial Sportsplex Ice Arenas in Nashville, TN is a year-round ice center with two full-size sheets. The rink lists each sheet at 200 feet by 85 feet, which is helpful if you are comparing rink dimensions for hockey or figure skating.\n\nSession times are not fixed week to week. The rink points skaters to the Centennial Sportsplex Ice Arena Google Calendar, and the public skating page links you back to that calendar. If you are planning a visit, check the event titles on the calendar to confirm whether a slot is public skating, hockey, or a special program.\n\nOn-site amenities listed by the rink include skate rental, spectator seating, lockers, a concession stand, and and skate sharpening. Learn-to-skate and figure skating training is offered through Nashville Skating Academy, and adult open hockey and stick and puck details are outlined on the official hockey program page.",
+      "meta_description": "Public skating at Centennial Sportsplex in Nashville, with two full-size sheets and online DaySmart booking. Check current prices, schedule changes, lessons, and freestyle ice.",
+      "snippet": "Centennial Sportsplex in Nashville has two full-size indoor rinks. Public skating now uses Predators DaySmart, while Nashville Skating Academy publishes freestyle and lesson registration separately.",
+      "short_description": "Centennial Sportsplex is a two-sheet Nashville ice facility managed by the Nashville Predators. Use DaySmart for public skating and the Nashville Skating Academy portal for freestyle and lessons.",
+      "long_description": "Across from Centennial Park, Centennial Sportsplex in Nashville is a year-round ice center with two full-size sheets. Since May 1, 2026, the Nashville Predators have managed ice operations and route public-skate schedules, registration, and waivers through DaySmart.\n\nPublic skating is typically held on Rink A. Nashville Skating Academy publishes freestyle ice, classes, and registration through its separate Centennial Finnly portal, with academy sessions using both Rink A and Rink B.\n\nThe former on-site pro shop and sharpening service closed during the management transition. Older Metro pages may still list that service, so use a current Ford Ice pro shop, Rainbo Sports and Skating, or a verified independent option instead.",
       "helpful_blurbs": [
-        "Trying to plan around a busy week in Nashville? Start with the Ice Arena Google Calendar, since public skating and hockey sessions are posted and adjusted by month.",
-        "If you are working on fundamentals, the Learn To Ice Skate page points you to Nashville Skating Academy for learn-to-skate and figure skating training. That is a good path if you want structured progression instead of only public sessions.",
-        "Hockey players can use the adult open hockey page to understand age limits, required gear, and how sessions are capped. Then jump to the calendar to find the next date that fits your schedule.",
-        "Need a tune-up before your next session? Explore skate sharpening options and turnaround notes, and browse other Tennessee rinks to compare services and amenities.",
-        "Looking for focused practice ice? Check the freestyle hub for how to search calendars, then verify whether Centennial’s calendar lists freestyle-style sessions for your target week."
+        "For the current public-skate schedule, use Predators DaySmart and confirm the selected Centennial session before you go.",
+        "For freestyle ice, classes, and figure-skating registration, use Nashville Skating Academy's Centennial Finnly portal.",
+        "Public skate is typically on Rink A, while academy freestyle and classes can use both Rink A and Rink B.",
+        "The former on-site sharpening service has closed. Use the Nashville sharpening guide for current public options.",
+        "Schedules are changing during the management transition, so check the Skate Status block and the official booking source before every visit."
       ],
       "what_to_know": [
-        "The facility lists two full-size ice rinks with sheets measuring 200 feet by 85 feet.",
-        "The public skating rates page states that skate rental is included with admission for public sessions.",
-        "Lessons are offered through Nashville Skating Academy, and the Learn To Ice Skate page lists recurring class times for their seven-week series.",
-        "The adult open hockey page lists a posted session price and notes that schedules are published on the Ice Arena Google Calendar.",
-        "Adult open hockey and stick and puck sessions have published rules, including required protective gear and no checking.",
-        "Skate sharpening is available for figure and hockey skates, with the rink asking you to allow about 24 hours for completion.",
-        "Amenities listed on the ice skating page include spectator seating, lockers, and a concession stand.",
-        "The rink address is 222 25th Ave. N., Nashville, TN 37203, and the Sportsplex is described as directly across the street from Centennial Park.",
-        "Public skating posts monthly. Weekend afternoons and some weekday midday windows are common, but the days and times are not fixed, so confirm the specific session on the Ice Arena Google Calendar."
+        "The facility has two full-size ice rinks measuring 200 feet by 85 feet.",
+        "The Nashville Predators have managed Centennial ice operations since May 1, 2026.",
+        "Public-skate schedules, registration, and waivers now run through DASH by DaySmart Recreation.",
+        "Public skate is typically on Rink A. Confirm the selected sheet and session in DaySmart.",
+        "Nashville Skating Academy publishes freestyle ice, class schedules, and registration through its Centennial Finnly portal.",
+        "The former on-site sharpening service and pro shop closed during the management transition, even though older Metro pages may still list them.",
+        "Amenities historically listed include spectator seating, lockers, and concessions. Confirm current availability during the transition.",
+        "The rink is at 222 25th Ave. N. across from Centennial Park."
       ]
     },
     "sources": [
-      "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating",
-      "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating/public-skating",
-      "https://calendar.google.com/calendar/embed?ctz=America%2FChicago&src=sicdsqf3dmthsgglhcq3ka1l74%40group.calendar.google.com",
-      "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating/learn-skate",
-      "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating/adult-open-hockey",
-      "https://www.nashville.gov/departments/parks/centennial-sportsplex/ice-skating/skate-sharpening",
+      "https://www.nhl.com/predators/arena/local-rinks/centennial-ice-rink",
+      "https://apps.daysmartrecreation.com/dash/x/",
+      "https://www.nashvilleiceskate.com/",
+      "https://nashvilleskatingacademycentennial.finnlyconnect.com/",
       "https://www.nashville.gov/departments/parks/centennial-sportsplex/contact-us/directions",
-      "https://www.nashville.gov/departments/parks/centennial-sportsplex/contact-us/frequently-asked-questions",
-      "https://www.google.com/maps?aq=0&f=q&geocode&hl=en&hnear=222+25th+Ave+N,+Nashville,+Davidson,+Tennessee+37203&hq&ie=UTF8&ll=36.150264,-86.810317&oq=222+25&q=222+25th+Avenue+North,+Nashville,+TN&sll=36.18664,-86.785245&source=embed&sspn=0.761449,1.132965&t=h&z=14",
-      "https://www.facebook.com/centsportsplex/"
+      "https://www.google.com/maps?aq=0&f=q&geocode&hl=en&hnear=222+25th+Ave+N,+Nashville,+Davidson,+Tennessee+37203&hq&ie=UTF8&ll=36.150264,-86.810317&oq=222+25&q=222+25th+Avenue+North,+Nashville,+TN&sll=36.18664,-86.785245&source=embed&sspn=0.761449,1.132965&t=h&z=14"
     ],
     "evidence": [
       {
@@ -402,7 +393,7 @@
         "notes": "Use the official calendar to look for events labeled Freestyle or Figure Freestyle."
       }
     ],
-    "last_verified": "2026-06-27",
+    "last_verified": "2026-06-29",
     "image": "/images/skating/ice_img_08.png",
     "subheader": "Nashville's most affordable year-round indoor public skating. Two full-size sheets, walk-in welcome, $6–7 with skates included.",
     "nearby_rinks": [
@@ -422,7 +413,7 @@
         "tagline": "45 min north. Reservation required, $12, F&M Bank Arena."
       }
     ],
-    "editorial_markdown": "## What to expect at Centennial Sportsplex Ice Arenas\n\nCentennial Sportsplex Ice Arenas is an indoor, year-round facility with two full-size sheets of ice (200 ft x 85 ft), run as part of Nashville's Metro Parks system. That parks-department DNA shapes everything about the place: this is Nashville's most accessible public ice, built for walk-in skaters, learn-to-skate families, hockey players, and figure skaters who need a sheet that does not disappear when the weather warms up. Two sheets means the building can run public skating on one side while hockey or lessons occupy the other, which keeps the calendar fuller than a single-sheet rink could manage.\n\nYou will find the full spread here: public sessions, a learn-to-skate academy, figure skating training, adult open hockey, and stick and puck. Skate rental is included with public skating admission, which removes one of the small frictions that keeps first-timers away. The building also offers skate sharpening for both figure and hockey blades, so the committed skating household can handle maintenance without a separate trip.\n\nIf you are new to Nashville ice, start here. The prices are modest, the spectator entry is free, and the rhythm of the building rewards anyone willing to check the calendar before driving over. The one habit to build: sessions change monthly, so the Google Calendar the rink maintains is your real front door, not a printed schedule on the wall.\n\n## Public skating at Centennial Sportsplex Ice Arenas: cost, sessions, and what to know\n\nPublic skating here runs on a monthly calendar, and the rink is upfront about that: times shift month to month, so the move is to open the Ice Arena Google Calendar and the rink's public skating page before you load the car. Do not assume last month's Saturday slot still exists.\n\nThe rink's published rates list adults (ages 13 and up) at $12 and ages 5 to 12 at $10. Ages 4 and under and spectators are free, while seniors, disabled guests, military members, and students are listed at $10. Skate rental is included with paid admission, so the listed price is close to the real price.\n\nPublic skate posts monthly rather than on a fixed weekly timetable. Weekend afternoons and some weekday midday windows are common, but hockey, lessons, and events can move those windows. Use the live calendar below and open the specific event before you leave.\n\nPlan to arrive a little before the session starts. That buffer gives you time to get fitted at the rental counter, swap a pair that pinches, and lace up without rushing onto crowded ice. Weekend sessions at a two-sheet public facility in a city this size will draw a crowd, so if you want quieter ice, look for the less obvious slots on the calendar and treat the busy ones as the social option rather than the practice option.\n\n## Freestyle and figure skating ice\n\nHere is the candid picture for figure skaters: the Sportsplex's official ice skating pages describe public skating, lessons, and hockey clearly, but they do not explicitly confirm dedicated freestyle sessions. That does not mean the ice is not there. It means you have to go find it.\n\nOpen the Ice Arena Google Calendar in month view and scan event titles for labels like \"Freestyle,\" \"Figure Freestyle,\" \"Freestyle Ice,\" or \"Figure Session.\" Those are the names rinks typically use for practice ice meant for figure skaters and their coaches. If you do not see them this month, check again closer to your target week, because the Sportsplex posts and adjusts sessions monthly. When in doubt, call the rink and ask what labels they use for figure practice time; front-desk staff can usually translate the calendar faster than you can.\n\nIf a freestyle-style session does appear, treat it like freestyle ice anywhere: right of way matters, the skater running a program to music gets the lane, and the middle of the rink is not a place to camp. Stay alert near the jump corners. If you are new to this kind of session, ask a coach or staff member what the expectations are before you step on. Skaters who learn the room before they learn the ice always have an easier first month.\n\n## Learn to skate programs\n\nLessons at the Sportsplex run through Nashville Skating Academy, and the rink's official Learn To Ice Skate page describes both learn-to-skate classes and figure skating training, with recurring class days and times listed and a link to the academy for current registration. That structure is the standard progression: group classes to get steady on blades, then a path into figure skating development for the kids (and adults) who catch the bug.\n\nThe practical advantage of learning here is the pairing of cheap public ice with a structured academy. A skater in weekly lessons needs practice time between classes to actually improve, and at the Sportsplex that practice time costs a family very little, with rentals included. Check the lessons page for the current session dates, register through the academy, and then build the habit of one or two public sessions a week between classes. That rhythm, more than any single lesson, is what turns a wobbly first session into real skating.\n\n## Hockey, stick and puck, and open ice\n\nHockey players are well served here. The Sportsplex runs adult open hockey and stick and puck sessions, both scheduled through the same Ice Arena Google Calendar that governs everything else in the building. The rink's adult open hockey page lays out the key rules and a posted session price, so read it before your first skate rather than learning the house rules at the door.\n\nStick and puck is the underrated offering for skating families: a low-pressure window where a kid can work on puck handling and shooting without the structure of a practice or the pace of open hockey. Because both sheets are full-size (200 ft x 85 ft), you are getting real ice, not a cramped studio sheet. The same monthly-calendar caveat applies, so confirm the session before you drive, and bring full gear as the posted rules require. The on-site sharpening service (figure and hockey blades, with a roughly 24-hour turnaround and a rush option) makes this an easy place to keep your edges honest between sessions.\n\n## Getting there: parking, location, and amenities\n\nThe Sportsplex sits at 222 25th Avenue North in Nashville, in the Centennial Park area west of downtown, with the rink reachable at 615-862-8480. The address puts you in a busy part of the city, so give yourself a margin on weekends and event days rather than expecting to roll in five minutes before a session.\n\nInside, the building covers the essentials: lockers, spectator seating, and concessions are all available. The rink does not clearly publish whether it runs a pro shop or stocks skate aids for beginners, so call ahead if either matters to your visit, especially if you have a brand-new skater who would benefit from a skating aid. Skate sharpening is handled on site with a posted base price of $6, a $2 rush fee for faster turnaround, and small add-ons like masking tape; drop your skates and ask for a pickup time.\n\n## A note for skating parents\n\nYou are going to spend real hours in this building, so plan for the version of it you will actually live in: the lobby and the bleachers, not the ice. Rinks are cold in a way that sneaks up on you over an hour, a damp cold that settles into your feet first. Dress in layers you would wear to a late-October football game, and bring something warm for the bench even in July, because year-round indoor ice does not care what season it is outside.\n\nThe good news here is that the Sportsplex is built for waiting. Spectator entry is free, there is real seating, and concessions mean you are not rationing a granola bar through a 90-minute lesson block. Claim a spot with a sightline to your kid's sheet, because with two sheets running, classes and sessions split across the building.\n\nAnd give yourself permission to just watch. There is a particular kind of patience in watching a kid fall, get up, and fall again until one day the getting up disappears and they are simply skating. The free spectator policy means you can be there for all of it without doing math. Bring the layers, bring the coffee money, and settle in."
+    "editorial_markdown": "## What to expect at Centennial Sportsplex Ice Arenas\n\nCentennial Sportsplex is an indoor, year-round facility with two full-size sheets of ice (200 ft x 85 ft). Since May 1, 2026, the Nashville Predators have managed the ice operations and moved public-skate schedules, registration, and waivers into DASH by DaySmart Recreation. Public skate is typically on Rink A, while Nashville Skating Academy programs use both sheets.\n\nYou will find the full spread here: public sessions, a learn-to-skate academy, figure skating training, adult open hockey, and stick and puck. The former on-site pro shop and sharpening service closed during the management transition, even though older Metro pages may still list it. Plan blade maintenance through a current Ford Ice pro shop, Rainbo Sports and Skating, or another verified option.\n\nIf you are new to Nashville ice, Centennial remains a central place to start. The important habit has changed: use Predators DaySmart for the public-skate schedule and registration, then check the Skate Status note for known changes before driving over.\n\n## Public skating at Centennial Sportsplex Ice Arenas: cost, sessions, and what to know\n\nPublic skating now runs through Predators DaySmart, and times can change around camps, hockey, figure skating, and holidays. Public skate is typically on Rink A. Open the current Centennial session in DaySmart, complete the registration and waiver steps, and do not assume last month's weekend slot still exists.\n\nThe rink's published rates list adults (ages 13 and up) at $12 and ages 5 to 12 at $10. Ages 4 and under and spectators are free, while seniors, disabled guests, military members, and students are listed at $10. Skate rental is included with paid admission, so the listed price is close to the real price.\n\nPublic skate posts monthly rather than on a fixed weekly timetable. Weekend afternoons and some weekday midday windows are common, but hockey, lessons, and events can move those windows. Use the live calendar below and open the specific event before you leave.\n\nPlan to arrive a little before the session starts. That buffer gives you time to get fitted at the rental counter, swap a pair that pinches, and lace up without rushing onto crowded ice. Weekend sessions at a two-sheet public facility in a city this size will draw a crowd, so if you want quieter ice, look for the less obvious slots on the calendar and treat the busy ones as the social option rather than the practice option.\n\n## Freestyle and figure skating ice\n\nHere is the candid picture for figure skaters: the Sportsplex's official ice skating pages describe public skating, lessons, and hockey clearly, but they do not explicitly confirm dedicated freestyle sessions. That does not mean the ice is not there. It means you have to go find it.\n\nUse Nashville Skating Academy's Centennial Finnly portal for freestyle ice, class schedules, eligibility, and registration. Academy sessions can use both Rink A and Rink B, so confirm the sheet and session level when you register. Public skate and freestyle are different lanes: public skate suits casual skating and beginner practice, while freestyle is structured ice for figure skaters working on elements.\n\nIf a freestyle-style session does appear, treat it like freestyle ice anywhere: right of way matters, the skater running a program to music gets the lane, and the middle of the rink is not a place to camp. Stay alert near the jump corners. If you are new to this kind of session, ask a coach or staff member what the expectations are before you step on. Skaters who learn the room before they learn the ice always have an easier first month.\n\n## Learn to skate programs\n\nLessons at the Sportsplex run through Nashville Skating Academy, and the rink's official Learn To Ice Skate page describes both learn-to-skate classes and figure skating training, with recurring class days and times listed and a link to the academy for current registration. That structure is the standard progression: group classes to get steady on blades, then a path into figure skating development for the kids (and adults) who catch the bug.\n\nThe practical advantage of learning here is the pairing of cheap public ice with a structured academy. A skater in weekly lessons needs practice time between classes to actually improve, and at the Sportsplex that practice time costs a family very little, with rentals included. Check the lessons page for the current session dates, register through the academy, and then build the habit of one or two public sessions a week between classes. That rhythm, more than any single lesson, is what turns a wobbly first session into real skating.\n\n## Hockey, stick and puck, and open ice\n\nHockey players are well served here. The Sportsplex runs hockey programming alongside public and figure-skating ice, with current rink schedules moving into the Predators DaySmart system. Open the current listing and read its equipment, eligibility, and registration rules before your first skate.\n\nStick and puck is the underrated offering for skating families: a low-pressure window where a kid can work on puck handling and shooting without the structure of a practice or the pace of open hockey. Because both sheets are full-size (200 ft x 85 ft), you are getting real ice, not a cramped studio sheet. Confirm the current session in DaySmart and bring the equipment required by the listing.\n\n## Getting there: parking, location, and amenities\n\nThe Sportsplex sits at 222 25th Avenue North in Nashville, in the Centennial Park area west of downtown, with the rink reachable at 615-862-8480. The address puts you in a busy part of the city, so give yourself a margin on weekends and event days rather than expecting to roll in five minutes before a session.\n\nInside, the building has historically offered lockers, spectator seating, and concessions, though programming and building details are changing under the new operator. The former on-site pro shop and skate-sharpening service are closed. Call ahead if a specific amenity would change your visit.\n\n## A note for skating parents\n\nYou are going to spend real hours in this building, so plan for the version of it you will actually live in: the lobby and the bleachers, not the ice. Rinks are cold in a way that sneaks up on you over an hour, a damp cold that settles into your feet first. Dress in layers you would wear to a late-October football game, and bring something warm for the bench even in July, because year-round indoor ice does not care what season it is outside.\n\nThe good news here is that the Sportsplex is built for waiting. Spectator entry is free, there is real seating, and concessions mean you are not rationing a granola bar through a 90-minute lesson block. Claim a spot with a sightline to your kid's sheet, because with two sheets running, classes and sessions split across the building.\n\nAnd give yourself permission to just watch. There is a particular kind of patience in watching a kid fall, get up, and fall again until one day the getting up disappears and they are simply skating. The free spectator policy means you can be there for all of it without doing math. Bring the layers, bring the coffee money, and settle in."
   },
   {
     "id": "tn-antioch-ford-ice-center-antioch-antioch-tn",
@@ -462,7 +453,7 @@
     },
     "schedule_links": {
       "public_calendar_url": "https://apps.daysmartrecreation.com/dash/x/",
-      "freestyle_calendar_url": null,
+      "freestyle_calendar_url": "https://www.nashvilleiceskate.com/",
       "hockey_calendar_url": null,
       "lessons_url": "https://www.nhl.com/predators/fordicecenter/learn-to-skate"
     },
@@ -871,7 +862,7 @@
     },
     "schedule_links": {
       "public_calendar_url": "https://member.daysmartrecreation.com/#/online/predators/calendar",
-      "freestyle_calendar_url": null,
+      "freestyle_calendar_url": "https://www.nashvilleiceskate.com/",
       "hockey_calendar_url": null,
       "lessons_url": "https://www.nhl.com/predators/fordicecenter/learn-to-skate"
     },
@@ -1493,7 +1484,7 @@
     },
     "schedule_links": {
       "public_calendar_url": "https://apps.daysmartrecreation.com/dash/x/",
-      "freestyle_calendar_url": null,
+      "freestyle_calendar_url": "https://apps.daysmartrecreation.com/dash/x/",
       "hockey_calendar_url": null,
       "lessons_url": null
     },

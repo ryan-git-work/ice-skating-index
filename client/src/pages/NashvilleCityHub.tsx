@@ -6,7 +6,8 @@ import { RinkCard } from "@/components/RinkCard";
 import { rinks } from "@/lib/data";
 import { LastVerified } from "@/components/LastVerified";
 import { MapPin, CheckCircle, Calendar } from "lucide-react";
-import { buildRinkItemList } from "@/lib/seo";
+import { buildRinkItemList, buildWebPageSchema, SITE_URL } from "@/lib/seo";
+import { getLatestStatusUpdated } from "@/lib/skateStatus";
 
 const RINK_SLUGS = {
   centennial: "centennial-sportsplex-nashville-tn",
@@ -42,7 +43,7 @@ const NASHVILLE_FAQS = [
   },
   {
     question: "Where can I skate in Nashville this weekend?",
-    answer: "Check Centennial's live Google Calendar, Ford Ice Center's DaySmart calendar, and Gary Force's online events calendar. Public-skate schedules change by week and month, so confirm the specific session before leaving home.",
+    answer: "Check Centennial and Ford Ice Center in DaySmart, then use Gary Force's online events calendar. Public-skate schedules change by week and month, so review any current Skate Status note and confirm the specific session before leaving home.",
   },
 ];
 
@@ -55,9 +56,16 @@ function RinkLink({ slug, children }: { slug: string; children: React.ReactNode 
 }
 
 export default function NashvilleCityHub() {
+  const pageModified = [
+    "2026-06-29",
+    getLatestStatusUpdated(Array.from(nashvilleRinkSlugs)),
+  ].filter((value): value is string => Boolean(value)).sort().at(-1);
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    "@id": `${SITE_URL}/city/tn/nashville#faq`,
+    url: `${SITE_URL}/city/tn/nashville`,
+    dateModified: pageModified,
     mainEntity: NASHVILLE_FAQS.map(item => ({
       "@type": "Question",
       name: item.question,
@@ -70,11 +78,21 @@ export default function NashvilleCityHub() {
 
   useHead({
     title: "Ice Skating in Nashville, TN: Every Rink, Price, and Schedule (2026 Guide)",
-    description: "Compare every Nashville ice rink, current public-skate prices, live schedules, booking links, lessons, and seasonal options. Verified June 27, 2026.",
+    description: "Compare every Nashville ice rink, current public-skate prices, live schedules, booking links, lessons, and seasonal options. Verified June 29, 2026.",
     ogTitle: "Ice Skating in Nashville, TN: Every Rink, Price, and Schedule (2026 Guide)",
     ogDescription: "Compare every Nashville ice rink, current public-skate prices, live schedules, booking links, lessons, and seasonal options.",
     canonicalPath: "/city/tn/nashville",
     structuredData: [
+      {
+        ...buildWebPageSchema(
+          "/city/tn/nashville",
+          "Ice Skating in Nashville, TN: Every Rink, Price, and Schedule",
+          "Compare every Nashville ice rink, current public-skate prices, live schedules, booking links, lessons, and seasonal options.",
+        ),
+        "@id": `${SITE_URL}/city/tn/nashville#webpage`,
+        dateModified: pageModified,
+        lastReviewed: pageModified,
+      },
       buildRinkItemList(nashvilleRinks, "/city/tn/nashville", "Ice Skating Rinks in Nashville, Tennessee"),
       faqSchema,
     ],
@@ -95,7 +113,7 @@ export default function NashvilleCityHub() {
             Ice Skating in Nashville, TN: Every Rink, Price, and Schedule (2026 Guide)
           </h1>
           <p className="text-lg text-muted-foreground max-w-3xl leading-relaxed">
-            You can ice skate year-round in Nashville at Centennial Sportsplex, the three Ford Ice Centers, and Gary Force Acura Ice Arena in Nolensville. Centennial welcomes walk-ins, while Ford Ice and Gary Force use online schedules and booking.
+            You can ice skate year-round in Nashville at Centennial Sportsplex, the three Ford Ice Centers, and Gary Force Acura Ice Arena in Nolensville. Centennial and Ford Ice use DaySmart, while Gary Force uses its online events calendar.
           </p>
           <p className="text-lg text-muted-foreground max-w-3xl leading-relaxed mt-4">
             This guide compares every public ice skating option in the metro, including current prices, how to book, which rink fits each part of town, and the seasonal holiday rinks. For a schedule-first view, use the{" "}
@@ -157,7 +175,7 @@ export default function NashvilleCityHub() {
                       <td className="py-3 pr-4"><RinkLink slug={RINK_SLUGS.centennial}>Centennial Sportsplex</RinkLink></td>
                       <td className="py-3 pr-4 text-muted-foreground">West End</td>
                       <td className="py-3 pr-4 text-muted-foreground">$10&ndash;12</td>
-                      <td className="py-3 pr-4 text-muted-foreground">Walk-in</td>
+                      <td className="py-3 pr-4 text-muted-foreground">Online</td>
                       <td className="py-3"><span className="inline-flex items-center gap-1 text-green-600"><CheckCircle className="h-3.5 w-3.5" /> Year-round</span></td>
                     </tr>
                     <tr className="border-b border-border/50">
@@ -223,7 +241,7 @@ export default function NashvilleCityHub() {
                   <RinkLink slug={RINK_SLUGS.centennial}>Centennial Sportsplex Ice Arenas</RinkLink> is Nashville&apos;s original public skating destination. Located across from Centennial Park in the West End, it is operated by Metro Nashville Parks and Recreation and has two full-size sheets measuring 200 by 85 feet.
                 </p>
                 <p>
-                  Public skating is $12 for ages 13 and up and $10 for ages 5 to 12. Ages 4 and under and spectators are free, and skate rental is included with paid admission. Centennial is the simplest choice for a first visit because public sessions welcome walk-ins instead of requiring a booking account.
+                  Centennial&apos;s previously published public-skate rates were $12 for ages 13 and up and $10 for ages 5 to 12, with rental included. Since the Predators assumed ice operations, schedules, waivers, and registration have moved to DaySmart. Confirm the current session price when booking.
                 </p>
                 <p>
                   <strong className="text-foreground">What makes it unique:</strong> Two full-size sheets let public skating, hockey, and lessons share the building. The west arena is also used by the Nashville Predators. Weekend afternoons and some weekday midday public sessions are common, but the calendar changes monthly.
@@ -232,7 +250,7 @@ export default function NashvilleCityHub() {
                   <strong className="text-foreground">Best for:</strong> First-timers, families who want to walk in, learn-to-skate students, central Nashville residents, and groups bringing non-skating spectators.
                 </p>
                 <p>
-                  <strong className="text-foreground">The catch:</strong> Public skate does not follow fixed weekly hours. Check the live Google Calendar on the rink page and open the specific event before driving.
+                  <strong className="text-foreground">The catch:</strong> Public skate does not follow fixed weekly hours. Check the current Skate Status note, then open the Centennial session in DaySmart before driving.
                 </p>
                 <p className="text-sm">
                   <MapPin className="h-4 w-4 inline mr-1 text-primary" />
@@ -416,7 +434,7 @@ export default function NashvilleCityHub() {
               <h2 className="font-serif text-2xl font-bold mb-4">Freestyle and figure skating in Nashville</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  <RinkLink slug={RINK_SLUGS.centennial}>Centennial Sportsplex</RinkLink> supports Nashville Skating Academy and posts its ice through the live arena calendar. Ford Ice Center offers daily freestyle sessions across its system, with registration through DaySmart. <RinkLink slug={RINK_SLUGS.garyForce}>Gary Force Acura Ice Arena</RinkLink> also confirms freestyle sessions in its online events calendar.
+                  <RinkLink slug={RINK_SLUGS.centennial}>Centennial Sportsplex</RinkLink> supports Nashville Skating Academy, which publishes freestyle ice and registration in its Centennial Finnly portal. Ford Ice Center offers freestyle sessions across its system, with current listings through its booking tools. <RinkLink slug={RINK_SLUGS.garyForce}>Gary Force Acura Ice Arena</RinkLink> also confirms freestyle sessions in its online events calendar.
                 </p>
                 <p>
                   Freestyle is practice ice, not public skate. Session rules, level expectations, and availability vary, so open the current listing and confirm that the session fits the skater before booking.
@@ -463,6 +481,16 @@ export default function NashvilleCityHub() {
                     description: "Compare live-calendar systems, admission, rentals, and how to book each rink.",
                   },
                   {
+                    href: "/blog/ice-skating-nashville-this-weekend",
+                    title: "What's open in Nashville this weekend",
+                    description: "Start with the latest status notes, then confirm the official session before leaving home.",
+                  },
+                  {
+                    href: "/blog/skate-sharpening-nashville",
+                    title: "Current Nashville sharpening options",
+                    description: "Find public sharpening services or ask for help making the right connection.",
+                  },
+                  {
                     href: "/blog/ice-skating-cost-nashville",
                     title: "How much ice skating costs",
                     description: "Plan the full outing, including admission, lessons, and equipment.",
@@ -470,7 +498,7 @@ export default function NashvilleCityHub() {
                   {
                     href: "/blog/centennial-sportsplex-ice-skating",
                     title: "Centennial Sportsplex guide",
-                    description: "Go deeper on Nashville's main walk-in public rink.",
+                    description: "Go deeper on Nashville's central two-sheet public rink and its current booking paths.",
                   },
                   {
                     href: "/blog/what-to-expect-public-skating",
@@ -515,7 +543,7 @@ export default function NashvilleCityHub() {
               </div>
             </section>
 
-            <LastVerified date="2026-06-27" />
+            <LastVerified date="2026-06-29" />
 
           </div>
         </div>

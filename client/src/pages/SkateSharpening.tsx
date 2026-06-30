@@ -12,6 +12,7 @@ import {
 import { ChevronDown, Sparkles, AlertCircle, HelpCircle, MapPin } from "lucide-react";
 import { useState } from "react";
 import { buildWebPageSchema } from "@/lib/seo";
+import { SharpeningConnector } from "@/components/SharpeningConnector";
 
 export default function SkateSharpening() {
   const description = "Learn how skate sharpening works, what to ask for, and how to find quality sharpening near you. A practical guide for figure skaters and hockey players.";
@@ -75,6 +76,7 @@ export default function SkateSharpening() {
 
           {/* Main Content */}
           <div className="flex-1 max-w-3xl space-y-12">
+            <SharpeningConnector />
             
             {/* The Simple Idea */}
             <section id="simple-idea">

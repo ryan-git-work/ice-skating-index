@@ -2,7 +2,7 @@
 
 You want to take the family skating this weekend, and you need three things fast: which Nashville rinks have public skating, when the sessions actually run, and what it costs once everyone is laced up. The short answer is that the Nashville area has five reliable year-round indoor rinks with public skate sessions, plus a couple of seasonal holiday rinks that open in winter, and almost all of them post their schedules on a calendar or a booking app that changes month to month. That last detail is the one that trips people up, so this guide pulls everything into one place: every rink, how its public skate works, what it costs, and how to lock in a session before you load the car.
 
-Nashville is not a giant skating town the way Minneapolis or Boston is, but it is a well-covered one. Between the Metro Parks rink near downtown, the three Predators-affiliated Ford Ice Centers spread around the metro, and the Williamson County rink in Nolensville, you are rarely more than a short drive from a public session, and skate rental is built into the admission at every one of them.
+Nashville is not a giant skating town the way Minneapolis or Boston is, but it is a well-covered one. Between the Predators-managed Centennial rink near downtown, the three Ford Ice Centers spread around the metro, and the Williamson County rink in Nolensville, you are rarely more than a short drive from a public session.
 
 ## Where can you public skate in Nashville?
 
@@ -18,11 +18,11 @@ Public skate, sometimes called open skate, is the session you want: open to ever
 
 ## Centennial Sportsplex: Nashville's main public rink
 
-[RINK: centennial-sportsplex-nashville-tn] is Nashville's most accessible public ice, run by Metro Parks across the street from Centennial Park, just west of downtown. It has two full-size sheets measuring 200 feet by 85 feet each, and that second sheet matters more than it sounds: it lets the building run public skating on one side while hockey or lessons occupy the other, which keeps the public-skate calendar fuller than any single-sheet rink can manage. Walk-ins are welcome, which makes it the natural first stop for a family that just wants to skate without setting up an account first.
+[RINK: centennial-sportsplex-nashville-tn] is Nashville's most central public ice, across the street from Centennial Park just west of downtown. The Nashville Predators assumed management of ice operations on May 1, 2026. The rink has two full-size sheets measuring 200 feet by 85 feet each, with public skating typically on Rink A while hockey, lessons, and academy sessions share both sheets.
 
 Public skate admission runs about $12 for ages 13 and up and $10 for ages 5 to 12, with a lower rate for the youngest skaters and a senior rate for ages 62 and up, and spectators get in free. That free-spectator policy is worth more than it looks: a grandparent or a sibling who just wants to watch does not add a dime to the cost of the outing. Skate rental is included with admission, so the listed price is close to the real price, and there is no separate rental-counter math to do.
 
-Session times are posted on the rink's public Google Calendar and change monthly, so the move is to open that calendar and look for the events labeled public skating before you go. Weekend afternoons and some weekday midday windows are the common pattern, but the calendar is the real front door, not a printed schedule on the wall. The building also offers learn-to-skate and figure skating training through the Nashville Skating Academy, adult open hockey and stick and puck, and on-site skate sharpening, so the committed skating household can handle lessons, practice, and maintenance all in one place. Amenities cover the essentials: lockers, spectator seating, and a concession stand. If you are brand new to Nashville ice and not sure where to start, start here.
+Public-skate schedules, registration, and waivers now run through Predators DaySmart. Open the current Centennial listing before you go, since camps and other programs can alter the schedule. Nashville Skating Academy publishes freestyle ice, lessons, and classes through its separate Centennial Finnly portal. The former on-site pro shop and skate-sharpening service closed during the management transition, even though older Metro pages may still list it.
 
 ## The Ford Ice Centers: Bellevue, Antioch, and Clarksville
 
@@ -60,7 +60,7 @@ For a family of four with everyone skating, you are usually looking at somewhere
 
 ## How to read the schedules and book a session
 
-Three booking systems cover the whole metro, and learning all three takes about five minutes. Centennial posts everything on a public Google Calendar, so you open the month view and look for the events titled public skating, then just show up and pay at the window. The three Ford Ice rinks use the DASH by DaySmart Recreation app, where you create an account, find a public skate session, and reserve a spot before you arrive, since these are reservation-based rather than walk-up. Gary Force uses the events calendar on its own website for public skate, stick and puck, and freestyle, and you register there.
+Two booking patterns cover the year-round metro rinks. Centennial and the three Ford Ice rinks use DASH by DaySmart Recreation, where you create an account, find the correct location and session, complete the waiver, and register before you arrive. Gary Force uses the events calendar on its own website for public skate, stick and puck, and freestyle.
 
 In every case, weekend sessions are the busiest and fill up first, so booking or arriving early pays off. And it bears repeating, because it is the one thing that ruins a planned outing: the schedule you saw last month is not the schedule this month. Pull up the current calendar or app the day you plan to go, confirm the specific session, and then drive over.
 
@@ -101,7 +101,7 @@ Nashville is not a huge skating town, but it is a well-covered one: five reliabl
 
 ### Where can I go public ice skating in Nashville?
 
-Nashville has five year-round indoor rinks with public skating: Centennial Sportsplex near downtown, the three Ford Ice Center locations (Bellevue, Antioch, and Clarksville), and Gary Force Acura Ice Arena in Nolensville. Two or three seasonal holiday rinks open in winter as well. Centennial is the main walk-in public rink, while the Ford Ice rinks are reservation-based and booked online.
+Nashville has five year-round indoor rinks with public skating: Centennial Sportsplex near downtown, the three Ford Ice Center locations (Bellevue, Antioch, and Clarksville), and Gary Force Acura Ice Arena in Nolensville. Two or three seasonal holiday rinks open in winter as well. Centennial and Ford Ice use DaySmart, while Gary Force uses its own online events calendar.
 
 ### How much does public skating cost in Nashville?
 
@@ -109,7 +109,7 @@ Plan on about $10 to $14 per skater at the year-round rinks, with skate rental i
 
 ### Do I need a reservation to ice skate in Nashville?
 
-It depends on the rink. Centennial Sportsplex welcomes walk-ins for public skating, so you can show up and pay at the window. The three Ford Ice Center rinks are reservation-based and booked online through the DASH by DaySmart Recreation app. Gary Force registers its public skate, stick and puck, and freestyle sessions through the events calendar on its website.
+Plan to book online. Centennial and the three Ford Ice Center rinks use DASH by DaySmart Recreation for schedules, registration, and waivers. Gary Force registers public skate, stick and puck, and freestyle sessions through the events calendar on its website.
 
 ### Can you ice skate in Nashville in the summer?
 
@@ -121,11 +121,11 @@ Ford Ice Center Clarksville, inside F&M Bank Arena in downtown Clarksville, is t
 
 ### Which Nashville rink is best for a first-timer?
 
-Centennial Sportsplex is the easiest first stop: walk-ins are welcome, skate rental is included, spectators are free, and its two sheets keep public sessions on the calendar. You do not need to set up an account or reserve ahead, which removes the friction that keeps a lot of first-timers from trying.
+Centennial Sportsplex is the most central first stop, with two full-size sheets and a long history of public skating. Create a DaySmart account before your visit, confirm the current Centennial session, and check the page's Skate Status note for known changes.
 
 ### How do I find this week's public skate schedule?
 
-Each rink posts its own schedule. Centennial uses a public Google Calendar, the three Ford Ice rinks use the DaySmart Recreation app, and Gary Force uses the events calendar on its site. Schedules change monthly, so always confirm the specific day before you go rather than assuming last month's times still hold.
+Each rink posts its own schedule. Centennial and the three Ford Ice rinks use DaySmart Recreation, and Gary Force uses the events calendar on its site. Schedules change, so always confirm the specific day before you go rather than assuming last month's times still hold.
 
 ### Is there outdoor or holiday ice skating in Nashville?
 

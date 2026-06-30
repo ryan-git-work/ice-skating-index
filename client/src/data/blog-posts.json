@@ -153,7 +153,8 @@
     ],
     "category": "Rink Spotlights",
     "publishDate": "2026-03-10",
-    "excerpt": "If you are looking for ice skating in Nashville, Centennial Sportsplex is where most locals end up. It is centrally located, run by Metro Nashville Parks, and priced better than most private rinks.",
+    "modifiedDate": "2026-06-29",
+    "excerpt": "Centennial Sportsplex is Nashville's central two-sheet rink, now managed by the Predators with public-skate registration through DaySmart.",
     "fileName": "centennial-sportsplex-ice-skating.md"
   },
   {
@@ -863,8 +864,45 @@
     ],
     "category": "Beginner Guides",
     "publishDate": "2026-06-27",
+    "modifiedDate": "2026-06-29",
     "excerpt": "Find every Nashville public skating rink, how its schedule works, what it costs, and how to book before you load the car.",
     "fileName": "public-skating-nashville.md",
+    "hasDynamicRinkLinks": true
+  },
+  {
+    "slug": "ice-skating-nashville-this-weekend",
+    "title": "Ice Skating in Nashville This Weekend: What's Open and When",
+    "metaDescription": "Find Nashville ice skating options for this weekend, including current schedule guidance, public skate prices, booking links, and known changes.",
+    "targetKeyword": "ice skating nashville this weekend",
+    "secondaryKeywords": [
+      "ice skating nashville today",
+      "nashville public skating this weekend",
+      "ice rinks open nashville",
+      "nashville ice skating schedule"
+    ],
+    "category": "Skating Lifestyle",
+    "publishDate": "2026-06-29",
+    "modifiedDate": "2026-06-29",
+    "excerpt": "See where to skate in Nashville this weekend, how to confirm each live schedule, and which session type fits your visit.",
+    "fileName": "ice-skating-nashville-this-weekend.md",
+    "hasDynamicRinkLinks": true
+  },
+  {
+    "slug": "skate-sharpening-nashville",
+    "title": "Where to Get Your Ice Skates Sharpened in Nashville",
+    "metaDescription": "Find current skate sharpening options in Nashville for figure and hockey skates, plus help connecting with the right specialist for your blades.",
+    "targetKeyword": "skate sharpening nashville",
+    "secondaryKeywords": [
+      "ice skate sharpening nashville",
+      "figure skate sharpening nashville",
+      "hockey skate sharpening nashville",
+      "where to sharpen skates nashville"
+    ],
+    "category": "Skating Lifestyle",
+    "publishDate": "2026-06-29",
+    "modifiedDate": "2026-06-29",
+    "excerpt": "Compare Nashville skate sharpening options, understand the figure-versus-hockey difference, and get help finding the right specialist.",
+    "fileName": "skate-sharpening-nashville.md",
     "hasDynamicRinkLinks": true
   }
 ]
