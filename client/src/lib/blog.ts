@@ -25,6 +25,13 @@ const staticPostModules = import.meta.env.SSR
     }) as Record<string, string>
   : {};
 
+const clientPostModules = import.meta.env.SSR
+  ? {}
+  : import.meta.glob("../../public/posts/*.md", {
+      query: "?raw",
+      import: "default",
+    }) as Record<string, () => Promise<string>>;
+
 const staticPostContent = new Map(
   Object.entries(staticPostModules).map(([filePath, content]) => {
     const fileName = filePath.split("/").pop() || filePath;
@@ -75,11 +82,11 @@ export function parseFrontMatter(raw: string): { meta: Record<string, string>; c
 }
 
 export async function fetchPost(fileName: string): Promise<string> {
-  const response = await fetch(`/posts/${fileName}`);
-  if (!response.ok) {
-    throw new Error(`Failed to load post: ${fileName}`);
+  const loader = clientPostModules[`../../public/posts/${fileName}`];
+  if (!loader) {
+    throw new Error(`Post is not included in the client build: ${fileName}`);
   }
-  return response.text();
+  return loader();
 }
 
 export function getStaticPostContent(fileName: string): string | null {
