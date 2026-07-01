@@ -171,7 +171,8 @@
     ],
     "category": "Rink Spotlights",
     "publishDate": "2026-03-12",
-    "excerpt": "Ice skating in Nashville is more affordable than most people expect — especially if you know which rink to go to and when. Here is exactly what you will pay at every rink.",
+    "modifiedDate": "2026-06-30",
+    "excerpt": "Compare current Nashville public-skate pricing and booking requirements, including Ford Ice rates and Centennial's new DaySmart process.",
     "fileName": "ice-skating-cost-nashville.md"
   },
   {
@@ -189,6 +190,7 @@
     ],
     "category": "News & Inspiration",
     "publishDate": "2026-03-08",
+    "modifiedDate": "2026-06-30",
     "excerpt": "On February 19, 2026, Alysa Liu won Olympic gold in figure skating, inspiring millions to try ice skating for the first time. Here is everything you need to know to start your own journey.",
     "fileName": "alysa-liu-learn-to-skate.md"
   },
@@ -223,6 +225,7 @@
     ],
     "category": "Rink Spotlights",
     "publishDate": "2026-03-14",
+    "modifiedDate": "2026-06-30",
     "excerpt": "Ford Ice Center Bellevue is Nashville's newest major ice facility. Here is everything you need to know before you visit.",
     "fileName": "ford-ice-center-bellevue.md"
   },

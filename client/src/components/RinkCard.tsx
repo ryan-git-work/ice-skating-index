@@ -1,8 +1,7 @@
 import { Link } from "wouter";
-import { MapPin, Calendar, ExternalLink } from "lucide-react";
+import { ArrowRight, MapPin } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { isTruthy, type Rink } from "@/lib/data";
 import { SkateStatusChip } from "@/components/SkateStatus";
 
@@ -18,44 +17,46 @@ export function RinkCard({ rink }: RinkCardProps) {
       : null;
 
   return (
-    <Card className="group h-full flex flex-col overflow-hidden border transition-all hover:shadow-md hover:border-primary/20">
+    <Card className="group h-full flex flex-col overflow-hidden rounded-lg border bg-white shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary/30 hover:shadow-md">
       <CardHeader className="p-0">
-        <div className="h-40 bg-secondary/50 relative overflow-hidden">
+        <Link href={`/rink/${rink.slug}`} className="block">
+        <div className="aspect-[16/9] bg-secondary relative overflow-hidden">
            {rink.image ? (
              <img 
                src={rink.image} 
                alt={rink.name}
-               className="absolute inset-0 w-full h-full object-cover"
+               loading="lazy"
+               className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-[1.025]"
              />
            ) : (
-             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary/10" />
+             <div className="absolute inset-0 bg-secondary" />
            )}
-           <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-           <div className="absolute bottom-3 left-3 right-3">
+           <div className="absolute left-3 top-3 right-3">
              <div className="flex flex-wrap gap-1.5">
                <SkateStatusChip slug={rink.slug} />
                {statusLabel && (
-                 <Badge variant="secondary" className="bg-amber-50 text-amber-900 border border-amber-200 text-xs font-medium">
+                 <Badge variant="secondary" className="rounded-full bg-amber-50 text-amber-900 border border-amber-200 text-xs font-medium">
                    {statusLabel}
                  </Badge>
                )}
                {!statusLabel && isTruthy(rink.offerings.public_skating) && (
-                 <Badge variant="secondary" className="bg-white/90 backdrop-blur-sm text-xs font-normal">
+                 <Badge variant="secondary" className="rounded-full bg-white/95 text-xs font-medium text-slate-700 shadow-sm">
                    Public Skate
                  </Badge>
                )}
                {!statusLabel && isTruthy(rink.freestyle.available) && (
-                 <Badge variant="secondary" className="bg-white/90 backdrop-blur-sm text-xs font-normal">
+                 <Badge variant="secondary" className="rounded-full bg-white/95 text-xs font-medium text-slate-700 shadow-sm">
                    Freestyle
                  </Badge>
                )}
              </div>
            </div>
         </div>
+        </Link>
       </CardHeader>
       <CardContent className="flex-1 p-5 space-y-3">
         <div>
-          <h3 className="font-serif text-xl font-bold leading-tight group-hover:text-primary transition-colors">
+          <h3 className="font-serif text-lg font-bold leading-snug group-hover:text-primary transition-colors">
             <Link href={`/rink/${rink.slug}`}>{rink.name}</Link>
           </h3>
           <div className="flex items-center text-sm text-muted-foreground mt-2">
@@ -67,15 +68,23 @@ export function RinkCard({ rink }: RinkCardProps) {
         <p className="text-sm text-muted-foreground line-clamp-2">
           {rink.seo?.short_description ?? `Ice skating rink in ${rink.address.city}, ${rink.address.state}.`}
         </p>
-      </CardContent>
-      <CardFooter className="p-5 pt-0 mt-auto border-t bg-muted/10">
-        <div className="w-full flex items-center justify-between pt-4">
-            <Link href={`/rink/${rink.slug}`}>
-              <Button variant="outline" size="sm" className="w-full group-hover:border-primary/50 group-hover:text-primary">
-                View Details
-              </Button>
-            </Link>
+        <div className="flex flex-wrap gap-2 pt-1 text-xs text-slate-600">
+          <span className="rounded-full bg-secondary px-2.5 py-1">
+            {rink.facility.indoor === true ? "Indoor" : rink.facility.indoor === false ? "Outdoor" : "Facility details"}
+          </span>
+          <span className="rounded-full bg-secondary px-2.5 py-1 capitalize">
+            {rink.facility.seasonality === "unknown" ? "Check season" : rink.facility.seasonality}
+          </span>
         </div>
+      </CardContent>
+      <CardFooter className="p-5 pt-0 mt-auto">
+        <Link
+          href={`/rink/${rink.slug}`}
+          className="inline-flex min-h-10 items-center gap-2 text-sm font-semibold text-primary"
+        >
+          View rink details
+          <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+        </Link>
       </CardFooter>
     </Card>
   );

@@ -8,6 +8,7 @@ import { LastVerified } from "@/components/LastVerified";
 import { MapPin, CheckCircle, Calendar } from "lucide-react";
 import { buildRinkItemList, buildWebPageSchema, SITE_URL } from "@/lib/seo";
 import { getLatestStatusUpdated } from "@/lib/skateStatus";
+import { SkateStatusChip } from "@/components/SkateStatus";
 
 const RINK_SLUGS = {
   centennial: "centennial-sportsplex-nashville-tn",
@@ -35,7 +36,7 @@ const NASHVILLE_FAQS = [
   },
   {
     question: "How much does ice skating cost in Nashville?",
-    answer: "Centennial public skating is $12 for ages 13 and up and $10 for ages 5 to 12, with rental included and ages 4 and under free. Ford Ice Center lists $10.98 plus tax for matinee sessions and $13.73 plus tax for evening sessions, with rentals included. Gary Force posts its price inside the booking flow.",
+    answer: "Centennial's prior public-skate rates were $12 for ages 13 and up and $10 for ages 5 to 12, but current pricing should be confirmed in DaySmart after the management transition. Ford Ice Center lists $10.98 plus tax for matinee sessions and $13.73 plus tax for evening sessions, with rentals included. Gary Force posts its price inside the booking flow.",
   },
   {
     question: "Is there indoor ice skating in Nashville?",
@@ -100,24 +101,25 @@ export default function NashvilleCityHub() {
 
   return (
     <Layout>
-      <div className="bg-muted/30 border-b">
+      <div className="page-band border-b border-white/10">
         <div className="container mx-auto px-4 py-12">
-          <div className="flex items-center text-sm text-muted-foreground mb-4 gap-2">
-            <Link href="/" className="hover:text-primary">Home</Link>
+          <div className="flex items-center text-sm text-white/65 mb-4 gap-2">
+            <Link href="/" className="hover:text-cyan-200">Home</Link>
             <span>/</span>
-            <Link href="/state/tn" className="hover:text-primary">Tennessee</Link>
+            <Link href="/state/tn" className="hover:text-cyan-200">Tennessee</Link>
             <span>/</span>
-            <span className="text-foreground font-medium">Nashville</span>
+            <span className="text-white font-medium">Nashville</span>
           </div>
-          <h1 className="font-serif text-4xl md:text-5xl font-bold mb-4">
+          <p className="mb-3 text-sm font-semibold uppercase text-cyan-200">Current metro guide</p>
+          <h1 className="font-serif text-4xl md:text-5xl font-extrabold text-white mb-4">
             Ice Skating in Nashville, TN: Every Rink, Price, and Schedule (2026 Guide)
           </h1>
-          <p className="text-lg text-muted-foreground max-w-3xl leading-relaxed">
+          <p className="text-lg text-white/75 max-w-3xl leading-relaxed">
             You can ice skate year-round in Nashville at Centennial Sportsplex, the three Ford Ice Centers, and Gary Force Acura Ice Arena in Nolensville. Centennial and Ford Ice use DaySmart, while Gary Force uses its online events calendar.
           </p>
-          <p className="text-lg text-muted-foreground max-w-3xl leading-relaxed mt-4">
+          <p className="text-lg text-white/75 max-w-3xl leading-relaxed mt-4">
             This guide compares every public ice skating option in the metro, including current prices, how to book, which rink fits each part of town, and the seasonal holiday rinks. For a schedule-first view, use the{" "}
-            <Link href="/blog/public-skating-nashville" className="text-primary hover:underline font-medium">
+            <Link href="/blog/public-skating-nashville" className="text-cyan-200 hover:text-white hover:underline font-medium">
               Nashville public skating guide
             </Link>
             .
@@ -130,7 +132,7 @@ export default function NashvilleCityHub() {
 
           <aside className="lg:w-64 flex-shrink-0">
             <div className="sticky top-8">
-              <h2 className="font-semibold text-sm uppercase tracking-wide text-muted-foreground mb-4">On this page</h2>
+              <h2 className="font-semibold text-sm uppercase text-muted-foreground mb-4">On this page</h2>
               <nav className="space-y-2">
                 {[
                   { id: "at-a-glance", label: "At a glance" },
@@ -159,7 +161,7 @@ export default function NashvilleCityHub() {
 
             <section id="at-a-glance">
               <h2 className="font-serif text-2xl font-bold mb-6">At a glance &mdash; Nashville-area rinks</h2>
-              <div className="overflow-x-auto">
+              <div className="overflow-x-auto rounded-lg border bg-white shadow-sm">
                 <table className="w-full text-sm border-collapse">
                   <thead>
                     <tr className="border-b-2 border-border">
@@ -172,56 +174,59 @@ export default function NashvilleCityHub() {
                   </thead>
                   <tbody>
                     <tr className="border-b border-border/50">
-                      <td className="py-3 pr-4"><RinkLink slug={RINK_SLUGS.centennial}>Centennial Sportsplex</RinkLink></td>
+                      <td className="py-3 pl-4 pr-4">
+                        <RinkLink slug={RINK_SLUGS.centennial}>Centennial Sportsplex</RinkLink>
+                        <div className="mt-2"><SkateStatusChip slug={RINK_SLUGS.centennial} /></div>
+                      </td>
                       <td className="py-3 pr-4 text-muted-foreground">West End</td>
-                      <td className="py-3 pr-4 text-muted-foreground">$10&ndash;12</td>
+                      <td className="py-3 pr-4 text-muted-foreground">Confirm in DaySmart</td>
                       <td className="py-3 pr-4 text-muted-foreground">Online</td>
                       <td className="py-3"><span className="inline-flex items-center gap-1 text-green-600"><CheckCircle className="h-3.5 w-3.5" /> Year-round</span></td>
                     </tr>
                     <tr className="border-b border-border/50">
-                      <td className="py-3 pr-4"><RinkLink slug={RINK_SLUGS.bellevue}>Ford Ice Center Bellevue</RinkLink></td>
+                      <td className="py-3 pl-4 pr-4"><RinkLink slug={RINK_SLUGS.bellevue}>Ford Ice Center Bellevue</RinkLink></td>
                       <td className="py-3 pr-4 text-muted-foreground">Bellevue (west)</td>
                       <td className="py-3 pr-4 text-muted-foreground">$10.98 / $13.73</td>
                       <td className="py-3 pr-4 text-muted-foreground">Online</td>
                       <td className="py-3"><span className="inline-flex items-center gap-1 text-green-600"><CheckCircle className="h-3.5 w-3.5" /> Year-round</span></td>
                     </tr>
                     <tr className="border-b border-border/50">
-                      <td className="py-3 pr-4"><RinkLink slug={RINK_SLUGS.antioch}>Ford Ice Center Antioch</RinkLink></td>
+                      <td className="py-3 pl-4 pr-4"><RinkLink slug={RINK_SLUGS.antioch}>Ford Ice Center Antioch</RinkLink></td>
                       <td className="py-3 pr-4 text-muted-foreground">Antioch (south)</td>
                       <td className="py-3 pr-4 text-muted-foreground">$10.98 / $13.73</td>
                       <td className="py-3 pr-4 text-muted-foreground">Online</td>
                       <td className="py-3"><span className="inline-flex items-center gap-1 text-green-600"><CheckCircle className="h-3.5 w-3.5" /> Year-round</span></td>
                     </tr>
                     <tr className="border-b border-border/50">
-                      <td className="py-3 pr-4"><RinkLink slug={RINK_SLUGS.clarksville}>Ford Ice Center Clarksville</RinkLink></td>
+                      <td className="py-3 pl-4 pr-4"><RinkLink slug={RINK_SLUGS.clarksville}>Ford Ice Center Clarksville</RinkLink></td>
                       <td className="py-3 pr-4 text-muted-foreground">Clarksville (north, 45 min)</td>
                       <td className="py-3 pr-4 text-muted-foreground">$10.98 / $13.73</td>
                       <td className="py-3 pr-4 text-muted-foreground">Online</td>
                       <td className="py-3"><span className="inline-flex items-center gap-1 text-green-600"><CheckCircle className="h-3.5 w-3.5" /> Year-round</span></td>
                     </tr>
                     <tr className="border-b border-border/50">
-                      <td className="py-3 pr-4"><RinkLink slug={RINK_SLUGS.garyForce}>Gary Force Acura Ice Arena</RinkLink></td>
+                      <td className="py-3 pl-4 pr-4"><RinkLink slug={RINK_SLUGS.garyForce}>Gary Force Acura Ice Arena</RinkLink></td>
                       <td className="py-3 pr-4 text-muted-foreground">Nolensville (south)</td>
                       <td className="py-3 pr-4 text-muted-foreground">Confirm at booking</td>
                       <td className="py-3 pr-4 text-muted-foreground">Online</td>
                       <td className="py-3"><span className="inline-flex items-center gap-1 text-green-600"><CheckCircle className="h-3.5 w-3.5" /> Year-round</span></td>
                     </tr>
                     <tr className="border-b border-border/50">
-                      <td className="py-3 pr-4"><RinkLink slug={RINK_SLUGS.smashville}>Smashville at Zoolumination</RinkLink></td>
+                      <td className="py-3 pl-4 pr-4"><RinkLink slug={RINK_SLUGS.smashville}>Smashville at Zoolumination</RinkLink></td>
                       <td className="py-3 pr-4 text-muted-foreground">Downtown</td>
                       <td className="py-3 pr-4 text-muted-foreground">$21&ndash;25</td>
                       <td className="py-3 pr-4 text-muted-foreground">Drop-in</td>
                       <td className="py-3"><span className="inline-flex items-center gap-1 text-amber-600"><Calendar className="h-3.5 w-3.5" /> Nov&ndash;Feb</span></td>
                     </tr>
                     <tr className="border-b border-border/50">
-                      <td className="py-3 pr-4"><RinkLink slug={RINK_SLUGS.fountains}>Fountains at Gateway</RinkLink></td>
+                      <td className="py-3 pl-4 pr-4"><RinkLink slug={RINK_SLUGS.fountains}>Fountains at Gateway</RinkLink></td>
                       <td className="py-3 pr-4 text-muted-foreground">Murfreesboro (south, 30 min)</td>
                       <td className="py-3 pr-4 text-muted-foreground">$12&ndash;17</td>
                       <td className="py-3 pr-4 text-muted-foreground">Drop-in</td>
                       <td className="py-3"><span className="inline-flex items-center gap-1 text-amber-600"><Calendar className="h-3.5 w-3.5" /> Nov&ndash;Feb</span></td>
                     </tr>
                     <tr className="border-b border-border/50">
-                      <td className="py-3 pr-4"><RinkLink slug={RINK_SLUGS.gaylord}>Gaylord Opryland Resort</RinkLink></td>
+                      <td className="py-3 pl-4 pr-4"><RinkLink slug={RINK_SLUGS.gaylord}>Gaylord Opryland Resort</RinkLink></td>
                       <td className="py-3 pr-4 text-muted-foreground">Opryland</td>
                       <td className="py-3 pr-4 text-muted-foreground">Resort pricing</td>
                       <td className="py-3 pr-4 text-muted-foreground">With ticket</td>
@@ -235,7 +240,7 @@ export default function NashvilleCityHub() {
             <Separator />
 
             <section id="centennial">
-              <h2 className="font-serif text-2xl font-bold mb-4">Centennial Sportsplex &mdash; the affordable West End option</h2>
+              <h2 className="font-serif text-2xl font-bold mb-4">Centennial Sportsplex &mdash; Nashville&apos;s central two-sheet rink</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
                   <RinkLink slug={RINK_SLUGS.centennial}>Centennial Sportsplex Ice Arenas</RinkLink> is Nashville&apos;s original public skating destination. Located across from Centennial Park in the West End, it is operated by Metro Nashville Parks and Recreation and has two full-size sheets measuring 200 by 85 feet.
@@ -362,7 +367,7 @@ export default function NashvilleCityHub() {
                 From late November through early February, Nashville opens up several outdoor and pop-up rinks that aren&apos;t available the rest of the year:
               </p>
               <div className="space-y-6">
-                <div className="bg-card border rounded-xl p-6">
+                <div className="bg-card border rounded-lg p-6">
                   <h3 className="font-semibold text-lg mb-2">
                     <RinkLink slug={RINK_SLUGS.smashville}>Smashville Ice Rink at Zoolumination</RinkLink>
                   </h3>
@@ -370,7 +375,7 @@ export default function NashvilleCityHub() {
                     Downtown at Ascension Saint Thomas Landing (under Broadway). The 2025&ndash;26 season ran through February 8, 2026. Adult and teen tickets were $25, youth $21. Part of the Predators / Zoolumination holiday programming. <strong className="text-foreground">Best for:</strong> a downtown holiday experience, not a serious skate session.
                   </p>
                 </div>
-                <div className="bg-card border rounded-xl p-6">
+                <div className="bg-card border rounded-lg p-6">
                   <h3 className="font-semibold text-lg mb-2">
                     <RinkLink slug={RINK_SLUGS.fountains}>Fountains at Gateway (Murfreesboro)</RinkLink>
                   </h3>
@@ -378,7 +383,7 @@ export default function NashvilleCityHub() {
                     A seasonal outdoor rink that ran November 21, 2025 through February 1, 2026. $17 for ages 13+, $12 for ages 4&ndash;12. 60-minute sessions, skate rental included. The closest seasonal rink for Murfreesboro families.
                   </p>
                 </div>
-                <div className="bg-card border rounded-xl p-6">
+                <div className="bg-card border rounded-lg p-6">
                   <h3 className="font-semibold text-lg mb-2">
                     <RinkLink slug={RINK_SLUGS.gaylord}>Gaylord Opryland Resort</RinkLink>
                   </h3>

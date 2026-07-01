@@ -11,6 +11,7 @@ import "@/data/blogRegistry";
 import { BlogImage } from "@/components/BlogImage";
 import { Badge } from "@/components/ui/badge";
 import { SITE_URL } from "@/lib/seo";
+import { formatVerifiedDate } from "@/components/LastVerified";
 
 function CityHubCard({ href, image, city, rinkCount, description }: {
   href: string;
@@ -21,14 +22,14 @@ function CityHubCard({ href, image, city, rinkCount, description }: {
 }) {
   return (
     <Link href={href}>
-      <div className="group h-full flex flex-col overflow-hidden border rounded-xl transition-all hover:shadow-md hover:border-primary/20 bg-card cursor-pointer">
+      <div className="group h-full flex flex-col overflow-hidden border rounded-lg transition-all hover:shadow-md hover:border-primary/20 bg-card cursor-pointer">
         <div className="h-48 relative overflow-hidden">
           <img
             src={image}
             alt={`Ice skating in ${city}`}
             className="absolute inset-0 w-full h-full object-cover transition-transform group-hover:scale-105"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+          <div className="absolute inset-0 bg-black/45" />
           <div className="absolute bottom-4 left-4 right-4">
             <h3 className="font-serif text-2xl font-bold text-white">{city}</h3>
             <p className="text-white/80 text-sm">{rinkCount}</p>
@@ -174,7 +175,7 @@ export default function Home() {
             {latestPosts.map((post) => (
               <article
                 key={post.slug}
-                className="group border rounded-xl overflow-hidden bg-card hover:shadow-md hover:border-primary/20 transition-all flex flex-col"
+                className="group border rounded-lg overflow-hidden bg-card hover:shadow-md hover:border-primary/20 transition-all flex flex-col"
               >
                 <div className="h-48 relative overflow-hidden">
                   <BlogImage 
@@ -191,7 +192,7 @@ export default function Home() {
                 <div className="p-6 flex-1 flex flex-col">
                   <div className="flex items-center gap-2 text-xs text-muted-foreground mb-3">
                     <Calendar className="h-3 w-3" />
-                    {new Date(post.publishDate).toLocaleDateString("en-US", {
+                    {formatVerifiedDate(post.publishDate, {
                       month: "long",
                       day: "numeric",
                       year: "numeric"
@@ -227,10 +228,10 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div className="order-2 md:order-1 relative">
-               <div className="aspect-square rounded-2xl bg-secondary/30 relative overflow-hidden">
-                 <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent" />
+               <div className="aspect-square rounded-lg bg-secondary/30 relative overflow-hidden">
+                 <div className="absolute inset-0 bg-secondary" />
                  <div className="absolute bottom-8 left-8 right-8">
-                   <div className="bg-background/90 backdrop-blur p-6 rounded-xl shadow-lg border">
+                   <div className="bg-background/90 backdrop-blur p-6 rounded-lg shadow-lg border">
                      <div className="flex items-center gap-3 mb-3">
                        <div className="h-3 w-3 rounded-full bg-green-500" />
                        <span className="font-mono text-sm font-medium">Session Available</span>

@@ -29,7 +29,7 @@ export default function BlogIndex() {
 
   return (
     <Layout>
-      <div className="bg-muted/30 border-b">
+      <div className="page-band border-b border-white/10">
         <div className="container mx-auto px-4 py-12">
           <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
             <Link href="/" className="hover:text-primary">Home</Link>
@@ -72,7 +72,7 @@ export default function BlogIndex() {
           {filteredPosts.map(post => (
             <article
               key={post.slug}
-              className="group border rounded-xl p-6 bg-card hover:shadow-md hover:border-primary/20 transition-all flex flex-col md:flex-row gap-6"
+              className="group border rounded-lg p-6 bg-card hover:shadow-md hover:border-primary/20 transition-all flex flex-col md:flex-row gap-6"
               data-testid={`card-blog-post-${post.slug}`}
             >
               <div className="md:w-[200px] h-[140px] flex-shrink-0 relative overflow-hidden rounded-lg">

@@ -165,7 +165,7 @@ export default function BlogPost() {
 
   return (
     <Layout>
-      <div className="bg-muted/30 border-b">
+      <div className="page-band border-b border-white/10">
         <div className="container mx-auto px-4 py-12">
           <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
             <Link href="/"><span className="hover:text-primary cursor-pointer">Home</span></Link>
@@ -181,7 +181,7 @@ export default function BlogPost() {
             {title}
           </h1>
           
-          <div className="w-full h-[400px] mb-8 relative overflow-hidden rounded-xl animate-in fade-in duration-700">
+          <div className="w-full h-[400px] mb-8 relative overflow-hidden rounded-lg animate-in fade-in duration-700">
             <BlogImage 
               post={postMeta} 
               type="hero"

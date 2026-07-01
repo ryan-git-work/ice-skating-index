@@ -15,7 +15,7 @@ interface NearbyRinksProps {
 
 export function NearbyRinks({ title = "Other rinks nearby", rinks, seeAllLink }: NearbyRinksProps) {
   return (
-    <div className="bg-muted/20 rounded-xl p-6 border">
+    <div className="bg-muted/20 rounded-lg p-6 border">
       <h3 className="font-bold mb-4 flex items-center gap-2">
         <MapPin className="h-4 w-4 text-primary" />
         {title}

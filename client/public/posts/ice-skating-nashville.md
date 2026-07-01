@@ -10,10 +10,10 @@ This guide covers every option for public ice skating in the Nashville area, wha
 
 | Rink | Location | Price | Reservations |
 |------|----------|-------|--------------|
-| Centennial Sportsplex | West End, Nashville | $6-7 (rental included) | Walk-in |
-| Ford Ice Center Antioch | Antioch (south) | $12 (rental included) | Required online |
-| Ford Ice Center Bellevue | Bellevue (west) | $12 (rental included) | Required online |
-| Ford Ice Center Clarksville | Clarksville (north) | $12 (rental included) | Required online |
+| Centennial Sportsplex | West End, Nashville | Confirm in DaySmart | Required online |
+| Ford Ice Center Antioch | Antioch (south) | $10.98 matinee / $13.73 evening | Required online |
+| Ford Ice Center Bellevue | Bellevue (west) | $10.98 matinee / $13.73 evening | Required online |
+| Ford Ice Center Clarksville | Clarksville (north) | $10.98 matinee / $13.73 evening | Required online |
 
 ---
 
@@ -21,13 +21,13 @@ This guide covers every option for public ice skating in the Nashville area, wha
 
 For the complete guide, see our [Centennial Sportsplex ice skating guide](/blog/centennial-sportsplex-ice-skating).
 
-Centennial Sportsplex is Nashville's original public skating destination and still the most affordable option in the area. Located in the West End neighborhood adjacent to Centennial Park, it is operated by Metro Nashville Parks and Recreation and has been open since 1990.
+Centennial Sportsplex is Nashville's original public skating destination. Located in the West End neighborhood adjacent to Centennial Park, its ice operations have been managed by the Nashville Predators since May 1, 2026.
 
-**What makes it unique:** Two full-size ice sheets (200 x 85 feet each), making it the only multi-rink public facility in Nashville proper. The west arena serves as the Nashville Predators practice facility, meaning the ice is maintained at a professional standard. Admission is $6-7 and now includes skate rental — one of the best values in Tennessee for public skating.
+**What makes it unique:** Two full-size ice sheets (200 x 85 feet each), making it the only multi-rink public facility in Nashville proper. Public skating is typically on Rink A, while academy programs use both sheets.
 
-**Best for:** Families on a budget, beginners, learn-to-skate programs, anyone who wants to walk in without a reservation.
+**Best for:** Beginners, learn-to-skate families, figure skaters, and anyone who wants a central Nashville rink.
 
-**The catch:** Public skate sessions run on a variable schedule rather than fixed weekly hours. Always check the Centennial Sportsplex Ice Arena Google Calendar on the Nashville.gov website before making the trip. Sessions are typically offered Wednesday, Friday, and Saturday but this changes based on hockey league bookings and special events.
+**The catch:** Public skate sessions run on a variable schedule rather than fixed weekly hours. Use Predators DaySmart for the current Centennial schedule, registration, and waivers, and check the rink page's Skate Status note before making the trip.
 
 **Address:** 222 25th Ave N, Nashville, TN 37203
 **Phone:** 615-862-8480
@@ -40,7 +40,7 @@ For the complete guide, see our [Ford Ice Center Antioch guide](/blog/ford-ice-c
 
 Ford Ice Center Antioch is the southernmost of the three Nashville Predators-operated public rinks. Located in the Antioch area off Murfreesboro Road, it is the closest option for residents of south Nashville, Brentwood, and Murfreesboro.
 
-**What makes it unique:** Ford Ice facilities are cashless and require online reservations in advance — a different experience from the walk-in model at Centennial. The $12 admission includes skate rental. The facilities are newer, cleaner, and more modern than Centennial, with a polished experience that reflects the Predators organization's investment in skating infrastructure across Middle Tennessee.
+**What makes it unique:** Ford Ice facilities are cashless and require online reservations in advance. Matinee sessions are listed at $10.98 plus tax and evening sessions at $13.73 plus tax, with rental included.
 
 **Best for:** Skaters who plan ahead, south Nashville and suburban residents, hockey players who want a modern facility.
 
@@ -78,9 +78,9 @@ A few simple rules to help you decide:
 
 **Go to Centennial Sportsplex if:**
 - You are a first-timer and want to keep it low-key and affordable
-- You have young kids and want to walk in without planning ahead
+- You want a central rink with two full-size sheets
 - You are enrolling in a learn-to-skate program
-- Budget matters — at $6-7 it is roughly half the price of Ford Ice
+- You use Nashville Skating Academy for lessons or freestyle ice
 
 **Go to a Ford Ice Center if:**
 - You want a guaranteed spot and are comfortable reserving online

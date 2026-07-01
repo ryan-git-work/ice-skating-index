@@ -1,6 +1,6 @@
 import { Link, useLocation } from "wouter";
 import { cn } from "@/lib/utils";
-import { Snowflake, Search, MapPin, Menu, X } from "lucide-react";
+import { Snowflake, Menu } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -19,14 +19,14 @@ export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen flex flex-col bg-background font-sans text-foreground selection:bg-primary/20 overflow-x-hidden">
       {/* Header */}
-      <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-md supports-[backdrop-filter]:bg-background/60">
+      <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-[#0E2A47] text-white shadow-sm">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <Link href="/">
             <div className="flex items-center gap-2 group cursor-pointer">
-              <div className="bg-primary/10 p-2 rounded-lg group-hover:bg-primary/20 transition-colors">
-                <Snowflake className="h-5 w-5 text-primary" />
+              <div className="bg-white/10 p-2 rounded-md group-hover:bg-white/15 transition-colors">
+                <Snowflake className="h-5 w-5 text-cyan-300" />
               </div>
-              <span className="font-serif text-xl font-bold tracking-tight text-foreground">
+              <span className="font-serif text-lg font-extrabold text-white">
                 Ice Skating Index
               </span>
             </div>
@@ -38,17 +38,17 @@ export function Layout({ children }: { children: React.ReactNode }) {
               <Link key={link.href} href={link.href}>
                 <span
                   className={cn(
-                    "text-sm font-medium transition-colors hover:text-primary cursor-pointer",
+                    "text-sm font-medium transition-colors hover:text-cyan-200 cursor-pointer",
                     location === link.href
-                      ? "text-primary"
-                      : "text-muted-foreground"
+                      ? "text-cyan-200"
+                      : "text-white/75"
                   )}
                 >
                   {link.label}
                 </span>
               </Link>
             ))}
-            <Button size="sm" className="ml-2 font-semibold shadow-sm hover:shadow-md transition-all" asChild>
+            <Button size="sm" className="ml-2 bg-[#2E7FD1] font-semibold text-white hover:bg-[#246EB8]" asChild>
               <Link href="/browse">Find a Rink</Link>
             </Button>
           </nav>
@@ -57,7 +57,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           <div className="md:hidden">
             <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" className="-mr-2">
+                <Button variant="ghost" size="icon" className="-mr-2 text-white hover:bg-white/10 hover:text-white">
                   <Menu className="h-5 w-5" />
                   <span className="sr-only">Toggle menu</span>
                 </Button>
@@ -103,49 +103,49 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </main>
 
       {/* Footer */}
-      <footer className="border-t bg-muted/30">
+      <footer className="border-t border-white/10 bg-[#0E2A47] text-white">
         <div className="container mx-auto px-4 py-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="space-y-4">
               <div className="flex items-center gap-2">
-                <Snowflake className="h-5 w-5 text-primary" />
+                <Snowflake className="h-5 w-5 text-cyan-300" />
                 <span className="font-serif text-lg font-bold">Ice Skating Index</span>
               </div>
-              <p className="text-sm text-muted-foreground leading-relaxed">
+              <p className="text-sm text-white/65 leading-relaxed">
                 The definitive directory for ice skating rinks, schedules, and freestyle sessions. Helping skaters find their ice.
               </p>
             </div>
             
             <div>
-              <h3 className="font-semibold mb-4 text-foreground">Directory</h3>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><Link href="/browse"><span className="hover:text-primary transition-colors cursor-pointer">Browse Rinks</span></Link></li>
-                <li><Link href="/freestyle"><span className="hover:text-primary transition-colors cursor-pointer">Freestyle Sessions</span></Link></li>
-                <li><Link href="/services/learn-to-skate"><span className="hover:text-primary transition-colors cursor-pointer">Learn to Skate</span></Link></li>
-                <li><Link href="/services/skate-sharpening"><span className="hover:text-primary transition-colors cursor-pointer">Skate Sharpening</span></Link></li>
-                <li><Link href="/blog"><span className="hover:text-primary transition-colors cursor-pointer">Blog</span></Link></li>
-                <li><Link href="/about"><span className="hover:text-primary transition-colors cursor-pointer">About</span></Link></li>
+              <h3 className="font-semibold mb-4 text-white">Directory</h3>
+              <ul className="space-y-2 text-sm text-white/65">
+                <li><Link href="/browse"><span className="hover:text-cyan-200 transition-colors cursor-pointer">Browse Rinks</span></Link></li>
+                <li><Link href="/freestyle"><span className="hover:text-cyan-200 transition-colors cursor-pointer">Freestyle Sessions</span></Link></li>
+                <li><Link href="/services/learn-to-skate"><span className="hover:text-cyan-200 transition-colors cursor-pointer">Learn to Skate</span></Link></li>
+                <li><Link href="/services/skate-sharpening"><span className="hover:text-cyan-200 transition-colors cursor-pointer">Skate Sharpening</span></Link></li>
+                <li><Link href="/blog"><span className="hover:text-cyan-200 transition-colors cursor-pointer">Blog</span></Link></li>
+                <li><Link href="/about"><span className="hover:text-cyan-200 transition-colors cursor-pointer">About</span></Link></li>
               </ul>
             </div>
 
             <div>
-              <h3 className="font-semibold mb-4 text-foreground">Top States</h3>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><Link href="/state/tn"><span className="hover:text-primary transition-colors cursor-pointer">Tennessee</span></Link></li>
-                <li><Link href="/state/ny"><span className="hover:text-primary transition-colors cursor-pointer">New York</span></Link></li>
-                <li><Link href="/state/ca"><span className="hover:text-primary transition-colors cursor-pointer">California</span></Link></li>
-                <li><Link href="/state/mi"><span className="hover:text-primary transition-colors cursor-pointer">Michigan</span></Link></li>
-                <li><Link href="/state/mn"><span className="hover:text-primary transition-colors cursor-pointer">Minnesota</span></Link></li>
-                <li><Link href="/state/ma"><span className="hover:text-primary transition-colors cursor-pointer">Massachusetts</span></Link></li>
-                <li><Link href="/state/co"><span className="hover:text-primary transition-colors cursor-pointer">Colorado</span></Link></li>
-                <li><Link href="/state/tx"><span className="hover:text-primary transition-colors cursor-pointer">Texas</span></Link></li>
-                <li><Link href="/state/il"><span className="hover:text-primary transition-colors cursor-pointer">Illinois</span></Link></li>
-                <li><Link href="/state/pa"><span className="hover:text-primary transition-colors cursor-pointer">Pennsylvania</span></Link></li>
-                <li><Link href="/state/oh"><span className="hover:text-primary transition-colors cursor-pointer">Ohio</span></Link></li>
+              <h3 className="font-semibold mb-4 text-white">Top States</h3>
+              <ul className="space-y-2 text-sm text-white/65">
+                <li><Link href="/state/tn"><span className="hover:text-cyan-200 transition-colors cursor-pointer">Tennessee</span></Link></li>
+                <li><Link href="/state/ny"><span className="hover:text-cyan-200 transition-colors cursor-pointer">New York</span></Link></li>
+                <li><Link href="/state/ca"><span className="hover:text-cyan-200 transition-colors cursor-pointer">California</span></Link></li>
+                <li><Link href="/state/mi"><span className="hover:text-cyan-200 transition-colors cursor-pointer">Michigan</span></Link></li>
+                <li><Link href="/state/mn"><span className="hover:text-cyan-200 transition-colors cursor-pointer">Minnesota</span></Link></li>
+                <li><Link href="/state/ma"><span className="hover:text-cyan-200 transition-colors cursor-pointer">Massachusetts</span></Link></li>
+                <li><Link href="/state/co"><span className="hover:text-cyan-200 transition-colors cursor-pointer">Colorado</span></Link></li>
+                <li><Link href="/state/tx"><span className="hover:text-cyan-200 transition-colors cursor-pointer">Texas</span></Link></li>
+                <li><Link href="/state/il"><span className="hover:text-cyan-200 transition-colors cursor-pointer">Illinois</span></Link></li>
+                <li><Link href="/state/pa"><span className="hover:text-cyan-200 transition-colors cursor-pointer">Pennsylvania</span></Link></li>
+                <li><Link href="/state/oh"><span className="hover:text-cyan-200 transition-colors cursor-pointer">Ohio</span></Link></li>
               </ul>
             </div>
           </div>
-          <div className="mt-12 pt-8 border-t text-center text-sm text-muted-foreground">
+          <div className="mt-12 pt-8 border-t border-white/10 text-center text-sm text-white/55">
             <p>&copy; {new Date().getFullYear()} Ice Skating Index. All rights reserved.</p>
           </div>
         </div>

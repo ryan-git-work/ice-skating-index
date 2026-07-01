@@ -16,7 +16,7 @@ export default function About() {
 
   return (
     <Layout>
-      <div className="bg-muted/30 border-b">
+      <div className="page-band border-b border-white/10">
         <div className="container mx-auto px-4 py-12">
           <h1 className="font-serif text-4xl md:text-5xl font-bold mb-4">
             About Ice Skating Index

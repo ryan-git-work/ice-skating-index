@@ -7,12 +7,12 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import {
   MapPin, Phone,
-  Info, X, ExternalLink, Ticket,
-  Snowflake, Dumbbell, Scissors, ChevronDown, ChevronUp, AlertTriangle
+  Info, ExternalLink, Ticket, Navigation,
+  Snowflake, Dumbbell, Scissors, ChevronDown, ChevronUp, AlertTriangle,
+  Building2, CalendarCheck2, CircleDollarSign, Layers3,
 } from "lucide-react";
 import { useHead } from "@/hooks/use-head";
 import { useState, useEffect } from "react";
-import { PublicSkateSchedule } from "@/components/PublicSkateSchedule";
 import { ScheduleLanes } from "@/components/ScheduleLanes";
 import { SkateStatus } from "@/components/SkateStatus";
 import { SharpeningConnector } from "@/components/SharpeningConnector";
@@ -47,6 +47,27 @@ function buildOfferingList(rink: NonNullable<ReturnType<typeof getRinkBySlug>>) 
     ["stick and puck", rink.offerings.stick_and_puck],
   ];
   return map.filter(([, value]) => value === true || value === "true").slice(0, 3).map(([name]) => name);
+}
+
+function getPublicPriceLabel(rink: NonNullable<ReturnType<typeof getRinkBySlug>>) {
+  if (rink.slug === "centennial-sportsplex-nashville-tn") {
+    return "Confirm at booking";
+  }
+  const price = rink.pricing?.public_skate;
+  if (price && typeof price === "object") {
+    const values = Object.values(price).filter((value): value is number => typeof value === "number");
+    if (values.length > 0) return `From $${Math.min(...values)}`;
+  }
+  if (typeof price === "string" && price.trim()) return price;
+  const match = rink.pricing?.notes?.match(/\$[0-9]+(?:\.[0-9]{1,2})?/);
+  return match ? `From ${match[0]}` : "Confirm at booking";
+}
+
+function getBookingLabel(rink: NonNullable<ReturnType<typeof getRinkBySlug>>) {
+  const url = rink.schedule_links.public_calendar_url?.toLowerCase() || "";
+  if (url.includes("daysmart") || url.includes("/dash/")) return "Online registration";
+  if (url) return "Check official calendar";
+  return "Contact the rink";
 }
 
 const NASHVILLE_CLUSTER_SLUGS = new Set([
@@ -193,7 +214,7 @@ export default function RinkDetail() {
 
   return (
     <Layout>
-      <div className="bg-muted/30 border-b">
+      <div className="border-b bg-secondary/70">
         <div className="container mx-auto px-4 py-4 text-sm text-muted-foreground flex items-center gap-2">
           <Link href="/" className="hover:text-primary">Home</Link>
           <span>/</span>
@@ -209,26 +230,29 @@ export default function RinkDetail() {
         </div>
       </div>
 
-      <div className="bg-background pt-8 pb-12">
+      <section className="page-band">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-            <div className="lg:col-span-2">
-              <h1 className="font-serif text-4xl md:text-5xl font-bold mb-4 text-foreground">{rink.name}</h1>
+          <div className="grid min-h-[430px] grid-cols-1 items-stretch gap-8 lg:grid-cols-[1.15fr_0.85fr]">
+            <div className="flex flex-col justify-center py-10 lg:py-14">
+              <p className="mb-3 text-sm font-semibold uppercase text-cyan-200">
+                Ice rink guide
+              </p>
+              <h1 className="font-serif text-4xl md:text-5xl font-extrabold mb-4 text-white">{rink.name}</h1>
               {rink.subheader && (
-                <p className="text-lg text-muted-foreground leading-relaxed mb-4">{rink.subheader}</p>
+                <p className="text-lg text-white/70 leading-relaxed mb-4">{rink.subheader}</p>
               )}
               {statusNotice ? (
-                <div className="flex items-center gap-2 bg-amber-50 text-amber-800 text-sm font-medium px-3 py-2 rounded-lg border border-amber-200 mb-4">
+                <div className="flex items-center gap-2 bg-amber-100 text-amber-950 text-sm font-medium px-3 py-2 rounded-md border border-amber-200 mb-4">
                   <AlertTriangle className="h-4 w-4 flex-shrink-0" />
                   {statusNotice}
                 </div>
               ) : rink.seasonal && rink.seasonal_notes ? (
-                <div className="flex items-center gap-2 bg-amber-50 text-amber-800 text-sm font-medium px-3 py-2 rounded-lg border border-amber-200 mb-4">
+                <div className="flex items-center gap-2 bg-amber-100 text-amber-950 text-sm font-medium px-3 py-2 rounded-md border border-amber-200 mb-4">
                   <AlertTriangle className="h-4 w-4 flex-shrink-0" />
                   {rink.seasonal_notes}
                 </div>
               ) : null}
-              <div className="flex flex-wrap items-center gap-4 text-muted-foreground mb-6">
+              <div className="flex flex-wrap items-center gap-4 text-white/70 mb-6">
                 <div className="flex items-center">
                   <MapPin className="h-4 w-4 mr-1" />
                   {rink.address.street}, {rink.address.city}, {rink.address.state} {rink.address.postal_code}
@@ -240,44 +264,65 @@ export default function RinkDetail() {
                   </div>
                 )}
               </div>
-              <div className="flex flex-wrap gap-2">
-                {(rink.tags ?? []).map((tag) => (
-                  <Badge key={tag} variant="secondary" className="rounded-full px-3 py-1 font-normal text-sm">
-                    {tag}
-                  </Badge>
-                ))}
+              <div className="flex flex-wrap gap-2 text-sm">
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-white">
+                  <Building2 className="h-4 w-4 text-cyan-200" />
+                  {rink.facility.indoor === true ? "Indoor" : rink.facility.indoor === false ? "Outdoor" : "Facility type unconfirmed"}
+                </span>
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-white capitalize">
+                  <CalendarCheck2 className="h-4 w-4 text-cyan-200" />
+                  {rink.facility.seasonality === "unknown" ? "Season unconfirmed" : rink.facility.seasonality}
+                </span>
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-white">
+                  <Layers3 className="h-4 w-4 text-cyan-200" />
+                  {rink.facility.number_of_sheets ? `${rink.facility.number_of_sheets} ${rink.facility.number_of_sheets === 1 ? "sheet" : "sheets"}` : "Sheet count unconfirmed"}
+                </span>
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-white">
+                  <CircleDollarSign className="h-4 w-4 text-cyan-200" />
+                  {getPublicPriceLabel(rink)}
+                </span>
+              </div>
+
+              <div className="mt-7 flex flex-wrap gap-3">
+                {rink.schedule_links.public_calendar_url && (
+                  <Button asChild size="lg" className="bg-[#2E7FD1] text-white hover:bg-[#246EB8]">
+                    <a href="#public-skate-schedule">
+                      Find public skate times
+                    </a>
+                  </Button>
+                )}
+                {rink.google_maps_url && (
+                  <Button asChild variant="outline" size="lg" className="border-white/40 bg-transparent text-white hover:bg-white/10 hover:text-white">
+                    <a href={rink.google_maps_url} target="_blank" rel="noopener noreferrer">
+                      <Navigation className="mr-2 h-4 w-4" />
+                      Get directions
+                    </a>
+                  </Button>
+                )}
+                {rink.website && (
+                  <a
+                    href={rink.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex min-h-11 items-center gap-2 px-2 text-sm font-semibold text-cyan-200 hover:text-white"
+                  >
+                    Official rink site
+                    <ExternalLink className="h-4 w-4" />
+                  </a>
+                )}
               </div>
             </div>
-            
-            <div className="flex flex-col gap-4">
-              {rink.image && (
-                <div className="rounded-xl overflow-hidden shadow-lg">
-                  <img 
-                    src={rink.image} 
-                    alt={rink.name}
-                    className="w-full h-48 lg:h-56 object-cover"
-                  />
-                </div>
-              )}
-              <div className="flex flex-col sm:flex-row gap-3">
-                {rink.website && (
-                   <Button asChild size="lg" className="shadow-sm">
-                     <a href={rink.website} target="_blank" rel="noopener noreferrer">
-                       Visit Website <ExternalLink className="ml-2 h-4 w-4" />
-                     </a>
-                   </Button>
-                )}
-                {rink.schedule_links.public_calendar_url && (
-                  <PublicSkateSchedule
-                    rinkName={rink.name}
-                    url={rink.schedule_links.public_calendar_url}
-                  />
-                )}
-              </div>
+
+            <div className="relative min-h-[260px] overflow-hidden lg:min-h-[430px]">
+              <img
+                src={rink.image || "/images/skating/ice_img_08.png"}
+                alt={`${rink.name} ice rink`}
+                className="absolute inset-0 h-full w-full object-cover"
+              />
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {skateStatus && (
         <div className="container mx-auto px-4 pb-8">
@@ -290,6 +335,41 @@ export default function RinkDetail() {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           <div className="lg:col-span-2 space-y-12">
+            {!isUnavailable && (
+              <section className="border bg-white p-6 shadow-sm">
+                <div className="mb-5">
+                  <p className="text-xs font-semibold uppercase text-primary">Plan your visit</p>
+                  <h2 className="mt-1 font-serif text-2xl font-bold">The essentials before you leave</h2>
+                </div>
+                <dl className="grid gap-5 sm:grid-cols-2">
+                  <div className="border-l-2 border-primary pl-4">
+                    <dt className="text-xs font-semibold uppercase text-muted-foreground">Public-skate price</dt>
+                    <dd className="mt-1 font-semibold">{getPublicPriceLabel(rink)}</dd>
+                    <p className="mt-1 text-xs text-muted-foreground">Confirm the current total before paying.</p>
+                  </div>
+                  <div className="border-l-2 border-accent pl-4">
+                    <dt className="text-xs font-semibold uppercase text-muted-foreground">How to book</dt>
+                    <dd className="mt-1 font-semibold">{getBookingLabel(rink)}</dd>
+                    <p className="mt-1 text-xs text-muted-foreground">Open the official listing for session requirements.</p>
+                  </div>
+                  <div className="border-l-2 border-slate-300 pl-4">
+                    <dt className="text-xs font-semibold uppercase text-muted-foreground">Rentals</dt>
+                    <dd className="mt-1 font-semibold">
+                      {isTruthy(rink.rentals.available) ? "Available" : rink.rentals.available === false || rink.rentals.available === "false" ? "Not available" : "Confirm with the rink"}
+                    </dd>
+                    <p className="mt-1 text-xs text-muted-foreground">
+                      {isTruthy(rink.rentals.included_with_admission) ? "Included with public-skate admission." : "Check availability and cost."}
+                    </p>
+                  </div>
+                  <div className="border-l-2 border-amber-400 pl-4">
+                    <dt className="text-xs font-semibold uppercase text-muted-foreground">Schedule pattern</dt>
+                    <dd className="mt-1 font-semibold">Sessions can change</dd>
+                    <p className="mt-1 text-xs text-muted-foreground">Confirm the selected date before you make the drive.</p>
+                  </div>
+                </dl>
+              </section>
+            )}
+
             {!isUnavailable && <ScheduleLanes rink={rink} />}
 
             <section>
@@ -307,7 +387,7 @@ export default function RinkDetail() {
               )}
 
               {(whatToKnow?.length ?? 0) > 0 && (
-                <div className="mt-6 bg-blue-50 dark:bg-blue-950/20 p-6 rounded-xl border border-blue-100 dark:border-blue-900/50">
+                <div className="mt-6 bg-blue-50 dark:bg-blue-950/20 p-6 rounded-lg border border-blue-100 dark:border-blue-900/50">
                   <h3 className="font-semibold text-blue-900 dark:text-blue-200 mb-3 flex items-center">
                     <Info className="h-4 w-4 mr-2" /> What to know before you go
                   </h3>
@@ -342,7 +422,7 @@ export default function RinkDetail() {
                  )}
                </div>
                
-               <div className="bg-card border rounded-xl p-6 shadow-sm">
+               <div className="bg-card border rounded-lg p-6 shadow-sm">
                  {rink.freestyle.available ? (
                    <div className="space-y-6">
                      <p className="text-muted-foreground">
@@ -477,7 +557,7 @@ export default function RinkDetail() {
                   <h2 className="font-serif text-2xl font-bold mb-6">Other {rink.address.city} rinks</h2>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {nearby.map((nr) => (
-                      <Link key={nr.id} href={`/rink/${nr.slug}`} className="block group border rounded-xl p-4 hover:border-primary/40 transition-colors">
+                      <Link key={nr.id} href={`/rink/${nr.slug}`} className="block group border rounded-lg p-4 hover:border-primary/40 transition-colors">
                         <div className="font-medium group-hover:text-primary transition-colors">
                           {nr.name}
                         </div>
@@ -504,7 +584,7 @@ export default function RinkDetail() {
           </div>
 
           <div className="space-y-8">
-             <div className="bg-muted/20 rounded-xl p-6 border">
+             <div className="bg-muted/20 rounded-lg p-6 border">
                <h3 className="font-bold mb-4">Location</h3>
                <address className="not-italic text-sm text-muted-foreground space-y-1 mb-4">
                  <p>{rink.address.street}</p>
@@ -519,12 +599,14 @@ export default function RinkDetail() {
                )}
              </div>
 
-             <div className="bg-muted/20 rounded-xl p-6 border">
+             <div className="bg-muted/20 rounded-lg p-6 border">
                <h3 className="font-bold mb-4">Facility Details</h3>
                <ul className="space-y-3 text-sm">
                  <li className="flex justify-between">
                    <span className="text-muted-foreground">Type</span>
-                   <span className="font-medium">{rink.facility.indoor ? "Indoor" : "Outdoor"}</span>
+                   <span className="font-medium">
+                     {rink.facility.indoor === true ? "Indoor" : rink.facility.indoor === false ? "Outdoor" : "Unconfirmed"}
+                   </span>
                  </li>
                  <li className="flex justify-between">
                    <span className="text-muted-foreground">Season</span>
@@ -552,18 +634,43 @@ export default function RinkDetail() {
           </div>
         </div>
       </div>
+
+      {!isUnavailable && (rink.schedule_links.public_calendar_url || rink.google_maps_url) && (
+        <>
+        <div className="h-20 md:hidden" aria-hidden="true" />
+        <div className="fixed inset-x-0 bottom-0 z-40 border-t bg-white/95 p-3 shadow-[0_-8px_24px_rgba(14,42,71,0.12)] backdrop-blur md:hidden">
+          <div className={`mx-auto grid max-w-md gap-2 ${rink.schedule_links.public_calendar_url && rink.google_maps_url ? "grid-cols-2" : "grid-cols-1"}`}>
+            {rink.schedule_links.public_calendar_url && (
+              <Button asChild className="min-w-0">
+                <a href="#public-skate-schedule">Find times</a>
+              </Button>
+            )}
+            {rink.google_maps_url && (
+              <Button asChild variant="outline" className="min-w-0">
+                <a href={rink.google_maps_url} target="_blank" rel="noopener noreferrer">
+                  <Navigation className="mr-2 h-4 w-4" />
+                  Directions
+                </a>
+              </Button>
+            )}
+          </div>
+        </div>
+        </>
+      )}
     </Layout>
   );
 }
 
 function OfferingItem({ label, available, icon }: { label: string, available: boolean | string | undefined, icon: React.ReactNode }) {
   const isAvailable = available === true || available === "true";
+  if (!isAvailable) return null;
+
   return (
-    <div className={`flex items-center gap-3 p-3 rounded-lg border ${isAvailable ? 'bg-background border-border' : 'bg-muted/50 border-transparent opacity-60'}`}>
-      <div className={`h-8 w-8 rounded-full flex items-center justify-center ${isAvailable ? 'bg-primary/10 text-primary' : 'bg-muted text-muted-foreground'}`}>
-        {isAvailable ? icon : <X className="h-4 w-4" />}
+    <div className="flex min-h-14 items-center gap-3 rounded-lg border bg-white p-3">
+      <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 text-primary">
+        {icon}
       </div>
-      <span className={`text-sm font-medium ${isAvailable ? 'text-foreground' : 'text-muted-foreground'}`}>{label}</span>
+      <span className="text-sm font-medium text-foreground">{label}</span>
     </div>
   );
 }

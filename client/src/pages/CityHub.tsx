@@ -43,18 +43,18 @@ export default function CityHub() {
 
   return (
     <Layout>
-      <div className="bg-muted/30 border-b">
+      <div className="page-band border-b border-white/10">
         <div className="container mx-auto px-4 py-12">
-          <div className="flex items-center text-sm text-muted-foreground mb-4 gap-2">
-            <Link href="/" className="hover:text-primary">Home</Link>
+          <div className="flex items-center text-sm text-white/65 mb-4 gap-2">
+            <Link href="/" className="hover:text-cyan-200">Home</Link>
             <span>/</span>
-            <Link href={`/state/${stateSlug}`} className="hover:text-primary">{stateName}</Link>
+            <Link href={`/state/${stateSlug}`} className="hover:text-cyan-200">{stateName}</Link>
             <span>/</span>
-            <span className="text-foreground font-medium">{city}</span>
+            <span className="text-white font-medium">{city}</span>
           </div>
-          <h1 className="font-serif text-4xl font-bold mb-4">Ice Skating in {city}, {stateName}</h1>
-          <p className="text-muted-foreground max-w-2xl">
-            Coming soon — full guide loading shortly.
+          <h1 className="font-serif text-4xl font-extrabold text-white mb-4">Ice Skating in {city}, {stateName}</h1>
+          <p className="text-white/70 max-w-2xl">
+            Compare local rink details, public-skate availability, freestyle ice, lessons, and directions.
           </p>
         </div>
       </div>

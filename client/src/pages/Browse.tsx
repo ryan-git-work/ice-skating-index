@@ -7,7 +7,7 @@ import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useState, useMemo } from "react";
-import { Search, Filter, X } from "lucide-react";
+import { Search, X } from "lucide-react";
 import { useHead } from "@/hooks/use-head";
 import { buildRinkItemList } from "@/lib/seo";
 
@@ -61,18 +61,19 @@ export default function Browse() {
 
   return (
     <Layout>
-      <div className="bg-muted/30 border-b">
+      <div className="page-band border-b border-white/10">
         <div className="container mx-auto px-4 py-12">
-          <h1 className="font-serif text-4xl font-bold mb-4">Browse Rinks</h1>
-          <p className="text-muted-foreground max-w-2xl">
+          <p className="mb-3 text-sm font-semibold uppercase text-cyan-200">National rink directory</p>
+          <h1 className="font-serif text-4xl font-extrabold mb-4 text-white">Browse ice skating rinks</h1>
+          <p className="text-white/70 max-w-2xl">
             Browse ice skating rinks across 11 states. Search by city or state to find public skating times, freestyle sessions, skate sharpening, and hockey programs near you.
           </p>
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 py-10">
         <div className="flex flex-col lg:flex-row gap-8">
-          <aside className="w-full lg:w-64 space-y-8 flex-shrink-0">
+          <aside className="h-fit w-full flex-shrink-0 space-y-7 rounded-lg border bg-white p-5 shadow-sm lg:sticky lg:top-24 lg:w-64">
             <div>
               <Label className="mb-2 block font-semibold">State</Label>
               <Select value={selectedState} onValueChange={setSelectedState}>
@@ -134,19 +135,30 @@ export default function Browse() {
           </aside>
 
           <div className="flex-1">
-            <div className="mb-6 flex items-center gap-3">
-              <Search className="h-4 w-4 text-muted-foreground" />
+            <div className="mb-4 relative">
+              <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
               <Input
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Search by rink, city, or state"
+                className="h-11 bg-white pl-10"
               />
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-              {filteredRinks.map((rink) => (
-                <RinkCard key={rink.id} rink={rink} />
-              ))}
-            </div>
+            <p className="mb-6 text-sm text-muted-foreground">
+              Showing <strong className="text-foreground">{filteredRinks.length}</strong> rinks
+            </p>
+            {filteredRinks.length > 0 ? (
+              <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                {filteredRinks.map((rink) => (
+                  <RinkCard key={rink.id} rink={rink} />
+                ))}
+              </div>
+            ) : (
+              <div className="border bg-white p-10 text-center">
+                <h2 className="font-semibold">No rinks match those filters</h2>
+                <p className="mt-2 text-sm text-muted-foreground">Clear the filters or try a broader city, state, or rink name.</p>
+              </div>
+            )}
           </div>
         </div>
       </div>

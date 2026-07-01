@@ -68,7 +68,7 @@ The gap between where you start and where you need to be to genuinely enjoy recr
 
 The entry point for almost everyone is a public skate session — open ice time at an indoor rink where anyone can show up, rent skates, and skate for an hour or two regardless of their skill level.
 
-Most cities have at least one indoor rink offering public skate sessions on a regular basis. Sessions typically run 90 minutes to two hours and include skate rental in the admission price. Costs range from $6-7 at municipal facilities like Nashville's [Centennial Sportsplex](/blog/centennial-sportsplex-ice-skating) to $12-15 at private rinks.
+Most cities have at least one indoor rink offering public skate sessions on a regular basis. Session length, admission, rental pricing, and booking rules vary, so confirm them with the rink you plan to visit. Nashville's [Centennial Sportsplex](/blog/centennial-sportsplex-ice-skating) is one example of a rink whose operator and booking process recently changed.
 
 Use the [Ice Skating Index rink finder](/browse) to locate public skate sessions near you.
 

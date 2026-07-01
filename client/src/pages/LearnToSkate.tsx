@@ -40,7 +40,7 @@ export default function LearnToSkate() {
 
   return (
     <Layout>
-      <div className="bg-muted/30 border-b">
+      <div className="page-band border-b border-white/10">
         <div className="container mx-auto px-4 py-12">
           <h1 className="font-serif text-4xl md:text-5xl font-bold mb-4">Learn to Skate</h1>
           <p className="text-lg text-muted-foreground max-w-3xl leading-relaxed">
@@ -57,7 +57,7 @@ export default function LearnToSkate() {
           {/* Table of Contents - Sidebar */}
           <aside className="lg:w-64 flex-shrink-0">
             <div className="sticky top-8">
-              <h2 className="font-semibold text-sm uppercase tracking-wide text-muted-foreground mb-4">On this page</h2>
+              <h2 className="font-semibold text-sm uppercase text-muted-foreground mb-4">On this page</h2>
               <nav className="space-y-2">
                 {sections.map((section) => (
                   <a 
@@ -115,7 +115,7 @@ export default function LearnToSkate() {
                   <span>Adults who want structured instruction instead of open sessions</span>
                 </li>
               </ul>
-              <div className="mt-6 bg-blue-50 dark:bg-blue-950/20 p-6 rounded-xl border border-blue-100 dark:border-blue-900/50">
+              <div className="mt-6 bg-blue-50 dark:bg-blue-950/20 p-6 rounded-lg border border-blue-100 dark:border-blue-900/50">
                 <p className="text-blue-800 dark:text-blue-300 text-sm">
                   You do not need prior experience to start. Most programs assume you are new.
                 </p>
@@ -206,7 +206,7 @@ export default function LearnToSkate() {
                   <span>Age and athletic background</span>
                 </li>
               </ul>
-              <div className="mt-6 bg-green-50 dark:bg-green-950/20 p-6 rounded-xl border border-green-100 dark:border-green-900/50">
+              <div className="mt-6 bg-green-50 dark:bg-green-950/20 p-6 rounded-lg border border-green-100 dark:border-green-900/50">
                 <p className="text-green-800 dark:text-green-300 text-sm">
                   The goal at the beginner stage is confidence, not speed. Learning solid fundamentals makes everything else easier later.
                 </p>
@@ -308,7 +308,7 @@ export default function LearnToSkate() {
             <Separator />
 
             {/* Coming Soon */}
-            <section className="bg-gradient-to-br from-primary/5 to-primary/10 p-8 rounded-2xl border">
+            <section className="bg-secondary/60 p-8 rounded-lg border">
               <div className="flex items-start gap-4">
                 <div className="bg-primary/10 p-3 rounded-full">
                   <Sparkles className="h-6 w-6 text-primary" />

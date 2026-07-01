@@ -177,7 +177,7 @@ From the western suburbs and Cheatham County, Highway 70 runs directly to the fa
 ## Ford Ice Bellevue vs. Other Nashville Rinks
 
 **vs. Centennial Sportsplex:**
-Centennial is roughly half the cost ($6-7 vs. $13.73) and does not require advance reservations. But Ford Ice Bellevue offers a more modern facility, a full restaurant (Draft Picks), and more robust hockey programming. If you live west of Nashville, Bellevue is your rink.
+Centennial and Ford Ice now both route public-skate visitors through online booking systems. Bellevue lists matinee and evening pricing in DaySmart and offers a modern facility with extensive hockey programming. Compare the current Centennial and Bellevue sessions before choosing.
 
 **vs. Ford Ice Antioch:**
 Both are Ford Ice locations with identical pricing and programming. Antioch is better positioned for south Nashville residents, while Bellevue serves west Nashville and the suburbs better. Session availability can vary — if one is booked, check the other.

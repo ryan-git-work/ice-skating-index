@@ -37,7 +37,7 @@ export function RandomSkatingImage({ post, className }: { post?: BlogPostMeta, c
   if (!imageSrc) return null;
 
   return (
-    <div className={cn("overflow-hidden rounded-xl border bg-card", className)}>
+    <div className={cn("overflow-hidden rounded-lg border bg-card", className)}>
       <img
         src={imageSrc}
         alt={getImageAlt(imageSrc)}

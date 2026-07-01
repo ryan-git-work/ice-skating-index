@@ -10,33 +10,30 @@ Here is exactly what you will pay at every Nashville area rink, plus tips for ge
 
 | Rink | Admission | Skate Rental | Reservations Required |
 |------|-----------|--------------|----------------------|
-| Centennial Sportsplex | $6-7 | Included | No — walk-in |
-| Ford Ice Center Antioch | $12 | Included | Yes — online |
-| Ford Ice Center Bellevue | $12 | Included | Yes — online |
-| Ford Ice Center Clarksville | $12 | Included | Yes — online |
+| Centennial Sportsplex | Confirm in DaySmart | Confirm in DaySmart | Yes — online |
+| Ford Ice Center Antioch | $10.98 matinee / $13.73 evening, plus tax | Included | Yes — online |
+| Ford Ice Center Bellevue | $10.98 matinee / $13.73 evening, plus tax | Included | Yes — online |
+| Ford Ice Center Clarksville | $10.98 matinee / $13.73 evening, plus tax | Included | Yes — online |
 | Gaylord Opryland (seasonal) | Varies | Included | Recommended |
 
 ---
 
 ## Centennial Sportsplex Pricing
 
-Centennial Sportsplex is Nashville is the most affordable public skating option in the city, operated by Metro Nashville Parks and Recreation as a community facility rather than a commercial rink.
+Centennial Sportsplex is Nashville's central two-sheet public rink. The Nashville Predators assumed management of ice operations on May 1, 2026 and moved public schedules, registration, and waivers into DaySmart.
 
-**Admission:** $6-7 per person, skate rental now included
-**Ages 4 and under:** Free
-**Spectators:** Free
+**Admission:** Confirm the current session price in DaySmart
+**Skate rental:** Confirm the current policy in the session listing
 
-The inclusion of skate rental in the admission price is a recent change and genuinely good value — at most rinks around the country, rental is a separate $8 on top of admission. At Centennial you pay one flat fee and you are covered.
+Centennial's former Metro pricing should not be treated as the current checkout price during the management transition. Open the actual public-skate session in DaySmart before calculating a family total.
 
-**For a family of 4** (two adults, two kids ages 5 and up): roughly $25-28 all-in. If one or both kids are 4 and under, you are looking at $12-14 for just the adults. It is hard to beat for a family outing.
-
-**Skate sharpening** is also available on-site if you bring your own skates — pricing varies, call ahead at 615-862-8480 to confirm current rates.
+**Skate sharpening** is no longer available through the former on-site pro shop. Use the current Nashville sharpening guide for verified alternatives.
 
 **Coin-operated lockers** are 50 cents. Free lockers are available during public sessions if you bring your own padlock.
 
 **Concession stand:** Cash only. Pizza, bagels, and snacks. Outside food is welcome if you want to bring your own.
 
-One important note on Centennial: public skate sessions run on a variable schedule rather than fixed weekly hours. Always check the Centennial Sportsplex Ice Arena Google Calendar on Nashville.gov before going. Sessions shift week to week based on hockey league bookings and other events.
+One important note on Centennial: public skate sessions run on a variable schedule rather than fixed weekly hours. Check DaySmart and the rink page's Skate Status note before going.
 
 ---
 
@@ -44,13 +41,13 @@ One important note on Centennial: public skate sessions run on a variable schedu
 
 Ford Ice Centers are operated by the Nashville Predators organization at three Nashville-area locations — Antioch to the south, Bellevue to the west, and Clarksville to the north. All three locations use identical pricing.
 
-**Admission:** $12 per person, skate rental included
+**Admission:** $10.98 plus tax for matinee sessions or $13.73 plus tax for evening sessions, skate rental included
 **Ages 2 and under:** Free at most sessions (confirm when booking)
 **Spectators:** Free
 
 Ford Ice is a cashless facility — no cash accepted at any location. All transactions are card or digital payment. Online reservations are required in advance; you cannot walk in without a reservation.
 
-**For a family of 4** (two adults, two kids): roughly $48 all-in. Approximately double the cost of a Centennial visit for a comparable experience, though the facilities are newer and more polished.
+**For a family of 4** (two adults, two kids): calculate the total from the selected matinee or evening session and the applicable tax.
 
 The reservation requirement is worth planning around. Ford Ice sessions book up, especially on weekend afternoons and during the school year. If you are planning a family outing, check availability and reserve your spot a few days ahead rather than the day of.
 
@@ -61,8 +58,8 @@ The reservation requirement is worth planning around. Ford Ice sessions book up,
 Neither is objectively better — they serve different needs.
 
 **Choose Centennial Sportsplex if:**
-- Budget is a priority — it is roughly half the cost of Ford Ice
-- You want to be spontaneous without booking ahead
+- You want a central Nashville rink with two full-size sheets
+- You use Nashville Skating Academy for lessons or freestyle ice
 - You are enrolling in a learn-to-skate program (Nashville Skating Academy operates here)
 - You have young kids who skate free or at reduced cost
 - You want to be centrally located in the city
@@ -74,7 +71,7 @@ Neither is objectively better — they serve different needs.
 - You or your kids are interested in hockey-focused programming
 - The $12 price point is not a concern
 
-For most first-timers and families on a budget, Centennial is the right answer. For regular skaters who want consistency and do not mind reserving ahead, Ford Ice is worth the premium.
+For first-timers, location and available session time may matter more than a presumed price gap. Compare the current booking totals before choosing.
 
 ---
 

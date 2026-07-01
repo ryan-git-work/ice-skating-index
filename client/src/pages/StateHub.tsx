@@ -54,13 +54,13 @@ export default function StateHub() {
 
   return (
     <Layout>
-       <div className="bg-muted/30 border-b">
+       <div className="page-band border-b border-white/10">
         <div className="container mx-auto px-4 py-12">
-          <Link href="/browse" className="inline-flex items-center text-sm text-muted-foreground mb-4 hover:text-primary">
+          <Link href="/browse" className="inline-flex items-center text-sm text-white/65 mb-4 hover:text-cyan-200">
             <ArrowLeft className="h-4 w-4 mr-1" /> Back to Browse
           </Link>
-          <h1 className="font-serif text-4xl font-bold mb-4">Ice Skating Rinks in {stateName}</h1>
-          <p className="text-muted-foreground max-w-2xl">
+          <h1 className="font-serif text-4xl font-extrabold text-white mb-4">Ice Skating Rinks in {stateName}</h1>
+          <p className="text-white/70 max-w-2xl">
             Complete directory of ice skating rinks, public skating sessions, freestyle ice, and hockey programs across {stateName}.
           </p>
         </div>
@@ -68,7 +68,7 @@ export default function StateHub() {
 
       <div className="container mx-auto px-4 py-12">
         {/* City Links */}
-        <div className="mb-12">
+        <div className="mb-12 border-b pb-8">
             <h2 className="text-lg font-semibold mb-4">Browse by City</h2>
             <div className="flex flex-wrap gap-2">
                 {cities.map(city => (

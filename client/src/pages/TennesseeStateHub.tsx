@@ -49,17 +49,17 @@ export default function TennesseeStateHub() {
 
   return (
     <Layout>
-      <div className="bg-muted/30 border-b">
+      <div className="page-band border-b border-white/10">
         <div className="container mx-auto px-4 py-12">
-          <div className="flex items-center text-sm text-muted-foreground mb-4 gap-2">
-            <Link href="/" className="hover:text-primary">Home</Link>
+          <div className="flex items-center text-sm text-white/65 mb-4 gap-2">
+            <Link href="/" className="hover:text-cyan-200">Home</Link>
             <span>/</span>
-            <span className="text-foreground font-medium">Tennessee</span>
+            <span className="text-white font-medium">Tennessee</span>
           </div>
-          <h1 className="font-serif text-4xl md:text-5xl font-bold mb-4">
+          <h1 className="font-serif text-4xl md:text-5xl font-extrabold text-white mb-4">
             Ice Skating in Tennessee: Every Rink, Every City (2026 Guide)
           </h1>
-          <p className="text-lg text-muted-foreground max-w-3xl leading-relaxed">
+          <p className="text-lg text-white/70 max-w-3xl leading-relaxed">
             Tennessee isn&apos;t a winter sport powerhouse &mdash; but it has more ice than its reputation suggests. The state has six year-round indoor rinks (four of them in Middle Tennessee), one well-established figure skating facility in Knoxville, and a handful of seasonal outdoor rinks that open between November and February. This guide covers every operating rink in Tennessee, where it is, what it costs, and which city hub to visit for more detail.
           </p>
         </div>
@@ -70,7 +70,7 @@ export default function TennesseeStateHub() {
 
           <aside className="lg:w-64 flex-shrink-0">
             <div className="sticky top-8">
-              <h2 className="font-semibold text-sm uppercase tracking-wide text-muted-foreground mb-4">On this page</h2>
+              <h2 className="font-semibold text-sm uppercase text-muted-foreground mb-4">On this page</h2>
               <nav className="space-y-2">
                 {[
                   { id: "at-a-glance", label: "Tennessee at a glance" },

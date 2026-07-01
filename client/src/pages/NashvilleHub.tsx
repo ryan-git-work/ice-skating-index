@@ -97,7 +97,7 @@ export default function NashvilleHub() {
       />
       
       {/* Hero */}
-      <div className="bg-muted/30 border-b">
+      <div className="page-band border-b border-white/10">
         <div className="container mx-auto px-4 py-12">
           <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
             <Link href="/" className="hover:text-primary">Home</Link>
@@ -123,7 +123,7 @@ export default function NashvilleHub() {
           {/* Sidebar */}
           <aside className="lg:w-64 flex-shrink-0">
             <div className="sticky top-8">
-              <h2 className="font-semibold text-sm uppercase tracking-wide text-muted-foreground mb-4">Quick Links</h2>
+              <h2 className="font-semibold text-sm uppercase text-muted-foreground mb-4">Quick Links</h2>
               <nav className="space-y-2">
                 {sections.map((section) => (
                   <a 
@@ -142,7 +142,7 @@ export default function NashvilleHub() {
           <div className="flex-1 max-w-3xl space-y-12">
 
             {/* Quick Answer */}
-            <section className="bg-primary/5 p-6 rounded-2xl border border-primary/10">
+            <section className="bg-primary/5 p-6 rounded-lg border border-primary/10">
               <h2 className="font-serif text-xl font-bold mb-4 flex items-center gap-2">
                 <Star className="h-5 w-5 text-primary" />
                 Quick answer: Which rink is best?
@@ -180,7 +180,7 @@ export default function NashvilleHub() {
               
               <div className="space-y-6">
                 {centennial && (
-                  <div className="bg-card border rounded-xl p-6">
+                  <div className="bg-card border rounded-lg p-6">
                     <h3 className="font-serif text-xl font-bold mb-2">
                       <Link href={`/rink/${centennial.slug}`} className="hover:text-primary transition-colors">
                         Centennial Sportsplex Ice Arenas (Nashville)
@@ -196,7 +196,7 @@ export default function NashvilleHub() {
                 )}
                 
                 {bellevue && (
-                  <div className="bg-card border rounded-xl p-6">
+                  <div className="bg-card border rounded-lg p-6">
                     <h3 className="font-serif text-xl font-bold mb-2">
                       <Link href={`/rink/${bellevue.slug}`} className="hover:text-primary transition-colors">
                         Ford Ice Center Bellevue (Nashville)
@@ -212,7 +212,7 @@ export default function NashvilleHub() {
                 )}
                 
                 {antioch && (
-                  <div className="bg-card border rounded-xl p-6">
+                  <div className="bg-card border rounded-lg p-6">
                     <h3 className="font-serif text-xl font-bold mb-2">
                       <Link href={`/rink/${antioch.slug}`} className="hover:text-primary transition-colors">
                         Ford Ice Center Antioch (Antioch, TN)
@@ -299,13 +299,13 @@ export default function NashvilleHub() {
               <h2 className="font-serif text-2xl font-bold mb-6">Public Skate vs Freestyle Skate</h2>
               
               <div className="grid md:grid-cols-2 gap-6 mb-6">
-                <div className="bg-primary/5 p-6 rounded-xl border">
+                <div className="bg-primary/5 p-6 rounded-lg border">
                   <h3 className="font-semibold mb-3 text-primary">Public Skate</h3>
                   <p className="text-sm text-muted-foreground">
                     General skating time for everyone. It is the right fit for date nights, families, and first-time skaters. The goal is simple: skate safely, have fun, and build confidence.
                   </p>
                 </div>
-                <div className="bg-muted/50 p-6 rounded-xl border">
+                <div className="bg-muted/50 p-6 rounded-lg border">
                   <h3 className="font-semibold mb-3">Freestyle</h3>
                   <p className="text-sm text-muted-foreground">
                     Practice-oriented ice time, typically used by figure skaters and advanced skaters working on specific skills. Freestyle sessions usually have stricter etiquette so skaters can train without collisions.

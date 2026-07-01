@@ -38,7 +38,7 @@ export function EmailOptIn({ cityName }: EmailOptInProps) {
   const locationLabel = cityName || "your area";
 
   return (
-    <div className="bg-primary/5 border rounded-xl p-6">
+    <div className="bg-primary/5 border rounded-lg p-6">
       <div className="flex items-start gap-3 mb-3">
         <Mail className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
         <div>
