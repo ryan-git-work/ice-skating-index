@@ -8271,17 +8271,17 @@
     },
     "pricing": {
       "public_skate": {
-        "adult": 15,
-        "child": 10,
-        "senior": 10
-      }
+        "adult": 20,
+        "child": 14
+      },
+      "notes": "Public skate admission is $20 adult and $14 child as verified July 11, 2026; Norwood residents receive 50% off."
     },
     "rentals": {
       "available": true,
       "pricing": {
-        "skate_rental": 8
+        "skate_rental": 7
       },
-      "notes": "Skate rentals available at the main desk. Figure skates only — this is primarily a figure skating club."
+      "notes": "Skate rentals are $7. Skate aids are $10 when available."
     },
     "sharpening": {
       "pricing_base": 10,
@@ -8326,15 +8326,17 @@
     "image": "/images/skating/ice_img_08.png",
     "description": "The Skating Club of Boston, located at 750 University Avenue in Norwood, Massachusetts, stands as one of the most prestigious figure skating clubs in the United States and a beacon for competitive ice skating. Founded in 1912, this legendary institution has produced numerous Olympic and World champions, most notably Nancy Kerrigan, along with countless other elite skaters who have represented the United States on the international stage. Operating two sheets of ice, the Skating Club of Boston combines elite-level figure skating training with accessible recreational opportunities for skaters of all levels.\n\nThe facility serves as a comprehensive hub for ice skating disciplines, offering intensive coaching programs for competitive figure skaters, hockey development, and public skating sessions for recreational enthusiasts. The rink has established a notable partnership with Figure Skating in Harlem, extending ice skating opportunities to underrepresented communities. Whether you're a serious competitive skater pursuing national rankings or a family seeking weekend public skating, the Skating Club of Boston welcomes all skill levels while maintaining its reputation as a serious competitive training environment.\n\nLocated conveniently in Norwood (relocated from its original Boston location), the facility provides excellent access to the MetroWest Boston area and surrounding communities. The presence of top-tier coaching staff and competitive programs makes this rink an attractive destination for skaters seeking world-class instruction and training. Public skating sessions offer visitors the opportunity to skate on the same ice that has hosted championship athletes, making it a special experience for ice skating enthusiasts throughout Massachusetts.",
     "what_to_know": [
-      "Check scboston.org for current public skating schedules, which vary by season and may be limited during competitive training sessions",
-      "The facility operates two sheets of ice; confirm which sheet hosts public skating before your visit",
-      "Lessons and figure skating programs range from beginner to competitive levels; advance registration is typically required",
-      "Skate rentals are available; bring your own skates if you prefer or prefer a specific fit",
-      "The facility's prestigious reputation means peak times fill quickly—arrive early for public sessions, especially weekends",
-      "Parking is available on-site; the location is accessible via local roads from Boston and surrounding areas",
-      "The rink hosts skating camps and special programming throughout the year; check the website for seasonal offerings"
+      "Public skating is listed at $20 for adults and $14 for children, with 50% off for Norwood residents.",
+      "Skate rentals are $7, and skate aids are $10 when available.",
+      "The Norwood facility has three ice surfaces; confirm which sheet hosts public skating before your visit.",
+      "Lessons and figure skating programs range from beginner to competitive levels; advance registration is typically required.",
+      "Schedules vary by season and competitive programming, so check scboston.org before you go."
     ],
     "faq": [
+      {
+        "question": "How much is public skating at the Skating Club of Boston?",
+        "answer": "Public skating is listed at $20 for adults and $14 for children, with $7 skate rentals and 50% off for Norwood residents as verified July 11, 2026."
+      },
       {
         "question": "Does the Skating Club of Boston offer public skating?",
         "answer": "Yes, the Skating Club of Boston welcomes recreational skaters during designated public skating sessions. Hours and availability vary seasonally and may be limited during competitive training periods, so check their website at scboston.org for current schedules before visiting."
@@ -8356,7 +8358,7 @@
         "answer": "While the Skating Club of Boston is primarily known for figure skating excellence, the facility does support ice hockey programming. Contact the club directly at scboston.org or by phone to learn about current hockey team opportunities, competitive leagues, and learn-to-play programs."
       }
     ],
-    "last_verified": "2026-05-23",
+    "last_verified": "2026-07-11",
     "seo": {
       "primary_keywords": [
         "Skating Club of Boston ice skating",
@@ -8457,18 +8459,18 @@
     },
     "pricing": {
       "public_skate": {
-        "adult": 13,
-        "child": 10,
-        "senior": 10
-      }
+        "adult": 10,
+        "child": 6
+      },
+      "notes": "Public skate is $10 for adults and $6 for children 12 and under as verified July 11, 2026. Stick time is $15 and adults-only."
     },
     "rentals": {
       "available": true,
       "pricing": {
-        "skate_rental": 5,
+        "skate_rental": 10,
         "helmet_rental": 3
       },
-      "notes": "Full rental service at multiple counters. Figure and hockey skates in all sizes."
+      "notes": "Skate rentals are $10 per pair."
     },
     "sharpening": {
       "pricing_base": 8,
@@ -8512,15 +8514,17 @@
     "image": "/images/skating/ice_img_09.png",
     "description": "The New England Sports Center in Marlborough, Massachusetts, ranks among the largest and most comprehensive ice skating complexes in all of New England, featuring an impressive eight sheets of ice. Located at 121 Donald Lynch Boulevard, this expansive facility serves the MetroWest Boston area and beyond, hosting public skating, competitive figure skating programs, youth and adult hockey leagues, and major regional and national ice hockey tournaments. The NESC's multiple sheets of ice and extensive amenities make it the premier destination for serious hockey programs and elite figure skating training throughout Massachusetts and southern New England.\n\nThe facility's diverse programming accommodates every segment of the ice skating community, from families enjoying recreational public skating sessions to competitive athletes training for national championships. With eight sheets of ice operating simultaneously, the New England Sports Center manages one of the highest volumes of ice sports programming in the region, hosting prestigious hockey tournaments that draw teams from across New England and beyond. Figure skating clubs operate on-site, providing coaching and competitive pathways for aspiring champions, while public skating sessions offer accessible recreation for casual skaters and families.\n\nBeyond ice activities, the New England Sports Center features a large pro shop stocked with skating equipment, apparel, and accessories, plus multiple concession areas to fuel your skating adventure. The facility's modern infrastructure, professional staff, and central MetroWest location make it an ideal choice for anyone seeking comprehensive ice skating services. Whether you're registering your child in learn-to-skate programs, competing in regional hockey tournaments, or enjoying family public skating, the NESC provides exceptional facilities and programming year-round.",
     "what_to_know": [
-      "Visit nesc.com for complete public skating schedules, as times vary across eight sheets and change seasonally",
-      "The facility hosts major youth and regional hockey tournaments throughout the year; check the website for tournament dates if you plan to watch or participate",
-      "Eight sheets of ice mean NESC hosts simultaneous programming; call ahead to confirm availability and any schedule changes",
-      "The pro shop on-site offers skate rentals, sales, and professional fitting services for optimal comfort",
-      "Concession areas provide food and beverages; bring cash or be prepared for card payments",
-      "Ample parking is available on the grounds; the facility is easily accessible from the MetroWest region and Routes 9 and 290",
-      "Learn-to-skate programs fill quickly, especially in fall and winter; register early for youth and adult programs"
+      "Public skate is listed at $10 for adults and $6 for children 12 and under.",
+      "Skate rentals are $10 per pair.",
+      "Stick time is listed at $15 and is adults-only.",
+      "Eight sheets of ice mean NESC hosts simultaneous programming; check the public schedule before you go.",
+      "Learn-to-skate and learn-to-play programs fill quickly in fall and winter; register early."
     ],
     "faq": [
+      {
+        "question": "How much is public skating at New England Sports Center?",
+        "answer": "Public skate is listed at $10 for adults and $6 for children 12 and under, with $10 skate rentals as verified July 11, 2026."
+      },
       {
         "question": "How many sheets of ice does the New England Sports Center have?",
         "answer": "The New England Sports Center operates eight sheets of ice, making it one of the largest ice skating complexes in New England. This allows the facility to host multiple programs, public skating sessions, figure skating training, and major hockey tournaments simultaneously throughout the year."
@@ -8542,7 +8546,7 @@
         "answer": "Public skating hours vary by sheet and season at the NESC. Visit nesc.com or call the facility directly to confirm current public skating schedules, as eight sheets hosting simultaneous programming means times may vary throughout the week and throughout the season."
       }
     ],
-    "last_verified": "2026-05-23",
+    "last_verified": "2026-07-11",
     "seo": {
       "primary_keywords": [
         "New England Sports Center ice skating",
@@ -8629,18 +8633,14 @@
       "stick_and_puck": true
     },
     "pricing": {
-      "public_skate": {
-        "adult": 6,
-        "child": 4,
-        "senior": 4
-      }
+      "notes": "DCR does not publish a current official admission price for this rink; local reporting describes free public skating with paid rentals."
     },
     "rentals": {
       "available": true,
       "pricing": {
         "skate_rental": 4
       },
-      "notes": "Skate rentals available at the main desk during public sessions."
+      "notes": "Rentals are reported around $5; confirm the current rental rate with DCR."
     },
     "sharpening": {
       "pricing_base": 5,
@@ -8668,15 +8668,17 @@
     "image": "/images/skating/ice_img_10.png",
     "description": "Steriti Memorial Rink, located at 561 Commercial Street in Boston's historic North End and waterfront district, serves as an accessible, affordable public ice skating facility operated by the Massachusetts Department of Conservation and Recreation (DCR). This single-sheet neighborhood rink provides essential ice skating services to the North End, Charlestown, downtown Boston, and surrounding communities, combining recreational public skating with hockey and seasonal public-rink programming. Strategically positioned near Boston's waterfront attractions, Steriti Memorial Rink offers visitors an opportunity to enjoy quality ice skating in the heart of historic Boston.\n\nThe facility's programming emphasizes accessibility and community engagement, offering public skating sessions throughout the week and weekend for families, casual skaters, and ice hockey enthusiasts. Youth and adult hockey leagues operate at the rink, fostering competitive ice hockey development within the North End and surrounding neighborhoods while maintaining welcoming recreational opportunities for the broader public.\n\nAs part of the DCR (Department of Conservation and Recreation) Metropolitan District Commission rink system, Steriti Memorial Rink represents Boston's commitment to providing affordable public ice skating access to urban residents and visitors. The rink's proximity to the Boston waterfront, historic cobblestone streets, Haymarket restaurants, and downtown attractions makes it an ideal addition to a Boston visit. Affordable public skating rates make this facility an excellent choice for families seeking budget-friendly ice skating in the city.",
     "what_to_know": [
-      "Call or visit the DCR website for current public skating schedules, as times may vary seasonally and may change for hockey programming",
-      "Parking is limited in the North End; consider using nearby paid lots, street parking, or arriving via the Green or Orange Line T access",
-      "The facility is located on Commercial Street; nearby attractions include the Rose Kennedy Greenway, the waterfront, and historic North End restaurants",
-      "Skate rentals are available at modest rates; bring your own skates if you prefer",
-      "Arrive early during peak weekend times, as the single-sheet facility fills quickly with neighborhood hockey players and public skaters",
-      "No dedicated learn-to-skate or freestyle program is confirmed here; check DCR and Bay State Skating School for any current-season lesson listings",
-      "Amenities are basic but functional; bring water and snacks or plan to grab food at nearby North End establishments"
+      "DCR's published 2025-26 public-skating season runs November 28 through April 12.",
+      "DCR does not publish a current admission price for this rink; local reporting describes free public skating with paid rentals.",
+      "Confirm current skate rental availability and pricing before you go.",
+      "Check the DCR schedule before visiting because hours vary by rink and season.",
+      "The facility is seasonal, so the sheet is not a summer skating option."
     ],
     "faq": [
+      {
+        "question": "Is Steriti Memorial Rink free?",
+        "answer": "DCR does not publish a current official admission price; local reporting describes free public skating with paid rentals. Confirm the current season details before you go."
+      },
       {
         "question": "Where is Steriti Memorial Rink located?",
         "answer": "Steriti Memorial Rink is located at 561 Commercial Street in Boston's North End neighborhood, near the waterfront and historic attractions like the Rose Kennedy Greenway and Faneuil Hall area. It's accessible via the Green or Orange Line T and nearby paid parking."
@@ -8698,7 +8700,7 @@
         "answer": "Yes, skate rentals are available at Steriti Memorial Rink at affordable rates. Bring your own skates if you prefer, or inquire at the rental desk for sizing and availability when you arrive."
       }
     ],
-    "last_verified": "2026-05-23",
+    "last_verified": "2026-07-11",
     "seo": {
       "primary_keywords": [
         "Steriti Memorial Rink ice skating",
@@ -8729,7 +8731,9 @@
       "meta_title": "Steriti Memorial Rink, Boston North End Skating",
       "meta_description": "Steriti Memorial Rink is a DCR public rink in Boston's North End. Fall-to-spring public skating, stick time, and hockey, with skate rentals on site."
     },
-    "editorial_markdown": "## What to expect at Steriti Memorial Rink\n\nSteriti Memorial Rink is an indoor, single-sheet public rink on a fall-to-spring DCR season tucked into Boston's North End and waterfront district, and it serves the North End, Charlestown, and downtown crowd as a neighborhood municipal facility. That means recreational public skating shares one sheet of ice with hockey and stick-time style sessions, so the rink runs on a posted schedule rather than an all-day open door. It is the affordable, local kind of place, not a multi-pad destination complex.\n\nWhat you feel first when you walk in is the cold, the flat fluorescent light, and the sound of blades cutting one continuous sheet. Because there is only one sheet, the programming stacks tight, and that single-sheet reality is the most important thing to understand here. Skaters who treat the posted schedule as gospel have a good day. The ones who assume the ice is always open sometimes find a hockey game in progress.\n\n## Public skating at Steriti Memorial Rink: cost, sessions, and what to know\n\nPublic skating runs in defined blocks rather than continuously, which is standard for a single-sheet rink where hockey and other scheduled ice also need time. The most useful habit you can build is checking the posted public-skate schedule before you leave the house, because hockey programming can and does preempt public sessions. The slot that ran last weekend is not a promise for this weekend, so confirm on the official website, then go.\n\nSkate rentals are available at the main desk during public sessions, so you do not need to own a pair, and the rink offers sharpening on-site once you start thinking about your own boots. Rental skates run dull by design, so a first-timer should expect a tentative push, and socks that come up past the ankle make the stiff boots kinder. The sessions draw a real mix. Families with small kids hugging the boards, teenagers doing laps, a few older regulars who move like they own the place. The ice gets busy in the middle and thins toward the edges, so the quieter shoulders beat the peak. Step off before your ankles start arguing with you.\n\n## Freestyle and figure skating ice\n\nDedicated freestyle ice is not confirmed here. Treat Steriti as a DCR public rink first: good for affordable seasonal public skating and hockey or stick-time style ice when the posted schedule offers it, but not the place to assume regular figure-practice sessions. If a season lists a figure-specific block, confirm it directly before you plan around it.\n\nFor real freestyle time, use a year-round rink with published practice ice. The Greater Boston area has those options, and they are better suited for jumps, spins, program run-throughs, and coaching. Steriti can still be useful for easy laps and affordable ice in the city, but the serious training plan belongs at a facility that clearly publishes freestyle sessions.\n\n\n## Learn to skate programs\n\nNo dedicated learn-to-skate program is confirmed here. DCR does not run its own skating-school curriculum in the way a private training rink does, and lesson availability at public rinks can move by season through outside providers. If you want classes, check the current DCR page and Bay State Skating School locations before promising a beginner that lessons happen at this sheet.\n\nFor a true first-timer, public skating can still be the low-pressure test: get rentals, hold the rail, and see whether the interest is real. If it is, choose the nearby rink with the most consistent weekly class slot, even if that means leaving the North End for a year-round facility.\n\n\n## Hockey, stick and puck, and open ice\n\nHockey is a core part of what Steriti does, and on a single sheet that has a direct effect on everyone else. League play and practices need ice, and when they have it, public skating yields. That active hockey community is part of the rink's character and why the schedule moves, so check the posted calendar.\n\nOpen hockey and stick and puck are both offered here, which gives players a place to skate outside formal league games. Stick and puck is the loose, skills-focused session for shooting, stickhandling, and skating with the puck at your own pace, and open hockey is the pickup-style run for players who want game flow without a league commitment. Both follow the posted schedule, so confirm the session before you load the bag, and come in full gear since drop-in runs expect it. The on-site sharpening matters most to this crowd, since a dull edge shows up fast in a hard stop or crossover.\n\n## Getting there: parking, location, and amenities\n\nSteriti sits in the North End, Boston's dense and walkable waterfront neighborhood, and that defines how you get there. Parking is limited and competitive, so the realistic options are public transit or a paid lot rather than a curbside spot. The MBTA Green and Orange lines run nearby, and for many skaters the train is the path of least resistance. If you do drive, plan on a paid lot and budget extra time.\n\nThe upside is the neighborhood itself, thick with restaurants, cafes, and bakeries within a short stroll of the rink. A morning session can fold into coffee and a pastry afterward, and a tired skater is easier to console with a walk to food than at a rink stranded in a parking lot. For the exact address, transit stops, and current parking guidance, check the official website before your first visit. Inside, expect the basics of a single-sheet municipal rink. A front desk with rentals and sharpening, bench seating, and the no-frills functionality of a community facility.\n\n## A note for skating parents\n\nYou will be cold before your skater is. That is the first thing to know about life in the lobby and the bleachers of a single-sheet rink. The ice pulls the temperature down across the whole building, and unlike your skater, you are not moving. Dress as if you are going outside in winter, even though you are technically indoors. Layers you can add, not one heavy coat. A hat and real gloves, not the thin ones. Warm socks and shoes with some insulation, because the cold comes up through the floor and finds your feet first.\n\nThe cold has a rhythm, and the forty-minute mark is when it tends to settle in. The first half hour you feel fine. Then the chill works past the first layer and parks in your hands and feet, and the back half of a long session is when the parents who packed a thermos look like geniuses. Hot coffee or tea is worth the small effort of carrying it, and so is a blanket if you are settling in for a long block. The regulars learned this the hard way, and you can skip the lesson by watching them.\n\nThe waiting itself has a shape you will come to know. Long stretches where nothing seems to happen, a kid going around and around, the same drills, the same falls. And then the small visible victories that make it worth it. The first time your skater lets go of the boards and glides alone. The first real crossover, that moment the feet finally cross instead of shuffle. The first stop that sprays a little ice instead of a controlled crash into the wall. You will see these before they do sometimes, and you will want to cheer, and you should. In the North End you have the rare luxury of warmth a short walk away, so a cold morning at Steriti can end at a cafe with a pastry and a kid still buzzing from the ice. That is the part the schedule never lists, the slow accumulation of small wins watched from a cold bench by the one who showed up.\n"
+    "editorial_markdown": "## What to expect at Steriti Memorial Rink\n\nSteriti Memorial Rink is an indoor, single-sheet public rink on a fall-to-spring DCR season tucked into Boston's North End and waterfront district, and it serves the North End, Charlestown, and downtown crowd as a neighborhood municipal facility. That means recreational public skating shares one sheet of ice with hockey and stick-time style sessions, so the rink runs on a posted schedule rather than an all-day open door. It is the affordable, local kind of place, not a multi-pad destination complex.\n\nWhat you feel first when you walk in is the cold, the flat fluorescent light, and the sound of blades cutting one continuous sheet. Because there is only one sheet, the programming stacks tight, and that single-sheet reality is the most important thing to understand here. Skaters who treat the posted schedule as gospel have a good day. The ones who assume the ice is always open sometimes find a hockey game in progress.\n\n## Public skating at Steriti Memorial Rink: cost, sessions, and what to know\n\nPublic skating runs in defined blocks rather than continuously, which is standard for a single-sheet rink where hockey and other scheduled ice also need time. The most useful habit you can build is checking the posted public-skate schedule before you leave the house, because hockey programming can and does preempt public sessions. The slot that ran last weekend is not a promise for this weekend, so confirm on the official website, then go.\n\nSkate rentals are available at the main desk during public sessions, so you do not need to own a pair, and the rink offers sharpening on-site once you start thinking about your own boots. Rental skates run dull by design, so a first-timer should expect a tentative push, and socks that come up past the ankle make the stiff boots kinder. The sessions draw a real mix. Families with small kids hugging the boards, teenagers doing laps, a few older regulars who move like they own the place. The ice gets busy in the middle and thins toward the edges, so the quieter shoulders beat the peak. Step off before your ankles start arguing with you.\n\n## Freestyle and figure skating ice\n\nDedicated freestyle ice is not confirmed here. Treat Steriti as a DCR public rink first: good for affordable seasonal public skating and hockey or stick-time style ice when the posted schedule offers it, but not the place to assume regular figure-practice sessions. If a season lists a figure-specific block, confirm it directly before you plan around it.\n\nFor real freestyle time, use a year-round rink with published practice ice. The Greater Boston area has those options, and they are better suited for jumps, spins, program run-throughs, and coaching. Steriti can still be useful for easy laps and affordable ice in the city, but the serious training plan belongs at a facility that clearly publishes freestyle sessions.\n\n\n## Learn to skate programs\n\nNo dedicated learn-to-skate program is confirmed here. DCR does not run its own skating-school curriculum in the way a private training rink does, and lesson availability at public rinks can move by season through outside providers. If you want classes, check the current DCR page and Bay State Skating School locations before promising a beginner that lessons happen at this sheet.\n\nFor a true first-timer, public skating can still be the low-pressure test: get rentals, hold the rail, and see whether the interest is real. If it is, choose the nearby rink with the most consistent weekly class slot, even if that means leaving the North End for a year-round facility.\n\n\n## Hockey, stick and puck, and open ice\n\nHockey is a core part of what Steriti does, and on a single sheet that has a direct effect on everyone else. League play and practices need ice, and when they have it, public skating yields. That active hockey community is part of the rink's character and why the schedule moves, so check the posted calendar.\n\nOpen hockey and stick and puck are both offered here, which gives players a place to skate outside formal league games. Stick and puck is the loose, skills-focused session for shooting, stickhandling, and skating with the puck at your own pace, and open hockey is the pickup-style run for players who want game flow without a league commitment. Both follow the posted schedule, so confirm the session before you load the bag, and come in full gear since drop-in runs expect it. The on-site sharpening matters most to this crowd, since a dull edge shows up fast in a hard stop or crossover.\n\n## Getting there: parking, location, and amenities\n\nSteriti sits in the North End, Boston's dense and walkable waterfront neighborhood, and that defines how you get there. Parking is limited and competitive, so the realistic options are public transit or a paid lot rather than a curbside spot. The MBTA Green and Orange lines run nearby, and for many skaters the train is the path of least resistance. If you do drive, plan on a paid lot and budget extra time.\n\nThe upside is the neighborhood itself, thick with restaurants, cafes, and bakeries within a short stroll of the rink. A morning session can fold into coffee and a pastry afterward, and a tired skater is easier to console with a walk to food than at a rink stranded in a parking lot. For the exact address, transit stops, and current parking guidance, check the official website before your first visit. Inside, expect the basics of a single-sheet municipal rink. A front desk with rentals and sharpening, bench seating, and the no-frills functionality of a community facility.\n\n## A note for skating parents\n\nYou will be cold before your skater is. That is the first thing to know about life in the lobby and the bleachers of a single-sheet rink. The ice pulls the temperature down across the whole building, and unlike your skater, you are not moving. Dress as if you are going outside in winter, even though you are technically indoors. Layers you can add, not one heavy coat. A hat and real gloves, not the thin ones. Warm socks and shoes with some insulation, because the cold comes up through the floor and finds your feet first.\n\nThe cold has a rhythm, and the forty-minute mark is when it tends to settle in. The first half hour you feel fine. Then the chill works past the first layer and parks in your hands and feet, and the back half of a long session is when the parents who packed a thermos look like geniuses. Hot coffee or tea is worth the small effort of carrying it, and so is a blanket if you are settling in for a long block. The regulars learned this the hard way, and you can skip the lesson by watching them.\n\nThe waiting itself has a shape you will come to know. Long stretches where nothing seems to happen, a kid going around and around, the same drills, the same falls. And then the small visible victories that make it worth it. The first time your skater lets go of the boards and glides alone. The first real crossover, that moment the feet finally cross instead of shuffle. The first stop that sprays a little ice instead of a controlled crash into the wall. You will see these before they do sometimes, and you will want to cheer, and you should. In the North End you have the rare luxury of warmth a short walk away, so a cold morning at Steriti can end at a cafe with a pastry and a kid still buzzing from the ice. That is the part the schedule never lists, the slow accumulation of small wins watched from a cold bench by the one who showed up.\n",
+    "seasonal": true,
+    "seasonal_notes": "DCR's published 2025-26 public-skating season runs November 28, 2025 through April 12, 2026. Confirm the current season schedule before visiting."
   },
   {
     "id": "ma-boston-bajko-memorial-rink-boston-ma",
@@ -8784,18 +8788,14 @@
       "stick_and_puck": true
     },
     "pricing": {
-      "public_skate": {
-        "adult": 6,
-        "child": 4,
-        "senior": 4
-      }
+      "notes": "DCR does not publish a current official admission price for this rink; local reporting describes free public skating with paid rentals."
     },
     "rentals": {
       "available": true,
       "pricing": {
         "skate_rental": 4
       },
-      "notes": "Rentals available during public skating sessions."
+      "notes": "Rentals are reported around $5; confirm the current rental rate with DCR."
     },
     "sharpening": {
       "pricing_base": 5,
@@ -8823,15 +8823,17 @@
     "image": "/images/skating/ice_img_11.png",
     "description": "Bajko Memorial Rink, situated at 75 Turtle Pond Parkway in the Hyde Park neighborhood of Boston, serves as a vital community ice skating facility operated by the Massachusetts Department of Conservation and Recreation (DCR). This single-sheet neighborhood rink provides affordable public skating and hockey programming to the Roslindale, West Roxbury, Jamaica Plain, and surrounding Boston communities. As part of the DCR Metropolitan District Commission rink system, Bajko Memorial Rink embodies Boston's commitment to providing accessible ice skating opportunities in neighborhood settings throughout the city.\n\nThe facility is best treated as a seasonal DCR public rink for families, recreational skaters, and hockey players. Public skating sessions provide community members with accessible ice time, while youth and adult hockey use the sheet during scheduled blocks. Dedicated learn-to-skate and freestyle programs are not confirmed here, so check DCR and Bay State Skating School for any current-season lesson options.\n\nBajko Memorial Rink's location in the Roslindale neighborhood places it at the heart of a vibrant Boston residential community with convenient street parking, nearby shops, and local amenities. The facility's affordable pricing and neighborhood focus make it a preferred choice for South Boston families seeking quality ice skating without traveling to distant facilities. Whether you're introducing children to ice skating or maintaining your own recreational skating skills, Bajko Memorial Rink provides essential ice skating access to Boston's West Side communities.",
     "what_to_know": [
-      "Check the DCR website or call ahead for current public skating schedules, as times vary seasonally and may be preempted by hockey programming",
-      "Street parking is available in the Hyde Park area; arrive early during peak times to secure a convenient spot",
-      "Skate rentals are offered at budget-friendly rates; bring your own skates if you prefer a better fit",
-      "The facility is a single sheet; hockey practices and games may occasionally adjust public skating times",
-      "Learn-to-skate programs serve children and adults; check the DCR website for current registration, class levels, and seasonal schedules",
-      "Nearby Hyde Park and Roslindale offer restaurants and shops a short drive away",
-      "The rink is easily accessible via local parkways and roads; bring water and snacks as on-site amenities are limited"
+      "DCR's published 2025-26 public-skating season runs November 28 through April 12.",
+      "DCR does not publish a current admission price for this rink; local reporting describes free public skating with paid rentals.",
+      "Confirm current skate rental availability and pricing before you go.",
+      "Check the DCR schedule before visiting because hours vary by rink and season.",
+      "The facility is seasonal, so the sheet is not a summer skating option."
     ],
     "faq": [
+      {
+        "question": "Is Bajko Memorial Rink free?",
+        "answer": "DCR does not publish a current official admission price; local reporting describes free public skating with paid rentals. Confirm the current season details before you go."
+      },
       {
         "question": "Is Bajko Memorial Rink in Boston or a suburb?",
         "answer": "Bajko Memorial Rink is located in the Hyde Park area of Boston, at 75 Turtle Pond Parkway. It serves Hyde Park, Roslindale, West Roxbury, and surrounding neighborhoods as a Massachusetts DCR-operated facility."
@@ -8853,7 +8855,7 @@
         "answer": "Street parking is available near Bajko Memorial Rink at 75 Turtle Pond Parkway in the Hyde Park area of Boston. Arrive early during peak skating times to secure a convenient spot, and be prepared to search the surrounding residential streets if the immediate area is full."
       }
     ],
-    "last_verified": "2026-05-23",
+    "last_verified": "2026-07-11",
     "seo": {
       "primary_keywords": [
         "Bajko Memorial Rink ice skating",
@@ -8884,7 +8886,9 @@
       "meta_title": "Bajko Memorial Rink, Boston Ice Skating",
       "meta_description": "Bajko Memorial Rink is a DCR neighborhood rink in Boston's Hyde Park. Fall-to-spring public skating, stick time, and hockey on a single sheet."
     },
-    "editorial_markdown": "## What to expect at Bajko Memorial Rink\n\nBajko Memorial Rink is an indoor, single-sheet public rink on a fall-to-spring DCR season in the Hyde Park area of Boston, and it serves Hyde Park, Roslindale, West Roxbury, and the surrounding neighborhoods as a budget-friendly community facility. That means one sheet carries the full load. Recreational public skating and hockey share the same pad. This is a true neighborhood rink, the kind of affordable, local place where a weekly skating habit gets built.\n\nWhat you notice walking in is the cold air, the steady scrape of blades on a single sheet, and the unfussy feel of a community rink that does its job without ceremony. Because there is only one sheet, the programming runs back to back, and that single-sheet reality is the most important thing to grasp before your first visit. Hockey can shift when public skating is available, so the skaters who check the posted schedule first have smooth visits. The ones who assume the ice is always open sometimes find a practice underway.\n\n## Public skating at Bajko Memorial Rink: cost, sessions, and what to know\n\nPublic skating runs in set blocks rather than all day, which is the norm for a single-sheet rink juggling hockey and other scheduled ice on the same sheet. The habit worth forming is checking the posted public-skate schedule before you head over, because hockey programming can shift or preempt public sessions. The slot that was open last week is not a guarantee for this week, so confirm on the official website, then make the trip.\n\nSkate rentals are available during public skating sessions, so you can get on the ice without owning a pair, and sharpening is available on-site once you consider buying your own boots. Rental skates run dull by design, so a beginner should expect a cautious first push, and socks that reach past the ankle are easier on the stiff boots. A session here draws a real cross-section. Families with little ones gripping the boards, kids doing laps, a few steady regulars who treat the place like a second living room. The middle gets busy and the edges stay calmer, so the quieter shoulders beat the peak. Step off before tired ankles decide for you.\n\n## Freestyle and figure skating ice\n\nDedicated freestyle ice is not confirmed here. Treat Bajko as a DCR public rink first: seasonal public skating and hockey or stick-time style ice on the posted schedule, not a guaranteed figure-practice calendar. If a season ever lists something figure-specific, confirm it directly before building a training plan around it.\n\nFor real freestyle time, use a year-round rink with published practice ice. Those sessions are better suited for jumps, spins, program run-throughs, and coaching, while Bajko works best as affordable neighborhood ice for public skating and casual laps.\n\n\n## Learn to skate programs\n\nNo dedicated learn-to-skate program is confirmed here. DCR does not run its own skating-school curriculum in the way a private training rink does, and lessons at public rinks can depend on outside providers and the current season. If you want classes, check the current DCR page and Bay State Skating School locations before promising a beginner that lessons happen at this sheet.\n\nPublic skating can still be a useful first test for a new skater. It is affordable, local, and low pressure. If the interest sticks, choose the nearby rink with the clearest weekly class schedule, even if that means a year-round facility outside Hyde Park.\n\n\n## Hockey, stick and puck, and open ice\n\nHockey is central to what Bajko does, and on a single sheet that shapes the week for everyone. Practices and games need ice, and when they have it, public skating gives way. That active hockey community is part of the rink's character and why the schedule moves, so check the posted calendar before counting on a session.\n\nOpen hockey and stick and puck are both offered, which gives players a way to skate outside formal league games. Stick and puck is the loose, skills-first session for shooting, stickhandling, and skating with the puck at your own pace, and open hockey is the pickup-style run for game flow without a league commitment. Both follow the posted schedule, so confirm the session before you pack the bag, and arrive in full gear since drop-in runs expect it. The on-site sharpening matters most to this crowd, since a dull edge betrays you in a hard stop or crossover.\n\n## Getting there: parking, location, and amenities\n\nBajko sits in the Hyde Park area of Boston, on the city's southern edge near Roslindale and West Roxbury, and it reads as a neighborhood rink rather than a downtown destination. This part of Boston is more residential and spread out than the dense core, which usually makes getting there and parking simpler than a rink in a crowded district. Still, the exact address, the route in, and current parking guidance live on the official website, so check there first.\n\nThe neighborhood framing is the point. Bajko is the kind of local rink families fold into a weekly routine, close enough to home that a Saturday session does not turn into an expedition. That proximity is what lets a skating habit stick. When the rink is close, you go back, and going back is how skaters get good. Inside, expect the basics. A front desk handling rentals and sharpening, bench seating, and the no-frills functionality of a community facility.\n\n## A note for skating parents\n\nYou will feel the cold before your skater does. That is the first lesson of the lobby at a single-sheet rink. The ice cools the whole building, and unlike your skater, you are sitting still. Dress as if you are headed outdoors in winter, even though the roof is over your head. Layers you can add, not one heavy coat. A hat and real gloves. Warm socks and insulated shoes, because the cold rises through the floor and reaches your feet first.\n\nThe cold keeps time, and the forty-minute mark is usually when it settles in for good. The first half hour feels fine. Then the chill works past your first layer and parks in your hands and feet, and the back half of a long session is when the parent who packed a thermos looks like the wisest person in the building. Hot coffee or tea repays the small trouble of carrying it, and so does a blanket if you are camped out for a long block. The regulars learned this the hard way, and you can borrow their wisdom.\n\nThe waiting has a rhythm you will come to know well. Long stretches where it looks like nothing is happening, a skater going around and around, the same drills, the same falls. And then the small visible victories that make it worth it. The first time your skater lets go of the boards and glides alone. The first true crossover, the moment the feet finally cross over instead of shuffle. The first stop that sprays a little ice instead of a controlled crash into the wall. You will catch these before your skater does sometimes, and you will want to cheer, and you should. Because Bajko is the close-to-home kind of rink, those small wins stack up week after week, season after season, watched from a cold seat by the one who keeps showing up. That steady return is the whole thing, and it is how a neighborhood raises a skater.\n"
+    "editorial_markdown": "## What to expect at Bajko Memorial Rink\n\nBajko Memorial Rink is an indoor, single-sheet public rink on a fall-to-spring DCR season in the Hyde Park area of Boston, and it serves Hyde Park, Roslindale, West Roxbury, and the surrounding neighborhoods as a budget-friendly community facility. That means one sheet carries the full load. Recreational public skating and hockey share the same pad. This is a true neighborhood rink, the kind of affordable, local place where a weekly skating habit gets built.\n\nWhat you notice walking in is the cold air, the steady scrape of blades on a single sheet, and the unfussy feel of a community rink that does its job without ceremony. Because there is only one sheet, the programming runs back to back, and that single-sheet reality is the most important thing to grasp before your first visit. Hockey can shift when public skating is available, so the skaters who check the posted schedule first have smooth visits. The ones who assume the ice is always open sometimes find a practice underway.\n\n## Public skating at Bajko Memorial Rink: cost, sessions, and what to know\n\nPublic skating runs in set blocks rather than all day, which is the norm for a single-sheet rink juggling hockey and other scheduled ice on the same sheet. The habit worth forming is checking the posted public-skate schedule before you head over, because hockey programming can shift or preempt public sessions. The slot that was open last week is not a guarantee for this week, so confirm on the official website, then make the trip.\n\nSkate rentals are available during public skating sessions, so you can get on the ice without owning a pair, and sharpening is available on-site once you consider buying your own boots. Rental skates run dull by design, so a beginner should expect a cautious first push, and socks that reach past the ankle are easier on the stiff boots. A session here draws a real cross-section. Families with little ones gripping the boards, kids doing laps, a few steady regulars who treat the place like a second living room. The middle gets busy and the edges stay calmer, so the quieter shoulders beat the peak. Step off before tired ankles decide for you.\n\n## Freestyle and figure skating ice\n\nDedicated freestyle ice is not confirmed here. Treat Bajko as a DCR public rink first: seasonal public skating and hockey or stick-time style ice on the posted schedule, not a guaranteed figure-practice calendar. If a season ever lists something figure-specific, confirm it directly before building a training plan around it.\n\nFor real freestyle time, use a year-round rink with published practice ice. Those sessions are better suited for jumps, spins, program run-throughs, and coaching, while Bajko works best as affordable neighborhood ice for public skating and casual laps.\n\n\n## Learn to skate programs\n\nNo dedicated learn-to-skate program is confirmed here. DCR does not run its own skating-school curriculum in the way a private training rink does, and lessons at public rinks can depend on outside providers and the current season. If you want classes, check the current DCR page and Bay State Skating School locations before promising a beginner that lessons happen at this sheet.\n\nPublic skating can still be a useful first test for a new skater. It is affordable, local, and low pressure. If the interest sticks, choose the nearby rink with the clearest weekly class schedule, even if that means a year-round facility outside Hyde Park.\n\n\n## Hockey, stick and puck, and open ice\n\nHockey is central to what Bajko does, and on a single sheet that shapes the week for everyone. Practices and games need ice, and when they have it, public skating gives way. That active hockey community is part of the rink's character and why the schedule moves, so check the posted calendar before counting on a session.\n\nOpen hockey and stick and puck are both offered, which gives players a way to skate outside formal league games. Stick and puck is the loose, skills-first session for shooting, stickhandling, and skating with the puck at your own pace, and open hockey is the pickup-style run for game flow without a league commitment. Both follow the posted schedule, so confirm the session before you pack the bag, and arrive in full gear since drop-in runs expect it. The on-site sharpening matters most to this crowd, since a dull edge betrays you in a hard stop or crossover.\n\n## Getting there: parking, location, and amenities\n\nBajko sits in the Hyde Park area of Boston, on the city's southern edge near Roslindale and West Roxbury, and it reads as a neighborhood rink rather than a downtown destination. This part of Boston is more residential and spread out than the dense core, which usually makes getting there and parking simpler than a rink in a crowded district. Still, the exact address, the route in, and current parking guidance live on the official website, so check there first.\n\nThe neighborhood framing is the point. Bajko is the kind of local rink families fold into a weekly routine, close enough to home that a Saturday session does not turn into an expedition. That proximity is what lets a skating habit stick. When the rink is close, you go back, and going back is how skaters get good. Inside, expect the basics. A front desk handling rentals and sharpening, bench seating, and the no-frills functionality of a community facility.\n\n## A note for skating parents\n\nYou will feel the cold before your skater does. That is the first lesson of the lobby at a single-sheet rink. The ice cools the whole building, and unlike your skater, you are sitting still. Dress as if you are headed outdoors in winter, even though the roof is over your head. Layers you can add, not one heavy coat. A hat and real gloves. Warm socks and insulated shoes, because the cold rises through the floor and reaches your feet first.\n\nThe cold keeps time, and the forty-minute mark is usually when it settles in for good. The first half hour feels fine. Then the chill works past your first layer and parks in your hands and feet, and the back half of a long session is when the parent who packed a thermos looks like the wisest person in the building. Hot coffee or tea repays the small trouble of carrying it, and so does a blanket if you are camped out for a long block. The regulars learned this the hard way, and you can borrow their wisdom.\n\nThe waiting has a rhythm you will come to know well. Long stretches where it looks like nothing is happening, a skater going around and around, the same drills, the same falls. And then the small visible victories that make it worth it. The first time your skater lets go of the boards and glides alone. The first true crossover, the moment the feet finally cross over instead of shuffle. The first stop that sprays a little ice instead of a controlled crash into the wall. You will catch these before your skater does sometimes, and you will want to cheer, and you should. Because Bajko is the close-to-home kind of rink, those small wins stack up week after week, season after season, watched from a cold seat by the one who keeps showing up. That steady return is the whole thing, and it is how a neighborhood raises a skater.\n",
+    "seasonal": true,
+    "seasonal_notes": "DCR's published 2025-26 public-skating season runs November 28, 2025 through April 12, 2026. Confirm the current season schedule before visiting."
   },
   {
     "id": "ma-pembroke-hobomock-arena-pembroke-ma",
@@ -8895,7 +8899,7 @@
       "Hobomock Ice Skating"
     ],
     "category": "Ice Skating Rink",
-    "operator": null,
+    "operator": "Bay State Ice Management LLC / Edge Sports Group",
     "address": {
       "street": "132 Hobomock Street",
       "city": "Pembroke",
@@ -8945,11 +8949,7 @@
       "stick_and_puck": true
     },
     "pricing": {
-      "public_skate": {
-        "adult": 10,
-        "child": 7,
-        "senior": 7
-      }
+      "notes": "No current official public skate admission price is published; confirm directly with the arena."
     },
     "rentals": {
       "available": true,
@@ -8998,15 +8998,17 @@
     "image": "/images/skating/ice_img_12.png",
     "description": "Hobomock Arena, located at 132 Hobomock Street in Pembroke, Massachusetts, serves as a family-friendly ice skating destination for the South Shore region. This single-sheet facility provides comprehensive ice skating programming including public skating, figure skating instruction and clubs, and youth ice hockey development to the communities of Pembroke, Duxbury, Hanover, Plymouth, and surrounding South Shore towns. Hobomock Arena has established itself as the regional hub for ice skating activities, offering welcoming recreational opportunities alongside competitive figure skating and hockey programs that attract serious athletes throughout southeastern Massachusetts.\n\nThe arena's diverse programming addresses the entire spectrum of ice skating interests and skill levels. Public skating sessions throughout the week provide families and casual skaters with accessible recreation, while figure skating clubs offer coaching and competitive pathways for ambitious skaters. Strong youth hockey programs develop young players through learn-to-play classes, recreational leagues, and competitive team opportunities, fostering ice hockey talent within the South Shore community. The facility's emphasis on youth programming and family engagement makes it a central gathering place for ice skating enthusiasts throughout the region.\n\nLocated in the charming South Shore town of Pembroke, Hobomock Arena provides convenient access to the region's growing ice skating community without requiring travel to Boston-area facilities. The facility's commitment to affordability and accessibility aligns with South Shore values, making quality ice skating available to families throughout the area. With strong connections to the Pembroke, Duxbury, Hanover, and Plymouth communities, Hobomock Arena represents the regional growth and enthusiasm for ice skating in southeastern Massachusetts.",
     "what_to_know": [
-      "Call ahead or check local sources for current public skating schedules, as times may vary by season and hockey programming",
-      "The facility is a single sheet; hockey practices and games may occasionally affect public skating availability",
-      "Skate rentals are available; bring your own skates if you prefer or require a specific style",
-      "Learn-to-skate programs for children and adults fill quickly during fall and winter; register early for program spots",
-      "Figure skating coaching is available; inquire about lesson availability and club coaching opportunities when you visit",
-      "Ample parking is available on-site and in the surrounding area; the location is easily accessible from Route 3 and South Shore roads",
-      "Youth hockey teams represent communities throughout the South Shore; check the website or call for tryout dates and team registration information"
+      "No current official public-skate admission price is published; confirm directly with the arena.",
+      "The facility is operated by Bay State Ice Management LLC under Edge Sports Group.",
+      "The arena has two sheets and has served the South Shore since 1972.",
+      "Call ahead or check current arena sources for public skating schedules, which may vary around hockey programming.",
+      "Skate rental details should be confirmed before you visit."
     ],
     "faq": [
+      {
+        "question": "Who operates Hobomock Arena?",
+        "answer": "Hobomock Arena is operated by Bay State Ice Management LLC under Edge Sports Group. No current official public-skate admission price is published, so confirm pricing directly."
+      },
       {
         "question": "What communities does Hobomock Arena serve?",
         "answer": "Hobomock Arena serves the South Shore region including Pembroke, Duxbury, Hanover, Plymouth, and surrounding communities. The facility has become the regional hub for ice skating activities, offering convenient access to public skating, figure skating, and hockey programs for South Shore residents."
@@ -9028,7 +9030,7 @@
         "answer": "Hobomock Arena is located at 132 Hobomock Street in Pembroke, Massachusetts. The facility is easily accessible via Route 3 and local South Shore roads, with ample parking available on-site for visitors from throughout the region."
       }
     ],
-    "last_verified": "2026-05-23",
+    "last_verified": "2026-07-11",
     "seo": {
       "primary_keywords": [
         "Hobomock Arena ice skating",
@@ -9104,12 +9106,12 @@
       "seasonality": "year-round",
       "number_of_sheets": 2,
       "sheet_sizes": [
-        "200 ft x 85 ft",
-        "200 ft x 85 ft"
+        "Main rink",
+        "Studio rink"
       ]
     },
     "schedule_links": {
-      "public_calendar_url": null,
+      "public_calendar_url": "https://icetimebooking.com/rinks/4f816cef-e6bb-4e0a-b428-9012e2d08888",
       "freestyle_calendar_url": null,
       "hockey_calendar_url": null,
       "lessons_url": null
@@ -9123,11 +9125,7 @@
       "stick_and_puck": true
     },
     "pricing": {
-      "public_skate": {
-        "adult": 10,
-        "child": 7,
-        "senior": 7
-      }
+      "notes": "No current official public skate admission price is published. Sessions book through IceTime when available."
     },
     "rentals": {
       "available": true,
@@ -9176,15 +9174,17 @@
     "image": "/images/skating/ice_img_13.png",
     "description": "Canton Sportsplex, situated at 5 Carver Circle in Canton, Massachusetts, represents a multi-sport recreational complex that integrates an ice skating rink with additional athletic facilities. The two-sheet ice arena provides public skating, figure skating instruction, and youth and adult ice hockey programming to the residents of Canton, Stoughton, Sharon, and the broader south suburban Boston region. As a combined sports facility, Canton Sportsplex offers convenience for families seeking diverse recreational activities in one location, with the ice rink serving as a cornerstone of the complex's athletic programming.\n\nThe facility's ice skating operations emphasize family engagement and recreational access, offering public skating sessions designed to introduce newcomers to ice skating while accommodating experienced skaters seeking regular recreational skating opportunities. Learn-to-skate programs serve children and adults, providing foundational instruction and technique development in a welcoming environment. Youth hockey leagues develop young hockey talent within Canton and surrounding south suburban communities, fostering competitive play and recreational participation opportunities for players of various skill levels.\n\nCanton Sportsplex's integrated approach to sports and recreation makes it a one-stop destination for families seeking diverse athletic activities and ice skating opportunities. Located in the town of Canton with convenient access from Routes 138, 1, and 128, the facility serves the growing suburban population south of Boston. The combination of ice skating with other recreational facilities creates an attractive value proposition for families balancing multiple children's athletic interests and parental fitness goals.",
     "what_to_know": [
-      "Call for current public skating schedules, as ice rink hours may vary seasonally",
-      "The ice facility has two sheets; hockey leagues and programs may occasionally affect public skating availability",
-      "Skate rentals are available; bring your own skates if you prefer better fit and comfort",
-      "Learn-to-skate programs for children and adults are offered; call the rink for current class schedules and registration",
-      "The facility offers other sports and recreation amenities beyond ice skating; inquire about combined facility memberships or packages",
-      "Ample parking is available at the sportsplex; the location is easily accessible from south suburban roads and major routes",
-      "Figure skating coaching and instruction may be available; contact the facility to ask about coaching options and lesson availability"
+      "No current official public-skate admission price is published; check the IceTime booking flow for available sessions.",
+      "Canton Sportsplex has two ice surfaces, the Main rink and Studio rink.",
+      "Do not confuse Canton Sportsplex at 5 Carver Circle with Canton Ice House at 65 North Street.",
+      "Public sessions, when listed, book through IceTime rather than a traditional rink website.",
+      "Call ahead if you need skate rental or learn-to-skate details confirmed."
     ],
     "faq": [
+      {
+        "question": "Is Canton Sportsplex the same as Canton Ice House?",
+        "answer": "No. Canton Sportsplex is at 5 Carver Circle and has Main and Studio ice surfaces. Canton Ice House is a different facility at 65 North Street."
+      },
       {
         "question": "What is Canton Sportsplex beyond the ice rink?",
         "answer": "Canton Sportsplex is a multi-sport recreational complex that includes the ice skating rink along with other athletic facilities and programs. The facility serves the broader recreational needs of the Canton, Stoughton, Sharon, and south suburban Boston community beyond just ice skating."
@@ -9206,7 +9206,7 @@
         "answer": "Canton Sportsplex is located at 5 Carver Circle in Canton, Massachusetts, south of Boston. The facility is easily accessible via Route 138 and Interstate 95/128, serving the Canton, Stoughton, Sharon, and surrounding south suburban communities."
       }
     ],
-    "last_verified": "2026-05-23",
+    "last_verified": "2026-07-11",
     "seo": {
       "primary_keywords": [
         "Canton Sportsplex ice skating",
@@ -9298,18 +9298,13 @@
       "stick_and_puck": true
     },
     "pricing": {
-      "public_skate": {
-        "adult": 11,
-        "child": 8,
-        "senior": 8
-      }
+      "public_skate": "$10 flat, cash only",
+      "notes": "Public skate is $10 cash only. Stick time is $10. Summer private ice is $320 per hour."
     },
     "rentals": {
-      "available": true,
-      "pricing": {
-        "skate_rental": 5
-      },
-      "notes": "Skate rentals at the front desk."
+      "available": false,
+      "pricing": {},
+      "notes": "No skate rentals are available."
     },
     "sharpening": {
       "pricing_base": 7,
@@ -9346,20 +9341,22 @@
       "spectator_seating": true,
       "concessions": true,
       "pro_shop": true,
-      "skate_aids": true
+      "skate_aids": false
     },
     "image": "/images/skating/ice_img_14.png",
     "description": "Valley Sports Arena, located at 2320 Main Street in West Concord, Massachusetts, stands as a historic and established ice skating facility serving the MetroWest and Route 495 corridor communities. This single-sheet arena offers comprehensive programming including public skating, figure skating instruction and clubs, and hockey leagues spanning youth through adult levels. Valley Sports Arena has built a strong reputation within the Concord, Acton, Sudbury, and broader 495 belt region for fostering ice skating talent and providing accessible recreational opportunities to suburban families seeking quality ice skating in the MetroWest area.\n\nThe facility's programming philosophy emphasizes community engagement and recreational access alongside competitive development. Public skating sessions throughout the week provide families and casual skaters with regular ice skating opportunities, while figure skating coaching and club programs develop competitive skaters pursuing local, state, and regional championships. Adult hockey leagues offer recreational play opportunities for working adults seeking league competition and social engagement, while youth hockey programs develop young talent through learn-to-play, recreational, and competitive pathways.\n\nValley Sports Arena's location in historic Concord places it at the gateway of the Route 495 tech corridor, serving an affluent suburban region with strong youth sports participation and family engagement. The facility's established reputation, strong coaching staff, and community atmosphere make it a preferred destination for MetroWest families. Whether you're seeking introductory skating lessons, regular recreational play, or competitive coaching, Valley Sports Arena provides experienced facilities and professional programming rooted in decades of ice skating tradition.",
     "what_to_know": [
-      "Call or check local sources for current public skating schedules, as times vary seasonally and may be affected by league play",
-      "Strong adult hockey leagues operate at the facility; inquire about recreational league registration and play opportunities",
-      "Figure skating coaching is available; contact the arena for information about lesson availability, club coaching, and competitive pathways",
-      "Learn-to-skate programs for children serve the broader 495 community; register early as programs fill during fall and winter",
-      "The facility is a single sheet; hockey games and practices may occasionally affect public skating availability",
-      "Convenient parking is available on-site; the location is accessible from Concord center and Route 495 corridor roads",
-      "Skate rentals are available; bring your own skates if you prefer or prefer a specific style"
+      "Public skate is $10 cash only.",
+      "No skate rentals or skating aids are available, so bring your own skates.",
+      "Stick time is $10 for any age, and helmets are required.",
+      "Summer private ice is listed at $320 per hour.",
+      "Check the current calendar before visiting because league play can affect public sessions."
     ],
     "faq": [
+      {
+        "question": "How much is public skating at Valley Sports Arena?",
+        "answer": "Public skate is listed at $10 cash only. No skate rentals or skate aids are available, so bring your own skates."
+      },
       {
         "question": "How long has Valley Sports Arena been operating?",
         "answer": "Valley Sports Arena is a historic, well-established ice skating facility in Concord that has served the MetroWest and Route 495 corridor communities for many years. The arena is known for its strong reputation for developing skating talent and providing quality recreational opportunities."
@@ -9381,7 +9378,7 @@
         "answer": "Yes, Valley Sports Arena offers learn-to-skate programs for children in various age groups and skill levels. Check with the facility or local Concord recreation department for current program schedules, registration dates, and instruction information."
       }
     ],
-    "last_verified": "2026-05-23",
+    "last_verified": "2026-07-11",
     "seo": {
       "primary_keywords": [
         "Valley Sports Arena ice skating",
@@ -9468,16 +9465,12 @@
       "stick_and_puck": true
     },
     "pricing": {
-      "public_skate": {
-        "adult": 6,
-        "child": 4,
-        "senior": 4
-      }
+      "notes": "DCR does not publish a current official admission price for this rink; local reporting describes free public skating with paid rentals."
     },
     "rentals": {
       "available": true,
       "pricing": {},
-      "notes": "Skate rentals available on weekends. Confirm the current rate with DCR."
+      "notes": "Rentals are available on weekends only; confirm the current rental rate with DCR."
     },
     "sharpening": {
       "available": false,
@@ -9506,15 +9499,17 @@
     "image": "/images/skating/ice_img_15.png",
     "description": "Reilly Memorial Rink is an indoor public ice rink in the Cleveland Circle area of Brighton, operated by the Massachusetts Department of Conservation and Recreation (DCR). The single sheet runs a fall-to-spring season with low-cost public skating and a midweek public stick-time window, and it shares a complex with the Reilly Memorial pool. Its Cleveland Circle location is reachable on the MBTA Green Line, serving Brighton, Brookline, Newton, and the nearby colleges.",
     "what_to_know": [
-      "DCR rink with a fall-to-spring ice season; the sheet is typically out of service in summer. Confirm current-season dates on the DCR page before you go.",
-      "Public skating and a midweek public stick-time window are the core offerings; the posted schedule is set per season.",
-      "Skate rentals are available on weekends only; bring your own skates for a weekday visit.",
-      "Cleveland Circle is on the MBTA Green Line (C branch terminus, with B and D branches nearby), so a carless trip is realistic.",
-      "On-site parking is available but the Cleveland Circle area gets busy; leave a little margin.",
-      "The rink shares a complex with the Reilly Memorial pool; amenities are basic DCR-standard.",
-      "For dedicated learn-to-skate or freestyle, confirm options with DCR or Bay State Skating School and the year-round rinks in the area."
+      "DCR's published 2025-26 public-skating season runs November 28 through April 12.",
+      "DCR does not publish a current admission price for this rink; local reporting describes free public skating with paid rentals.",
+      "Skate rentals are available on weekends only.",
+      "Check the DCR schedule before visiting because hours vary by rink and season.",
+      "The facility is seasonal, so the sheet is not a summer skating option."
     ],
     "faq": [
+      {
+        "question": "Is Reilly Memorial Rink free?",
+        "answer": "DCR does not publish a current official admission price; local reporting describes free public skating with paid rentals. Rentals are available on weekends only."
+      },
       {
         "question": "Where is Reilly Memorial Rink located?",
         "answer": "Reilly Memorial Rink is in the Cleveland Circle area of Brighton, at 355 Chestnut Hill Avenue, operated by the Massachusetts Department of Conservation and Recreation (DCR). It is reachable on the MBTA Green Line, with the C branch ending at Cleveland Circle and the B and D branches nearby."
@@ -9536,7 +9531,7 @@
         "answer": "Cleveland Circle is one of the more transit-friendly rink locations in Boston. The MBTA Green Line C branch terminates at Cleveland Circle and the B and D branches stop nearby, so a short walk gets you to the rink. On-site parking is available if you drive."
       }
     ],
-    "last_verified": "2026-06-15",
+    "last_verified": "2026-07-11",
     "seo": {
       "primary_keywords": [
         "Reilly Memorial Rink ice skating",
@@ -9572,7 +9567,9 @@
     "sources": [
       "https://www.mass.gov/locations/dcr-reilly-memorial-rink",
       "https://www.yelp.com/biz/reilly-memorial-rink-brighton"
-    ]
+    ],
+    "seasonal": true,
+    "seasonal_notes": "DCR's published 2025-26 public-skating season runs November 28, 2025 through April 12, 2026. Confirm the current season schedule before visiting."
   },
   {
     "id": "co-centennial-south-suburban-ice-arena-centennial-co",

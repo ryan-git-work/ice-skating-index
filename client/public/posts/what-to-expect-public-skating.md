@@ -152,3 +152,8 @@ Public skate (also called open skate) is general ice time for anyone at any leve
 Costs vary by rink and time of day, and you usually pay a session admission plus a small skate rental fee if you do not own skates. Some rinks offer cheaper weekday blocks or punch cards for frequent skaters. Always confirm current pricing on the specific rink's page, since rates differ from place to place.
 
 Lace up, find the flow, and take it one easy lap at a time. The ice gets friendlier every time you step back on it.
+
+<!-- momentum-related-guides -->
+## Related planning guide
+
+Before choosing a session time, read [the best time to go ice skating](/blog/best-time-to-go-ice-skating).

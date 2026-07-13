@@ -137,3 +137,8 @@ Use the [Ice Skating Index](#) to find public skate sessions, check admission pr
 ---
 
 *Published by Ice Skating Index - your guide to everything on the ice.*
+
+<!-- momentum-related-guides -->
+## Related cost guides
+
+For deeper budget planning, see [where free ice skating exists](/blog/free-ice-skating) and [how much figure skating costs](/blog/how-much-does-figure-skating-cost).

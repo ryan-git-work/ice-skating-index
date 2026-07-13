@@ -67,3 +67,8 @@ It varies by rink. Centennial Sportsplex is on the affordable end with skates in
 Plan to book online. Centennial and the Ford Ice Centers use DaySmart for current schedules, waivers, and registration. Gary Force uses the events calendar on its website. Confirm the selected location and session before you leave home.
 
 Start with the full [Nashville ice skating guide](/city/tn/nashville) to compare every rink, or read [Public Skating in Nashville](/blog/public-skating-nashville) for schedules, times, and prices in depth.
+
+<!-- momentum-related-guides -->
+## Related planning guide
+
+For crowd timing, fresh ice, and the quietest windows, read [the best time to go ice skating](/blog/best-time-to-go-ice-skating).

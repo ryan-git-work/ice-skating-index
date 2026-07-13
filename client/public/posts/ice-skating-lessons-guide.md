@@ -138,3 +138,8 @@ Costs vary widely by rink, region, and lesson type, so the rink's own page is th
 Many learn to skate programs welcome children as young as three, often through a play-based, character-led beginner track. Readiness matters more than the exact age; a child who can follow simple directions and tolerate cold gear is usually ready. The kids' track is built to make those first sessions feel like a game.
 
 The first step is smaller than it looks. Find a rink, sign up for a beginner session, and let the curriculum carry you. The wall will still be there your first day, and by the end of the session you will wonder why you ever needed it.
+
+<!-- momentum-related-guides -->
+## Related local lesson guides
+
+For metro-specific program choices, see [learn to skate in Nashville](/blog/learn-to-skate-nashville), [learn to skate in Boston](/blog/learn-to-skate-boston), and the realistic [learn-to-skate timeline](/blog/how-long-does-it-take-to-learn-to-ice-skate).

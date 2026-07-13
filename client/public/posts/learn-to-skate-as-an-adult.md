@@ -142,3 +142,8 @@ Accept that falling is normal, then learn to fall safely by bending your knees, 
 ### Where can I find adult ice skating lessons near me?
 
 Look up rinks in your area and check their schedules for adult learn-to-skate classes, since many rinks run recognized beginner programs with dedicated adult tracks. Browse rinks by state and city to compare nearby options, then open each rink's page to see its lesson offerings and contact details. The closest program you will actually attend is the best one to choose.
+
+<!-- momentum-related-guides -->
+## Related lesson guides
+
+If you want the bigger timeline, read [how long it takes to learn to ice skate](/blog/how-long-does-it-take-to-learn-to-ice-skate). Local beginners can also start with [learn to skate in Nashville](/blog/learn-to-skate-nashville) or [learn to skate in Boston](/blog/learn-to-skate-boston).

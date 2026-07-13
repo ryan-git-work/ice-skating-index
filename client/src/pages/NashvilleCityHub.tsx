@@ -496,6 +496,46 @@ export default function NashvilleCityHub() {
                     description: "Find public sharpening services or ask for help making the right connection.",
                   },
                   {
+                    href: "/blog/learn-to-skate-nashville",
+                    title: "Learn to skate in Nashville",
+                    description: "Compare Ford Ice, Centennial, Gary Force, and adult beginner class paths.",
+                  },
+                  {
+                    href: "/blog/ice-skating-birthday-party-nashville",
+                    title: "Nashville birthday parties",
+                    description: "Compare rink party packages, private ice, and public-session party options.",
+                  },
+                  {
+                    href: "/blog/ice-skating-nashville-kids",
+                    title: "Nashville with kids",
+                    description: "Choose the right rink by age, neighborhood, price, and first-visit logistics.",
+                  },
+                  {
+                    href: "/blog/indoor-ice-skating-nashville",
+                    title: "Indoor and summer skating",
+                    description: "Find the year-round indoor sheets that keep Nashville skating outside winter.",
+                  },
+                  {
+                    href: "/blog/ice-skating-franklin-tn",
+                    title: "Franklin and Williamson County",
+                    description: "See where Franklin, Brentwood, Nolensville, and Williamson County actually skate.",
+                  },
+                  {
+                    href: "/blog/the-lab-hockey-franklin-tn",
+                    title: "The Hockey Lab in Franklin",
+                    description: "Understand Franklin's small in-city training sheet and limited public-skate fit.",
+                  },
+                  {
+                    href: "/blog/franklin-tn-ice-rink-history",
+                    title: "Franklin rink history",
+                    description: "Trace Southern Ice Arena, A-Game Sportsplex, the ice gap, Gary Force, and Brownland.",
+                  },
+                  {
+                    href: "/blog/banks-at-brownland-ice-rink-franklin",
+                    title: "Banks at Brownland tracker",
+                    description: "Follow the proposed Predators-operated two-sheet Franklin facility and approval status.",
+                  },
+                  {
                     href: "/blog/ice-skating-cost-nashville",
                     title: "How much ice skating costs",
                     description: "Plan the full outing, including admission, lessons, and equipment.",

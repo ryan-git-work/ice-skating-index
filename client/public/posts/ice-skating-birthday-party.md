@@ -165,3 +165,8 @@ It depends on the rink, but helmets are smart for young kids and beginners regar
 ### How long does an ice skating party last?
 
 Most run ninety minutes to two hours, which leaves time for a skating block, a cake break in the middle, and a short second skate. Build in a cushion for lacing up rentals at the start, since that always takes longer than expected. Confirm the exact block length with your rink's package details.
+
+<!-- momentum-related-guides -->
+## Related party guides
+
+For local examples, compare [ice skating birthday parties in Nashville](/blog/ice-skating-birthday-party-nashville) and [ice skating birthday parties in Boston](/blog/ice-skating-birthday-party-boston). If you are considering a full-sheet event, read [how much it costs to rent an ice rink](/blog/ice-rink-rental-cost).

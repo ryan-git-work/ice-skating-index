@@ -168,3 +168,8 @@ If you're in Nashville and want to get started, Centennial Sportsplex offers wal
 Find session times, pricing, and Learn to Skate programs for Nashville rinks at [Ice Skating Index](/browse). And if you're weighing whether to buy your own skates yet, our [buyer's guide to ice skates](/blog/how-much-do-ice-skates-cost) walks through exactly what to look for at every price point.
 
 The ice is open. The cost to start is lower than you probably think.
+
+<!-- momentum-related-guides -->
+## Related cost guides
+
+For deeper budget planning, see [where free ice skating exists](/blog/free-ice-skating) and [how much figure skating costs](/blog/how-much-does-figure-skating-cost).

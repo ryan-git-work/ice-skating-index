@@ -89,3 +89,8 @@ Use the [Ice Skating Index](#) to search for rinks near you, check for family se
 ---
 
 *Published by Ice Skating Index - your guide to everything on the ice.*
+
+<!-- momentum-related-guides -->
+## Related family guides
+
+For local family planning, see [ice skating in Nashville with kids](/blog/ice-skating-nashville-kids) and [ice skating in Boston with kids](/blog/ice-skating-boston-kids).

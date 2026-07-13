@@ -169,3 +169,8 @@ Use the snowplow stop. From a slow glide on two feet, push your heels apart so y
 ### What if I keep falling when I try to skate?
 
 Falling is part of learning, not a sign you are doing it wrong. Bend lower, look ahead instead of down, and check that your laces are tight enough to hold your ankles. Practice falling and getting back up on purpose, because once that stops feeling scary, the wobbles stop turning into falls.
+
+<!-- momentum-related-guides -->
+## Related beginner guide
+
+For a realistic first-month view, read [how long it takes to learn to ice skate](/blog/how-long-does-it-take-to-learn-to-ice-skate).

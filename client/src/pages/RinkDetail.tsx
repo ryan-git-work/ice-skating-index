@@ -81,6 +81,99 @@ const NASHVILLE_CLUSTER_SLUGS = new Set([
   "fountains-at-gateway-murfreesboro-tn",
 ]);
 
+type GuideLink = { href: string; label: string };
+
+const rinkGuideMap: Record<string, GuideLink[]> = {
+  "gary-force-acura-ice-arena-nolensville-tn": [
+    { href: "/blog/ice-skating-franklin-tn", label: "Franklin and Williamson County skating guide" },
+    { href: "/blog/franklin-tn-ice-rink-history", label: "Franklin ice rink history" },
+    { href: "/blog/the-lab-hockey-franklin-tn", label: "The Hockey Lab in Franklin" },
+    { href: "/blog/banks-at-brownland-ice-rink-franklin", label: "Banks at Brownland status tracker" },
+    { href: "/blog/ice-rink-rental-cost", label: "Private ice rental cost guide" },
+  ],
+  "centennial-sportsplex-nashville-tn": [
+    { href: "/blog/learn-to-skate-nashville", label: "Learn to skate in Nashville" },
+    { href: "/blog/ice-skating-birthday-party-nashville", label: "Nashville birthday party guide" },
+    { href: "/blog/ice-skating-nashville-kids", label: "Nashville family skating guide" },
+    { href: "/blog/indoor-ice-skating-nashville", label: "Indoor ice skating in Nashville" },
+    { href: "/blog/ice-skating-franklin-tn", label: "Franklin and Williamson County skating guide" },
+    { href: "/blog/how-much-does-figure-skating-cost", label: "Figure skating cost guide" },
+  ],
+  "ford-ice-center-bellevue-nashville-tn": [
+    { href: "/blog/learn-to-skate-nashville", label: "Learn to skate in Nashville" },
+    { href: "/blog/ice-skating-birthday-party-nashville", label: "Nashville birthday party guide" },
+    { href: "/blog/ice-skating-nashville-kids", label: "Nashville family skating guide" },
+    { href: "/blog/indoor-ice-skating-nashville", label: "Indoor ice skating in Nashville" },
+    { href: "/blog/ice-skating-franklin-tn", label: "Franklin and Williamson County skating guide" },
+    { href: "/blog/ice-rink-rental-cost", label: "Private ice rental cost guide" },
+  ],
+  "ford-ice-center-antioch-antioch-tn": [
+    { href: "/blog/learn-to-skate-nashville", label: "Learn to skate in Nashville" },
+    { href: "/blog/ice-skating-birthday-party-nashville", label: "Nashville birthday party guide" },
+    { href: "/blog/ice-skating-nashville-kids", label: "Nashville family skating guide" },
+    { href: "/blog/indoor-ice-skating-nashville", label: "Indoor ice skating in Nashville" },
+    { href: "/blog/ice-skating-franklin-tn", label: "Franklin and Williamson County skating guide" },
+    { href: "/blog/ice-rink-rental-cost", label: "Private ice rental cost guide" },
+  ],
+  "ford-ice-center-clarksville-clarksville-tn": [
+    { href: "/blog/learn-to-skate-nashville", label: "Learn to skate in Nashville" },
+    { href: "/blog/ice-skating-birthday-party-nashville", label: "Nashville birthday party guide" },
+    { href: "/blog/ice-skating-nashville-kids", label: "Nashville family skating guide" },
+    { href: "/blog/indoor-ice-skating-nashville", label: "Indoor ice skating in Nashville" },
+    { href: "/blog/ice-skating-franklin-tn", label: "Franklin and Williamson County skating guide" },
+    { href: "/blog/ice-rink-rental-cost", label: "Private ice rental cost guide" },
+  ],
+  "canton-sportsplex-canton-ma": [
+    { href: "/blog/ice-skating-canton-ma", label: "Canton and Norwood rink guide" },
+    { href: "/blog/ice-skating-boston-kids", label: "Boston family skating guide" },
+  ],
+  "skating-club-of-boston-norwood-ma": [
+    { href: "/blog/ice-skating-canton-ma", label: "Canton and Norwood rink guide" },
+    { href: "/blog/learn-to-skate-boston", label: "Learn to skate in Boston" },
+    { href: "/blog/indoor-ice-skating-boston", label: "Indoor ice skating in Boston" },
+    { href: "/blog/how-much-does-figure-skating-cost", label: "Figure skating cost guide" },
+  ],
+  "new-england-sports-center-marlborough-ma": [
+    { href: "/blog/learn-to-skate-boston", label: "Learn to skate in Boston" },
+    { href: "/blog/indoor-ice-skating-boston", label: "Indoor ice skating in Boston" },
+  ],
+  "reilly-memorial-rink-brighton-ma": [
+    { href: "/blog/learn-to-skate-boston", label: "Learn to skate in Boston" },
+    { href: "/blog/free-ice-skating", label: "Free and low-cost ice skating guide" },
+  ],
+  "steriti-memorial-rink-boston-ma": [
+    { href: "/blog/free-ice-skating", label: "Free and low-cost ice skating guide" },
+    { href: "/blog/ice-skating-boston-kids", label: "Boston family skating guide" },
+  ],
+  "bajko-memorial-rink-boston-ma": [
+    { href: "/blog/free-ice-skating", label: "Free and low-cost ice skating guide" },
+    { href: "/blog/ice-skating-boston-kids", label: "Boston family skating guide" },
+  ],
+  "valley-sports-arena-concord-ma": [
+    { href: "/blog/ice-rink-rental-cost", label: "Private ice rental cost guide" },
+    { href: "/blog/indoor-ice-skating-boston", label: "Indoor ice skating in Boston" },
+  ],
+  "hobomock-arena-pembroke-ma": [
+    { href: "/blog/ice-skating-boston-kids", label: "Boston family skating guide" },
+  ],
+  "millennium-park-ice-rink-chicago-il": [
+    { href: "/blog/free-ice-skating", label: "Free and low-cost ice skating guide" },
+  ],
+  "blue-cross-riverrink-philadelphia-pa": [
+    { href: "/blog/free-ice-skating", label: "Free and low-cost ice skating guide" },
+  ],
+  "world-arena-ice-hall-colorado-springs-co": [
+    { href: "/blog/how-much-does-figure-skating-cost", label: "Figure skating cost guide" },
+  ],
+  "tria-rink-st-paul-mn": [
+    { href: "/blog/how-much-does-figure-skating-cost", label: "Figure skating cost guide" },
+  ],
+};
+
+function getRinkGuideLinks(slug: string) {
+  return rinkGuideMap[slug] ?? [];
+}
+
 export default function RinkDetail() {
   const params = useParams();
   const rink = getRinkBySlug(params.slug || "");
@@ -107,6 +200,7 @@ export default function RinkDetail() {
   const faqItems = [...(rink?.faq ?? []), ...statusFaqItems];
   const isUnavailable = rink?.operating_status === "closed" || rink?.operating_status === "coming_soon";
   const isNashvilleClusterRink = Boolean(rink && NASHVILLE_CLUSTER_SLUGS.has(rink.slug));
+  const rinkGuideLinks = rink ? getRinkGuideLinks(rink.slug) : [];
   const statusNotice = rink?.operating_status === "closed"
     ? "PERMANENTLY CLOSED. This page is retained as an archival reference; do not travel here expecting public ice."
     : rink?.operating_status === "coming_soon"
@@ -545,6 +639,23 @@ export default function RinkDetail() {
                   </Link>
                   .
                 </p>
+              </section>
+            )}
+
+            {!isUnavailable && rinkGuideLinks.length > 0 && (
+              <section className="border-t pt-8">
+                <h2 className="font-serif text-2xl font-bold mb-3">Related skating guides</h2>
+                <div className="flex flex-wrap gap-3">
+                  {rinkGuideLinks.map(guide => (
+                    <Link
+                      key={guide.href}
+                      href={guide.href}
+                      className="inline-flex rounded-full border px-3 py-1.5 text-sm font-medium text-primary hover:border-primary/40 hover:bg-primary/5"
+                    >
+                      {guide.label}
+                    </Link>
+                  ))}
+                </div>
               </section>
             )}
 

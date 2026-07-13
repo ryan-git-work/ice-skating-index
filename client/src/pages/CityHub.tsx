@@ -33,6 +33,7 @@ export default function CityHub() {
   const city = formatCityName(citySlug);
   const stateName = STATE_NAMES[stateSlug] || stateSlug.toUpperCase();
   const cityRinks = getRinksByCity(stateSlug, citySlug);
+  const isBoston = stateSlug === "ma" && citySlug === "boston";
 
   useHead({
     title: `Ice Skating Rinks in ${city}, ${stateName}`,
@@ -65,6 +66,55 @@ export default function CityHub() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {cityRinks.map((rink) => (
               <RinkCard key={rink.id} rink={rink} />
+            ))}
+          </div>
+        </div>
+      )}
+
+      {isBoston && (
+        <div className="container mx-auto px-4 pb-12">
+          <h2 className="font-serif text-2xl font-bold mb-6">Boston skating guides</h2>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              {
+                href: "/blog/learn-to-skate-boston",
+                title: "Learn to skate in Boston",
+                description: "Compare The Skating Academy, Bay State Skating School, NESC, and adult class paths.",
+              },
+              {
+                href: "/blog/ice-skating-birthday-party-boston",
+                title: "Boston birthday parties",
+                description: "Plan a rink party, compare package styles, and know when private ice makes sense.",
+              },
+              {
+                href: "/blog/ice-skating-boston-kids",
+                title: "Boston with kids",
+                description: "Find the family-friendly, free, and low-cost ways to get children on the ice.",
+              },
+              {
+                href: "/blog/indoor-ice-skating-boston",
+                title: "Indoor and summer skating",
+                description: "Use year-round sheets and summer sessions when the seasonal rinks are closed.",
+              },
+              {
+                href: "/blog/ice-skating-canton-ma",
+                title: "Canton and Norwood guide",
+                description: "Sort out Canton Sportsplex, Canton Ice House, and The Skating Club of Boston.",
+              },
+              {
+                href: "/blog/best-ice-skating-rinks-massachusetts",
+                title: "Massachusetts rink guide",
+                description: "Step back to the statewide guide for Boston-area and regional rink choices.",
+              },
+            ].map(guide => (
+              <Link
+                key={guide.href}
+                href={guide.href}
+                className="block border p-5 hover:border-primary/40 transition-colors"
+              >
+                <h3 className="font-semibold text-foreground">{guide.title}</h3>
+                <p className="text-sm text-muted-foreground mt-2">{guide.description}</p>
+              </Link>
             ))}
           </div>
         </div>

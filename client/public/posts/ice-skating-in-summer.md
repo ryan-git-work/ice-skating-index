@@ -83,3 +83,8 @@ Give it a try. The cold air will feel like a reward.
 ---
 
 *Published by Ice Skating Index - your guide to everything on the ice.*
+
+<!-- momentum-related-guides -->
+## Related summer guides
+
+For local year-round options, see [indoor ice skating in Nashville](/blog/indoor-ice-skating-nashville) and [indoor ice skating in Boston](/blog/indoor-ice-skating-boston). For timing strategy, read [the best time to go ice skating](/blog/best-time-to-go-ice-skating).

@@ -130,3 +130,8 @@ Each rink posts its own schedule. Centennial and the three Ford Ice rinks use Da
 ### Is there outdoor or holiday ice skating in Nashville?
 
 In winter, yes. The Gaylord Opryland Resort opens a holiday rink as part of its Christmas programming, there is a seasonal outdoor rink downtown, and Murfreesboro runs a seasonal outdoor rink to the south. All are winter-only and closed the rest of the year, so confirm opening dates before you visit, and use the year-round indoor rinks outside the holiday season.
+
+<!-- momentum-related-guides -->
+## More Nashville and Franklin skating guides
+
+Round out the trip with [learn to skate in Nashville](/blog/learn-to-skate-nashville), [ice skating birthday parties in Nashville](/blog/ice-skating-birthday-party-nashville), [ice skating in Nashville with kids](/blog/ice-skating-nashville-kids), [indoor ice skating in Nashville](/blog/indoor-ice-skating-nashville), and [ice skating near Franklin](/blog/ice-skating-franklin-tn).

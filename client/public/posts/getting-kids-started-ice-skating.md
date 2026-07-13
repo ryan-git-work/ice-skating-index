@@ -125,3 +125,8 @@ You do not need to decide at the start, because the beginner skating skills are 
 ### How often should my child skate to improve?
 
 A steady weekly rhythm works better than occasional long sessions. One lesson a week, ideally paired with a casual public skate for free practice, builds skill and routine without burning a child out. Consistency matters far more than intensity at this age, and the kids who simply keep showing up are the ones who progress.
+
+<!-- momentum-related-guides -->
+## Related family guides
+
+For local family planning, see [ice skating in Nashville with kids](/blog/ice-skating-nashville-kids), [ice skating in Boston with kids](/blog/ice-skating-boston-kids), and [where free ice skating actually exists](/blog/free-ice-skating).

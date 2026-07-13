@@ -135,3 +135,8 @@ Check the rink's own page or website. A schedule with sessions across all twelve
 ### When is the busiest time at ice rinks?
 
 The stretch from late fall through deep winter, especially around the holidays, is the busiest. October through March is peak skating season across every rink type. If you prefer quieter ice, the summer months at year-round indoor rinks tend to be far less crowded, which can be ideal for beginners and first-timers.
+
+<!-- momentum-related-guides -->
+## Related planning guide
+
+For crowd patterns, fresh ice, and seasonal timing, read [the best time to go ice skating](/blog/best-time-to-go-ice-skating).
