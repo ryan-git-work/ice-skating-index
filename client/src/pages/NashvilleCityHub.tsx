@@ -124,6 +124,9 @@ export default function NashvilleCityHub() {
             </Link>
             .
           </p>
+          <p className="text-base text-white/75 max-w-3xl leading-relaxed mt-4">
+            Centennial Sportsplex, Ford Ice Center Bellevue, and Ford Ice Center Antioch are on their regular fall schedules for the week of August 17 through August 22, 2026. Check each rink&apos;s official calendar before you travel.
+          </p>
         </div>
       </div>
 

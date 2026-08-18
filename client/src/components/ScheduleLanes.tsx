@@ -10,6 +10,12 @@ function publicSummary(rink: Rink) {
     ?? `Public-skate times change. Open the official schedule and confirm the session before visiting ${rink.name}.`;
 }
 
+const FALL_SCHEDULE_SLUGS = new Set([
+  "centennial-sportsplex-nashville-tn",
+  "ford-ice-center-bellevue-nashville-tn",
+  "ford-ice-center-antioch-antioch-tn",
+]);
+
 export function ScheduleLanes({ rink }: { rink: Rink }) {
   const publicUrl = rink.schedule_links.public_calendar_url;
   const freestyleUrl = rink.schedule_links.freestyle_calendar_url;
@@ -25,6 +31,11 @@ export function ScheduleLanes({ rink }: { rink: Rink }) {
         <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
           Public skate is for casual skating and beginner practice. Freestyle is structured practice ice for figure skaters working on elements.
         </p>
+        {FALL_SCHEDULE_SLUGS.has(rink.slug) && (
+          <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+            As of August 16, 2026, this facility is on its regular fall schedule for the week of August 17 through August 22. Check the rink&apos;s official calendar before you go.
+          </p>
+        )}
       </div>
 
       <div className="grid gap-4 md:grid-cols-2">
@@ -48,7 +59,7 @@ export function ScheduleLanes({ rink }: { rink: Rink }) {
               <h3 className="font-semibold text-foreground">Freestyle and practice ice</h3>
             </div>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              {rink.freestyle.notes || rink.freestyle.how_to_find_times || "Confirm current practice-ice sessions and eligibility before registering."}
+              {rink.freestyle.how_to_find_times || rink.freestyle.notes || "Confirm current practice-ice sessions and eligibility before registering."}
             </p>
             {(freestyleUrl || publicUrl) && (
               <a

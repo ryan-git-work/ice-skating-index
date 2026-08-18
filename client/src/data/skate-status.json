@@ -1,9 +1,23 @@
 {
   "centennial-sportsplex-nashville-tn": {
-    "state": "altered",
-    "note": "Public skate is altered the week of June 30 to July 3 for a Predators development camp, and the rink is closed July 4. Confirm a public session before you go.",
-    "updated": "2026-06-27",
+    "state": "normal",
+    "note": "The regular fall schedule is in effect for August 17 through August 22. Confirm a public session on the official schedule before you go.",
+    "updated": "2026-08-16",
     "verified_by": "a local coach",
-    "source_url": "https://www.nhl.com/predators/arena/local-rinks/centennial-ice-rink"
+    "source_url": "https://apps.daysmartrecreation.com/dash/x/"
+  },
+  "ford-ice-center-bellevue-nashville-tn": {
+    "state": "normal",
+    "note": "The regular fall schedule is in effect for August 17 through August 22. Confirm a public session on the official schedule before you go.",
+    "updated": "2026-08-16",
+    "verified_by": "a local coach",
+    "source_url": "https://member.daysmartrecreation.com/#/online/predators/calendar"
+  },
+  "ford-ice-center-antioch-antioch-tn": {
+    "state": "normal",
+    "note": "The regular fall schedule is in effect for August 17 through August 22. Confirm a public session on the official schedule before you go.",
+    "updated": "2026-08-16",
+    "verified_by": "a local coach",
+    "source_url": "https://apps.daysmartrecreation.com/dash/x/"
   }
 }
