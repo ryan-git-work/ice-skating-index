@@ -1,0 +1,273 @@
+{
+  "generatedAt": "2026-08-04T14:39:12.321Z",
+  "counts": {
+    "INFO": 1,
+    "PASS": 7,
+    "WARN": 9,
+    "FAIL": 9
+  },
+  "results": [
+    {
+      "status": "INFO",
+      "gate": "build.present",
+      "detail": "260 built HTML pages found.",
+      "evidence": null
+    },
+    {
+      "status": "PASS",
+      "gate": "h1.exactly-one",
+      "detail": "All 260 pages have exactly one <h1>.",
+      "evidence": null
+    },
+    {
+      "status": "PASS",
+      "gate": "canonical.unique",
+      "detail": "All 260 canonicals present and unique.",
+      "evidence": null
+    },
+    {
+      "status": "PASS",
+      "gate": "title.unique",
+      "detail": "All 260 titles unique.",
+      "evidence": null
+    },
+    {
+      "status": "WARN",
+      "gate": "title.length",
+      "detail": "88 titles exceed 65 chars.",
+      "evidence": [
+        "103: Amber Glenn: The Olympic Gold Medalist Who Proves It&#039;s Never Too Late to Skate | Ice Skating Index",
+        "102: The Banks at Brownland: Franklin&#039;s Proposed Two-Sheet Ice Facility, Explained | Ice Skating Index",
+        "102: Mikhail Shaidorov&#039;s Impossible Comeback: Kazakhstan&#039;s Olympic Gold Story | Ice Skating Index",
+        "99: Ice Skating Birthday Parties in Nashville: Venues, Packages, and What They Cost | Ice Skating Index",
+        "99: Ice Skating Is Surging After the 2026 Olympics — Here&#039;s How to Get Started | Ice Skating Index"
+      ]
+    },
+    {
+      "status": "FAIL",
+      "gate": "og.title-specific",
+      "detail": "260/260 pages have a generic or missing og:title.",
+      "evidence": [
+        "/about",
+        "/blog/2026-us-figure-skating-championships-results",
+        "/blog/2026-winter-olympics-figure-skating-results",
+        "/blog/alysa-liu-learn-to-skate",
+        "/blog/alysa-liu-olympic-gold-2026",
+        "/blog/amber-glenn-figure-skater",
+        "/blog/amber-glenn-triple-axel-olympics-2026",
+        "/blog/banks-at-brownland-ice-rink-franklin"
+      ]
+    },
+    {
+      "status": "FAIL",
+      "gate": "og.image",
+      "detail": "260/260 pages have no og:image.",
+      "evidence": [
+        "/about",
+        "/blog/2026-us-figure-skating-championships-results",
+        "/blog/2026-winter-olympics-figure-skating-results",
+        "/blog/alysa-liu-learn-to-skate",
+        "/blog/alysa-liu-olympic-gold-2026"
+      ]
+    },
+    {
+      "status": "FAIL",
+      "gate": "og.url",
+      "detail": "260/260 pages have no og:url.",
+      "evidence": [
+        "/about",
+        "/blog/2026-us-figure-skating-championships-results",
+        "/blog/2026-winter-olympics-figure-skating-results",
+        "/blog/alysa-liu-learn-to-skate",
+        "/blog/alysa-liu-olympic-gold-2026"
+      ]
+    },
+    {
+      "status": "FAIL",
+      "gate": "og.no-duplicates",
+      "detail": "2 pages emit more than one og:title.",
+      "evidence": [
+        "/city/tn/nashville (2 og:title)",
+        "/state/tn (2 og:title)"
+      ]
+    },
+    {
+      "status": "FAIL",
+      "gate": "cityhub.non-empty",
+      "detail": "25/79 city hubs link zero rinks.",
+      "evidence": [
+        "/city/ca/san-diego",
+        "/city/ca/san-jose",
+        "/city/ca/simi-valley",
+        "/city/co/colorado-springs",
+        "/city/co/lone-tree",
+        "/city/il/elk-grove-village",
+        "/city/il/oak-lawn",
+        "/city/mi/ann-arbor",
+        "/city/mi/garden-city",
+        "/city/mi/grand-rapids",
+        "/city/mi/hazel-park",
+        "/city/mi/macomb-township",
+        "/city/mi/traverse-city",
+        "/city/mn/brooklyn-park",
+        "/city/mn/saint-louis-park",
+        "/city/mn/saint-paul",
+        "/city/ny/east-meadow",
+        "/city/ny/new-hyde-park",
+        "/city/ny/new-york",
+        "/city/oh/canal-winchester",
+        "/city/oh/lewis-center",
+        "/city/pa/cranberry-township",
+        "/city/pa/university-park",
+        "/city/tx/san-antonio",
+        "/city/tx/sugar-land"
+      ]
+    },
+    {
+      "status": "FAIL",
+      "gate": "schema.no-empty-itemlist",
+      "detail": "25 pages emit ItemList with zero items.",
+      "evidence": [
+        "/city/ca/san-diego",
+        "/city/ca/san-jose",
+        "/city/ca/simi-valley",
+        "/city/co/colorado-springs",
+        "/city/co/lone-tree",
+        "/city/il/elk-grove-village",
+        "/city/il/oak-lawn",
+        "/city/mi/ann-arbor",
+        "/city/mi/garden-city",
+        "/city/mi/grand-rapids"
+      ]
+    },
+    {
+      "status": "FAIL",
+      "gate": "browse.itemlist-count",
+      "detail": "ItemList declares 89 items but page renders 91 distinct rink links.",
+      "evidence": null
+    },
+    {
+      "status": "PASS",
+      "gate": "rink.single-nearby-module",
+      "detail": "No duplicate nearby-rinks modules.",
+      "evidence": null
+    },
+    {
+      "status": "WARN",
+      "gate": "rink.no-duplicate-links",
+      "detail": "1 rink pages repeat the same rink link.",
+      "evidence": [
+        "/rink/centennial-sportsplex-nashville-tn: href=\"/rink/ford-ice-center-bellevue-nashville-tn\" x2"
+      ]
+    },
+    {
+      "status": "PASS",
+      "gate": "links.no-broken",
+      "detail": "No broken internal links.",
+      "evidence": null
+    },
+    {
+      "status": "PASS",
+      "gate": "content.no-tokens",
+      "detail": "No unresolved template tokens.",
+      "evidence": null
+    },
+    {
+      "status": "WARN",
+      "gate": "links.orphans",
+      "detail": "2 pages have zero contextual inbound links.",
+      "evidence": [
+        "/about",
+        "/services/learn-to-skate"
+      ]
+    },
+    {
+      "status": "WARN",
+      "gate": "rink.peer-links",
+      "detail": "68/91 rink pages receive zero rink-to-rink links.",
+      "evidence": [
+        "/rink/aerodrome-ice-skating-pearland-tx",
+        "/rink/aldrich-arena-maplewood-mn",
+        "/rink/allen-event-center-ice-allen-tx",
+        "/rink/apex-ice-arena-westminster-co",
+        "/rink/baierl-ice-complex-cranberry-township-pa",
+        "/rink/bloomington-ice-garden-bloomington-mn",
+        "/rink/braemar-arena-edina-mn",
+        "/rink/brewster-ice-arena-brewster-ny"
+      ]
+    },
+    {
+      "status": "WARN",
+      "gate": "content.thin",
+      "detail": "76 pages under 200 words.",
+      "evidence": [
+        "/city/ca/san-diego (108w)",
+        "/city/ca/san-jose (108w)",
+        "/city/ca/simi-valley (108w)",
+        "/city/co/colorado-springs (108w)",
+        "/city/co/lone-tree (108w)",
+        "/city/il/oak-lawn (108w)",
+        "/city/mi/ann-arbor (108w)",
+        "/city/mi/garden-city (108w)",
+        "/city/mi/grand-rapids (108w)",
+        "/city/mi/hazel-park (108w)",
+        "/city/mi/macomb-township (108w)",
+        "/city/mi/traverse-city (108w)"
+      ]
+    },
+    {
+      "status": "FAIL",
+      "gate": "rink.noindex-non-operating",
+      "detail": "2/2 non-operating rinks lack a noindex directive.",
+      "evidence": [
+        "south-suburban-ice-arena-centennial-co",
+        "twin-ice-arena-elk-grove-village-il"
+      ]
+    },
+    {
+      "status": "WARN",
+      "gate": "data.nearby-rinks",
+      "detail": "nearby_rinks populated on 1/89 operating rinks.",
+      "evidence": null
+    },
+    {
+      "status": "WARN",
+      "gate": "data.slug-matches-city",
+      "detail": "8 slugs do not contain their record's city.",
+      "evidence": [
+        "tria-rink-st-paul-mn -> city \"Saint Paul\"",
+        "st-louis-park-rec-center-st-louis-park-mn -> city \"Saint Louis Park\"",
+        "foothills-ice-arena-littleton-co -> city \"Lakewood\"",
+        "apex-ice-arena-westminster-co -> city \"Arvada\"",
+        "aerodrome-ice-skating-pearland-tx -> city \"Houston\"",
+        "fox-valley-ice-arena-aurora-il -> city \"Geneva\"",
+        "centre-county-arena-state-college-pa -> city \"University Park\"",
+        "chiller-east-reynoldsburg-oh -> city \"Canal Winchester\""
+      ]
+    },
+    {
+      "status": "WARN",
+      "gate": "data.sources",
+      "detail": "76/89 operating rinks carry no sources.",
+      "evidence": null
+    },
+    {
+      "status": "FAIL",
+      "gate": "blog.meta-description-used",
+      "detail": "71/72 posts serve a description that is not the authored metaDescription.",
+      "evidence": null
+    },
+    {
+      "status": "WARN",
+      "gate": "blog.server-rendered-image",
+      "detail": "72/72 blog posts ship zero <img> in server HTML. They are invisible to Google Images and cannot carry a per-post og:image.",
+      "evidence": null
+    },
+    {
+      "status": "PASS",
+      "gate": "img.alt-quality",
+      "detail": "No filename-derived alt text.",
+      "evidence": null
+    }
+  ]
+}
