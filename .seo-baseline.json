@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-04T14:39:12.321Z",
+  "generatedAt": "2026-08-18T18:49:14.442Z",
   "counts": {
     "INFO": 1,
     "PASS": 7,
@@ -175,10 +175,34 @@
     {
       "status": "WARN",
       "gate": "links.orphans",
-      "detail": "2 pages have zero contextual inbound links.",
+      "detail": "26 pages have fewer than 2 contextual inbound links; the all-posts /blog listing is excluded.",
       "evidence": [
-        "/about",
-        "/services/learn-to-skate"
+        "/about (0)",
+        "/blog/2026-winter-olympics-figure-skating-results (0)",
+        "/blog/alysa-liu-learn-to-skate (0)",
+        "/blog/alysa-liu-olympic-gold-2026 (0)",
+        "/blog/amber-glenn-figure-skater (0)",
+        "/blog/amber-glenn-triple-axel-olympics-2026 (0)",
+        "/blog/best-ice-skating-rinks-california (0)",
+        "/blog/best-ice-skating-rinks-colorado (0)",
+        "/blog/best-ice-skating-rinks-michigan (0)",
+        "/blog/best-ice-skating-rinks-minnesota (0)",
+        "/blog/best-ice-skating-rinks-new-york (0)",
+        "/blog/figure-skating-judging-controversy-2026-olympics (0)",
+        "/blog/ilia-malinin-2026-world-champion (0)",
+        "/blog/kaori-sakamoto-four-world-titles-2026 (0)",
+        "/blog/mikhail-shaidorov-olympic-gold-kazakhstan (0)",
+        "/services/learn-to-skate (0)",
+        "/blog/hockey-skates-vs-figure-skates (1)",
+        "/blog/how-to-skate-backwards (1)",
+        "/blog/how-to-stop-on-ice-skates (1)",
+        "/blog/is-ice-skating-good-exercise (1)",
+        "/city/tn/antioch (1)",
+        "/city/tn/clarksville (1)",
+        "/city/tn/gatlinburg (1)",
+        "/city/tn/murfreesboro (1)",
+        "/city/tn/nolensville (1)",
+        "/services/skate-sharpening (1)"
       ]
     },
     {

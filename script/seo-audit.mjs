@@ -252,9 +252,11 @@ function staticGates() {
         tokened.slice(0, 8).map((p) => p.route))
     : pass("content.no-tokens", "No unresolved template tokens.");
 
-  /* --- orphan detection (pages with no inbound contextual link) --- */
+  /* --- contextual inbound coverage (the /blog listing does not count) --- */
+  const MIN_CONTEXTUAL_INBOUND = 2;
   const inbound = new Map(pages.map((p) => [p.route, new Set()]));
   for (const p of pages) {
+    if (p.route === "/blog") continue;
     const main = p.html
       .replace(/<header[\s\S]*?<\/header>/gi, " ")
       .replace(/<footer[\s\S]*?<\/footer>/gi, " ")
@@ -264,11 +266,16 @@ function staticGates() {
       if (inbound.has(t) && t !== p.route) inbound.get(t).add(p.route);
     }
   }
-  const orphans = [...inbound.entries()].filter(([r, s]) => s.size === 0 && r !== "/");
-  orphans.length
-    ? warn("links.orphans", `${orphans.length} pages have zero contextual inbound links.`,
-        orphans.slice(0, 15).map(([r]) => r))
-    : pass("links.orphans", "No orphaned pages.");
+  const underlinked = [...inbound.entries()]
+    .filter(([r, s]) => r !== "/" && s.size < MIN_CONTEXTUAL_INBOUND)
+    .sort((a, b) => a[1].size - b[1].size || a[0].localeCompare(b[0]));
+  underlinked.length
+    ? warn("links.orphans",
+        `${underlinked.length} pages have fewer than ${MIN_CONTEXTUAL_INBOUND} contextual inbound links; ` +
+        `the all-posts /blog listing is excluded.`,
+        underlinked.slice(0, 30).map(([r, sources]) => `${r} (${sources.size})`))
+    : pass("links.orphans",
+        `Every page has at least ${MIN_CONTEXTUAL_INBOUND} contextual inbound links outside /blog.`);
 
   /* --- rink pages must receive rink-to-rink links --- */
   const rinkRoutes = pages.filter((p) => p.route.startsWith("/rink/")).map((p) => p.route);
