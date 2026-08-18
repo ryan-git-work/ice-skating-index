@@ -1,4 +1,4 @@
-# Best Ice Skating Rinks in Texas: Year-Round Ice in the Lone Star State
+# A Skater's Tour of Texas: Year-Round Ice
 
 Think Texas is too hot for ice skating? Think again. The Lone Star State has built an impressive network of year-round indoor ice arenas, driven in large part by the Dallas Stars' StarCenter program, a booming Houston ice scene, and growing communities across the state hungry for ice programming. Whether you're in DFW, Houston, or San Antonio, there's quality ice within reach. Here are the best ice skating rinks in Texas.
 

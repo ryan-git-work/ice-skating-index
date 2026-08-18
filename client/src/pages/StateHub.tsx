@@ -22,11 +22,25 @@ const STATE_NAMES: Record<string, string> = {
   oh: "Ohio",
 };
 
+const STATE_GUIDES: Record<string, { slug: string; title: string }> = {
+  ca: { slug: "best-ice-skating-rinks-california", title: "A Skater's Tour of California: Year-Round Ice in the Sun" },
+  co: { slug: "best-ice-skating-rinks-colorado", title: "A Skater's Tour of Colorado: The Front Range and Beyond" },
+  il: { slug: "best-ice-skating-rinks-illinois", title: "A Skater's Tour of Illinois: Chicago and the Suburbs" },
+  ma: { slug: "best-ice-skating-rinks-massachusetts", title: "A Skater's Tour of Massachusetts: Boston to the Suburbs" },
+  mi: { slug: "best-ice-skating-rinks-michigan", title: "A Skater's Tour of Michigan: Inside Hockey Country" },
+  mn: { slug: "best-ice-skating-rinks-minnesota", title: "A Skater's Tour of Minnesota: Twin Cities Ice Culture" },
+  ny: { slug: "best-ice-skating-rinks-new-york", title: "A Skater's Tour of New York: Manhattan to Buffalo" },
+  oh: { slug: "best-ice-skating-rinks-ohio", title: "A Skater's Tour of Ohio: Buckeye State Ice" },
+  pa: { slug: "best-ice-skating-rinks-pennsylvania", title: "A Skater's Tour of Pennsylvania: Philadelphia to Pittsburgh" },
+  tx: { slug: "best-ice-skating-rinks-texas", title: "A Skater's Tour of Texas: Year-Round Ice" },
+};
+
 export default function StateHub() {
   const params = useParams();
   const state = (params.state || "").toLowerCase();
   const stateName = STATE_NAMES[state] || state.toUpperCase();
   const stateRinks = getRinksByState(state);
+  const stateGuide = STATE_GUIDES[state];
 
   useHead({
     title: `Ice Skating Rinks in ${stateName}`,
@@ -83,6 +97,22 @@ export default function StateHub() {
                 <RinkCard key={rink.id} rink={rink} />
             ))}
         </div>
+
+        {stateGuide && (
+          <section className="mt-12 border-l-2 border-primary bg-secondary/50 p-6">
+            <p className="text-xs font-semibold uppercase text-primary">Editorial companion</p>
+            <h2 className="mt-2 font-serif text-2xl font-bold">A skater's view of {stateName}</h2>
+            <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+              The directory above is the complete route to rink records and schedules. For a curated tour of notable facilities and local skating context, read the companion guide.
+            </p>
+            <Link
+              href={`/blog/${stateGuide.slug}`}
+              className="mt-4 inline-flex min-h-10 items-center font-semibold text-primary hover:underline"
+            >
+              {stateGuide.title}
+            </Link>
+          </section>
+        )}
 
         <div className="pt-12 space-y-8">
           <LastVerified date="2026-05-23" />

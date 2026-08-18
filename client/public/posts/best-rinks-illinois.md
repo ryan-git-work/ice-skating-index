@@ -1,4 +1,4 @@
-# Best Ice Skating Rinks in Illinois: From Millennium Park to the Suburbs
+# A Skater's Tour of Illinois: Chicago and the Suburbs
 
 Illinois skating runs from one unforgettable downtown rink to a deep bench of year-round suburban arenas where lessons, leagues, and figure skating happen all season. Chicago itself gives you both the seasonal showpiece and a solid indoor option, and the suburbs ring the city with full-service facilities that families build their winters around. This guide covers seven standout rinks, grouped by area, so you can match the ice to what you want out of the day, whether that is a single magical skate or a steady weekly routine.
 

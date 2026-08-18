@@ -1,4 +1,4 @@
-# Best Ice Skating Rinks in New York: A Skater's Guide From Manhattan to Buffalo
+# A Skater's Tour of New York: Manhattan to Buffalo
 
 New York gives skaters two very different worlds. There are the postcard outdoor rinks that open for the cold months and draw crowds for the experience, and there are the indoor, year-round facilities where lessons happen, hockey leagues run, and figure skaters train every season. Whether you want a once-in-a-lifetime glide under the city lights or a serious home rink for the family, this guide walks you through eight of the state's standout options, grouped by region, so you can find the right ice for what you actually want to do.
 

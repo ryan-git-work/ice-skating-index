@@ -1,4 +1,4 @@
-# Best Ice Skating Rinks in Massachusetts: From Boston to the Suburbs
+# A Skater's Tour of Massachusetts: Boston to the Suburbs
 
 Massachusetts has a rich and layered ice skating tradition. The state gave us the Skating Club of Boston, one of the most prestigious figure skating clubs in American history, and dozens of community rinks from the South Shore to MetroWest where generations of families have learned to skate. Whether you are a competitive figure skater, a hockey player, or a first-timer, here are the best ice skating rinks in the Bay State.
 

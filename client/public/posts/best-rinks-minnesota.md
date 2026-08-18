@@ -1,4 +1,4 @@
-# Best Ice Skating Rinks in Minnesota: A Twin Cities Guide
+# A Skater's Tour of Minnesota: Twin Cities Ice Culture
 
 Few places take ice as seriously as Minnesota, and the Twin Cities prove it. From a single sheet that doubles as an NHL practice facility to multi-sheet arenas and one of the largest outdoor refrigerated ovals in North America, the metro gives skaters of every kind a place to land. The rinks below are all indoor and run year-round, with a few adding seasonal outdoor surfaces when the weather turns. Public session schedules vary by rink, season, and week, so use this guide to plan, then check each rink's page for current hours, sessions, and admission before you go.
 

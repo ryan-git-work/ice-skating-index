@@ -52,9 +52,14 @@ export function getCategories(): string[] {
 }
 
 export function getRelatedPosts(currentSlug: string, category: string, limit = 3): BlogPostMeta[] {
-  return blogPostRegistry
-    .filter(p => p.slug !== currentSlug && p.category === category)
-    .slice(0, limit);
+  const categoryPosts = blogPostRegistry.filter(p => p.category === category);
+  const currentIndex = categoryPosts.findIndex(p => p.slug === currentSlug);
+  if (currentIndex === -1 || categoryPosts.length < 2) return [];
+
+  const relatedCount = Math.min(limit, categoryPosts.length - 1);
+  return Array.from({ length: relatedCount }, (_, offset) => (
+    categoryPosts[(currentIndex + offset + 1) % categoryPosts.length]
+  ));
 }
 
 export function parseFrontMatter(raw: string): { meta: Record<string, string>; content: string } {

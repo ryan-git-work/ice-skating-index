@@ -1,4 +1,4 @@
-# Best Ice Skating Rinks in Pennsylvania: From Philadelphia to Pittsburgh
+# A Skater's Tour of Pennsylvania: Philadelphia to Pittsburgh
 
 Pennsylvania's ice skating scene spans the full width of the state — from the scenic outdoor Delaware River waterfront in Philadelphia and the premier multi-sheet complexes of the Philly suburbs, to quality community rinks in the Lehigh Valley, Central PA, and the Pittsburgh area. The Keystone State takes its ice seriously. Here are the best rinks.
 

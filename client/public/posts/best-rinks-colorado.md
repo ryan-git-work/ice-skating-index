@@ -1,4 +1,4 @@
-# Best Ice Skating Rinks in Colorado: A Front Range Guide
+# A Skater's Tour of Colorado: The Front Range and Beyond
 
 Colorado runs on year-round ice. Between Colorado Springs and the south and west suburbs of Denver, you can find premier training sheets, busy community rinks, and rec-center surfaces that open their doors for public skating, lessons, and hockey. The rinks below are all indoor and operate all year, so they hold up whether you are lacing up for the first time or chasing a personal best. Public session schedules shift by season and by week, so use this guide to plan your trip, then check each rink's page for current hours, sessions, and admission before you go.
 

@@ -1,4 +1,4 @@
-# Best Ice Skating Rinks in Michigan: Hockey Country's Finest Ice
+# A Skater's Tour of Michigan: Inside Hockey Country
 
 Michigan is one of the great hockey states — and its rinks prove it. From massive multi-sheet training complexes in the Detroit suburbs to beloved community arenas in Traverse City and Grand Rapids, the Great Lakes State takes its ice seriously. Whether you're a figure skater, a puck-chaser, or a family looking for a fun weekend outing, Michigan's rinks have something for everyone. Here are the best.
 

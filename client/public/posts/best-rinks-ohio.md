@@ -1,4 +1,4 @@
-# Best Ice Skating Rinks in Ohio: The Buckeye State's Best Ice
+# A Skater's Tour of Ohio: Buckeye State Ice
 
 Ohio may not carry the ice skating cachet of Minnesota or Michigan, but the Buckeye State has quietly built an impressive skating infrastructure — particularly in the Columbus area, where the Chiller family of rinks and OhioHealth Ice Trails have created a thriving community of skaters. From Cleveland's historic Winterhurst to Pegula-adjacent facilities in central Ohio, here are the best ice skating rinks in Ohio.
 

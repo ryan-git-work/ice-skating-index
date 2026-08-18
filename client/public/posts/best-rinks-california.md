@@ -1,4 +1,4 @@
-# Best Ice Skating Rinks in California: Year-Round Ice in the Sun
+# A Skater's Tour of California: Year-Round Ice in the Sun
 
 California might be synonymous with beaches and sunshine, but the Golden State has one of the strongest ice skating communities in the country. With a warm climate keeping outdoor ice impractical, California's rinks are almost entirely indoors and open year-round — meaning you can work on your crossovers in January or lace up after a summer hike in July. Here are the best ice skating rinks across California.
 
