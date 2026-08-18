@@ -1,7 +1,14 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { AlertCircle } from "lucide-react";
+import { useHead } from "@/hooks/use-head";
 
 export default function NotFound() {
+  useHead({
+    title: "Page Not Found",
+    description: "The requested page could not be found.",
+    robots: "noindex,follow",
+  });
+
   return (
     <div className="min-h-screen w-full flex items-center justify-center bg-gray-50">
       <Card className="w-full max-w-md mx-4">
@@ -12,7 +19,7 @@ export default function NotFound() {
           </div>
 
           <p className="mt-4 text-sm text-gray-600">
-            Did you forget to add the page to the router?
+            The page you requested does not exist. Use the site navigation to find a rink or guide.
           </p>
         </CardContent>
       </Card>

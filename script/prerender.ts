@@ -84,6 +84,9 @@ for (const route of routes) {
         : `https://iceskatingindex.com${head.canonicalPath}`;
       headContent += `<link rel="canonical" href="${escapeHtml(href)}">\n`;
     }
+    if (head?.robots) {
+      headContent += `<meta name="robots" content="${escapeHtml(head.robots)}">\n`;
+    }
     if (head?.structuredData?.length) {
       headContent += head.structuredData
         .map((data: object) => `<script type="application/ld+json">${escapeJsonLd(data)}</script>`)
@@ -106,6 +109,17 @@ for (const route of routes) {
 
 console.log(`Pre-rendered ${rendered}/${routes.length} pages (${failed} failed)`);
 if (failed > 0) process.exit(1);
+
+const { html: notFoundBody, head: notFoundHead } = render("/__not-found__");
+const notFoundHtml = indexHtml
+  .replace(
+    "</head>",
+    `<title>${escapeHtml(notFoundHead?.title || "Page Not Found | Ice Skating Index")}</title>\n` +
+      `<meta name="description" content="${escapeHtml(notFoundHead?.description || "The requested page could not be found.")}">\n` +
+      `<meta name="robots" content="noindex,follow">\n</head>`,
+  )
+  .replace(HTML_MARKER, `<div id="root">${notFoundBody}</div>`);
+await fs.writeFile(path.resolve(clientDist, "404.html"), notFoundHtml);
 
 function escapeHtml(text: string): string {
   return text

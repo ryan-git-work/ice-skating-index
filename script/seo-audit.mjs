@@ -47,7 +47,7 @@ function walkHtml(dir, acc = []) {
     const p = join(dir, name);
     const st = statSync(p);
     if (st.isDirectory()) walkHtml(p, acc);
-    else if (name.endsWith(".html")) acc.push(p);
+    else if (name.endsWith(".html") && name !== "404.html") acc.push(p);
   }
   return acc;
 }

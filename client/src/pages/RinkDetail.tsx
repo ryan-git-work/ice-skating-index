@@ -299,6 +299,7 @@ export default function RinkDetail() {
     title: metaTitle,
     description: metaDescription,
     canonicalPath: rink ? `/rink/${rink.slug}` : undefined,
+    robots: isUnavailable ? "noindex,follow" : undefined,
     structuredData: [webPageSchema, rinkSchema, breadcrumbSchema, faqSchemaObj].filter(Boolean) as object[],
   });
 

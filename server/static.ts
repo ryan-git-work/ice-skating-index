@@ -10,7 +10,16 @@ export function serveStatic(app: Express) {
     );
   }
 
-  app.use(express.static(distPath, { redirect: false }));
+  app.use(express.static(distPath, {
+    redirect: false,
+    setHeaders(res, filePath) {
+      if (filePath.includes(`${path.sep}assets${path.sep}`)) {
+        res.setHeader("Cache-Control", "public, max-age=31536000, immutable");
+      } else if (filePath.endsWith(".html")) {
+        res.setHeader("Cache-Control", "no-cache");
+      }
+    },
+  }));
 
   // Serve pre-rendered index.html for SPA routes that have one
   app.use("*", (req, res) => {
@@ -20,8 +29,7 @@ export function serveStatic(app: Express) {
     if (fs.existsSync(prerenderedPath)) {
       res.sendFile(prerenderedPath);
     } else {
-      // Fall back to root index.html for client-side routing
-      res.sendFile(path.resolve(distPath, "index.html"));
+      res.status(404).sendFile(path.resolve(distPath, "404.html"));
     }
   });
 }

@@ -15,6 +15,7 @@ interface Rink {
     city: string;
   };
   last_verified: string;
+  operating_status?: "open" | "closed" | "coming_soon";
 }
 
 const rinks = rinksData as Rink[];
@@ -24,13 +25,25 @@ function getAllStates(): string[] {
   return Array.from(states).sort();
 }
 
+const latestDate = (dates: Array<string | undefined>, fallback: string) =>
+  dates.filter((date): date is string => Boolean(date)).sort().at(-1) || fallback;
+
+const STATIC_LASTMOD = {
+  home: "2026-07-11",
+  browse: "2026-07-11",
+  about: "2026-06-30",
+  freestyle: "2026-07-11",
+  learnToSkate: "2026-06-30",
+  skateSharpening: "2026-06-30",
+  blog: "2026-07-12",
+};
+
 export async function registerRoutes(
   httpServer: Server,
   app: Express
 ): Promise<Server> {
   app.get("/sitemap.xml", (_req, res) => {
     const baseUrl = "https://iceskatingindex.com";
-    const now = new Date().toISOString().split('T')[0];
     const indexableBlogPosts = (blogPosts as any[]).filter(
       (post) => post.slug !== "ice-skating-nashville"
     );
@@ -44,7 +57,11 @@ export async function registerRoutes(
     });
     const cities = Array.from(citySet).map(entry => {
       const [state, city] = entry.split('|');
-      return { state, city };
+      const cityRinks = rinks.filter((rink) =>
+        rink.address.state.toLowerCase().replace(/\s+/g, "-") === state &&
+        rink.address.city.toLowerCase().replace(/\s+/g, "-") === city
+      );
+      return { state, city, lastmod: latestDate(cityRinks.map((rink) => rink.last_verified), STATIC_LASTMOD.browse) };
     });
 
     let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -52,7 +69,7 @@ export async function registerRoutes(
   <!-- Homepage -->
   <url>
     <loc>${baseUrl}/</loc>
-    <lastmod>${now}</lastmod>
+    <lastmod>${STATIC_LASTMOD.home}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -60,7 +77,7 @@ export async function registerRoutes(
   <!-- Browse Page -->
   <url>
     <loc>${baseUrl}/browse</loc>
-    <lastmod>${now}</lastmod>
+    <lastmod>${STATIC_LASTMOD.browse}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -68,25 +85,25 @@ export async function registerRoutes(
   <!-- Static Content Pages -->
   <url>
     <loc>${baseUrl}/about</loc>
-    <lastmod>${now}</lastmod>
+    <lastmod>${STATIC_LASTMOD.about}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>${baseUrl}/freestyle</loc>
-    <lastmod>${now}</lastmod>
+    <lastmod>${STATIC_LASTMOD.freestyle}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>${baseUrl}/services/learn-to-skate</loc>
-    <lastmod>${now}</lastmod>
+    <lastmod>${STATIC_LASTMOD.learnToSkate}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>${baseUrl}/services/skate-sharpening</loc>
-    <lastmod>${now}</lastmod>
+    <lastmod>${STATIC_LASTMOD.skateSharpening}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -94,23 +111,26 @@ export async function registerRoutes(
   <!-- State Hubs -->
 ${getAllStates().map(state => `  <url>
     <loc>${baseUrl}/state/${state}</loc>
-    <lastmod>${now}</lastmod>
+    <lastmod>${latestDate(
+      rinks.filter((rink) => rink.address.state.toLowerCase() === state).map((rink) => rink.last_verified),
+      STATIC_LASTMOD.browse,
+    )}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>`).join('\n')}
 
   <!-- City Hubs -->
-${cities.map(({ state, city }) => `  <url>
+${cities.map(({ state, city, lastmod }) => `  <url>
     <loc>${baseUrl}/city/${state}/${city}</loc>
-    <lastmod>${now}</lastmod>
+    <lastmod>${lastmod}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>`).join('\n')}
 
   <!-- Individual Rink Pages -->
-${rinks.map(rink => `  <url>
+${rinks.filter((rink) => !["closed", "coming_soon"].includes(rink.operating_status || "open")).map(rink => `  <url>
     <loc>${baseUrl}/rink/${rink.slug}</loc>
-    <lastmod>${rink.last_verified || now}</lastmod>
+    <lastmod>${rink.last_verified || STATIC_LASTMOD.browse}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>`).join('\n')}
@@ -118,7 +138,7 @@ ${rinks.map(rink => `  <url>
   <!-- Blog Index -->
   <url>
     <loc>${baseUrl}/blog</loc>
-    <lastmod>${now}</lastmod>
+    <lastmod>${STATIC_LASTMOD.blog}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -126,7 +146,7 @@ ${rinks.map(rink => `  <url>
   <!-- Blog Posts -->
 ${indexableBlogPosts.map((post: any) => `  <url>
     <loc>${baseUrl}/blog/${post.slug}</loc>
-    <lastmod>${post.publishDate || now}</lastmod>
+    <lastmod>${post.publishDate || STATIC_LASTMOD.blog}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>`).join('\n')}

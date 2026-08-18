@@ -1,10 +1,13 @@
 import express, { type Request, Response, NextFunction } from "express";
+import compression from "compression";
 import path from "path";
 import { registerRoutes } from "./routes";
 import { serveStatic } from "./static";
 import { createServer } from "http";
 
 const app = express();
+
+app.use(compression());
 
 // Serve attached_assets as static files
 app.use('/attached_assets', express.static(path.resolve(process.cwd(), 'attached_assets')));

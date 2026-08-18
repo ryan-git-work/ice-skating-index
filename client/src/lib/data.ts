@@ -162,11 +162,15 @@ export function getRinksByState(state: string) {
   return rinks.filter((r) => r.address.state.toLowerCase() === state.toLowerCase());
 }
 
+export function slugifyLocation(value: string) {
+  return value.toLowerCase().trim().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+}
+
 export function getRinksByCity(state: string, city: string) {
   return rinks.filter(
     (r) =>
-      r.address.state.toLowerCase() === state.toLowerCase() &&
-      r.address.city.toLowerCase() === city.toLowerCase()
+      slugifyLocation(r.address.state) === slugifyLocation(state) &&
+      slugifyLocation(r.address.city) === slugifyLocation(city)
   );
 }
 

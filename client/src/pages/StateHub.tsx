@@ -1,5 +1,5 @@
 import { Layout } from "@/components/Layout";
-import { rinks, getRinksByState } from "@/lib/data";
+import { getRinksByState, slugifyLocation } from "@/lib/data";
 import { RinkCard } from "@/components/RinkCard";
 import { Link, useParams } from "wouter";
 import { useHead } from "@/hooks/use-head";
@@ -21,10 +21,6 @@ const STATE_NAMES: Record<string, string> = {
   pa: "Pennsylvania",
   oh: "Ohio",
 };
-
-function slugifyCity(city: string) {
-  return city.toLowerCase().replace(/\s+/g, "-");
-}
 
 export default function StateHub() {
   const params = useParams();
@@ -72,7 +68,7 @@ export default function StateHub() {
             <h2 className="text-lg font-semibold mb-4">Browse by City</h2>
             <div className="flex flex-wrap gap-2">
                 {cities.map(city => (
-                    <Link key={city} href={`/city/${state}/${slugifyCity(city)}`}>
+                    <Link key={city} href={`/city/${state}/${slugifyLocation(city)}`}>
                         <Button variant="outline" size="sm" className="rounded-full">
                             {city}
                         </Button>

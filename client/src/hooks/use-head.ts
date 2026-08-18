@@ -7,6 +7,7 @@ interface HeadProps {
   ogTitle?: string;
   ogDescription?: string;
   canonicalPath?: string;
+  robots?: string;
   structuredData?: object[];
 }
 
@@ -28,7 +29,7 @@ export function clearSsrHeadCapture() {
   ssrHeadCapture = null;
 }
 
-export function useHead({ title, description, image, ogTitle, ogDescription, canonicalPath, structuredData }: HeadProps) {
+export function useHead({ title, description, image, ogTitle, ogDescription, canonicalPath, robots, structuredData }: HeadProps) {
   // Capture for SSR during render phase
   if (isSsrMode) {
     const fullTitle = title
@@ -42,6 +43,7 @@ export function useHead({ title, description, image, ogTitle, ogDescription, can
       ...(ogTitle !== undefined && { ogTitle }),
       ...(ogDescription !== undefined && { ogDescription }),
       ...(canonicalPath !== undefined && { canonicalPath }),
+      ...(robots !== undefined && { robots }),
       ...(structuredData !== undefined && { structuredData }),
     };
   }
@@ -110,5 +112,15 @@ export function useHead({ title, description, image, ogTitle, ogDescription, can
       }
       canonical.setAttribute("href", canonicalHref);
     }
-  }, [title, description, image, ogTitle, ogDescription, canonicalPath, structuredData]);
+
+    if (robots) {
+      let robotsTag = document.querySelector('meta[name="robots"]');
+      if (!robotsTag) {
+        robotsTag = document.createElement("meta");
+        robotsTag.setAttribute("name", "robots");
+        document.head.appendChild(robotsTag);
+      }
+      robotsTag.setAttribute("content", robots);
+    }
+  }, [title, description, image, ogTitle, ogDescription, canonicalPath, robots, structuredData]);
 }

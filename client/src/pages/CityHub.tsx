@@ -33,13 +33,19 @@ export default function CityHub() {
   const city = formatCityName(citySlug);
   const stateName = STATE_NAMES[stateSlug] || stateSlug.toUpperCase();
   const cityRinks = getRinksByCity(stateSlug, citySlug);
+  const indexableCityRinks = cityRinks.filter(
+    (rink) => rink.operating_status !== "closed" && rink.operating_status !== "coming_soon",
+  );
   const isBoston = stateSlug === "ma" && citySlug === "boston";
+  const locationName = city === stateName ? `${city} City, ${stateName}` : `${city}, ${stateName}`;
 
   useHead({
-    title: `Ice Skating Rinks in ${city}, ${stateName}`,
-    description: `Find ice rinks, public skating, and freestyle sessions in ${city}, ${stateName}.`,
+    title: `Ice Skating Rinks in ${locationName}`,
+    description: `Find ice rinks, public skating, and freestyle sessions in ${locationName}.`,
     canonicalPath: `/city/${stateSlug}/${citySlug}`,
-    structuredData: [buildRinkItemList(cityRinks, `/city/${stateSlug}/${citySlug}`, `Ice Skating Rinks in ${city}, ${stateName}`)],
+    structuredData: indexableCityRinks.length > 0
+      ? [buildRinkItemList(indexableCityRinks, `/city/${stateSlug}/${citySlug}`, `Ice Skating Rinks in ${locationName}`)]
+      : [],
   });
 
   return (
@@ -53,7 +59,7 @@ export default function CityHub() {
             <span>/</span>
             <span className="text-white font-medium">{city}</span>
           </div>
-          <h1 className="font-serif text-4xl font-extrabold text-white mb-4">Ice Skating in {city}, {stateName}</h1>
+          <h1 className="font-serif text-4xl font-extrabold text-white mb-4">Ice Skating in {locationName}</h1>
           <p className="text-white/70 max-w-2xl">
             Compare local rink details, public-skate availability, freestyle ice, lessons, and directions.
           </p>
@@ -67,6 +73,22 @@ export default function CityHub() {
             {cityRinks.map((rink) => (
               <RinkCard key={rink.id} rink={rink} />
             ))}
+          </div>
+        </div>
+      )}
+
+      {cityRinks.length === 0 && (
+        <div className="container mx-auto px-4 py-12">
+          <div className="rounded-lg border bg-white p-8 text-center">
+            <h2 className="font-serif text-2xl font-bold">No rink listings are available for {city}</h2>
+            <p className="mx-auto mt-3 max-w-xl text-muted-foreground">
+              Browse the statewide directory for nearby cities and verified rink pages.
+            </p>
+            <Link href={`/state/${stateSlug}`} className="mt-5 inline-flex">
+              <Button variant="outline">
+                <ArrowLeft className="mr-2 h-4 w-4" /> Browse {stateName}
+              </Button>
+            </Link>
           </div>
         </div>
       )}
