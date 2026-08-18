@@ -4109,7 +4109,7 @@
     },
     "phone": "818-846-0032",
     "email": null,
-    "website": "https://www.pickwickice.com/",
+    "website": "https://www.lakingsicepickwick.com/",
     "google_maps_url": "https://www.google.com/maps/place/Pickwick+Ice+Center/@34.1573,-118.3330,17z",
     "social_links": [
       {
@@ -4271,6 +4271,9 @@
       "lakewood-ice-lakewood-ca",
       "iceoplex-simi-valley-ca",
       "icetown-riverside-ca"
+    ],
+    "sources": [
+      "https://www.lakingsicepickwick.com/"
     ]
   },
   {
@@ -4822,6 +4825,9 @@
       "solar4america-ice-san-jose-ca",
       "iceoplex-simi-valley-ca",
       "pickwick-ice-center-burbank-ca"
+    ],
+    "sources": [
+      "https://www.oaklandice.com/"
     ]
   },
   {
@@ -5174,6 +5180,9 @@
       "pickwick-ice-center-burbank-ca",
       "icetown-riverside-ca",
       "iceoplex-simi-valley-ca"
+    ],
+    "sources": [
+      "https://lakewoodice.therinks.com/"
     ]
   },
   {
@@ -5544,6 +5553,9 @@
       "lakewood-ice-lakewood-ca",
       "pickwick-ice-center-burbank-ca",
       "poway-ice-rink-poway-ca"
+    ],
+    "sources": [
+      "https://www.icetownriverside.com/"
     ]
   },
   {
@@ -5737,6 +5749,9 @@
       "yost-ice-arena-ann-arbor-mi",
       "hazel-park-arena-hazel-park-mi",
       "suburban-ice-macomb-macomb-township-mi"
+    ],
+    "sources": [
+      "https://www.usahockeyarena.com/"
     ]
   },
   {
@@ -5919,6 +5934,9 @@
       "garden-city-ice-arena-garden-city-mi",
       "usa-hockey-arena-plymouth-mi",
       "yost-ice-arena-ann-arbor-mi"
+    ],
+    "sources": [
+      "https://www.suburbanicemacomb.com/"
     ]
   },
   {
@@ -6994,6 +7012,9 @@
       "yost-ice-arena-ann-arbor-mi",
       "usa-hockey-arena-plymouth-mi",
       "centre-ice-arena-traverse-city-mi"
+    ],
+    "sources": [
+      "https://www.griffsicehouse.com/"
     ]
   },
   {
@@ -12557,6 +12578,9 @@
       "aerodrome-ice-skating-pearland-tx",
       "ice-at-the-rim-san-antonio-tx",
       "starcenter-euless-euless-tx"
+    ],
+    "sources": [
+      "https://www.sugarlandice.com/index.html"
     ]
   },
   {
@@ -15079,6 +15103,9 @@
       "baierl-ice-complex-cranberry-township-pa",
       "centre-county-arena-state-college-pa",
       "york-ice-arena-york-pa"
+    ],
+    "sources": [
+      "https://www.pittsburghicearena.com/"
     ]
   },
   {
