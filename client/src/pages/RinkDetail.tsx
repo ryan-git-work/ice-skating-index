@@ -18,7 +18,6 @@ import { SkateStatus } from "@/components/SkateStatus";
 import { SharpeningConnector } from "@/components/SharpeningConnector";
 import { NearbyRinks } from "@/components/NearbyRinks";
 import { formatVerifiedDate, LastVerified } from "@/components/LastVerified";
-import { getNearbyRinks } from "@/lib/data";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { buildWebPageSchema, SITE_URL, STATE_NAMES, slugify } from "@/lib/seo";
@@ -660,38 +659,6 @@ export default function RinkDetail() {
               </section>
             )}
 
-            {/* NearbyRinks — computed dynamically from same-city rinks */}
-            {(() => {
-              const nearby = getNearbyRinks(rink, 4);
-              if (nearby.length === 0) return null;
-              return (
-                <section>
-                  <h2 className="font-serif text-2xl font-bold mb-6">Other {rink.address.city} rinks</h2>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    {nearby.map((nr) => (
-                      <Link key={nr.id} href={`/rink/${nr.slug}`} className="block group border rounded-lg p-4 hover:border-primary/40 transition-colors">
-                        <div className="font-medium group-hover:text-primary transition-colors">
-                          {nr.name}
-                        </div>
-                        <p className="text-sm text-muted-foreground mt-1">
-                          {nr.address.street} · {nr.facility.indoor ? "Indoor" : "Outdoor"} · {nr.facility.seasonality}
-                        </p>
-                      </Link>
-                    ))}
-                  </div>
-                  <div className="mt-4">
-                    <Link
-                      href={`/city/${slugify(rink.address.state)}/${slugify(rink.address.city)}`}
-                      className="text-sm text-primary hover:underline font-medium inline-flex items-center gap-1"
-                    >
-                      See all {rink.address.city} rinks
-                      <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-                    </Link>
-                  </div>
-                </section>
-              );
-            })()}
-
             <LastVerified date={rink.last_verified || "2026-05-23"} />
           </div>
 
@@ -733,8 +700,16 @@ export default function RinkDetail() {
 
              {rink.nearby_rinks && rink.nearby_rinks.length > 0 && (
                <NearbyRinks
-                 title={`Other ${rink.address.city} rinks`}
-                 rinks={rink.nearby_rinks}
+                 title="Other rinks nearby"
+                 rinks={rink.nearby_rinks
+                   .map((slug) => getRinkBySlug(slug))
+                   .filter((nearby): nearby is NonNullable<typeof nearby> => Boolean(nearby))
+                   .map((nearby) => ({
+                     slug: nearby.slug,
+                     name: nearby.name,
+                     city: nearby.address.city,
+                     state: nearby.address.state,
+                   }))}
                  seeAllLink={{ href: `/city/${slugify(rink.address.state)}/${slugify(rink.address.city)}`, label: `See all ${rink.address.city} rinks` }}
                />
              )}

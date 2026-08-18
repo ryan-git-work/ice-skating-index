@@ -57,6 +57,14 @@ const { render } = await import(ssrPath);
 const clientDist = path.resolve(__dirname, "..", "dist", "public");
 const indexHtml = await fs.readFile(path.resolve(clientDist, "index.html"), "utf-8");
 const HTML_MARKER = '<div id="root"></div>';
+const SITE_URL = "https://iceskatingindex.com";
+const DEFAULT_OG_IMAGE = `${SITE_URL}/opengraph.jpg`;
+
+const cleanTemplate = indexHtml
+  .replace(/\s*<title>[\s\S]*?<\/title>/gi, "")
+  .replace(/\s*<meta\s+name="description"[^>]*>/gi, "")
+  .replace(/\s*<meta\s+property="og:[^"]+"[^>]*>/gi, "")
+  .replace(/\s*<meta\s+name="twitter:(?:card|title|description|image)"[^>]*>/gi, "");
 
 let rendered = 0;
 let failed = 0;
@@ -66,18 +74,29 @@ for (const route of routes) {
     const { html: bodyHtml, head } = render(route);
 
     let headContent = "";
+    const canonicalUrl = head?.canonicalPath
+      ? head.canonicalPath === "/"
+        ? `${SITE_URL}/`
+        : `${SITE_URL}${head.canonicalPath}`
+      : `${SITE_URL}${route === "/" ? "/" : route}`;
+    const socialTitle = head?.ogTitle || head?.title || "Ice Skating Index";
+    const socialDescription = head?.ogDescription || head?.description || "Find ice skating rinks, schedules, and skating guides.";
+    const socialImage = head?.image || DEFAULT_OG_IMAGE;
     if (head?.title) {
       headContent += `<title>${escapeHtml(head.title)}</title>\n`;
     }
     if (head?.description) {
       headContent += `<meta name="description" content="${escapeHtml(head.description)}">\n`;
     }
-    if (head?.ogTitle) {
-      headContent += `<meta property="og:title" content="${escapeHtml(head.ogTitle)}">\n`;
-    }
-    if (head?.ogDescription) {
-      headContent += `<meta property="og:description" content="${escapeHtml(head.ogDescription)}">\n`;
-    }
+    headContent += `<meta property="og:title" content="${escapeHtml(socialTitle)}">\n`;
+    headContent += `<meta property="og:description" content="${escapeHtml(socialDescription)}">\n`;
+    headContent += `<meta property="og:type" content="website">\n`;
+    headContent += `<meta property="og:url" content="${escapeHtml(canonicalUrl)}">\n`;
+    headContent += `<meta property="og:image" content="${escapeHtml(socialImage)}">\n`;
+    headContent += `<meta name="twitter:card" content="summary_large_image">\n`;
+    headContent += `<meta name="twitter:title" content="${escapeHtml(socialTitle)}">\n`;
+    headContent += `<meta name="twitter:description" content="${escapeHtml(socialDescription)}">\n`;
+    headContent += `<meta name="twitter:image" content="${escapeHtml(socialImage)}">\n`;
     if (head?.canonicalPath) {
       const href = head.canonicalPath === "/"
         ? "https://iceskatingindex.com/"
@@ -93,7 +112,7 @@ for (const route of routes) {
         .join("\n") + "\n";
     }
 
-    const finalHtml = indexHtml
+    const finalHtml = cleanTemplate
       .replace("</head>", headContent + "</head>")
       .replace(HTML_MARKER, `<div id="root">${bodyHtml}</div>`);
 
@@ -111,7 +130,7 @@ console.log(`Pre-rendered ${rendered}/${routes.length} pages (${failed} failed)`
 if (failed > 0) process.exit(1);
 
 const { html: notFoundBody, head: notFoundHead } = render("/__not-found__");
-const notFoundHtml = indexHtml
+const notFoundHtml = cleanTemplate
   .replace(
     "</head>",
     `<title>${escapeHtml(notFoundHead?.title || "Page Not Found | Ice Skating Index")}</title>\n` +

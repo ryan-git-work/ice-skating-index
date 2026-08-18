@@ -108,11 +108,7 @@ export const RinkSchema = z.object({
   seasonal_notes: z.string().optional(),
   operating_status: z.enum(["open", "closed", "coming_soon"]).optional(),
   subheader: z.string().optional(),
-  nearby_rinks: z.array(z.object({
-    slug: z.string(),
-    name: z.string(),
-    tagline: z.string(),
-  })).optional(),
+  nearby_rinks: z.array(z.string()).optional(),
   description: z.string().optional(),
   editorial_markdown: z.string().optional(),
   what_to_know: z.array(z.string()).optional(),
@@ -201,16 +197,4 @@ export function isUnknown(value: boolean | string | undefined): boolean {
 // Get rinks with freestyle available
 export function getFreestyleRinks() {
   return rinks.filter((r) => isTruthy(r.freestyle.available));
-}
-
-// Get nearby rinks in the same city (excluding the given rink)
-export function getNearbyRinks(currentRink: Rink, limit = 4): Rink[] {
-  return rinks
-    .filter(
-      (r) =>
-        r.id !== currentRink.id &&
-        r.address.city.toLowerCase() === currentRink.address.city.toLowerCase() &&
-        r.address.state.toLowerCase() === currentRink.address.state.toLowerCase()
-    )
-    .slice(0, limit);
 }

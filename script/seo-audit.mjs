@@ -278,7 +278,17 @@ function staticGates() {
         `Every page has at least ${MIN_CONTEXTUAL_INBOUND} contextual inbound links outside /blog.`);
 
   /* --- rink pages must receive rink-to-rink links --- */
-  const rinkRoutes = pages.filter((p) => p.route.startsWith("/rink/")).map((p) => p.route);
+  const rinkDataPath = join(ROOT, "client", "src", "data", "rinks.json");
+  const rinkDataRaw = existsSync(rinkDataPath) ? JSON.parse(readFileSync(rinkDataPath, "utf8")) : [];
+  const rinkData = Array.isArray(rinkDataRaw) ? rinkDataRaw : rinkDataRaw.rinks || [];
+  const nonOperatingRoutes = new Set(
+    rinkData
+      .filter((rink) => ["closed", "coming_soon"].includes(String(rink.operating_status || "").toLowerCase()))
+      .map((rink) => `/rink/${rink.slug}`),
+  );
+  const rinkRoutes = pages
+    .filter((p) => p.route.startsWith("/rink/") && !nonOperatingRoutes.has(p.route))
+    .map((p) => p.route);
   const rinkToRink = new Map(rinkRoutes.map((r) => [r, 0]));
   for (const p of pages.filter((x) => x.route.startsWith("/rink/"))) {
     for (const t of new Set((p.html.match(/href="(\/rink\/[^"]+)"/g) || [])
@@ -303,7 +313,7 @@ function staticGates() {
     : pass("content.thin", "No pages under 200 words.");
 
   /* --- non-operating rinks must be noindex --- */
-  const rinksPath = join(ROOT, "client", "src", "data", "rinks.json");
+  const rinksPath = rinkDataPath;
   if (existsSync(rinksPath)) {
     const raw = JSON.parse(readFileSync(rinksPath, "utf8"));
     const rinks = Array.isArray(raw) ? raw : raw.rinks || [];

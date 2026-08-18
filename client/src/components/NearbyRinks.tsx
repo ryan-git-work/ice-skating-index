@@ -4,7 +4,8 @@ import { MapPin, ArrowRight } from "lucide-react";
 interface NearbyRink {
   slug: string;
   name: string;
-  tagline: string;
+  city: string;
+  state: string;
 }
 
 interface NearbyRinksProps {
@@ -31,7 +32,7 @@ export function NearbyRinks({ title = "Other rinks nearby", rinks, seeAllLink }:
                 {rink.name}
                 <ArrowRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>
-              <p className="text-sm text-muted-foreground">{rink.tagline}</p>
+              <p className="text-sm text-muted-foreground">{rink.city}, {rink.state}</p>
             </Link>
           </li>
         ))}
