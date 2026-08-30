@@ -31,6 +31,7 @@ const allowlist = [
 
 async function buildAll() {
   await rm("dist", { recursive: true, force: true });
+  const buildDate = new Date().toISOString().slice(0, 10);
 
   console.log("pre-rendering static pages...");
   await import("./prerender.ts");
@@ -51,6 +52,7 @@ async function buildAll() {
     outfile: "dist/index.cjs",
     define: {
       "process.env.NODE_ENV": '"production"',
+      "process.env.BUILD_DATE": JSON.stringify(buildDate),
     },
     minify: true,
     external: externals,

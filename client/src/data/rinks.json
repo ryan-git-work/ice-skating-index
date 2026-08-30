@@ -1727,6 +1727,7 @@
     "image": "/images/skating/ice_img_12.png",
     "editorial_markdown": "## What to expect at Gary Force Acura Ice Arena\n\nGary Force Acura Ice Arena is Williamson County's full-size indoor rink, a single NHL-size sheet on Haley Industrial Drive in Nolensville that has served the communities south of Nashville since 2021. The rink runs public skates, stick and puck, and freestyle sessions through online registration and serves as home ice for the Nashville Warriors Youth Hockey Club. It also supports adult-league activity and regional hockey and figure-skating events.\n\nThe official website is the hub for everything here. Rather than publishing a static timetable, the rink routes visitors to a Schedule link with online registration for each session type. That registration-first model has a real upside for planning: when you book a spot, you know the session is happening and you know you are on it.\n\nA fair warning for first-timers: the official site keeps some details close. Rental skates, sharpening, lockers, and most pricing are not published on the main page. What is confirmed is the full-size sheet, the dryland training space, the Nashville Warriors connection, and online registration for the three main drop-in session types. Use GaryForceAcuraIceArena@gmail.com for questions. These details were last verified June 27, 2026.\n\n## Public skating at Gary Force Acura Ice Arena: cost, sessions, and what to know\n\nPublic skates here run through online registration, so your first stop is the Schedule link on the official site. Look for entries labeled \"Public Skate,\" confirm the week you are viewing, and check whether your session requires booking before you arrive. If the schedule opens in a separate registration system, watch for a filter that separates public skating from stick and puck and freestyle, since all three flow through the same tool.\n\nPricing is not listed in the official site text, so confirm the cost inside the schedule or registration flow before you commit a group to it.\n\nRental skates are the other open question, because availability is not confirmed on the site. If you have skates that fit well, bring them; your session gets more predictable the moment your feet are in familiar boots. If you are counting on rentals, email or call first, and ask which style is on the shelf, because figure skates and hockey skates feel meaningfully different under a beginner. Either way, skip thick cotton socks if your feet tend to sweat, and look for a snug fit that keeps your heel from lifting when you bend your knees.\n\n## Freestyle and figure skating ice\n\nFreestyle ice is confirmed here, and that matters more than it might sound, because dedicated figure skating practice time is not common this far south of Nashville. These sessions are built for figure skaters working jumps, spins, and footwork, and for coaches running structured practice with students, away from the traffic of a public skate.\n\nFinding times is the same drill as everything else at this rink. Open the official site, use the Schedule link, and scan for sessions labeled \"Freestyle,\" \"Figure Freestyle,\" \"Freestyle Ice,\" or \"Figure Session.\" Make sure you are viewing the correct week, and use any activity filter to separate freestyle from public and stick-and-puck listings. Session pricing and rules live inside the registration flow, so confirm both there before you book.\n\nIf freestyle ice is new to you, a few etiquette basics keep the session smooth. Treat it as practice time, not free skate, and stay out of jump lanes rather than cutting through them. Ask before playing music, and keep the volume and track length considerate of others. And if you are not sure where to stand, watch the flow for a minute and follow the lead of the experienced skaters; the pattern reveals itself fast.\n\n## Learn to skate programs\n\nA named learn-to-skate program is not confirmed in the official site text, so beginners should ask directly rather than assume either way. The rink hosts figure skating alongside its hockey programming, which often means an entry path exists even when it is not advertised on the front page. Email info@garyforceacuraicearena.com or call 231-290-0816 and ask what the current beginner option is, for kids or adults.\n\nIf you need a structured, badge-level learn-to-skate program right now, the larger year-round rinks in the Nashville area run them in regular session blocks, and that may be the faster path for a true first-timer. Still, ask here first: home ice ten minutes away beats a better program forty minutes away, especially for a young skater building a weekly habit.\n\n## Hockey, stick and puck, and open ice\n\nHockey is the backbone of this building. The arena is home to the Nashville Warriors Youth Hockey Club and hosts hockey events on its NHL-size sheet, which gives youth players the experience of practicing on the same dimensions the pros play.\n\nFor drop-in players, stick and puck is confirmed and registered online, the same as public skating. Check the schedule for dates, book your spot, and read the listing for equipment rules before you go, since requirements vary by rink and by session. Open hockey for adults is not confirmed in the site text, so scan the schedule for that label or ask when you call. And since sharpening is not confirmed on-site, get your edges done before game day rather than counting on the front desk.\n\n## Getting there: parking, location, and amenities\n\nThe arena sits at 7235 Haley Industrial Drive in Nolensville, in an industrial-drive setting rather than a retail strip, so trust your map app over your instincts on the first trip. Nolensville puts the rink within easy reach of the fast-growing communities south of Nashville, which is exactly the population a rink like this serves.\n\nThe official site does not publish details on parking, lockers, concessions, a pro shop, or spectator seating, so plan a first visit with self-sufficiency in mind. Arrive dressed to skate, carry your gear bag in with you, and bring whatever food and drink your crew needs rather than assuming a snack bar. A quick email ahead of time will fill in any of those blanks, and one visit will teach you the rest.\n\n## A note for skating parents\n\nPack the bag like nobody is going to help you, because the amenity list here is unpublished and you should plan for a bare-bones lobby until you learn otherwise. That means a thermos of coffee, snacks, a blanket or heavy layer, and a phone charger. Rink cold is its own category: it settles in around the forty-minute mark, right when your skater is hitting their stride, and the parents who come back week after week are the ones who dressed for it the first time.\n\nThe registration model works in your favor here. When sessions are booked online, you know the start time, you know your kid has a spot, and you are not gambling a drive on a calendar that changed while you were in the car.\n\nWhat you get in exchange for the spartan setup is real: an NHL-size sheet close to home, and a front-row seat to the slow accumulation of small victories, the first crossover, the first stop that sprays ice, the first time they wave you off because they want to try it alone. Bring the blanket. Stay for that.",
     "nearby_rinks": [
+      "the-hockey-lab-franklin-tn",
       "ford-ice-center-antioch-antioch-tn",
       "smashville-ice-rink-at-zoolumination-nashville-tn",
       "centennial-sportsplex-nashville-tn",
@@ -17235,6 +17236,208 @@
     ]
   },
   {
+    "id": "tn-franklin-the-hockey-lab-franklin-tn",
+    "slug": "the-hockey-lab-franklin-tn",
+    "name": "The Hockey Lab",
+    "alternate_names": [
+      "The Lab"
+    ],
+    "category": "Ice Hockey Training Facility",
+    "operator": null,
+    "address": {
+      "street": "547 Mount Hope St",
+      "city": "Franklin",
+      "state": "TN",
+      "postal_code": "37064",
+      "country": "US"
+    },
+    "geo": {
+      "latitude": null,
+      "longitude": null
+    },
+    "phone": null,
+    "email": null,
+    "website": "https://www.labhockey.com/home",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=The+Hockey+Lab+547+Mount+Hope+St+Franklin+TN+37064",
+    "social_links": [],
+    "place_ids": {
+      "google_place_id": null,
+      "osm_id": null
+    },
+    "facility": {
+      "indoor": true,
+      "seasonality": "unknown",
+      "number_of_sheets": 1,
+      "sheet_sizes": [
+        "Small-scale training sheet"
+      ]
+    },
+    "schedule_links": {
+      "public_calendar_url": null,
+      "freestyle_calendar_url": null,
+      "hockey_calendar_url": null,
+      "lessons_url": null
+    },
+    "offerings": {
+      "public_skating": "unknown",
+      "learn_to_skate": "unknown",
+      "figure_skating": "unknown",
+      "hockey": true,
+      "open_hockey": "unknown",
+      "stick_and_puck": "unknown"
+    },
+    "pricing": {
+      "public_skate": {
+        "adult": null,
+        "youth": null
+      },
+      "spectators": null,
+      "notes": "No current public-skating schedule or price was verified. Confirm current access directly with the facility before visiting."
+    },
+    "rentals": {
+      "available": "unknown",
+      "included_with_admission": "unknown",
+      "size_range_min": null,
+      "size_range_max": null,
+      "fit_tips": [],
+      "recommendations": [],
+      "notes": "Current rental-skate availability was not verified."
+    },
+    "sharpening": {
+      "available": "unknown",
+      "turnaround": null,
+      "pricing_base": null,
+      "pricing_rush": null,
+      "add_ons": [],
+      "notes": "Current skate-sharpening service was not verified.",
+      "info_url": null
+    },
+    "freestyle": {
+      "available": "unknown",
+      "labels_to_search_for": [],
+      "who_its_for": [],
+      "how_to_find_times": null,
+      "cost_notes": null,
+      "etiquette_tips": [],
+      "notes": "The sources reviewed describe a hockey training facility and do not confirm figure-skating freestyle sessions."
+    },
+    "amenities": {
+      "lockers": "unknown",
+      "spectator_seating": "unknown",
+      "concessions": "unknown",
+      "pro_shop": "unknown",
+      "skate_aids": "unknown"
+    },
+    "audiences": [
+      "hockey players",
+      "hockey families"
+    ],
+    "tags": [
+      "franklin-tn",
+      "indoor",
+      "small-sheet",
+      "hockey-training"
+    ],
+    "description": "The Hockey Lab is an indoor hockey training facility at 547 Mount Hope St in Franklin, Tennessee. Nashville Jr. Predators materials describe shooting lanes, elite off-ice training space, and one small-scale ice sheet used for player development. Current public access, schedules, pricing, and non-hockey programs were not verified, so confirm directly before visiting.",
+    "what_to_know": [
+      "The Hockey Lab is at 547 Mount Hope St in Franklin, Tennessee.",
+      "The facility has one small-scale ice sheet designed for hockey training rather than full-rink games.",
+      "Nashville Jr. Predators materials also describe shooting lanes and elite off-ice training space.",
+      "Current public-skating access, hours, pricing, and rental availability were not verified.",
+      "Confirm the current program and access details directly before making the trip."
+    ],
+    "faq": [
+      {
+        "q": "Where is The Hockey Lab in Franklin?",
+        "a": "The Hockey Lab is at 547 Mount Hope St, Franklin, Tennessee 37064."
+      },
+      {
+        "q": "Is The Hockey Lab a full-size ice rink?",
+        "a": "No. Nashville Jr. Predators materials describe one small-scale ice sheet built for player development and hockey training."
+      },
+      {
+        "q": "Can the public skate at The Hockey Lab?",
+        "a": "Current public-skating access was not verified. The facility has offered limited public sessions in the past, but confirm directly before visiting."
+      },
+      {
+        "q": "Does The Hockey Lab publish a current schedule or prices?",
+        "a": "No current schedule or price was verified for this listing. Use the facility website or contact the facility before planning a visit."
+      }
+    ],
+    "seo": {
+      "primary_keywords": [
+        "The Hockey Lab Franklin TN",
+        "Franklin TN hockey training rink"
+      ],
+      "secondary_keywords": [
+        "ice rink Franklin TN",
+        "small ice rink Franklin Tennessee",
+        "hockey training Franklin TN"
+      ],
+      "meta_title": "The Hockey Lab, Franklin TN Hockey Training Rink",
+      "meta_description": "The Hockey Lab in Franklin, TN has a small-scale ice sheet, shooting lanes, and off-ice hockey training space. Confirm current programs before visiting.",
+      "snippet": "The Hockey Lab is a small-sheet hockey training facility at 547 Mount Hope St in Franklin, Tennessee.",
+      "short_description": "The Hockey Lab is a small-sheet hockey training facility at 547 Mount Hope St in Franklin, Tennessee.",
+      "long_description": "The Hockey Lab in Franklin has one small-scale indoor ice sheet, shooting lanes, and off-ice training space for hockey development. Current public access, schedules, prices, and non-hockey programs were not verified.",
+      "helpful_blurbs": [
+        "This is a hockey training facility with a small ice sheet, not a standard full-size public rink.",
+        "Confirm current access and program details directly before visiting.",
+        "For full-size public skating nearby, compare the Nolensville and Nashville-area rink listings."
+      ],
+      "what_to_know": [
+        "The verified address is 547 Mount Hope St in Franklin.",
+        "The facility has one small-scale ice sheet plus shooting lanes and off-ice training space.",
+        "Current public-skating access and prices were not verified."
+      ]
+    },
+    "sources": [
+      "https://www.jrpredators.com/wp-content/uploads/2024/04/NJP-Prospectus-2024-25.pdf",
+      "https://www.mysportjourney.com/locations",
+      "https://wpln.org/post/desperate-for-ice-time-middle-tennessee-hockey-players-go-to-extremes/"
+    ],
+    "evidence": [
+      {
+        "field": "address",
+        "url": "https://www.jrpredators.com/wp-content/uploads/2024/04/NJP-Prospectus-2024-25.pdf",
+        "notes": "The Nashville Jr. Predators 2024-25 prospectus lists The Lab at 547 Mt Hope St, Franklin, TN 37064."
+      },
+      {
+        "field": "facility.number_of_sheets",
+        "url": "https://www.jrpredators.com/wp-content/uploads/2024/04/NJP-Prospectus-2024-25.pdf",
+        "notes": "The prospectus describes a single small-scale ice sheet."
+      },
+      {
+        "field": "facility.sheet_sizes",
+        "url": "https://www.jrpredators.com/wp-content/uploads/2024/04/NJP-Prospectus-2024-25.pdf",
+        "notes": "The prospectus identifies the ice as a small-scale sheet used for player development."
+      },
+      {
+        "field": "offerings.hockey",
+        "url": "https://www.jrpredators.com/wp-content/uploads/2024/04/NJP-Prospectus-2024-25.pdf",
+        "notes": "The prospectus says 8U development, goalie clinics, and AA practices use the facility."
+      },
+      {
+        "field": "website",
+        "url": "https://www.mysportjourney.com/locations",
+        "notes": "The current location listing links The Hockey Lab in Franklin to labhockey.com/home."
+      },
+      {
+        "field": "facility.indoor",
+        "url": "https://wpln.org/post/desperate-for-ice-time-middle-tennessee-hockey-players-go-to-extremes/",
+        "notes": "WPLN profiles the refrigerated training rink inside a Franklin warehouse."
+      }
+    ],
+    "last_verified": "2026-08-30",
+    "image": null,
+    "nearby_rinks": [
+      "gary-force-acura-ice-arena-nolensville-tn",
+      "ford-ice-center-antioch-antioch-tn",
+      "ford-ice-center-bellevue-nashville-tn",
+      "centennial-sportsplex-nashville-tn",
+      "fountains-at-gateway-murfreesboro-tn"
+    ]
+  },
+  {
     "id": "tn-murfreesboro-fountains-at-gateway-murfreesboro-tn",
     "slug": "fountains-at-gateway-murfreesboro-tn",
     "name": "Fountains at Gateway",
@@ -17287,7 +17490,7 @@
         "child": 12
       },
       "spectators": null,
-      "notes": "$17 ages 13+, $12 ages 4-12 (includes rental and 60-min session). Seasonal outdoor rink. 2025-26 season ran November 21, 2025 through February 1, 2026. Reopens November 2026."
+      "notes": "Most recently published: $17 ages 13+ and $12 ages 4-12, including rental and a 60-minute session. Reopens November 2026 for the 2026-27 season; confirm current dates, prices, and session details before visiting."
     },
     "rentals": {
       "available": true,
@@ -17333,12 +17536,12 @@
     ],
     "seasonal": true,
     "seasonal_notes": "CURRENTLY CLOSED. Reopens November 2026.",
-    "description": "A seasonal outdoor rink in Murfreesboro. The 2025-26 season ran November 21, 2025 through February 1, 2026. The closest seasonal ice option for Murfreesboro families — there is no year-round ice in Murfreesboro proper. Sessions are 60 minutes with rental included.",
+    "description": "A seasonal outdoor rink in Murfreesboro that reopens November 2026 for the 2026-27 season. It is the closest seasonal ice option for Murfreesboro families; there is no year-round ice in Murfreesboro proper. Published sessions have been 60 minutes with rental included, but confirm current details before visiting.",
     "sources": [
       "Fountains at Gateway"
     ],
     "last_verified": "2026-05-23",
-    "editorial_markdown": "## What to expect at Fountains at Gateway\n\nFountains at Gateway is a seasonal outdoor ice rink in Murfreesboro, Tennessee, a single sheet that operates only during the winter months and is built for families, kids, and first-time skaters. The rink is currently closed; the 2025-26 season ran from November 21, 2025 through February 1, 2026, and the rink is scheduled to reopen in November 2026.\n\nThat seasonal rhythm is the whole identity of this place, so set expectations accordingly. This is not a training facility with freestyle ice and league hockey. It is a winter tradition inside the Fountains at Gateway development: an hour on outdoor ice with rental skates included, the kind of skating that fills a camera roll rather than a competition schedule.\n\nIt also fills a real gap. There is no year-round ice in Murfreesboro proper, which makes this the closest seasonal option for Rutherford County families who want skating without a drive toward Nashville. Sessions run in 60-minute blocks with skate rental included in admission, a clean, simple format that works especially well with young kids. The details here were last verified in May 2026; confirm dates and hours once the rink announces its 2026-27 season.\n\n## Public skating at Fountains at Gateway: cost, sessions, and what to know\n\nPublic skating is the entire menu here, and the format keeps things simple: you buy into a 60-minute session, skate rental included, and the clock does the crowd management for you. The rink's published rates list admission at $17 for ages 13 and up and $12 for ages 4 to 12, with the rental and the hour of ice folded into that price. No separate rental counter math, no guessing what a family visit will really cost.\n\nBecause the rink is seasonal and currently closed, the practical move is to watch for the 2026-27 announcement in the fall. Last season opened on November 21 and ran through February 1, so plan on a late-November start as the likely pattern, and expect evenings and weekends to be the busy sessions once the rink is open. Exact dates, hours, and any changes to the session format will come from the rink itself, so verify before you make it the centerpiece of a holiday plan.\n\nOne outdoor-rink reality worth knowing: weather shapes the skate. A cold, dry night gives you firm, fast ice, while a warm afternoon gives you softer ice and slower laps. Neither ruins the hour, but if you have a choice, the colder session is usually the better one.\n\n## Freestyle and figure skating ice\n\nThere is no freestyle or figure skating practice ice at Fountains at Gateway. A seasonal outdoor sheet running 60-minute public sessions has no room in its model for dedicated training time, and the rink does not offer figure skating programming of any kind. If your skater is working on jumps, spins, or test elements, this rink is the fun night out, not the practice plan.\n\nFor real freestyle ice, you will need a year-round indoor facility, and the closest options sit in the greater Nashville area, where rinks run dedicated freestyle sessions on their published calendars. Look for session labels like \"Freestyle\" or \"Figure Freestyle\" on those rinks' schedules. The drive is the tradeoff Murfreesboro figure skating families have always had to make, at least until someone builds year-round ice in town.\n\n## Learn to skate programs\n\nNo learn-to-skate program runs here either; the offering is the open public session, full stop. That said, do not underrate what a 60-minute session with included rentals can do for a true beginner. It is a low-cost, low-commitment way to find out whether the interest is real before you invest in a structured program, and for a four-year-old, one happy hour on the ice is the entire curriculum anyway.\n\nWhen your skater is ready for actual instruction, with group lessons and progression levels, the year-round indoor rinks in the Nashville area run learn-to-skate programs in multi-week blocks throughout the year. Treat Fountains at Gateway as the spark and the indoor rinks as the next step.\n\n## Hockey, stick and puck, and open ice\n\nThere is no hockey at Fountains at Gateway: no leagues, no stick and puck, no open hockey, and no open practice ice. Sticks and pucks do not belong on a seasonal public sheet packed with first-timers, and the rink's model does not pretend otherwise.\n\nHockey households in Murfreesboro should point themselves at the year-round indoor rinks in the greater Nashville region, where league play, drop-in sessions, and stick-and-puck time all live on published schedules. For the hockey kid, this rink still has one use worth naming: holiday-season touch time on skates with the family along, no whistle, no scoreboard, just laps.\n\n## Getting there: parking, location, and amenities\n\nThe rink sits within the Fountains at Gateway development in Murfreesboro's 37129 zip code, on the Gateway side of town. The listed address is the development itself rather than a numbered storefront, so navigate to Fountains at Gateway and follow the signage once you arrive. Because the rink operates inside a commercial development, parking means the development's lots rather than a dedicated rink lot, and busy holiday evenings will feel like busy holiday evenings.\n\nAmenity details for the rink itself (lockers, spectator seating, concessions) are not published. The practical read: treat it like any outdoor seasonal attraction. Carry what you need, expect to keep your shoes with you or nearby while you skate unless told otherwise, and plan around the development's surroundings rather than rink-specific facilities. An hour is short enough that the simplicity rarely matters.\n\n## A note for skating parents\n\nOutdoor cold in a Tennessee winter is a different animal than rink-lobby cold: it is damp, it moves, and it finds the gap between glove and sleeve. Dress your skater in layers they can shed, because skating generates heat fast, and dress yourself warmer than feels reasonable, because standing at a rail for an hour generates none. Gloves are non-negotiable for kids; the first fall on outdoor ice is a wet one.\n\nThe 60-minute session format is quietly the most parent-friendly thing about this place. There is a defined start and a defined end, which means no negotiating an exit with a seven-year-old who wants one more lap, and no wondering whether you have gotten your money's worth. You stand at the rail, close enough to see their face the whole time, with no glass between you.\n\nAnd the texture of it is different out here. Cold air, dusk coming early, your kid wobbling past the rail with their breath showing. Most of the skating in this directory is about the work: lessons, freestyle, leagues. This rink is about the memory. Take the picture, then put the phone away and watch the next lap with your own eyes.",
+    "editorial_markdown": "## What to expect at Fountains at Gateway\n\nFountains at Gateway is a seasonal outdoor ice rink in Murfreesboro, Tennessee, a single sheet that operates only during the winter months and is built for families, kids, and first-time skaters. The rink is currently closed and is scheduled to reopen in November 2026 for the 2026-27 season.\n\nThat seasonal rhythm is the whole identity of this place, so set expectations accordingly. This is not a training facility with freestyle ice and league hockey. It is a winter tradition inside the Fountains at Gateway development: an hour on outdoor ice with rental skates included, the kind of skating that fills a camera roll rather than a competition schedule.\n\nIt also fills a real gap. There is no year-round ice in Murfreesboro proper, which makes this the closest seasonal option for Rutherford County families who want skating without a drive toward Nashville. Published sessions have run in 60-minute blocks with skate rental included in admission, a clean, simple format that works especially well with young kids. The details here were last verified in May 2026; confirm the 2026-27 dates, hours, prices, and session format when the rink announces them.\n\n## Public skating at Fountains at Gateway: cost, sessions, and what to know\n\nPublic skating is the entire menu here, and the format keeps things simple: you buy into a timed session, skate rental included, and the clock does the crowd management for you. The rink's most recently published rates listed admission at $17 for ages 13 and up and $12 for ages 4 to 12, with the rental and an hour of ice folded into that price. Confirm the current price and session length when the new season opens.\n\nBecause the rink is seasonal and currently closed, the practical move is to watch for the 2026-27 announcement before the planned November 2026 reopening. Exact dates, hours, and any changes to the session format will come from the rink itself, so verify before you make it the centerpiece of a holiday plan.\n\nOne outdoor-rink reality worth knowing: weather shapes the skate. A cold, dry night gives you firm, fast ice, while a warm afternoon gives you softer ice and slower laps. Neither ruins the hour, but if you have a choice, the colder session is usually the better one.\n\n## Freestyle and figure skating ice\n\nThere is no freestyle or figure skating practice ice at Fountains at Gateway. A seasonal outdoor sheet running public sessions has no room in its model for dedicated training time, and the rink does not offer figure skating programming of any kind. If your skater is working on jumps, spins, or test elements, this rink is the fun night out, not the practice plan.\n\nFor real freestyle ice, you will need a year-round indoor facility, and the closest options sit in the greater Nashville area, where rinks run dedicated freestyle sessions on their published calendars. Look for session labels like \"Freestyle\" or \"Figure Freestyle\" on those rinks' schedules. The drive is the tradeoff Murfreesboro figure skating families have always had to make, at least until someone builds year-round ice in town.\n\n## Learn to skate programs\n\nNo learn-to-skate program runs here either; the offering is the open public session, full stop. That said, do not underrate what a rental-included session can do for a true beginner. It is a low-cost, low-commitment way to find out whether the interest is real before you invest in a structured program, and for a four-year-old, one happy hour on the ice is the entire curriculum anyway.\n\nWhen your skater is ready for actual instruction, with group lessons and progression levels, the year-round indoor rinks in the Nashville area run learn-to-skate programs in multi-week blocks throughout the year. Treat Fountains at Gateway as the spark and the indoor rinks as the next step.\n\n## Hockey, stick and puck, and open ice\n\nThere is no hockey at Fountains at Gateway: no leagues, no stick and puck, no open hockey, and no open practice ice. Sticks and pucks do not belong on a seasonal public sheet packed with first-timers, and the rink's model does not pretend otherwise.\n\nHockey households in Murfreesboro should point themselves at the year-round indoor rinks in the greater Nashville region, where league play, drop-in sessions, and stick-and-puck time all live on published schedules. For the hockey kid, this rink still has one use worth naming: holiday-season touch time on skates with the family along, no whistle, no scoreboard, just laps.\n\n## Getting there: parking, location, and amenities\n\nThe rink sits within the Fountains at Gateway development in Murfreesboro's 37129 zip code, on the Gateway side of town. The listed address is the development itself rather than a numbered storefront, so navigate to Fountains at Gateway and follow the signage once you arrive. Because the rink operates inside a commercial development, parking means the development's lots rather than a dedicated rink lot, and busy holiday evenings will feel like busy holiday evenings.\n\nAmenity details for the rink itself (lockers, spectator seating, concessions) are not published. The practical read: treat it like any outdoor seasonal attraction. Carry what you need, expect to keep your shoes with you or nearby while you skate unless told otherwise, and plan around the development's surroundings rather than rink-specific facilities. An hour is short enough that the simplicity rarely matters.\n\n## A note for skating parents\n\nOutdoor cold in a Tennessee winter is a different animal than rink-lobby cold: it is damp, it moves, and it finds the gap between glove and sleeve. Dress your skater in layers they can shed, because skating generates heat fast, and dress yourself warmer than feels reasonable, because standing at a rail for an hour generates none. Gloves are non-negotiable for kids; the first fall on outdoor ice is a wet one.\n\nThe timed-session format is quietly the most parent-friendly thing about this place. There is a defined start and a defined end, which means no negotiating an exit with a seven-year-old who wants one more lap, and no wondering whether you have gotten your money's worth. You stand at the rail, close enough to see their face the whole time, with no glass between you.\n\nAnd the texture of it is different out here. Cold air, dusk coming early, your kid wobbling past the rail with their breath showing. Most of the skating in this directory is about the work: lessons, freestyle, leagues. This rink is about the memory. Take the picture, then put the phone away and watch the next lap with your own eyes.",
     "seo": {
       "primary_keywords": [
         "Fountains at Gateway ice skating",
@@ -17349,12 +17552,12 @@
         "Murfreesboro ice rink",
         "TN ice skating rinks"
       ],
-      "short_description": "A seasonal outdoor rink in Murfreesboro. The 2025-26 season ran November 21, 2025 through February 1, 2026.",
-      "long_description": "A seasonal outdoor rink in Murfreesboro. The 2025-26 season ran November 21, 2025 through February 1, 2026. The closest seasonal ice option for Murfreesboro families — there is no year-round ice in Murfreesboro proper. Sessions are 60 minutes with rental included.",
+      "short_description": "A seasonal outdoor rink in Murfreesboro that reopens November 2026 for the 2026-27 season.",
+      "long_description": "A seasonal outdoor rink in Murfreesboro that reopens November 2026 for the 2026-27 season. It is the closest seasonal ice option for Murfreesboro families; confirm current dates, prices, and session details before visiting.",
       "helpful_blurbs": [
-        "A seasonal outdoor rink in Murfreesboro. The 2025-26 season ran November 21, 2025 through February 1, 2026.",
-        "A seasonal outdoor rink in Murfreesboro. The 2025-26 season ran November 21, 2025 through February 1, 2026.",
-        "A seasonal outdoor rink in Murfreesboro. The 2025-26 season ran November 21, 2025 through February 1, 2026."
+        "Fountains at Gateway is scheduled to reopen in November 2026 for the 2026-27 season.",
+        "The rink is Murfreesboro's closest seasonal skating option.",
+        "Confirm current dates, prices, rental details, and session length before visiting."
       ],
       "what_to_know": [],
       "meta_title": "Fountains at Gateway, Murfreesboro Ice Skating",
