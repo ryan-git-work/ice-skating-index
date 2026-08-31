@@ -64,6 +64,14 @@ const metaContent = (html, re) => {
   const m = html.match(re);
   return m ? m[1] : null;
 };
+const decodeHtmlEntities = (value) => value
+  .replace(/&#(\d+);/g, (_, code) => String.fromCodePoint(Number(code)))
+  .replace(/&#x([0-9a-f]+);/gi, (_, code) => String.fromCodePoint(parseInt(code, 16)))
+  .replace(/&quot;/g, '"')
+  .replace(/&apos;/g, "'")
+  .replace(/&amp;/g, "&")
+  .replace(/&lt;/g, "<")
+  .replace(/&gt;/g, ">");
 const textOf = (html) =>
   html
     .replace(/<script[\s\S]*?<\/script>/gi, " ")
@@ -378,7 +386,9 @@ function staticGates() {
       const pg = pages.find((p) => p.route === `/blog/${post.slug}`);
       if (!pg) continue;
       checked++;
-      const served = metaContent(pg.html, /<meta[^>]+name="description"[^>]+content="([^"]*)"/i) || "";
+      const served = decodeHtmlEntities(
+        metaContent(pg.html, /<meta[^>]+name="description"[^>]+content="([^"]*)"/i) || "",
+      );
       if (served.trim().slice(0, 60) !== post.metaDescription.trim().slice(0, 60)) unused++;
     }
     checked && (unused

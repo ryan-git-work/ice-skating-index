@@ -60,13 +60,14 @@ export default function BlogPost() {
     .sort()
     .at(-1);
   const faqItems = renderedInitialContent ? extractFaqItems(renderedInitialContent) : [];
+  const metaDescription = postMeta ? trimExcerpt(postMeta.metaDescription) : "";
 
   const articleSchema = postMeta
     ? {
         "@context": "https://schema.org",
         "@type": "Article",
         headline: postMeta.title,
-        description: postMeta.excerpt,
+        description: metaDescription,
         datePublished: postMeta.publishDate,
         dateModified: modifiedDate,
         author: {
@@ -122,7 +123,7 @@ export default function BlogPost() {
 
   useHead({
     title: postMeta?.title || "Blog Post",
-    description: postMeta ? trimExcerpt(postMeta.excerpt) : "",
+    description: metaDescription,
     canonicalPath: postMeta ? `/blog/${postMeta.slug}` : undefined,
     structuredData: [articleSchema, breadcrumbSchema, faqSchema].filter(Boolean) as object[],
   });
