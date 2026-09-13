@@ -187,14 +187,20 @@ export default function NashvilleCityHub() {
                       <td className="py-3"><span className="inline-flex items-center gap-1 text-green-600"><CheckCircle className="h-3.5 w-3.5" /> Year-round</span></td>
                     </tr>
                     <tr className="border-b border-border/50">
-                      <td className="py-3 pl-4 pr-4"><RinkLink slug={RINK_SLUGS.bellevue}>Ford Ice Center Bellevue</RinkLink></td>
+                      <td className="py-3 pl-4 pr-4">
+                        <RinkLink slug={RINK_SLUGS.bellevue}>Ford Ice Center Bellevue</RinkLink>
+                        <div className="mt-2"><SkateStatusChip slug={RINK_SLUGS.bellevue} /></div>
+                      </td>
                       <td className="py-3 pr-4 text-muted-foreground">Bellevue (west)</td>
                       <td className="py-3 pr-4 text-muted-foreground">$10.98 / $13.73</td>
                       <td className="py-3 pr-4 text-muted-foreground">Online</td>
                       <td className="py-3"><span className="inline-flex items-center gap-1 text-green-600"><CheckCircle className="h-3.5 w-3.5" /> Year-round</span></td>
                     </tr>
                     <tr className="border-b border-border/50">
-                      <td className="py-3 pl-4 pr-4"><RinkLink slug={RINK_SLUGS.antioch}>Ford Ice Center Antioch</RinkLink></td>
+                      <td className="py-3 pl-4 pr-4">
+                        <RinkLink slug={RINK_SLUGS.antioch}>Ford Ice Center Antioch</RinkLink>
+                        <div className="mt-2"><SkateStatusChip slug={RINK_SLUGS.antioch} /></div>
+                      </td>
                       <td className="py-3 pr-4 text-muted-foreground">Antioch (south)</td>
                       <td className="py-3 pr-4 text-muted-foreground">$10.98 / $13.73</td>
                       <td className="py-3 pr-4 text-muted-foreground">Online</td>

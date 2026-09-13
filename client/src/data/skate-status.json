@@ -1,22 +1,22 @@
 {
   "centennial-sportsplex-nashville-tn": {
     "state": "normal",
-    "note": "The regular fall schedule is in effect for August 17 through August 22. Confirm a public session on the official schedule before you go.",
-    "updated": "2026-08-16",
+    "note": "Nashville Skating Academy is on its regular fall ice schedule at Centennial for September 14 through September 19, including Saturday. Confirm a public session on the official schedule before you go.",
+    "updated": "2026-09-13",
     "verified_by": "a local coach",
     "source_url": "https://apps.daysmartrecreation.com/dash/x/"
   },
   "ford-ice-center-bellevue-nashville-tn": {
-    "state": "normal",
-    "note": "The regular fall schedule is in effect for August 17 through August 22. Confirm a public session on the official schedule before you go.",
-    "updated": "2026-08-16",
+    "state": "altered",
+    "note": "For September 14 through September 19, Nashville Skating Academy is on its regular fall ice schedule at Bellevue Monday through Wednesday. A Nashville Predators camp starts on Bellevue ice Thursday, September 17, and the academy's regular ice sessions are altered Thursday and Friday. Confirm a public session on the official schedule before you go.",
+    "updated": "2026-09-13",
     "verified_by": "a local coach",
     "source_url": "https://member.daysmartrecreation.com/#/online/predators/calendar"
   },
   "ford-ice-center-antioch-antioch-tn": {
     "state": "normal",
-    "note": "The regular fall schedule is in effect for August 17 through August 22. Confirm a public session on the official schedule before you go.",
-    "updated": "2026-08-16",
+    "note": "Nashville Skating Academy is on its regular fall ice schedule at Antioch for September 14 through September 19. Confirm a public session on the official schedule before you go.",
+    "updated": "2026-09-13",
     "verified_by": "a local coach",
     "source_url": "https://apps.daysmartrecreation.com/dash/x/"
   }

@@ -183,13 +183,13 @@ export default function RinkDetail() {
   const statusFaqItems = rink && skateStatus
     ? [
         {
-          q: `Is ${rink.name} open for public skating this weekend?`,
+          q: `What is the Nashville Skating Academy ice schedule at ${rink.name}?`,
           a: skateStatus.isStale
             ? "Schedule changes have not been confirmed recently. Check the official schedule before you go."
             : skateStatus.note,
         },
         {
-          q: `Has the ${rink.name} public skating schedule changed?`,
+          q: `Has the academy ice schedule changed at ${rink.name}?`,
           a: skateStatus.isStale
             ? "No recent change report is available. Use the official schedule before making the trip."
             : `${skateStatus.note} This status was updated ${skateStatus.updated}.`,

@@ -19,24 +19,24 @@ const stateStyles: Record<SkateStatusState, {
   pill: string;
 }> = {
   normal: {
-    label: "On schedule",
-    heading: "Public skate is on as scheduled this week",
+    label: "Academy: regular",
+    heading: "Academy ice: regular schedule",
     icon: CheckCircle2,
     shell: "border-emerald-200 bg-emerald-50/80",
     iconShell: "bg-emerald-100 text-emerald-700",
     pill: "border-emerald-200 bg-emerald-100 text-emerald-800",
   },
   altered: {
-    label: "Altered",
-    heading: "Public skate is altered this week",
+    label: "Academy: altered",
+    heading: "Academy ice: schedule changes",
     icon: AlertTriangle,
     shell: "border-amber-200 bg-amber-50/80",
     iconShell: "bg-amber-100 text-amber-700",
     pill: "border-amber-200 bg-amber-100 text-amber-900",
   },
   closed: {
-    label: "Closed",
-    heading: "Public skate is closed for the listed window",
+    label: "Academy: closed",
+    heading: "Academy ice: closed for the listed dates",
     icon: CircleX,
     shell: "border-red-200 bg-red-50/80",
     iconShell: "bg-red-100 text-red-700",
@@ -51,7 +51,7 @@ export function SkateStatus({ slug }: { slug: string }) {
   const style = stateStyles[status.state];
   const Icon = status.isStale ? CalendarClock : style.icon;
   const heading = status.isStale
-    ? "Schedule changes have not been confirmed recently"
+    ? "Academy ice changes have not been confirmed recently"
     : style.heading;
   const note = status.isStale
     ? "Check the official schedule before you go."
@@ -65,7 +65,7 @@ export function SkateStatus({ slug }: { slug: string }) {
         status.isStale ? "border-slate-200 bg-slate-50" : style.shell,
       )}
     >
-      <div className="flex items-start justify-between gap-4">
+      <div className="flex flex-wrap items-start justify-between gap-4">
         <div className="flex items-start gap-3">
           <div className={cn(
             "grid h-10 w-10 flex-none place-items-center rounded-md",
@@ -74,7 +74,7 @@ export function SkateStatus({ slug }: { slug: string }) {
             <Icon className="h-5 w-5" aria-hidden="true" />
           </div>
           <div>
-            <p className="text-xs font-semibold uppercase text-muted-foreground">Skate status</p>
+            <p className="text-xs font-semibold uppercase text-muted-foreground">Academy ice status</p>
             <h2 id={`skate-status-${slug}`} className="mt-1 text-lg font-semibold text-foreground">
               {heading}
             </h2>
