@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { SSR_SCHEMA_ATTRIBUTE } from '@shared/pageHtml';
 
 interface HeadProps {
   title?: string;
@@ -29,6 +30,44 @@ export function clearSsrHeadCapture() {
   ssrHeadCapture = null;
 }
 
+/** Marks the ld+json this hook owns, so it replaces its own scripts instead of stacking them. */
+const CLIENT_SCHEMA_ATTRIBUTE = "data-head-schema";
+
+/**
+ * Schema this application emits, from either side of the render.
+ *
+ * Ownership is explicit on purpose: the hook replaces only the blocks the
+ * prerenderer, the runtime renderer, or a previous pass of this hook put in the
+ * head, and leaves anything else there alone.
+ */
+const OWNED_SCHEMA_SELECTOR =
+  `script[type="application/ld+json"][${SSR_SCHEMA_ATTRIBUTE}],` +
+  `script[type="application/ld+json"][${CLIENT_SCHEMA_ATTRIBUTE}]`;
+
+/**
+ * Replaces the application's ld+json blocks with the current page's schema.
+ *
+ * Server-rendered schema is a snapshot of the instant the HTML was produced. A
+ * tab left open past a status expiry, or a client-side navigation, has to drop
+ * those blocks or the page keeps publishing a claim the visible page no longer
+ * makes. Removing the owned set before appending is what keeps the count at one
+ * copy per schema instead of two.
+ */
+function syncStructuredData(structuredData: object[] | undefined) {
+  const head = document.head;
+  head.querySelectorAll(OWNED_SCHEMA_SELECTOR).forEach((node) => node.remove());
+
+  if (!structuredData?.length) return;
+
+  for (const data of structuredData) {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.setAttribute(CLIENT_SCHEMA_ATTRIBUTE, "");
+    script.textContent = JSON.stringify(data).replace(/</g, "\\u003c");
+    head.appendChild(script);
+  }
+}
+
 export function useHead({ title, description, image, ogTitle, ogDescription, canonicalPath, robots, structuredData }: HeadProps) {
   // Capture for SSR during render phase
   if (isSsrMode) {
@@ -47,6 +86,9 @@ export function useHead({ title, description, image, ogTitle, ogDescription, can
       ...(structuredData !== undefined && { structuredData }),
     };
   }
+
+  // Serialized so re-renders with an equivalent schema array do not churn the DOM.
+  const structuredDataKey = structuredData?.length ? JSON.stringify(structuredData) : "";
 
   useEffect(() => {
     if (title) {
@@ -122,5 +164,8 @@ export function useHead({ title, description, image, ogTitle, ogDescription, can
       }
       robotsTag.setAttribute("content", robots);
     }
-  }, [title, description, image, ogTitle, ogDescription, canonicalPath, robots, structuredData]);
+
+    syncStructuredData(structuredData);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- structuredDataKey stands in for the array
+  }, [title, description, image, ogTitle, ogDescription, canonicalPath, robots, structuredDataKey]);
 }

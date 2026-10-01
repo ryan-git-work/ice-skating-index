@@ -3,6 +3,7 @@ import compression from "compression";
 import path from "path";
 import { registerRoutes } from "./routes";
 import { serveStatic } from "./static";
+import { createSkateStatusSsr } from "./skateStatusSsr";
 import { createServer } from "http";
 
 const app = express();
@@ -81,6 +82,17 @@ app.use((req, res, next) => {
   // setting up all the other routes so the catch-all route
   // doesn't interfere with the other routes
   if (process.env.NODE_ENV === "production") {
+    // Re-render the status-dependent pages per request so a dated academy notice
+    // expires without a rebuild. Everything else is served as built. This throws
+    // on a legacy or damaged build rather than serving pages whose advisory can
+    // no longer expire; the catch below turns that into a refusal to start.
+    const skateStatusSsr = await createSkateStatusSsr({
+      distDir: path.resolve(__dirname),
+      onInfo: (message) => log(message, "skate-status"),
+      onError: (route, error) =>
+        log(`render failed for ${route}, answering 503: ${String(error)}`, "skate-status"),
+    });
+    app.use(skateStatusSsr);
     serveStatic(app);
   } else {
     const { setupVite } = await import("./vite");
@@ -102,4 +114,10 @@ app.use((req, res, next) => {
       log(`serving on port ${port}`);
     },
   );
-})();
+})().catch((error) => {
+  // Startup problems are reported, not absorbed: a half-started server would
+  // serve prerendered pages the status path is meant to keep honest.
+  console.error(error instanceof Error ? error.message : error);
+  if (error instanceof Error && error.stack) console.error(error.stack);
+  process.exit(1);
+});

@@ -1,6 +1,5 @@
 import {
   AlertTriangle,
-  CalendarClock,
   CheckCircle2,
   CircleX,
   ExternalLink,
@@ -8,7 +7,9 @@ import {
 } from "lucide-react";
 import { formatVerifiedDate } from "@/components/LastVerified";
 import { cn } from "@/lib/utils";
-import { getSkateStatus, type SkateStatusState } from "@/lib/skateStatus";
+import { useAsOf } from "@/lib/asOf";
+import { type SkateStatusState } from "@/lib/skateStatus";
+import { getSkateStatus } from "@/lib/skateStatusData";
 
 const stateStyles: Record<SkateStatusState, {
   label: string;
@@ -44,32 +45,30 @@ const stateStyles: Record<SkateStatusState, {
   },
 };
 
+/**
+ * Renders nothing unless the advisory still covers today in Nashville. An
+ * expired, malformed, or undated entry leaves no claim on the page at all.
+ */
 export function SkateStatus({ slug }: { slug: string }) {
-  const status = getSkateStatus(slug);
-  if (!status) return null;
+  const asOf = useAsOf();
+  const status = getSkateStatus(slug, asOf);
+  if (!status || !status.isCurrent || !status.state) return null;
 
   const style = stateStyles[status.state];
-  const Icon = status.isStale ? CalendarClock : style.icon;
-  const heading = status.isStale
-    ? "Academy ice changes have not been confirmed recently"
-    : style.heading;
-  const note = status.isStale
-    ? "Check the official schedule before you go."
-    : status.note;
+  const Icon = style.icon;
+  const heading = style.heading;
+  const note = status.note;
 
   return (
     <section
       aria-labelledby={`skate-status-${slug}`}
-      className={cn(
-        "border p-5 md:p-6",
-        status.isStale ? "border-slate-200 bg-slate-50" : style.shell,
-      )}
+      className={cn("border p-5 md:p-6", style.shell)}
     >
       <div className="flex flex-wrap items-start justify-between gap-4">
         <div className="flex items-start gap-3">
           <div className={cn(
             "grid h-10 w-10 flex-none place-items-center rounded-md",
-            status.isStale ? "bg-slate-200 text-slate-700" : style.iconShell,
+            style.iconShell,
           )}>
             <Icon className="h-5 w-5" aria-hidden="true" />
           </div>
@@ -82,24 +81,30 @@ export function SkateStatus({ slug }: { slug: string }) {
         </div>
         <span className={cn(
           "whitespace-nowrap rounded-full border px-2.5 py-1 text-xs font-semibold",
-          status.isStale ? "border-slate-300 bg-white text-slate-700" : style.pill,
+          style.pill,
         )}>
-          {status.isStale ? "Check schedule" : style.label}
+          {style.label}
         </span>
       </div>
 
       <p className="mt-4 max-w-3xl text-sm leading-relaxed text-slate-700">{note}</p>
 
       <div className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-current/10 pt-4 text-xs text-slate-600">
-        {status.verified_by && !status.isStale && (
+        {status.verifiedBy && (
           <span className="inline-flex items-center gap-1.5 font-medium text-teal-700">
             <ShieldCheck className="h-4 w-4" aria-hidden="true" />
-            Verified by {status.verified_by}
+            Verified by {status.verifiedBy}
           </span>
         )}
         <span>Updated {formatVerifiedDate(status.updated)}</span>
+        {status.coveredFrom && status.coveredThrough && (
+          <span>
+            Covers {formatVerifiedDate(status.coveredFrom)} through{" "}
+            {formatVerifiedDate(status.coveredThrough)}
+          </span>
+        )}
         <a
-          href={status.source_url}
+          href={status.sourceUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-1 font-medium text-primary hover:underline"
@@ -113,18 +118,17 @@ export function SkateStatus({ slug }: { slug: string }) {
 }
 
 export function SkateStatusChip({ slug }: { slug: string }) {
-  const status = getSkateStatus(slug);
-  if (!status) return null;
+  const asOf = useAsOf();
+  const status = getSkateStatus(slug, asOf);
+  if (!status || !status.isCurrent || !status.state) return null;
 
   const style = stateStyles[status.state];
-  const label = status.isStale ? "Check schedule" : style.label;
-  const dot = status.isStale
-    ? "bg-slate-400"
-    : status.state === "normal"
-      ? "bg-emerald-500"
-      : status.state === "altered"
-        ? "bg-amber-500"
-        : "bg-red-500";
+  const label = style.label;
+  const dot = status.state === "normal"
+    ? "bg-emerald-500"
+    : status.state === "altered"
+      ? "bg-amber-500"
+      : "bg-red-500";
 
   return (
     <span className="inline-flex items-center gap-1.5 rounded-full border bg-white/95 px-2.5 py-1 text-xs font-semibold text-slate-700 shadow-sm">

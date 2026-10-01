@@ -7,7 +7,8 @@ import { rinks } from "@/lib/data";
 import { LastVerified } from "@/components/LastVerified";
 import { MapPin, CheckCircle, Calendar } from "lucide-react";
 import { buildRinkItemList, buildWebPageSchema, SITE_URL } from "@/lib/seo";
-import { getLatestStatusUpdated } from "@/lib/skateStatus";
+import { useAsOf } from "@/lib/asOf";
+import { getLatestCurrentStatusUpdated } from "@/lib/skateStatusData";
 import { SkateStatusChip } from "@/components/SkateStatus";
 
 const RINK_SLUGS = {
@@ -57,9 +58,10 @@ function RinkLink({ slug, children }: { slug: string; children: React.ReactNode 
 }
 
 export default function NashvilleCityHub() {
+  const asOf = useAsOf();
   const pageModified = [
     "2026-06-29",
-    getLatestStatusUpdated(Array.from(nashvilleRinkSlugs)),
+    getLatestCurrentStatusUpdated(Array.from(nashvilleRinkSlugs), asOf),
   ].filter((value): value is string => Boolean(value)).sort().at(-1);
   const faqSchema = {
     "@context": "https://schema.org",
@@ -92,7 +94,8 @@ export default function NashvilleCityHub() {
         ),
         "@id": `${SITE_URL}/city/tn/nashville#webpage`,
         dateModified: pageModified,
-        lastReviewed: pageModified,
+        // The page's own review date, not a date borrowed from a weekly advisory.
+        lastReviewed: "2026-06-29",
       },
       buildRinkItemList(nashvilleRinks, "/city/tn/nashville", "Ice Skating Rinks in Nashville, Tennessee"),
       faqSchema,

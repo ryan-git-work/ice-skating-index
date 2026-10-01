@@ -64,6 +64,15 @@ export const RinkSchema = z.object({
     ]).optional(),
     spectators: z.number().nullable().optional(),
     notes: z.string().optional(),
+    // Dated base-admission evidence. Priced tiers carry their own citation so a
+    // price recheck does not imply the whole record was re-verified.
+    admission_tiers: z.array(z.object({
+      label: z.string(),
+      price: z.number(),
+      source_url: z.string().optional(),
+    })).optional(),
+    price_basis: z.string().optional(),
+    verified_on: z.string().optional(),
   }).optional(),
   rentals: z.object({
     available: z.union([z.boolean(), z.literal("true"), z.literal("false"), z.literal("unknown")]),

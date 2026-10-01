@@ -1,14 +1,18 @@
 {
   "centennial-sportsplex-nashville-tn": {
     "state": "altered",
-    "note": "For September 21 through September 26, Nashville Skating Academy is on its regular fall ice schedule at Centennial except for an earlier finish Thursday morning, September 24. Saturday follows the regular schedule. Confirm a public session on the official schedule before you go.",
-    "updated": "2026-09-20",
+    "note": "For September 28 through October 3, Nashville Skating Academy has changes to its Centennial practice-ice schedule, including Friday, October 2. Check the academy's Centennial portal for current practice ice and classes. Public-skate sessions are booked separately through Predators DaySmart.",
+    "covered_from": "2026-09-28",
+    "covered_through": "2026-10-03",
+    "updated": "2026-10-01",
     "verified_by": "a local coach",
-    "source_url": "https://apps.daysmartrecreation.com/dash/x/"
+    "source_url": "https://nashvilleskatingacademycentennial.finnlyconnect.com/"
   },
   "ford-ice-center-bellevue-nashville-tn": {
     "state": "altered",
     "note": "For September 21 through September 26, Nashville Skating Academy ice at Bellevue is limited by a Nashville Predators camp. Monday through Thursday starts may be delayed, and Wednesday ends earlier than the other listed days. Confirm a public session on the official schedule before you go.",
+    "covered_from": "2026-09-21",
+    "covered_through": "2026-09-26",
     "updated": "2026-09-20",
     "verified_by": "a local coach",
     "source_url": "https://member.daysmartrecreation.com/#/online/predators/calendar"
@@ -16,6 +20,8 @@
   "ford-ice-center-antioch-antioch-tn": {
     "state": "altered",
     "note": "For September 21 through September 26, Nashville Skating Academy has an updated Friday ice schedule at Antioch for September 25. Check the academy's current schedule for details. Confirm a public session on the official schedule before you go.",
+    "covered_from": "2026-09-21",
+    "covered_through": "2026-09-26",
     "updated": "2026-09-20",
     "verified_by": "a local coach",
     "source_url": "https://apps.daysmartrecreation.com/dash/x/"

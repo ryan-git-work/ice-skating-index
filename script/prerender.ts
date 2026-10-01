@@ -3,6 +3,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { createRequire } from "module";
 import { build as viteBuild } from "vite";
+import { buildPageHtml, cleanHtmlTemplate, escapeHtml, HTML_MARKER } from "../shared/pageHtml.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const require = createRequire(import.meta.url);
@@ -50,71 +51,35 @@ await viteBuild({
 });
 
 // Step 3: Load SSR renderer
-const ssrPath = path.resolve(__dirname, "..", "dist", "ssr", "entry-ssr.js");
+const ssrDist = path.resolve(__dirname, "..", "dist", "ssr");
+const ssrPath = path.resolve(ssrDist, "entry-ssr.js");
 const { render } = await import(ssrPath);
 
 // Step 4: Load client HTML template
 const clientDist = path.resolve(__dirname, "..", "dist", "public");
 const indexHtml = await fs.readFile(path.resolve(clientDist, "index.html"), "utf-8");
-const HTML_MARKER = '<div id="root"></div>';
-const SITE_URL = "https://iceskatingindex.com";
-const DEFAULT_OG_IMAGE = `${SITE_URL}/opengraph.jpg`;
 
-const cleanTemplate = indexHtml
-  .replace(/\s*<title>[\s\S]*?<\/title>/gi, "")
-  .replace(/\s*<meta\s+name="description"[^>]*>/gi, "")
-  .replace(/\s*<meta\s+property="og:[^"]+"[^>]*>/gi, "")
-  .replace(/\s*<meta\s+name="twitter:(?:card|title|description|image)"[^>]*>/gi, "");
+const cleanTemplate = cleanHtmlTemplate(indexHtml);
+
+// The runtime renderer needs the same template this build used. Route "/" writes
+// over dist/public/index.html below, so keep a copy outside the served tree.
+await fs.writeFile(path.resolve(ssrDist, "template.html"), cleanTemplate);
+
+// One instant for the whole build, so the pages agree with each other.
+const buildAsOf = new Date();
 
 let rendered = 0;
 let failed = 0;
+/** Routes whose HTML depends on academy ice status, for the request-time path. */
+const statusRoutes: string[] = [];
 
 for (const route of routes) {
   try {
-    const { html: bodyHtml, head } = render(route);
+    const { html: bodyHtml, head, usesSkateStatus } = render(route, { asOf: buildAsOf });
 
-    let headContent = "";
-    const canonicalUrl = head?.canonicalPath
-      ? head.canonicalPath === "/"
-        ? `${SITE_URL}/`
-        : `${SITE_URL}${head.canonicalPath}`
-      : `${SITE_URL}${route === "/" ? "/" : route}`;
-    const socialTitle = head?.ogTitle || head?.title || "Ice Skating Index";
-    const socialDescription = head?.ogDescription || head?.description || "Find ice skating rinks, schedules, and skating guides.";
-    const socialImage = head?.image || DEFAULT_OG_IMAGE;
-    if (head?.title) {
-      headContent += `<title>${escapeHtml(head.title)}</title>\n`;
-    }
-    if (head?.description) {
-      headContent += `<meta name="description" content="${escapeHtml(head.description)}">\n`;
-    }
-    headContent += `<meta property="og:title" content="${escapeHtml(socialTitle)}">\n`;
-    headContent += `<meta property="og:description" content="${escapeHtml(socialDescription)}">\n`;
-    headContent += `<meta property="og:type" content="website">\n`;
-    headContent += `<meta property="og:url" content="${escapeHtml(canonicalUrl)}">\n`;
-    headContent += `<meta property="og:image" content="${escapeHtml(socialImage)}">\n`;
-    headContent += `<meta name="twitter:card" content="summary_large_image">\n`;
-    headContent += `<meta name="twitter:title" content="${escapeHtml(socialTitle)}">\n`;
-    headContent += `<meta name="twitter:description" content="${escapeHtml(socialDescription)}">\n`;
-    headContent += `<meta name="twitter:image" content="${escapeHtml(socialImage)}">\n`;
-    if (head?.canonicalPath) {
-      const href = head.canonicalPath === "/"
-        ? "https://iceskatingindex.com/"
-        : `https://iceskatingindex.com${head.canonicalPath}`;
-      headContent += `<link rel="canonical" href="${escapeHtml(href)}">\n`;
-    }
-    if (head?.robots) {
-      headContent += `<meta name="robots" content="${escapeHtml(head.robots)}">\n`;
-    }
-    if (head?.structuredData?.length) {
-      headContent += head.structuredData
-        .map((data: object) => `<script type="application/ld+json">${escapeJsonLd(data)}</script>`)
-        .join("\n") + "\n";
-    }
+    if (usesSkateStatus) statusRoutes.push(route);
 
-    const finalHtml = cleanTemplate
-      .replace("</head>", headContent + "</head>")
-      .replace(HTML_MARKER, `<div id="root">${bodyHtml}</div>`);
+    const finalHtml = buildPageHtml({ template: cleanTemplate, route, bodyHtml, head });
 
     const targetDir = route === "/" ? clientDist : path.resolve(clientDist, route.slice(1));
     await fs.mkdir(targetDir, { recursive: true });
@@ -129,7 +94,13 @@ for (const route of routes) {
 console.log(`Pre-rendered ${rendered}/${routes.length} pages (${failed} failed)`);
 if (failed > 0) process.exit(1);
 
-const { html: notFoundBody, head: notFoundHead } = render("/__not-found__");
+await fs.writeFile(
+  path.resolve(ssrDist, "status-routes.json"),
+  JSON.stringify(statusRoutes, null, 2),
+);
+console.log(`${statusRoutes.length} routes consume academy ice status and re-render per request`);
+
+const { html: notFoundBody, head: notFoundHead } = render("/__not-found__", { asOf: buildAsOf });
 const notFoundHtml = cleanTemplate
   .replace(
     "</head>",
@@ -139,16 +110,3 @@ const notFoundHtml = cleanTemplate
   )
   .replace(HTML_MARKER, `<div id="root">${notFoundBody}</div>`);
 await fs.writeFile(path.resolve(clientDist, "404.html"), notFoundHtml);
-
-function escapeHtml(text: string): string {
-  return text
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#039;");
-}
-
-function escapeJsonLd(data: object): string {
-  return JSON.stringify(data).replace(/</g, "\\u003c");
-}

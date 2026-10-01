@@ -33,13 +33,12 @@ Always check the calendar before making the trip. Session availability can chang
 
 ## Admission and Pricing
 
-Centennial Sportsplex has historically been one of Nashville's more affordable places to skate. Because operations changed in May 2026, confirm the current price in DaySmart before booking.
+Public skate is booked through Predators DaySmart, and the activity finder lists the base admission for each session.
 
-- **Ages 4 and under:** Free
-- **General admission (ages 5+):** $6 (skate rental now included with admission)
-- **Spectators:** Free
+- **Ages 13 and up:** $12 base admission
+- **Youth, military, college, and senior:** $10 base admission
 
-Skate rental is included in the admission price — a recent change that makes the value even better for families. The rink accepts Visa, Mastercard, American Express, and Discover, with a small convenience fee. Tickets are typically available starting 15 minutes before each session.
+Those are base admission figures from the Predators DaySmart activity finder, verified October 1, 2026. They are not the checkout total: open the listing for the session you want and read the total before paying. The listings do not confirm whether skate rental is included with admission, or how spectators and the youngest skaters are handled, so check the session page or call the rink if that affects your cost.
 
 ---
 
@@ -47,13 +46,13 @@ Skate rental is included in the admission price — a recent change that makes t
 
 Centennial Sportsplex is a large multi-use facility — 145,000 square feet — so knowing where to go saves time.
 
-The ice rinks are separate from the main fitness and aquatics areas. Head for the ice rink entrance, pay admission, and you will receive your skate rental ticket. Take it to the skate rental counter inside the rink area, give the attendant your shoes, and pick up your skates.
+The ice rinks are separate from the main fitness and aquatics areas. Head for the ice rink entrance and check in for your session. If you are renting, the skate rental counter is inside the rink area: give the attendant your shoes and pick up your skates.
 
 **Lockers:** Coin-operated lockers are available for 50 cents. You can also bring your own padlock to use the free lockers during your session.
 
 **Concession stand:** A small concession stand sells pizza, bagels, and snacks. Cash only at the concession stand. Outside food is welcome if you want to bring your own.
 
-**Seating:** Spectator seating is available for parents and non-skating guests. Spectators get in free, which makes it an easy family outing even if not everyone is skating.
+**Seating:** Spectator seating is available for parents and non-skating guests. The current listings do not spell out a spectator policy, so ask at the desk if someone in your group is only watching.
 
 **Temperature:** The rink area stays around 58 degrees — colder than that once you factor in the chill from the ice. Bring a jacket or light layer even in summer. It always feels colder than you expect.
 
@@ -91,7 +90,7 @@ Centennial Sportsplex hosts learn-to-skate programs for all ages and skill level
 
 Options include:
 - Group learn-to-skate sessions for children and adults
-- A homeschool skating program running Wednesday mornings — 30 minutes of instruction plus 30 minutes of supervised practice, $5 per 6-week session, rental skates included
+- A homeschool skating program running Wednesday mornings — 30 minutes of instruction plus 30 minutes of supervised practice; confirm the current fee and what it covers at registration
 - Private coaching for those wanting individual instruction
 
 If you or your child is serious about learning to skate — not just experiencing it once — enrolling in a session is the fastest path to real progress. Group lessons at a rink like this are structured, affordable, and dramatically more effective than trying to learn on your own during public skate.
@@ -108,7 +107,7 @@ This does affect public skate availability — Predators practice time takes pri
 
 ## Other Ice Skating in Nashville
 
-Centennial Sportsplex is the most affordable and centrally located option, but Nashville has other rinks worth knowing about:
+Centennial Sportsplex is the most centrally located option, but Nashville has other rinks worth knowing about:
 
 **Ford Ice Center** operates three locations in the Nashville area — Bellevue, Antioch, and Clarksville — run by the Nashville Predators organization. Ford Ice is a cashless facility and requires online reservations in advance. Admission is $12 and includes skate rental. Higher-end facilities with a more polished experience.
 

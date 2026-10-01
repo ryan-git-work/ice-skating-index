@@ -21,7 +21,8 @@ import { formatVerifiedDate, LastVerified } from "@/components/LastVerified";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { buildWebPageSchema, SITE_URL, STATE_NAMES, slugify } from "@/lib/seo";
-import { getSkateStatus } from "@/lib/skateStatus";
+import { useAsOf } from "@/lib/asOf";
+import { getSkateStatus } from "@/lib/skateStatusData";
 
 function getFaqQA(item: { q?: string; a?: string; question?: string; answer?: string }): { q: string; a: string } {
   if ("question" in item && item.question) return { q: item.question, a: item.answer ?? "" };
@@ -49,9 +50,6 @@ function buildOfferingList(rink: NonNullable<ReturnType<typeof getRinkBySlug>>) 
 }
 
 function getPublicPriceLabel(rink: NonNullable<ReturnType<typeof getRinkBySlug>>) {
-  if (rink.slug === "centennial-sportsplex-nashville-tn") {
-    return "Confirm at booking";
-  }
   const price = rink.pricing?.public_skate;
   if (price && typeof price === "object") {
     const values = Object.values(price).filter((value): value is number => typeof value === "number");
@@ -60,6 +58,24 @@ function getPublicPriceLabel(rink: NonNullable<ReturnType<typeof getRinkBySlug>>
   if (typeof price === "string" && price.trim()) return price;
   const match = rink.pricing?.notes?.match(/\$[0-9]+(?:\.[0-9]{1,2})?/);
   return match ? `From ${match[0]}` : "Confirm at booking";
+}
+
+/**
+ * Dated base-admission detail for rinks whose pricing carries its own
+ * verification date. Returns null everywhere else, so a rink that has not had
+ * its prices rechecked does not inherit someone else's date.
+ */
+function getVerifiedPricing(rink: NonNullable<ReturnType<typeof getRinkBySlug>>) {
+  const pricing = rink.pricing;
+  if (!pricing?.verified_on) return null;
+  const tiers = (pricing.admission_tiers ?? []).filter((tier) => typeof tier.price === "number");
+  if (tiers.length === 0) return null;
+  return {
+    verifiedOn: pricing.verified_on,
+    basis: pricing.price_basis,
+    tiers,
+    summary: tiers.map((tier) => `$${tier.price} ${tier.label}`).join(" · "),
+  };
 }
 
 function getBookingLabel(rink: NonNullable<ReturnType<typeof getRinkBySlug>>) {
@@ -176,23 +192,23 @@ function getRinkGuideLinks(slug: string) {
 export default function RinkDetail() {
   const params = useParams();
   const rink = getRinkBySlug(params.slug || "");
+  const asOf = useAsOf();
 
   const description = rink?.description ?? rink?.seo?.long_description;
   const whatToKnow = rink?.what_to_know ?? rink?.seo?.what_to_know;
-  const skateStatus = rink ? getSkateStatus(rink.slug) : null;
-  const statusFaqItems = rink && skateStatus
+  const verifiedPricing = rink ? getVerifiedPricing(rink) : null;
+  // One evaluated status feeds the card, the FAQ copy, and the schema dates.
+  const skateStatus = rink ? getSkateStatus(rink.slug, asOf) : null;
+  const currentStatus = skateStatus?.isCurrent ? skateStatus : null;
+  const statusFaqItems = rink && currentStatus
     ? [
         {
           q: `What is the Nashville Skating Academy ice schedule at ${rink.name}?`,
-          a: skateStatus.isStale
-            ? "Schedule changes have not been confirmed recently. Check the official schedule before you go."
-            : skateStatus.note,
+          a: currentStatus.note,
         },
         {
           q: `Has the academy ice schedule changed at ${rink.name}?`,
-          a: skateStatus.isStale
-            ? "No recent change report is available. Use the official schedule before making the trip."
-            : `${skateStatus.note} This status was updated ${skateStatus.updated}.`,
+          a: `${currentStatus.note} The academy confirmation is dated ${formatVerifiedDate(currentStatus.updated)}.`,
         },
       ]
     : [];
@@ -241,10 +257,13 @@ export default function RinkDetail() {
       })()
     : null;
 
-  const pageModified = [rink?.last_verified, skateStatus?.updated]
+  // dateModified may move with a field-specific recheck; lastReviewed stays the
+  // facility review date so the broader claim is not quietly renewed.
+  const pageModified = [rink?.last_verified, rink?.pricing?.verified_on, currentStatus?.updated]
     .filter((value): value is string => Boolean(value))
     .sort()
     .at(-1);
+  const pageReviewed = rink?.last_verified;
 
   const webPageSchema = rink
     ? {
@@ -255,7 +274,7 @@ export default function RinkDetail() {
         ),
         "@id": `${SITE_URL}/rink/${rink.slug}#webpage`,
         dateModified: pageModified,
-        lastReviewed: pageModified,
+        lastReviewed: pageReviewed,
         about: {
           "@id": `${SITE_URL}/rink/${rink.slug}#rink`,
         },
@@ -418,7 +437,7 @@ export default function RinkDetail() {
         </div>
       </section>
 
-      {skateStatus && (
+      {currentStatus && (
         <div className="container mx-auto px-4 pb-8">
           <SkateStatus slug={rink.slug} />
         </div>
@@ -438,8 +457,38 @@ export default function RinkDetail() {
                 <dl className="grid gap-5 sm:grid-cols-2">
                   <div className="border-l-2 border-primary pl-4">
                     <dt className="text-xs font-semibold uppercase text-muted-foreground">Public-skate price</dt>
-                    <dd className="mt-1 font-semibold">{getPublicPriceLabel(rink)}</dd>
-                    <p className="mt-1 text-xs text-muted-foreground">Confirm the current total before paying.</p>
+                    {verifiedPricing ? (
+                      <>
+                        <dd className="mt-1 font-semibold">{verifiedPricing.summary}</dd>
+                        <p className="mt-1 text-xs text-muted-foreground">
+                          {verifiedPricing.basis ?? "Base admission only. The checkout total can add fees or taxes."}
+                        </p>
+                        <p className="mt-1 text-xs text-muted-foreground">
+                          Base admission verified {formatVerifiedDate(verifiedPricing.verifiedOn)}.
+                        </p>
+                        <div className="mt-1 flex flex-col gap-1 text-xs">
+                          {verifiedPricing.tiers
+                            .filter((tier) => tier.source_url)
+                            .map((tier) => (
+                              <a
+                                key={tier.source_url}
+                                href={tier.source_url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-1 font-medium text-primary hover:underline"
+                              >
+                                {tier.label} listing
+                                <ExternalLink className="h-3 w-3" aria-hidden="true" />
+                              </a>
+                            ))}
+                        </div>
+                      </>
+                    ) : (
+                      <>
+                        <dd className="mt-1 font-semibold">{getPublicPriceLabel(rink)}</dd>
+                        <p className="mt-1 text-xs text-muted-foreground">Confirm the current total before paying.</p>
+                      </>
+                    )}
                   </div>
                   <div className="border-l-2 border-accent pl-4">
                     <dt className="text-xs font-semibold uppercase text-muted-foreground">How to book</dt>

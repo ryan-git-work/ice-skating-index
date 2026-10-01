@@ -19,7 +19,8 @@ import rehypeRaw from "rehype-raw";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, ArrowLeft, ArrowRight, User } from "lucide-react";
 import { SITE_URL } from "@/lib/seo";
-import { getLatestStatusUpdated } from "@/lib/skateStatus";
+import { useAsOf } from "@/lib/asOf";
+import { getLatestCurrentStatusUpdated } from "@/lib/skateStatusData";
 import { SharpeningConnector } from "@/components/SharpeningConnector";
 
 function trimExcerpt(text: string, max = 155) {
@@ -42,6 +43,7 @@ function formatPublishDate(date: string) {
 
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
+  const asOf = useAsOf();
   const postMeta = blogPostRegistry.find(p => p.slug === slug);
   const initialContent = postMeta
     ? getStaticPostContent(postMeta.fileName)
@@ -53,7 +55,7 @@ export default function BlogPost() {
   const [loading, setLoading] = useState(!renderedInitialContent);
   const [error, setError] = useState(false);
   const latestStatusDate = postMeta?.slug === "ice-skating-nashville-this-weekend"
-    ? getLatestStatusUpdated()
+    ? getLatestCurrentStatusUpdated(undefined, asOf)
     : undefined;
   const modifiedDate = [postMeta?.publishDate, postMeta?.modifiedDate, latestStatusDate]
     .filter((value): value is string => Boolean(value))
