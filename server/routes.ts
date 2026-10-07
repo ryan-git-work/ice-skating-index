@@ -259,27 +259,34 @@ Sitemap: https://iceskatingindex.com/sitemap.xml
     }
   });
 
+  // Keep runtime assignments out of the reviewed source file. Concurrent page
+  // loads previously raced while overwriting that tracked JSON asset.
+  const runtimeBlogImages = new Map<string, string>();
+
   app.get("/api/blog/image/:slug", async (req, res) => {
     const { slug } = req.params;
     const dataPath = path.resolve(process.cwd(), "client/public/data/post-image-map.json");
     const imagesDir = path.resolve(process.cwd(), "client/public/images/skating");
 
     try {
-      let map: Record<string, string> = {};
-      try {
-        const data = await fs.readFile(dataPath, "utf-8");
-        map = JSON.parse(data);
-      } catch (e) {
-      }
+      const map: Record<string, string> = JSON.parse(await fs.readFile(dataPath, "utf-8"));
 
-      if (map[slug]) {
+      if (Object.prototype.hasOwnProperty.call(map, slug)) {
         return res.json({ image: map[slug] });
       }
 
+      const assignedImage = runtimeBlogImages.get(slug);
+      if (assignedImage) return res.json({ image: assignedImage });
+
       const files = await fs.readdir(imagesDir);
       const imageFiles = files.filter(f => /\.(png|jpg|jpeg|webp)$/i.test(f));
-      
-      const assignedImages = new Set(Object.values(map));
+      if (imageFiles.length === 0) throw new Error("No blog images available");
+
+      // Another request may have assigned this slug while readdir was pending.
+      const concurrentAssignment = runtimeBlogImages.get(slug);
+      if (concurrentAssignment) return res.json({ image: concurrentAssignment });
+
+      const assignedImages = new Set([...Object.values(map), ...Array.from(runtimeBlogImages.values())]);
       const availableImages = imageFiles.filter(f => !assignedImages.has(f));
       
       let selectedImage: string;
@@ -289,8 +296,7 @@ Sitemap: https://iceskatingindex.com/sitemap.xml
         selectedImage = imageFiles[Math.floor(Math.random() * imageFiles.length)];
       }
 
-      map[slug] = selectedImage;
-      await fs.writeFile(dataPath, JSON.stringify(map, null, 2));
+      runtimeBlogImages.set(slug, selectedImage);
 
       res.json({ image: selectedImage });
     } catch (error) {
