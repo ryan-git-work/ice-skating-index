@@ -4,11 +4,11 @@ It is a fair question in a city where summer lasts five months: where can you ac
 
 ## The five year-round indoor rinks
 
-Every rink on this list runs public skating in all four seasons, with rental skates included in admission.
+Every rink on this list offers year-round indoor ice. Confirm public-session times, registration, and rental terms with the operator.
 
 ### Centennial Sportsplex (Nashville, near downtown)
 
-[RINK: centennial-sportsplex-nashville-tn] is the city's most central indoor ice, across from Centennial Park just west of downtown, with two full-size sheets measuring 200 by 85 feet. Two sheets is the feature that matters: public skating stays on the calendar even while hockey, lessons, and figure skating run on the other rink. Public skate runs about $12 for ages 13 and up and $10 for ages 5 to 12, spectators free, rentals included, and walk-ins are welcome. The Nashville Predators assumed management of ice operations in May 2026, with schedules and registration now running through the rink's current booking flow, so check the live listing before you go. Beyond public sessions, the building hosts the Nashville Skating Academy, adult hockey, and stick and puck.
+[RINK: centennial-sportsplex-nashville-tn] is central Nashville's two-sheet indoor rink. Centennial base admission verified October 1, 2026 is $12 for ages 13+ and $10 for youth, military, college students, and seniors. Confirm rental charges, spectator admission, and admission for the youngest children in the selected DaySmart session; those policies are not verified. Schedules, waivers, and registration use DaySmart.
 
 ### Ford Ice Center Bellevue (west side)
 
@@ -28,10 +28,10 @@ Every rink on this list runs public skating in all four seasons, with rental ska
 
 ## Indoor versus the seasonal outdoor rinks
 
-From late November into early winter, Nashville adds outdoor and holiday ice: the resort rink at [RINK: gaylord-opryland-resort-nashville-tn], the Smashville outdoor rink downtown, and [RINK: fountains-at-gateway-murfreesboro-tn] in Murfreesboro. They are genuine fun, and they are also a different product. The honest comparison:
+Gaylord Opryland has announced outdoor skating at Pinetop for November 6, 2026 through January 2, 2027, with advance online tickets and separate parking fees. The 2026–27 Smashville and Fountains skating seasons are unconfirmed; check operator announcements before planning a trip.
 
-- **Season:** the outdoor rinks run roughly Thanksgiving through early February, then vanish. The indoor rinks run all 12 months.
-- **Price:** seasonal rinks price as an experience, roughly $17 to $25 per skater at recent seasons' rates, versus about $10 to $14 indoors, rentals included in both cases.
+- **Season:** use announced dates. Gaylord runs November 6, 2026 through January 2, 2027; upcoming Fountains and Smashville skating dates are unconfirmed.
+- **Price:** compare the selected ticket and rental terms. Older seasonal rates do not establish the cost for 2026–27.
 - **Ice quality:** indoor sheets are maintained, full-size, and consistent. Outdoor ice in a Tennessee winter fights the weather daily.
 - **Purpose:** the holiday rinks are an event, lights, crowds, a memory. The indoor rinks are where anyone who wants to actually skate, learn, or practice does it.
 
@@ -45,9 +45,9 @@ Two summer specifics: dress for the rink, not the parking lot, because 40-someth
 
 ## What indoor sessions cost
 
-Across the five indoor rinks, public skating runs about $10 to $14 per skater, rentals included, as of mid-2026:
+Public-session costs depend on the selected rink, session, rentals, and tax:
 
-- **Centennial:** about $12 adult, $10 ages 5 to 12, youngest kids and spectators free, walk-ins welcome.
+- **Centennial:** Centennial base admission verified October 1, 2026 is $12 for ages 13+ and $10 for youth, military, college students, and seniors. Confirm rental charges, spectator admission, and admission for the youngest children in the selected DaySmart session; those policies are not verified.
 - **Ford Ice (all three):** about $10.98 matinee, $13.73 evening, plus tax, online registration required.
 - **Gary Force:** confirm price in the booking flow; not published.
 
@@ -65,7 +65,7 @@ The year-round buildings are where every form of the sport lives:
 
 ## Which indoor rink should you pick?
 
-Geography first, then purpose. West side: Bellevue. Southeast: Antioch. Downtown and central: Centennial. Williamson County: Gary Force. Clarksville: Ford Ice at F&M Bank Arena. For a first-ever visit with no accounts and no reservations, Centennial is the lowest-friction door into the sport. For structured lessons, the Ford Ice buildings and Centennial both run real programs. For freestyle ice south of town, Gary Force matters more than its quiet web presence suggests.
+Choose by geography and the available session: Bellevue for the west side, Antioch for the southeast, Centennial for central Nashville, Gary Force for Williamson County, and Ford Ice Clarksville for the north. Check registration before travelling.
 
 Compare all of them side by side in the [Nashville ice skating guide](/city/tn/nashville), or [browse every rink](/browse) in the index.
 
@@ -73,7 +73,7 @@ Compare all of them side by side in the [Nashville ice skating guide](/city/tn/n
 
 ### Is there indoor ice skating in Nashville?
 
-Yes, five year-round indoor rinks: Centennial Sportsplex near downtown, Ford Ice Centers in Bellevue, Antioch, and Clarksville, and Gary Force Acura Ice Arena in Nolensville. All run public skating in every season with rental skates included in admission.
+Yes. Centennial, Ford Ice Bellevue, Antioch and Clarksville, and Gary Force in Nolensville offer year-round indoor ice. Check each public-session calendar and rental terms.
 
 ### Can you ice skate in Nashville in the summer?
 
@@ -81,21 +81,25 @@ Yes. All five indoor rinks run public sessions through the summer, and the build
 
 ### How much does indoor ice skating cost in Nashville?
 
-About $10 to $14 per skater with rentals included, as of mid-2026. Centennial runs about $12 for adults and $10 for kids 5 to 12 with spectators free; the Ford Ice rinks charge about $10.98 for matinee and $13.73 for evening sessions plus tax; Gary Force confirms pricing in its booking flow.
+Centennial base admission verified October 1, 2026 is $12 for ages 13+ and $10 for youth, military, college students, and seniors. Confirm rental charges, spectator admission, and admission for the youngest children in the selected DaySmart session; those policies are not verified. Ford Ice lists matinee and evening rates plus tax; Gary Force confirms rates at booking.
 
 ### Which Nashville indoor rink is best for beginners?
 
-Centennial Sportsplex is the easiest entry point: walk-ins welcome, rentals included, spectators free, and two sheets keeping public sessions on the calendar. Beginners who want structure can start classes at any Ford Ice Center or at Centennial. Our [learn-to-skate guide](/blog/learn-to-skate-nashville) maps the programs.
+Centennial and the Ford Ice Centers offer public sessions and beginner programs. Confirm registration and rental terms first. The [learn-to-skate guide](/blog/learn-to-skate-nashville) maps the programs.
 
 ### Are the outdoor holiday rinks in Nashville open year-round?
 
-No. The seasonal rinks, including the Gaylord Opryland holiday rink, the downtown Smashville rink, and the Fountains at Gateway rink in Murfreesboro, run roughly from late November into early February and are closed the rest of the year. Outside that window, the five indoor rinks are Nashville's ice.
+Gaylord Opryland has announced outdoor skating at Pinetop for November 6, 2026 through January 2, 2027, with advance online tickets and separate parking fees. The 2026–27 Smashville and Fountains skating seasons are unconfirmed; check operator announcements before planning a trip.
 
 ### Do Nashville indoor rinks require reservations?
 
-It varies. The three Ford Ice Centers require online registration for public skates through the DASH by DaySmart system, and Gary Force registers sessions through its online events calendar. Centennial Sportsplex welcomes walk-ins. Every rink's schedule changes monthly, so confirm the session before you drive.
+Centennial and Ford Ice use DaySmart for public-session schedules and registration; Gary Force uses its events calendar. Confirm the selected session before travelling.
 
 <!-- momentum-national-guides -->
 ## Related national guide
 
 For quiet sessions and seasonal timing, read [the best time to go ice skating](/blog/best-time-to-go-ice-skating).
+
+## Centennial price source
+
+Base admission checked October 1, 2026 against the official DaySmart listings linked on the [Centennial rink page](/rink/centennial-sportsplex-nashville-tn). Rental inclusion, spectator admission, and youngest-child admission remain unverified.

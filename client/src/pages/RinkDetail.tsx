@@ -259,7 +259,7 @@ export default function RinkDetail() {
 
   // dateModified may move with a field-specific recheck; lastReviewed stays the
   // facility review date so the broader claim is not quietly renewed.
-  const pageModified = [rink?.last_verified, rink?.pricing?.verified_on, currentStatus?.updated]
+  const pageModified = [rink?.last_verified, rink?.content_modified, rink?.pricing?.verified_on, currentStatus?.updated]
     .filter((value): value is string => Boolean(value))
     .sort()
     .at(-1);

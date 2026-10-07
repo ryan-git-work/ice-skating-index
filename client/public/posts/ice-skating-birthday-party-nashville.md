@@ -7,7 +7,7 @@ An ice skating birthday party solves the two problems every parent planning a pa
 The year-round indoor rinks are the party venues, since a birthday booked on seasonal ice is a gamble against the calendar. That means four main options across the metro:
 
 - **The three Ford Ice Centers** (Bellevue, Antioch, and Clarksville) run a full birthday party program with published packages, a party room, catering, and a host. This is the most complete and most clearly priced option in the metro.
-- **[RINK: centennial-sportsplex-nashville-tn]** near downtown has long been the walk-in-friendly public rink, and its two sheets and free-spectator policy make it a natural budget option built around a regular public session. Ice operations changed management in May 2026, so ask the rink directly about current party or group options rather than relying on older pages.
+- **[RINK: centennial-sportsplex-nashville-tn]** is a central two-sheet rink. Ask directly about current party and group options, registration, rentals, and spectator admission.
 - **[RINK: gary-force-acura-ice-arena-nolensville-tn]** in Nolensville handles private-rental inquiries by email, which makes it the Williamson County option for a party built on private ice.
 
 For the broader picture of every rink before you choose, the [Nashville ice skating guide](/city/tn/nashville) compares the whole metro in one place.
@@ -32,12 +32,12 @@ Booking runs through the Ford Ice Center site or by phone, and weekend party slo
 
 ## The public-session party: the budget route
 
-There is a simpler way to do this, and plenty of Nashville families take it: bring the party to a regular public skate session, then handle cake elsewhere. The math is compelling. Public skate admission at the year-round rinks runs about $10 to $14 per skater with rentals included, so ten kids skate for roughly $100 to $140, no package required.
+A public-session party can be an alternative to a package. Confirm admission, rentals, and spectator terms for the selected session before calculating the full group cost.
  Current session times and booking details for every rink are in our [Nashville public skating guide](/blog/public-skating-nashville).
 
 The tradeoffs are real, though. You share the ice with the public, there is no reserved room, no host, and no one wrangling your group but you. Two rink-specific notes for this route:
 
-- **Centennial Sportsplex** is the classic venue for it: walk-ins welcome, rentals included, and spectators free, which matters at a kid party where half the attendees are parents who will not skate. A grandparent watching from the benches costs nothing.
+- **Centennial Sportsplex:** check DaySmart and ask about group registration, rental charges, and spectator admission.
 - **The Ford Ice rinks require online registration for public skates** through their booking system, and sessions can fill. For a group, reserve every skater's spot in advance the day registration opens for your date, or a sold-out Saturday matinee will shrink your party for you.
 
 If you go this route, keep the on-ice portion to about an hour to an hour and a half for young skaters. Cold and tired arrive together, and it is better to leave the ice on a high note.
@@ -51,7 +51,7 @@ South of the city, [RINK: gary-force-acura-ice-arena-nolensville-tn] is the year
 A quick decision guide, learned from how these parties actually go:
 
 - **Mostly beginners, ages 5 to 10, standard party size:** the Ford Ice package with the lesson add-on. The host, the room, and the coach remove every pain point at once.
-- **Budget-first, smaller group, flexible about sharing the ice:** public-session party at Centennial, cake afterward. Cheapest good version of this party that exists in Nashville.
+- **Budget-first, smaller group:** compare complete public-session booking totals and confirm whether the rink permits your group format.
 - **Big group, hockey kids, or a family that wants the ice to itself:** private ice rental, either a Ford Ice hourly rental or a direct inquiry at Gary Force.
 - **Toddlers and preschoolers:** think shorter. A 45-minute skate plus room time beats two hours of ice for this age, and skating aids, where available, help; ask the rink when booking.
 
@@ -63,7 +63,7 @@ One honest note on seasonal rinks: the outdoor holiday rinks that pop up around 
 - **Gloves for every kid.** Warm hands keep kids on the ice longer, and gloves protect palms during falls. A batch of cheap knit gloves is the best five dollars a party planner can spend. Our guide on [what to wear ice skating](/blog/what-to-wear-ice-skating) covers the rest of the outfit.
 - **Long pants and tall socks, tell the parents.** Ankle socks and shorts are the classic first-timer mistake.
 - **Stage the cake after the skate, not before.** Sugar, then ice, is a falls-per-minute multiplier. Skate first, eat second.
-- **Brief the non-skating parents.** Spectator policies differ: free at Centennial, and included in how the Ford Ice party room flow works, but confirm for your specific setup so nobody is surprised at the desk.
+- **Brief the non-skating parents.** Confirm spectator admission and access for your specific setup.
 - **Arrive 30 minutes early.** Fitting a whole party into rental skates takes longer than anyone expects, and the party clock starts whether skates are laced or not.
 
 For a deeper planning checklist that applies at any rink, our national guide to [ice skating birthday parties](/blog/ice-skating-birthday-party) walks through the full playbook, from invitations to thank-yous.
@@ -76,7 +76,7 @@ The three Ford Ice Centers (Bellevue, Antioch, and Clarksville) run full birthda
 
 ### How much does an ice skating party cost in Nashville?
 
-Ford Ice Center packages start at about $400 for ten guests semi-private, or about $600 private, including skating, rentals, a party room, pizza, drinks, treats, a host, and a Preds gift, with extra skaters about $10 each. Private ice rental runs about $500 per hour. A do-it-yourself party at a public session costs roughly $10 to $14 per skater with rentals included. Prices current as of July 2026; confirm when booking.
+Ford Ice Center packages start at about $400 for ten guests semi-private, or about $600 private, including skating, rentals, a party room, pizza, drinks, treats, a host, and a Preds gift, with extra skaters about $10 each. Private ice rental runs about $500 per hour. For a do-it-yourself public-session party, calculate admission and rentals from the selected session. Centennial base admission verified October 1, 2026 is $12 for ages 13+ and $10 for youth, military, college students, and seniors. Confirm rental charges, spectator admission, and youngest-child admission in the selected DaySmart session; those policies are not verified.
 
 ### Can you rent a whole ice rink in Nashville?
 
@@ -98,3 +98,7 @@ Several weeks for a weekend slot, more in the November-through-February stretch 
 ## Related national guide
 
 If you are comparing a package against full private ice, read [how much it costs to rent an ice rink](/blog/ice-rink-rental-cost).
+
+## Centennial price source
+
+Base admission checked October 1, 2026 against the official DaySmart listings linked on the [Centennial rink page](/rink/centennial-sportsplex-nashville-tn). Rental inclusion, spectator admission, and youngest-child admission remain unverified.

@@ -36,7 +36,7 @@ If you are skating with children, the free tier gets wider, because a lot of rin
 
 **Free by height.** Boston Common Frog Pond, the famous outdoor rink (seasonal, roughly mid-November to mid-March), is free for skaters under 58 inches tall and $12 for everyone taller. A parent and a second-grader can split the difference: one ticket, two skaters. We covered the family logistics in [Boston with kids](/blog/ice-skating-boston-kids).
 
-**Free by age.** [RINK: centennial-sportsplex-nashville-tn] in Nashville lists spectators free and ages 4 and under free per its published rates, which means a parent walking the boards with a toddler pays nothing to be in the building. Policies like this are common and rarely advertised, so read the rate sheet before you assume everyone needs a ticket.
+**Free by age.** Age-based discounts vary by rink. Centennial Sportsplex's current spectator and youngest-child admission policies are not verified, so do not count on free entry when planning a visit.
 
 **Free intro programs.** This is the most underused category: free ice time plus free instruction, aimed at getting kids started. Nashville's Ford Ice Centers run the GOAL program (Get Out And Learn), a free on-ice youth hockey intro series for boys and girls ages 4 to 8 with no experience required; details through [RINK: ford-ice-center-bellevue-nashville-tn], and the [Nashville hub](/city/tn/nashville) covers the rest of the metro. In Massachusetts, the New England Sports Center in Marlborough runs free Learn to Play sessions for the same ages 4 to 8 window: [RINK: new-england-sports-center-marlborough-ma]. NESC is also worth knowing for regular visits, since its $6 kid admission is the cheapest year-round kid ticket in its metro as of July 2026.
 
@@ -83,7 +83,7 @@ Almost always, and that is the catch to plan for. Millennium Park is free to ent
 
 ### Where can kids skate free?
 
-Several ways, as of July 2026. Boston Common Frog Pond is free for skaters under 58 inches tall. Nashville's Centennial Sportsplex lists ages 4 and under free with free spectators. And free intro programs like GOAL at Nashville's Ford Ice Centers give kids ages 4 to 8 free ice time with instruction.
+Boston Common Frog Pond has published free admission for skaters under 58 inches tall. Free intro programs such as GOAL at Nashville's Ford Ice Centers offer instruction for kids ages 4 to 8. Confirm eligibility and current availability with the operator; Centennial's youngest-child admission policy is not verified.
 
 ### Are there free ice skating lessons?
 

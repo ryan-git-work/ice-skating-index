@@ -15,10 +15,15 @@ interface Rink {
     city: string;
   };
   last_verified: string;
+  content_modified?: string;
+  pricing?: { verified_on?: string };
   operating_status?: "open" | "closed" | "coming_soon";
 }
 
 const rinks = rinksData as Rink[];
+const rinkModified = (rink: Rink) => latestDate(
+  [rink.last_verified, rink.content_modified, rink.pricing?.verified_on], STATIC_LASTMOD.browse,
+);
 
 function getAllStates(): string[] {
   const states = new Set(rinks.map((r) => r.address.state.toLowerCase()));
@@ -63,7 +68,7 @@ export async function registerRoutes(
         rink.address.state.toLowerCase().replace(/\s+/g, "-") === state &&
         rink.address.city.toLowerCase().replace(/\s+/g, "-") === city
       );
-      return { state, city, lastmod: latestDate(cityRinks.map((rink) => rink.last_verified), STATIC_LASTMOD.browse) };
+      return { state, city, lastmod: state === "tn" && city === "nashville" ? "2026-10-07" : latestDate(cityRinks.map(rinkModified), STATIC_LASTMOD.browse) };
     });
 
     let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -114,7 +119,7 @@ export async function registerRoutes(
 ${getAllStates().map(state => `  <url>
     <loc>${baseUrl}/state/${state}</loc>
     <lastmod>${latestDate(
-      rinks.filter((rink) => rink.address.state.toLowerCase() === state).map((rink) => rink.last_verified),
+      rinks.filter((rink) => rink.address.state.toLowerCase() === state).map(rinkModified),
       STATIC_LASTMOD.browse,
     )}</lastmod>
     <changefreq>weekly</changefreq>
@@ -132,7 +137,7 @@ ${cities.map(({ state, city, lastmod }) => `  <url>
   <!-- Individual Rink Pages -->
 ${rinks.filter((rink) => !["closed", "coming_soon"].includes(rink.operating_status || "open")).map(rink => `  <url>
     <loc>${baseUrl}/rink/${rink.slug}</loc>
-    <lastmod>${rink.last_verified || STATIC_LASTMOD.browse}</lastmod>
+    <lastmod>${rinkModified(rink)}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>`).join('\n')}
@@ -148,7 +153,7 @@ ${rinks.filter((rink) => !["closed", "coming_soon"].includes(rink.operating_stat
   <!-- Blog Posts -->
 ${indexableBlogPosts.map((post: any) => `  <url>
     <loc>${baseUrl}/blog/${post.slug}</loc>
-    <lastmod>${post.publishDate || STATIC_LASTMOD.blog}</lastmod>
+    <lastmod>${latestDate([post.publishDate, post.modifiedDate], STATIC_LASTMOD.blog)}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>`).join('\n')}

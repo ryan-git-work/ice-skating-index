@@ -10,10 +10,10 @@ Here is exactly what you will pay at every Nashville area rink, plus tips for ge
 
 | Rink | Admission | Skate Rental | Reservations Required |
 |------|-----------|--------------|----------------------|
-| Centennial Sportsplex | Confirm in DaySmart | Confirm in DaySmart | Yes — online |
+| Centennial Sportsplex | $12 ages 13+ / $10 youth, military, college, senior (verified Oct 1, 2026) | Unverified; confirm in DaySmart | Yes, online |
 | Ford Ice Center Antioch | $10.98 matinee / $13.73 evening, plus tax | Included | Yes — online |
 | Ford Ice Center Bellevue | $10.98 matinee / $13.73 evening, plus tax | Included | Yes — online |
-| Ford Ice Center Clarksville | $10.98 matinee / $13.73 evening, plus tax | Included | Yes — online |
+| Gaylord Opryland (seasonal) | Date-specific; confirm at checkout | Confirm ticket terms | Advance online tickets required |
 | Gaylord Opryland (seasonal) | Varies | Included | Recommended |
 
 ---
@@ -22,10 +22,10 @@ Here is exactly what you will pay at every Nashville area rink, plus tips for ge
 
 Centennial Sportsplex is Nashville's central two-sheet public rink. The Nashville Predators assumed management of ice operations on May 1, 2026 and moved public schedules, registration, and waivers into DaySmart.
 
-**Admission:** Confirm the current session price in DaySmart
+**Base admission, verified October 1, 2026:** $12 ages 13+; $10 youth, military, college students, and seniors.
 **Skate rental:** Confirm the current policy in the session listing
 
-Centennial's former Metro pricing should not be treated as the current checkout price during the management transition. Open the actual public-skate session in DaySmart before calculating a family total.
+Rental inclusion, spectator admission, and admission for the youngest children are not verified. Open the selected DaySmart session before calculating a family total.
 
 **Skate sharpening** is no longer available through the former on-site pro shop. Use the current Nashville sharpening guide for verified alternatives.
 
@@ -61,7 +61,7 @@ Neither is objectively better — they serve different needs.
 - You want a central Nashville rink with two full-size sheets
 - You use Nashville Skating Academy for lessons or freestyle ice
 - You are enrolling in a learn-to-skate program (Nashville Skating Academy operates here)
-- You have young kids who skate free or at reduced cost
+- You have confirmed the selected session's complete family cost in DaySmart
 - You want to be centrally located in the city
 
 **Choose Ford Ice if:**
@@ -98,10 +98,10 @@ Private one-on-one lessons are available at both Centennial and Ford Ice facilit
 
 ## How Much Does It Cost to Buy Ice Skates in Nashville?
 
-If you find yourself going more than 6-8 times per season, buying your own skates makes financial sense. Rental is included in admission at Nashville rinks now, but personal skates that fit well and hold a proper edge make the experience noticeably better.
+Personal skates can improve fit and consistency. Confirm rental charges at your selected rink before estimating any savings from buying.
 
 **Where to buy skates in Nashville:**
-- The Centennial Sportsplex has a small hockey equipment store on-site
+- The former Centennial on-site pro shop closed during the management transition; use current retailers instead.
 - Play It Again Sports locations in the Nashville area carry used and new recreational skates at lower price points
 - Specialty skating retailers and online (Pure Hockey, Ice Warehouse, Amazon) for a wider selection
 
@@ -116,13 +116,13 @@ For a casual Nashville skater hitting Centennial or Ford Ice a dozen times a yea
 
 ## Tips for Saving Money on Ice Skating in Nashville
 
-**Go to Centennial over Ford Ice for casual visits.** The $6 per-person difference adds up quickly for families who skate regularly.
+**Compare booking totals.** Centennial's verified base admission does not establish a $6 saving over Ford Ice; check rentals and tax for the selected session.
 
 **Check for special sessions.** Centennial occasionally offers promotional or discounted sessions around holidays and special events. Follow their Facebook page or check Nashville.gov for announcements.
 
 **Enroll in group lessons rather than private.** Group learn-to-skate sessions at $125 for 6 weeks work out to about $21 per session — far more affordable than private coaching at $40-80 per lesson, and effective for beginners through intermediate skaters.
 
-**Buy your own skates once you are going regularly.** Rental is included in admission at Nashville rinks, but owning your own skates eliminates the fit lottery of rental boots and gives you a consistently better experience.
+**Consider your own skates for fit.** Compare fit, maintenance, and rental costs before buying.
 
 **Bring your own snacks to Centennial.** Outside food is welcome, and the concession stand is cash only. A bag of snacks from home saves a few dollars and means no scrambling for cash at the rink.
 
@@ -137,3 +137,7 @@ For a broader look at what ice skating costs nationally, see our complete [ice s
 ---
 
 *Published by Ice Skating Index — your guide to everything on the ice.*
+
+## Centennial price source
+
+Base admission checked October 1, 2026 against the official DaySmart listings linked on the [Centennial rink page](/rink/centennial-sportsplex-nashville-tn). Rental inclusion, spectator admission, and youngest-child admission remain unverified.

@@ -145,6 +145,7 @@ export const RinkSchema = z.object({
       notes: z.string().optional()
   })).optional(),
   last_verified: z.string().optional(),
+  content_modified: z.string().optional(),
 });
 
 export type Rink = z.infer<typeof RinkSchema>;

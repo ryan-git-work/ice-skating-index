@@ -190,7 +190,7 @@
     ],
     "category": "Rink Spotlights",
     "publishDate": "2026-03-12",
-    "modifiedDate": "2026-06-30",
+    "modifiedDate": "2026-10-07",
     "excerpt": "Compare current Nashville public-skate pricing and booking requirements, including Ford Ice rates and Centennial's new DaySmart process.",
     "fileName": "ice-skating-cost-nashville.md"
   },
@@ -867,7 +867,7 @@
     ],
     "category": "Beginner Guides",
     "publishDate": "2026-06-27",
-    "modifiedDate": "2026-06-29",
+    "modifiedDate": "2026-10-07",
     "excerpt": "Find every Nashville public skating rink, how its schedule works, what it costs, and how to book before you load the car.",
     "fileName": "public-skating-nashville.md",
     "hasDynamicRinkLinks": true
@@ -885,7 +885,7 @@
     ],
     "category": "Skating Lifestyle",
     "publishDate": "2026-06-29",
-    "modifiedDate": "2026-06-29",
+    "modifiedDate": "2026-10-07",
     "excerpt": "See where to skate in Nashville this weekend, how to confirm each live schedule, and which session type fits your visit.",
     "fileName": "ice-skating-nashville-this-weekend.md",
     "hasDynamicRinkLinks": true
@@ -939,7 +939,8 @@
     "publishDate": "2026-07-10",
     "excerpt": "An ice skating birthday party solves the two problems every parent planning a party knows too well: the activity is built in, and the venue handles the mess....",
     "fileName": "ice-skating-birthday-party-nashville.md",
-    "hasDynamicRinkLinks": true
+    "hasDynamicRinkLinks": true,
+    "modifiedDate": "2026-10-07"
   },
   {
     "slug": "ice-skating-nashville-kids",
@@ -955,7 +956,8 @@
     "publishDate": "2026-07-10",
     "excerpt": "Taking kids ice skating in Nashville is one of those outings that either becomes a family tradition or a one-time story about crying in a cold building, and...",
     "fileName": "ice-skating-nashville-kids.md",
-    "hasDynamicRinkLinks": true
+    "hasDynamicRinkLinks": true,
+    "modifiedDate": "2026-10-07"
   },
   {
     "slug": "indoor-ice-skating-nashville",
@@ -971,7 +973,8 @@
     "publishDate": "2026-07-10",
     "excerpt": "It is a fair question in a city where summer lasts five months: where can you actually ice skate in Nashville when it is 95 degrees outside? The answer is...",
     "fileName": "indoor-ice-skating-nashville.md",
-    "hasDynamicRinkLinks": true
+    "hasDynamicRinkLinks": true,
+    "modifiedDate": "2026-10-07"
   },
   {
     "slug": "ice-skating-franklin-tn",
@@ -1135,7 +1138,8 @@
     "publishDate": "2026-07-11",
     "excerpt": "You are standing at the window of a rink where the sign says admission is free, and your eyes drop one line to the skate rental price, and you quietly do the...",
     "fileName": "free-ice-skating.md",
-    "hasDynamicRinkLinks": true
+    "hasDynamicRinkLinks": true,
+    "modifiedDate": "2026-10-07"
   },
   {
     "slug": "best-time-to-go-ice-skating",
