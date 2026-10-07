@@ -10,7 +10,7 @@ The reason to check first is simple. A rink that usually has a Saturday afternoo
 
 ## Centennial Sportsplex (near downtown)
 
-[RINK: centennial-sportsplex-nashville-tn] is the closest indoor ice to downtown and the most central choice for a weekend skate. It has two sheets, with public skating typically on Rink A, and it runs both public sessions and figure skating freestyle sessions through the week. Public skate at Centennial is on the affordable end, with skate rental included, which is part of why adult recreational skaters like it for a longer, low-key session.
+[RINK: centennial-sportsplex-nashville-tn] is the most central indoor option. Centennial base admission verified October 1, 2026 is $12 for ages 13+ and $10 for youth, military, college students, and seniors. Confirm rental charges, spectator admission, and admission for the youngest children in the selected DaySmart session; those policies are not verified.
 
 One thing to know right now: Centennial is under new management by the Nashville Predators, and the schedule has been moving around as that transition settles, so the current week's calendar matters more than usual here. Check the live schedule and any posted changes on the [Centennial Sportsplex page](/rink/centennial-sportsplex-nashville-tn) before you head over.
 
@@ -38,7 +38,7 @@ If you are coming out to skate casually, glide around, or bring first-timers, yo
 
 ## What to bring for a weekend session
 
-You do not need much. Skate rental is included at most Nashville rinks, so you can show up empty-handed, but a few things make it better. Wear long pants and thin socks, bring gloves (hands hit the ice first and the ice is cold and hard), and dress in layers you can shed once you warm up. If you are bringing young kids, a helmet is the smart call, and knee pads, elbow pads, and gloves all help on a busy public session where falls happen. If you skate often enough to own skates, this is the weekend to make sure they are sharp.
+Confirm rental availability and charges before leaving home. Wear long pants and thin socks, bring gloves, and dress in layers. For young children, bring a helmet and check the selected session's age and rental-size requirements.
 
 ## A note on the holidays and seasonal rinks
 
@@ -60,7 +60,7 @@ Usually yes, but holiday weekends are exactly when schedules get altered for cam
 
 ### How much does public skating cost in Nashville?
 
-It varies by rink. Centennial Sportsplex is on the affordable end with skates included; the Ford Ice Centers run a higher matinee and evening rate, skates included; Gary Force does not post prices publicly. See each rink's page for current pricing.
+Centennial base admission verified October 1, 2026 is $12 for ages 13+ and $10 for youth, military, college students, and seniors. Confirm rental charges, spectator admission, and admission for the youngest children in the selected DaySmart session; those policies are not verified. Ford Ice lists matinee and evening rates with rentals included; Gary Force confirms its rate at booking.
 
 ### Can I just walk in, or do I need to book ahead?
 
@@ -72,3 +72,7 @@ Start with the full [Nashville ice skating guide](/city/tn/nashville) to compare
 ## Related planning guide
 
 For crowd timing, fresh ice, and the quietest windows, read [the best time to go ice skating](/blog/best-time-to-go-ice-skating).
+
+## Centennial price source
+
+Base admission checked October 1, 2026 against the official DaySmart listings linked on the [Centennial rink page](/rink/centennial-sportsplex-nashville-tn). Rental inclusion, spectator admission, and youngest-child admission remain unverified.

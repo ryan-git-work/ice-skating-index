@@ -20,7 +20,7 @@ Public skate, sometimes called open skate, is the session you want: open to ever
 
 [RINK: centennial-sportsplex-nashville-tn] is Nashville's most central public ice, across the street from Centennial Park just west of downtown. The Nashville Predators assumed management of ice operations on May 1, 2026. The rink has two full-size sheets measuring 200 feet by 85 feet each, with public skating typically on Rink A while hockey, lessons, and academy sessions share both sheets.
 
-Public skate admission runs about $12 for ages 13 and up and $10 for ages 5 to 12, with a lower rate for the youngest skaters and a senior rate for ages 62 and up, and spectators get in free. That free-spectator policy is worth more than it looks: a grandparent or a sibling who just wants to watch does not add a dime to the cost of the outing. Skate rental is included with admission, so the listed price is close to the real price, and there is no separate rental-counter math to do.
+Centennial base admission verified October 1, 2026 is $12 for ages 13+ and $10 for youth, military, college students, and seniors. Confirm rental charges, spectator admission, and youngest-child admission in the selected DaySmart session; those policies are not verified.
 
 Public-skate schedules, registration, and waivers now run through Predators DaySmart. Open the current Centennial listing before you go, since camps and other programs can alter the schedule. Nashville Skating Academy publishes freestyle ice, lessons, and classes through its separate Centennial Finnly portal. The former on-site pro shop and skate-sharpening service closed during the management transition, even though older Metro pages may still list it.
 
@@ -48,15 +48,15 @@ Gary Force does not post public-skate prices openly online, so the move here is 
 
 ## Seasonal and holiday skating in Nashville
 
-From late fall into winter, Nashville adds a couple of seasonal rinks that are more about the experience than regular practice, and they are a different animal from the year-round rinks. [RINK: gaylord-opryland-resort-nashville-tn] opens a holiday rink inside the resort's enormous Christmas programming, which makes it a festive once-a-season outing rather than a place to log practice hours, with resort-style pricing to match. [RINK: smashville-ice-rink-at-zoolumination-nashville-tn] is a seasonal outdoor rink downtown, the kind of place you skate under the lights as a holiday memory rather than a training session. South of the city, [RINK: fountains-at-gateway-murfreesboro-tn] is Murfreesboro's seasonal outdoor option and the closest seasonal ice for Rutherford County families.
+Gaylord Opryland has announced outdoor skating at Pinetop for November 6, 2026 through January 2, 2027, with advance online tickets and separate parking fees. The 2026–27 Smashville and Fountains skating seasons are unconfirmed; check operator announcements before planning a trip.
 
-All three are winter-only and currently closed outside their season, so confirm their opening dates before planning a visit. If you are reading this in the warm months, the year-round indoor rinks are your only real choice, and that is completely fine, since indoor ice does not care what the thermometer says outside.
+Gaylord Opryland has announced outdoor skating at Pinetop for November 6, 2026 through January 2, 2027, with advance online tickets and separate parking fees. The 2026–27 Smashville and Fountains skating seasons are unconfirmed; check operator announcements before planning a trip.
 
 ## How much does public skating cost in Nashville?
 
-Across the year-round rinks, plan on roughly $10 to $14 per skater for a public session, with skate rental included at every one of them. Centennial sits at the affordable end, with adults around $12 and kids around $10, and it keeps spectators free, which is the single biggest cost-saver for a family that brings non-skaters along. The Ford Ice rinks land a little higher and split matinee and evening pricing, so an afternoon session is the cheaper option there. Gary Force does not publish its rate, so budget by checking the events calendar at booking.
+Centennial base admission verified October 1, 2026 is $12 for ages 13+ and $10 for youth, military, college students, and seniors. Confirm rental charges, spectator admission, and youngest-child admission in the selected DaySmart session; those policies are not verified. Ford Ice lists matinee and evening pricing; Gary Force confirms its rate at booking.
 
-For a family of four with everyone skating, you are usually looking at somewhere in the range of forty to sixty dollars for a session, rentals included, before any snacks. The seasonal holiday rinks run higher, especially the resort rink, and are priced as an experience rather than a regular skate. If you want the full picture of what skating costs in Nashville, including lessons and gear, see our dedicated guide on [how much ice skating costs in Nashville](/blog/ice-skating-cost-nashville). The prices in this guide are current as of mid-2026, so confirm the latest rates on each rink's page before you go, since admission and what it includes can change from season to season.
+Calculate the family total from the selected session, including rentals, tax, and non-skating guests. See [Nashville skating costs](/blog/ice-skating-cost-nashville) for the comparison.
 
 ## How to read the schedules and book a session
 
@@ -68,7 +68,7 @@ In every case, weekend sessions are the busiest and fill up first, so booking or
 
 If you are choosing between rinks, a few simple rules help:
 
-- **First-timers and walk-up families:** Centennial Sportsplex. No account needed, rentals included, spectators free, and two sheets keep public sessions on the calendar.
+- **Central Nashville:** Centennial Sportsplex. Confirm the session, registration, and admission terms in DaySmart.
 - **West side of the metro:** Ford Ice Center Bellevue, about 14 minutes west of downtown.
 - **Southeast metro:** Ford Ice Center Antioch, the largest Ford location.
 - **Williamson County, Nolensville, Brentwood, Franklin:** Gary Force Acura Ice Arena.
@@ -80,7 +80,7 @@ If your goal is regular skating, whether that is learn-to-skate for the kids or 
 
 ## What to bring and what to expect your first time
 
-A public skate is a low-stakes outing, but a little prep makes the first one smoother. Wear long pants and socks that come above the boot, bring gloves since hands hit the ice during falls and the rail is cold, and dress in layers, because indoor ice stays cold in every season and a rink lobby gets colder over an hour than you expect. Plan to rent skates your first few times rather than buying, which every Nashville rink includes in admission anyway. Arrive early enough to get fitted, swap a pair that pinches, and lace up before the ice fills, because a snug skate that supports your ankle is the difference between a fun session and a frustrating one.
+A public skate is a low-stakes outing, but a little prep makes the first one smoother. Wear long pants and socks that come above the boot, bring gloves since hands hit the ice during falls and the rail is cold, and dress in layers, because indoor ice stays cold in every season and a rink lobby gets colder over an hour than you expect. Plan to rent skates your first few times rather than buying, and confirm rental charges for the selected session. Arrive early enough to get fitted, swap a pair that pinches, and lace up before the ice fills, because a snug skate that supports your ankle is the difference between a fun session and a frustrating one.
 
 If you have never skated, spend your first few minutes near the wall getting your feet under you, then take a few steps out into open ice. Bend your knees, keep your weight a little forward, and when in doubt bend more, since tall and stiff is how people fall. A first session that ends with a smile and a "can we come back" is a short one, so do not try to close down the rink. For the full first-timer walkthrough, our step-by-step guide on [how to ice skate](/blog/how-to-ice-skate) covers balance, gliding, stopping, and getting up after a fall.
 
@@ -90,12 +90,12 @@ A few habits make any Nashville public skate smoother:
 
 - Confirm the session the day you plan to go, since all of these schedules shift month to month.
 - For the three Ford Ice rinks, reserve online through DaySmart ahead of time rather than counting on a walk-up spot.
-- For Centennial, you can walk up, but weekend afternoons draw a crowd, so come early if you want quieter ice.
+- For Centennial, check the selected DaySmart session and register before travelling.
 - Bring gloves, dress in layers, and pack a warm layer for any non-skaters who are just there to watch.
 - If you are bringing a brand-new skater, ask at the desk whether skating aids are available, and consider a helmet for the youngest kids.
 - Keep the first session short and end on a high note.
 
-Nashville is not a huge skating town, but it is a well-covered one: five reliable indoor rinks, a couple of holiday options, and skate rental built into every admission. Pick the rink closest to you, confirm the session, and you are on the ice. To compare every rink in one place, start with the [Nashville ice skating guide](/city/tn/nashville), or [browse all rinks](/browse) to find ice anywhere.
+Nashville has five year-round indoor options. Pick the rink closest to you and confirm the session and rental terms. Start with the [Nashville ice skating guide](/city/tn/nashville), or [browse all rinks](/browse).
 
 ## Frequently Asked Questions
 
@@ -105,7 +105,7 @@ Nashville has five year-round indoor rinks with public skating: Centennial Sport
 
 ### How much does public skating cost in Nashville?
 
-Plan on about $10 to $14 per skater at the year-round rinks, with skate rental included everywhere. Centennial runs roughly $10 to $12 and keeps spectators free, and the Ford Ice rinks run about $10.98 for matinee and $13.73 for evening sessions plus tax. Gary Force does not publish its rate, so confirm it at booking. A family of four skating together usually lands in the forty to sixty dollar range before snacks. Confirm current rates on each rink's page before you go.
+Centennial base admission verified October 1, 2026 is $12 for ages 13+ and $10 for youth, military, college students, and seniors. Confirm rental charges, spectator admission, and youngest-child admission in the selected DaySmart session; those policies are not verified. Ford Ice lists matinee and evening rates plus tax; Gary Force confirms rates at booking.
 
 ### Do I need a reservation to ice skate in Nashville?
 
@@ -135,3 +135,7 @@ In winter, yes. The Gaylord Opryland Resort opens a holiday rink as part of its 
 ## More Nashville and Franklin skating guides
 
 Round out the trip with [learn to skate in Nashville](/blog/learn-to-skate-nashville), [ice skating birthday parties in Nashville](/blog/ice-skating-birthday-party-nashville), [ice skating in Nashville with kids](/blog/ice-skating-nashville-kids), [indoor ice skating in Nashville](/blog/indoor-ice-skating-nashville), and [ice skating near Franklin](/blog/ice-skating-franklin-tn).
+
+## Centennial price source
+
+Base admission checked October 1, 2026 against the official DaySmart listings linked on the [Centennial rink page](/rink/centennial-sportsplex-nashville-tn). Rental inclusion, spectator admission, and youngest-child admission remain unverified.

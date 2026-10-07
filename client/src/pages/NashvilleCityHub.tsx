@@ -33,11 +33,11 @@ const clarksville = rinks.find(r => r.slug === RINK_SLUGS.clarksville);
 const NASHVILLE_FAQS = [
   {
     question: "Where can I ice skate in Nashville?",
-    answer: "Nashville has five year-round indoor options across the metro: Centennial Sportsplex, Ford Ice Center Bellevue, Ford Ice Center Antioch, Ford Ice Center Clarksville, and Gary Force Acura Ice Arena in Nolensville. Seasonal holiday rinks also open at Gaylord Opryland, Smashville, and Fountains at Gateway.",
+    answer: "Nashville has five year-round indoor options across the metro: Centennial Sportsplex, Ford Ice Center Bellevue, Ford Ice Center Antioch, Ford Ice Center Clarksville, and Gary Force Acura Ice Arena in Nolensville. Gaylord has announced November 6, 2026 through January 2, 2027 skating; the upcoming Smashville and Fountains seasons remain unconfirmed.",
   },
   {
     question: "How much does ice skating cost in Nashville?",
-    answer: "Centennial's prior public-skate rates were $12 for ages 13 and up and $10 for ages 5 to 12, but current pricing should be confirmed in DaySmart after the management transition. Ford Ice Center lists $10.98 plus tax for matinee sessions and $13.73 plus tax for evening sessions, with rentals included. Gary Force posts its price inside the booking flow.",
+    answer: "Centennial base admission verified October 1, 2026 is $12 ages 13+ and $10 youth, military, college, and senior. Rental inclusion, spectator admission, and youngest-child admission are unverified; confirm in DaySmart. Ford Ice Center lists $10.98 plus tax for matinee sessions and $13.73 plus tax for evening sessions, with rentals included. Gary Force posts its price inside the booking flow.",
   },
   {
     question: "Is there indoor ice skating in Nashville?",
@@ -60,7 +60,7 @@ function RinkLink({ slug, children }: { slug: string; children: React.ReactNode 
 export default function NashvilleCityHub() {
   const asOf = useAsOf();
   const pageModified = [
-    "2026-06-29",
+    "2026-10-07",
     getLatestCurrentStatusUpdated(Array.from(nashvilleRinkSlugs), asOf),
   ].filter((value): value is string => Boolean(value)).sort().at(-1);
   const faqSchema = {
@@ -185,7 +185,7 @@ export default function NashvilleCityHub() {
                         <div className="mt-2"><SkateStatusChip slug={RINK_SLUGS.centennial} /></div>
                       </td>
                       <td className="py-3 pr-4 text-muted-foreground">West End</td>
-                      <td className="py-3 pr-4 text-muted-foreground">Confirm in DaySmart</td>
+                      <td className="py-3 pr-4 text-muted-foreground">$12 / $10 base admission; confirm rentals</td>
                       <td className="py-3 pr-4 text-muted-foreground">Online</td>
                       <td className="py-3"><span className="inline-flex items-center gap-1 text-green-600"><CheckCircle className="h-3.5 w-3.5" /> Year-round</span></td>
                     </tr>
@@ -258,13 +258,13 @@ export default function NashvilleCityHub() {
                   <RinkLink slug={RINK_SLUGS.centennial}>Centennial Sportsplex Ice Arenas</RinkLink> is Nashville&apos;s original public skating destination. Located across from Centennial Park in the West End, it is operated by Metro Nashville Parks and Recreation and has two full-size sheets measuring 200 by 85 feet.
                 </p>
                 <p>
-                  Centennial&apos;s previously published public-skate rates were $12 for ages 13 and up and $10 for ages 5 to 12, with rental included. Since the Predators assumed ice operations, schedules, waivers, and registration have moved to DaySmart. Confirm the current session price when booking.
+                  Centennial base admission verified October 1, 2026 is $12 ages 13+ and $10 youth, military, college, and senior. Rental inclusion, spectator admission, and youngest-child admission are unverified. Confirm the selected session in DaySmart; the <RinkLink slug={RINK_SLUGS.centennial}>rink page</RinkLink> links the official price sources.
                 </p>
                 <p>
                   <strong className="text-foreground">What makes it unique:</strong> Two full-size sheets let public skating, hockey, and lessons share the building. The west arena is also used by the Nashville Predators. Weekend afternoons and some weekday midday public sessions are common, but the calendar changes monthly.
                 </p>
                 <p>
-                  <strong className="text-foreground">Best for:</strong> First-timers, families who want to walk in, learn-to-skate students, central Nashville residents, and groups bringing non-skating spectators.
+                  <strong className="text-foreground">Best for:</strong> First-timers, families booking a central rink, learn-to-skate students, central Nashville residents, and groups bringing non-skating spectators.
                 </p>
                 <p>
                   <strong className="text-foreground">The catch:</strong> Public skate does not follow fixed weekly hours. Check the current Skate Status note, then open the Centennial session in DaySmart before driving.
@@ -374,9 +374,9 @@ export default function NashvilleCityHub() {
             <Separator />
 
             <section id="seasonal">
-              <h2 className="font-serif text-2xl font-bold mb-4">Seasonal options &mdash; only open November through February</h2>
+              <h2 className="font-serif text-2xl font-bold mb-4">Seasonal options &mdash; confirm the announced season</h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                From late November through early February, Nashville opens up several outdoor and pop-up rinks that aren&apos;t available the rest of the year:
+                Check each operator&apos;s announced season before planning holiday skating. Gaylord has confirmed 2026&ndash;27 dates; Fountains and Smashville skating remain unconfirmed:
               </p>
               <div className="space-y-6">
                 <div className="bg-card border rounded-lg p-6">
@@ -384,7 +384,7 @@ export default function NashvilleCityHub() {
                     <RinkLink slug={RINK_SLUGS.smashville}>Smashville Ice Rink at Zoolumination</RinkLink>
                   </h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Downtown at Ascension Saint Thomas Landing (under Broadway). The 2025&ndash;26 season ran through February 8, 2026. Adult and teen tickets were $25, youth $21. Part of the Predators / Zoolumination holiday programming. <strong className="text-foreground">Best for:</strong> a downtown holiday experience, not a serious skate session.
+                    The 2026&ndash;27 skating season is unconfirmed. Do not assume the prior Zoolumination branding establishes reopening or skating at the zoo&apos;s replacement light event. Check the operator before planning a visit.
                   </p>
                 </div>
                 <div className="bg-card border rounded-lg p-6">
@@ -392,7 +392,7 @@ export default function NashvilleCityHub() {
                     <RinkLink slug={RINK_SLUGS.fountains}>Fountains at Gateway (Murfreesboro)</RinkLink>
                   </h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    A seasonal outdoor rink that ran November 21, 2025 through February 1, 2026. $17 for ages 13+, $12 for ages 4&ndash;12. 60-minute sessions, skate rental included. The closest seasonal rink for Murfreesboro families.
+                    The official page still lists November 21, 2025 through February 1, 2026, with 120 minutes on the ice. Those dates and terms are historical. The 2026&ndash;27 dates, rates, and rental terms are unconfirmed.
                   </p>
                 </div>
                 <div className="bg-card border rounded-lg p-6">
@@ -400,7 +400,7 @@ export default function NashvilleCityHub() {
                     <RinkLink slug={RINK_SLUGS.gaylord}>Gaylord Opryland Resort</RinkLink>
                   </h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Part of the resort&apos;s &ldquo;A Country Christmas&rdquo; / &ldquo;So Much Christmas&rdquo; programming. Resort-style pricing and atmosphere. Worth doing once as an experience, not as a regular skate spot.
+                    Outdoor skating at Pinetop runs November 6, 2026 through January 2, 2027. Advance online tickets are required. Prices depend on the selected date, parking costs extra, and rental inclusion is unverified. Check the official ticket page linked on the rink page.
                   </p>
                 </div>
               </div>
@@ -414,7 +414,7 @@ export default function NashvilleCityHub() {
               <ul className="space-y-4 text-muted-foreground">
                 <li className="flex items-start gap-3">
                   <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span><strong className="text-foreground">Choose Centennial Sportsplex if:</strong> you&apos;re a first-timer, you have young kids and want to walk in without a reservation, you&apos;re enrolling in a learn-to-skate program, or budget matters.</span>
+                  <span><strong className="text-foreground">Choose Centennial Sportsplex if:</strong> you&apos;re a first-timer, you have confirmed the session and family admission terms in DaySmart, you&apos;re enrolling in a learn-to-skate program, or budget matters.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
