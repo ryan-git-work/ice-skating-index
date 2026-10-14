@@ -37,6 +37,7 @@ function CityLink({ slug, children }: { slug: string; children: React.ReactNode 
 
 export default function TennesseeStateHub() {
   const tnRinks = getRinksByState("tn");
+  const cities = Array.from(new Set(tnRinks.map(rink => rink.address.city))).sort();
 
   useHead({
     title: "Ice Skating in Tennessee: Every Rink, Every City (2026 Guide)",
@@ -206,6 +207,11 @@ export default function TennesseeStateHub() {
 
             <section>
               <h2 className="font-serif text-2xl font-bold mb-6">All Tennessee Rinks</h2>
+              <nav aria-label="Tennessee city guides" className="flex flex-wrap gap-x-6 gap-y-3 mb-6">
+                {cities.map(city => (
+                  <CityLink key={city} slug={city.toLowerCase().replace(/\s+/g, "-")}>{city}</CityLink>
+                ))}
+              </nav>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {tnRinks.map(rink => (
                   <RinkCard key={rink.id} rink={rink} />

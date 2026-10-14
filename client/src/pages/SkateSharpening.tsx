@@ -13,6 +13,7 @@ import { ChevronDown, Sparkles, AlertCircle, HelpCircle, MapPin } from "lucide-r
 import { useState } from "react";
 import { buildWebPageSchema } from "@/lib/seo";
 import { SharpeningConnector } from "@/components/SharpeningConnector";
+import { Link } from "wouter";
 
 export default function SkateSharpening() {
   const description = "Learn how skate sharpening works, what to ask for, and how to find quality sharpening near you. A practical guide for figure skaters and hockey players.";
@@ -275,18 +276,22 @@ export default function SkateSharpening() {
 
             <Separator />
 
-            {/* Coming Soon */}
+            {/* Local planning guides */}
             <section className="bg-secondary/60 p-8 rounded-lg border">
               <div className="flex items-start gap-4">
                 <div className="bg-primary/10 p-3 rounded-full">
                   <Sparkles className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h2 className="font-serif text-xl font-bold mb-2">Coming soon</h2>
+                  <h2 className="font-serif text-xl font-bold mb-2">Plan skate sharpening in Middle Tennessee</h2>
                   <p className="text-muted-foreground">
-                    We are building a directory of trusted skate sharpening options by location. 
-                    If you own or operate a skate sharpening service, you will be able to claim a listing soon.
+                    Start with our local guides, then contact the provider to confirm blade type, turnaround and current pricing before you travel.
                   </p>
+                  <nav aria-label="Middle Tennessee sharpening guides" className="flex flex-wrap gap-x-6 gap-y-3 mt-4">
+                    <Link href="/blog/skate-sharpening-nashville" className="text-primary hover:underline">Nashville sharpening guide</Link>
+                    <Link href="/city/tn/nashville" className="text-primary hover:underline">Nashville rink guide</Link>
+                    <Link href="/blog/ice-skating-franklin-tn" className="text-primary hover:underline">Franklin skating guide</Link>
+                  </nav>
                 </div>
               </div>
             </section>
