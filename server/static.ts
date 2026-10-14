@@ -2,13 +2,29 @@ import express, { type Express } from "express";
 import fs from "fs";
 import path from "path";
 
-export function serveStatic(app: Express) {
-  const distPath = path.resolve(__dirname, "public");
+export function serveStatic(app: Express, distPath = path.resolve(__dirname, "public")) {
   if (!fs.existsSync(distPath)) {
     throw new Error(
       `Could not find the build directory: ${distPath}, make sure to build the client first`,
     );
   }
+
+  // Only known page directories get a slashless alias. Assets and missing
+  // routes retain their existing responses; query parameters survive intact.
+  app.use((req, res, next) => {
+    const requestPath = req.originalUrl.split("?")[0];
+    if (!["GET", "HEAD"].includes(req.method) || requestPath === "/" ||
+        !requestPath.endsWith("/") || !requestPath.startsWith("/") || requestPath.startsWith("//")) {
+      return next();
+    }
+    const canonicalPath = requestPath.replace(/\/+$/, "");
+    const pageDir = path.resolve(distPath, `.${canonicalPath}`);
+    if (!pageDir.startsWith(`${path.resolve(distPath)}${path.sep}`) ||
+        !fs.existsSync(path.join(pageDir, "index.html"))) {
+      return next();
+    }
+    return res.redirect(301, canonicalPath + req.originalUrl.slice(requestPath.length));
+  });
 
   app.use(express.static(distPath, {
     redirect: false,
