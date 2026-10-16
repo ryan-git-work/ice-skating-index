@@ -60,7 +60,7 @@ function RinkLink({ slug, children }: { slug: string; children: React.ReactNode 
 export default function NashvilleCityHub() {
   const asOf = useAsOf();
   const pageModified = [
-    "2026-10-07",
+    "2026-10-16",
     getLatestCurrentStatusUpdated(Array.from(nashvilleRinkSlugs), asOf),
   ].filter((value): value is string => Boolean(value)).sort().at(-1);
   const faqSchema = {
@@ -255,19 +255,19 @@ export default function NashvilleCityHub() {
               <h2 className="font-serif text-2xl font-bold mb-4">Centennial Sportsplex &mdash; Nashville&apos;s central two-sheet rink</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  <RinkLink slug={RINK_SLUGS.centennial}>Centennial Sportsplex Ice Arenas</RinkLink> is Nashville&apos;s original public skating destination. Located across from Centennial Park in the West End, it is operated by Metro Nashville Parks and Recreation and has two full-size sheets measuring 200 by 85 feet.
+                  <RinkLink slug={RINK_SLUGS.centennial}>Centennial Sportsplex Ice Arenas</RinkLink> is Nashville&apos;s original public skating destination. Located across from Centennial Park in the West End, ice operations have been managed by the Nashville Predators since May 1, 2026. Use the Predators listing for public skate and the separate academy portal for practice ice.
                 </p>
                 <p>
                   Centennial base admission verified October 1, 2026 is $12 ages 13+ and $10 youth, military, college, and senior. Rental inclusion, spectator admission, and youngest-child admission are unverified. Confirm the selected session in DaySmart; the <RinkLink slug={RINK_SLUGS.centennial}>rink page</RinkLink> links the official price sources.
                 </p>
                 <p>
-                  <strong className="text-foreground">What makes it unique:</strong> Two full-size sheets let public skating, hockey, and lessons share the building. The west arena is also used by the Nashville Predators. Weekend afternoons and some weekday midday public sessions are common, but the calendar changes monthly.
+                  <strong className="text-foreground">What makes it unique:</strong> Two full-size sheets let public skating, hockey, and lessons share the building. The west arena is also used by the Nashville Predators. Choose a dated public-skate listing rather than relying on building hours or an old weekly timetable.
                 </p>
                 <p>
                   <strong className="text-foreground">Best for:</strong> First-timers, families booking a central rink, learn-to-skate students, central Nashville residents, and groups bringing non-skating spectators.
                 </p>
                 <p>
-                  <strong className="text-foreground">The catch:</strong> Public skate does not follow fixed weekly hours. Check the current Skate Status note, then open the Centennial session in DaySmart before driving.
+                  <strong className="text-foreground">The catch:</strong> Public skate does not follow fixed weekly hours. Open the Centennial session in DaySmart before driving. Academy ice notices cover academy sessions and do not establish public-skate availability.
                 </p>
                 <p className="text-sm">
                   <MapPin className="h-4 w-4 inline mr-1 text-primary" />
@@ -505,7 +505,7 @@ export default function NashvilleCityHub() {
                   {
                     href: "/blog/skate-sharpening-nashville",
                     title: "Current Nashville sharpening options",
-                    description: "Find public sharpening services or ask for help making the right connection.",
+                    description: "Check sourced public sharpening options and what to confirm before handing over your blades.",
                   },
                   {
                     href: "/blog/learn-to-skate-nashville",

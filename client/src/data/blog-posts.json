@@ -144,8 +144,8 @@
   },
   {
     "slug": "how-much-does-ice-skating-cost",
-    "title": "How Much Does Ice Skating Cost? A Complete Price Breakdown",
-    "metaDescription": "Wondering how much ice skating costs? This guide breaks down admission, skate rental, lessons, and gear prices so you know exactly what to expect before you go.",
+    "title": "How Much Does Ice Skating Cost? Admission, Rentals & Budget",
+    "metaDescription": "Compare admission, skate rental, lesson fees and first-month costs. Find dated rink prices and the questions to confirm before booking.",
     "targetKeyword": "how much does ice skating cost",
     "secondaryKeywords": [
       "ice skating prices",
@@ -155,8 +155,9 @@
     ],
     "category": "Beginner Guides",
     "publishDate": "2026-03-09",
-    "excerpt": "Ice skating costs vary wildly depending on where you go, what you need, and what kind of skating you are doing. This guide breaks it down.",
-    "fileName": "how-much-does-ice-skating-cost.md"
+    "excerpt": "Build a first-month skating budget using your chosen rink, rental needs and lesson terms.",
+    "fileName": "how-much-does-ice-skating-cost.md",
+    "modifiedDate": "2026-10-16"
   },
   {
     "slug": "centennial-sportsplex-ice-skating",
@@ -903,7 +904,7 @@
     ],
     "category": "Skating Lifestyle",
     "publishDate": "2026-06-29",
-    "modifiedDate": "2026-06-29",
+    "modifiedDate": "2026-10-16",
     "excerpt": "Compare Nashville skate sharpening options, understand the figure-versus-hockey difference, and get help finding the right specialist.",
     "fileName": "skate-sharpening-nashville.md",
     "hasDynamicRinkLinks": true
@@ -991,7 +992,8 @@
     "publishDate": "2026-07-10",
     "excerpt": "Search for ice skating in Franklin and the results get confusing fast: listicles pointing you all over Middle Tennessee, seasonal rinks that closed in...",
     "fileName": "ice-skating-franklin-tn.md",
-    "hasDynamicRinkLinks": true
+    "hasDynamicRinkLinks": true,
+    "modifiedDate": "2026-10-16"
   },
   {
     "slug": "learn-to-skate-boston",

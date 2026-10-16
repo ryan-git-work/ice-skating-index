@@ -44,7 +44,7 @@ For a confirmed, badge-level program, the nearest structured option is the Scott
 
 Hockey is the backbone of the Nolensville building. Gary Force is home ice for the Nashville Warriors Youth Hockey Club, supports adult-league play, and hosts regional hockey events on its NHL-size sheet, the same dimensions the pros play on. For drop-in players, stick and puck registers through the same online calendar as public skating. Open hockey for adults is not confirmed in the official site text, so scan the calendar for that label or ask directly.
 
-One servicing note for players: sharpening is not available on-site at Gary Force, and the metro's sharpening picture has shifted this year, so get edges done before game day. The current options, including who actually sharpens figure blades versus hockey blades, are in our [Nashville skate sharpening guide](/blog/skate-sharpening-nashville).
+One servicing note for players: current on-site sharpening availability at Gary Force is unconfirmed, and the metro's sharpening picture has shifted this year, so get edges done before game day. The current options, including who actually sharpens figure blades versus hockey blades, are in our [Nashville skate sharpening guide](/blog/skate-sharpening-nashville).
 
 ## Seasonal and holiday skating near Franklin
 

@@ -99,6 +99,10 @@ const NASHVILLE_CLUSTER_SLUGS = new Set([
 type GuideLink = { href: string; label: string };
 
 const rinkGuideMap: Record<string, GuideLink[]> = {
+  "oakland-ice-center-oakland-ca": [
+    { href: "/blog/how-much-does-ice-skating-cost", label: "Compare admission, rental and lesson costs" },
+    { href: "/services/skate-sharpening", label: "What to ask before blade sharpening" },
+  ],
   "gary-force-acura-ice-arena-nolensville-tn": [
     { href: "/blog/ice-skating-franklin-tn", label: "Franklin and Williamson County skating guide" },
     { href: "/blog/franklin-tn-ice-rink-history", label: "Franklin ice rink history" },
@@ -107,6 +111,8 @@ const rinkGuideMap: Record<string, GuideLink[]> = {
     { href: "/blog/ice-rink-rental-cost", label: "Private ice rental cost guide" },
   ],
   "centennial-sportsplex-nashville-tn": [
+    { href: "/blog/how-much-does-ice-skating-cost", label: "Plan admission, rental and first-month costs" },
+    { href: "/blog/skate-sharpening-nashville", label: "Nashville sharpening: sources and questions to ask" },
     { href: "/blog/learn-to-skate-nashville", label: "Learn to skate in Nashville" },
     { href: "/blog/ice-skating-birthday-party-nashville", label: "Nashville birthday party guide" },
     { href: "/blog/ice-skating-nashville-kids", label: "Nashville family skating guide" },
@@ -471,7 +477,7 @@ export default function RinkDetail() {
                             .filter((tier) => tier.source_url)
                             .map((tier) => (
                               <a
-                                key={tier.source_url}
+                                key={tier.label}
                                 href={tier.source_url}
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -605,7 +611,7 @@ export default function RinkDetail() {
                     {rink.rentals.available ? (
                       <Badge variant="outline" className="text-green-600 border-green-200 bg-green-50">Available</Badge>
                     ) : (
-                      <Badge variant="outline" className="text-muted-foreground">Not Available</Badge>
+                      <Badge variant="outline" className="text-muted-foreground">{rink.sharpening.available === false || rink.sharpening.available === "false" ? "Not Available" : "Confirm with rink"}</Badge>
                     )}
                   </div>
                   {rink.rentals.available && (
@@ -627,7 +633,7 @@ export default function RinkDetail() {
                      {isTruthy(rink.sharpening.available) ? (
                       <Badge variant="outline" className="text-green-600 border-green-200 bg-green-50">Available</Badge>
                     ) : (
-                      <Badge variant="outline" className="text-muted-foreground">Not Available</Badge>
+                      <Badge variant="outline" className="text-muted-foreground">{rink.sharpening.available === false || rink.sharpening.available === "false" ? "Not Available" : "Confirm with rink"}</Badge>
                     )}
                   </div>
                   {isTruthy(rink.sharpening.available) && (

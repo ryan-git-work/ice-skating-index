@@ -1,3 +1,4 @@
+import { RinkPriceExamples } from "@/components/RinkPriceExamples";
 import { useState, useEffect } from "react";
 import { Layout } from "@/components/Layout";
 import { useHead } from "@/hooks/use-head";
@@ -207,6 +208,7 @@ export default function BlogPost() {
 
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-3xl mx-auto">
+          {postMeta.slug === "how-much-does-ice-skating-cost" && <RinkPriceExamples />}
           {loading ? (
             <div className="space-y-4 animate-pulse">
               <div className="h-4 bg-muted rounded w-3/4" />
