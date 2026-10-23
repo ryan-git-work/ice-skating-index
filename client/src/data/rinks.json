@@ -11208,20 +11208,11 @@
       "latitude": 38.7882423,
       "longitude": -104.7942399
     },
-    "phone": null,
+    "phone": "719-477-2178",
     "email": null,
-    "website": "https://www.broadmoorworldarena.com/",
+    "website": "https://www.broadmoorworldarena.com/icehall/about",
     "google_maps_url": "https://www.google.com/maps/search/?api=1&query=3185%20Venetucci%20Boulevard%2C%20Colorado%20Springs%2C%20CO%2080906",
-    "social_links": [
-      {
-        "platform": "instagram",
-        "url": "https://www.instagram.com/thebroadmoor/"
-      },
-      {
-        "platform": "facebook",
-        "url": "https://www.facebook.com/TheBroadmoor"
-      }
-    ],
+    "social_links": [],
     "place_ids": {
       "google_place_id": null,
       "osm_id": null
@@ -11230,42 +11221,52 @@
       "indoor": true,
       "seasonality": "year-round",
       "number_of_sheets": 2,
-      "sheet_sizes": []
+      "sheet_sizes": [
+        "NHL",
+        "Olympic"
+      ]
     },
     "schedule_links": {
-      "public_calendar_url": "https://www.broadmoor.com/activities-recreation/ice-skating",
-      "freestyle_calendar_url": null,
-      "hockey_calendar_url": null,
-      "lessons_url": null
+      "public_calendar_url": "https://www.broadmoorworldarena.com/publicactivities",
+      "freestyle_calendar_url": "https://www.broadmoorworldarena.com/icehall/figureskating",
+      "hockey_calendar_url": "https://www.broadmoorworldarena.com/publicactivities",
+      "lessons_url": "https://www.broadmoorworldarena.com/learntoskate"
     },
     "offerings": {
       "public_skating": true,
       "learn_to_skate": true,
       "figure_skating": true,
-      "hockey": false,
-      "open_hockey": false,
-      "stick_and_puck": false
+      "hockey": true,
+      "open_hockey": true,
+      "stick_and_puck": "unknown"
     },
     "pricing": {
       "public_skate": {
-        "adult": 20,
-        "child": 15,
-        "senior": 15
-      }
+        "adult": 6
+      },
+      "admission_tiers": [
+        {
+          "label": "public-skate admission",
+          "price": 6,
+          "source_url": "https://www.broadmoorworldarena.com/publicactivities"
+        }
+      ],
+      "price_basis": "Posted admission per skater; skate rental is separate. Confirm the total when booking.",
+      "verified_on": "2026-10-22",
+      "notes": "The operator lists $6 public-skate admission and $4 skate rental, checked October 22, 2026. Check the official public-activities page for changes and booking terms."
     },
     "rentals": {
       "available": true,
-      "pricing": {
-        "skate_rental": 10
-      },
-      "notes": "Rental skates available at the Broadmoor Ice Palace. Helmets available for children."
+      "included_with_admission": false,
+      "notes": "Skate rental is listed separately at $4 on the official public-activities page, checked October 22, 2026. Rental sizes and helmet availability have not been verified."
     },
     "sharpening": {
-      "pricing_base": 10,
+      "pricing_base": null,
       "pricing_rush": null,
       "add_ons": [],
-      "notes": "Sharpening available at the pro shop.",
-      "info_url": null
+      "notes": "The operator lists skate sharpening through its Cafe and Pro Shop. Confirm current prices and turnaround with the shop.",
+      "info_url": "https://www.broadmoorworldarena.com/arena-info/icehall/Cafe-and-pro-shop",
+      "available": true
     },
     "freestyle": {
       "available": true,
@@ -11276,55 +11277,44 @@
         "Figure Session"
       ],
       "who_its_for": [
-        "Figure skaters working on jumps, spins, and footwork",
-        "Competitive and recreational skaters wanting dedicated practice ice",
-        "Pre-preliminary through senior-level USFS members"
+        "Figure skaters who meet the operator’s session qualifications"
       ],
-      "how_to_find_times": "Call 719-577-5785 or visit broadmoor.com for current skating and freestyle availability.",
+      "how_to_find_times": "Use the Ice Hall figure-skating page for session qualifications and the official schedule. Contact the Ice Hall office at 719-477-2178 with questions.",
       "cost_notes": null,
-      "etiquette_tips": [
-        "Yield to skaters attempting jumps or spins",
-        "Announce yourself before entering another skater's pattern",
-        "Coaches must check in at the front desk",
-        "No hockey stops on freestyle ice"
-      ],
-      "notes": "The historic Broadmoor Ice Palace is one of the most storied skating venues in America. The World Figure Skating Championships and numerous other elite events have been held here. Located at the legendary Broadmoor resort."
+      "etiquette_tips": [],
+      "notes": "Check the operator’s session-level and registration requirements before booking practice ice. Public skating and figure-skating practice are separate activities."
     },
     "amenities": {
-      "lockers": true,
-      "spectator_seating": true,
+      "lockers": "unknown",
+      "spectator_seating": "unknown",
       "concessions": true,
       "pro_shop": true,
-      "skate_aids": true
+      "skate_aids": false
     },
     "image": "/images/skating/ice_img_03.png",
-    "description": "World Arena Ice Hall is an indoor, year-round ice rink in Colorado Springs, CO, operated by Broadmoor World Arena. It offers public skating, learn to skate, and figure skating across 2 sheets. Check the official site for schedules and pricing.",
+    "description": "World Arena Ice Hall in Colorado Springs has two indoor sheets, one NHL and one Olympic. Use the Ice Hall operator’s public-activities page for public skating and its figure-skating page for practice ice.",
     "what_to_know": [
-      "World Arena Ice Hall runs on a posted schedule that varies by season; check the official site before you go.",
-      "Public skating shares the calendar with lessons, hockey, and other ice time, so confirm a public session in advance.",
-      "Skate rentals are usually available; bring your own skates for the best fit.",
-      "See the official site for the exact address, directions, and current pricing."
+      "Confirm public skating in the official schedule before traveling; session availability can change.",
+      "Public-skate admission and skate rental are separate charges.",
+      "Figure-skating practice has its own qualification and registration requirements.",
+      "The operator does not permit artificial skating aids during public skating."
     ],
     "faq": [
       {
         "question": "Where is World Arena Ice Hall located?",
-        "answer": "World Arena Ice Hall is in Colorado Springs, CO, operated by Broadmoor World Arena, and is an indoor ice rink. Check the official site for the exact address, directions, and parking."
+        "answer": "The Ice Hall is at 3185 Venetucci Boulevard in Colorado Springs, Colorado. Use the World Arena Ice Hall operator’s website for directions and visitor information."
       },
       {
-        "question": "Is World Arena Ice Hall open year-round?",
-        "answer": "World Arena Ice Hall is open year-round."
+        "question": "How do I book public skating at World Arena Ice Hall?",
+        "answer": "Start with the operator’s public-activities page and follow its official live-schedule and registration links. Check session availability before traveling."
       },
       {
-        "question": "What does World Arena Ice Hall offer?",
-        "answer": "World Arena Ice Hall offers public skating, learn-to-skate, and figure skating and freestyle. Sessions run on a posted schedule that varies, so check the official site for current times."
+        "question": "Are skate rentals available?",
+        "answer": "Yes. The operator lists skate rental separately from public-skate admission. Check the official public-activities page for the current charge and booking terms."
       },
       {
-        "question": "Can I rent skates at World Arena Ice Hall?",
-        "answer": "Skate rentals are typically available at World Arena Ice Hall during public sessions. If you have your own skates, bring them for a better fit, and confirm rental details with the rink."
-      },
-      {
-        "question": "How do I find the public skating schedule for World Arena Ice Hall?",
-        "answer": "Public skating at World Arena Ice Hall runs on a schedule that changes by season and shares the ice with other programming. Check the rink's official site for current public-skate sessions and pricing."
+        "question": "Can I use public skating for figure-skating practice?",
+        "answer": "Public skating and figure-skating practice are separate activities. Review the operator’s figure-skating session qualifications and registration requirements before booking practice ice."
       }
     ],
     "last_verified": "2026-06-26",
@@ -11342,28 +11332,63 @@
         "CO ice skating rink",
         "World Arena Ice Hall public skating"
       ],
-      "short_description": "World Arena Ice Hall is an indoor, year-round rink in Colorado Springs, CO. Offers public skating, lessons, and freestyle. Find schedules and details.",
-      "long_description": "World Arena Ice Hall is an indoor, year-round ice rink in Colorado Springs, CO, operated by Broadmoor World Arena. It offers public skating, learn to skate, and figure skating across 2 sheets. Check the official site for schedules and pricing.",
+      "short_description": "Two-sheet Ice Hall in Colorado Springs: official public-skate booking, admission and rental information, and separate figure-skating practice guidance.",
+      "long_description": "World Arena Ice Hall in Colorado Springs has two indoor sheets, one NHL and one Olympic. Use the Ice Hall operator’s public-activities page for public skating and its figure-skating page for practice ice.",
       "helpful_blurbs": [
-        "World Arena Ice Hall runs on a posted schedule that varies by season; check the official site before you go.",
-        "Public skating shares the calendar with lessons, hockey, and other ice time, so confirm a public session in advance.",
-        "Skate rentals are usually available; bring your own skates for the best fit.",
-        "See the official site for the exact address, directions, and current pricing."
+        "Confirm public skating in the official schedule before traveling; session availability can change.",
+        "Public-skate admission and skate rental are separate charges.",
+        "Figure-skating practice has its own qualification and registration requirements.",
+        "The operator does not permit artificial skating aids during public skating."
       ],
       "what_to_know": [
-        "World Arena Ice Hall runs on a posted schedule that varies by season; check the official site before you go.",
-        "Public skating shares the calendar with lessons, hockey, and other ice time, so confirm a public session in advance.",
-        "Skate rentals are usually available; bring your own skates for the best fit.",
-        "See the official site for the exact address, directions, and current pricing."
+        "Confirm public skating in the official schedule before traveling; session availability can change.",
+        "Public-skate admission and skate rental are separate charges.",
+        "Figure-skating practice has its own qualification and registration requirements.",
+        "The operator does not permit artificial skating aids during public skating."
       ]
     },
-    "editorial_markdown": "## What to expect at World Arena Ice Hall\n\nTwo sheets of indoor ice, open year-round, sit at the heart of a facility built for serious training, with one surface sized to NHL dimensions and the other to the larger Olympic standard. World Arena Ice Hall, the ice hall connected to the Broadmoor World Arena in Colorado Springs, serves a wide range of skaters, from public-session families and learn-to-skate beginners to competitive figure skaters and hockey players, and it carries a training-destination reputation that sets it apart from a neighborhood rink.\n\nThat reputation is grounded in geography. Colorado Springs is one of the major figure skating hubs in the United States, and a facility with an Olympic-size sheet there is a real training destination, not just a place to skate on a Saturday. The Olympic surface matters more than it sounds, since it is wider than the NHL sheet, which changes the spacing of figure skating programs and lets skaters train on ice that matches international competition dimensions. For an everyday visitor, this means a rink that operates at a higher level than most while still keeping the doors open to the public. If you are coming for the first time, treat the schedule as essential reading, because a premier training facility runs a dense, varied calendar, so check the official site, confirm the day and time, and note which sheet your session uses if that detail is posted.\n\n## Public skating at World Arena Ice Hall: cost, sessions, and what to know\n\nPublic skating at a serious training facility runs within defined windows rather than all day, because the ice is in heavy demand from competitive and instructional programs. The two-sheet layout helps keep public sessions on the calendar even when one surface is committed to training, but confirm the posted public hours on the official site before you head over. For admission pricing and skate rental, check the official site, since costs and what is included change over time and a premier facility may structure its sessions and rates in its own way.\n\nA few habits make a session smooth. Arrive early enough to handle check-in and lace up before the posted start, and dress in layers, since indoor ice stays cold. Wear gloves to protect your hands from the cold and from blades during falls, and pick a thin, snug sock above the boot over a thick, bunchy one. If your group includes new skaters, ask at the desk whether skating aids are available, and consider a helmet for first-time skaters. The ice draws a real mix, from beginners hugging the boards to confident skaters circling the center, so keep to the flow of traffic and give the newest skaters room. Because this is a training hub, you may share a public session with strong skaters who train here, and watching them work is part of the appeal.\n\n## Freestyle and figure skating ice\n\nThis is where World Arena Ice Hall shows its full character. Freestyle and figure skating ice is central to a facility in a city this deep in skating history, and the sessions here draw competitive skaters working at a high level, which makes the freestyle environment more advanced than at an average rink.\n\nFreestyle etiquette matters even more on a busy, high-level session. The skater whose program music is playing has priority, and skaters running through programs generally hold right of way, while everyone else keeps their head up and stays clear of a jumper's setup, approach, and landing. A visiting skater should spend the first few minutes reading the room before settling into their own work. The two-sheet layout, with an NHL surface and an Olympic surface, is a genuine asset for figure skaters, since the wider Olympic sheet lets skaters train on ice matched to international dimensions while the second surface gives the facility room to schedule more freestyle without colliding with hockey or public skating. If you are a visiting skater or a parent scouting serious training options, check the freestyle schedule on the official site and note session levels and any requirements, since a facility at this level often tiers freestyle by ability, and if your skater trains with a coach, coordinate which sessions fit their level.\n\n## Learn to skate programs\n\nEven at a premier facility, everyone starts by holding the boards. Learn-to-skate at World Arena Ice Hall is the on-ramp for new skaters of all ages, and there is something to be said for learning the basics in a building where skating is taken this seriously.\n\nA strong progression builds the same foundation regardless of where a skater is headed, whether that is competitive figure skating, hockey, or skating comfortably on a public session. The first lessons cover the essentials, with standing up, marching across the ice, gliding on two feet, stopping with control, and getting back up after a fall, and a skater only branches toward a specific discipline once the fundamentals are solid. At a facility with this depth of figure skating, the path toward more advanced figure work is well worn, and the coaching culture runs deep. Group classes are the standard format, and class structure and session lengths vary, so check the current learn-to-skate details on the official site. Most programs let you start with rental skates, so ask whether they are included with enrollment, and dress your skater in warm, flexible layers and gloves, with a helmet for new skaters of any age. If you are wondering whether your child is ready, most kids who can walk steadily can begin, since the early lessons are built around falling and getting back up.\n\n## Hockey, stick and puck, and open ice\n\nHockey shares the building too, and on a two-sheet facility that includes an NHL-size surface, there is real room for it. World Arena Ice Hall offers hockey alongside its figure skating and public programming, and the NHL-dimension sheet gives players ice sized to the standard most of them know and compete on.\n\nIf the facility runs stick and puck or open hockey, the difference is worth knowing before you drop in. Stick and puck is unstructured skill time, where players bring their own gear and work on stickhandling, shooting, and skating without a game, while open hockey is closer to an informal scrimmage. Both carry gear expectations, so check the official site for what hockey programming is offered and what each session requires, and expect full equipment for any open hockey. The two-sheet layout is a practical advantage for hockey players, since a second surface means more total ice time and more scheduling flexibility, so a drop-in session is more likely to fit your week than at a single-sheet rink. Training in a facility that also serves elite figure skaters means the ice quality and standards tend to be high. If you are new to the sport, the learn-to-skate path here feeds naturally toward hockey, so ask at the desk how the programming is structured and watch a session before you commit.\n\n## Getting there: parking, location, and amenities\n\nWorld Arena Ice Hall is connected to the Broadmoor World Arena in Colorado Springs, which makes it a destination skaters travel to, not just a local stop. For the exact address and directions, check the official site and map it before your first visit, since a precise pin beats a guessed turn, especially when you are working a tight session in an unfamiliar part of the city.\n\nAs an indoor, year-round facility, the ice runs regardless of Colorado's weather, so summer heat and winter storms stay outside while the rink holds steady. Plan to arrive with margin, because a busy training facility connected to a larger arena complex can draw significant traffic, and parking, check-in, and finding the right entrance all take time, particularly during events or peak training blocks. For specifics on parking, seating, concessions, skate rental, and a pro shop, check the official site or call ahead, since a facility of this scale may have its own arrangements depending on what is happening in the building on a given day. If you expect a long day for training or an event, it is worth knowing in advance what is available on site and what you should bring.\n\n## A note for skating parents\n\nIf you have a skater with real ambition, this is the kind of place that can shape the trajectory, and that is the lens to bring as a parent. World Arena Ice Hall sits in Colorado Springs, one of the country's major figure skating hubs, and it offers an Olympic-size sheet alongside an NHL surface. For a child who is serious about figure skating, training where the ice matches international dimensions and where strong skaters log their hours every day is an advantage that compounds over time.\n\nThat said, the same building welcomes complete beginners, and the practical basics do not change. Dress your skater warmer than feels necessary, then add gloves, since the ice keeps the rink cold and a shivering kid will not finish a session or absorb a lesson. Layers they can peel off beat one heavy coat, and a spare pair of socks saves a damp ride home, while a helmet is a smart call for the youngest skaters. Build in arrival margin, since a busy training facility runs a dense calendar and can fill up fast. While they skate, watching the more advanced skaters on a freestyle session is part of the experience here, and for a young skater with big goals, seeing serious training up close can be its own motivation. Because this is a premier facility running several programs across two sheets, the schedule is full and often tiered by level, so confirm the current schedule, pricing, and requirements on the official site before you go, and note which sheet your session uses if that is listed. Then let them fall, let them get up, and let a serious skating town do what it does.\n",
+    "editorial_markdown": "## Planning a visit to World Arena Ice Hall\n\nWorld Arena Ice Hall is the two-sheet facility at 3185 Venetucci Boulevard in Colorado Springs. The operator identifies one NHL sheet and one Olympic sheet. Use the [Ice Hall website](https://www.broadmoorworldarena.com/icehall/about) for this venue rather than the Broadmoor resort’s recreation pages.\n\n## Public skating and rentals\n\nStart with the [official public-activities page](https://www.broadmoorworldarena.com/publicactivities) for current public skating, posted charges and registration. Follow its live-schedule link to choose the appropriate activity; a general rink calendar does not mean every ice block is a public session. Check availability before traveling. Rental sizes and helmet availability have not been verified.\n\n## Figure skating and lessons\n\nThe [figure-skating page](https://www.broadmoorworldarena.com/icehall/figureskating) explains practice ice and points to the operator’s guide. Session qualifications and registration requirements apply; confirm the appropriate level before booking. For instruction, use the separate [Learn to Skate page](https://www.broadmoorworldarena.com/learntoskate) for current enrollment information.\n\n## Cafe and skate services\n\nThe operator lists a [Cafe and Pro Shop](https://www.broadmoorworldarena.com/arena-info/icehall/Cafe-and-pro-shop) in the Ice Hall lobby, including skate services. Confirm sharpening prices and turnaround with the shop; a current price has not been verified here. Locker and spectator-seating details also remain unverified.\n",
     "nearby_rinks": [
       "lone-tree-recreation-center-lone-tree-co",
       "ice-ranch-littleton-co",
       "family-sports-center-centennial-co",
       "edge-ice-arena-littleton-co"
-    ]
+    ],
+    "sources": [
+      "https://www.broadmoorworldarena.com/icehall/about",
+      "https://www.broadmoorworldarena.com/publicactivities",
+      "https://www.broadmoorworldarena.com/icehall/figureskating",
+      "https://www.broadmoorworldarena.com/learntoskate",
+      "https://www.broadmoorworldarena.com/arena-info/icehall/Cafe-and-pro-shop"
+    ],
+    "evidence": [
+      {
+        "field": "venue, phone, sheets",
+        "url": "https://www.broadmoorworldarena.com/icehall/about",
+        "note": "Checked October 22, 2026. Field-specific review; map coordinates and every facility detail were not independently reverified."
+      },
+      {
+        "field": "public booking, admission, rental, public-skate aids",
+        "url": "https://www.broadmoorworldarena.com/publicactivities",
+        "note": "Checked October 22, 2026. Operator links to https://icehall.finnlyconnect.com/schedule/904; no session timetable copied."
+      },
+      {
+        "field": "figure skating and qualifications",
+        "url": "https://www.broadmoorworldarena.com/icehall/figureskating",
+        "note": "Checked October 22, 2026. No guaranteed eligibility or session availability."
+      },
+      {
+        "field": "lessons pointer",
+        "url": "https://www.broadmoorworldarena.com/learntoskate",
+        "note": "Checked October 22, 2026. Enrollment terms remain with operator."
+      },
+      {
+        "field": "cafe, pro shop and sharpening",
+        "url": "https://www.broadmoorworldarena.com/arena-info/icehall/Cafe-and-pro-shop",
+        "note": "Checked October 22, 2026. Prices and turnaround unverified; unsupported $10 sharpening claim removed."
+      }
+    ],
+    "content_modified": "2026-10-22"
   },
   {
     "id": "tx-mckinney-dr-pepper-starcenter-mckinney-tx",
@@ -17724,7 +17749,7 @@
       "sheet_sizes": []
     },
     "schedule_links": {
-      "public_calendar_url": null,
+      "public_calendar_url": "https://tickets.gaylordopryland.com/eventperformances.asp?evt=18",
       "freestyle_calendar_url": null,
       "hockey_calendar_url": null,
       "lessons_url": null
@@ -17825,6 +17850,13 @@
       "gary-force-acura-ice-arena-nolensville-tn",
       "ford-ice-center-bellevue-nashville-tn"
     ],
-    "content_modified": "2026-10-07"
+    "content_modified": "2026-10-22",
+    "evidence": [
+      {
+        "field": "public booking pointer",
+        "url": "https://tickets.gaylordopryland.com/eventperformances.asp?evt=18",
+        "note": "Checked October 22, 2026. Official ticket page confirms the existing November 6–January 2 season, advance online purchase, date-selected pricing and extra parking. Rental inclusion remains unknown; no checkout performed. Whole-record last_verified unchanged."
+      }
+    ]
   }
 ]
