@@ -6,7 +6,9 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { useState, useMemo } from "react";
+import { useMemo } from "react";
+import { useLocation, useSearch } from "wouter";
+import { readBrowseState, writeBrowseState, type BrowseState } from "@/lib/browseState";
 import { Search, X } from "lucide-react";
 import { useHead } from "@/hooks/use-head";
 import { buildRinkItemList } from "@/lib/seo";
@@ -24,17 +26,16 @@ export default function Browse() {
     structuredData: [buildRinkItemList(operatingRinks, "/browse", "Ice Skating Rinks Directory")],
   });
 
-  const [searchQuery, setSearchQuery] = useState("");
-  const [selectedState, setSelectedState] = useState<string>("all");
-  const [filters, setFilters] = useState({
-    publicSkating: false,
-    freestyle: false,
-    rentals: false,
-    sharpening: false,
-  });
-
   const states = useMemo(() => getAllStates(), []);
-  
+  const search = useSearch();
+  const [, navigate] = useLocation();
+  const browseState = readBrowseState(search, states);
+  const { searchQuery, selectedState, filters } = browseState;
+  const updateBrowse = (change: Partial<BrowseState>) => {
+    // Replace this browse entry, rather than adding a history entry per keystroke.
+    navigate(writeBrowseState(search, { ...browseState, ...change }), { replace: true });
+  };
+
   const filteredRinks = useMemo(() => {
     return operatingRinks.filter((rink) => {
       const matchesSearch = 
@@ -54,14 +55,12 @@ export default function Browse() {
   }, [operatingRinks, searchQuery, selectedState, filters]);
 
   const clearFilters = () => {
-    setSearchQuery("");
-    setSelectedState("all");
-    setFilters({
+    updateBrowse({searchQuery: "", selectedState: "all", filters: {
       publicSkating: false,
       freestyle: false,
       rentals: false,
       sharpening: false,
-    });
+    }});
   };
 
   return (
@@ -80,9 +79,9 @@ export default function Browse() {
         <div className="flex flex-col lg:flex-row gap-8">
           <aside className="h-fit w-full flex-shrink-0 space-y-7 rounded-lg border bg-white p-5 shadow-sm lg:sticky lg:top-24 lg:w-64">
             <div>
-              <Label className="mb-2 block font-semibold">State</Label>
-              <Select value={selectedState} onValueChange={setSelectedState}>
-                <SelectTrigger>
+              <Label htmlFor="browse-state" className="mb-2 block font-semibold">State</Label>
+              <Select value={selectedState} onValueChange={(selectedState) => updateBrowse({selectedState})}>
+                <SelectTrigger id="browse-state">
                   <SelectValue placeholder="All States" />
                 </SelectTrigger>
                 <SelectContent>
@@ -100,7 +99,7 @@ export default function Browse() {
                 <Checkbox 
                   id="public" 
                   checked={filters.publicSkating}
-                  onCheckedChange={(c) => setFilters(prev => ({...prev, publicSkating: c as boolean}))}
+                  onCheckedChange={(c) => updateBrowse({filters: {...filters, publicSkating: c === true}})}
                 />
                 <label htmlFor="public" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
                   Public Skating
@@ -110,7 +109,7 @@ export default function Browse() {
                 <Checkbox 
                   id="freestyle"
                   checked={filters.freestyle}
-                  onCheckedChange={(c) => setFilters(prev => ({...prev, freestyle: c as boolean}))} 
+                  onCheckedChange={(c) => updateBrowse({filters: {...filters, freestyle: c === true}})}
                 />
                 <label htmlFor="freestyle" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
                   Freestyle Sessions
@@ -120,7 +119,7 @@ export default function Browse() {
                 <Checkbox 
                   id="rentals" 
                   checked={filters.rentals}
-                  onCheckedChange={(c) => setFilters(prev => ({...prev, rentals: c as boolean}))}
+                  onCheckedChange={(c) => updateBrowse({filters: {...filters, rentals: c === true}})}
                 />
                 <label htmlFor="rentals" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">Rentals</label>
               </div>
@@ -128,7 +127,7 @@ export default function Browse() {
                 <Checkbox 
                   id="sharpening" 
                   checked={filters.sharpening}
-                  onCheckedChange={(c) => setFilters(prev => ({...prev, sharpening: c as boolean}))}
+                  onCheckedChange={(c) => updateBrowse({filters: {...filters, sharpening: c === true}})}
                 />
                 <label htmlFor="sharpening" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">Sharpening</label>
               </div>
@@ -142,9 +141,11 @@ export default function Browse() {
           <div className="flex-1">
             <div className="mb-4 relative">
               <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+              <Label htmlFor="rink-search" className="sr-only">Search rinks by name, city, or state</Label>
               <Input
+                id="rink-search"
                 value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
+                onChange={(e) => updateBrowse({searchQuery: e.target.value})}
                 placeholder="Search by rink, city, or state"
                 className="h-11 bg-white pl-10"
               />

@@ -27,6 +27,10 @@ function CityHubCard({ href, image, city, rinkCount, description }: {
           <img
             src={image}
             alt={`Ice skating in ${city}`}
+            width={image.includes("iceskatingindex1") ? 4000 : 1408}
+            height={image.includes("iceskatingindex1") ? 6000 : 768}
+            loading="lazy"
+            decoding="async"
             className="absolute inset-0 w-full h-full object-cover transition-transform group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-black/45" />
@@ -233,11 +237,11 @@ export default function Home() {
                  <div className="absolute bottom-8 left-8 right-8">
                    <div className="bg-background/90 backdrop-blur p-6 rounded-lg shadow-lg border">
                      <div className="flex items-center gap-3 mb-3">
-                       <div className="h-3 w-3 rounded-full bg-green-500" />
-                       <span className="font-mono text-sm font-medium">Session Available</span>
+                       <div className="h-3 w-3 rounded-full bg-slate-400" />
+                       <span className="font-mono text-sm font-medium">Example schedule</span>
                      </div>
-                     <p className="font-serif text-lg font-bold">Freestyle: 6:00 AM - 8:00 AM</p>
-                     <p className="text-sm text-muted-foreground">Main Rink • $15/session</p>
+                     <p className="font-serif text-lg font-bold">Illustrative only: Freestyle, 6:00 AM–8:00 AM</p>
+                     <p className="text-sm text-muted-foreground">Example rink • sample price $15/session</p>
                    </div>
                  </div>
                </div>
