@@ -1,28 +1,28 @@
 {
   "centennial-sportsplex-nashville-tn": {
-    "state": "altered",
-    "note": "For October 19 through October 24, Nashville Skating Academy has a change to its Wednesday morning Centennial ice schedule. Confirm academy practice ice in the Centennial portal. Public-skate sessions are booked separately through Predators DaySmart.",
-    "covered_from": "2026-10-19",
-    "covered_through": "2026-10-24",
-    "updated": "2026-10-18",
+    "state": "normal",
+    "note": "For November 2 through November 7, Nashville Skating Academy reports its normal Centennial academy schedule. Confirm current academy arrangements in the Centennial portal. Public-skate sessions are booked separately through Predators DaySmart.",
+    "covered_from": "2026-11-02",
+    "covered_through": "2026-11-07",
+    "updated": "2026-10-31",
     "verified_by": "a local coach",
     "source_url": "https://nashvilleskatingacademycentennial.finnlyconnect.com/"
   },
   "ford-ice-center-bellevue-nashville-tn": {
     "state": "altered",
-    "note": "For October 19 through October 24, Nashville Skating Academy has a change to its Friday Bellevue ice schedule. Confirm current academy availability in its Ford Ice portal. Public-skate sessions use the rink's separate booking system.",
-    "covered_from": "2026-10-19",
-    "covered_through": "2026-10-24",
-    "updated": "2026-10-18",
+    "note": "For November 2 through November 7, Nashville Skating Academy has changes to its Bellevue academy ice arrangements. Confirm current academy availability in its Ford Ice portal. Public-skate sessions use the rink’s separate booking system.",
+    "covered_from": "2026-11-02",
+    "covered_through": "2026-11-07",
+    "updated": "2026-10-31",
     "verified_by": "a local coach",
     "source_url": "https://nashvilleskatingacademyford.finnlyconnect.com/"
   },
   "ford-ice-center-antioch-antioch-tn": {
     "state": "altered",
-    "note": "For October 19 through October 24, Nashville Skating Academy has a change to its Friday Antioch ice schedule. Confirm current academy availability in its Ford Ice portal. Public-skate sessions use the rink's separate booking system.",
-    "covered_from": "2026-10-19",
-    "covered_through": "2026-10-24",
-    "updated": "2026-10-18",
+    "note": "For November 2 through November 7, Nashville Skating Academy has changes to its Antioch academy ice arrangements. Confirm current academy availability in its Ford Ice portal. Public-skate sessions use the rink’s separate booking system.",
+    "covered_from": "2026-11-02",
+    "covered_through": "2026-11-07",
+    "updated": "2026-10-31",
     "verified_by": "a local coach",
     "source_url": "https://nashvilleskatingacademyford.finnlyconnect.com/"
   }
