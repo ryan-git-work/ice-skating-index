@@ -14,18 +14,18 @@ import { useState } from "react";
 import { buildWebPageSchema } from "@/lib/seo";
 
 export default function FreestyleHub() {
-  const description = "Learn what freestyle sessions are, who they are for, and how they differ from public skate. A complete guide to freestyle ice for figure skaters.";
+  const description = "What is freestyle ice skating? Compare figure-skating practice with public skate, check session requirements, and follow official rink booking sources.";
 
   useHead({
-    title: "Freestyle Sessions | What is Freestyle Ice Skating",
+    title: "What Is Freestyle Skating? Freestyle Ice vs Public Skate",
     description,
     canonicalPath: "/freestyle",
-    structuredData: [buildWebPageSchema("/freestyle", "Freestyle Sessions", description)],
+    structuredData: [{...buildWebPageSchema("/freestyle", "Freestyle Ice Skating", description), dateModified: "2026-11-06"}],
   });
 
   const [showRinks, setShowRinks] = useState(false);
   
-  const freestyleRinks = rinks.filter(r => isTruthy(r.freestyle?.available));
+  const freestyleRinks = rinks.filter(r => isTruthy(r.freestyle?.available) && r.operating_status !== "closed" && r.operating_status !== "coming_soon");
 
   const sections = [
     { id: "what-is-freestyle", label: "What is a freestyle session" },
@@ -37,17 +37,19 @@ export default function FreestyleHub() {
     { id: "requirements", label: "Common requirements and level expectations" },
     { id: "questions", label: "Questions to ask before you go" },
     { id: "find-sessions", label: "How to find freestyle sessions near you" },
+    { id: "book-practice", label: "Booking sources and checks" },
   ];
 
   return (
     <Layout>
       <div className="page-band border-b border-white/10">
         <div className="container mx-auto px-4 py-12">
-          <h1 className="font-serif text-4xl md:text-5xl font-bold mb-4">Freestyle Sessions</h1>
+          <h1 className="font-serif text-4xl md:text-5xl font-bold mb-4">What is freestyle ice skating?</h1>
           <p className="text-lg text-muted-foreground max-w-3xl leading-relaxed">
-            Freestyle sessions are dedicated ice times designed for skill development, focused practice, and coaching. 
-            They are different from public skate because the purpose is training, not general recreation. This page explains 
-            what freestyle ice is, who it is for, how it usually works, and what to expect when you show up.
+            In ice skating, a freestyle session is figure-skating practice ice for working on skills and programs,
+            rather than a general public session. Other skating sports use the word differently; this guide is about ice.
+            Check a rink’s session eligibility before booking: “freestyle” does not mean unrestricted access for every skater.
+
           </p>
         </div>
       </div>
@@ -78,15 +80,14 @@ export default function FreestyleHub() {
             
             {/* What is a Freestyle Session */}
             <section id="what-is-freestyle">
-              <h2 className="font-serif text-2xl font-bold mb-4">What is a freestyle session</h2>
+              <h2 className="font-serif text-2xl font-bold mb-4">What is freestyle skating on ice?</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 A freestyle session is a scheduled practice time where skaters work on skills like edges, turns, jumps, 
                 spins, footwork, and program run-throughs. Many rinks allow private lessons during freestyle sessions, 
                 and the ice is typically shared by multiple skaters training at the same time.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Freestyle ice is usually quieter and more structured than public skate. Skaters are expected to be aware 
-                of their surroundings and follow basic right-of-way rules so everyone can practice safely.
+                Crowd size and session rules vary. Read the operator’s current practice-ice rules; a freestyle label is not a promise of quiet ice, coaching, or space for a particular element.
               </p>
             </section>
 
@@ -113,7 +114,7 @@ export default function FreestyleHub() {
                 </li>
                 <li className="flex items-start gap-3">
                   <Users className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span>Skaters who want focused ice time without heavy public traffic.</span>
+                  <span>Skaters who meet the rink’s requirements for dedicated practice ice.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Users className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
@@ -135,7 +136,7 @@ export default function FreestyleHub() {
             <section id="vs-public-skate">
               <h2 className="font-serif text-2xl font-bold mb-4">Freestyle sessions vs public skate</h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Freestyle sessions and public skate can look similar from a distance, but they function very differently.
+                Choose public skate for a recreational outing or first visit. Choose freestyle only when the operator’s practice session fits your level and intended activity. A public-skate ticket does not reserve practice ice, and ice admission may be separate from a coach’s lesson fee.
               </p>
               
               <div className="grid md:grid-cols-2 gap-6">
@@ -160,7 +161,7 @@ export default function FreestyleHub() {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-primary mt-1">•</span>
-                      <span>Usually have lower crowd density than public skate.</span>
+                      <span>Eligibility, capacity and permitted elements depend on the rink.</span>
                     </li>
                   </ul>
                 </div>
@@ -174,7 +175,7 @@ export default function FreestyleHub() {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="mt-1">•</span>
-                      <span>Usually does not allow coaching or structured lessons.</span>
+                      <span>Check whether coaching or practice elements are permitted.</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="mt-1">•</span>
@@ -221,8 +222,7 @@ export default function FreestyleHub() {
                 </li>
               </ul>
               <p className="text-muted-foreground leading-relaxed mt-4">
-                Some rinks separate sessions by level, such as beginner freestyle, intermediate freestyle, or advanced 
-                freestyle. Others run one general session and expect skaters to self-manage using basic etiquette.
+                Session labels alone do not establish eligibility. Check the current operator guide for levels, registration, capacity and coaching arrangements.
               </p>
             </section>
 
@@ -303,7 +303,7 @@ export default function FreestyleHub() {
             <section id="requirements">
               <h2 className="font-serif text-2xl font-bold mb-4">Common requirements and level expectations</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Freestyle requirements vary by rink. Some rinks allow anyone who can skate confidently. Others require:
+                Requirements vary. Ask the operator whether its session requires any of the following; these are questions to verify, not universal entry rules:
               </p>
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start gap-2">
@@ -397,20 +397,19 @@ export default function FreestyleHub() {
 
             <Separator />
 
-            {/* Coming Soon */}
-            <section className="bg-secondary/60 p-8 rounded-lg border">
-              <div className="flex items-start gap-4">
-                <div className="bg-primary/10 p-3 rounded-full">
-                  <Sparkles className="h-6 w-6 text-primary" />
-                </div>
-                <div>
-                  <h2 className="font-serif text-xl font-bold mb-2">Coming soon</h2>
-                  <p className="text-muted-foreground">
-                    We are building a directory of freestyle sessions and freestyle friendly rinks by location. 
-                    Verified listings will be added over time so you can find sessions that match your level, goals, and schedule.
-                  </p>
-                </div>
-              </div>
+            <section id="book-practice" className="border-t pt-8">
+              <h2 className="font-serif text-2xl font-bold mb-4">Book the right kind of ice</h2>
+              <ol className="list-decimal pl-6 space-y-3 text-muted-foreground">
+                <li>Open the operator’s current schedule and find a session explicitly labeled for figure-skating practice. Check the date and facility.</li>
+                <li>Read its eligibility and equipment rules. Confirm whether you need advance registration and whether a coach must be arranged separately.</li>
+                <li>Check the ice fee, lesson fee and cancellation terms before paying. A directory listing is not live session inventory.</li>
+              </ol>
+              <p className="mt-4 text-muted-foreground">Two examples of distinct booking paths, checked November 6, 2026:</p>
+              <ul className="mt-3 space-y-3">
+                <li><a className="text-primary underline" href="https://www.nashvilleiceskate.com/">Nashville Skating Academy</a> links separate Centennial and Ford Ice academy portals. Academy practice and classes use those paths; public skate is booked separately. See the <a className="text-primary underline" href="/blog/public-skating-nashville">public-skating guide</a> for that lane.</li>
+                <li><a className="text-primary underline" href="https://www.broadmoorworldarena.com/icehall/about">World Arena Ice Hall’s operator guide</a> points to figure-skating qualifications and registration. Its <a className="text-primary underline" href="https://www.broadmoorworldarena.com/publicactivities">public-activities page</a> is a separate starting point for recreational skating.</li>
+              </ul>
+              <p className="mt-4 text-sm text-muted-foreground">New to the ice? Start with <a className="text-primary underline" href="/blog/how-to-ice-skate">beginner skating guidance</a> or a lesson program and confirm which session the operator recommends. No specific slot or coach availability is verified here.</p>
             </section>
 
             <Separator />
@@ -421,7 +420,7 @@ export default function FreestyleHub() {
                 <CollapsibleTrigger className="flex items-center justify-between w-full p-4 bg-muted/50 rounded-lg hover:bg-muted transition-colors">
                   <div className="flex items-center gap-3">
                     <MapPin className="h-5 w-5 text-primary" />
-                    <span className="font-semibold">Rinks with freestyle sessions</span>
+                    <span className="font-semibold">Directory rinks marked for freestyle practice</span>
                     <Badge variant="secondary" className="ml-2">{freestyleRinks.length}</Badge>
                   </div>
                   <ChevronDown className={`h-5 w-5 transition-transform ${showRinks ? 'rotate-180' : ''}`} />
@@ -435,7 +434,7 @@ export default function FreestyleHub() {
                     </div>
                   ) : (
                     <p className="text-muted-foreground text-center py-8">
-                      No rinks with confirmed freestyle sessions yet.
+                      No matching directory entries. Check operators directly for current practice options.
                     </p>
                   )}
                 </CollapsibleContent>

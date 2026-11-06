@@ -33,7 +33,7 @@ const clarksville = rinks.find(r => r.slug === RINK_SLUGS.clarksville);
 const NASHVILLE_FAQS = [
   {
     question: "Where can I ice skate in Nashville?",
-    answer: "Nashville has five year-round indoor options across the metro: Centennial Sportsplex, Ford Ice Center Bellevue, Ford Ice Center Antioch, Ford Ice Center Clarksville, and Gary Force Acura Ice Arena in Nolensville. Gaylord has announced November 6, 2026 through January 2, 2027 skating; the upcoming Smashville and Fountains seasons remain unconfirmed.",
+    answer: "Nashville has five year-round indoor options across the metro: Centennial Sportsplex, Ford Ice Center Bellevue, Ford Ice Center Antioch, Ford Ice Center Clarksville, and Gary Force Acura Ice Arena in Nolensville. Gaylord has announced November 6, 2026 through January 2, 2027 skating; Fountains runs November 20, 2026 through January 31, 2027; the upcoming Smashville skating season remains unconfirmed.",
   },
   {
     question: "How much does ice skating cost in Nashville?",
@@ -60,7 +60,7 @@ function RinkLink({ slug, children }: { slug: string; children: React.ReactNode 
 export default function NashvilleCityHub() {
   const asOf = useAsOf();
   const pageModified = [
-    "2026-10-16",
+    "2026-11-06",
     getLatestCurrentStatusUpdated(Array.from(nashvilleRinkSlugs), asOf),
   ].filter((value): value is string => Boolean(value)).sort().at(-1);
   const faqSchema = {
@@ -233,9 +233,9 @@ export default function NashvilleCityHub() {
                     <tr className="border-b border-border/50">
                       <td className="py-3 pl-4 pr-4"><RinkLink slug={RINK_SLUGS.fountains}>Fountains at Gateway</RinkLink></td>
                       <td className="py-3 pr-4 text-muted-foreground">Murfreesboro (south, 30 min)</td>
-                      <td className="py-3 pr-4 text-muted-foreground">$12&ndash;17</td>
-                      <td className="py-3 pr-4 text-muted-foreground">Drop-in</td>
-                      <td className="py-3"><span className="inline-flex items-center gap-1 text-amber-600"><Calendar className="h-3.5 w-3.5" /> Nov&ndash;Feb</span></td>
+                      <td className="py-3 pr-4 text-muted-foreground">$20 ages 13+; $15 ages 4&ndash;12; ages 3 and under free with paid adult</td>
+                      <td className="py-3 pr-4 text-muted-foreground">Pay at gate</td>
+                      <td className="py-3"><span className="inline-flex items-center gap-1 text-amber-600"><Calendar className="h-3.5 w-3.5" /> Nov 20, 2026&ndash;Jan 31, 2027</span></td>
                     </tr>
                     <tr className="border-b border-border/50">
                       <td className="py-3 pl-4 pr-4"><RinkLink slug={RINK_SLUGS.gaylord}>Gaylord Opryland Resort</RinkLink></td>
@@ -376,7 +376,7 @@ export default function NashvilleCityHub() {
             <section id="seasonal">
               <h2 className="font-serif text-2xl font-bold mb-4">Seasonal options &mdash; confirm the announced season</h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Check each operator&apos;s announced season before planning holiday skating. Gaylord has confirmed 2026&ndash;27 dates; Fountains and Smashville skating remain unconfirmed:
+                Check each operator&apos;s announced season before planning holiday skating. Gaylord and Fountains have confirmed 2026&ndash;27 dates; Smashville skating remains unconfirmed:
               </p>
               <div className="space-y-6">
                 <div className="bg-card border rounded-lg p-6">
@@ -392,7 +392,7 @@ export default function NashvilleCityHub() {
                     <RinkLink slug={RINK_SLUGS.fountains}>Fountains at Gateway (Murfreesboro)</RinkLink>
                   </h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    The official page still lists November 21, 2025 through February 1, 2026, with 120 minutes on the ice. Those dates and terms are historical. The 2026&ndash;27 dates, rates, and rental terms are unconfirmed.
+                    November 20, 2026 through January 31, 2027. Admission is $20 for ages 13+, $15 for ages 4&ndash;12, and free for ages 3 and under with a paid adult. Tax, skate rentals and 120 minutes on the ice are included. Individual visitors can pay at the gate; check the official calendar before traveling.
                   </p>
                 </div>
                 <div className="bg-card border rounded-lg p-6">

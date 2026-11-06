@@ -28,7 +28,7 @@ Ford Ice Center Antioch uses a two-tier pricing structure based on session time:
 - **Skate rental:** Included in both admission prices
 - **Ages 2 and under:** Free at most sessions
 
-For a family of four — two adults, two kids over two — expect to pay roughly $44-55 all-in depending on session time. That is meaningfully more expensive than Centennial Sportsplex downtown, but the reservation system guarantees your spot and the facility quality is a step up.
+For a family of four — two adults, two kids over two — expect to pay roughly $44-55 all-in depending on session time. That is meaningfully more expensive than Centennial Sportsplex downtown, but registration should be confirmed for the selected session and the facility quality is a step up.
 
 **Important:** Ford Ice is a fully cashless facility. No cash is accepted anywhere in the building. Bring a card or set up Apple Pay before you go.
 
@@ -38,7 +38,7 @@ For a family of four — two adults, two kids over two — expect to pay roughly
 
 ## How to Reserve Your Spot
 
-This is the most important thing to know about Ford Ice Center Antioch: you cannot walk in for public skate. All sessions require advance online reservations through the DaySmart Recreation platform.
+This is the most important thing to know about Ford Ice Center Antioch: public-skate registration uses DaySmart. Confirm the selected session before traveling; academy lessons use a separate portal.
 
 **How to book:**
 1. Create a free DaySmart Recreation account at fordicecenter.com or download the DaySmart app on iPhone or Android
@@ -80,20 +80,9 @@ If you have been skating on rentals and are ready to invest in your own skates, 
 
 ## Learn to Skate Programs
 
-Ford Ice Center Antioch is home to the Scott Hamilton Skating Academy's Learn to Skate program — widely considered one of the best learn-to-skate programs in the South. The program uses the Learn to Skate USA curriculum and is designed for skaters from complete beginners through intermediate skill levels.
+Antioch's current lesson path is TPH Nashville Skating Academy. Use the [official academy website](https://www.nashvilleiceskate.com/) and [Ford Ice academy portal](https://nashvilleskatingacademyford.finnlyconnect.com/) for the location, level and session you want. These are separate from DaySmart public-skate reservations.
 
-**Who it is for:** All ages. Programs are available for tots (ages 3-5), youth (ages 6-15), and adults (ages 16 and up). Classes are grouped by skill level, not age, so beginners of all ages start together and progress through levels at their own pace.
-
-**What is included:**
-- On-ice instruction from certified coaches
-- Unlimited public skate access for registered athletes during the 6-week session
-- Progression through the Learn to Skate USA skill levels
-
-**Current pricing:** Standard 6-week session registration runs approximately $150. However, Ford Ice periodically offers promotional rates — following the 2026 Milan Olympics, the Scott Hamilton Skating Academy launched a Gold Medal Special offering 50% off registration fees for new skaters. Check the Ford Ice Center website for current promotions before registering at full price.
-
-**Nashville Predators Season Ticket Citizens** receive 15% off learn-to-skate registration — another perk if you are a Preds fan.
-
-**Spring 2026 session:** The Spring 1 session at Antioch and Bellevue started the week of February 23 and runs through April 11, 2026. Spring 2 registration information will be posted on the Ford Ice Center website.
+Confirm tuition, membership fees, rental inclusion, makeup rules and any practice admission in the selected class listing. Older six-week pricing, promotions and benefits from Clarksville do not establish the current terms at Antioch. No guaranteed enrollment or current slot is implied. Source checked November 6, 2026.
 
 ---
 

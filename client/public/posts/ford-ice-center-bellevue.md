@@ -2,7 +2,7 @@
 
 Ford Ice Center Bellevue is Nashville's newest major ice facility, and arguably its most impressive. Opened in October 2019 on the west side of the city, it is a 105,819 square foot twin-rink complex that does not feel like a typical ice rink at all — it feels like a destination.
 
-There is a full-service Predators-themed restaurant inside. A Perani's Hockey World pro shop. A neighboring outdoor Dek hockey rink. A weight room. And two NHL-size sheets of ice that host everything from public skate sessions to competitive youth hockey to the Scott Hamilton Skating Academy's nationally recognized learn-to-skate program.
+There is a full-service Predators-themed restaurant inside. A Perani's Hockey World pro shop. A neighboring outdoor Dek hockey rink. A weight room. And two NHL-size sheets of ice that host everything from public skate sessions to competitive youth hockey to TPH Nashville Skating Academy’s learn-to-skate program.
 
 If you are on the west side of Nashville and looking for ice skating, this is your rink.
 
@@ -38,7 +38,7 @@ For a family of four — two adults, two kids over two — expect to pay $44-55 
 
 ## How to Reserve Your Spot
 
-Like all Ford Ice Center locations, Bellevue requires advance online reservations for public skate. Walk-ins are not available.
+Like all Ford Ice Center locations, Bellevue uses online public-skate registration; confirm the session before traveling.
 
 **How to book:**
 1. Create a free account at fordicecenter.com or download the DaySmart Recreation app
@@ -98,27 +98,15 @@ Arrive at the main entrance, check in at the front desk with your reservation co
 
 ## Learn to Skate Programs
 
-Ford Ice Center Bellevue is home to the Scott Hamilton Skating Academy's Learn to Skate program, the same curriculum-based instruction offered at the Antioch location. The program is widely regarded as one of the best learn-to-skate programs in the South and has produced skaters who have gone on to competitive figure skating and hockey.
+Bellevue's current lesson path is TPH Nashville Skating Academy. Use the [official academy website](https://www.nashvilleiceskate.com/) and [Ford Ice academy portal](https://nashvilleskatingacademyford.finnlyconnect.com/) for the location, level and session you want. These are separate from DaySmart public-skate reservations.
 
-**Program structure:**
-- 6-week sessions with one class per week
-- Unlimited public skate access during the session for registered athletes
-- Classes grouped by skill level and age range: Tots (ages 3-5), Youth (ages 6-15), Adults (ages 16+)
-- Progression through Learn to Skate USA skill levels
-
-**Current pricing:** Standard 6-week registration runs approximately $150. New skater discounts are periodically available — the Gold Medal Special launched after the 2026 Olympics offered 50% off registration for new skaters. Check the Ford Ice Center website for current promotions before paying full price.
-
-**Nashville Predators Season Ticket Citizens** receive 15% off registration.
-
-**Spring 2026 session:** Spring 1 at Antioch and Bellevue runs through April 11, 2026. Registration for Spring 2 will be posted on the Ford Ice website as the session end date approaches.
-
-The Bellevue location is particularly well-suited for west Nashville and suburban families in Bellevue, Brentwood, Franklin, and the surrounding areas who want to avoid the longer drive to Antioch or downtown.
+Confirm tuition, membership fees, rental inclusion, makeup rules and any practice admission in the selected class listing. Older six-week pricing, promotions and benefits from Clarksville do not establish the current terms at Bellevue. No guaranteed enrollment or current slot is implied. Source checked November 6, 2026.
 
 ---
 
 ## Figure Skating Programs
 
-Ford Ice Center Bellevue offers dedicated figure skating programming through the Scott Hamilton Skating Academy, separate from the general learn-to-skate program.
+Ford Ice Center Bellevue offers dedicated figure skating programming through TPH Nashville Skating Academy, separate from the general learn-to-skate program.
 
 For skaters who catch the bug from public skating or learn-to-skate lessons and want to develop actual figure skating technique — edges, jumps, spins, programs — Ford Ice Bellevue provides the pathway. Available programs include:
 
@@ -126,7 +114,7 @@ For skaters who catch the bug from public skating or learn-to-skate lessons and 
 
 **Private coaching:** Independent figure skating coaches operate at Ford Ice Bellevue and are available for one-on-one lessons. If your child is showing genuine aptitude and interest in figure skating beyond the group lesson level, connecting with a private coach at the Bellevue location is the next step.
 
-**USFS Basic Skills program:** The standard national curriculum for figure skating skill development, offered through the Scott Hamilton Skating Academy at Bellevue.
+**USFS Basic Skills program:** The standard national curriculum for figure skating skill development, offered through TPH Nashville Skating Academy at Bellevue.
 
 ---
 
@@ -134,7 +122,7 @@ For skaters who catch the bug from public skating or learn-to-skate lessons and 
 
 Ford Ice Center Bellevue serves as home ice for several Nashville Junior Predators teams and hosts youth hockey leagues, camps, and development programs year-round.
 
-**G.O.A.L. Program:** The free Nashville Predators youth hockey introduction series — available at Bellevue as at other Ford Ice locations — for boys and girls ages 4-8 with no prior experience. Participants receive equipment to use during the program, a hockey jersey to keep, and certified on-ice instruction. One of the best free sports programs for young kids in Nashville.
+**G.O.A.L. Program:** Check the [operator’s current GOAL page](https://www.nhl.com/predators/fordicecenter/goal-program) for age, eligibility, equipment and registration terms. Do not assume an older promotion or package is currently available.
 
 **Learn to Play:** The bridge program between pure skating skills and hockey fundamentals. For kids who have completed basic Learn to Skate levels and want to transition into actual hockey.
 

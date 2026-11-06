@@ -210,7 +210,8 @@
     "category": "Rink Spotlights",
     "publishDate": "2026-03-13",
     "excerpt": "If you are looking for ice skating on the south side of Nashville, Ford Ice Center Antioch is your rink. Here is everything you need to know before you visit.",
-    "fileName": "ford-ice-center-antioch.md"
+    "fileName": "ford-ice-center-antioch.md",
+    "modifiedDate": "2026-11-06"
   },
   {
     "slug": "ford-ice-center-bellevue",
@@ -226,7 +227,7 @@
     ],
     "category": "Rink Spotlights",
     "publishDate": "2026-03-14",
-    "modifiedDate": "2026-06-30",
+    "modifiedDate": "2026-11-06",
     "excerpt": "Ford Ice Center Bellevue is Nashville's newest major ice facility. Here is everything you need to know before you visit.",
     "fileName": "ford-ice-center-bellevue.md"
   },
@@ -868,7 +869,7 @@
     ],
     "category": "Beginner Guides",
     "publishDate": "2026-06-27",
-    "modifiedDate": "2026-10-07",
+    "modifiedDate": "2026-11-06",
     "excerpt": "Find every Nashville public skating rink, how its schedule works, what it costs, and how to book before you load the car.",
     "fileName": "public-skating-nashville.md",
     "hasDynamicRinkLinks": true
@@ -912,7 +913,7 @@
   {
     "slug": "learn-to-skate-nashville",
     "title": "Learn to Skate in Nashville: Classes, Programs, and How to Start",
-    "metaDescription": "Every learn-to-skate program in Nashville: Scott Hamilton Skating Academy at Ford Ice, Nashville Skating Academy at Centennial, free GOAL hockey intro, and adult classes.",
+    "metaDescription": "Nashville skating lessons: compare academy locations and registration paths, check tuition and rental terms, and separate lessons from public-skate booking.",
     "targetKeyword": "learn to skate nashville",
     "secondaryKeywords": [
       "ice skating lessons nashville",
@@ -924,7 +925,8 @@
     "publishDate": "2026-07-10",
     "excerpt": "Somebody in your house wants to learn to skate. Maybe it is a six-year-old who saw one Olympic broadcast and has not stopped talking about it, maybe it is you,...",
     "fileName": "learn-to-skate-nashville.md",
-    "hasDynamicRinkLinks": true
+    "hasDynamicRinkLinks": true,
+    "modifiedDate": "2026-11-06"
   },
   {
     "slug": "ice-skating-birthday-party-nashville",
@@ -946,7 +948,7 @@
   {
     "slug": "ice-skating-nashville-kids",
     "title": "Ice Skating in Nashville with Kids: The Family Guide",
-    "metaDescription": "Taking kids ice skating in Nashville: the best rinks by age and neighborhood, family prices around $10 to $14 with rentals, free programs, and the logistics that make it fun.",
+    "metaDescription": "Taking kids ice skating in Nashville: compare year-round rinks and seasonal options, age-based admission, rental details and booking before you go.",
     "targetKeyword": "ice skating nashville kids",
     "secondaryKeywords": [
       "family ice skating nashville",
@@ -958,7 +960,7 @@
     "excerpt": "Taking kids ice skating in Nashville is one of those outings that either becomes a family tradition or a one-time story about crying in a cold building, and...",
     "fileName": "ice-skating-nashville-kids.md",
     "hasDynamicRinkLinks": true,
-    "modifiedDate": "2026-10-07"
+    "modifiedDate": "2026-11-06"
   },
   {
     "slug": "indoor-ice-skating-nashville",
@@ -975,7 +977,7 @@
     "excerpt": "It is a fair question in a city where summer lasts five months: where can you actually ice skate in Nashville when it is 95 degrees outside? The answer is...",
     "fileName": "indoor-ice-skating-nashville.md",
     "hasDynamicRinkLinks": true,
-    "modifiedDate": "2026-10-07"
+    "modifiedDate": "2026-11-06"
   },
   {
     "slug": "ice-skating-franklin-tn",
