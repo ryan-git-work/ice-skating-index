@@ -18,7 +18,7 @@ The rink runs on an online-registration model for its three drop-in session type
 - **Stick and puck:** casual hockey practice time for players who want ice without a league commitment. Same calendar, same registration flow, and read the listing for equipment rules.
 - **Freestyle:** structured practice ice for figure skaters working jumps, spins, and programs. Dedicated freestyle ice is not common this far south of Nashville, which makes these sessions matter for the county's figure skaters and coaches.
 
-Registration-first booking has a real upside for planning: once you have a spot, you know the session is happening and you are on it, no gamble on a walk-up window. Two practical notes from the rink's own published details: the official site does not confirm rental-skate availability in its page text, so if your family is counting on rentals, email or call ahead and ask what is on the shelf. And the building sits on an industrial drive rather than a retail strip, so trust the map app over instinct on your first trip.
+Registration-first booking has a real upside for planning: a reservation records your booking, but check for changes or cancellations before traveling. Two practical notes from the rink's own published details: the official site does not confirm rental-skate availability in its page text, so if your family is counting on rentals, email or call ahead and ask what is on the shelf. And the building sits on an industrial drive rather than a retail strip, so trust the map app over instinct on your first trip.
 
 ## What about ice skating in Franklin itself?
 
@@ -28,17 +28,17 @@ That could eventually change. In June 2026, a development called The Banks at Br
 
 That wider bench is closer than it sounds, depending on which side of the county you live on:
 
-- **[RINK: ford-ice-center-antioch-antioch-tn]** is the nearest Ford Ice Center for most of the county, a short drive east of the Williamson County line. It is the largest Ford Ice location, home of the Scott Hamilton Skating Academy's Learn to Skate program, and runs matinee and evening public skates at about $10.98 and $13.73 plus tax, rentals included, booked through the DASH by DaySmart system.
-- **[RINK: ford-ice-center-bellevue-nashville-tn]** serves the west side, the natural pick for families in west Franklin or Fairview, with the same pricing and booking system.
-- **[RINK: centennial-sportsplex-nashville-tn]** near downtown Nashville is the walk-in option: about $12 for ages 13 and up, $10 for ages 5 to 12, spectators free, rentals included, no account required.
+- **[RINK: ford-ice-center-antioch-antioch-tn]** is a nearby year-round option east of Williamson County. Public skating and academy lessons have separate registration paths; use the [Nashville public-skating guide](/blog/public-skating-nashville) for public-session booking and the [lessons guide](/blog/learn-to-skate-nashville) for the academy.
+- **[RINK: ford-ice-center-bellevue-nashville-tn]** serves the west side, including families coming from west Franklin or Fairview. Confirm the selected session’s price, rental terms and registration requirements rather than assuming another rink’s package applies.
+- **[RINK: centennial-sportsplex-nashville-tn]** near downtown uses the [Predators’ public-skate registration route](https://www.nhl.com/predators/arena/local-rinks/centennial-ice-rink). Check the selected session’s admission, rentals and spectator terms before traveling; do not assume walk-in entry or included rentals. Academy classes use a separate portal.
 
 The full metro comparison, with every rink's booking system and current details, lives in our [Nashville public skating guide](/blog/public-skating-nashville) and the [Nashville ice skating hub](/city/tn/nashville).
 
 ## Lessons and learn-to-skate for Williamson County kids
 
-Gary Force hosts figure skating alongside its hockey programs, but its official site does not confirm a named learn-to-skate program, so the first move for a Williamson County family is to contact the rink directly and ask what the current beginner option is for kids or adults. Rinks with active figure skating usually have an entry path even when the website does not advertise one, and home ice minutes away is worth that one email.
+Gary Force hosts figure skating alongside its hockey programs. This review has not verified a current beginner-class package there; check the rink’s program listings and eligibility before planning a lesson.
 
-For a confirmed, badge-level program, the nearest structured option is the Scott Hamilton Skating Academy's Learn to Skate USA classes at Ford Ice Antioch, with adult classes for ages 16 and up. And for hockey-curious kids ages 4 to 8, the Predators' Get Out And Learn program at the Ford Ice Centers is a free on-ice introduction, no equipment and no experience required, which makes it the lowest-risk way in the metro to find out whether the ice sticks. The complete program map is in our [Nashville learn-to-skate guide](/blog/learn-to-skate-nashville).
+For structured lessons at Antioch or Bellevue, follow [TPH Nashville Skating Academy’s registration path](https://nashvilleskatingacademyford.finnlyconnect.com/), linked by the [academy website](https://www.nashvilleiceskate.com/). Confirm the class’s age, level, tuition and inclusions in its current listing. For an introductory hockey option, check the [Predators’ GOAL page](https://www.nhl.com/predators/fordicecenter/goal-program) for current eligibility and registration; an older offer does not establish a place today. The complete program map is in our [Nashville learn-to-skate guide](/blog/learn-to-skate-nashville).
 
 ## Hockey south of Nashville
 
@@ -48,9 +48,11 @@ One servicing note for players: current on-site sharpening availability at Gary 
 
 ## Seasonal and holiday skating near Franklin
 
-In the holiday season, the outdoor rinks add the festive version of skating, and the closest ones bracket the county. [RINK: fountains-at-gateway-murfreesboro-tn] in Murfreesboro is the nearest seasonal outdoor rink for the east side of the county, running roughly late November through early February at about $17 for ages 13 and up and $12 for ages 4 to 12, rental and session included. Up in Nashville, the holiday rink at [RINK: gaylord-opryland-resort-nashville-tn] and the outdoor Smashville rink downtown run resort-style and event-style pricing for a lights-and-hot-chocolate outing.
+[RINK: fountains-at-gateway-murfreesboro-tn] in Murfreesboro has announced its season for **November 20, 2026 through January 31, 2027**. The [official Winterfest page](https://fountainswinterfest.com/) lists **$20 for ages 13+, $15 for ages 4–12, and free admission for ages 3 and under with a paid adult**. Tax, rental skates and **120 minutes on the ice** are included. Individual visitors can pay at the gate; check the operator’s current calendar and weather updates before driving.
 
-Treat the seasonal rinks as what they are: a December memory, not a place to learn. They close by February, the ice fights the weather, and the price per hour of actual skating runs double the indoor rinks. The year-round sheet in Nolensville is where a Williamson County skater actually gets better.
+[RINK: gaylord-opryland-resort-nashville-tn] lists **November 6, 2026 through January 2, 2027** on its [official skating ticket page](https://tickets.gaylordopryland.com/eventperformances.asp?evt=18). Buy tickets online in advance; prices depend on the selected date, and parking costs extra. Confirm rental arrangements and any other fees in the selected offer. A 2026–27 return for downtown Smashville is not confirmed in this review, so do not plan a visit around its past seasons.
+
+These holiday outings have limited seasons. For year-round skating, use Nolensville or the indoor Nashville alternatives above. Match the session to the purpose of the visit: recreational admission, a lesson and figure-skating practice ice may have different booking and eligibility rules.
 
 ## The Williamson County skating playbook
 
@@ -79,7 +81,7 @@ Gary Force Acura Ice Arena in Nolensville is the closest year-round rink for mos
 
 ### How much does ice skating cost at Gary Force Acura Ice Arena?
 
-The rink does not publish public-skate prices on its official site. Sessions register online through the events calendar, and you confirm the cost inside the booking flow before you commit. As a metro reference point, Nashville-area public sessions generally run about $10 to $14 per skater.
+Confirm the selected public session’s cost and any rental or registration requirements in the rink’s booking flow. Do not use another rink’s admission price as a quote for Gary Force.
 
 ### Does Gary Force Acura Ice Arena have public skating?
 
@@ -87,11 +89,11 @@ Yes. Public skate sessions are confirmed and register through the online events 
 
 ### Where can kids take skating lessons in Williamson County?
 
-Ask Gary Force directly about current beginner options, since it hosts figure skating but does not confirm a named learn-to-skate program on its site. The nearest confirmed Learn to Skate USA program is the Scott Hamilton Skating Academy at Ford Ice Center Antioch, and the Predators' free Get Out And Learn hockey intro serves kids ages 4 to 8 at the Ford Ice Centers.
+Check Gary Force’s current program listings for beginner options. Antioch and Bellevue lessons use TPH Nashville Skating Academy’s registration path; the [Nashville lessons guide](/blog/learn-to-skate-nashville) separates those classes from Centennial and public skating. Check the operator’s GOAL listing for current introductory-hockey eligibility and registration.
 
 ### Is there outdoor ice skating near Franklin in the winter?
 
-Seasonally, yes. The Fountains at Gateway rink in Murfreesboro is the nearest outdoor holiday rink, running roughly late November through early February at about $17 for ages 13 and up and $12 for ages 4 to 12. Nashville adds the Gaylord Opryland holiday rink and the downtown Smashville rink in the same window. All close for the rest of the year, when the indoor rinks carry the county.
+Yes. Fountains Winterfest in Murfreesboro announces November 20, 2026 through January 31, 2027: $20 ages 13+, $15 ages 4–12, and ages 3 and under free with a paid adult; tax, rentals and 120 minutes are included. Gaylord Opryland lists November 6, 2026 through January 2, 2027, with advance online tickets, date-specific pricing and extra parking. A downtown Smashville reopening is unconfirmed here. These are seasonal options, separate from the year-round indoor rinks.
 
 ### Does Gary Force rent ice skates?
 
