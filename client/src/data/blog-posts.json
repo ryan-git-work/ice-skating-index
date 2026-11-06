@@ -1175,7 +1175,7 @@
     ],
     "category": "Skating Lifestyle",
     "publishDate": "2026-07-11",
-    "modifiedDate": "2026-07-12",
+    "modifiedDate": "2026-11-06",
     "excerpt": "Status as of July 11, 2026: PROPOSED, not approved. This page tracks the project as it moves through Franklin's approval process and will be updated as the...",
     "fileName": "banks-at-brownland-ice-rink-franklin.md",
     "hasDynamicRinkLinks": true
@@ -1194,7 +1194,8 @@
     "publishDate": "2026-07-12",
     "excerpt": "Franklin, Tennessee has exactly one sheet of ice inside city limits, and it is not what most people typing \"ice skating in Franklin\" expect to find. The Hockey...",
     "fileName": "the-lab-hockey-franklin-tn.md",
-    "hasDynamicRinkLinks": true
+    "hasDynamicRinkLinks": true,
+    "modifiedDate": "2026-11-06"
   },
   {
     "slug": "franklin-tn-ice-rink-history",

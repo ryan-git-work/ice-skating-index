@@ -39,7 +39,7 @@ The same confirm-first rule applies double here: public skate blocks at The Lab 
 
 **Go to The Lab if** you are a hockey player, or the parent of one, who wants skills development, goalie work, small group training, or an intro to hockey close to Franklin. This is what the building is for, and it is the only ice in Franklin proper.
 
-**Go elsewhere if** you want a standard public skate, skating lessons in a badge-level program, or figure skating ice. [RINK: gary-force-acura-ice-arena-nolensville-tn] is Williamson County's full-size, year-round sheet, with public skate, stick and puck, and freestyle sessions registered online. [RINK: ford-ice-center-antioch-antioch-tn] adds published pricing, the Scott Hamilton Skating Academy's Learn to Skate program, and the Predators' free youth hockey intro. The complete local rundown, including the Brentwood and Nolensville picture, lives in our [Franklin and Williamson County guide](/blog/ice-skating-franklin-tn), and the wider metro comparison is in the [Nashville ice skating hub](/city/tn/nashville).
+**Go elsewhere if** you want a standard public skate, skating lessons in a badge-level program, or figure skating ice. [RINK: gary-force-acura-ice-arena-nolensville-tn] is Williamson County's full-size, year-round sheet, with public skate, stick and puck, and freestyle sessions registered online. [RINK: ford-ice-center-antioch-antioch-tn] uses separate public-skate and TPH Nashville Skating Academy lesson registration paths; check the current operator listing for eligibility and package details. The complete local rundown, including the Brentwood and Nolensville picture, lives in our [Franklin and Williamson County guide](/blog/ice-skating-franklin-tn), and the wider metro comparison is in the [Nashville ice skating hub](/city/tn/nashville).
 
 ## Booking and practical notes
 
@@ -65,7 +65,7 @@ Yes. It is a real, refrigerated indoor ice sheet, deliberately smaller than a st
 
 ### Can you learn to skate at The Hockey Lab?
 
-The Lab has published Learn to Skate and Learn to Play intro classes with rental skates included, aimed at getting new skaters and young hockey players started. For a badge-level Learn to Skate USA program with a full class ladder, the nearest confirmed option is the Scott Hamilton Skating Academy at Ford Ice Center Antioch.
+The Lab has published Learn to Skate and Learn to Play intro classes with rental skates included, aimed at getting new skaters and young hockey players started. For a badge-level Learn to Skate USA program with a full class ladder, the nearest confirmed option is TPH Nashville Skating Academy at Ford Ice Center Antioch. Use the [current academy registration portal](https://nashvilleskatingacademyford.finnlyconnect.com/) to confirm the class and its terms.
 
 ### Does The Hockey Lab offer figure skating?
 

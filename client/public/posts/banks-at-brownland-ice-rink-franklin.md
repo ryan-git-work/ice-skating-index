@@ -33,7 +33,7 @@ There is also an older history hanging over the stakes: Williamson County has lo
 
 ## What Williamson County skaters should do in the meantime
 
-Nothing about this proposal changes where you skate this week, and the current answer is better than most Franklin families realize. [RINK: gary-force-acura-ice-arena-nolensville-tn] in Nolensville is Williamson County's year-round NHL-size sheet, with public skate, stick and puck, and freestyle sessions registered online. The nearest Predators-operated ice today is [RINK: ford-ice-center-antioch-antioch-tn], home of the Scott Hamilton Skating Academy's Learn to Skate program, with [RINK: ford-ice-center-bellevue-nashville-tn] covering the west side and [RINK: centennial-sportsplex-nashville-tn] as the downtown walk-in option.
+Nothing about this proposal changes where you skate this week, and the current answer is better than most Franklin families realize. [RINK: gary-force-acura-ice-arena-nolensville-tn] in Nolensville is Williamson County's year-round NHL-size sheet, with public skate, stick and puck, and freestyle sessions registered online. The nearest Predators-operated ice today is [RINK: ford-ice-center-antioch-antioch-tn], home of TPH Nashville Skating Academy’s lesson program, with [RINK: ford-ice-center-bellevue-nashville-tn] covering the west side and [RINK: centennial-sportsplex-nashville-tn] as the downtown option with [public-skate registration through the operator](https://www.nhl.com/predators/arena/local-rinks/centennial-ice-rink). Check the selected session’s terms rather than assuming walk-in entry.
 
 The full local picture, including booking systems, prices, and lessons, lives in our [Franklin and Williamson County guide](/blog/ice-skating-franklin-tn) and the [Nashville ice skating hub](/city/tn/nashville).
 
@@ -49,7 +49,7 @@ The Nashville Predators, the same organization that operates the Ford Ice Center
 
 ### Will it have public skating and lessons?
 
-Nothing is officially programmed yet. But the Ford Ice Center model the coverage points to runs public skate sessions, Learn to Skate USA classes through the Scott Hamilton Skating Academy, freestyle ice, and youth and adult hockey, and a two-sheet building is designed to carry that full mix. If the Franklin facility follows the model, expect the same menu.
+Nothing is officially programmed yet. But the Ford Ice Center model the coverage points to runs public skate sessions, learn-to-skate classes through location-specific academy programs, freestyle ice, and youth and adult hockey, and a two-sheet building is designed to carry that full mix. If the Franklin facility follows the model, expect the same menu.
 
 ### Why might it not happen?
 
