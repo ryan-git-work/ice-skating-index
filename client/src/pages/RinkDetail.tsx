@@ -714,7 +714,10 @@ export default function RinkDetail() {
               </section>
             )}
 
-            <LastVerified date={rink.last_verified || "2026-05-23"} />
+            {verifiedPricing && verifiedPricing.verifiedOn > (rink.last_verified || "") && (
+              <p className="text-xs text-muted-foreground">Admission details checked {formatVerifiedDate(verifiedPricing.verifiedOn, { year: "numeric", month: "long", day: "numeric" })}. This scoped fact check does not re-verify other facility details.</p>
+            )}
+            <LastVerified date={rink.last_verified || "2026-05-23"} label="Full record last reviewed" />
           </div>
 
           <div className="space-y-8">
@@ -770,7 +773,7 @@ export default function RinkDetail() {
              )}
 
              <div className="text-xs text-muted-foreground">
-               {rink.last_verified && <p>Last verified: {formatVerifiedDate(rink.last_verified)}</p>}
+               {rink.last_verified && <p>Full record last reviewed: {formatVerifiedDate(rink.last_verified, { year: "numeric", month: "long", day: "numeric" })}</p>}
                {rink.sources && rink.sources.length > 0 && <p>Source: {rink.sources.join(", ")}</p>}
              </div>
           </div>

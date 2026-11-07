@@ -1,16 +1,9 @@
 import { Layout } from "@/components/Layout";
 import { useHead } from "@/hooks/use-head";
 import { rinks, isTruthy } from "@/lib/data";
-import { RinkCard } from "@/components/RinkCard";
+import { RinkDirectory } from "@/components/RinkDirectory";
 import { Separator } from "@/components/ui/separator";
-import { Badge } from "@/components/ui/badge";
-import { 
-  Collapsible,
-  CollapsibleContent,
-  CollapsibleTrigger,
-} from "@/components/ui/collapsible";
-import { ChevronDown, Sparkles, Users, Eye, CheckCircle, HelpCircle, MapPin } from "lucide-react";
-import { useState } from "react";
+import { Users, Eye, CheckCircle, HelpCircle } from "lucide-react";
 import { buildWebPageSchema } from "@/lib/seo";
 
 export default function FreestyleHub() {
@@ -20,10 +13,9 @@ export default function FreestyleHub() {
     title: "What Is Freestyle Skating? Freestyle Ice vs Public Skate",
     description,
     canonicalPath: "/freestyle",
-    structuredData: [{...buildWebPageSchema("/freestyle", "Freestyle Ice Skating", description), dateModified: "2026-11-06"}],
+    structuredData: [{...buildWebPageSchema("/freestyle", "Freestyle Ice Skating", description), dateModified: "2026-11-07"}],
   });
 
-  const [showRinks, setShowRinks] = useState(false);
   
   const freestyleRinks = rinks.filter(r => isTruthy(r.freestyle?.available) && r.operating_status !== "closed" && r.operating_status !== "coming_soon");
 
@@ -409,36 +401,14 @@ export default function FreestyleHub() {
                 <li><a className="text-primary underline" href="https://www.nashvilleiceskate.com/">Nashville Skating Academy</a> links separate Centennial and Ford Ice academy portals. Academy practice and classes use those paths; public skate is booked separately. See the <a className="text-primary underline" href="/blog/public-skating-nashville">public-skating guide</a> for that lane.</li>
                 <li><a className="text-primary underline" href="https://www.broadmoorworldarena.com/icehall/about">World Arena Ice Hall’s operator guide</a> points to figure-skating qualifications and registration. Its <a className="text-primary underline" href="https://www.broadmoorworldarena.com/publicactivities">public-activities page</a> is a separate starting point for recreational skating.</li>
               </ul>
-              <p className="mt-4 text-sm text-muted-foreground">New to the ice? Start with <a className="text-primary underline" href="/blog/how-to-ice-skate">beginner skating guidance</a> or a lesson program and confirm which session the operator recommends. No specific slot or coach availability is verified here.</p>
+              <p className="mt-4 text-sm text-muted-foreground">New to the ice? Start with <a className="text-primary underline" href="/blog/how-to-ice-skate">beginner skating guidance</a> or a lesson program and confirm which session the operator recommends. No specific slot or coach availability is verified here. Use the <a href="/blog/how-much-does-ice-skating-cost" className="text-primary underline">skating cost guide</a> to compare ice admission and lesson fees separately.</p>
             </section>
 
             <Separator />
 
             {/* Rinks with Freestyle */}
             <section>
-              <Collapsible open={showRinks} onOpenChange={setShowRinks}>
-                <CollapsibleTrigger className="flex items-center justify-between w-full p-4 bg-muted/50 rounded-lg hover:bg-muted transition-colors">
-                  <div className="flex items-center gap-3">
-                    <MapPin className="h-5 w-5 text-primary" />
-                    <span className="font-semibold">Directory rinks marked for freestyle practice</span>
-                    <Badge variant="secondary" className="ml-2">{freestyleRinks.length}</Badge>
-                  </div>
-                  <ChevronDown className={`h-5 w-5 transition-transform ${showRinks ? 'rotate-180' : ''}`} />
-                </CollapsibleTrigger>
-                <CollapsibleContent className="pt-6">
-                  {freestyleRinks.length > 0 ? (
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      {freestyleRinks.map((rink) => (
-                        <RinkCard key={rink.id} rink={rink} />
-                      ))}
-                    </div>
-                  ) : (
-                    <p className="text-muted-foreground text-center py-8">
-                      No matching directory entries. Check operators directly for current practice options.
-                    </p>
-                  )}
-                </CollapsibleContent>
-              </Collapsible>
+              <RinkDirectory rinks={freestyleRinks} title="Directory rinks marked for freestyle practice" />
             </section>
 
           </div>

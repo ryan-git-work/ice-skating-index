@@ -2,6 +2,7 @@ import { Info } from "lucide-react";
 
 interface LastVerifiedProps {
   date: string;
+  label?: string;
   showTooltip?: boolean;
 }
 
@@ -14,14 +15,14 @@ export function formatVerifiedDate(date: string, options?: Intl.DateTimeFormatOp
   return parsed.toLocaleDateString("en-US", options);
 }
 
-export function LastVerified({ date, showTooltip = true }: LastVerifiedProps) {
+export function LastVerified({ date, label = "Last verified", showTooltip = true }: LastVerifiedProps) {
   const formatted = formatVerifiedDate(date, {
     year: "numeric",
     month: "long",
     day: "numeric",
   });
 
-  const dateLabel = <span className="inline-flex items-center gap-1"><Info className="h-3 w-3" aria-hidden="true" />Last verified: {formatted}</span>;
+  const dateLabel = <span className="inline-flex items-center gap-1"><Info className="h-3 w-3" aria-hidden="true" />{label}: {formatted}</span>;
   if (!showTooltip) return <span className="text-xs text-muted-foreground">{dateLabel}</span>;
 
   return (

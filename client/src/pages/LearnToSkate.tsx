@@ -1,16 +1,9 @@
 import { Layout } from "@/components/Layout";
 import { useHead } from "@/hooks/use-head";
 import { rinks, isTruthy } from "@/lib/data";
-import { RinkCard } from "@/components/RinkCard";
+import { RinkDirectory } from "@/components/RinkDirectory";
 import { Separator } from "@/components/ui/separator";
-import { Badge } from "@/components/ui/badge";
-import { 
-  Collapsible,
-  CollapsibleContent,
-  CollapsibleTrigger,
-} from "@/components/ui/collapsible";
-import { ChevronDown, Sparkles, Users, BookOpen, Clock, MapPin } from "lucide-react";
-import { useState } from "react";
+import { Users, BookOpen, Clock } from "lucide-react";
 import { buildWebPageSchema } from "@/lib/seo";
 
 export default function LearnToSkate() {
@@ -20,12 +13,11 @@ export default function LearnToSkate() {
     title: "Learn to Skate Programs",
     description,
     canonicalPath: "/services/learn-to-skate",
-    structuredData: [buildWebPageSchema("/services/learn-to-skate", "Learn to Skate Programs", description)],
+    structuredData: [{...buildWebPageSchema("/services/learn-to-skate", "Learn to Skate Programs", description), dateModified: "2026-11-07"}],
   });
 
-  const [showRinks, setShowRinks] = useState(false);
   
-  const rinksWithLearnToSkate = rinks.filter(r => isTruthy(r.offerings.learn_to_skate));
+  const rinksWithLearnToSkate = rinks.filter(r => isTruthy(r.offerings.learn_to_skate) && r.operating_status !== "closed" && r.operating_status !== "coming_soon");
 
   const sections = [
     { id: "what-it-means", label: "What Learn to Skate usually means" },
@@ -307,49 +299,17 @@ export default function LearnToSkate() {
 
             <Separator />
 
-            {/* Coming Soon */}
-            <section className="bg-secondary/60 p-8 rounded-lg border">
-              <div className="flex items-start gap-4">
-                <div className="bg-primary/10 p-3 rounded-full">
-                  <Sparkles className="h-6 w-6 text-primary" />
-                </div>
-                <div>
-                  <h2 className="font-serif text-xl font-bold mb-2">Coming soon</h2>
-                  <p className="text-muted-foreground">
-                    We are building a directory of rinks and programs to help skaters easily find Learn to Skate 
-                    options by location. Verified program listings will be available soon.
-                  </p>
-                </div>
-              </div>
+            <section>
+              <h2 className="font-serif text-xl font-bold mb-3">Plan your first class</h2>
+              <p className="text-muted-foreground">Use the rink listings below to find an operator, then check its current class registration. Ask about age and level requirements, rental skates, practice admission and the full course fee. Our <a href="/blog/how-much-does-ice-skating-cost" className="text-primary underline">skating cost guide</a> helps separate tuition, ice admission and equipment costs.</p>
             </section>
+
 
             <Separator />
 
             {/* Rinks with Learn to Skate */}
             <section>
-              <Collapsible open={showRinks} onOpenChange={setShowRinks}>
-                <CollapsibleTrigger className="flex items-center justify-between w-full p-4 bg-muted/50 rounded-lg hover:bg-muted transition-colors">
-                  <div className="flex items-center gap-3">
-                    <MapPin className="h-5 w-5 text-primary" />
-                    <span className="font-semibold">Rinks with Learn to Skate programs</span>
-                    <Badge variant="secondary" className="ml-2">{rinksWithLearnToSkate.length}</Badge>
-                  </div>
-                  <ChevronDown className={`h-5 w-5 transition-transform ${showRinks ? 'rotate-180' : ''}`} />
-                </CollapsibleTrigger>
-                <CollapsibleContent className="pt-6">
-                  {rinksWithLearnToSkate.length > 0 ? (
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      {rinksWithLearnToSkate.map((rink) => (
-                        <RinkCard key={rink.id} rink={rink} />
-                      ))}
-                    </div>
-                  ) : (
-                    <p className="text-muted-foreground text-center py-8">
-                      No rinks with confirmed Learn to Skate programs yet.
-                    </p>
-                  )}
-                </CollapsibleContent>
-              </Collapsible>
+              <RinkDirectory rinks={rinksWithLearnToSkate} title="Directory rinks listing Learn to Skate" />
             </section>
 
           </div>

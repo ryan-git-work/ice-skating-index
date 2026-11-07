@@ -60,7 +60,7 @@ function RinkLink({ slug, children }: { slug: string; children: React.ReactNode 
 export default function NashvilleCityHub() {
   const asOf = useAsOf();
   const pageModified = [
-    "2026-11-06",
+    "2026-11-07",
     getLatestCurrentStatusUpdated(Array.from(nashvilleRinkSlugs), asOf),
   ].filter((value): value is string => Boolean(value)).sort().at(-1);
   const faqSchema = {
@@ -81,16 +81,16 @@ export default function NashvilleCityHub() {
 
   useHead({
     title: "Ice Skating in Nashville, TN: Every Rink, Price, and Schedule (2026 Guide)",
-    description: "Compare every Nashville ice rink, current public-skate prices, live schedules, booking links, lessons, and seasonal options. Verified June 29, 2026.",
+    description: "Compare Nashville rink listings, public-skate booking links, lessons and seasonal notes. See the dated, scoped checks on this page.",
     ogTitle: "Ice Skating in Nashville, TN: Every Rink, Price, and Schedule (2026 Guide)",
-    ogDescription: "Compare every Nashville ice rink, current public-skate prices, live schedules, booking links, lessons, and seasonal options.",
+    ogDescription: "Compare every Nashville ice rink, public-skate booking links, lessons, and seasonal options.",
     canonicalPath: "/city/tn/nashville",
     structuredData: [
       {
         ...buildWebPageSchema(
           "/city/tn/nashville",
           "Ice Skating in Nashville, TN: Every Rink, Price, and Schedule",
-          "Compare every Nashville ice rink, current public-skate prices, live schedules, booking links, lessons, and seasonal options.",
+          "Compare every Nashville ice rink, public-skate booking links, lessons, and seasonal options.",
         ),
         "@id": `${SITE_URL}/city/tn/nashville#webpage`,
         dateModified: pageModified,
@@ -225,10 +225,10 @@ export default function NashvilleCityHub() {
                     </tr>
                     <tr className="border-b border-border/50">
                       <td className="py-3 pl-4 pr-4"><RinkLink slug={RINK_SLUGS.smashville}>Smashville at Zoolumination</RinkLink></td>
-                      <td className="py-3 pr-4 text-muted-foreground">Downtown</td>
-                      <td className="py-3 pr-4 text-muted-foreground">$21&ndash;25</td>
-                      <td className="py-3 pr-4 text-muted-foreground">Drop-in</td>
-                      <td className="py-3"><span className="inline-flex items-center gap-1 text-amber-600"><Calendar className="h-3.5 w-3.5" /> Nov&ndash;Feb</span></td>
+                      <td className="py-3 pr-4 text-muted-foreground">Location unconfirmed</td>
+                      <td className="py-3 pr-4 text-muted-foreground">2026&ndash;27 terms unconfirmed</td>
+                      <td className="py-3 pr-4 text-muted-foreground">Confirm with operator</td>
+                      <td className="py-3"><span className="inline-flex items-center gap-1 text-amber-600"><Calendar className="h-3.5 w-3.5" /> Season unconfirmed</span></td>
                     </tr>
                     <tr className="border-b border-border/50">
                       <td className="py-3 pl-4 pr-4"><RinkLink slug={RINK_SLUGS.fountains}>Fountains at Gateway</RinkLink></td>
@@ -600,7 +600,8 @@ export default function NashvilleCityHub() {
               </div>
             </section>
 
-            <LastVerified date="2026-06-29" />
+            <p className="text-xs text-muted-foreground">Scoped seasonal and comparison-table checks: November 7, 2026. Other sections have not received a new whole-guide review.</p>
+            <LastVerified date="2026-06-29" label="Whole-guide last reviewed" />
 
           </div>
         </div>

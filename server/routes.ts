@@ -39,8 +39,8 @@ const STATIC_LASTMOD = {
   home: BUILD_DATE,
   browse: BUILD_DATE,
   about: "2026-06-30",
-  freestyle: "2026-11-06",
-  learnToSkate: "2026-06-30",
+  freestyle: "2026-11-07",
+  learnToSkate: "2026-11-07",
   skateSharpening: "2026-06-30",
   blog: BUILD_DATE,
 };
@@ -68,7 +68,7 @@ export async function registerRoutes(
         rink.address.state.toLowerCase().replace(/\s+/g, "-") === state &&
         rink.address.city.toLowerCase().replace(/\s+/g, "-") === city
       );
-      return { state, city, lastmod: state === "tn" && city === "nashville" ? "2026-11-06" : latestDate(cityRinks.map(rinkModified), STATIC_LASTMOD.browse) };
+      return { state, city, lastmod: state === "tn" && city === "nashville" ? "2026-11-07" : latestDate(cityRinks.map(rinkModified), STATIC_LASTMOD.browse) };
     });
 
     let sitemap = `<?xml version="1.0" encoding="UTF-8"?>

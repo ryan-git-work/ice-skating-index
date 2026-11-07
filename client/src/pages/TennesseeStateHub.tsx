@@ -41,9 +41,9 @@ export default function TennesseeStateHub() {
 
   useHead({
     title: "Ice Skating in Tennessee: Every Rink, Every City (2026 Guide)",
-    description: "Every public ice skating rink in Tennessee \u2014 Nashville's four year-round rinks, Knoxville's Ice Chalet, Chattanooga's seasonal rink, and Memphis-adjacent options. Verified weekly.",
+    description: "Find Tennessee rink listings, five Middle Tennessee indoor options and dated seasonal notes. Confirm current sessions, prices and booking with each operator.",
     ogTitle: "Ice Skating in Tennessee: Every Rink, Every City (2026 Guide)",
-    ogDescription: "Every public ice skating rink in Tennessee \u2014 Nashville's four year-round rinks, Knoxville's Ice Chalet, Chattanooga's seasonal rink, and Memphis-adjacent options. Verified weekly.",
+    ogDescription: "Find Tennessee rink listings, five Middle Tennessee indoor options and dated seasonal notes. Confirm current sessions, prices and booking with each operator.",
     canonicalPath: "/state/tn",
     structuredData: [buildRinkItemList(tnRinks, "/state/tn", "Ice Skating Rinks in Tennessee")],
   });
@@ -61,7 +61,7 @@ export default function TennesseeStateHub() {
             Ice Skating in Tennessee: Every Rink, Every City (2026 Guide)
           </h1>
           <p className="text-lg text-white/70 max-w-3xl leading-relaxed">
-            Tennessee isn&apos;t a winter sport powerhouse &mdash; but it has more ice than its reputation suggests. The state has six year-round indoor rinks (four of them in Middle Tennessee), one well-established figure skating facility in Knoxville, and a handful of seasonal outdoor rinks that open between November and February. This guide covers every operating rink in Tennessee, where it is, what it costs, and which city hub to visit for more detail.
+            Tennessee isn&apos;t a winter sport powerhouse &mdash; but it has more ice than its reputation suggests. Middle Tennessee has five year-round indoor options, with additional indoor rinks around Knoxville and Gatlinburg. Seasonal outdoor listings require their own current-season checks. This guide covers every operating rink in Tennessee, where it is, what it costs, and which city hub to visit for more detail.
           </p>
         </div>
       </div>
@@ -105,9 +105,9 @@ export default function TennesseeStateHub() {
                   <tbody>
                     <tr className="border-b border-border/50">
                       <td className="py-3 pr-4 font-medium">Nashville (Middle TN)</td>
-                      <td className="py-3 pr-4 text-muted-foreground">4</td>
-                      <td className="py-3 pr-4 text-muted-foreground">3</td>
-                      <td className="py-3 text-muted-foreground">By far the most rinks in the state &mdash; Centennial Sportsplex plus three Ford Ice Centers (Bellevue, Antioch, Clarksville).</td>
+                      <td className="py-3 pr-4 text-muted-foreground">5</td>
+                      <td className="py-3 pr-4 text-muted-foreground">2 announced; Smashville unconfirmed</td>
+                      <td className="py-3 text-muted-foreground">By far the most rinks in the state &mdash; Centennial Sportsplex, three Ford Ice Centers (Bellevue, Antioch, Clarksville), and Gary Force in Nolensville.</td>
                     </tr>
                     <tr className="border-b border-border/50">
                       <td className="py-3 pr-4 font-medium">Knoxville (East TN)</td>
@@ -144,10 +144,10 @@ export default function TennesseeStateHub() {
               <h2 className="font-serif text-2xl font-bold mb-4">Nashville and Middle Tennessee</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Nashville is the heart of skating in Tennessee. Four year-round indoor rinks &mdash; <RinkLink slug={RINK_SLUGS.centennial}>Centennial Sportsplex</RinkLink> plus three <RinkLink slug={RINK_SLUGS.bellevue}>Ford Ice Centers</RinkLink> &mdash; three seasonal options (Smashville, Fountains at Gateway, Opryland), and the strongest learn-to-skate and freestyle infrastructure in the state.
+                  Nashville is the heart of skating in Tennessee. Five year-round indoor rinks &mdash; <RinkLink slug={RINK_SLUGS.centennial}>Centennial Sportsplex</RinkLink> plus three <RinkLink slug={RINK_SLUGS.bellevue}>Ford Ice Centers</RinkLink> and <RinkLink slug={RINK_SLUGS.garyForce}>Gary Force Acura Ice Arena</RinkLink> in Nolensville &mdash; and the strongest learn-to-skate and freestyle infrastructure in the state.
                 </p>
                 <p>
-                  The city also has <RinkLink slug={RINK_SLUGS.garyForce}>Gary Force Acura Ice Arena</RinkLink> in Nolensville and <RinkLink slug={RINK_SLUGS.ober}>Ober Mountain Indoor Ice Rink</RinkLink> in Gatlinburg, both offering year-round public skating for their respective communities.
+                  Gaylord and Fountains have announced 2026&ndash;27 seasons; Smashville skating remains unconfirmed. Do not assume a light-event announcement establishes skating availability. See the Nashville guide for current seasonal booking distinctions.
                 </p>
                 <div className="mt-4">
                   <CityLink slug="nashville">Full Nashville guide</CityLink>
@@ -164,7 +164,7 @@ export default function TennesseeStateHub() {
                   <RinkLink slug={RINK_SLUGS.iceChalet}>Ice Chalet</RinkLink> on Lebanon Street is the established rink in Knoxville &mdash; daily public sessions, $9.50 admission plus $7.50 rental, and a strong figure skating program. It&apos;s the longest-running rink in Tennessee and serves as the hub for the local skating community.
                 </p>
                 <p>
-                  Also in Knoxville, <RinkLink slug={RINK_SLUGS.coolSports}>Cool Sports (Home of the Icearium)</RinkLink> offers additional ice time for public skating and hockey programs in the western Knoxville area.
+                  Gatlinburg has <RinkLink slug={RINK_SLUGS.ober}>Ober Mountain Indoor Ice Rink</RinkLink>, a separate East Tennessee listing. Also in Knoxville, <RinkLink slug={RINK_SLUGS.coolSports}>Cool Sports (Home of the Icearium)</RinkLink> offers additional ice time for public skating and hockey programs in the western Knoxville area.
                 </p>
                 <p>
                   During the holiday season, downtown Knoxville also hosts Holidays on Ice (outdoor seasonal rink at Market Square / Krutch Park).
@@ -181,7 +181,7 @@ export default function TennesseeStateHub() {
               <h2 className="font-serif text-2xl font-bold mb-4">Chattanooga and Southeast Tennessee</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Chattanooga has no year-round indoor rink. Ice on the Landing at Finley Stadium (1826 Reggie White Blvd) is the only ice skating option &mdash; and it&apos;s seasonal (Nov 22 &ndash; Feb 1 in 2025&ndash;26). Tickets are $14 adult / $12 youth, with skates and a 60-minute session included.
+                  Ice on the Landing at First Horizon Pavilion (1826 Reggie White Blvd) announces November 21, 2026 through January 31, 2027 on its <a href="https://www.iceonthelanding.com/" className="text-primary underline">official operator page</a>. It is seasonal; check the operator’s current hours, admission, rental terms and booking before traveling.
                 </p>
                 <p>
                   For Chattanoogans who want regular ice time, the closest year-round options are in Knoxville (~1.5 hours north) or the Nashville-area rinks (~2 hours northwest).
@@ -219,7 +219,8 @@ export default function TennesseeStateHub() {
               </div>
             </section>
 
-            <LastVerified date="2026-05-23" />
+            <p className="text-xs text-muted-foreground">Scoped Middle Tennessee count and seasonal-reference checks: November 7, 2026. Other sections have not received a new whole-guide review.</p>
+            <LastVerified date="2026-05-23" label="Whole-guide last reviewed" />
 
           </div>
         </div>

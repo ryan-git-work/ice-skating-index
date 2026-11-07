@@ -8,13 +8,14 @@ Here is exactly what you will pay at every Nashville area rink, plus tips for ge
 
 ## Nashville Ice Skating Prices at a Glance
 
+Gaylord’s [official skating ticket page](https://tickets.gaylordopryland.com/eventperformances.asp?evt=18) lists November 6, 2026 through January 2, 2027. Admission depends on the selected date, online advance tickets are required, and parking costs extra. Rental inclusion and other fees must be checked in the selected offer.
+
 | Rink | Admission | Skate Rental | Reservations Required |
 |------|-----------|--------------|----------------------|
 | Centennial Sportsplex | $12 ages 13+ / $10 youth, military, college, senior (verified Oct 1, 2026) | Unverified; confirm in DaySmart | Yes, online |
 | Ford Ice Center Antioch | $10.98 matinee / $13.73 evening, plus tax | Included | Yes — online |
 | Ford Ice Center Bellevue | $10.98 matinee / $13.73 evening, plus tax | Included | Yes — online |
 | Gaylord Opryland (seasonal) | Date-specific; confirm at checkout | Confirm ticket terms | Advance online tickets required |
-| Gaylord Opryland (seasonal) | Varies | Included | Recommended |
 
 ---
 

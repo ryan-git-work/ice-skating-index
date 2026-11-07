@@ -191,7 +191,7 @@
     ],
     "category": "Rink Spotlights",
     "publishDate": "2026-03-12",
-    "modifiedDate": "2026-10-07",
+    "modifiedDate": "2026-11-07",
     "excerpt": "Compare current Nashville public-skate pricing and booking requirements, including Ford Ice rates and Centennial's new DaySmart process.",
     "fileName": "ice-skating-cost-nashville.md"
   },
@@ -718,7 +718,8 @@
     "publishDate": "2026-06-22",
     "excerpt": "The first time you step onto ice, your body will try to walk, and ice does not care about walking. That single mismatch is the whole challenge, and it is als…",
     "fileName": "how-to-ice-skate.md",
-    "hasDynamicRinkLinks": true
+    "hasDynamicRinkLinks": true,
+    "modifiedDate": "2026-11-07"
   },
   {
     "slug": "what-to-expect-public-skating",

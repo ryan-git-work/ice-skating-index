@@ -32,7 +32,7 @@ Now find your weight. It should sit over the middle of your blades or just forwa
 
 Everything in skating returns to one posture, so it is worth naming. The ready position is knees bent, hips slightly back, chest up, eyes forward, arms out from your sides about waist height like you are resting them on an invisible table. It works because bent knees lower your center of gravity so you are harder to tip over, forward weight keeps you from the backward fall, and arms out act like a tightrope walker's pole, catching small balance corrections before they become big ones.
 
-When you feel a wobble coming, the fix is almost always the same: bend deeper and look up. Drill the ready position at the wall until it feels like your default, because the rest of this guide assumes you can find it.
+If you feel unsteady, slow down and return to a comfortable ready position. Ask rink staff or an instructor for help if you cannot regain balance. Drill the ready position at the wall until it feels like your default, because the rest of this guide assumes you can find it.
 
 ## Marching, then gliding
 
@@ -156,11 +156,11 @@ Most people can march, glide, and do a basic snowplow stop within their first on
 
 ### What is the most important thing for a beginner skater?
 
-Bent knees and forward weight. Almost every beginner fall traces back to standing too tall or leaning onto the heels. Keep your knees bent into the ready position and your weight over the balls of your feet, and you stay upright through nearly every wobble.
+Bent knees and balanced weight can help, but falls have many causes and no posture guarantees that you will stay upright. Start slowly, leave space around you, and ask an instructor to check your stance and stopping skills.
 
 ### Should I rent or buy skates as a beginner?
 
-Rent for your first several visits. Rental skates let you learn what fits before you spend on a pair, and most rinks include them with a session. Once you are skating regularly and know your preference, buying makes sense.
+Rent for your first several visits. Rental skates let you learn what fits before you spend on a pair, but rental inclusion, availability and charges vary by rink and session; check before booking. Once you are skating regularly and know your preference, buying makes sense.
 
 ### How do I stop on ice skates as a beginner?
 
@@ -168,7 +168,7 @@ Use the snowplow stop. From a slow glide on two feet, push your heels apart so y
 
 ### What if I keep falling when I try to skate?
 
-Falling is part of learning, not a sign you are doing it wrong. Bend lower, look ahead instead of down, and check that your laces are tight enough to hold your ankles. Practice falling and getting back up on purpose, because once that stops feeling scary, the wobbles stop turning into falls.
+Falling is part of learning, not a sign you are doing it wrong. Bend lower, look ahead instead of down, and check that your laces are tight enough to hold your ankles. Practice falling and getting back up on purpose, with guidance from rink staff or an instructor rather than assuming a posture change will prevent falls.
 
 <!-- momentum-related-guides -->
 ## Related beginner guide
