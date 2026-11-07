@@ -486,11 +486,14 @@ async function liveGates() {
     const today = new Date().toISOString().slice(0, 10);
     const todays = countAll(sm.body, new RegExp(`<lastmod>${today}</lastmod>`, "g"));
     info("live.sitemap-size", `${locs} URLs in sitemap.`);
-    todays > 5
-      ? fail("live.sitemap-lastmod",
-          `${todays} sitemap URLs are stamped with today's date (${today}). ` +
-          `A lastmod that moves on every crawl is a signal Google learns to distrust.`)
-      : pass("live.sitemap-lastmod", `Only ${todays} URLs stamped today.`);
+    // Today's date is legitimate for authored updates. A count threshold cannot
+    // prove rolling timestamps; the cross-build regression covers that behavior.
+    const dates = [...sm.body.matchAll(/<lastmod>(.*?)<\/lastmod>/g)].map(match => match[1]);
+    const invalid = dates.filter(date => !/^\d{4}-\d{2}-\d{2}$/.test(date) ||
+      Number.isNaN(Date.parse(date)) || new Date(date).toISOString().slice(0, 10) !== date || date > today);
+    invalid.length
+      ? fail("live.sitemap-lastmod", `${invalid.length} invalid or future lastmod dates.`, invalid)
+      : pass("live.sitemap-lastmod", `Valid non-future dates; ${todays} reflect today's content. Cross-build stability is regression-tested.`);
   } else {
     fail("live.sitemap-lastmod", `sitemap.xml returned HTTP ${sm.status}.`);
   }

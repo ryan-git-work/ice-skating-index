@@ -33,16 +33,16 @@ function getAllStates(): string[] {
 const latestDate = (dates: Array<string | undefined>, fallback: string) =>
   dates.filter((date): date is string => Boolean(date)).sort().at(-1) || fallback;
 
-const BUILD_DATE = process.env.BUILD_DATE || new Date().toISOString().slice(0, 10);
+// Sitemap dates describe authored changes, never process/build time.
 
 const STATIC_LASTMOD = {
-  home: BUILD_DATE,
-  browse: BUILD_DATE,
+  home: "2026-10-27",
+  browse: latestDate(rinks.flatMap(rink => [rink.last_verified, rink.content_modified, rink.pricing?.verified_on]), "2026-10-27"),
   about: "2026-06-30",
   freestyle: "2026-11-07",
   learnToSkate: "2026-11-07",
   skateSharpening: "2026-06-30",
-  blog: BUILD_DATE,
+  blog: latestDate(blogPosts.map(post => post.modifiedDate || post.publishDate), "2026-07-12"),
 };
 
 export async function registerRoutes(

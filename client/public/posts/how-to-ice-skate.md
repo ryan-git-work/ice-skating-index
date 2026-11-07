@@ -10,7 +10,7 @@ The most common first-timer instinct is to stand straight up and lean back, whic
 
 ## Before you step on the ice
 
-Your skating starts at the bench where you lace up. Skates that are too loose are the single biggest reason beginners wobble, because a floppy ankle cannot hold an edge.
+Your skating starts at the bench where you lace up.
 
 Lace them properly:
 
