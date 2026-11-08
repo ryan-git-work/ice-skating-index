@@ -572,7 +572,7 @@ export default function RinkDetail() {
                </div>
                
                <div className="bg-card border rounded-lg p-6 shadow-sm">
-                 {rink.freestyle.available ? (
+                 {isTruthy(rink.freestyle.available) ? (
                    <div className="space-y-6">
                      <p className="text-muted-foreground">
                        This facility offers dedicated freestyle ice time for figure skaters.

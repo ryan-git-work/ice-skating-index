@@ -68,7 +68,7 @@ export async function registerRoutes(
         rink.address.state.toLowerCase().replace(/\s+/g, "-") === state &&
         rink.address.city.toLowerCase().replace(/\s+/g, "-") === city
       );
-      return { state, city, lastmod: state === "tn" && city === "nashville" ? "2026-11-07" : latestDate(cityRinks.map(rinkModified), STATIC_LASTMOD.browse) };
+      return { state, city, lastmod: state === "tn" && city === "nashville" ? "2026-11-08" : latestDate(cityRinks.map(rinkModified), STATIC_LASTMOD.browse) };
     });
 
     let sitemap = `<?xml version="1.0" encoding="UTF-8"?>

@@ -221,6 +221,18 @@ export default function BlogPost() {
               <ReactMarkdown 
                 remarkPlugins={[remarkGfm]}
                 rehypePlugins={[rehypeRaw]}
+                components={postMeta.slug === "ice-skating-cost-nashville" ? {
+                  table: ({ node, ...props }) => (
+                    <div
+                      className="max-w-full overflow-x-auto focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                      role="region"
+                      aria-label="Scrollable skating price table"
+                      tabIndex={0}
+                    >
+                      <table {...props} />
+                    </div>
+                  ),
+                } : undefined}
               >
                 {content}
               </ReactMarkdown>

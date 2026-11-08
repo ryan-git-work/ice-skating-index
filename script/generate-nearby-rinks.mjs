@@ -3,8 +3,8 @@
  * Generate `nearby_rinks` for every operating rink, by real geographic distance.
  *
  * Written 2026-08-04 to remove the research burden from CODEX_BRIEF P1.2.
- * Every rink in rinks.json has valid latitude/longitude, so this is computable,
- * not researchable.
+ * Only supplied latitude/longitude pairs participate in distance calculations.
+ * Records without coordinates retain their existing regional associations.
  *
  *   node script/generate-nearby-rinks.mjs --dry-run   # report only, no write
  *   node script/generate-nearby-rinks.mjs             # write into rinks.json
@@ -59,6 +59,8 @@ function haversine(a, b) {
 }
 
 const geoOf = (r) => {
+  // Unknown coordinates must not be coerced to the real coordinate 0.
+  if (r.geo?.latitude == null || r.geo?.longitude == null) return null;
   const lat = Number(r.geo?.latitude), lon = Number(r.geo?.longitude);
   return Number.isFinite(lat) && Number.isFinite(lon) ? { lat, lon } : null;
 };

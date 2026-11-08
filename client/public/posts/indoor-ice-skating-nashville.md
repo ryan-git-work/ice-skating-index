@@ -28,9 +28,9 @@ Every rink on this list offers year-round indoor ice. Confirm public-session tim
 
 ## Indoor versus the seasonal outdoor rinks
 
-Gaylord Opryland has announced outdoor skating at Pinetop for November 6, 2026 through January 2, 2027, with advance online tickets and separate parking fees. Fountains Winterfest has announced November 20, 2026 through January 31, 2027, with tax, skate rentals and 120 minutes included in its age-based admission. The 2026–27 Smashville skating season remains unconfirmed; check operator announcements before planning a trip.
+Gaylord Opryland has announced outdoor skating at Pinetop for November 6, 2026 through January 2, 2027, with advance online tickets and separate parking fees. Fountains Winterfest has announced November 20, 2026 through January 31, 2027, with tax, skate rentals and 120 minutes included in its age-based admission. The Nashville Zoo advertises Smashville skating with its Glow Wild event (dated November 13, 2026 through January 3, 2027) as a ticketed add-on to event admission. Skating dates and sessions were not verified for this page, so check the session details in the Zoo's ticketing before planning a trip. The rink is on Zoo grounds in South Nashville, not downtown.
 
-- **Season:** use announced dates. Gaylord runs November 6, 2026 through January 2, 2027; Fountains runs November 20, 2026 through January 31, 2027; upcoming Smashville skating dates are unconfirmed.
+- **Season:** use announced dates. Gaylord runs November 6, 2026 through January 2, 2027; Fountains runs November 20, 2026 through January 31, 2027; the Nashville Zoo advertises Smashville skating with its Glow Wild event (dated November 13, 2026 through January 3, 2027), but skating dates and sessions were not verified; check the session details.
 - **Price:** compare the selected ticket and rental terms. Older seasonal rates do not establish the cost for 2026–27.
 - **Ice quality:** indoor sheets are maintained, full-size, and consistent. Outdoor ice in a Tennessee winter fights the weather daily.
 - **Purpose:** the holiday rinks are an event, lights, crowds, a memory. The indoor rinks are where anyone who wants to actually skate, learn, or practice does it.
@@ -89,7 +89,7 @@ Centennial and the Ford Ice Centers offer public sessions and beginner programs.
 
 ### Are the outdoor holiday rinks in Nashville open year-round?
 
-Gaylord Opryland has announced outdoor skating at Pinetop for November 6, 2026 through January 2, 2027, with advance online tickets and separate parking fees. Fountains Winterfest has announced November 20, 2026 through January 31, 2027, with tax, skate rentals and 120 minutes included in its age-based admission. The 2026–27 Smashville skating season remains unconfirmed; check operator announcements before planning a trip.
+Gaylord Opryland has announced outdoor skating at Pinetop for November 6, 2026 through January 2, 2027, with advance online tickets and separate parking fees. Fountains Winterfest has announced November 20, 2026 through January 31, 2027, with tax, skate rentals and 120 minutes included in its age-based admission. The Nashville Zoo advertises Smashville skating with its Glow Wild event (dated November 13, 2026 through January 3, 2027) as a ticketed add-on to event admission. Skating dates and sessions were not verified for this page, so check the session details in the Zoo's ticketing before planning a trip. The rink is on Zoo grounds in South Nashville, not downtown.
 
 ### Do Nashville indoor rinks require reservations?
 

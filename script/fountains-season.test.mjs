@@ -16,15 +16,15 @@ test('Fountains rendered facts agree across essentials, About and metadata',asyn
  const web=schemas(body).find(s=>s['@type']==='WebPage');
  assert.equal(web.dateModified,'2026-11-06');assert.equal(web.lastReviewed,'2026-05-23');
 });
-test('Nashville table and FAQ publish current Fountains season without confirming Smashville',async()=>{
+test('Nashville table and FAQ publish current Fountains season while distinguishing advertised Zoo skating from verified sessions',async()=>{
  const body=await html('city/tn/nashville');
  const row=body.match(/<tr[^>]*>(?:(?!<\/tr>)[\s\S])*?Fountains at Gateway(?:(?!<\/tr>)[\s\S])*?<\/tr>/)?.[0];
  assert.ok(row);assert.match(row,/\$20 ages 13\+/);assert.match(row,/\$15 ages 4/);assert.match(row,/Jan 31, 2027/);assert.match(row,/Pay at gate/);assert.doesNotMatch(row,/\$12|\$17|Nov.{0,10}Feb/);
  const faq=schemas(body).find(s=>s['@type']==='FAQPage');assert.match(JSON.stringify(faq),/Fountains runs November 20, 2026 through January 31, 2027/);
- assert.match(body,/Smashville skating remains unconfirmed/);
- assert.equal(schemas(body).find(s=>s['@type']==='WebPage').dateModified,'2026-11-07');
+ assert.match(body,/skating dates and sessions were not verified/);
+ assert.equal(schemas(body).find(s=>s['@type']==='WebPage').dateModified,'2026-11-08');
 });
 for(const slug of ['public-skating-nashville','indoor-ice-skating-nashville','ice-skating-nashville-kids'])test('Existing seasonal reference is current: '+slug,async()=>{
  const body=await html('blog/'+slug);assert.match(body,/Fountains Winterfest has announced November 20, 2026 through January 31, 2027/);assert.doesNotMatch(body,/Fountains skating seasons are unconfirmed|upcoming Fountains and Smashville/);
- const article=schemas(body).find(s=>s['@type']==='Article'||s['@type']==='BlogPosting');assert.ok(article);assert.equal(article.dateModified,'2026-11-06');
+ const article=schemas(body).find(s=>s['@type']==='Article'||s['@type']==='BlogPosting');assert.ok(article);assert.equal(article.dateModified,'2026-11-08');
 });

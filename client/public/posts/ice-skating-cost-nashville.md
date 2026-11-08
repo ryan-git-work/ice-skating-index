@@ -76,6 +76,24 @@ For first-timers, location and available session time may matter more than a pre
 
 ---
 
+## Holiday Rinks: What the Ticket Actually Covers
+
+The holiday rinks are a different purchase from the year-round rinks above, and each one's admission covers different things. Before you compare prices, compare what the price includes: how your time on the ice is measured, whether skates come with it, and how you buy.
+
+| Holiday rink | Where | Admission basis | Skates | Time on ice | How you buy |
+|------|------|------|------|------|------|
+| Gaylord Opryland (Pinetop) | Opryland | Depends on the date you select; confirm at checkout | Available, youth 9 to adult 13; inclusion unverified | Unlimited that day, wristband for re-entry | Advance online only; no box office; parking extra |
+| Fountains Winterfest | Murfreesboro (regional) | $20 ages 13+, $15 ages 4 to 12, free ages 3 and under with a paid adult; tax included | Included | 120 minutes | Pay at the gate |
+| Smashville at Glow Wild | Nashville Zoo, Nolensville Pike | Advertised $12 nonmember / $10 member skating ticket in addition to Glow Wild event admission; not checkout-confirmed | Described as included; confirm | Described as 45 minutes; confirm | Zoo ticketing; skating dates and sessions not verified |
+
+A few things the table cannot say. Gaylord sells by date on its [official ticket page](https://tickets.gaylordopryland.com/eventperformances.asp?evt=18). That page is the only place that shows your date's price. Fountains publishes an admission that already includes tax, rentals and 120 minutes on its [Winterfest page](https://fountainswinterfest.com/), so the number on the sign is close to the number you pay. Gaylord's unlimited same-day access is a different basis, measured by the day rather than the clock. The Zoo's skating is advertised on its [Glow Wild page](https://www.nashvillezoo.org/glow-wild) as an add-on to a ticketed light event. A family's total is event admission plus skating tickets, plus parking unless you are a member or passholder, plus any checkout fees, which were not checked. The Zoo's page still carries some older template text, and the event dates are not skating dates. Treat the skating details as advertised and check the session details in the Zoo's ticketing before you go.
+
+Weather and holidays change all of this. Fountains closes on Thanksgiving and Christmas Day and runs a short Christmas Eve. The Zoo's skating page text, which includes legacy content, says skating may close above 50°F with a skating-ticket refund; confirm the current policy when you book. Check the operator the day you go.
+
+Downtown is a separate question. The Zoo is in South Nashville, not under Broadway. If you want to skate downtown, Nashville Yards' [Rink Under Broad](https://www.nashvilleyards.com/rinkunderbroad) at Ascension Saint Thomas Landing lists real ice from November 21, 2026. Its page gives one-hour sessions with rentals included, $20 standard or $15 for children under 5 plus tax and fees, and a minimum skating age of 3. It is not an Ice Skating Index listing, so check its page directly for hours and the season's end date. Chattanooga's Ice on the Landing is a separate regional trip and is covered on the [Tennessee page](/state/tn).
+
+---
+
 ## How Much Do Learn-to-Skate Lessons Cost in Nashville?
 
 Group lessons are significantly more affordable than most people expect and far more effective than trying to learn on your own during public skate.

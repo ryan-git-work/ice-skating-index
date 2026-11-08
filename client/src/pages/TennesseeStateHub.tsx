@@ -106,7 +106,7 @@ export default function TennesseeStateHub() {
                     <tr className="border-b border-border/50">
                       <td className="py-3 pr-4 font-medium">Nashville (Middle TN)</td>
                       <td className="py-3 pr-4 text-muted-foreground">5</td>
-                      <td className="py-3 pr-4 text-muted-foreground">2 announced; Smashville unconfirmed</td>
+                      <td className="py-3 pr-4 text-muted-foreground">2 announced; Smashville advertised at Nashville Zoo, skating dates not verified</td>
                       <td className="py-3 text-muted-foreground">By far the most rinks in the state &mdash; Centennial Sportsplex, three Ford Ice Centers (Bellevue, Antioch, Clarksville), and Gary Force in Nolensville.</td>
                     </tr>
                     <tr className="border-b border-border/50">
@@ -119,7 +119,7 @@ export default function TennesseeStateHub() {
                       <td className="py-3 pr-4 font-medium">Chattanooga (East TN)</td>
                       <td className="py-3 pr-4 text-muted-foreground">0</td>
                       <td className="py-3 pr-4 text-muted-foreground">1</td>
-                      <td className="py-3 text-muted-foreground">Ice on the Landing &mdash; outdoor seasonal rink at Finley Stadium. No year-round option.</td>
+                      <td className="py-3 text-muted-foreground">Ice on the Landing &mdash; outdoor seasonal rink at First Horizon Pavilion. No year-round option.</td>
                     </tr>
                     <tr className="border-b border-border/50">
                       <td className="py-3 pr-4 font-medium">Memphis (West TN)</td>
@@ -147,7 +147,7 @@ export default function TennesseeStateHub() {
                   Nashville is the heart of skating in Tennessee. Five year-round indoor rinks &mdash; <RinkLink slug={RINK_SLUGS.centennial}>Centennial Sportsplex</RinkLink> plus three <RinkLink slug={RINK_SLUGS.bellevue}>Ford Ice Centers</RinkLink> and <RinkLink slug={RINK_SLUGS.garyForce}>Gary Force Acura Ice Arena</RinkLink> in Nolensville &mdash; and the strongest learn-to-skate and freestyle infrastructure in the state.
                 </p>
                 <p>
-                  Gaylord and Fountains have announced 2026&ndash;27 seasons; Smashville skating remains unconfirmed. Do not assume a light-event announcement establishes skating availability. See the Nashville guide for current seasonal booking distinctions.
+                  Gaylord and Fountains have announced 2026&ndash;27 seasons. The Nashville Zoo advertises Smashville skating with its Glow Wild event (dated November 13, 2026 through January 3, 2027). Skating dates and sessions were not verified, so check the session details in the Zoo's ticketing. The three differ in what the ticket covers. Fountains includes tax, rentals and 120 minutes; Gaylord sells by date with unlimited same-day skating and extra parking; the Zoo's skating is an add-on to event admission. See the Nashville guide for the comparison.
                 </p>
                 <div className="mt-4">
                   <CityLink slug="nashville">Full Nashville guide</CityLink>
@@ -181,7 +181,7 @@ export default function TennesseeStateHub() {
               <h2 className="font-serif text-2xl font-bold mb-4">Chattanooga and Southeast Tennessee</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Ice on the Landing at First Horizon Pavilion (1826 Reggie White Blvd) announces November 21, 2026 through January 31, 2027 on its <a href="https://www.iceonthelanding.com/" className="text-primary underline">official operator page</a>. It is seasonal; check the operator’s current hours, admission, rental terms and booking before traveling.
+                  Ice on the Landing at First Horizon Pavilion announces November 21, 2026 through January 31, 2027 on its <a href="https://www.iceonthelanding.com/" className="text-primary underline">official operator page</a>, with directions on its <a href="https://www.iceonthelanding.com/locationhourstickets" className="text-primary underline">location and tickets page</a>. Normal admission is $14 for adults and $12 for ages 12 and under, with skate rental and 60 minutes on the ice included. On Thanksgiving, Christmas, New Year's Day and MLK Day the rate rises to $16.50 and $14.50. Tax or checkout fees are not stated. Reservations are encouraged, and the operator asks you to arrive 30 minutes early with the waiver completed before you arrive. Refund requests need 48 hours' notice, and the rink closes at 20°F or below. Opening weekend hours are listed as 10 to 5 on November 21 and 11:30 to 5 on November 22. An announced season does not mean every time slot is open, so book the session you want.
                 </p>
                 <p>
                   For Chattanoogans who want regular ice time, the closest year-round options are in Knoxville (~1.5 hours north) or the Nashville-area rinks (~2 hours northwest).
@@ -219,7 +219,7 @@ export default function TennesseeStateHub() {
               </div>
             </section>
 
-            <p className="text-xs text-muted-foreground">Scoped Middle Tennessee count and seasonal-reference checks: November 7, 2026. Other sections have not received a new whole-guide review.</p>
+            <p className="text-xs text-muted-foreground">Scoped Middle Tennessee count and seasonal-reference checks: November 8, 2026. Other sections have not received a new whole-guide review.</p>
             <LastVerified date="2026-05-23" label="Whole-guide last reviewed" />
 
           </div>

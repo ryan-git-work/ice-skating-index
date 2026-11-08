@@ -12,7 +12,7 @@ Nashville's five year-round indoor rinks offer public skating. Confirm the selec
 - **Williamson County (Franklin, Brentwood, Nolensville):** [RINK: gary-force-acura-ice-arena-nolensville-tn], the county's NHL-size sheet. Sessions register online; see our [Franklin and Williamson County guide](/blog/ice-skating-franklin-tn).
 - **Clarksville and the north:** [RINK: ford-ice-center-clarksville-clarksville-tn] inside F&M Bank Arena downtown.
 
-Gaylord Opryland has announced outdoor skating at Pinetop for November 6, 2026 through January 2, 2027, with advance online tickets and separate parking fees. Fountains Winterfest has announced November 20, 2026 through January 31, 2027, with tax, skate rentals and 120 minutes included in its age-based admission. The 2026–27 Smashville skating season remains unconfirmed; check operator announcements before planning a trip.
+Gaylord Opryland has announced outdoor skating at Pinetop for November 6, 2026 through January 2, 2027, with advance online tickets and separate parking fees. Fountains Winterfest has announced November 20, 2026 through January 31, 2027, with tax, skate rentals and 120 minutes included in its age-based admission. The Nashville Zoo advertises Smashville skating with its Glow Wild event (dated November 13, 2026 through January 3, 2027) as a ticketed add-on to event admission. Skating dates and sessions were not verified for this page, so check the session details in the Zoo's ticketing before planning a trip. The rink is on Zoo grounds in South Nashville, not downtown.
 
 ## What a family skate costs in Nashville
 

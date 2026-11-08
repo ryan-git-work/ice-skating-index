@@ -50,7 +50,7 @@ One servicing note for players: current on-site sharpening availability at Gary 
 
 [RINK: fountains-at-gateway-murfreesboro-tn] in Murfreesboro has announced its season for **November 20, 2026 through January 31, 2027**. The [official Winterfest page](https://fountainswinterfest.com/) lists **$20 for ages 13+, $15 for ages 4–12, and free admission for ages 3 and under with a paid adult**. Tax, rental skates and **120 minutes on the ice** are included. Individual visitors can pay at the gate; check the operator’s current calendar and weather updates before driving.
 
-[RINK: gaylord-opryland-resort-nashville-tn] lists **November 6, 2026 through January 2, 2027** on its [official skating ticket page](https://tickets.gaylordopryland.com/eventperformances.asp?evt=18). Buy tickets online in advance; prices depend on the selected date, and parking costs extra. Confirm rental arrangements and any other fees in the selected offer. A 2026–27 return for downtown Smashville is not confirmed in this review, so do not plan a visit around its past seasons.
+[RINK: gaylord-opryland-resort-nashville-tn] lists **November 6, 2026 through January 2, 2027** on its [official skating ticket page](https://tickets.gaylordopryland.com/eventperformances.asp?evt=18). Buy tickets online in advance; prices depend on the selected date, and parking costs extra. Confirm rental arrangements and any other fees in the selected offer. Smashville skating is on Nashville Zoo grounds in South Nashville, not downtown. The Zoo advertises it with its Glow Wild event (dated November 13, 2026 through January 3, 2027) as a ticketed add-on to event admission. Skating dates and sessions were not verified in this review, so check the session details before planning a visit.
 
 These holiday outings have limited seasons. For year-round skating, use Nolensville or the indoor Nashville alternatives above. Match the session to the purpose of the visit: recreational admission, a lesson and figure-skating practice ice may have different booking and eligibility rules.
 
@@ -93,7 +93,7 @@ Check Gary Force’s current program listings for beginner options. Antioch and 
 
 ### Is there outdoor ice skating near Franklin in the winter?
 
-Yes. Fountains Winterfest in Murfreesboro announces November 20, 2026 through January 31, 2027: $20 ages 13+, $15 ages 4–12, and ages 3 and under free with a paid adult; tax, rentals and 120 minutes are included. Gaylord Opryland lists November 6, 2026 through January 2, 2027, with advance online tickets, date-specific pricing and extra parking. A downtown Smashville reopening is unconfirmed here. These are seasonal options, separate from the year-round indoor rinks.
+Yes. Fountains Winterfest in Murfreesboro announces November 20, 2026 through January 31, 2027: $20 ages 13+, $15 ages 4–12, and ages 3 and under free with a paid adult; tax, rentals and 120 minutes are included. Gaylord Opryland lists November 6, 2026 through January 2, 2027, with advance online tickets, date-specific pricing and extra parking. Smashville skating is advertised at Nashville Zoo with its Glow Wild event as a ticketed add-on to event admission. Skating dates and sessions were not verified here, and the rink is not downtown. These are seasonal options, separate from the year-round indoor rinks.
 
 ### Does Gary Force rent ice skates?
 

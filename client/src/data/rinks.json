@@ -1474,7 +1474,8 @@
       "smashville-ice-rink-at-zoolumination-nashville-tn",
       "gaylord-opryland-resort-nashville-tn",
       "ford-ice-center-antioch-antioch-tn"
-    ]
+    ],
+    "content_modified": "2026-11-08"
   },
   {
     "id": "tn-nolensville-gary-force-acura-ice-arena-nolensville-tn",
@@ -2630,7 +2631,8 @@
       "ice-chalet-knoxville-tn",
       "cool-sports-home-of-the-icearium-knoxville-tn",
       "fountains-at-gateway-murfreesboro-tn"
-    ]
+    ],
+    "content_modified": "2026-11-08"
   },
   {
     "id": "ny-new-york-sky-rink-chelsea-piers-new-york-ny",
@@ -17243,24 +17245,28 @@
   {
     "id": "tn-nashville-smashville-ice-rink-at-zoolumination-nashville-tn",
     "slug": "smashville-ice-rink-at-zoolumination-nashville-tn",
-    "name": "Smashville Ice Rink at Zoolumination",
-    "alternate_names": [],
+    "name": "Smashville Ice Rink at Nashville Zoo",
+    "alternate_names": [
+      "Smashville Ice Rink at Zoolumination",
+      "Smashville at Glow Wild",
+      "Smashville Ice Rink"
+    ],
     "category": "Ice Skating Rink",
-    "operator": "Nashville Predators / Zoolumination",
+    "operator": "Nashville Zoo",
     "address": {
-      "street": "Ascension Saint Thomas Landing",
+      "street": "3777 Nolensville Pike",
       "city": "Nashville",
       "state": "TN",
-      "postal_code": "37203",
+      "postal_code": "37211",
       "country": "US"
     },
     "geo": {
-      "latitude": 36.1601,
-      "longitude": -86.7784
+      "latitude": null,
+      "longitude": null
     },
     "phone": null,
     "email": null,
-    "website": "https://www.nhl.com/predators/zoolumination",
+    "website": "https://www.nashvillezoo.org/glow-wild",
     "google_maps_url": null,
     "social_links": [],
     "place_ids": {
@@ -17270,7 +17276,7 @@
     "facility": {
       "indoor": false,
       "seasonality": "seasonal",
-      "number_of_sheets": 1,
+      "number_of_sheets": null,
       "sheet_sizes": []
     },
     "schedule_links": {
@@ -17281,29 +17287,28 @@
     },
     "offerings": {
       "public_skating": true,
-      "learn_to_skate": false,
-      "figure_skating": false,
-      "hockey": false,
-      "open_hockey": false,
-      "stick_and_puck": false
+      "learn_to_skate": "unknown",
+      "figure_skating": "unknown",
+      "hockey": "unknown",
+      "open_hockey": "unknown",
+      "stick_and_puck": "unknown"
     },
     "pricing": {
-      "public_skate": {
-        "adult": null,
-        "youth": null
-      },
+      "public_skate": "Advertised skating add-on: $12 per skater for nonmembers, $10 for Zoo members, in addition to separate Glow Wild event admission. Not a checkout total; confirm the skating session and total in the Zoo's ticketing.",
       "spectators": null,
-      "notes": "The 2026–27 skating season, location, dates, prices, and rental terms are unconfirmed as of October 7, 2026. Do not assume reopening from the prior Zoolumination branding or infer skating at a replacement zoo light event."
+      "price_basis": "Advertised skating add-on to Glow Wild event admission (event admission advertised at $27 single night, $5 member discount, $39 unlimited pass). Not a checkout total and not confirmed for a dated session.",
+      "verified_on": "2026-11-08",
+      "notes": "The Nashville Zoo's Glow Wild page advertises Smashville skating at $12 for nonmembers and $10 for members in addition to event admission. Its event features describe 45-minute sessions and skate rental. The page retains older template text and exposed no dated skating session inventory when checked November 8, 2026, so these are advertised terms. Confirm the session, the total and the current weather policy in the Zoo's ticketing before you go."
     },
     "rentals": {
       "available": true,
       "included_with_admission": "unknown",
       "size_range_min": null,
       "size_range_max": null,
-      "notes": "Upcoming-season rental terms unconfirmed."
+      "notes": "The Zoo's Glow Wild event features describe skate rental with the skating ticket. Because the page mixes current promotion with older template text, inclusion is recorded as described rather than confirmed; check it in the booking."
     },
     "sharpening": {
-      "available": false,
+      "available": "unknown",
       "turnaround": null,
       "pricing_base": null,
       "pricing_rush": null,
@@ -17312,7 +17317,7 @@
       "info_url": null
     },
     "freestyle": {
-      "available": false,
+      "available": "unknown",
       "labels_to_search_for": [],
       "who_its_for": [],
       "how_to_find_times": null,
@@ -17335,38 +17340,42 @@
     "tags": [
       "seasonal",
       "outdoor",
-      "holiday",
-      "downtown"
+      "holiday"
     ],
     "seasonal": true,
-    "seasonal_notes": "The 2026–27 skating season, location, dates, prices, and rental terms are unconfirmed as of October 7, 2026. Do not assume reopening from the prior Zoolumination branding or infer skating at a replacement zoo light event.",
-    "description": "A seasonal outdoor pop-up rink at the Ascension Saint Thomas Landing under Broadway. Part of the Predators / Zoolumination holiday programming. The 2025-26 season ran through February 8, 2026. Best for: a downtown Nashville holiday experience, not a regular skate spot.",
+    "seasonal_notes": "Advertised with the Nashville Zoo's Glow Wild event, which is dated November 13, 2026 through January 3, 2027. Skating dates and sessions were not verified on November 8, 2026; the event dates are not skating dates. Skating is advertised as a ticketed add-on to event admission.",
+    "description": "A seasonal outdoor rink on Nashville Zoo grounds in South Nashville, advertised this winter as part of Glow Wild, the Zoo's holiday light event (November 13, 2026 through January 3, 2027). Skating is advertised as a ticketed add-on to event admission; skating dates and sessions were not verified for this listing, so check the session details in the Zoo's ticketing. Best for: a holiday evening, not a regular skate spot. Not a downtown rink.",
     "sources": [
-      "NHL.com Predators / Zoolumination",
-      "https://www.nhl.com/predators/zoolumination"
+      "Nashville Zoo, Glow Wild",
+      "https://www.nashvillezoo.org/glow-wild",
+      "https://www.nashvillezoo.org/upcoming-events//event/predsday?cal-333077-month=01&cal-333077-year=2026",
+      "https://www.nashvillezoo.org/hours-directions",
+      "https://www.nashvillezoo.org/zoolumination"
     ],
     "last_verified": "2026-05-23",
-    "editorial_markdown": "## What to expect at Smashville Ice Rink at Zoolumination\n\nSmashville Ice Rink at Zoolumination is a seasonal outdoor pop-up rink at Ascension Saint Thomas Landing in downtown Nashville, set up each winter as part of the Nashville Predators' holiday programming. The rink is open-air, a single sheet, and built for the holiday season rather than for training, with the 2025-26 season having run through February 8, 2026, but the upcoming skating season is unconfirmed. Confirm operation before planning a visit.\n\nThis is a different animal from a year-round rink, and it helps to walk in knowing that. You are not coming here for edge work and crossover drills. You are coming for the experience: skating outdoors under the downtown skyline, lights everywhere, Broadway humming nearby, the whole thing wrapped in Predators energy. Rental terms for any upcoming season are unconfirmed. Bring a hat, bring layers, and bring people who want a memory more than a workout.\n\nFor visiting hockey families in town around a Predators game, this is an easy add-on to the trip. For local skating households, it works best as the once-a-season outing, the night you trade rink fluorescents for actual winter air and skate just because it is December. Treat it that way and it delivers exactly what it promises.\n\n## Public skating: season verification\n\nThe 2026–27 skating season, location, dates, prices, and rental terms are unconfirmed as of October 7, 2026. Do not assume reopening from the prior Zoolumination branding or infer skating at a replacement zoo light event. [Operator page](https://www.nhl.com/predators/zoolumination).\n\n## Freestyle and figure skating ice\n\nThere is no freestyle ice here. No dedicated sessions, no program ice, no coaches running figure skating lessons, and an outdoor pop-up surface would not hold up to serious jump and spin work anyway. If your skater needs real freestyle time, Nashville's year-round indoor rinks carry weekday freestyle sessions built for exactly that. This rink is the field trip, not the training ground, and it does not pretend otherwise.\n\n## Learn to skate programs\n\nNo learn to skate program runs here. A holiday pop-up window is simply too short for a class curriculum to take root. If your child catches the bug on this ice, treat it as a cue rather than a destination: the year-round indoor rinks around Nashville run structured learn to skate programs with real progressions, group classes, and instructors who can take a wobbly first-timer somewhere. This rink is where the spark happens, not where it gets developed.\n\n## Hockey, stick and puck, and open ice\n\nNo hockey here either, which is a little funny for a rink wearing the Smashville name. No stick and puck, no open hockey, no leagues, so the sticks stay home. Players who want actual ice time will find stick and puck sessions at the area's year-round facilities, where the boards, the schedule, and the surface are built for it.\n\n## Getting there: parking, location, and amenities\n\nThe rink sits at Ascension Saint Thomas Landing in downtown Nashville (37203). That location is the draw and the logistics challenge rolled into one. You are in the middle of downtown during the holiday season, which means paid garages and street parking rather than a dedicated rink lot, and traffic that rewards arriving early. If you are already downtown for a Predators game or a night out, walking over is the easy play, and pairing the skate with dinner nearby turns it into a full evening.\n\nAmenity details like lockers, concessions, and skate aids have not been confirmed for the upcoming season, so pack on the assumption that you will carry what you bring: travel light and leave valuables at home. Skate rental is included with admission, so the only essential gear is warm clothing, good socks, and gloves. Before you go, check the Predators' Zoolumination page for the current season's hours, dates, and on-site details, since pop-up logistics can shift from one winter to the next.\n\n## A note for skating parents\n\nFor a lot of Nashville kids, this will be the first time on ice, and an outdoor holiday rink is a forgiving place for that milestone. Nobody is judging form here. Everyone is wobbling, laughing, hugging the boards, and posing for photos under the lights. Set expectations before you arrive: it will be crowded, especially on December evenings, ankles will wobble, somebody will fall, and all of that is part of the night. Budget for hot chocolate afterward and call it a win.\n\nA few practical notes. Dress kids in layers and make gloves non-negotiable, because little hands end up on the ice. Lace the rental skates tighter than feels natural, since loose boots cause most of the early frustration. Plan a shorter session than you think you need, because cold air and brand-new muscles tire small skaters out fast.\n\nThen watch for the light-up moment. If your kid comes off the ice asking when they can go again, pay attention to that. The year-round indoor rinks around Nashville run learn to skate programs all year, and a January enrollment after a December spark is one of the most natural pipelines in this sport. Let the holiday rink do its job, then follow the thread wherever it leads.",
+    "editorial_markdown": "## What to expect at Smashville Ice Rink at Nashville Zoo\n\nSmashville is the seasonal outdoor rink at Nashville Zoo, 3777 Nolensville Pike in South Nashville. This winter the Zoo advertises it as part of Glow Wild, its holiday light event, November 13, 2026 through January 3, 2027. It is an outdoor rink built for a holiday evening rather than for training. This listing earlier gave a downtown address under Broadway. The Zoo's own January 2026 Predators Day page places the Smashville Ice Rink on Zoo grounds. The downtown address belongs to a different venue, so the listing has been corrected. Downtown skating is covered at the end of this page.\n\nThis is a different animal from a year-round rink, and it helps to walk in knowing that. You are not coming for edge work and crossover drills. You are coming for a lap under the lights with the rest of the Zoo lit up around you. You are buying it as an add-on to an event ticket rather than as a stand-alone skate. Bring a hat, bring layers, and bring people who want a memory more than a workout.\n\n## Public skating: what the Zoo advertises and what is still unconfirmed\n\nThe Zoo's Glow Wild page lists skating at $12 for nonmembers and $10 for members, in addition to event admission. The Zoo advertises that admission at $27 for a single night with a $5 member discount, or $39 for an unlimited-visit pass. Its event features describe 45-minute skating sessions with skate rental included. Parking is advertised at $10 and free for members and passholders.\n\nTwo cautions, both from the Zoo's own page. First, the page still carries template text from earlier seasons, including old dates, so the skating details above are advertised terms rather than terms confirmed for a dated session. Second, the Zoo's ticketing exposed no readable skating session inventory when this page was checked on November 8, 2026. No one can tell you from here which nights and times have skating. Open the [Glow Wild page](https://www.nashvillezoo.org/glow-wild) and its ticketing before you plan around a specific evening. A family's total is event admission plus skating tickets, plus parking unless you are a member or passholder, plus any checkout fees, which were not checked for this page.\n\n## Freestyle and figure skating ice\n\nNo freestyle sessions, program ice or figure skating lessons are advertised with the Glow Wild skating offer, and none were verified for this page. If your skater needs practice ice, Nashville's year-round indoor rinks publish freestyle sessions; use their pages. This rink is advertised as a holiday public skate.\n\n## Learn to skate programs\n\nNo learn to skate program is advertised with the Glow Wild skating offer, and none was verified for this page. If your child wants more after a holiday skate, the year-round indoor rinks around Nashville run structured learn to skate programs with group classes and instructors. Their pages list current sessions.\n\n## Hockey, stick and puck, and open ice\n\nNo hockey, stick and puck or open hockey is advertised here, which is a little funny for a rink wearing the Smashville name, and none was verified for this page. Players who want ice time will find stick and puck sessions listed at the area's year-round facilities.\n\n## Getting there: parking, location, and amenities\n\nThe rink is on Nashville Zoo grounds at 3777 Nolensville Pike, Nashville, TN 37211, in South Nashville. The Zoo's [hours and directions page](https://www.nashvillezoo.org/hours-directions) covers the drive and the lot. Glow Wild is an evening event, so daytime closing notices on the Zoo site do not tell you anything about skating hours; use the event's own ticketing. Parking is advertised at $10, free for members and passholders.\n\nAmenity details like lockers, concessions, and skate aids have not been confirmed for this season. Pack on the assumption that you will carry what you bring: travel light and leave valuables at home. The Zoo describes skate rental as included with the skating ticket, so the essential gear is warm clothing, good socks, and gloves. The Zoo's skating page text, which includes legacy content, says skating may close when the temperature rises above 50°F, with a skating-ticket refund. That is advertised page text to confirm, not a verified current-session policy.\n\nIf you are looking for skating downtown, under Broadway, that is a separate venue. Nashville Yards' [Rink Under Broad](https://www.nashvilleyards.com/rinkunderbroad) at Ascension Saint Thomas Landing lists real ice from November 21, 2026. Its page gives one-hour sessions with rentals included, $20 standard or $15 for children under 5 plus tax and fees, and a minimum skating age of 3. It is not an Ice Skating Index listing, so check its page directly.\n\n## A note for skating parents\n\nFor a lot of Nashville kids, this may be a first time on ice, and a holiday rink is a low-pressure place for that. Nobody is judging form at an event skate. Holiday evenings at a ticketed light event can be busy, so set expectations before you arrive. Budget for the event ticket, the skating ticket and parking separately; checkout fees are unknown until you book.\n\nA few practical notes. Dress kids in layers and bring gloves, for warmth and for hands that touch the ice. Ask the rental staff to check that the skates fit comfortably and securely before you step on. If your booking shows a 45-minute session, that is the advertised length; stop earlier if a small skater is tired or uncomfortable.\n\nIf your kid comes off the ice asking when they can go again, the year-round indoor rinks around Nashville run learn to skate programs through the winter. Their pages list current sessions.\n",
     "seo": {
       "primary_keywords": [
-        "Smashville Ice Rink at Zoolumination ice skating",
-        "Smashville Ice Rink at Zoolumination rink",
+        "Smashville Ice Rink Nashville Zoo",
+        "Smashville ice skating Glow Wild",
         "Nashville TN ice skating"
       ],
       "secondary_keywords": [
-        "Nashville ice rink",
+        "Nashville Zoo ice skating",
+        "Glow Wild skating",
+        "Nashville holiday ice rink",
         "TN ice skating rinks"
       ],
-      "short_description": "Seasonal Nashville skating listing; 2026–27 operation, location and ticket terms remain unconfirmed. Check the operator before planning a visit.",
-      "long_description": "A seasonal outdoor pop-up rink at the Ascension Saint Thomas Landing under Broadway. Part of the Predators / Zoolumination holiday programming. The 2025-26 season ran through February 8, 2026. Best for: a downtown Nashville holiday experience, not a regular skate spot.",
+      "short_description": "Seasonal outdoor skating at Nashville Zoo, advertised with the Glow Wild event (dated Nov 13, 2026 to Jan 3, 2027) as a ticketed add-on to event admission. Skating dates and sessions were not verified; check the session details in the Zoo's ticketing.",
+      "long_description": "A seasonal outdoor rink on Nashville Zoo grounds in South Nashville, advertised this winter as part of Glow Wild, the Zoo's holiday light event (November 13, 2026 through January 3, 2027). Skating is advertised as a ticketed add-on to event admission; skating dates and sessions were not verified for this listing, so check the session details in the Zoo's ticketing. Best for: a holiday evening, not a regular skate spot. Not a downtown rink.",
       "helpful_blurbs": [
-        "A seasonal outdoor pop-up rink at the Ascension Saint Thomas Landing under Broadway.",
-        "A seasonal outdoor pop-up rink at the Ascension Saint Thomas Landing under Broadway.",
-        "A seasonal outdoor pop-up rink at the Ascension Saint Thomas Landing under Broadway."
+        "On Nashville Zoo grounds at 3777 Nolensville Pike in South Nashville, not downtown.",
+        "Skating is advertised as an add-on to Glow Wild admission: $12 nonmember, $10 member, with 45-minute sessions and rentals described on the event page.",
+        "Skating dates and sessions were not verified for this listing; check the session details for the night you want before you go."
       ],
       "what_to_know": [],
-      "meta_title": "Smashville Ice Rink Nashville: Season Dates & Tickets",
-      "meta_description": "Smashville’s 2026–27 skating operation, location, prices and booking terms remain unconfirmed. Check the operator before planning a Nashville visit."
+      "meta_title": "Smashville Ice Rink at Nashville Zoo: Glow Wild Skating",
+      "meta_description": "Smashville skating at Nashville Zoo is advertised with Glow Wild (event dates Nov 13, 2026 to Jan 3, 2027). Add-on prices, parking and what to check; skating sessions not verified."
     },
     "nearby_rinks": [
       "centennial-sportsplex-nashville-tn",
@@ -17375,7 +17384,34 @@
       "ford-ice-center-bellevue-nashville-tn",
       "gary-force-acura-ice-arena-nolensville-tn"
     ],
-    "content_modified": "2026-11-07"
+    "content_modified": "2026-11-08",
+    "evidence": [
+      {
+        "field": "address, operator, name",
+        "url": "https://www.nashvillezoo.org/upcoming-events//event/predsday?cal-333077-month=01&cal-333077-year=2026",
+        "note": "January 17, 2026 Predators Day page places activities beside the Smashville Ice Rink on Zoo grounds at 3777 Nolensville Pike. Scoped identity and seasonal check November 8, 2026 against the Zoo's Glow Wild, Predators Day and directions pages and Nashville Yards' Rink Under Broad page. Not a whole-facility review."
+      },
+      {
+        "field": "seasonal_notes, pricing, rentals, description, seo",
+        "url": "https://www.nashvillezoo.org/glow-wild",
+        "note": "Current Glow Wild promotion advertises Smashville skating, $12/$10 skating tickets, 45 minutes and rentals in event features; page retains older template text; no dated skating inventory readable. Scoped identity and seasonal check November 8, 2026 against the Zoo's Glow Wild, Predators Day and directions pages and Nashville Yards' Rink Under Broad page. Not a whole-facility review."
+      },
+      {
+        "field": "address",
+        "url": "https://www.nashvillezoo.org/hours-directions",
+        "note": "Official address 3777 Nolensville Pike, Nashville TN 37211. Daytime closing notices do not describe event or skating hours."
+      },
+      {
+        "field": "event dates",
+        "url": "https://www.nashvillezoo.org/zoolumination",
+        "note": "Zoolumination cancelled for 2026; Glow Wild dated November 13, 2026 to January 3, 2027."
+      },
+      {
+        "field": "downtown distinction (prose only)",
+        "url": "https://www.nashvilleyards.com/rinkunderbroad",
+        "note": "Nashville Yards identifies Rink Under Broad at Ascension Saint Thomas Landing; real ice from November 21, 2026; one-hour sessions include rentals; $20 standard / $15 under 5 plus tax and fees; minimum age 3; end date and hours not stated."
+      }
+    ]
   },
   {
     "id": "tn-franklin-the-hockey-lab-franklin-tn",
@@ -17577,7 +17613,8 @@
       "ford-ice-center-bellevue-nashville-tn",
       "centennial-sportsplex-nashville-tn",
       "fountains-at-gateway-murfreesboro-tn"
-    ]
+    ],
+    "content_modified": "2026-11-08"
   },
   {
     "id": "tn-murfreesboro-fountains-at-gateway-murfreesboro-tn",
