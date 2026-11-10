@@ -6,7 +6,10 @@ import express from 'express';
 import {holidayDiscoveryActive} from '../client/src/lib/holidayDiscovery.ts';
 import {createSkateStatusSsr} from '../server/skateStatusSsr.ts';
 const routes=['/','/state/tn','/city/tn/nashville','/rink/centennial-sportsplex-nashville-tn','/rink/ford-ice-center-bellevue-nashville-tn'];
-const read=(route:string)=>fs.readFileSync(path.join('dist/public',route,'index.html'),'utf8');
+const {render}=await import(path.resolve('dist/ssr/entry-ssr.js'));
+// Assert authored seasonal copy at a fixed in-season date. A legitimate build
+// after expiry must not make this regression test fail.
+const read=(route:string)=>routes.includes(route) ? render(route,{asOf:new Date('2026-11-10T18:00:00Z')}).html : fs.readFileSync(path.join('dist/public',route,'index.html'),'utf8');
 for(const [value,expected] of [['2026-11-10T05:59:59.999Z',false],['2026-11-10T06:00:00Z',true],['2027-02-01T05:59:59.999Z',true],['2027-02-01T06:00:00Z',false],['not-a-date',false]] as const)test('Holiday promotion date boundary '+value,()=>assert.equal(holidayDiscoveryActive(new Date(value)),expected));
 test('All dated-discovery consumers use request-time HTML and preserve the original manifest',()=>{
  const now=JSON.parse(fs.readFileSync('dist/ssr/status-routes.json','utf8'));
