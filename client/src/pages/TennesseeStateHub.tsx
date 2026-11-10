@@ -1,6 +1,6 @@
 import discoveryCopy from "@/data/holiday-discovery.json";
 import { holidayDiscoveryActive } from "@/lib/holidayDiscovery";
-import { HolidayDiscovery, DiscoveryText } from "@/components/HolidayDiscovery";
+import { HolidayDiscovery } from "@/components/HolidayDiscovery";
 import { useAsOf } from "@/lib/asOf";
 import { Layout } from "@/components/Layout";
 import { useHead } from "@/hooks/use-head";

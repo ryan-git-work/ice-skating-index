@@ -302,7 +302,7 @@ export default function NashvilleCityHub() {
 
             <Separator />
 
-            {seasonal && seasonalSection}
+            {seasonal && <>{seasonalSection}<Separator /></>}
 
             <section id="centennial">
               <h2 className="font-serif text-2xl font-bold mb-4">Centennial Sportsplex &mdash; Nashville&apos;s central two-sheet rink</h2>
@@ -426,9 +426,7 @@ export default function NashvilleCityHub() {
 
             <Separator />
 
-            {!seasonal && seasonalSection}
-
-            <Separator />
+            {!seasonal && <>{seasonalSection}<Separator /></>}
 
             <section id="choose">
               <h2 className="font-serif text-2xl font-bold mb-4">Which Nashville rink should you choose?</h2>

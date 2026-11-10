@@ -1,6 +1,6 @@
 import discoveryCopy from "@/data/holiday-discovery.json";
 import { holidayDiscoveryActive } from "@/lib/holidayDiscovery";
-import { HolidayDiscovery, DiscoveryText } from "@/components/HolidayDiscovery";
+import { DiscoveryText } from "@/components/HolidayDiscovery";
 import { Layout } from "@/components/Layout";
 import { getRinkBySlug, isTruthy } from "@/lib/data";
 import { Link, useParams } from "wouter";
