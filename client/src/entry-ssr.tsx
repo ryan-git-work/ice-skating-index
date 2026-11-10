@@ -1,3 +1,4 @@
+import { resetHolidayDiscoveryConsumption, getHolidayDiscoveryConsumption } from "./lib/holidayDiscovery";
 import React from "react";
 import { renderToString } from "react-dom/server";
 import { Router } from "wouter";
@@ -14,6 +15,7 @@ export function render(url: string, options: RenderOptions = {}) {
   setSsrMode(true);
   clearSsrHeadCapture();
   resetSkateStatusConsumption();
+  resetHolidayDiscoveryConsumption();
 
   const staticLocationHook = () => [url, () => {}] as [string, (to: string) => void];
 
@@ -28,12 +30,13 @@ export function render(url: string, options: RenderOptions = {}) {
     // Read before anything else can render: renderToString above is synchronous.
     const usesSkateStatus = getSkateStatusConsumption() > 0;
 
-    return { html, head, usesSkateStatus };
+    return { html, head, usesSkateStatus, usesDatedContent: getHolidayDiscoveryConsumption() };
   } finally {
     // A throw must not leave SSR mode latched on or a half-captured head behind
     // for the next request on this long-lived process.
     setSsrMode(false);
     clearSsrHeadCapture();
     resetSkateStatusConsumption();
+    resetHolidayDiscoveryConsumption();
   }
 }

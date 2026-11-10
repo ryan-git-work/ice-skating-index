@@ -193,7 +193,7 @@ export default function BlogPost() {
             />
           </div>
 
-          <div className="flex items-center gap-4 text-sm text-muted-foreground">
+          <div className={postMeta.updateNote ? "flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-muted-foreground" : "flex items-center gap-4 text-sm text-muted-foreground"}>
             <span className="flex items-center gap-1.5">
               <User className="h-3.5 w-3.5" />
               Published by Ice Skating Index
@@ -202,6 +202,7 @@ export default function BlogPost() {
               <Calendar className="h-3.5 w-3.5" />
               {formatPublishDate(postMeta.publishDate)}
             </span>
+            {postMeta.updateNote && <span data-testid="article-update-note">Updated <time dateTime={postMeta.updateNote.date}>{formatPublishDate(postMeta.updateNote.date)}</time>: {postMeta.updateNote.text} {postMeta.updateNote.scope}</span>}
           </div>
         </div>
       </div>
@@ -222,6 +223,7 @@ export default function BlogPost() {
                 remarkPlugins={[remarkGfm]}
                 rehypePlugins={[rehypeRaw]}
                 components={postMeta.slug === "ice-skating-cost-nashville" ? {
+                  h2: ({ node, children, ...props }) => <h2 {...props} id={String(children) === "Holiday Rinks: What the Ticket Actually Covers" ? "holiday-rinks" : undefined}>{children}</h2>,
                   table: ({ node, ...props }) => (
                     <div
                       className="max-w-full overflow-x-auto focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"

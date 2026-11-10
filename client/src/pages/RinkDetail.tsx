@@ -1,3 +1,6 @@
+import discoveryCopy from "@/data/holiday-discovery.json";
+import { holidayDiscoveryActive } from "@/lib/holidayDiscovery";
+import { HolidayDiscovery, DiscoveryText } from "@/components/HolidayDiscovery";
 import { Layout } from "@/components/Layout";
 import { getRinkBySlug, isTruthy } from "@/lib/data";
 import { Link, useParams } from "wouter";
@@ -517,6 +520,10 @@ export default function RinkDetail() {
                   </div>
                 </dl>
               </section>
+            )}
+
+            {!isUnavailable && discoveryCopy.rinkLines[rink.slug as keyof typeof discoveryCopy.rinkLines] && holidayDiscoveryActive(asOf) && (
+              <p className="text-sm text-muted-foreground leading-relaxed" data-testid="holiday-comparison-link"><DiscoveryText text={discoveryCopy.rinkLines[rink.slug as keyof typeof discoveryCopy.rinkLines]} /></p>
             )}
 
             {!isUnavailable && <ScheduleLanes rink={rink} />}

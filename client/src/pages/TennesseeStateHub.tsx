@@ -1,3 +1,7 @@
+import discoveryCopy from "@/data/holiday-discovery.json";
+import { holidayDiscoveryActive } from "@/lib/holidayDiscovery";
+import { HolidayDiscovery, DiscoveryText } from "@/components/HolidayDiscovery";
+import { useAsOf } from "@/lib/asOf";
 import { Layout } from "@/components/Layout";
 import { useHead } from "@/hooks/use-head";
 import { Link } from "wouter";
@@ -36,6 +40,7 @@ function CityLink({ slug, children }: { slug: string; children: React.ReactNode 
 }
 
 export default function TennesseeStateHub() {
+  const seasonal = holidayDiscoveryActive(useAsOf());
   const tnRinks = getRinksByState("tn");
   const cities = Array.from(new Set(tnRinks.map(rink => rink.address.city))).sort();
 
@@ -139,6 +144,8 @@ export default function TennesseeStateHub() {
             </section>
 
             <Separator />
+
+            {seasonal && <HolidayDiscovery block={discoveryCopy.tennessee} />}
 
             <section id="nashville">
               <h2 className="font-serif text-2xl font-bold mb-4">Nashville and Middle Tennessee</h2>

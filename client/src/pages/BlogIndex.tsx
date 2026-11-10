@@ -9,6 +9,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Calendar, ArrowRight } from "lucide-react";
 import { buildWebPageSchema } from "@/lib/seo";
+import { formatVerifiedDate } from "@/components/LastVerified";
 
 export default function BlogIndex() {
   const description = "Ice skating tips, guides, and resources. Learn about rinks, gear, skating techniques, and more.";
@@ -89,7 +90,7 @@ export default function BlogIndex() {
                   </Badge>
                   <span className="text-xs text-muted-foreground flex items-center gap-1">
                     <Calendar className="h-3 w-3" />
-                    {new Date(post.publishDate).toLocaleDateString("en-US", {
+                    {formatVerifiedDate(post.publishDate, {
                       year: "numeric",
                       month: "long",
                       day: "numeric",

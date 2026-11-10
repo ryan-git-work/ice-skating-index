@@ -70,14 +70,14 @@ const buildAsOf = new Date();
 
 let rendered = 0;
 let failed = 0;
-/** Routes whose HTML depends on academy ice status, for the request-time path. */
+/** Routes whose HTML depends on dated content, including academy ice status, for the request-time path. */
 const statusRoutes: string[] = [];
 
 for (const route of routes) {
   try {
-    const { html: bodyHtml, head, usesSkateStatus } = render(route, { asOf: buildAsOf });
+    const { html: bodyHtml, head, usesSkateStatus, usesDatedContent } = render(route, { asOf: buildAsOf });
 
-    if (usesSkateStatus) statusRoutes.push(route);
+    if (usesSkateStatus || usesDatedContent) statusRoutes.push(route);
 
     const finalHtml = buildPageHtml({ template: cleanTemplate, route, bodyHtml, head });
 
@@ -98,7 +98,7 @@ await fs.writeFile(
   path.resolve(ssrDist, "status-routes.json"),
   JSON.stringify(statusRoutes, null, 2),
 );
-console.log(`${statusRoutes.length} routes consume academy ice status and re-render per request`);
+console.log(`${statusRoutes.length} routes consume dated content and re-render per request`);
 
 const { html: notFoundBody, head: notFoundHead } = render("/__not-found__", { asOf: buildAsOf });
 const notFoundHtml = cleanTemplate

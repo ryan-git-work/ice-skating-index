@@ -1,3 +1,6 @@
+import discoveryCopy from "@/data/holiday-discovery.json";
+import { holidayDiscoveryActive } from "@/lib/holidayDiscovery";
+import { DiscoveryText } from "@/components/HolidayDiscovery";
 import { Layout } from "@/components/Layout";
 import { useHead } from "@/hooks/use-head";
 import { Link } from "wouter";
@@ -59,8 +62,9 @@ function RinkLink({ slug, children }: { slug: string; children: React.ReactNode 
 
 export default function NashvilleCityHub() {
   const asOf = useAsOf();
+  const seasonal = holidayDiscoveryActive(asOf);
   const pageModified = [
-    "2026-11-08",
+    "2026-11-10",
     getLatestCurrentStatusUpdated(Array.from(nashvilleRinkSlugs), asOf),
   ].filter((value): value is string => Boolean(value)).sort().at(-1);
   const faqSchema = {
@@ -80,17 +84,17 @@ export default function NashvilleCityHub() {
   };
 
   useHead({
-    title: "Ice Skating in Nashville, TN: Every Rink, Price, and Schedule (2026 Guide)",
-    description: "Compare Nashville rink listings, public-skate booking links, lessons and seasonal notes. See the dated, scoped checks on this page.",
-    ogTitle: "Ice Skating in Nashville, TN: Every Rink, Price, and Schedule (2026 Guide)",
-    ogDescription: "Compare every Nashville ice rink, public-skate booking links, lessons, and seasonal options.",
+    title: discoveryCopy.nashville.title,
+    description: seasonal ? discoveryCopy.nashville.description : "Compare every Nashville ice rink, public-skate booking links, lessons, and seasonal options.",
+    ogTitle: discoveryCopy.nashville.title,
+    ogDescription: seasonal ? discoveryCopy.nashville.description : "Compare every Nashville ice rink, public-skate booking links, lessons, and seasonal options.",
     canonicalPath: "/city/tn/nashville",
     structuredData: [
       {
         ...buildWebPageSchema(
           "/city/tn/nashville",
-          "Ice Skating in Nashville, TN: Every Rink, Price, and Schedule",
-          "Compare every Nashville ice rink, public-skate booking links, lessons, and seasonal options.",
+          discoveryCopy.nashville.title,
+          seasonal ? discoveryCopy.nashville.description : "Compare every Nashville ice rink, public-skate booking links, lessons, and seasonal options.",
         ),
         "@id": `${SITE_URL}/city/tn/nashville#webpage`,
         dateModified: pageModified,
@@ -101,6 +105,51 @@ export default function NashvilleCityHub() {
       faqSchema,
     ],
   });
+
+  const seasonalSection = (
+            <section id="seasonal">
+              <h2 className="font-serif text-2xl font-bold mb-4">{seasonal ? discoveryCopy.nashville.heading : "Seasonal options"}</h2>
+              {seasonal ? <>
+                <p className="text-muted-foreground leading-relaxed mb-4"><DiscoveryText text={discoveryCopy.nashville.intro} /></p>
+                <p className="text-xs text-muted-foreground mb-6">{discoveryCopy.nashville.checkLabel}</p>
+              </> : (<p className="text-muted-foreground leading-relaxed mb-6">
+                Check each operator's announced season before planning holiday skating. Gaylord and Fountains have confirmed 2026&ndash;27 dates. The Nashville Zoo advertises Smashville skating with its Glow Wild event; the skating dates and sessions were not verified for this page. The three differ in what the ticket covers, so compare how time on the ice is measured and whether rentals are included, not only admission:
+              </p>)}
+
+              <div className="space-y-6">
+                <div className="bg-card border rounded-lg p-6">
+                  <h3 className="font-semibold text-lg mb-2">
+                    <RinkLink slug={RINK_SLUGS.smashville}>Smashville Ice Rink at Nashville Zoo</RinkLink>
+                  </h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    Advertised with Glow Wild, the Zoo's holiday light event (dated November 13, 2026 through January 3, 2027), at 3777 Nolensville Pike in South Nashville. The Zoo lists skating at $12 for nonmembers and $10 for members in addition to event admission, and its event page describes 45-minute sessions with rentals. That page still carries older template text, and skating dates and sessions were not verified for this page; the event dates are not skating dates. Check the session details in the Zoo's ticketing before you go. Parking is advertised at $10, free for members and passholders; checkout fees were not checked. This is not a downtown rink.
+                  </p>
+                </div>
+                <div className="bg-card border rounded-lg p-6">
+                  <h3 className="font-semibold text-lg mb-2">
+                    <RinkLink slug={RINK_SLUGS.fountains}>Fountains at Gateway (Murfreesboro)</RinkLink>
+                  </h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    November 20, 2026 through January 31, 2027. Admission is $20 for ages 13+, $15 for ages 4&ndash;12, and free for ages 3 and under with a paid adult. Tax, skate rentals and 120 minutes on the ice are included. Individual visitors can pay at the gate; check the official calendar before traveling.
+                  </p>
+                </div>
+                <div className="bg-card border rounded-lg p-6">
+                  <h3 className="font-semibold text-lg mb-2">
+                    <RinkLink slug={RINK_SLUGS.gaylord}>Gaylord Opryland Resort</RinkLink>
+                  </h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    Outdoor skating at Pinetop runs November 6, 2026 through January 2, 2027. Advance online tickets are required. Prices depend on the selected date, parking costs extra, and rental inclusion is unverified. Check the official ticket page linked on the rink page.
+                  </p>
+                </div>
+                <div className="bg-card border rounded-lg p-6">
+                  <h3 className="font-semibold text-lg mb-2">Downtown: Rink Under Broad (not an ISI listing)</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    If you want to skate under Broadway rather than at the Zoo, Nashville Yards' <a className="text-primary underline" href="https://www.nashvilleyards.com/rinkunderbroad">Rink Under Broad</a> at Ascension Saint Thomas Landing lists real ice from November 21, 2026. Its page gives one-hour sessions with rentals included, $20 standard and $15 for children under 5 plus tax and fees, and a minimum skating age of 3. End date and daily hours were not on the page when checked. Ice Skating Index has no record for this rink; use the operator's page.
+                  </p>
+                </div>
+              </div>
+            </section>
+  );
 
   return (
     <Layout>
@@ -115,7 +164,7 @@ export default function NashvilleCityHub() {
           </div>
           <p className="mb-3 text-sm font-semibold uppercase text-cyan-200">Current metro guide</p>
           <h1 className="font-serif text-4xl md:text-5xl font-extrabold text-white mb-4">
-            Ice Skating in Nashville, TN: Every Rink, Price, and Schedule (2026 Guide)
+            {discoveryCopy.nashville.title}
           </h1>
           <p className="text-lg text-white/75 max-w-3xl leading-relaxed">
             You can ice skate year-round in Nashville at Centennial Sportsplex, the three Ford Ice Centers, and Gary Force Acura Ice Arena in Nolensville. Centennial and Ford Ice use DaySmart, while Gary Force uses its online events calendar.
@@ -127,6 +176,7 @@ export default function NashvilleCityHub() {
             </Link>
             .
           </p>
+          {seasonal && <p className="text-sm text-white/80 mt-4">For holiday skating, go straight to the <a href="#seasonal" className="text-white underline underline-offset-4">holiday rinks section</a>.</p>}
           <p className="text-base text-white/75 max-w-3xl leading-relaxed mt-4">
             Public-skate and practice-ice schedules change week to week at Centennial Sportsplex and the Ford Ice Centers. Open each rink&apos;s official calendar and confirm the session before you travel.
           </p>
@@ -142,12 +192,13 @@ export default function NashvilleCityHub() {
               <nav className="space-y-2">
                 {[
                   { id: "at-a-glance", label: "At a glance" },
+                  ...(seasonal ? [{ id: "seasonal", label: discoveryCopy.nashville.tocLabel }] : []),
                   { id: "centennial", label: "Centennial Sportsplex" },
                   { id: "bellevue", label: "Ford Ice Center Bellevue" },
                   { id: "antioch", label: "Ford Ice Center Antioch" },
                   { id: "clarksville", label: "Ford Ice Center Clarksville" },
                   { id: "gary-force", label: "Gary Force Acura Ice Arena" },
-                  { id: "seasonal", label: "Seasonal options" },
+                  ...(!seasonal ? [{ id: "seasonal", label: "Seasonal options" }] : []),
                   { id: "choose", label: "Which rink to choose" },
                   { id: "learn-to-skate", label: "Learn to skate" },
                   { id: "freestyle", label: "Freestyle & figure skating" },
@@ -250,6 +301,8 @@ export default function NashvilleCityHub() {
             </section>
 
             <Separator />
+
+            {seasonal && seasonalSection}
 
             <section id="centennial">
               <h2 className="font-serif text-2xl font-bold mb-4">Centennial Sportsplex &mdash; Nashville&apos;s central two-sheet rink</h2>
@@ -373,44 +426,7 @@ export default function NashvilleCityHub() {
 
             <Separator />
 
-            <section id="seasonal">
-              <h2 className="font-serif text-2xl font-bold mb-4">Seasonal options &mdash; confirm the announced season</h2>
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                Check each operator's announced season before planning holiday skating. Gaylord and Fountains have confirmed 2026&ndash;27 dates. The Nashville Zoo advertises Smashville skating with its Glow Wild event; the skating dates and sessions were not verified for this page. The three differ in what the ticket covers, so compare how time on the ice is measured and whether rentals are included, not only admission:
-              </p>
-              <div className="space-y-6">
-                <div className="bg-card border rounded-lg p-6">
-                  <h3 className="font-semibold text-lg mb-2">
-                    <RinkLink slug={RINK_SLUGS.smashville}>Smashville Ice Rink at Nashville Zoo</RinkLink>
-                  </h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    Advertised with Glow Wild, the Zoo's holiday light event (dated November 13, 2026 through January 3, 2027), at 3777 Nolensville Pike in South Nashville. The Zoo lists skating at $12 for nonmembers and $10 for members in addition to event admission, and its event page describes 45-minute sessions with rentals. That page still carries older template text, and skating dates and sessions were not verified for this page; the event dates are not skating dates. Check the session details in the Zoo's ticketing before you go. Parking is advertised at $10, free for members and passholders; checkout fees were not checked. This is not a downtown rink.
-                  </p>
-                </div>
-                <div className="bg-card border rounded-lg p-6">
-                  <h3 className="font-semibold text-lg mb-2">
-                    <RinkLink slug={RINK_SLUGS.fountains}>Fountains at Gateway (Murfreesboro)</RinkLink>
-                  </h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    November 20, 2026 through January 31, 2027. Admission is $20 for ages 13+, $15 for ages 4&ndash;12, and free for ages 3 and under with a paid adult. Tax, skate rentals and 120 minutes on the ice are included. Individual visitors can pay at the gate; check the official calendar before traveling.
-                  </p>
-                </div>
-                <div className="bg-card border rounded-lg p-6">
-                  <h3 className="font-semibold text-lg mb-2">
-                    <RinkLink slug={RINK_SLUGS.gaylord}>Gaylord Opryland Resort</RinkLink>
-                  </h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    Outdoor skating at Pinetop runs November 6, 2026 through January 2, 2027. Advance online tickets are required. Prices depend on the selected date, parking costs extra, and rental inclusion is unverified. Check the official ticket page linked on the rink page.
-                  </p>
-                </div>
-                <div className="bg-card border rounded-lg p-6">
-                  <h3 className="font-semibold text-lg mb-2">Downtown: Rink Under Broad (not an ISI listing)</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    If you want to skate under Broadway rather than at the Zoo, Nashville Yards' <a className="text-primary underline" href="https://www.nashvilleyards.com/rinkunderbroad">Rink Under Broad</a> at Ascension Saint Thomas Landing lists real ice from November 21, 2026. Its page gives one-hour sessions with rentals included, $20 standard and $15 for children under 5 plus tax and fees, and a minimum skating age of 3. End date and daily hours were not on the page when checked. Ice Skating Index has no record for this rink; use the operator's page.
-                  </p>
-                </div>
-              </div>
-            </section>
+            {!seasonal && seasonalSection}
 
             <Separator />
 

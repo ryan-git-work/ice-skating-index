@@ -22,7 +22,7 @@ test('Nashville table and FAQ publish current Fountains season while distinguish
  assert.ok(row);assert.match(row,/\$20 ages 13\+/);assert.match(row,/\$15 ages 4/);assert.match(row,/Jan 31, 2027/);assert.match(row,/Pay at gate/);assert.doesNotMatch(row,/\$12|\$17|Nov.{0,10}Feb/);
  const faq=schemas(body).find(s=>s['@type']==='FAQPage');assert.match(JSON.stringify(faq),/Fountains runs November 20, 2026 through January 31, 2027/);
  assert.match(body,/skating dates and sessions were not verified/);
- assert.equal(schemas(body).find(s=>s['@type']==='WebPage').dateModified,'2026-11-08');
+ assert.equal(schemas(body).find(s=>s['@type']==='WebPage').dateModified,'2026-11-10');
 });
 for(const slug of ['public-skating-nashville','indoor-ice-skating-nashville','ice-skating-nashville-kids'])test('Existing seasonal reference is current: '+slug,async()=>{
  const body=await html('blog/'+slug);assert.match(body,/Fountains Winterfest has announced November 20, 2026 through January 31, 2027/);assert.doesNotMatch(body,/Fountains skating seasons are unconfirmed|upcoming Fountains and Smashville/);

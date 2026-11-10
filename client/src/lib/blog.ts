@@ -7,6 +7,7 @@ export interface BlogPostMeta {
   category: string;
   publishDate: string;
   modifiedDate?: string;
+  updateNote?: { date: string; text: string; scope: string };
   excerpt: string;
   fileName: string;
   image?: string;

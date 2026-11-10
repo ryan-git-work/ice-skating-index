@@ -1,0 +1,99 @@
+{
+  "home": {
+    "title_base": "Find Ice Skating Near You",
+    "title_rendered": "Find Ice Skating Near You | Ice Skating Index",
+    "title_rendered_length": 45,
+    "meta_description": "Rink guides for 11 states with public-skate booking links, lessons and freestyle ice, plus what each Nashville-area holiday rink ticket covers in 2026-27.",
+    "meta_description_length": 154,
+    "og_title": "Find Ice Skating Near You",
+    "og_description": "Rink guides for 11 states with public-skate booking links, lessons and freestyle ice, plus what each Nashville-area holiday rink ticket covers in 2026-27.",
+    "twitter_title": "Find Ice Skating Near You",
+    "twitter_description": "Rink guides for 11 states with public-skate booking links, lessons and freestyle ice, plus what each Nashville-area holiday rink ticket covers in 2026-27.",
+    "fallback": "Rink guides for 11 states with public-skate booking links, lessons and freestyle ice. Confirm sessions and prices with each rink before you go.",
+    "block": {
+      "heading_h2": "What each Nashville-area holiday rink ticket covers",
+      "intro": "Three Middle Tennessee holiday rinks sell skating three different ways. Compare how your time on the ice is measured and whether skates are included before you compare prices.",
+      "items": [
+        {
+          "name": "Gaylord Opryland, Nashville",
+          "href": "/rink/gaylord-opryland-resort-nashville-tn",
+          "text": "The official ticket page lists skating at Pinetop through January 2, 2027. Tickets are sold in advance online only. The price depends on the date you select, and rental inclusion is not verified."
+        },
+        {
+          "name": "Fountains Winterfest, Murfreesboro",
+          "href": "/rink/fountains-at-gateway-murfreesboro-tn",
+          "text": "November 20, 2026 through January 31, 2027. Admission includes tax, skate rentals and 120 minutes on the ice, and children 3 and under skate free with a paid adult. You can pay at the gate."
+        },
+        {
+          "name": "Smashville at Nashville Zoo",
+          "href": "/rink/smashville-ice-rink-at-zoolumination-nashville-tn",
+          "text": "Advertised with the Zoo's Glow Wild event, which is dated November 13, 2026 through January 3, 2027. Skating is a separate ticket on top of event admission. Skating dates and sessions were not verified, and the event dates are not skating dates."
+        }
+      ],
+      "links": [
+        {
+          "label": "Compare the three tickets",
+          "href_key": "holiday_comparison"
+        },
+        {
+          "label": "Nashville holiday rinks",
+          "href": "/city/tn/nashville#seasonal"
+        },
+        {
+          "label": "Tennessee holiday rinks, including Chattanooga",
+          "href": "/state/tn"
+        }
+      ],
+      "check_label": "Operator pages checked November 10, 2026. Confirm your date and your total with the operator."
+    }
+  },
+  "nashville": {
+    "title": "Ice Skating in Nashville, TN: Year-Round and Holiday Rinks",
+    "description": "Five year-round indoor options across the Nashville area plus the 2026-27 holiday rinks, with booking links and what each holiday ticket covers.",
+    "heading": "Holiday rinks for 2026-27 and what each ticket covers",
+    "intro": "Three holiday rinks are announced or advertised around Nashville this season, and a fourth is announced downtown. Gaylord's official ticket page lists skating at Pinetop through January 2, 2027. Fountains at Gateway in Murfreesboro has announced November 20, 2026 through January 31, 2027. The Nashville Zoo advertises Smashville skating with its Glow Wild event, which is dated November 13, 2026 through January 3, 2027. Skating dates and sessions at the Zoo were not verified for this page, and the event dates are not skating dates. The tickets cover different things, so compare how time on the ice is measured and whether rentals are included before you compare admission. The [holiday rink comparison]({holiday_comparison}) puts those terms side by side.",
+    "checkLabel": "Operator pages checked November 10, 2026. Confirm your date and your total with the operator.",
+    "tocLabel": "Holiday rinks 2026-27"
+  },
+  "tennessee": {
+    "heading_h2": "Holiday rinks in Tennessee, 2026-27",
+    "intro": "Four holiday rinks on this page were checked against their operator pages on November 10, 2026. An announced season does not mean every session is open, so confirm your date with the operator.",
+    "items": [
+      {
+        "name": "Gaylord Opryland, Nashville",
+        "href": "/rink/gaylord-opryland-resort-nashville-tn",
+        "text": "The official ticket page lists skating at Pinetop through January 2, 2027. Tickets are sold in advance online only and cover unlimited skating on the ticket date. The price depends on the date, parking is extra, and rental inclusion is not verified."
+      },
+      {
+        "name": "Fountains Winterfest, Murfreesboro",
+        "href": "/rink/fountains-at-gateway-murfreesboro-tn",
+        "text": "November 20, 2026 through January 31, 2027. Admission includes tax, skate rentals and 120 minutes on the ice, and children 3 and under skate free with a paid adult. You can pay at the gate."
+      },
+      {
+        "name": "Smashville at Nashville Zoo",
+        "href": "/rink/smashville-ice-rink-at-zoolumination-nashville-tn",
+        "text": "Advertised with the Glow Wild event, dated November 13, 2026 through January 3, 2027. Skating is a separate ticket on top of event admission. Skating dates and sessions were not verified, and the event dates are not skating dates."
+      },
+      {
+        "name": "Ice on the Landing, Chattanooga",
+        "href": "/state/tn#chattanooga",
+        "text": "Open most days from November 21, 2026 through January 31, 2027. Admission includes skate rentals and a 60-minute session. Holiday pricing applies on Thanksgiving, Christmas Day, New Year's Day and MLK Day."
+      }
+    ],
+    "links": [
+      {
+        "label": "Compare the Nashville-area tickets",
+        "href_key": "holiday_comparison"
+      },
+      {
+        "label": "Nashville holiday rinks",
+        "href": "/city/tn/nashville#seasonal"
+      }
+    ],
+    "check_label": "Confirm your date and your total with the operator."
+  },
+  "rinkLines": {
+    "centennial-sportsplex-nashville-tn": "If you are weighing a holiday rink against a public skate here, the [Nashville holiday rink comparison]({holiday_comparison}) shows what the Gaylord, Fountains and Nashville Zoo tickets each cover.",
+    "ford-ice-center-bellevue-nashville-tn": "Public skate here is listed with rental skates included. The [Nashville holiday rink comparison]({holiday_comparison}) shows which holiday rinks include skates and which leave it unconfirmed."
+  }
+}

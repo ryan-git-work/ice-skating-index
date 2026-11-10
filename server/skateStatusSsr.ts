@@ -5,8 +5,8 @@ import { pathToFileURL } from "url";
 import { buildPageHtml, HTML_MARKER, type RenderedHead } from "../shared/pageHtml.ts";
 
 /**
- * Request-time re-render for the handful of pages that consume academy ice
- * status.
+ * Request-time re-render for the handful of pages that consume dated content
+ * (academy ice status or seasonal discovery).
  *
  * The site is prerendered, so a dated advisory would otherwise stay in the
  * served HTML until someone rebuilt and republished. This server already runs on
@@ -15,7 +15,7 @@ import { buildPageHtml, HTML_MARKER, type RenderedHead } from "../shared/pageHtm
  * other route keeps serving its static file untouched.
  *
  * The route list comes from the build (dist/ssr/status-routes.json), recorded by
- * the renderer itself, so a page that starts or stops reading status is picked up
+ * the renderer itself, so a page that starts or stops reading dated content is picked up
  * without anyone maintaining a list by hand.
  *
  * Fail-closed, deliberately: if the artifacts this path needs are missing or
@@ -186,10 +186,10 @@ export async function createSkateStatusSsr(
   const routeSet = new Set(routes as string[]);
   if (routeSet.size === 0) {
     options.onInfo?.(
-      "No routes consume academy ice status in this build; all pages serve their prerendered HTML.",
+      "No routes consume dated content in this build; all pages serve their prerendered HTML.",
     );
   } else {
-    options.onInfo?.(`${routeSet.size} routes re-render per request for academy ice status.`);
+    options.onInfo?.(`${routeSet.size} routes re-render per request for dated content.`);
   }
 
   const now = options.now ?? (() => new Date());

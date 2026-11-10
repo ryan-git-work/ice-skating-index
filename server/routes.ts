@@ -36,13 +36,13 @@ const latestDate = (dates: Array<string | undefined>, fallback: string) =>
 // Sitemap dates describe authored changes, never process/build time.
 
 const STATIC_LASTMOD = {
-  home: "2026-10-27",
+  home: "2026-11-10",
   browse: latestDate(rinks.flatMap(rink => [rink.last_verified, rink.content_modified, rink.pricing?.verified_on]), "2026-10-27"),
   about: "2026-06-30",
   freestyle: "2026-11-07",
   learnToSkate: "2026-11-07",
   skateSharpening: "2026-06-30",
-  blog: latestDate(blogPosts.map(post => post.modifiedDate || post.publishDate), "2026-07-12"),
+  blog: latestDate([...blogPosts.map(post => post.modifiedDate || post.publishDate), "2026-11-10"], "2026-07-12"),
 };
 
 export async function registerRoutes(
@@ -68,7 +68,7 @@ export async function registerRoutes(
         rink.address.state.toLowerCase().replace(/\s+/g, "-") === state &&
         rink.address.city.toLowerCase().replace(/\s+/g, "-") === city
       );
-      return { state, city, lastmod: state === "tn" && city === "nashville" ? "2026-11-08" : latestDate(cityRinks.map(rinkModified), STATIC_LASTMOD.browse) };
+      return { state, city, lastmod: state === "tn" && city === "nashville" ? "2026-11-10" : latestDate(cityRinks.map(rinkModified), STATIC_LASTMOD.browse) };
     });
 
     let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -119,7 +119,7 @@ export async function registerRoutes(
 ${getAllStates().map(state => `  <url>
     <loc>${baseUrl}/state/${state}</loc>
     <lastmod>${latestDate(
-      rinks.filter((rink) => rink.address.state.toLowerCase() === state).map(rinkModified),
+      [...rinks.filter((rink) => rink.address.state.toLowerCase() === state).map(rinkModified), ...(state === "tn" ? ["2026-11-10"] : [])],
       STATIC_LASTMOD.browse,
     )}</lastmod>
     <changefreq>weekly</changefreq>
@@ -137,7 +137,7 @@ ${cities.map(({ state, city, lastmod }) => `  <url>
   <!-- Individual Rink Pages -->
 ${rinks.filter((rink) => !["closed", "coming_soon"].includes(rink.operating_status || "open")).map(rink => `  <url>
     <loc>${baseUrl}/rink/${rink.slug}</loc>
-    <lastmod>${rinkModified(rink)}</lastmod>
+    <lastmod>${latestDate([rinkModified(rink), ...(["centennial-sportsplex-nashville-tn", "ford-ice-center-bellevue-nashville-tn"].includes(rink.slug) ? ["2026-11-10"] : [])], STATIC_LASTMOD.browse)}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>`).join('\n')}

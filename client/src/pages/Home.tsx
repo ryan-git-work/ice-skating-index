@@ -1,3 +1,7 @@
+import discoveryCopy from "@/data/holiday-discovery.json";
+import { holidayDiscoveryActive } from "@/lib/holidayDiscovery";
+import { HolidayDiscovery } from "@/components/HolidayDiscovery";
+import { useAsOf } from "@/lib/asOf";
 import { Layout } from "@/components/Layout";
 import { Hero } from "@/components/Hero";
 import { rinks } from "@/lib/data";
@@ -48,10 +52,11 @@ function CityHubCard({ href, image, city, rinkCount, description }: {
 }
 
 export default function Home() {
-  const description = "Ice Skating Index is the comprehensive directory for ice skating rinks across the US. Find public skating schedules, freestyle sessions, learn-to-skate programs, and hockey rinks in New York, California, Texas, Illinois, and 7 more states.";
+  const seasonal = holidayDiscoveryActive(useAsOf());
+  const description = seasonal ? discoveryCopy.home.meta_description : discoveryCopy.home.fallback;
 
   useHead({
-    title: "Home",
+    title: discoveryCopy.home.title_base,
     description,
     canonicalPath: "/",
     structuredData: [{
@@ -76,6 +81,7 @@ export default function Home() {
   return (
     <Layout>
       <Hero />
+      {seasonal && <div className="container mx-auto px-4 py-10"><HolidayDiscovery block={discoveryCopy.home.block} /></div>}
       
       <section className="py-20 bg-muted/30 border-y border-border/50">
         <div className="container mx-auto px-4">
